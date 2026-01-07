@@ -7,6 +7,7 @@
         "en": "Clothing & Fashion"
       },
       "icon": "fas fa-shirt",
+      "image": "Clothing & Fashion.jpg",
       "subcategories": [
         {
           "id": 1,
@@ -14,7 +15,8 @@
             "ar": "ملابس نسائية",
             "en": "Women's Clothing"
           },
-          "icon": "fas fa-person-dress"
+          "icon": "fas fa-person-dress",
+          "image": "Women's Clothing.jpg"
         },
         {
           "id": 2,
@@ -22,7 +24,8 @@
             "ar": "ملابس رجالية",
             "en": "Men's Clothing"
           },
-          "icon": "fas fa-user-tie"
+          "icon": "fas fa-user-tie",
+          "image": "Men's Clothing.jpg"
         },
         {
           "id": 3,
@@ -30,7 +33,8 @@
             "ar": "ملابس أطفال وحديثي الولادة",
             "en": "Children's & Newborn Clothing"
           },
-          "icon": "fas fa-child-reaching"
+          "icon": "fas fa-child-reaching",
+          "image": "Children's & Newborn Clothing.jpg"
         },
         {
           "id": 4,
@@ -38,7 +42,8 @@
             "ar": "العبايات والجلابيات",
             "en": "Abayas & Galabiyas"
           },
-          "icon": "fas fa-vest-patches"
+          "icon": "fas fa-vest-patches",
+          "image": "Abayas & Galabiyas.jpg"
         },
         {
           "id": 5,
@@ -46,7 +51,8 @@
             "ar": "الأحذية والحقائب الجلدية والقماشية",
             "en": "Shoes, Leather & Fabric Bags"
           },
-          "icon": "fas fa-shopping-bag"
+          "icon": "fas fa-shopping-bag",
+          "image": "Shoes, Leather & Fabric Bags.jpg"
         },
         {
           "id": 6,
@@ -54,7 +60,8 @@
             "ar": "الإكسسوارات النسائية والرجالية",
             "en": "Men's & Women's Accessories"
           },
-          "icon": "fas fa-glasses"
+          "icon": "fas fa-glasses",
+          "image": "Men's & Women's Accessories.jpg"
         },
         {
           "id": 7,
@@ -62,7 +69,8 @@
             "ar": "ملابس رياضية ",
             "en": "Sportswear"
           },
-          "icon": "fas fa-running"
+          "icon": "fas fa-running",
+          "image": "Sportswear.jpg"
         },
         {
           "id": 8,
@@ -70,7 +78,8 @@
             "ar": "ملابس المناسبات الخاصة (أعراس، حفلات)",
             "en": "Formal Wear (Weddings, Parties)"
           },
-          "icon": "fas fa-ring"
+          "icon": "fas fa-ring",
+          "image": "Formal Wear (Weddings, Parties).jpg"
         },
         {
           "id": 9,
@@ -78,7 +87,8 @@
             "ar": "ملابس داخلية وملابس نوم",
             "en": "Underwear & Sleepwear"
           },
-          "icon": "fas fa-bed"
+          "icon": "fas fa-bed",
+          "image": "Underwear & Sleepwear.jpg"
         },
         {
           "id": 10,
@@ -86,7 +96,8 @@
             "ar": "أقمشة ومستلزمات خياطة",
             "en": "Fabrics & Sewing Supplies"
           },
-          "icon": "fas fa-ruler-combined"
+          "icon": "fas fa-ruler-combined",
+          "image": "Fabrics & Sewing Supplies.jpg"
         },
         {
           "id": 11,
@@ -94,7 +105,8 @@
             "ar": "ملابس مستعملة بحالة جيدة",
             "en": "Good Condition Used Clothes"
           },
-          "icon": "fas fa-recycle"
+          "icon": "fas fa-recycle",
+          "image": "Good Condition Used Clothes.jpg"
         },
         {
           "id": 12,
@@ -102,7 +114,8 @@
             "ar": "أزياء وملابس ذات علامات تجارية",
             "en": "Branded Fashion & Clothing"
           },
-          "icon": "fas fa-star"
+          "icon": "fas fa-star",
+          "image": "Branded Fashion & Clothing.jpg"
         }
       ]
     },
@@ -113,6 +126,7 @@
         "en": "Food & Beverages"
       },
       "icon": "fas fa-utensils",
+      "image": "Food & Beverages.jpg",
       "subcategories": [
         {
           "id": 1,
@@ -120,7 +134,8 @@
             "ar": "الأطباق الرئيسية والوجبات الجاهزة",
             "en": "Main Dishes & Ready Meals"
           },
-          "icon": "fas fa-concierge-bell"
+          "icon": "fas fa-concierge-bell",
+          "image": "Main Dishes & Ready Meals.jpg"
         },
         {
           "id": 2,
@@ -128,7 +143,8 @@
             "ar": "المخبوزات والمعجنات",
             "en": "Bakery & Pastry"
           },
-          "icon": "fas fa-bread-slice"
+          "icon": "fas fa-bread-slice",
+          "image": "Bakery & Pastry.jpg"
         },
         {
           "id": 3,
@@ -136,7 +152,8 @@
             "ar": "الحلويات",
             "en": "Sweets"
           },
-          "icon": "fas fa-candy-cane"
+          "icon": "fas fa-candy-cane",
+          "image": "Sweets.jpg"
         },
         {
           "id": 4,
@@ -144,7 +161,8 @@
             "ar": "مشروبات وعصائر طبيعية",
             "en": "Drinks & Natural Juices"
           },
-          "icon": "fas fa-blender"
+          "icon": "fas fa-blender",
+          "image": "Drinks & Natural Juices.jpg"
         },
         {
           "id": 5,
@@ -152,7 +170,8 @@
             "ar": "مواد غذائية معلبة ومجففة",
             "en": "Canned & Dried Foods"
           },
-          "icon": "fas fa-box-open"
+          "icon": "fas fa-box-open",
+          "image": "Canned & Dried Foods.jpg"
         },
         {
           "id": 6,
@@ -160,7 +179,8 @@
             "ar": "منتجات الألبان والبيض",
             "en": "Dairy & Eggs"
           },
-          "icon": "fas fa-egg"
+          "icon": "fas fa-egg",
+          "image": "Dairy & Eggs.jpg"
         },
         {
           "id": 7,
@@ -168,7 +188,8 @@
             "ar": "التوابل والأعشاب",
             "en": "Spices & Herbs"
           },
-          "icon": "fas fa-leaf"
+          "icon": "fas fa-leaf",
+          "image": "Spices & Herbs.jpg"
         },
         {
           "id": 8,
@@ -176,7 +197,8 @@
             "ar": "مكسرات وبذور وفواكه مجففة",
             "en": "Nuts, Seeds & Dried Fruits"
           },
-          "icon": "fas fa-seedling"
+          "icon": "fas fa-seedling",
+          "image": "Nuts, Seeds & Dried Fruits.jpg"
         },
         {
           "id": 9,
@@ -184,7 +206,8 @@
             "ar": "زيوت وسمن ودهون",
             "en": "Oils, Ghee & Fats"
           },
-          "icon": "fas fa-oil-can"
+          "icon": "fas fa-oil-can",
+          "image": "Oils, Ghee & Fats.jpg"
         },
         {
           "id": 10,
@@ -192,7 +215,8 @@
             "ar": "لحوم ودواجن وأسماك",
             "en": "Meat, Poultry & Fish"
           },
-          "icon": "fas fa-drumstick-bite"
+          "icon": "fas fa-drumstick-bite",
+          "image": "Meat, Poultry & Fish.jpg"
         },
         {
           "id": 11,
@@ -200,7 +224,8 @@
             "ar": "منتجات غذائية وعضوية",
             "en": "Food & Organic Products"
           },
-          "icon": "fas fa-carrot"
+          "icon": "fas fa-carrot",
+          "image": "Food & Organic Products.jpg"
         },
         {
           "id": 12,
@@ -208,7 +233,8 @@
             "ar": "أطعمة مجمدة ومثلجة",
             "en": "Frozen & Chilled Foods"
           },
-          "icon": "fas fa-snowflake"
+          "icon": "fas fa-snowflake",
+          "image": "Frozen & Chilled Foods.jpg"
         }
       ]
     },
@@ -219,94 +245,106 @@
         "en": "Tech & Electronics"
       },
       "icon": "fas fa-robot",
+      "image": "Tech & Electronics.png",
       "subcategories": [
         {
           "id": 1,
           "title": {
-            "ar": "الهواتف الذكية والأجهزة اللوحية",
+            "ar": "هواتف ذكية وأجهزة لوحية",
             "en": "Smartphones & Tablets"
           },
-          "icon": "fas fa-mobile-alt"
+          "icon": "fas fa-mobile-alt",
+          "image": "Smartphones & Tablets.jpg"
         },
         {
           "id": 2,
           "title": {
-            "ar": "أجهزة الحاسوب المحمول والمكتبي",
+            "ar": "لابتوب وأجهزة كمبيوتر مكتبية",
             "en": "Laptops & Desktops"
           },
-          "icon": "fas fa-laptop"
+          "icon": "fas fa-laptop",
+          "image": "Laptops & Desktops.jpg"
         },
         {
           "id": 3,
           "title": {
-            "ar": "الإكسسوارات الرقمية وملحقاتها",
+            "ar": "إكسسوارات رقمية (ساعات، سماعات، شواحن)",
             "en": "Digital Accessories"
           },
-          "icon": "fas fa-headphones"
+          "icon": "fas fa-headphones-alt",
+          "image": "Digital Accessories.jpg"
         },
         {
           "id": 4,
           "title": {
-            "ar": "برامج وحلول رقمية جاهزة",
+            "ar": "برمجيات وحلول رقمية ومحاسبية",
             "en": "Software & Digital Solutions"
           },
-          "icon": "fas fa-compact-disc"
+          "icon": "fas fa-code",
+          "image": "Software & Digital Solutions.jpg"
         },
         {
           "id": 5,
           "title": {
-            "ar": "خدمات تطوير المواقع والتطبيقات",
+            "ar": "تطوير مواقع وتطبيقات الموبايل",
             "en": "Web & App Development"
           },
-          "icon": "fas fa-code"
+          "icon": "fas fa-terminal",
+          "image": "Web & App Development.jpg"
         },
         {
           "id": 6,
           "title": {
-            "ar": "أجهزة الألعاب والفيديو جيمز",
+            "ar": "أجهزة ألعاب فيديو ومنصات جيمنج",
             "en": "Gaming Consoles & Video Games"
           },
-          "icon": "fas fa-gamepad"
+          "icon": "fas fa-gamepad",
+          "image": "Gaming Consoles & Video Games.jpg"
         },
         {
           "id": 7,
           "title": {
-            "ar": "أنظمة الأمن والمراقبة المنزلية",
+            "ar": "أنظمة مراقبة وأمن منزلي",
             "en": "Security & Home Monitoring"
           },
-          "icon": "fas fa-video"
+          "icon": "fas fa-video",
+          "image": "Security & Home Monitoring.jpg"
         },
         {
           "id": 8,
           "title": {
-            "ar": "الأجهزة الكهربائية المنزلية",
+            "ar": "أجهزة كهربائية منزلية (ثلاجات، غسالات)",
             "en": "Home Electrical Appliances"
           },
-          "icon": "fas fa-plug"
+          "icon": "fas fa-blender",
+          "image": "Home Electrical Appliances.jpg"
         },
         {
           "id": 9,
           "title": {
-            "ar": "الكاميرات والتقنيات البصرية",
+            "ar": "كاميرات وتقنيات بصرية",
             "en": "Cameras & Optical Tech"
           },
-          "icon": "fas fa-camera-retro"
+          "icon": "fas fa-camera",
+          "image": "Cameras & Optical Tech.jpg"
         },
         {
           "id": 10,
           "title": {
-            "ar": "أجهزة الصوت والسماعات",
+            "ar": "أجهزة صوتية وسماعات احترافية",
             "en": "Audio Devices & Headphones"
           },
-          "icon": "fas fa-volume-up"
+          "icon": "fas fa-volume-up",
+          "image": "Audio Devices & Headphones.jpg"
         },
         {
-          "id": 12,
+          "id": 11,
           "title": {
-            "ar": "أجهزة الشبكات والاتصالات",
+            "ar": "شبكات واتصالات (راوتر، تقوية إشارة)",
             "en": "Networking & Telecom"
           },
-          "icon": "fas fa-wifi"
+          "icon": "fas fa-wifi",
+          "image": "Networking & Telecom.jpg"
         }
       ]
     },
@@ -317,6 +355,7 @@
         "en": "Health & Beauty"
       },
       "icon": "fas fa-spa",
+      "image": "Health & Beauty.png",
       "subcategories": [
         {
           "id": 1,
@@ -324,7 +363,8 @@
             "ar": "مستحضرات العناية بالبشرة والوجه",
             "en": "Skin & Face Care"
           },
-          "icon": "fas fa-magic"
+          "icon": "fas fa-magic",
+          "image": "Skin & Face Care.jpg"
         },
         {
           "id": 2,
@@ -332,7 +372,8 @@
             "ar": "مستحضرات العناية بالشعر",
             "en": "Hair Care"
           },
-          "icon": "fas fa-cut"
+          "icon": "fas fa-cut",
+          "image": "Hair Care.jpg"
         },
         {
           "id": 3,
@@ -340,7 +381,8 @@
             "ar": "المكياج وأدوات التجميل",
             "en": "Makeup & Beauty Tools"
           },
-          "icon": "fas fa-paint-brush"
+          "icon": "fas fa-paint-brush",
+          "image": "Makeup & Beauty Tools.jpg"
         },
         {
           "id": 4,
@@ -348,7 +390,8 @@
             "ar": "العطور والبخور والمباخر",
             "en": "Perfumes, Incense & Burners"
           },
-          "icon": "fas fa-spray-can"
+          "icon": "fas fa-spray-can",
+          "image": "Perfumes, Incense & Burners.jpg"
         },
         {
           "id": 5,
@@ -356,7 +399,8 @@
             "ar": "مستلزمات النظافة والاستحمام",
             "en": "Hygiene & Bath Supplies"
           },
-          "icon": "fas fa-bath"
+          "icon": "fas fa-bath",
+          "image": "Hygiene & Bath Supplies.jpg"
         },
         {
           "id": 6,
@@ -364,7 +408,8 @@
             "ar": "المكملات الغذائية والفيتامينات",
             "en": "Supplements & Vitamins"
           },
-          "icon": "fas fa-pills"
+          "icon": "fas fa-pills",
+          "image": "Supplements & Vitamins.jpg"
         },
         {
           "id": 7,
@@ -372,7 +417,8 @@
             "ar": "أجهزة ومعدات اللياقة البدنية",
             "en": "Fitness Equipment"
           },
-          "icon": "fas fa-dumbbell"
+          "icon": "fas fa-dumbbell",
+          "image": "Fitness Equipment.jpg"
         },
         {
           "id": 8,
@@ -380,7 +426,8 @@
             "ar": "المنتجات الطبية والصحية",
             "en": "Medical & Health Products"
           },
-          "icon": "fas fa-first-aid"
+          "icon": "fas fa-first-aid",
+          "image": "Medical & Health Products.jpg"
         },
         {
           "id": 9,
@@ -388,7 +435,8 @@
             "ar": "مستحضرات العناية بالأسنان",
             "en": "Dental Care"
           },
-          "icon": "fas fa-tooth"
+          "icon": "fas fa-tooth",
+          "image": "Dental Care.jpg"
         },
         {
           "id": 10,
@@ -396,7 +444,8 @@
             "ar": "منتجات العناية بالرجال",
             "en": "Men's Care Products"
           },
-          "icon": "fas fa-user-tie"
+          "icon": "fas fa-user-tie",
+          "image": "Men's Care Products.jpg"
         },
         {
           "id": 11,
@@ -404,7 +453,8 @@
             "ar": "أدوات العناية الشخصية الكهربائية",
             "en": "Electric Personal Care Tools"
           },
-          "icon": "fas fa-bolt"
+          "icon": "fas fa-bolt",
+          "image": "Electric Personal Care Tools.jpg"
         }
       ]
     },
@@ -415,6 +465,7 @@
         "en": "Oriflame"
       },
       "icon": "fas fa-circle-notch",
+      "image": "Oriflame.png",
       "subcategories": [
         {
           "id": 1,
@@ -422,7 +473,8 @@
             "ar": "عطور رجالي وحريمي",
             "en": "Men's & Women's Perfumes"
           },
-          "icon": "fas fa-spray-can"
+          "icon": "fas fa-spray-can",
+          "image": "Men's & Women's Perfumes.jpg"
         },
         {
           "id": 2,
@@ -430,7 +482,8 @@
             "ar": "مستحضرات تجميل",
             "en": "Cosmetics"
           },
-          "icon": "fas fa-paint-brush"
+          "icon": "fas fa-paint-brush",
+          "image": "Cosmetics.jpg"
         },
         {
           "id": 3,
@@ -438,7 +491,8 @@
             "ar": "عروض",
             "en": "Offers"
           },
-          "icon": "fas fa-tags"
+          "icon": "fas fa-tags",
+          "image": "Offers.jpg"
         },
         {
           "id": 4,
@@ -446,7 +500,8 @@
             "ar": "عضوية جديدة",
             "en": "New Membership"
           },
-          "icon": "fas fa-user-plus"
+          "icon": "fas fa-user-plus",
+          "image": "New Membership.jpg"
         }
       ]
     },
@@ -457,6 +512,7 @@
         "en": "Vehicles Market"
       },
       "icon": "fas fa-car",
+      "image": "Vehicles Market.png",
       "subcategories": [
         {
           "id": 1,
@@ -464,7 +520,8 @@
             "ar": "خدمات السيارات",
             "en": "Car Services"
           },
-          "icon": "fas fa-car-side"
+          "icon": "fas fa-car-side",
+          "image": "Car Services.jpg"
         },
         {
           "id": 3,
@@ -472,7 +529,8 @@
             "ar": "خدمات الشحن والتوصيل",
             "en": "Shipping & Delivery"
           },
-          "icon": "fas fa-shipping-fast"
+          "icon": "fas fa-shipping-fast",
+          "image": "Shipping & Delivery.jpg"
         },
         {
           "id": 5,
@@ -480,7 +538,8 @@
             "ar": "خدمات صيانه المركبات",
             "en": "Vehicle Maintenance"
           },
-          "icon": "fas fa-wrench"
+          "icon": "fas fa-wrench",
+          "image": "Vehicle Maintenance.jpg"
         },
         {
           "id": 6,
@@ -488,7 +547,8 @@
             "ar": "خدمات تأجير المركبات",
             "en": "Vehicle Rental"
           },
-          "icon": "fas fa-key"
+          "icon": "fas fa-key",
+          "image": "Vehicle Rental.jpg"
         },
         {
           "id": 2,
@@ -496,7 +556,8 @@
             "ar": "خدمات الدراجات",
             "en": "Bicycle Services"
           },
-          "icon": "fas fa-motorcycle"
+          "icon": "fas fa-motorcycle",
+          "image": "Bicycle Services.jpg"
         },
         {
           "id": 3,
@@ -504,7 +565,8 @@
             "ar": "خدمات قطع الغيار والمحركات والزيوت",
             "en": "Spare Parts, Engines & Oils"
           },
-          "icon": "fas fa-cogs"
+          "icon": "fas fa-cogs",
+          "image": "Spare Parts, Engines & Oils.jpg"
         },
         {
           "id": 4,
@@ -512,7 +574,8 @@
             "ar": "خدمات إكسسوارات وكماليات المركبات",
             "en": "Vehicle Accessories"
           },
-          "icon": "fas fa-car-battery"
+          "icon": "fas fa-car-battery",
+          "image": "Vehicle Accessories.jpg"
         },
         {
           "id": 7,
@@ -520,7 +583,8 @@
             "ar": "خدمات إطارات وعجلات المركبات",
             "en": "Vehicle Tires & Wheels"
           },
-          "icon": "fas fa-dot-circle"
+          "icon": "fas fa-dot-circle",
+          "image": "Vehicle Tires & Wheels.jpg"
         },
         {
           "id": 8,
@@ -528,7 +592,8 @@
             "ar": "خدمات أنظمة الصوت والمرئيات للمركبات",
             "en": "Vehicle Audio & Visual Systems"
           },
-          "icon": "fas fa-volume-up"
+          "icon": "fas fa-volume-up",
+          "image": "Vehicle Audio & Visual Systems.jpg"
         },
         {
           "id": 10,
@@ -536,7 +601,8 @@
             "ar": "خدمات مركبات مائية",
             "en": "Water Vehicles"
           },
-          "icon": "fas fa-ship"
+          "icon": "fas fa-ship",
+          "image": "Water Vehicles.jpg"
         }
       ]
     },
@@ -547,6 +613,7 @@
         "en": "Home & Furniture"
       },
       "icon": "fas fa-couch",
+      "image": "Home & Furniture.png",
       "subcategories": [
         {
           "id": 1,
@@ -554,7 +621,8 @@
             "ar": "أثاث غرف المعيشة والاستقبال",
             "en": "Living Room & Reception Furniture"
           },
-          "icon": "fas fa-couch"
+          "icon": "fas fa-couch",
+          "image": "Living Room & Reception Furniture.jpg"
         },
         {
           "id": 2,
@@ -562,7 +630,8 @@
             "ar": "أثاث غرف النوم والمفروشات",
             "en": "Bedroom Furniture & Bedding"
           },
-          "icon": "fas fa-bed"
+          "icon": "fas fa-bed",
+          "image": "Bedroom Furniture & Bedding.jpg"
         },
         {
           "id": 3,
@@ -570,7 +639,8 @@
             "ar": "أثاث المكاتب ومساحات العمل",
             "en": "Office Furniture & Workspaces"
           },
-          "icon": "fas fa-chair"
+          "icon": "fas fa-chair",
+          "image": "Office Furniture & Workspaces.jpg"
         },
         {
           "id": 4,
@@ -578,7 +648,8 @@
             "ar": "أدوات المطبخ والمائدة",
             "en": "Kitchen & Tableware"
           },
-          "icon": "fas fa-utensils"
+          "icon": "fas fa-utensils",
+          "image": "Kitchen & Tableware.jpg"
         },
         {
           "id": 5,
@@ -586,7 +657,8 @@
             "ar": "السجاد والستائر والموكيت",
             "en": "Carpets, Curtains & Rugs"
           },
-          "icon": "fas fa-layer-group"
+          "icon": "fas fa-layer-group",
+          "image": "Carpets, Curtains & Rugs.jpg"
         },
         {
           "id": 6,
@@ -594,7 +666,8 @@
             "ar": "الإضاءة ومستلزمات الإنارة",
             "en": "Lighting & Lamps"
           },
-          "icon": "fas fa-lightbulb"
+          "icon": "fas fa-lightbulb",
+          "image": "Lighting & Lamps.jpg"
         },
         {
           "id": 7,
@@ -602,7 +675,8 @@
             "ar": "اللوحات الفنية وقطع الديكور",
             "en": "Artworks & Decor"
           },
-          "icon": "fas fa-palette"
+          "icon": "fas fa-palette",
+          "image": "Artworks & Decor.jpg"
         },
         {
           "id": 8,
@@ -610,7 +684,8 @@
             "ar": "حلول التخزين والتنظيم المنزلية",
             "en": "Home Storage & Organization"
           },
-          "icon": "fas fa-box"
+          "icon": "fas fa-box",
+          "image": "Home Storage & Organization.jpg"
         },
         {
           "id": 9,
@@ -618,7 +693,8 @@
             "ar": "أدوات تنظيف المنزل",
             "en": "Home Cleaning Tools"
           },
-          "icon": "fas fa-broom"
+          "icon": "fas fa-broom",
+          "image": "Home Cleaning Tools.jpg"
         },
         {
           "id": 10,
@@ -626,7 +702,8 @@
             "ar": "مستلزمات الحمام والمرحاض",
             "en": "Bathroom & Toilet Supplies"
           },
-          "icon": "fas fa-toilet"
+          "icon": "fas fa-toilet",
+          "image": "Bathroom & Toilet Supplies.jpg"
         },
         {
           "id": 11,
@@ -634,7 +711,8 @@
             "ar": "ديكورات الحدائق والمناطق الخارجية",
             "en": "Garden & Outdoor Decor"
           },
-          "icon": "fas fa-tree"
+          "icon": "fas fa-tree",
+          "image": "Garden & Outdoor Decor.jpg"
         },
         {
           "id": 12,
@@ -642,7 +720,8 @@
             "ar": "مفروشات وأغطية الأسرة والوسائد",
             "en": "Bedding, Covers & Pillows"
           },
-          "icon": "fas fa-bed"
+          "icon": "fas fa-bed",
+          "image": "Bedding, Covers & Pillows.jpg"
         }
       ]
     },
@@ -653,6 +732,7 @@
         "en": "Real Estate"
       },
       "icon": "fas fa-city",
+      "image": "Real Estate.jpg",
       "subcategories": [
         {
           "id": 1,
@@ -660,7 +740,8 @@
             "ar": "خدمات شقق ومنازل للبيع",
             "en": "Apartments & Houses for Sale"
           },
-          "icon": "fas fa-home"
+          "icon": "fas fa-home",
+          "image": "Apartments & Houses for Sale.jpg"
         },
         {
           "id": 7,
@@ -668,7 +749,8 @@
             "ar": "خدمات شليهات و فلل",
             "en": "Chalets & Villas"
           },
-          "icon": "fas fa-house-chimney-window"
+          "icon": "fas fa-house-chimney-window",
+          "image": "Chalets & Villas.jpg"
         },
         {
           "id": 2,
@@ -676,7 +758,8 @@
             "ar": "خدمات شقق ومنازل للإيجار",
             "en": "Apartments & Houses for Rent"
           },
-          "icon": "fas fa-key"
+          "icon": "fas fa-key",
+          "image": "Apartments & Houses for Rent.jpg"
         },
         {
           "id": 3,
@@ -684,7 +767,8 @@
             "ar": "خدمات أراضي وعقارات تجارية",
             "en": "Lands & Commercial Property"
           },
-          "icon": "fas fa-map-marked-alt"
+          "icon": "fas fa-map-marked-alt",
+          "image": "Lands & Commercial Property.jpg"
         },
         {
           "id": 4,
@@ -692,7 +776,8 @@
             "ar": "خدمات مكاتب ومساحات عمل",
             "en": "Offices & Workspaces"
           },
-          "icon": "fas fa-building"
+          "icon": "fas fa-building",
+          "image": "Offices & Workspaces.jpg"
         },
         {
           "id": 5,
@@ -700,7 +785,8 @@
             "ar": "خدمات الوساطة العقارية",
             "en": "Real Estate Brokerage"
           },
-          "icon": "fas fa-handshake"
+          "icon": "fas fa-handshake",
+          "image": "Real Estate Brokerage.jpg"
         },
         {
           "id": 6,
@@ -708,7 +794,8 @@
             "ar": "خدمات التصميم والديكور الداخلي",
             "en": "Interior Design & Decoration"
           },
-          "icon": "fas fa-drafting-compass"
+          "icon": "fas fa-drafting-compass",
+          "image": "Interior Design & Decoration.jpg"
         }
       ]
     },
@@ -719,6 +806,7 @@
         "en": "Avon"
       },
       "icon": "fas fa-v",
+      "image": "Avon.png",
       "subcategories": [
         {
           "id": 1,
@@ -726,7 +814,8 @@
             "ar": "عطور رجالي وحريمي",
             "en": "Men's & Women's Perfumes"
           },
-          "icon": "fas fa-spray-can"
+          "icon": "fas fa-spray-can",
+          "image": "Men's & Women's Perfumes.jpg"
         },
         {
           "id": 2,
@@ -734,7 +823,8 @@
             "ar": "مستحضرات تجميل",
             "en": "Cosmetics"
           },
-          "icon": "fas fa-paint-brush"
+          "icon": "fas fa-paint-brush",
+          "image": "Cosmetics.jpg"
         },
         {
           "id": 3,
@@ -742,7 +832,8 @@
             "ar": "عروض",
             "en": "Offers"
           },
-          "icon": "fas fa-tags"
+          "icon": "fas fa-tags",
+          "image": "Offers.jpg"
         },
         {
           "id": 4,
@@ -750,7 +841,8 @@
             "ar": "عضوية جديدة",
             "en": "New Membership"
           },
-          "icon": "fas fa-user-plus"
+          "icon": "fas fa-user-plus",
+          "image": "New Membership.jpg"
         }
       ]
     },
@@ -761,6 +853,7 @@
         "en": "Sports & Entertainment"
       },
       "icon": "fas fa-basketball-ball",
+      "image": "Sports.png",
       "subcategories": [
         {
           "id": 2,
@@ -768,7 +861,8 @@
             "ar": "جيم",
             "en": "Gym"
           },
-          "icon": "fas fa-dumbbell"
+          "icon": "fas fa-dumbbell",
+          "image": "Gym.jpg"
         },
         {
           "id": 4,
@@ -776,7 +870,8 @@
             "ar": "مستلزمات الصيد والرياضات الخارجية",
             "en": "Fishing & Outdoor Sports"
           },
-          "icon": "fas fa-fish"
+          "icon": "fas fa-fish",
+          "image": "Fishing & Outdoor Sports.jpg"
         },
         {
           "id": 5,
@@ -784,7 +879,8 @@
             "ar": "أدوات التخييم والسفر",
             "en": "Camping & Travel Gear"
           },
-          "icon": "fas fa-campground"
+          "icon": "fas fa-campground",
+          "image": "Camping & Travel Gear.jpg"
         },
         {
           "id": 7,
@@ -792,7 +888,8 @@
             "ar": "معدات السباحة والرياضات المائية",
             "en": "Swimming & Water Sports"
           },
-          "icon": "fas fa-swimmer"
+          "icon": "fas fa-swimmer",
+          "image": "Swimming & Water Sports.jpg"
         },
         {
           "id": 8,
@@ -800,7 +897,8 @@
             "ar": "ألعاب الفيديو والترفيه الإلكتروني",
             "en": "Video Games & E-Entertainment"
           },
-          "icon": "fas fa-gamepad"
+          "icon": "fas fa-gamepad",
+          "image": "Video Games & E-Entertainment.jpg"
         },
         {
           "id": 10,
@@ -808,7 +906,8 @@
             "ar": "الكتب والمجلات والوسائط",
             "en": "Books, Magazines & Media"
           },
-          "icon": "fas fa-book-open"
+          "icon": "fas fa-book-open",
+          "image": "Books, Magazines & Media.jpg"
         }
       ]
     },
@@ -819,6 +918,7 @@
         "en": "Arts & Crafts"
       },
       "icon": "fas fa-paint-brush",
+      "image": "Arts & Crafts.png",
       "subcategories": [
         {
           "id": 1,
@@ -826,7 +926,8 @@
             "ar": "الرسم واللوحات الفنية",
             "en": "Drawing & Artworks"
           },
-          "icon": "fas fa-palette"
+          "icon": "fas fa-palette",
+          "image": "Drawing & Artworks.jpg"
         },
         {
           "id": 2,
@@ -834,7 +935,8 @@
             "ar": "المجوهرات والإكسسوارات اليدوية",
             "en": "Handmade Jewelry"
           },
-          "icon": "fas fa-gem"
+          "icon": "fas fa-gem",
+          "image": "Handmade Jewelry.jpg"
         },
         {
           "id": 3,
@@ -842,7 +944,8 @@
             "ar": "أعمال التطريز والخياطة",
             "en": "Embroidery & Sewing"
           },
-          "icon": "fas fa-cut"
+          "icon": "fas fa-cut",
+          "image": "Embroidery & Sewing.jpg"
         },
         {
           "id": 4,
@@ -850,7 +953,8 @@
             "ar": "منتجات الشموع والعطور المنزلية",
             "en": "Candles & Home Fragrances"
           },
-          "icon": "fas fa-burn"
+          "icon": "fas fa-burn",
+          "image": "Candles & Home Fragrances.jpg"
         },
         {
           "id": 5,
@@ -858,7 +962,8 @@
             "ar": "الأدوات والمستلزمات الفنية",
             "en": "Art Tools & Supplies"
           },
-          "icon": "fas fa-paint-roller"
+          "icon": "fas fa-paint-roller",
+          "image": "Art Tools & Supplies.jpg"
         },
         {
           "id": 6,
@@ -866,7 +971,8 @@
             "ar": "المنتجات المصنوعة من الجلد والخشب",
             "en": "Leather & Wood Products"
           },
-          "icon": "fas fa-tree"
+          "icon": "fas fa-tree",
+          "image": "Leather & Wood Products.jpg"
         },
         {
           "id": 7,
@@ -874,7 +980,8 @@
             "ar": "خدمات التغليف والتنسيق",
             "en": "Packaging & Styling"
           },
-          "icon": "fas fa-gift"
+          "icon": "fas fa-gift",
+          "image": "Packaging & Styling.jpg"
         },
         {
           "id": 8,
@@ -882,7 +989,8 @@
             "ar": "الحرف التراثية والتقليدية",
             "en": "Heritage & Traditional Crafts"
           },
-          "icon": "fas fa-landmark"
+          "icon": "fas fa-landmark",
+          "image": "Heritage & Traditional Crafts.jpg"
         }
       ]
     },
@@ -893,6 +1001,7 @@
         "en": "Events & Gifts"
       },
       "icon": "fas fa-gift",
+      "image": "Events & Gifts.png",
       "subcategories": [
         {
           "id": 8,
@@ -900,7 +1009,8 @@
             "ar": "خدمات تنظيم المناسبات",
             "en": "Event Planning Services"
           },
-          "icon": "fas fa-birthday-cake"
+          "icon": "fas fa-birthday-cake",
+          "image": "Event Planning Services.jpg"
         },
         {
           "id": 1,
@@ -908,7 +1018,8 @@
             "ar": "هدايا وترتيبات باقات الورد",
             "en": "Gifts & Flower Arrangements"
           },
-          "icon": "fas fa-gifts"
+          "icon": "fas fa-gifts",
+          "image": "Gifts & Flower Arrangements.jpg"
         },
         {
           "id": 2,
@@ -916,7 +1027,8 @@
             "ar": "ديكورات وحلي المناسبات",
             "en": "Event Decor & Ornaments"
           },
-          "icon": "fas fa-birthday-cake"
+          "icon": "fas fa-birthday-cake",
+          "image": "Event Decor & Ornaments.jpg"
         },
         {
           "id": 3,
@@ -924,7 +1036,8 @@
             "ar": "بطاقات المعايدة والتهنئة",
             "en": "Greeting Cards"
           },
-          "icon": "fas fa-envelope-open-text"
+          "icon": "fas fa-envelope-open-text",
+          "image": "Greeting Cards.jpg"
         },
         {
           "id": 5,
@@ -932,7 +1045,8 @@
             "ar": "خدمات التصوير والفيديو",
             "en": "Photography & Video"
           },
-          "icon": "fas fa-video"
+          "icon": "fas fa-video",
+          "image": "Photography & Video.jpg"
         }
       ]
     },
@@ -943,6 +1057,7 @@
         "en": "My Way"
       },
       "icon": "fas fa-m",
+      "image": "My Way.png",
       "subcategories": [
         {
           "id": 1,
@@ -950,7 +1065,8 @@
             "ar": "عطور رجالي وحريمي",
             "en": "Men's & Women's Perfumes"
           },
-          "icon": "fas fa-spray-can"
+          "icon": "fas fa-spray-can",
+          "image": "Men's & Women's Perfumes.jpg"
         },
         {
           "id": 2,
@@ -958,7 +1074,8 @@
             "ar": "مستحضرات تجميل",
             "en": "Cosmetics"
           },
-          "icon": "fas fa-paint-brush"
+          "icon": "fas fa-paint-brush",
+          "image": "Cosmetics.jpg"
         },
         {
           "id": 3,
@@ -966,7 +1083,8 @@
             "ar": "عروض",
             "en": "Offers"
           },
-          "icon": "fas fa-tags"
+          "icon": "fas fa-tags",
+          "image": "Offers.jpg"
         },
         {
           "id": 4,
@@ -974,7 +1092,8 @@
             "ar": "عضوية جديدة",
             "en": "New Membership"
           },
-          "icon": "fas fa-user-plus"
+          "icon": "fas fa-user-plus",
+          "image": "New Membership.jpg"
         }
       ]
     },
@@ -985,6 +1104,7 @@
         "en": "Medical Services"
       },
       "icon": "fas fa-user-md",
+      "image": "Medical Services.png",
       "subcategories": [
         {
           "id": 201,
@@ -992,7 +1112,8 @@
             "ar": "كشف طبيب",
             "en": "Doctor's Appointment"
           },
-          "icon": "fas fa-stethoscope"
+          "icon": "fas fa-stethoscope",
+          "image": "Doctor's Appointment.jpg"
         },
         {
           "id": 202,
@@ -1000,7 +1121,8 @@
             "ar": "خدمات الأشعة",
             "en": "X-Ray Services"
           },
-          "icon": "fas fa-x-ray"
+          "icon": "fas fa-x-ray",
+          "image": "X-Ray Services.jpg"
         },
         {
           "id": 203,
@@ -1008,7 +1130,8 @@
             "ar": "تحاليل وفحوصات",
             "en": "Lab Tests & Checks"
           },
-          "icon": "fas fa-vials"
+          "icon": "fas fa-vials",
+          "image": "Lab Tests & Checks.jpg"
         },
         {
           "id": 204,
@@ -1016,7 +1139,8 @@
             "ar": "الصيدليات وتوصيل الأدوية",
             "en": "Pharmacies & Medicine Delivery"
           },
-          "icon": "fas fa-prescription-bottle-medical"
+          "icon": "fas fa-prescription-bottle-medical",
+          "image": "Pharmacies & Medicine Delivery.jpg"
         },
         {
           "id": 205,
@@ -1024,7 +1148,8 @@
             "ar": "تمريض منزلي",
             "en": "Home Nursing"
           },
-          "icon": "fas fa-user-nurse"
+          "icon": "fas fa-user-nurse",
+          "image": "Home Nursing.jpg"
         },
         {
           "id": 206,
@@ -1032,7 +1157,8 @@
             "ar": "العلاج الطبيعي",
             "en": "Physical Therapy"
           },
-          "icon": "fas fa-dumbbell"
+          "icon": "fas fa-dumbbell",
+          "image": "Physical Therapy.jpg"
         },
         {
           "id": 208,
@@ -1040,7 +1166,8 @@
             "ar": "رعاية المسنين وذوي الهمم",
             "en": "Elderly & Special Needs Care"
           },
-          "icon": "fas fa-hands-helping"
+          "icon": "fas fa-hands-helping",
+          "image": "Elderly & Special Needs Care.jpg"
         },
         {
           "id": 11,
@@ -1048,7 +1175,8 @@
             "ar": "الأجهزة الطبية المنزلية",
             "en": "Home Medical Devices"
           },
-          "icon": "fas fa-heartbeat"
+          "icon": "fas fa-heartbeat",
+          "image": "Home Medical Devices.jpg"
         }
       ]
     },
@@ -1059,6 +1187,7 @@
         "en": "General Services"
       },
       "icon": "fas fa-briefcase",
+      "image": "General Services.png",
       "subcategories": [
         {
           "id": 9,
@@ -1066,7 +1195,8 @@
             "ar": "خدمات تعليمية",
             "en": "Educational Services"
           },
-          "icon": "fas fa-chalkboard-teacher"
+          "icon": "fas fa-chalkboard-teacher",
+          "image": "Educational Services.jpg"
         },
         {
           "id": 7,
@@ -1074,7 +1204,8 @@
             "ar": "خدمات تجميلية شخصية",
             "en": "Personal Beauty Services"
           },
-          "icon": "fas fa-cut"
+          "icon": "fas fa-cut",
+          "image": "Personal Beauty Services.jpg"
         },
         {
           "id": 4,
@@ -1082,7 +1213,8 @@
             "ar": "تصميم جرافيك وتصوير",
             "en": "Graphic Design & Photography"
           },
-          "icon": "fas fa-drafting-compass"
+          "icon": "fas fa-drafting-compass",
+          "image": "Graphic Design & Photography.jpg"
         }
       ]
     },
@@ -1093,6 +1225,7 @@
         "en": "Pets"
       },
       "icon": "fas fa-paw",
+      "image": "Pets.png",
       "subcategories": [
         {
           "id": 4,
@@ -1100,7 +1233,8 @@
             "ar": "الحيوانات الاليفة",
             "en": "Pets"
           },
-          "icon": "fas fa-dog"
+          "icon": "fas fa-dog",
+          "image": "Pets.jpg"
         },
         {
           "id": 1,
@@ -1108,7 +1242,8 @@
             "ar": "طعام ومستلزمات الحيوانات الأليفة",
             "en": "Pet Food & Supplies"
           },
-          "icon": "fas fa-bone"
+          "icon": "fas fa-bone",
+          "image": "Pet Food & Supplies.jpg"
         },
         {
           "id": 2,
@@ -1116,7 +1251,8 @@
             "ar": "أسماك وأحواض زينة",
             "en": "Ornamental Fish & Aquariums"
           },
-          "icon": "fas fa-fish"
+          "icon": "fas fa-fish",
+          "image": "Ornamental Fish & Aquariums.jpg"
         },
         {
           "id": 3,
@@ -1124,7 +1260,8 @@
             "ar": "طيور الزينة",
             "en": "Ornamental Birds"
           },
-          "icon": "fas fa-dove"
+          "icon": "fas fa-dove",
+          "image": "Ornamental Birds.jpg"
         },
         {
           "id": 5,
@@ -1132,7 +1269,8 @@
             "ar": "خدمات رعاية وتدريب الحيوانات",
             "en": "Animal Care & Training"
           },
-          "icon": "fas fa-hand-holding-heart"
+          "icon": "fas fa-hand-holding-heart",
+          "image": "Animal Care & Training.jpg"
         },
         {
           "id": 6,
@@ -1140,7 +1278,8 @@
             "ar": "ألعاب وملحقات الحيوانات",
             "en": "Pet Toys & Accessories"
           },
-          "icon": "fas fa-baseball-ball"
+          "icon": "fas fa-baseball-ball",
+          "image": "Pet Toys & Accessories.jpg"
         },
         {
           "id": 7,
@@ -1148,7 +1287,8 @@
             "ar": "مستلزمات النظافة للحيوانات",
             "en": "Animal Hygiene Supplies"
           },
-          "icon": "fas fa-shower"
+          "icon": "fas fa-shower",
+          "image": "Animal Hygiene Supplies.jpg"
         }
       ]
     },
@@ -1159,6 +1299,7 @@
         "en": "Wholesalers"
       },
       "icon": "fas fa-archive",
+      "image": "Wholesalers.png",
       "subcategories": [
         {
           "id": 8,
@@ -1166,7 +1307,8 @@
             "ar": "تاجر 1",
             "en": "Merchant 1"
           },
-          "icon": "fas fa-warehouse"
+          "icon": "fas fa-warehouse",
+          "image": "Merchant 1.jpg"
         }
       ]
     },
@@ -1177,6 +1319,7 @@
         "en": "Charity Work"
       },
       "icon": "fas fa-hand-holding-heart",
+      "image": "Charity Work.png",
       "subcategories": [
         {
           "id": 1,
@@ -1184,7 +1327,8 @@
             "ar": "كرتونة الخير",
             "en": "Goodness Box"
           },
-          "icon": "fas fa-box"
+          "icon": "fas fa-box",
+          "image": "Goodness Box.jpg"
         },
         {
           "id": 2,
@@ -1192,7 +1336,8 @@
             "ar": "اطعام الخير",
             "en": "Goodness Feeding"
           },
-          "icon": "fas fa-utensils"
+          "icon": "fas fa-utensils",
+          "image": "Goodness Feeding.jpg"
         },
         {
           "id": 3,
@@ -1200,7 +1345,8 @@
             "ar": "ملابس الخير",
             "en": "Goodness Clothes"
           },
-          "icon": "fas fa-shirt"
+          "icon": "fas fa-shirt",
+          "image": "Goodness Clothes.jpg"
         }
       ]
     }
