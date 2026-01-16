@@ -1,4 +1,23 @@
-<!DOCTYPE html><html lang="ar" dir="rtl" id="html-root"><head id="head-section"><meta charset="UTF-8" id="meta-charset"><meta name="viewport" content="width=device-width,initial-scale=1" id="meta-viewport"><title id="page-title" data-lkey="stepper_title">شريط التقدم</title><link rel="stylesheet" href="../assets/fontawesome/css/all.css" id="fontawesome-link"><link rel="stylesheet" href="../style/variables.css"><link rel="stylesheet" href="../style/utilities.css"><link rel="stylesheet" href="../style/modals-and-dialogs.css"><link rel="stylesheet" href="style.css" id="main-stylesheet"><script src="../assets/libs/sweetalert2/sweetalert2.all.min.js" id="sweetalert-script"></script><script src="../js/config.js"></script><script src="../js/network.js"></script><script src="../js/globalVariable.js"></script><script src="../notification/notificationSetUp.js"></script><script src="../notification/notificationTools.js"></script><script src="../notification/notification-credentials.js"></script><script src="../notification/notification-p2p-web.js"></script><script src="../notification/notification-db-manager.js"></script><script src="../js/auth/sessionManager.js"></script><script>// Initialize userSession using SessionManager logic if available
+<!DOCTYPE html><html lang="ar" dir="rtl" id="html-root"><head id="head-section"><meta charset="UTF-8" id="meta-charset"><meta name="viewport" content="width=device-width,initial-scale=1" id="meta-viewport"><title id="page-title" data-lkey="stepper_title">شريط التقدم</title><link rel="stylesheet" href="../assets/fontawesome/css/all.css" id="fontawesome-link"><link rel="stylesheet" href="../style/variables.css"><link rel="stylesheet" href="../style/utilities.css"><link rel="stylesheet" href="../style/modals-and-dialogs.css"><link rel="stylesheet" href="style.css" id="main-stylesheet"><script src="../assets/libs/sweetalert2/sweetalert2.all.min.js" id="sweetalert-script"></script><script src="../js/config.js"></script><script src="../js/network.js"></script><script src="../js/globalVariable.js"></script><script src="../notification/notificationSetUp.js"></script><script src="../notification/notificationTools.js"></script><script src="../notification/notification-credentials.js"></script><script src="../notification/notification-p2p-web.js"></script><script src="../notification/notification-db-manager.js"></script><script src="../js/auth/sessionManager.js"></script><script>// [Reliability] Console Bridge for Dev Console (Admin 682dri6b)
+        // Pipes logs from this Iframe to the parent window so they appear in dev-console-wrapper
+        (function () {
+            if (window.parent && window.parent !== window) {
+                const methods = ['log', 'warn', 'error', 'info', 'debug'];
+                methods.forEach(method => {
+                    const original = console[method];
+                    console[method] = function () {
+                        // 1. Log to this window's actual console
+                        if (original) original.apply(console, arguments);
+                        // 2. Pipe to parent window's console (which is intercepted by dev-console.js)
+                        if (window.parent.console && typeof window.parent.console[method] === 'function') {
+                            window.parent.console[method].apply(window.parent.console, arguments);
+                        }
+                    };
+                });
+            }
+        })();
+
+        // Initialize userSession using SessionManager logic if available
         if (typeof SessionManager !== 'undefined') {
             SessionManager.init();
         } else {
