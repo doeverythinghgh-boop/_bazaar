@@ -1,1 +1,1 @@
-export function attachLogButtonListeners(){document.querySelectorAll(".btn-show-key").forEach(e=>{e.addEventListener("click",t=>{t.preventDefault(),t.stopPropagation(),console.log("[Seller] Product Key:",e.dataset.key),localStorage.setItem("productKeyFromStepReview",e.dataset.key)})})}
+export function attachLogButtonListeners(){document.querySelectorAll(".btn-show-key").forEach(btn=>{btn.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation(),console.log("[Seller] Product Key:",btn.dataset.key),localStorage.setItem("productKeyFromStepReview",btn.dataset.key)})})}

@@ -1,1 +1,1 @@
-var cartPage_currentProductKeyForNote="";(async()=>{try{await cartPage_loadCart(),cartPage_setupEventListeners()}catch(e){console.error("حدث خطأ أثناء تهيئة الصفحة:",e)}})(),insertUniqueSnapshot("../pages/header.html","header-container10",100);
+var cartPage_currentProductKeyForNote="";(async()=>{try{await cartPage_loadCart(),cartPage_setupEventListeners()}catch(error){console.error("حدث خطأ أثناء تهيئة الصفحة:",error)}})(),insertUniqueSnapshot("../pages/header.html","header-container10",100);
