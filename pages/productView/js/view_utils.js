@@ -1,1 +1,1 @@
-function productView_updateTotalPrice(t,e){try{var r=parseFloat(t)*(parseInt(e.selectedQuantityInput.value,10)||1);e.totalPriceEl&&(e.totalPriceEl.textContent=`${r.toFixed(2)} ${window.langu("pv_currency_egp")}`)}catch(t){console.error("productView_updateTotalPrice - Error:",t)}}
+function productView_updateTotalPrice(t,e){try{const r=parseFloat(t)*(parseInt(e.selectedQuantityInput.value,10)||1);e.totalPriceEl&&(e.totalPriceEl.textContent=`${r.toFixed(2)} ${window.langu("pv_currency_egp")}`)}catch(t){console.error("productView_updateTotalPrice - Error:",t)}}
