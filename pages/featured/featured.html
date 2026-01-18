@@ -2,19 +2,19 @@
      * @file pages/featured/featured.js
      * @description Logic for displaying Featured Products (Favorites) banner.
      */
-    (function() {
+    (function () {
         // Translation Key Addition (Dynamically adding if not exists, or relying on lang files)
         // For now, hardcoded fallback in HTML, but we should use window.langu
         const titleEl = document.querySelector('[data-lkey="featured_products_title"]');
         if (titleEl) {
-           // We can add "featured_products_title" to general.json later.
-           // For now, let's just set text manually if translation missing.
+            // We can add "featured_products_title" to general.json later.
+            // For now, let's just set text manually if translation missing.
         }
 
         async function initFeaturedModule() {
             const container = document.getElementById('featured-products-section');
             const track = document.getElementById('featured-track');
-            
+
             // 1. Get Data from Global Cache
             let products = [];
             if (window.selectedSearchProductsSet && window.selectedSearchProductsSet.size > 0) {
@@ -36,7 +36,7 @@
                 const userStr = localStorage.getItem('loggedInUser');
                 const user = userStr ? JSON.parse(userStr) : null;
                 const isAdmin = user && (user.user_key === '682dri6b' || user.enableDevConsole);
-                
+
                 if (isAdmin) {
                     container.style.display = 'flex';
                     container.innerHTML = `
@@ -55,19 +55,17 @@
             container.style.display = 'flex';
 
             // 2. Build HTML
-            // Double the items for infinite scroll effect if count is small
-            let itemsToRender = validProducts;
-            if (validProducts.length < 10) {
-                itemsToRender = [...validProducts, ...validProducts, ...validProducts]; // Repeat to fill screen
+            // Repeat items to fill enough track width for a smooth loop
+            const minItems = 15;
+            let itemsToRender = [...validProducts];
+            while (itemsToRender.length < minItems) {
+                itemsToRender = [...itemsToRender, ...validProducts];
             }
-
-            // Shuffle array for randomness? Optional.
-            // itemsToRender.sort(() => Math.random() - 0.5);
 
             track.innerHTML = itemsToRender.map(product => {
                 const imageUrl = product.img ? getPublicR2FileUrl(product.img) : 'images/placeholder.png';
                 const price = typeof product.price === 'number' ? product.price.toFixed(2) : product.price;
-                const isService = (typeof isServiceCategory === 'function') 
+                const isService = (typeof isServiceCategory === 'function')
                     ? isServiceCategory(product.MainCategory, product.SubCategory)
                     : false;
 
@@ -85,52 +83,60 @@
             }).join('');
 
             // 3. Enable JS Auto-Scroll (Support Touch & Pause)
-            // Duplicate content once for seamless infinite scroll (LTR)
-            track.innerHTML += track.innerHTML; 
-            
+            // Duplicate content once for seamless infinite scroll
+            const originalHTML = track.innerHTML;
+            track.innerHTML = originalHTML + originalHTML;
+
             let animationFrame;
             let isPaused = false;
             let lastTimestamp = 0;
-            const scrollSpeedPerSecond = 30; // pixels per second
+            const scrollSpeedPerSecond = 35; // pixels per second
             const isRTL = document.documentElement.dir === 'rtl';
-            
+
+            // Determine scroll behavior (Chrome/Safari/Firefox handle scrollLeft in RTL differently)
+            let scrollPos = 0;
+
             const step = (timestamp) => {
+                if (!lastTimestamp) lastTimestamp = timestamp;
+                const elapsed = timestamp - lastTimestamp;
+                lastTimestamp = timestamp;
+
                 if (isPaused) {
                     animationFrame = requestAnimationFrame(step);
                     return;
                 }
-                
-                if (!lastTimestamp) lastTimestamp = timestamp;
-                const elapsed = timestamp - lastTimestamp;
-                lastTimestamp = timestamp;
-                
-                // Calculate movement based on time for consistent speed
+
                 const move = (scrollSpeedPerSecond * elapsed) / 1000;
+                const halfWidth = track.scrollWidth / 2;
 
                 if (!isRTL) {
-                    track.scrollLeft += move;
-                    if (track.scrollLeft >= (track.scrollWidth / 2)) {
-                        track.scrollLeft = 0;
-                    }
+                    scrollPos += move;
+                    if (scrollPos >= halfWidth) scrollPos = 0;
+                    track.scrollLeft = scrollPos;
                 } else {
-                    // RTL scrolling behavior varies by browser (Safari vs Chrome)
-                    // We use a safe approach by checking for half-width reset
-                    track.scrollLeft -= move;
-                    
-                    const absScroll = Math.abs(track.scrollLeft);
-                    const halfWidth = track.scrollWidth / 2;
-                    
-                    if (absScroll >= halfWidth) {
-                        track.scrollLeft = 0;
+                    // RTL Logic: Support varying browser implementations
+                    // We use a virtual scrollPos to avoid browser-specific scrollLeft negative/positive issues
+                    scrollPos += move;
+                    if (scrollPos >= halfWidth) scrollPos = 0;
+
+                    // Apply to scrollLeft based on browser's RTL interpretation
+                    // Most modern browsers (Chrome/Safari) treat scrollLeft as 0 at far right and negative as you move left
+                    // But some might treat it as Max at far right. 
+                    // To be safe, we try to set it relative to 0.
+                    track.scrollLeft = -scrollPos;
+
+                    // Critical check: if scrollLeft didn't change as expected (positive scrollLeft RTL)
+                    if (track.scrollLeft > 0) {
+                        track.scrollLeft = track.scrollWidth - track.clientWidth - scrollPos;
                     }
                 }
-                
+
                 animationFrame = requestAnimationFrame(step);
             };
 
             const startAutoScroll = () => {
                 isPaused = false;
-                lastTimestamp = 0; // Reset timestamp for smooth start
+                lastTimestamp = performance.now(); // Sync timestamp
             };
 
             const stopAutoScroll = () => {
@@ -144,8 +150,8 @@
             // Desktop
             track.addEventListener('mouseenter', stopAutoScroll);
             track.addEventListener('mouseleave', startAutoScroll);
-            
-            // Mobile Touch
+
+            // Mobile Interaction
             let touchTimeout;
             track.addEventListener('touchstart', () => {
                 stopAutoScroll();
@@ -153,33 +159,38 @@
             }, { passive: true });
 
             track.addEventListener('touchend', () => {
-                // Delay resume to let user finish interaction with momentum
-                touchTimeout = setTimeout(startAutoScroll, 2000);
+                // Sync internal scrollPos with manual scroll position
+                if (!isRTL) {
+                    scrollPos = track.scrollLeft % (track.scrollWidth / 2);
+                } else {
+                    scrollPos = Math.abs(track.scrollLeft) % (track.scrollWidth / 2);
+                }
+                touchTimeout = setTimeout(startAutoScroll, 2500);
             }, { passive: true });
         }
-        
+
         /**
          * @description Opens the product detail view.
          * @param {string} key - Product unique key.
          */
-        window.openFeaturedProduct = async function(key) {
-             console.log(`[Featured] Opening product: ${key}`);
-             
-             // 1. Show Loading Indicator
-             if (typeof Swal !== 'undefined') {
-                 const loadingTitle = window.langu('pv_loading_msg');
-                 Swal.fire({
-                     title: (loadingTitle === 'pv_loading_msg') ? 'جاري التحميل...' : loadingTitle,
-                     allowOutsideClick: false,
-                     customClass: {
-                         popup: 'swal-modern-mini-popup',
-                         title: 'swal-modern-mini-title'
-                     },
-                     didOpen: () => { Swal.showLoading(); }
-                 });
-             }
+        window.openFeaturedProduct = async function (key) {
+            console.log(`[Featured] Opening product: ${key}`);
 
-             try {
+            // 1. Show Loading Indicator
+            if (typeof Swal !== 'undefined') {
+                const loadingTitle = window.langu('pv_loading_msg');
+                Swal.fire({
+                    title: (loadingTitle === 'pv_loading_msg') ? 'جاري التحميل...' : loadingTitle,
+                    allowOutsideClick: false,
+                    customClass: {
+                        popup: 'swal-modern-mini-popup',
+                        title: 'swal-modern-mini-title'
+                    },
+                    didOpen: () => { Swal.showLoading(); }
+                });
+            }
+
+            try {
                 // 2. Fetch Full Product Data from Server
                 // This ensures we have Description, ImageName (full gallery), etc.
                 let productData = null;
@@ -207,7 +218,7 @@
                     productData.ImageName = productData.img;
                 }
 
-                const mappedData = typeof window.mapProductData === 'function' 
+                const mappedData = typeof window.mapProductData === 'function'
                     ? window.mapProductData(productData)
                     : productData;
 
@@ -218,12 +229,12 @@
 
                 if (typeof Swal !== 'undefined') Swal.close();
 
-             } catch (error) {
-                 console.error("[Featured] Error opening product details:", error);
-                  if (typeof Swal !== 'undefined') {
-                      Swal.fire(window.langu('gen_swal_error_title'), window.langu('pv_load_failed'), 'error');
-                  }
-             }
+            } catch (error) {
+                console.error("[Featured] Error opening product details:", error);
+                if (typeof Swal !== 'undefined') {
+                    Swal.fire(window.langu('gen_swal_error_title'), window.langu('pv_load_failed'), 'error');
+                }
+            }
         };
 
         // Expose to window to be called by home.html after data fetch
