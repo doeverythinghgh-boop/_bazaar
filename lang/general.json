@@ -247,17 +247,37 @@
     "ar": "لتحميل التطبيق، يرجى اتباع الآتي:",
     "en": "To install the app, please follow these steps:"
   },
-  "install_ios_video_title": {
-    "ar": "لتنصيب البرنامج كتطبيق وب اتبع الخطوات الاتية في الفيديو",
-    "en": "To install the app as a PWA, follow the steps in the video"
-  },
   "install_ios_step_1": {
-    "ar": "اضغط على زر <b>مشاركة</b> في الأسفل",
-    "en": "Tap the <b>Share</b> button at the bottom"
+    "ar": "1. اضغط على زر <b>مشاركة (Share)</b> في المتصفح.",
+    "en": "1. Tap the <b>Share</b> button in the browser."
   },
   "install_ios_step_2": {
-    "ar": "اختر <b>إضافة إلى الصفحة الرئيسية</b>",
-    "en": "Choose <b>Add to Home Screen</b>"
+    "ar": "2. قم بالتمرير لأسفل لتبحث عن خيار <b>إضافة إلى الصفحة الرئيسية</b>.",
+    "en": "2. Scroll down to find <b>Add to Home Screen</b>."
+  },
+  "install_ios_step_3": {
+    "ar": "3. اختر <b>إضافة إلى الصفحة الرئيسية (Add to Home Screen)</b> من القائمة.",
+    "en": "3. Select <b>Add to Home Screen</b> from the list."
+  },
+  "install_ios_step_4": {
+    "ar": "4. اضغط على كلمة <b>إضافة (Add)</b> في أعلى يمين الشاشة.",
+    "en": "4. Tap <b>Add</b> at the top right of the screen."
+  },
+  "pwa_install_small_text": {
+    "ar": "تنصيب كـ",
+    "en": "INSTALL AS"
+  },
+  "pwa_install_main_text": {
+    "ar": "تطبيق ويب PWA",
+    "en": "Web App PWA"
+  },
+  "play_store_get_it_on": {
+    "ar": "متوفر على",
+    "en": "GET IT ON"
+  },
+  "play_store_name": {
+    "ar": "جوجل بلاي",
+    "en": "Google Play"
   },
   "install_done_btn": {
     "ar": "تم",
