@@ -1,4 +1,4 @@
-<div style="background-color:var(--bg-color-light)"><div id="loader-container" class="loader"></div><div id="advertisement" style="background-color:var(--bg-color-light)"></div><div id="categories00" style="background-color:var(--bg-color-light)"></div></div><script>/**
+<div style="background-color:var(--bg-color-light)"><div id="loader-container" class="loader"></div><div id="advertisement" style="background-color:var(--bg-color-light)"></div><div id="featured-products" style="background-color:transparent"></div><div id="categories00" style="background-color:var(--bg-color-light)"></div></div><script>/**
    * @file pages/home.html
    * @description Main Home Page. Loads advertisements and categories dynamically.
    */
@@ -9,6 +9,7 @@
     const loaderElement = document.getElementById("loader-container");
     const contentElements = [
       document.getElementById("advertisement"),
+      document.getElementById("featured-products"),
       document.getElementById("categories00"),
     ];
     // To store the original display state of elements before hiding them.
@@ -25,12 +26,22 @@
     // Promise.all is used to ensure all parts are loaded before proceeding.
     await Promise.all([
       loader("pages/advertisement/advertisement.html", "advertisement", 0),
+      loader("pages/featured/featured.html", "featured-products", 100), // Load Featured
       loader("pages/categories/categories.html", "categories00", 300),
     ]);
 
     // Step 3: After content loading, initialize modules responsible for each part's functionality.
     // Initialize Advertisement Module.
     initAdverModule(document.getElementById("advertisement-section"));
+    // Initialize Selected Products Module (Admin Search) - Sync with Ads logic
+    // Initialize Selected Products Module (Admin Search) - Sync with Ads logic
+    if (typeof window.initSelectedProductsModule === 'function') {
+        await window.initSelectedProductsModule();
+        // After data is ready, initialize the Featured UI
+        if (typeof window.initFeaturedModule === 'function') {
+             window.initFeaturedModule();
+        }
+    }
     // Load and display categories.
     categories_loadCategoriesAsTable(); // Assume this function appends content to hidden elements.
 

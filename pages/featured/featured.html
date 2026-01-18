@@ -1,0 +1,137 @@
+<link rel="stylesheet" href="pages/featured/featured.css"><div id="featured-products-section"><div class="featured-header"><div class="featured-title"><i class="fas fa-star"></i> <span data-lkey="featured_products_title">الأكثر رواجاً</span></div></div><div class="featured-wrapper" style="overflow:hidden;width:100%"><div id="featured-track" class="featured-scroller"></div></div></div><script>/**
+     * @file pages/featured/featured.js
+     * @description Logic for displaying Featured Products (Favorites) banner.
+     */
+    (function() {
+        // Translation Key Addition (Dynamically adding if not exists, or relying on lang files)
+        // For now, hardcoded fallback in HTML, but we should use window.langu
+        const titleEl = document.querySelector('[data-lkey="featured_products_title"]');
+        if (titleEl) {
+           // We can add "featured_products_title" to general.json later.
+           // For now, let's just set text manually if translation missing.
+        }
+
+        async function initFeaturedModule() {
+            const container = document.getElementById('featured-products-section');
+            const track = document.getElementById('featured-track');
+            
+            // 1. Get Data from Global Cache
+            let products = [];
+            if (window.selectedSearchProductsSet && window.selectedSearchProductsSet.size > 0) {
+                // Convert Set to Array
+                products = Array.from(window.selectedSearchProductsSet);
+            } else {
+                // Try fetching if empty (unlikely if Home loaded correctly)
+                // If empty, hide section
+                container.style.display = 'none';
+                return;
+            }
+
+            // Filter out legacy strings (keys only) if we haven't upgraded them yet
+            // Or handle them gracefully (skip them as we can't show img/price)
+            const validProducts = products.filter(p => typeof p === 'object' && p.img);
+
+            if (validProducts.length === 0) {
+                // Check if Admin to show helper message
+                const userStr = localStorage.getItem('loggedInUser');
+                const user = userStr ? JSON.parse(userStr) : null;
+                const isAdmin = user && (user.user_key === '682dri6b' || user.enableDevConsole);
+                
+                if (isAdmin) {
+                    container.style.display = 'flex';
+                    container.innerHTML = `
+                        <div style="padding: 10px; text-align: center; border: 1px dashed #ccc; background: rgba(255,255,255,0.5); width: 100%; border-radius: 8px;">
+                            <i class="fas fa-info-circle text-primary"></i>
+                            <span style="font-size: 0.85rem; color: #555;">(Admin Only) No featured products selected. Check products in Search to add them.</span>
+                        </div>
+                    `;
+                } else {
+                    container.style.display = 'none';
+                }
+                return;
+            }
+
+            console.log(`[Featured] Displaying ${validProducts.length} items.`);
+            container.style.display = 'flex';
+
+            // 2. Build HTML
+            // Double the items for infinite scroll effect if count is small
+            let itemsToRender = validProducts;
+            if (validProducts.length < 10) {
+                itemsToRender = [...validProducts, ...validProducts, ...validProducts]; // Repeat to fill screen
+            }
+
+            // Shuffle array for randomness? Optional.
+            // itemsToRender.sort(() => Math.random() - 0.5);
+
+            track.innerHTML = itemsToRender.map(product => {
+                const imageUrl = product.img ? getPublicR2FileUrl(product.img) : 'images/placeholder.png';
+                const price = typeof product.price === 'number' ? product.price.toFixed(2) : product.price;
+                
+                return `
+                <div class="featured-card" onclick="openFeaturedProduct('${product.key}')">
+                    <div class="featured-img-container">
+                        <img src="${imageUrl}" class="featured-img" loading="lazy" alt="${product.name}">
+                    </div>
+                    <div class="featured-details">
+                        <div class="featured-name">${product.name}</div>
+                        <div class="featured-price">${price} ${window.langu('currency_egp')}</div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            // 3. Enable Marquee Animation if content overflows
+            // Check if content width > container width
+            // Actually, we force marquee class for visual effect
+            track.classList.add('marquee-container');
+
+            // Duplicate content for seamless loop
+            // We append the SAME HTML again to the end
+            track.innerHTML += track.innerHTML;
+        }
+
+        // Helper to open product
+        window.openFeaturedProduct = function(key) {
+            console.log(`[Featured] Opening product: ${key}`);
+            
+            // Find full object from cache
+            let productData = null;
+            if (window.selectedSearchProductsSet) {
+                 for (let item of window.selectedSearchProductsSet) {
+                     if (typeof item === 'object' && item.key === key) {
+                         productData = item;
+                         break;
+                     }
+                 }
+            }
+
+            if (!productData) {
+                console.error("Product data not found in cache");
+                return;
+            }
+
+            // Map flat meta object back to structure expected by loadProductView if needed
+            // loadProductView expects: { MainCategory, SubCategory, ... }
+            // Our meta has exactly that.
+            // However, loadProductView might expect 'product_key' instead of 'key'.
+            // Let's ensure compatibility.
+            const viewData = {
+                ...productData,
+                product_key: productData.key,
+                productName: productData.name,
+                product_price: productData.price,
+                // ImageName is not vital for view init, it fetches or uses passed data
+            };
+
+            if (typeof window.loadProductView === 'function') {
+                window.loadProductView(viewData, true);
+            } else {
+                console.error("loadProductView function missing");
+            }
+        };
+
+        // Initialize
+        // Expose to window to be called by home.html after data fetch
+        window.initFeaturedModule = initFeaturedModule;
+    })();</script>

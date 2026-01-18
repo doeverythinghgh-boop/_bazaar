@@ -1,4 +1,4 @@
-<style>#mainAdver_wrapper{background-color:var(--bg-color-light);color:var(--text-color-dark);line-height:1.5;padding:20px;width:100%;min-height:100%;box-sizing:border-box}#mainAdver_wrapper .mainAdver_header{background:var(--primary-color);color:#fff;padding:25px 30px;text-align:center;border-radius:8px;margin-bottom:20px}#mainAdver_wrapper .mainAdver_header h1{font-size:2.2rem;margin-bottom:10px;display:flex;align-items:center;justify-content:center;gap:15px;margin-top:0}#mainAdver_wrapper .mainAdver_header p{font-size:1.1rem;opacity:.9;margin-bottom:0}#mainAdver_wrapper .mainAdver_mainContent{padding:10px}#mainAdver_wrapper .mainAdver_imageUploader{background-color:var(--bg-color-white);border:2px dashed var(--border-color);border-radius:12px;padding:2rem;text-align:center;transition:background-color .3s;cursor:pointer;margin-bottom:20px}#mainAdver_wrapper .mainAdver_dropzoneText{color:var(--text-color-dark);font-weight:600;margin-bottom:.5rem;font-size:1.2rem}#mainAdver_wrapper .mainAdver_hint{color:var(--text-color-medium);font-size:.95rem;margin-top:10px}#mainAdver_wrapper .mainAdver_uploaderActions{margin-top:1rem;border-top:1px solid var(--border-color-soft);padding-top:1rem;display:flex;justify-content:center;gap:15px}#mainAdver_wrapper .mainAdver_previews{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;padding:10px;margin-top:1rem;width:100%;min-height:150px;max-height:400px;overflow-y:auto;background-color:var(--bg-color-light);border:1px solid var(--border-color);border-radius:8px}#mainAdver_wrapper .mainAdver_preview{position:relative;width:100%;border-radius:8px;overflow:hidden;transition:transform .2s ease,opacity .2s ease;background-color:var(--bg-color-white);box-shadow:var(--shadow-sm);display:flex;flex-direction:column}#mainAdver_wrapper .mainAdver_remove{position:absolute;top:5px;right:5px;background-color:rgba(220,53,69,.9);color:#fff;border:none;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .2s;z-index:10}#mainAdver_wrapper .mainAdver_resize{position:absolute;top:5px;right:38px;background-color:rgba(0,123,255,.9);color:#fff;border:none;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .2s;z-index:10}#mainAdver_wrapper .mainAdver_preview.mainAdver_selected .mainAdver_remove,#mainAdver_wrapper .mainAdver_preview.mainAdver_selected .mainAdver_resize,#mainAdver_wrapper .mainAdver_preview:hover .mainAdver_remove,#mainAdver_wrapper .mainAdver_preview:hover .mainAdver_resize{opacity:1}#mainAdver_wrapper .mainAdver_preview img{width:100%;height:110px;object-fit:cover;display:block}#mainAdver_wrapper .mainAdver_meta{background:rgba(0,0,0,.7);color:#fff;font-size:.7rem;padding:4px;text-align:center;width:100%}#mainAdver_wrapper .mainAdver_hiddenFile{display:none}.mainAdver_btn{padding:10px 20px;border:none;border-radius:8px;cursor:pointer;font-weight:600;font-size:1rem;transition:all .3s ease;display:inline-flex;align-items:center;justify-content:center;gap:8px}.mainAdver_btnPrimary{background-color:#007bff;color:#fff}.mainAdver_btnGhost{background:0 0;color:var(--text-color-dark);border:1px solid var(--border-color)}.mainAdver_btnIcon{padding:10px;border-radius:50%;width:45px;height:45px}#mainAdver_wrapper .mainAdver_submitContainer{margin-top:30px;text-align:center;padding:20px;border-top:1px solid var(--border-color-soft)}#mainAdver_wrapper .mainAdver_infoBox{background-color:var(--bg-color-alt-1);border-radius:8px;padding:15px;margin-top:20px;border-left:4px solid var(--primary-color);border-right:none;margin-bottom:2rem}#mainAdver_wrapper .mainAdver_infoBox h3{color:var(--text-color-dark);margin-bottom:10px;display:flex;align-items:center;gap:10px;margin-top:0}#mainAdver_wrapper .mainAdver_infoBox ul{list-style-type:none;padding:0;margin:0}#mainAdver_wrapper .mainAdver_infoBox li{margin-bottom:8px;display:flex;align-items:center;gap:10px}#mainAdver_wrapper .mainAdver_infoBox li i{color:#3498db;min-width:20px}#mainAdver_cameraModalContainer{position:fixed;top:0;left:0;width:100vw;height:100vh;background-color:rgba(0,0,0,.9);display:none;justify-content:center;align-items:center;z-index:99999}#mainAdver_cameraModalContainer .mainAdver_cameraModalContent{background-color:var(--bg-color-white);border-radius:15px;width:90%;max-width:700px;padding:20px;position:relative;max-height:90vh;overflow-y:auto}</style><div id="mainAdver_wrapper"><div class="mainAdver_mainContent"><div class="mainAdver_infoBox"><h3><i class="fas fa-info-circle"></i> معلومات النظام</h3><ul><li><i class="fas fa-check-circle"></i> الحد الأقصى للصور: 10 صور</li><li><i class="fas fa-check-circle"></i> التنسيقات المدعومة: جميع تنسيقات الصور</li><li><i class="fas fa-check-circle"></i> يتم ضغط الصور تلقائياً</li></ul></div><form id="mainAdver_form" novalidate onsubmit="return false;"><section class="mainAdver_formGroup"><div class="mainAdver_imageUploader" id="mainAdver_imageUploader"><input class="mainAdver_hiddenFile" id="mainAdver_fileInput" type="file" accept="image/*" multiple="multiple"><div class="mainAdver_uploaderActions"><button type="button" class="mainAdver_btn mainAdver_btnGhost mainAdver_btnIcon" id="mainAdver_pickFilesBtn" title="اختر صورًا"><i class="fas fa-folder-open"></i></button> <button type="button" class="mainAdver_btn mainAdver_btnGhost mainAdver_btnIcon" id="mainAdver_takePhotoBtn" title="التقاط من الكاميرا"><i class="fas fa-camera"></i></button> <button type="button" class="mainAdver_btn mainAdver_btnGhost mainAdver_btnIcon" id="mainAdver_clearAllBtn" title="مسح الكل"><i class="fas fa-trash-alt"></i></button></div><div class="mainAdver_previews" id="mainAdver_previews"><div id="mainAdver_imagesLoader" style="text-align:center;padding:20px;display:none;color:var(--text-color-medium)"><i class="fas fa-spinner fa-spin fa-2x"></i><br>جاري التحميل...</div></div></div></section><div class="mainAdver_submitContainer"><button type="submit" class="mainAdver_btn mainAdver_btnPrimary" style="padding:12px 40px;font-size:1.1rem"><i class="fas fa-paper-plane"></i> نشر الإعلان الآن</button></div></form></div></div><div id="mainAdver_cameraModalContainer"></div><script>// Ensure the script is clean and isolated (Isolated Scope) to avoid variable conflicts
+<style>#mainAdver_wrapper{background-color:var(--bg-color-light);color:var(--text-color-dark);line-height:1.5;padding:20px;width:100%;min-height:100%;box-sizing:border-box}#mainAdver_wrapper .mainAdver_header{background:var(--primary-color);color:#fff;padding:25px 30px;text-align:center;border-radius:8px;margin-bottom:20px}#mainAdver_wrapper .mainAdver_header h1{font-size:2.2rem;margin-bottom:10px;display:flex;align-items:center;justify-content:center;gap:15px;margin-top:0}#mainAdver_wrapper .mainAdver_header p{font-size:1.1rem;opacity:.9;margin-bottom:0}#mainAdver_wrapper .mainAdver_mainContent{padding:10px}#mainAdver_wrapper .mainAdver_imageUploader{background-color:var(--bg-color-white);border:2px dashed var(--border-color);border-radius:12px;padding:2rem;text-align:center;transition:background-color .3s;cursor:pointer;margin-bottom:20px}#mainAdver_wrapper .mainAdver_dropzoneText{color:var(--text-color-dark);font-weight:600;margin-bottom:.5rem;font-size:1.2rem}#mainAdver_wrapper .mainAdver_hint{color:var(--text-color-medium);font-size:.95rem;margin-top:10px}#mainAdver_wrapper .mainAdver_uploaderActions{margin-top:1rem;border-top:1px solid var(--border-color-soft);padding-top:1rem;display:flex;justify-content:center;gap:15px}#mainAdver_wrapper .mainAdver_previews{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;padding:10px;margin-top:1rem;width:100%;min-height:150px;max-height:400px;overflow-y:auto;background-color:var(--bg-color-light);border:1px solid var(--border-color);border-radius:8px}#mainAdver_wrapper .mainAdver_preview{position:relative;width:100%;border-radius:8px;overflow:hidden;transition:transform .2s ease,opacity .2s ease;background-color:var(--bg-color-white);box-shadow:var(--shadow-sm);display:flex;flex-direction:column}#mainAdver_wrapper .mainAdver_remove{position:absolute;top:5px;right:5px;background-color:rgba(220,53,69,.9);color:#fff;border:none;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .2s;z-index:10}#mainAdver_wrapper .mainAdver_resize{position:absolute;top:5px;right:38px;background-color:rgba(0,123,255,.9);color:#fff;border:none;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .2s;z-index:10}#mainAdver_wrapper .mainAdver_preview.mainAdver_selected .mainAdver_remove,#mainAdver_wrapper .mainAdver_preview.mainAdver_selected .mainAdver_resize,#mainAdver_wrapper .mainAdver_preview:hover .mainAdver_remove,#mainAdver_wrapper .mainAdver_preview:hover .mainAdver_resize{opacity:1}#mainAdver_wrapper .mainAdver_preview img{width:100%;height:110px;object-fit:cover;display:block}#mainAdver_wrapper .mainAdver_meta{background:rgba(0,0,0,.7);color:#fff;font-size:.7rem;padding:4px;text-align:center;width:100%}#mainAdver_wrapper .mainAdver_hiddenFile{display:none}.mainAdver_btn{padding:10px 20px;border:none;border-radius:8px;cursor:pointer;font-weight:600;font-size:1rem;transition:all .3s ease;display:inline-flex;align-items:center;justify-content:center;gap:8px}.mainAdver_btnPrimary{background-color:#007bff;color:#fff}.mainAdver_btnGhost{background:0 0;color:var(--text-color-dark);border:1px solid var(--border-color)}.mainAdver_btnIcon{padding:10px;border-radius:50%;width:45px;height:45px}#mainAdver_wrapper .mainAdver_submitContainer{margin-top:30px;text-align:center;padding:20px;border-top:1px solid var(--border-color-soft)}#mainAdver_wrapper .mainAdver_infoBox{background-color:var(--bg-color-alt-1);border-radius:8px;padding:15px;margin-top:20px;border-left:4px solid var(--primary-color);border-right:none;margin-bottom:2rem}#mainAdver_wrapper .mainAdver_infoBox h3{color:var(--text-color-dark);margin-bottom:10px;display:flex;align-items:center;gap:10px;margin-top:0}#mainAdver_wrapper .mainAdver_infoBox ul{list-style-type:none;padding:0;margin:0}#mainAdver_wrapper .mainAdver_infoBox li{margin-bottom:8px;display:flex;align-items:center;gap:10px}#mainAdver_wrapper .mainAdver_infoBox li i{color:#3498db;min-width:20px}#mainAdver_cameraModalContainer{position:fixed;top:0;left:0;width:100vw;height:100vh;background-color:rgba(0,0,0,.9);display:none;justify-content:center;align-items:center;z-index:99999}#mainAdver_cameraModalContainer .mainAdver_cameraModalContent{background-color:var(--bg-color-white);border-radius:15px;width:90%;max-width:700px;padding:20px;position:relative;max-height:90vh;overflow-y:auto}#featured_list_container{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:15px;max-height:500px;overflow-y:auto;padding:5px}.featured-admin-card{position:relative;background:var(--bg-color-white);border:1px solid var(--border-color);padding:8px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,.05);transition:transform .2s;display:flex;flex-direction:column}.featured-admin-card:hover{transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,.1)}.featured-admin-image-box{height:110px;overflow:hidden;border-radius:6px;background:#f9f9f9;margin-bottom:8px}.featured-admin-image-box img{width:100%;height:100%;object-fit:cover}@media (max-width:480px){#featured_list_container{grid-template-columns:repeat(2,1fr);gap:10px}}</style><div id="mainAdver_wrapper"><div class="mainAdver_mainContent" id="mainAdver_content_area"><div class="mainAdver_infoBox" id="mainAdver_system_info_box"><h3 id="mainAdver_system_info_title"><i class="fas fa-info-circle"></i> معلومات النظام</h3><ul id="mainAdver_system_info_list"><li id="mainAdver_sys_item_max"><i class="fas fa-check-circle"></i> الحد الأقصى للصور: 10 صور</li><li id="mainAdver_sys_item_format"><i class="fas fa-check-circle"></i> التنسيقات المدعومة: جميع تنسيقات الصور</li><li id="mainAdver_sys_item_compress"><i class="fas fa-check-circle"></i> يتم ضغط الصور تلقائياً</li></ul></div><form id="mainAdver_form" novalidate onsubmit="return false;"><section class="mainAdver_formGroup" id="mainAdver_upload_section"><div class="mainAdver_imageUploader" id="mainAdver_imageUploader"><input class="mainAdver_hiddenFile" id="mainAdver_fileInput" type="file" accept="image/*" multiple="multiple"><div class="mainAdver_uploaderActions" id="mainAdver_uploader_actions"><button type="button" class="mainAdver_btn mainAdver_btnGhost mainAdver_btnIcon" id="mainAdver_pickFilesBtn" title="اختر صورًا"><i class="fas fa-folder-open"></i></button> <button type="button" class="mainAdver_btn mainAdver_btnGhost mainAdver_btnIcon" id="mainAdver_takePhotoBtn" title="التقاط من الكاميرا"><i class="fas fa-camera"></i></button> <button type="button" class="mainAdver_btn mainAdver_btnGhost mainAdver_btnIcon" id="mainAdver_clearAllBtn" title="مسح الكل"><i class="fas fa-trash-alt"></i></button></div><div class="mainAdver_previews" id="mainAdver_previews"><div id="mainAdver_imagesLoader" style="text-align:center;padding:20px;display:none;color:var(--text-color-medium)"><i class="fas fa-spinner fa-spin fa-2x"></i><br>جاري التحميل...</div></div></div></section><div class="mainAdver_submitContainer" id="mainAdver_submit_container"><button type="submit" class="mainAdver_btn mainAdver_btnPrimary" id="mainAdver_submit_btn" style="padding:12px 40px;font-size:1.1rem"><i class="fas fa-paper-plane"></i> نشر الإعلان الآن</button></div></form><hr style="margin:30px 0;border:0;border-top:2px dashed var(--border-color)" id="mainAdver_featured_separator"><div class="mainAdver_infoBox" style="background-color:var(--bg-color-white);border-left-color:#ffc107" id="mainAdver_featured_container"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px" id="mainAdver_featured_header"><h3 style="margin:0" id="mainAdver_featured_title"><i class="fas fa-star" style="color:#ffc107"></i> إدارة المنتجات المختارة (Favorites)</h3><button type="button" class="mainAdver_btn mainAdver_btnGhost" id="btnRefreshFeatured" title="تحديث القائمة"><i class="fas fa-sync"></i></button></div><div id="featured_list_container" class="mainAdver_previews" style="max-height:500px;display:flex;flex-wrap:wrap;gap:10px"><div style="text-align:center;width:100%;padding:20px;color:grey" id="featured_list_loader">جاري التحميل...</div></div></div></div></div><div id="mainAdver_cameraModalContainer"></div><script>// Ensure the script is clean and isolated (Isolated Scope) to avoid variable conflicts
     (function () {
         /**
          * @function addUpdate
@@ -567,7 +567,110 @@
             }
         };
 
+        // --- Featured Products Management Logic ---
+        const FeaturedManager = {
+            list: [],
+            init: async function() {
+                 document.getElementById('btnRefreshFeatured').addEventListener('click', () => this.load());
+                 await this.load();
+            },
+            load: async function() {
+                const container = document.getElementById('featured_list_container');
+                container.innerHTML = '<div style="text-align: center; width: 100%; padding: 20px; color: grey;"><i class="fas fa-spinner fa-spin"></i> جاري التحميل...</div>';
+                
+                try {
+                    // Bypass cache with timestamp
+                    const res = await fetch(`${R2_PUBLIC_URL}/selected_search_products.json?t=${Date.now()}`);
+                    if (res.ok) {
+                        this.list = await res.json();
+                        this.render();
+                    } else {
+                        // If 404, empty list
+                        this.list = [];
+                        this.render();
+                    }
+                } catch(e) {
+                    console.error("Featured Load Error", e);
+                    container.innerHTML = '<div style="color:red; text-align:center;">حدث خطأ في التحميل.</div>';
+                }
+            },
+            render: function() {
+                const container = document.getElementById('featured_list_container');
+                container.innerHTML = '';
+                
+                // Filter valid objects
+                // We might have legacy strings, handle them
+                const validItems = this.list.filter(item => typeof item === 'object' && item.key);
+                
+                if (validItems.length === 0) {
+                     container.innerHTML = '<div style="text-align: center; width: 100%; padding: 20px; color: grey;">لا توجد منتجات مختارة حالياً.</div>';
+                     return;
+                }
+                
+                validItems.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'featured-admin-card'; // Use CSS class
+                    // Removed inline styles
+                    
+                    const imgUrl = item.img ? (item.img.startsWith('http') ? item.img : `${R2_PUBLIC_URL}/${item.img}`) : 'images/placeholder.png';
+                    
+                    div.innerHTML = `
+                        <div class="featured-admin-image-box">
+                            <img src="${imgUrl}">
+                        </div>
+                        <div style="font-size: 0.8rem; font-weight: bold; margin-top: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.name || 'بدون اسم'}</div>
+                        <div style="font-size: 0.75rem; color: green;">${item.price} EGP</div>
+                        <button type="button" class="mainAdver_remove" title="حذف من المفضلة" style="position: absolute; top: -8px; right: -8px; width: 25px; height: 25px; line-height: 25px; font-size: 12px; opacity: 1;">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    `;
+                    
+                    // Delete Action
+                    div.querySelector('button').onclick = () => this.remove(item.key);
+                    
+                    container.appendChild(div);
+                });
+            },
+            remove: function(key) {
+                Swal.fire({
+                    title: 'حذف المنتج؟',
+                    text: "سيتم إزالة المنتج من القائمة المفضلة فوراً.",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#d33',
+                    cancelButtonColor: '#3085d6',
+                    confirmButtonText: 'نعم، احذف',
+                    cancelButtonText: 'إلغاء'
+                }).then(async (result) => {
+                    if (result.isConfirmed) {
+                        try {
+                            // Filter logic: Remove match either by string or Object key
+                            // But we loaded objects.
+                            const newList = this.list.filter(item => {
+                                if (typeof item === 'string') return item !== key;
+                                return item.key !== key;
+                            });
+                            
+                            this.list = newList; // Optimistic UI update? No, let's wait save.
+                            
+                            // Save to R2
+                            const blob = new Blob([JSON.stringify(newList)], { type: 'application/json' });
+                            Swal.showLoading();
+                            await uploadFile2cf(blob, 'selected_search_products.json');
+                             
+                            Swal.fire('تم الحذف!', 'تم تحديث القائمة بنجاح.', 'success');
+                            this.render(); // Re-render with new local list
+                        } catch(e) {
+                            console.error(e);
+                            Swal.fire('خطأ', 'فشل في حفظ التغييرات.', 'error');
+                        }
+                    }
+                });
+            }
+        };
+
         // --- Startup ---
         loadImages();
+        if (FeaturedManager) FeaturedManager.init();
 
     })();</script>
