@@ -88,36 +88,57 @@
             // Duplicate content once for seamless infinite scroll (LTR)
             track.innerHTML += track.innerHTML; 
             
-            let scrollInterval;
-            const scrollSpeed = 1; 
-            const scrollDelay = 30; 
+            let animationFrame;
+            let isPaused = false;
+            let lastTimestamp = 0;
+            const scrollSpeedPerSecond = 30; // pixels per second
             const isRTL = document.documentElement.dir === 'rtl';
             
-            const startAutoScroll = () => {
-                stopAutoScroll();
-                scrollInterval = setInterval(() => {
-                    if (!isRTL) {
-                        // LTR Logic
-                        track.scrollLeft += scrollSpeed;
-                        if (track.scrollLeft >= (track.scrollWidth / 2)) {
-                            track.scrollLeft = 0;
-                        }
-                    } else {
-                        // RTL Logic (Simplified)
-                        track.scrollLeft -= scrollSpeed;
-                        if (Math.abs(track.scrollLeft) >= (track.scrollWidth / 2)) {
-                            track.scrollLeft = 0;
-                        }
+            const step = (timestamp) => {
+                if (isPaused) {
+                    animationFrame = requestAnimationFrame(step);
+                    return;
+                }
+                
+                if (!lastTimestamp) lastTimestamp = timestamp;
+                const elapsed = timestamp - lastTimestamp;
+                lastTimestamp = timestamp;
+                
+                // Calculate movement based on time for consistent speed
+                const move = (scrollSpeedPerSecond * elapsed) / 1000;
+
+                if (!isRTL) {
+                    track.scrollLeft += move;
+                    if (track.scrollLeft >= (track.scrollWidth / 2)) {
+                        track.scrollLeft = 0;
                     }
-                }, scrollDelay);
+                } else {
+                    // RTL scrolling behavior varies by browser (Safari vs Chrome)
+                    // We use a safe approach by checking for half-width reset
+                    track.scrollLeft -= move;
+                    
+                    const absScroll = Math.abs(track.scrollLeft);
+                    const halfWidth = track.scrollWidth / 2;
+                    
+                    if (absScroll >= halfWidth) {
+                        track.scrollLeft = 0;
+                    }
+                }
+                
+                animationFrame = requestAnimationFrame(step);
+            };
+
+            const startAutoScroll = () => {
+                isPaused = false;
+                lastTimestamp = 0; // Reset timestamp for smooth start
             };
 
             const stopAutoScroll = () => {
-                if (scrollInterval) clearInterval(scrollInterval);
+                isPaused = true;
             };
 
-            // Initial Start
-            startAutoScroll();
+            // Start animation loop
+            animationFrame = requestAnimationFrame(step);
 
             // Event Listeners for Pause/Resume
             // Desktop
@@ -125,10 +146,15 @@
             track.addEventListener('mouseleave', startAutoScroll);
             
             // Mobile Touch
-            track.addEventListener('touchstart', stopAutoScroll, { passive: true });
+            let touchTimeout;
+            track.addEventListener('touchstart', () => {
+                stopAutoScroll();
+                if (touchTimeout) clearTimeout(touchTimeout);
+            }, { passive: true });
+
             track.addEventListener('touchend', () => {
-                // Delay resume to let user finish interaction
-                setTimeout(startAutoScroll, 1500);
+                // Delay resume to let user finish interaction with momentum
+                touchTimeout = setTimeout(startAutoScroll, 2000);
             }, { passive: true });
         }
         
