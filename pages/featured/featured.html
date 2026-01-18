@@ -1,19 +1,19 @@
-<link rel="stylesheet" href="pages/featured/featured.css"><div id="featured-products-section"><div class="featured-header"><div class="featured-title"><i class="fas fa-star"></i> <span data-lkey="featured_products_title">الأكثر رواجاً</span></div></div><div class="featured-wrapper" style="overflow:hidden;width:100%"><div id="featured-track" class="featured-scroller"></div></div></div><script>/**
+<link rel="stylesheet" href="pages/featured/featured.css"><div id="featured-products-section"><div class="featured-header" id="featured-header-container"><div class="featured-title section-header-custom" id="featured-title-wrapper"><div class="section-header-icon-container" id="featured-icon-container"><i class="fas fa-star" id="featured-title-icon"></i></div><span id="featured-title-text" data-lkey="featured_products_title">الأكثر رواجاً</span></div></div><div class="featured-wrapper" id="featured-scroller-wrapper" style="overflow:hidden;width:100%"><div id="featured-track" class="featured-scroller"></div></div></div><script>/**
      * @file pages/featured/featured.js
      * @description Logic for displaying Featured Products (Favorites) banner.
      */
     (function () {
         // Translation Key Addition (Dynamically adding if not exists, or relying on lang files)
         // For now, hardcoded fallback in HTML, but we should use window.langu
-        const titleEl = document.querySelector('[data-lkey="featured_products_title"]');
-        if (titleEl) {
-            // We can add "featured_products_title" to general.json later.
-            // For now, let's just set text manually if translation missing.
-        }
 
         async function initFeaturedModule() {
             const container = document.getElementById('featured-products-section');
             const track = document.getElementById('featured-track');
+
+            // Apply translations to the component
+            if (typeof window.applyAppTranslations === 'function') {
+                window.applyAppTranslations();
+            }
 
             // 1. Get Data from Global Cache
             let products = [];

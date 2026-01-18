@@ -1,4 +1,4 @@
-<div style="background-color:var(--bg-color-light)"><div id="loader-container" class="loader"></div><div id="advertisement" style="background-color:var(--bg-color-light)"></div><div id="featured-products" style="background-color:transparent"></div><div id="categories00" style="background-color:var(--bg-color-light)"></div></div><script>/**
+<div id="home-main-wrapper" style="background-color:var(--bg-color-light)"><div id="loader-container" class="loader"></div><div class="section-header-custom" id="home-ads-header" style="display:none"><div class="section-header-icon-container" id="home-ads-icon-container"><i class="fas fa-bullhorn" id="home-ads-icon"></i></div><span id="home-ads-title-text" data-lkey="home_ads_title">العروض المميزة</span></div><div id="advertisement" style="background-color:var(--bg-color-light)"></div><div id="featured-products" style="background-color:transparent"></div><div class="section-header-custom" id="home-categories-header" style="display:none"><div class="section-header-icon-container" id="home-categories-icon-container"><i class="fas fa-store" id="home-categories-icon"></i></div><span id="home-categories-title-text" data-lkey="home_categories_title">أسواق السويس</span></div><div id="categories00" style="background-color:var(--bg-color-light)"></div></div><script>/**
    * @file pages/home.html
    * @description Main Home Page. Loads advertisements and categories dynamically.
    */
@@ -36,11 +36,11 @@
     // Initialize Selected Products Module (Admin Search) - Sync with Ads logic
     // Initialize Selected Products Module (Admin Search) - Sync with Ads logic
     if (typeof window.initSelectedProductsModule === 'function') {
-        await window.initSelectedProductsModule();
-        // After data is ready, initialize the Featured UI
-        if (typeof window.initFeaturedModule === 'function') {
-             window.initFeaturedModule();
-        }
+      await window.initSelectedProductsModule();
+      // After data is ready, initialize the Featured UI
+      if (typeof window.initFeaturedModule === 'function') {
+        window.initFeaturedModule();
+      }
     }
     // Load and display categories.
     categories_loadCategoriesAsTable(); // Assume this function appends content to hidden elements.
@@ -49,6 +49,14 @@
     contentElements.forEach(
       (el) => (el.style.display = originalDisplays.get(el))
     );
+
+    // Show and translate custom headers
+    document.getElementById('home-ads-header').style.display = 'flex';
+    document.getElementById('home-categories-header').style.display = 'flex';
+    if (typeof window.applyAppTranslations === 'function') {
+      window.applyAppTranslations();
+    }
+
     loaderElement.style.display = "none";
 
     // Step 5: Fetch and display application version
