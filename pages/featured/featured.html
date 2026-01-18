@@ -67,7 +67,10 @@
             track.innerHTML = itemsToRender.map(product => {
                 const imageUrl = product.img ? getPublicR2FileUrl(product.img) : 'images/placeholder.png';
                 const price = typeof product.price === 'number' ? product.price.toFixed(2) : product.price;
-                
+                const isService = (typeof isServiceCategory === 'function') 
+                    ? isServiceCategory(product.MainCategory, product.SubCategory)
+                    : false;
+
                 return `
                 <div class="featured-card" onclick="openFeaturedProduct('${product.key}')">
                     <div class="featured-img-container">
@@ -75,63 +78,128 @@
                     </div>
                     <div class="featured-details">
                         <div class="featured-name">${product.name}</div>
-                        <div class="featured-price">${price} ${window.langu('currency_egp')}</div>
+                        ${!isService ? `<div class="featured-price">${price} ${window.langu('currency_egp')}</div>` : ''}
                     </div>
                 </div>
                 `;
             }).join('');
 
-            // 3. Enable Marquee Animation if content overflows
-            // Check if content width > container width
-            // Actually, we force marquee class for visual effect
-            track.classList.add('marquee-container');
-
-            // Duplicate content for seamless loop
-            // We append the SAME HTML again to the end
-            track.innerHTML += track.innerHTML;
-        }
-
-        // Helper to open product
-        window.openFeaturedProduct = function(key) {
-            console.log(`[Featured] Opening product: ${key}`);
+            // 3. Enable JS Auto-Scroll (Support Touch & Pause)
+            // Duplicate content once for seamless infinite scroll (LTR)
+            track.innerHTML += track.innerHTML; 
             
-            // Find full object from cache
-            let productData = null;
-            if (window.selectedSearchProductsSet) {
-                 for (let item of window.selectedSearchProductsSet) {
-                     if (typeof item === 'object' && item.key === key) {
-                         productData = item;
-                         break;
-                     }
-                 }
-            }
-
-            if (!productData) {
-                console.error("Product data not found in cache");
-                return;
-            }
-
-            // Map flat meta object back to structure expected by loadProductView if needed
-            // loadProductView expects: { MainCategory, SubCategory, ... }
-            // Our meta has exactly that.
-            // However, loadProductView might expect 'product_key' instead of 'key'.
-            // Let's ensure compatibility.
-            const viewData = {
-                ...productData,
-                product_key: productData.key,
-                productName: productData.name,
-                product_price: productData.price,
-                // ImageName is not vital for view init, it fetches or uses passed data
+            let scrollInterval;
+            const scrollSpeed = 1; 
+            const scrollDelay = 30; 
+            const isRTL = document.documentElement.dir === 'rtl';
+            
+            const startAutoScroll = () => {
+                stopAutoScroll();
+                scrollInterval = setInterval(() => {
+                    if (!isRTL) {
+                        // LTR Logic
+                        track.scrollLeft += scrollSpeed;
+                        if (track.scrollLeft >= (track.scrollWidth / 2)) {
+                            track.scrollLeft = 0;
+                        }
+                    } else {
+                        // RTL Logic (Simplified)
+                        track.scrollLeft -= scrollSpeed;
+                        if (Math.abs(track.scrollLeft) >= (track.scrollWidth / 2)) {
+                            track.scrollLeft = 0;
+                        }
+                    }
+                }, scrollDelay);
             };
 
-            if (typeof window.loadProductView === 'function') {
-                window.loadProductView(viewData, true);
-            } else {
-                console.error("loadProductView function missing");
-            }
+            const stopAutoScroll = () => {
+                if (scrollInterval) clearInterval(scrollInterval);
+            };
+
+            // Initial Start
+            startAutoScroll();
+
+            // Event Listeners for Pause/Resume
+            // Desktop
+            track.addEventListener('mouseenter', stopAutoScroll);
+            track.addEventListener('mouseleave', startAutoScroll);
+            
+            // Mobile Touch
+            track.addEventListener('touchstart', stopAutoScroll, { passive: true });
+            track.addEventListener('touchend', () => {
+                // Delay resume to let user finish interaction
+                setTimeout(startAutoScroll, 1500);
+            }, { passive: true });
+        }
+        
+        /**
+         * @description Opens the product detail view.
+         * @param {string} key - Product unique key.
+         */
+        window.openFeaturedProduct = async function(key) {
+             console.log(`[Featured] Opening product: ${key}`);
+             
+             // 1. Show Loading Indicator
+             if (typeof Swal !== 'undefined') {
+                 const loadingTitle = window.langu('pv_loading_msg');
+                 Swal.fire({
+                     title: (loadingTitle === 'pv_loading_msg') ? 'جاري التحميل...' : loadingTitle,
+                     allowOutsideClick: false,
+                     customClass: {
+                         popup: 'swal-modern-mini-popup',
+                         title: 'swal-modern-mini-title'
+                     },
+                     didOpen: () => { Swal.showLoading(); }
+                 });
+             }
+
+             try {
+                // 2. Fetch Full Product Data from Server
+                // This ensures we have Description, ImageName (full gallery), etc.
+                let productData = null;
+                if (typeof window.getProductByKey === 'function') {
+                    productData = await window.getProductByKey(key);
+                }
+
+                // Fallback to local data if fetch fails
+                if (!productData && window.selectedSearchProductsSet) {
+                    for (let item of window.selectedSearchProductsSet) {
+                        if (typeof item === 'object' && item.key === key) {
+                            productData = item;
+                            break;
+                        }
+                    }
+                }
+
+                if (!productData) {
+                    throw new Error("Product not found");
+                }
+
+                // 3. Map Data using unified mapper
+                // Handle migration for locally stored items
+                if (!productData.ImageName && productData.img) {
+                    productData.ImageName = productData.img;
+                }
+
+                const mappedData = typeof window.mapProductData === 'function' 
+                    ? window.mapProductData(productData)
+                    : productData;
+
+                // 4. Load View
+                if (typeof window.loadProductView === 'function') {
+                    window.loadProductView(mappedData, true);
+                }
+
+                if (typeof Swal !== 'undefined') Swal.close();
+
+             } catch (error) {
+                 console.error("[Featured] Error opening product details:", error);
+                  if (typeof Swal !== 'undefined') {
+                      Swal.fire(window.langu('gen_swal_error_title'), window.langu('pv_load_failed'), 'error');
+                  }
+             }
         };
 
-        // Initialize
         // Expose to window to be called by home.html after data fetch
         window.initFeaturedModule = initFeaturedModule;
     })();</script>
