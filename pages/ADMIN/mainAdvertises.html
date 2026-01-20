@@ -104,36 +104,56 @@
          * @returns {Promise<Blob|File>} - The compressed image as a Blob, or the original file on failure.
          */
         async function compressImage(file) {
+            let imgBitmap = null;
             try {
-                const bitmap = await createImageBitmap(file);
-                let { width, height } = bitmap;
+                // [OPTIMIZATION] Pre-calculate target size
+                const tempImg = new Image();
+                const dimensions = await new Promise((res) => {
+                    const url = URL.createObjectURL(file);
+                    tempImg.onload = () => {
+                        const w = tempImg.width;
+                        const h = tempImg.height;
+                        URL.revokeObjectURL(url);
+                        res({ w, h });
+                    };
+                    tempImg.src = url;
+                    tempImg.onerror = () => { URL.revokeObjectURL(url); res({ w: 1000, h: 1000 }); };
+                });
 
-                // Calculate scaling ratio to maintain aspect ratio
-                const ratio = Math.min(1, IMAGE_MAX_WIDTH / width, IMAGE_MAX_HEIGHT / height);
-                const w = Math.round(width * ratio);
-                const h = Math.round(height * ratio);
+                const ratio = Math.min(1, IMAGE_MAX_WIDTH / dimensions.w, IMAGE_MAX_HEIGHT / dimensions.h);
+                const w = Math.round(dimensions.w * ratio);
+                const h = Math.round(dimensions.h * ratio);
 
-                // Create Canvas for drawing
-                const canvas = document.createElement('canvas');
-                canvas.width = w; canvas.height = h;
+                // [MEMORY] Resize directly during bitmap creation
+                if ('createImageBitmap' in self && typeof createImageBitmap === 'function') {
+                    try {
+                        imgBitmap = await createImageBitmap(file, {
+                            resizeWidth: w,
+                            resizeHeight: h,
+                            resizeQuality: 'medium'
+                        });
+                    } catch (e) {
+                        imgBitmap = await createImageBitmap(file);
+                    }
+                } else {
+                    imgBitmap = await createImageBitmap(file);
+                }
+
+                const canvas = Object.assign(document.createElement('canvas'), { width: w, height: h });
                 const ctx = canvas.getContext('2d');
 
-                // White background for JPEG images (to avoid black backgrounds for transparent images)
                 ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--bg-color-white') || '#FFFFFF';
                 ctx.fillRect(0, 0, w, h);
-                ctx.drawImage(bitmap, 0, 0, w, h);
+                ctx.drawImage(imgBitmap, 0, 0, w, h);
 
                 const isWebP = await webP_Promise;
-                // Convert to WebP or JPEG
                 const blob = await new Promise(r => canvas.toBlob(r, isWebP ? 'image/webp' : 'image/jpeg', IMAGE_QUALITY));
-
-                // Clean up memory
-                try { bitmap.close(); } catch { }
-
                 return blob;
             } catch (err) {
-                console.warn("فشل الضغط، جاري استخدام الصورة الأصلية.", err);
+                console.warn("[AdminAdver] فشل الضغط المطور، العودة للأصل.", err);
                 return file;
+            } finally {
+                if (imgBitmap) try { imgBitmap.close(); } catch (e) { }
             }
         }
 
@@ -342,21 +362,42 @@
                 return;
             }
 
-            for (const file of fileList) {
-                if (!file.type.startsWith('image/')) continue; // Ignore non-image files
+            console.log(`[AdminAdver] معالجة ${fileList.length} ملفات إعلانات جديدة.`);
+            const filesArr = Array.from(fileList);
+
+            // [OPTIMIZATION] Sequential processing for Admin as well
+            for (const file of filesArr) {
+                if (!file.type.startsWith('image/')) continue;
 
                 const id = genId();
                 const state = { id, file, compressedBlob: null, status: 'pending', query: '' };
                 images.push(state);
                 createPreview(state);
 
-                // Start compression
-                state.status = 'compressing';
-                state.compressedBlob = await compressImage(file);
-                state.status = 'ready';
-                if (state._metaEl) state._metaEl.textContent = 'جاهز'; // Ready for upload
+                try {
+                    console.log(`[AdminAdver] ضغط إعلان: ${file.name}`);
+                    state.status = 'compressing';
+                    if (state._el) state._el.classList.add('is-processing');
+
+                    state.compressedBlob = await compressImage(file);
+
+                    // [RACE CONDITION CHECK]
+                    if (!images.some(img => img.id === state.id)) {
+                        console.warn(`[AdminAdver] Image ${state.id} removed during compression.`);
+                        continue;
+                    }
+
+                    state.status = 'ready';
+                    if (state._el) state._el.classList.remove('is-processing');
+                    if (state._metaEl) state._metaEl.textContent = 'جاهز';
+                } catch (err) {
+                    console.error('[AdminAdver] Error:', err);
+                    if (!images.some(img => img.id === state.id)) continue;
+                    state.status = 'error';
+                    if (state._metaEl) state._metaEl.textContent = 'خطأ في الضغط';
+                }
             }
-            els.fileInput.value = ''; // Clear input to allow picking the same file again
+            els.fileInput.value = '';
         }
 
         /**
@@ -570,14 +611,14 @@
         // --- Featured Products Management Logic ---
         const FeaturedManager = {
             list: [],
-            init: async function() {
-                 document.getElementById('btnRefreshFeatured').addEventListener('click', () => this.load());
-                 await this.load();
+            init: async function () {
+                document.getElementById('btnRefreshFeatured').addEventListener('click', () => this.load());
+                await this.load();
             },
-            load: async function() {
+            load: async function () {
                 const container = document.getElementById('featured_list_container');
                 container.innerHTML = '<div style="text-align: center; width: 100%; padding: 20px; color: grey;"><i class="fas fa-spinner fa-spin"></i> جاري التحميل...</div>';
-                
+
                 try {
                     // Bypass cache with timestamp
                     const res = await fetch(`${R2_PUBLIC_URL}/selected_search_products.json?t=${Date.now()}`);
@@ -589,31 +630,31 @@
                         this.list = [];
                         this.render();
                     }
-                } catch(e) {
+                } catch (e) {
                     console.error("Featured Load Error", e);
                     container.innerHTML = '<div style="color:red; text-align:center;">حدث خطأ في التحميل.</div>';
                 }
             },
-            render: function() {
+            render: function () {
                 const container = document.getElementById('featured_list_container');
                 container.innerHTML = '';
-                
+
                 // Filter valid objects
                 // We might have legacy strings, handle them
                 const validItems = this.list.filter(item => typeof item === 'object' && item.key);
-                
+
                 if (validItems.length === 0) {
-                     container.innerHTML = '<div style="text-align: center; width: 100%; padding: 20px; color: grey;">لا توجد منتجات مختارة حالياً.</div>';
-                     return;
+                    container.innerHTML = '<div style="text-align: center; width: 100%; padding: 20px; color: grey;">لا توجد منتجات مختارة حالياً.</div>';
+                    return;
                 }
-                
+
                 validItems.forEach(item => {
                     const div = document.createElement('div');
                     div.className = 'featured-admin-card'; // Use CSS class
                     // Removed inline styles
-                    
+
                     const imgUrl = item.img ? (item.img.startsWith('http') ? item.img : `${R2_PUBLIC_URL}/${item.img}`) : 'images/placeholder.png';
-                    
+
                     div.innerHTML = `
                         <div class="featured-admin-image-box">
                             <img src="${imgUrl}">
@@ -624,14 +665,14 @@
                             <i class="fas fa-trash-alt"></i>
                         </button>
                     `;
-                    
+
                     // Delete Action
                     div.querySelector('button').onclick = () => this.remove(item.key);
-                    
+
                     container.appendChild(div);
                 });
             },
-            remove: function(key) {
+            remove: function (key) {
                 Swal.fire({
                     title: 'حذف المنتج؟',
                     text: "سيتم إزالة المنتج من القائمة المفضلة فوراً.",
@@ -650,17 +691,17 @@
                                 if (typeof item === 'string') return item !== key;
                                 return item.key !== key;
                             });
-                            
+
                             this.list = newList; // Optimistic UI update? No, let's wait save.
-                            
+
                             // Save to R2
                             const blob = new Blob([JSON.stringify(newList)], { type: 'application/json' });
                             Swal.showLoading();
                             await uploadFile2cf(blob, 'selected_search_products.json');
-                             
+
                             Swal.fire('تم الحذف!', 'تم تحديث القائمة بنجاح.', 'success');
                             this.render(); // Re-render with new local list
-                        } catch(e) {
+                        } catch (e) {
                             console.error(e);
                             Swal.fire('خطأ', 'فشل في حفظ التغييرات.', 'error');
                         }
