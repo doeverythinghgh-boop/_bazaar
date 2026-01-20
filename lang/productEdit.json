@@ -130,5 +130,9 @@
     "edit_err_compression": {
         "ar": "فشل ضغط الصورة.",
         "en": "Image compression failed."
+    },
+    "edit_err_img_processing": {
+        "ar": "يرجى الانتظار حتى ينتهي ضغط الصور قبل الحفظ.",
+        "en": "Please wait for image compression to finish before saving."
     }
 }
