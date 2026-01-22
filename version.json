@@ -1,12 +1,17 @@
 {
-  "version": "1.17.130",
+  "version": "1.17.133",
   "notes": "0",
-  "lastUpdated": "2026-01-22T06:52:43.149Z",
+  "lastUpdated": "2026-01-22T07:27:28.665Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
       "hash": "708b69439344d3b0ed36fd948f22c7f6f809963f8ed60e56e6ba80734ca22474",
       "size": 1796
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/asc-build.js",
+      "hash": "4d1f2c0da3eca58fe3227c22d0566a3ad855bcf2bef36faf360f2bd8063c96cb",
+      "size": 1306
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/assets/fontawesome/css/all.css",
@@ -830,8 +835,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/index.html",
-      "hash": "886d3c17c0d60e3ea0a0df2812d448743812b80d4e93ba137bd05c60e4b7e168",
-      "size": 7636
+      "hash": "a459573b352834bd9029d07d362bb399191cf8303761d1aa51f92c383d86cd27",
+      "size": 7682
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/auth/sessionManager.js",
@@ -927,6 +932,11 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/PRODUCT_SERVICE/serviceCategoryHelper.js",
       "hash": "38807480ece643554c0e5b9020c54b62fe15ea66dabd7b59ead2061e076a1e32",
       "size": 1676
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/security-shield.js",
+      "hash": "c8f0587c82e624ee2a1ad2b817e612627a05fa1361df5cfa483ea657071b1cd3",
+      "size": 2199
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/splash.js",
