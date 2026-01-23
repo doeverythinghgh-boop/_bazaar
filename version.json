@@ -1,7 +1,7 @@
 {
-  "version": "1.17.172",
+  "version": "1.17.173",
   "notes": "0",
-  "lastUpdated": "2026-01-23T18:37:43.186Z",
+  "lastUpdated": "2026-01-23T18:59:09.426Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -935,8 +935,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/security-shield.js",
-      "hash": "c6cf0e10c72975135f7fcc012fb50da95c45485fa3c2b5504c2ccaf0a6462452",
-      "size": 8718
+      "hash": "b5d71b4a1cf6234a8b8405b975285b9e4672f6204725e1d83b8a0b990c1038e3",
+      "size": 9082
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/splash.js",
@@ -2135,8 +2135,18 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/sw.js",
-      "hash": "64191e0e4dd020ec6cf871ffa2cfe7ad79c4e3b2bf07741a136c67438362154a",
-      "size": 2939
+      "hash": "e0acccc96db24ee96374ea0ea6eda0f83f1c68e4f605923e243987a0481f850e",
+      "size": 3401
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_headers",
+      "hash": "0f96fd8d21ca3d29997a6eee68b829737bc03a4d82d8721ead13ab832f7ede63",
+      "size": 290
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_redirects",
+      "hash": "4552a6949642e739e2c34b5ed01558691fec47d85fd4bf378f2c0dc78d2a62b2",
+      "size": 211
     }
   ]
 }
