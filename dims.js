@@ -1,1 +1,0 @@
-const sharp=require("sharp");async function dims(){const{info:info}=await sharp("favicon.png").raw().toBuffer({resolveWithObject:!0});console.log(info)}dims();
