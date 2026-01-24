@@ -1,8 +1,23 @@
 {
-  "version": "1.17.181",
+  "version": "1.17.182",
   "notes": "0",
-  "lastUpdated": "2026-01-24T05:11:37.298Z",
+  "lastUpdated": "2026-01-24T05:20:31.574Z",
   "files": [
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/analyze_colors.js",
+      "hash": "485339f752c7a27f86a39c5719c2fd40141de3f17076999a857b2206b857b098",
+      "size": 643
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/analyze_icons.js",
+      "hash": "6480c1af5afc71c852c6eb29a1209e09abf6e6d40ffbe4cddeb80ede948706e8",
+      "size": 553
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/analyze_pixels.js",
+      "hash": "cad579072eb62680286f6bb5ac5726d535ee78a24af29e70476a25cce6666c70",
+      "size": 602
+    },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
       "hash": "708b69439344d3b0ed36fd948f22c7f6f809963f8ed60e56e6ba80734ca22474",
@@ -69,14 +84,19 @@
       "size": 3900
     },
     {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/dims.js",
+      "hash": "3e9aa577bb9c04a0af16a6a535133a4042f09571c52978d727c560eacb9264b3",
+      "size": 159
+    },
+    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/favicon.ico",
-      "hash": "90b6813a38b8dbd6c1b077a44b72c12a51569fb1d6b5cb962051af3c03ad4200",
-      "size": 9662
+      "hash": "ecda3d5a64d415abd3322b5d7b89bf19cc79c2e09e3a3cc51649a6891b07b828",
+      "size": 4908
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/favicon.png",
-      "hash": "b1ba6ee79242f0ac31ef23de68a31a52370c27ebd40f231aaee885418d0deab7",
-      "size": 4596
+      "hash": "ecda3d5a64d415abd3322b5d7b89bf19cc79c2e09e3a3cc51649a6891b07b828",
+      "size": 4908
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/firebase-messaging-sw.js",
@@ -85,13 +105,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/icons/icon-192x192.png",
-      "hash": "4f0427b3b0976d64b87e95d99391120a78c65533d9cf7173762aaf1d9faf71dd",
-      "size": 34937
+      "hash": "cd2248fe6c7d88e4e0cd0c792fdc20cc4053262a615a078e32887a19e97d48dc",
+      "size": 34955
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/icons/icon-512x512.png",
-      "hash": "8d0f9b927b523c91d8528dde2ae142a1398223c4117b8101bd0bd033cadba6ef",
-      "size": 236763
+      "hash": "f3466d73afa6dc6bc4144875604a767016d4c8a46d4a24ad589d27925bb47b89",
+      "size": 236770
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/isoSetup/1.png",
