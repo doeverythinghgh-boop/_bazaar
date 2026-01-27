@@ -159,13 +159,25 @@
             }, { passive: true });
 
             track.addEventListener('touchend', () => {
-                // Sync internal scrollPos with manual scroll position
-                if (!isRTL) {
-                    scrollPos = track.scrollLeft % (track.scrollWidth / 2);
-                } else {
-                    scrollPos = Math.abs(track.scrollLeft) % (track.scrollWidth / 2);
-                }
-                touchTimeout = setTimeout(startAutoScroll, 2500);
+                // Sync internal scrollPos with manual scroll position immediately
+                requestAnimationFrame(() => {
+                    const halfWidth = track.scrollWidth / 2;
+                    let currentScroll = track.scrollLeft;
+
+                    if (!isRTL) {
+                        scrollPos = currentScroll % halfWidth;
+                    } else {
+                        // RTL Handling: Normalize negative scroll values
+                        // Chrome/Safari: -100, Firefox/Others: might vary
+                        scrollPos = Math.abs(currentScroll) % halfWidth;
+                    }
+
+                    // Reset timestamp to prevent jump on resume
+                    lastTimestamp = 0;
+                });
+
+                if (touchTimeout) clearTimeout(touchTimeout);
+                touchTimeout = setTimeout(startAutoScroll, 2500); // Resume after 2.5s
             }, { passive: true });
         }
 
