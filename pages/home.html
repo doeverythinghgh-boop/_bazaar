@@ -67,7 +67,16 @@
         existingFooter.remove();
       }
 
-      const versionResponse = await fetch(`version.json?v=${Date.now()}`);
+      // [Android Fix] Use v.json for display because Android background worker 
+      // doesn't update version.json manifest on disk, but it does sync v.json.
+      const vUrl = `v.json?v=${Date.now()}`;
+      let versionResponse = await fetch(vUrl);
+
+      // Fallback to version.json if v.json is missing
+      if (!versionResponse.ok) {
+        versionResponse = await fetch(`version.json?v=${Date.now()}`);
+      }
+
       if (versionResponse.ok) {
         const versionData = await versionResponse.json();
         console.log(`[Footer] Latest version info loaded: v${versionData.version}`);
