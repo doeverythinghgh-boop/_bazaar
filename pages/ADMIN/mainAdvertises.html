@@ -100,60 +100,107 @@
          * @function compressImage
          * @description Compresses and resizes an image to fit specified standards.
          * Attempts to convert to WebP if supported, otherwise uses JPEG.
-         * @param {File} file - The original image file.
-         * @returns {Promise<Blob|File>} - The compressed image as a Blob, or the original file on failure.
+         * Uses multiple strategies for loading: createImageBitmap (primary), ObjectURL, and FileReader (fallbacks).
+         * @param {File|Blob} file - The original image file.
+         * @returns {Promise<Blob>} - The compressed image as a Blob.
          */
         async function compressImage(file) {
             let imgBitmap = null;
+            let objectUrl = null;
+            let drawSource = null;
+            let sourceWidth = 0;
+            let sourceHeight = 0;
+
             try {
-                // [OPTIMIZATION] Pre-calculate target size
-                const tempImg = new Image();
-                const dimensions = await new Promise((res) => {
-                    const url = URL.createObjectURL(file);
-                    tempImg.onload = () => {
-                        const w = tempImg.width;
-                        const h = tempImg.height;
-                        URL.revokeObjectURL(url);
-                        res({ w, h });
-                    };
-                    tempImg.src = url;
-                    tempImg.onerror = () => { URL.revokeObjectURL(url); res({ w: 1000, h: 1000 }); };
-                });
-
-                const ratio = Math.min(1, IMAGE_MAX_WIDTH / dimensions.w, IMAGE_MAX_HEIGHT / dimensions.h);
-                const w = Math.round(dimensions.w * ratio);
-                const h = Math.round(dimensions.h * ratio);
-
-                // [MEMORY] Resize directly during bitmap creation
-                if ('createImageBitmap' in self && typeof createImageBitmap === 'function') {
+                // Strategy 1: High-Performance createImageBitmap
+                if (typeof createImageBitmap === 'function') {
                     try {
-                        imgBitmap = await createImageBitmap(file, {
-                            resizeWidth: w,
-                            resizeHeight: h,
-                            resizeQuality: 'medium'
-                        });
-                    } catch (e) {
                         imgBitmap = await createImageBitmap(file);
+                        drawSource = imgBitmap;
+                        sourceWidth = imgBitmap.width;
+                        sourceHeight = imgBitmap.height;
+                    } catch (e) {
+                        console.warn('[AdminAdver-Debug] createImageBitmap failed, falling back.', e);
                     }
-                } else {
-                    imgBitmap = await createImageBitmap(file);
                 }
 
-                const canvas = Object.assign(document.createElement('canvas'), { width: w, height: h });
-                const ctx = canvas.getContext('2d');
+                // Strategy 2: Legacy Image element with Multiple Fallbacks
+                if (!drawSource) {
+                    const tempImg = new Image();
+                    await new Promise((resolve, reject) => {
+                        objectUrl = URL.createObjectURL(file);
+                        tempImg.onload = () => {
+                            drawSource = tempImg;
+                            sourceWidth = tempImg.width;
+                            sourceHeight = tempImg.height;
+                            resolve();
+                        };
+                        tempImg.onerror = () => {
+                            URL.revokeObjectURL(objectUrl);
+                            objectUrl = null;
+
+                            const reader = new FileReader();
+                            reader.onload = (e) => {
+                                tempImg.onload = () => {
+                                    drawSource = tempImg;
+                                    sourceWidth = tempImg.width;
+                                    sourceHeight = tempImg.height;
+                                    resolve();
+                                };
+                                tempImg.onerror = () => reject(new Error('Image decoding failed (FileReader)'));
+                                tempImg.src = e.target.result;
+                            };
+                            reader.onerror = () => reject(new Error('FileReader failed: ' + (reader.error ? reader.error.message : 'Unknown')));
+                            reader.readAsDataURL(file);
+                        };
+                        tempImg.src = objectUrl;
+                    });
+                }
+
+                // Calculate Target Size
+                const ratio = Math.min(1, IMAGE_MAX_WIDTH / sourceWidth, IMAGE_MAX_HEIGHT / sourceHeight);
+                const newWidth = Math.round(sourceWidth * ratio);
+                const newHeight = Math.round(sourceHeight * ratio);
+
+                // Optimization: Try to use resize feature of createImageBitmap
+                if (imgBitmap && typeof createImageBitmap === 'function' && ratio < 1) {
+                    try {
+                        const resizedBitmap = await createImageBitmap(file, {
+                            resizeWidth: newWidth,
+                            resizeHeight: newHeight,
+                            resizeQuality: 'medium'
+                        });
+                        imgBitmap.close();
+                        imgBitmap = resizedBitmap;
+                        drawSource = imgBitmap;
+                    } catch (e) { }
+                }
+
+                // Draw to canvas
+                const canvas = Object.assign(document.createElement('canvas'), { width: newWidth, height: newHeight });
+                const ctx = canvas.getContext('2d', { alpha: false });
 
                 ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--bg-color-white') || '#FFFFFF';
-                ctx.fillRect(0, 0, w, h);
-                ctx.drawImage(imgBitmap, 0, 0, w, h);
+                ctx.fillRect(0, 0, newWidth, newHeight);
+                ctx.drawImage(drawSource, 0, 0, newWidth, newHeight);
 
+                // Export
                 const isWebP = await webP_Promise;
-                const blob = await new Promise(r => canvas.toBlob(r, isWebP ? 'image/webp' : 'image/jpeg', IMAGE_QUALITY));
+                const mime = isWebP ? 'image/webp' : 'image/jpeg';
+
+                const blob = await new Promise((res) => canvas.toBlob(res, mime, IMAGE_QUALITY));
+                if (!blob) throw new Error('Blob creation failed');
+
                 return blob;
+
             } catch (err) {
-                console.warn("[AdminAdver] فشل الضغط المطور، العودة للأصل.", err);
-                return file;
+                console.warn("[AdminAdver] Safe Compression failed:", err);
+                throw err;
             } finally {
-                if (imgBitmap) try { imgBitmap.close(); } catch (e) { }
+                if (imgBitmap && typeof imgBitmap.close === 'function') imgBitmap.close();
+                if (objectUrl) {
+                    try { URL.revokeObjectURL(objectUrl); } catch (e) { }
+                }
             }
         }
 
@@ -357,16 +404,34 @@
          * @param {FileList} fileList - List of selected files.
          */
         async function handleNewFiles(fileList) {
-            if (images.length + fileList.length > MAX_FILES) {
-                Swal.fire('Alert', `الحد الأقصى هو ${MAX_FILES} صورة.`, 'warning');
+            const availableSlots = MAX_FILES - images.length;
+            if (fileList.length > availableSlots) {
+                Swal.fire('Alert', `الحد الأقصى هو ${MAX_FILES} صورة. (المتبقي: ${availableSlots})`, 'warning');
                 return;
             }
 
             console.log(`[AdminAdver] معالجة ${fileList.length} ملفات إعلانات جديدة.`);
-            const filesArr = Array.from(fileList);
 
-            // [OPTIMIZATION] Sequential processing for Admin as well
-            for (const file of filesArr) {
+            // [Android Fix] Lock permissions by reading into Blobs immediately
+            const processedFiles = [];
+            const rawFiles = Array.from(fileList).slice(0, availableSlots);
+
+            for (const f of rawFiles) {
+                try {
+                    const u = URL.createObjectURL(f);
+                    const b = await fetch(u).then(r => r.blob());
+                    URL.revokeObjectURL(u);
+                    b.name = f.name;
+                    b.lastModified = f.lastModified;
+                    processedFiles.push(b);
+                } catch (e) {
+                    console.warn(`[AdminAdver] Early read failed for ${f.name}, using original.`, e);
+                    processedFiles.push(f);
+                }
+            }
+
+            // Sequential processing for mobile memory safety
+            for (const file of processedFiles) {
                 if (!file.type.startsWith('image/')) continue;
 
                 const id = genId();
@@ -395,6 +460,8 @@
                     if (!images.some(img => img.id === state.id)) continue;
                     state.status = 'error';
                     if (state._metaEl) state._metaEl.textContent = 'خطأ في الضغط';
+                    // Re-draw error text on the card status
+                    if (state._metaEl) state._metaEl.style.color = 'red';
                 }
             }
             els.fileInput.value = '';
