@@ -59,7 +59,13 @@
 
     loaderElement.style.display = "none";
 
-    // Step 5: Fetch and display application version
+    // Step 5: Fetch and display application version.
+    // [TECHNICAL NOTE] We use v.json (a secondary version file) instead of version.json.
+    // This is because the Android background UpdateWorker successfully downloads updated files 
+    // but doesn't overwrite the main version.json manifest on the physical disk.
+    // Additionally, v.json is placed at the very END of the update manifest in build-minify.js.
+    // If v.json is successfully fetched and updated, it's a 100% guarantee that 
+    // all other application files (JS, CSS, HTML) have already been successfully updated on disk.
     try {
       // Remove existing footer if any to avoid duplicates
       const existingFooter = document.getElementById('app-footer');
@@ -67,12 +73,11 @@
         existingFooter.remove();
       }
 
-      // [Android Fix] Use v.json for display because Android background worker 
-      // doesn't update version.json manifest on disk, but it does sync v.json.
+      // [Android Fix] v.json bypassed manifest write limitations
       const vUrl = `v.json?v=${Date.now()}`;
       let versionResponse = await fetch(vUrl);
 
-      // Fallback to version.json if v.json is missing
+      // Fallback to version.json for older builds
       if (!versionResponse.ok) {
         versionResponse = await fetch(`version.json?v=${Date.now()}`);
       }
@@ -91,8 +96,6 @@
 
         footer.appendChild(versionText);
 
-        // Append to the main container wrapper if possible, otherwise body
-        // Trying to find a main content wrapper to keep it contained
         const mainWrapper = document.getElementById('loader-container')?.parentNode || document.body;
         mainWrapper.appendChild(footer);
       }
