@@ -1,8 +1,13 @@
 {
-  "version": "1.18.53",
+  "version": "1.18.54",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-01-29T04:03:55.792Z",
+  "lastUpdated": "2026-01-29T14:50:18.044Z",
   "files": [
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/add_products_from_excel.js",
+      "hash": "fca41213b13c98e12b81ac30591264c5e920f5c8a6c9c03dbcfee0e980e4d850",
+      "size": 3790
+    },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
       "hash": "708b69439344d3b0ed36fd948f22c7f6f809963f8ed60e56e6ba80734ca22474",
@@ -1675,8 +1680,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/login/login.js",
-      "hash": "861d3bad9788f9cd03b4216c16941be643f2e469485345fc1a12ce519b8d4c23",
-      "size": 8892
+      "hash": "dcfe7b95e4ca91d381e6a8ffaf13475e72881e116a18a5be78d8fa86ea0c4f44",
+      "size": 8893
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/orderPhoto.html",
@@ -2135,7 +2140,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "831767467f236941f8dfe1079cde2ba0feec6bdf298e2a68894353c896f8566b",
+      "hash": "48b8ebddb355c0ba1106cdd239a1a816a76bf927cfff17464fad375dea97baec",
       "size": 21
     }
   ]
