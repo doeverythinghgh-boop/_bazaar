@@ -9,8 +9,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>سياسة الخصوصية - Suez Bazaar</title>
-  <link rel="stylesheet" href="style/variables.css">
-  <link rel="stylesheet" href="style/utilities.css">
+  <!-- Core Loader -->
+  <script src="js/core-loader.js"></script>
+
+  <!-- External Styles (Others are handled by core-loader) -->
   <style>
     body {
       font-family: "Tajawal", sans-serif;
@@ -23,17 +25,14 @@
       line-height: 1.8;
     }
 
-    /* ✅ GLOBAL: Hide all scrollbars while maintaining functionality */
+    /* Global Scrollbar Hiding */
     * {
       scrollbar-width: none;
-      /* Firefox */
       -ms-overflow-style: none;
-      /* IE/Edge */
     }
 
     *::-webkit-scrollbar {
       display: none;
-      /* Chrome, Safari, Opera */
     }
 
     h1 {
@@ -61,55 +60,7 @@
     a {
       color: #007bff;
     }
-
-    /* ✅ جديد: استعارة أنماط من style.css للاتساق */
-    .offline-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95);
-      z-index: 10000;
-      text-align: center;
-    }
-
-    .offline-content {
-      max-width: 400px;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .offline-content i {
-      font-size: 3rem;
-      color: #f39c12;
-      margin-bottom: 1rem;
-    }
-
-    .offline-content h2 {
-      margin-top: 0;
-      color: #c0392b;
-    }
-
-    .button.login-btn {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
   </style>
-  <!-- 2. Core Variables & Base Styles -->
-  <link rel="stylesheet" href="style/variables.css" />
-  <!-- Font Awesome للأيقونات -->
-  <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
 </head>
 
 <body>
@@ -130,16 +81,13 @@
     <h2>حقوق المستخدم</h2>
     <p>يحق للمستخدم طلب حذف بياناته أو تعديلها في أي وقت من خلال التواصل معنا عبر البريد الإلكتروني أدناه.</p>
     <h2>التحديثات</h2>
-    <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر، وسيتم نشر أي تغييرات في هذه الصفحة.</p>
+    <p>قد نقوم بحديث سياسة الخصوصية من وقت لآخر، وسيتم نشر أي تغييرات في هذه الصفحة.</p>
     <h2>التواصل معنا</h2>
     <p>لأي استفسار أو ملاحظات، يمكنكم التواصل عبر البريد الإلكتروني:
       <a href="mailto:suezbazaar@gmail.com">suezbazaar@gmail.com</a>
     </p>
   </div>
 
-  <script src="js/config.js"></script>
-  <script src="js/globalVariable.js"></script>
-  <script src="js/network.js"></script>
 
 </body>
 

@@ -51,6 +51,24 @@
     "ar": "المنتجات المعلقة",
     "en": "Pending Products"
   },
+  "dash_btn_factory_reset": {
+    "ar": "إعادة ضبط المصنع (مسح شامل)",
+    "en": "Factory Reset (Wipe All)"
+  },
+  "factory_reset_confirm": {
+    "title": {
+        "ar": "هل أنت متأكد؟",
+        "en": "Are you sure?"
+    },
+    "text": {
+        "ar": "سيتم مسح كافة البيانات المسجلة على هذا المتصفح تماماً وتسيجل الخروج، ولا يمكن التراجع عن هذه الخطوة!",
+        "en": "This will completely wipe all browser data and log you out. This action cannot be undone!"
+    },
+    "confirm_btn": {
+        "ar": "نعم، امسح كل شيء",
+        "en": "Yes, wipe everything"
+    }
+  },
   "dash_notifications_tab": {
     "ar": "الإشعارات",
     "en": "Notifications"

@@ -1,16 +1,13 @@
-<link rel="stylesheet" href="pages/featured/featured.css"><div id="featured-products-section"><div class="featured-header" id="featured-header-container"><div class="featured-title section-header-custom" id="featured-title-wrapper"><div class="section-header-icon-container" id="featured-icon-container"><i class="fas fa-star" id="featured-title-icon"></i></div><span id="featured-title-text" data-lkey="featured_products_title">الأكثر رواجاً</span></div></div><div class="featured-wrapper" id="featured-scroller-wrapper" style="overflow:hidden;width:100%"><div id="featured-track" class="featured-scroller"></div></div></div><script>/**
+<link rel="stylesheet" href="/pages/featured/featured.css"><div id="featured-products-section"><div class="featured-header" id="featured-header-container"><div class="featured-title section-header-custom" id="featured-title-wrapper"><div class="section-header-icon-container" id="featured-icon-container"><i class="fas fa-star" id="featured-title-icon"></i></div><span id="featured-title-text" data-lkey="featured_products_title">الأكثر رواجاً</span></div></div><div class="featured-wrapper" id="featured-scroller-wrapper" style="overflow:hidden;width:100%"><div id="featured-track" class="featured-scroller"></div></div></div><script>/**
      * @file pages/featured/featured.js
-     * @description Logic for displaying Featured Products (Favorites) banner.
+     * @description Logic for displaying Featured Products (Favorites) banner using direct data binding via data attributes.
+     * Matches the implementation pattern of main-category-gallery-content.
      */
     (function () {
-        // Translation Key Addition (Dynamically adding if not exists, or relying on lang files)
-        // For now, hardcoded fallback in HTML, but we should use window.langu
-
         async function initFeaturedModule() {
             const container = document.getElementById('featured-products-section');
             const track = document.getElementById('featured-track');
 
-            // Apply translations to the component
             if (typeof window.applyAppTranslations === 'function') {
                 window.applyAppTranslations();
             }
@@ -18,21 +15,17 @@
             // 1. Get Data from Global Cache
             let products = [];
             if (window.selectedSearchProductsSet && window.selectedSearchProductsSet.size > 0) {
-                // Convert Set to Array
                 products = Array.from(window.selectedSearchProductsSet);
             } else {
-                // Try fetching if empty (unlikely if Home loaded correctly)
-                // If empty, hide section
                 container.style.display = 'none';
                 return;
             }
 
-            // Filter out legacy strings (keys only) if we haven't upgraded them yet
-            // Or handle them gracefully (skip them as we can't show img/price)
-            const validProducts = products.filter(p => typeof p === 'object' && p.img);
+            // Filter valid products
+            const validProducts = products.filter(p => typeof p === 'object' && (p.img || p.ImageName || p.image));
 
             if (validProducts.length === 0) {
-                // Check if Admin to show helper message
+                // Admin check logic
                 const userStr = localStorage.getItem('loggedInUser');
                 const user = userStr ? JSON.parse(userStr) : null;
                 const isAdmin = user && (user.user_key === '682dri6b' || user.enableDevConsole);
@@ -54,46 +47,92 @@
             console.log(`[Featured] Displaying ${validProducts.length} items.`);
             container.style.display = 'flex';
 
-            // 2. Build HTML
-            // Repeat items to fill enough track width for a smooth loop
+            // 2. Build DOM Elements
+            // Repeat items to fill enough track width if needed (min 15 items logic)
             const minItems = 15;
             let itemsToRender = [...validProducts];
             while (itemsToRender.length < minItems) {
                 itemsToRender = [...itemsToRender, ...validProducts];
             }
 
-            track.innerHTML = itemsToRender.map(product => {
-                const imageUrl = product.img ? getPublicR2FileUrl(product.img) : 'images/placeholder.png';
-                const price = typeof product.price === 'number' ? product.price.toFixed(2) : product.price;
+            track.innerHTML = ''; // Clear existing content
+
+            // Helper to create card element
+            function createCard(product) {
+                const card = document.createElement('div');
+                card.className = 'featured-card';
+                // Store full product data in attribute (JSON stringified)
+                // This ensures the click handler has access to the exact object used for rendering
+                card.setAttribute('data-product', JSON.stringify(product));
+
+                // Image Handling
+                const imgSource = product.img || product.ImageName || product.image;
+                const imgUrl = imgSource
+                    ? (typeof getPublicR2FileUrl === 'function' ? getPublicR2FileUrl(imgSource) : imgSource)
+                    : 'images/placeholder.png';
+
+                const priceVal = typeof product.price === 'number' ? product.price.toFixed(2) : product.price;
                 const isService = (typeof isServiceCategory === 'function')
                     ? isServiceCategory(product.MainCategory, product.SubCategory)
                     : false;
 
-                return `
-                <div class="featured-card" onclick="openFeaturedProduct('${product.key}')">
+                card.innerHTML = `
                     <div class="featured-img-container">
-                        <img src="${imageUrl}" class="featured-img" loading="lazy" alt="${product.name}">
+                        <img src="${imgUrl}" class="featured-img" loading="lazy" alt="${product.name || product.productName}">
                     </div>
                     <div class="featured-details">
-                        <div class="featured-name">${product.name}</div>
-                        ${!isService ? `<div class="featured-price">${price} ${window.langu('currency_egp')}</div>` : ''}
+                        <div class="featured-name">${product.name || product.productName}</div>
+                        ${!isService ? `<div class="featured-price">${priceVal} ${window.langu('currency_egp')}</div>` : ''}
                     </div>
-                </div>
                 `;
-            }).join('');
+                return card;
+            }
 
-            // 3. Enable JS Auto-Scroll (Support Touch & Pause)
-            // Duplicate content once for seamless infinite scroll
-            const originalHTML = track.innerHTML;
-            track.innerHTML = originalHTML + originalHTML;
+            // Create initial set of cards
+            itemsToRender.forEach(p => {
+                track.appendChild(createCard(p));
+            });
 
+            // Duplicate content for seamless infinite scroll
+            // cloneNode(true) copies attributes including 'data-product'
+            const children = Array.from(track.children);
+            children.forEach(child => {
+                track.appendChild(child.cloneNode(true));
+            });
+
+            // 3. Event Delegation for Clicks (Replaces inline onclick)
+            track.addEventListener('click', function (e) {
+                const card = e.target.closest('.featured-card');
+                if (card) {
+                    const rawData = card.getAttribute('data-product');
+                    if (rawData) {
+                        try {
+                            const product = JSON.parse(rawData);
+                            console.log('[Featured] Product clicked:', product);
+
+                            // Use unified mapper logic matching main-category implementation
+                            if (typeof window.mapProductData === 'function' && typeof window.loadProductView === 'function') {
+                                const mapped = window.mapProductData(product);
+                                window.loadProductView(mapped, true);
+                            } else {
+                                console.error('[Featured] Required global functions (mapProductData, loadProductView) missing.');
+                            }
+
+                        } catch (err) {
+                            console.error('[Featured] Failed to parse product data:', err);
+                        }
+                    }
+                }
+            });
+
+            // 4. Enable JS Auto-Scroll (Support Touch & Pause)
+            // Logic remains unchanged from original implementation
             let animationFrame;
             let isPaused = false;
             let lastTimestamp = 0;
             const scrollSpeedPerSecond = 35; // pixels per second
             const isRTL = document.documentElement.dir === 'rtl';
 
-            // Determine scroll behavior (Chrome/Safari/Firefox handle scrollLeft in RTL differently)
             let scrollPos = 0;
 
             const step = (timestamp) => {
@@ -114,18 +153,9 @@
                     if (scrollPos >= halfWidth) scrollPos = 0;
                     track.scrollLeft = scrollPos;
                 } else {
-                    // RTL Logic: Support varying browser implementations
-                    // We use a virtual scrollPos to avoid browser-specific scrollLeft negative/positive issues
                     scrollPos += move;
                     if (scrollPos >= halfWidth) scrollPos = 0;
-
-                    // Apply to scrollLeft based on browser's RTL interpretation
-                    // Most modern browsers (Chrome/Safari) treat scrollLeft as 0 at far right and negative as you move left
-                    // But some might treat it as Max at far right. 
-                    // To be safe, we try to set it relative to 0.
                     track.scrollLeft = -scrollPos;
-
-                    // Critical check: if scrollLeft didn't change as expected (positive scrollLeft RTL)
                     if (track.scrollLeft > 0) {
                         track.scrollLeft = track.scrollWidth - track.clientWidth - scrollPos;
                     }
@@ -136,7 +166,7 @@
 
             const startAutoScroll = () => {
                 isPaused = false;
-                lastTimestamp = performance.now(); // Sync timestamp
+                lastTimestamp = performance.now();
             };
 
             const stopAutoScroll = () => {
@@ -147,11 +177,9 @@
             animationFrame = requestAnimationFrame(step);
 
             // Event Listeners for Pause/Resume
-            // Desktop
             track.addEventListener('mouseenter', stopAutoScroll);
             track.addEventListener('mouseleave', startAutoScroll);
 
-            // Mobile Interaction
             let touchTimeout;
             track.addEventListener('touchstart', () => {
                 stopAutoScroll();
@@ -159,7 +187,6 @@
             }, { passive: true });
 
             track.addEventListener('touchend', () => {
-                // Sync internal scrollPos with manual scroll position immediately
                 requestAnimationFrame(() => {
                     const halfWidth = track.scrollWidth / 2;
                     let currentScroll = track.scrollLeft;
@@ -167,88 +194,15 @@
                     if (!isRTL) {
                         scrollPos = currentScroll % halfWidth;
                     } else {
-                        // RTL Handling: Normalize negative scroll values
-                        // Chrome/Safari: -100, Firefox/Others: might vary
                         scrollPos = Math.abs(currentScroll) % halfWidth;
                     }
-
-                    // Reset timestamp to prevent jump on resume
                     lastTimestamp = 0;
                 });
 
                 if (touchTimeout) clearTimeout(touchTimeout);
-                touchTimeout = setTimeout(startAutoScroll, 2500); // Resume after 2.5s
+                touchTimeout = setTimeout(startAutoScroll, 2500);
             }, { passive: true });
         }
 
-        /**
-         * @description Opens the product detail view.
-         * @param {string} key - Product unique key.
-         */
-        window.openFeaturedProduct = async function (key) {
-            console.log(`[Featured] Opening product: ${key}`);
-
-            // 1. Show Loading Indicator
-            if (typeof Swal !== 'undefined') {
-                const loadingTitle = window.langu('pv_loading_msg');
-                Swal.fire({
-                    title: (loadingTitle === 'pv_loading_msg') ? 'جاري التحميل...' : loadingTitle,
-                    allowOutsideClick: false,
-                    customClass: {
-                        popup: 'swal-modern-mini-popup',
-                        title: 'swal-modern-mini-title'
-                    },
-                    didOpen: () => { Swal.showLoading(); }
-                });
-            }
-
-            try {
-                // 2. Fetch Full Product Data from Server
-                // This ensures we have Description, ImageName (full gallery), etc.
-                let productData = null;
-                if (typeof window.getProductByKey === 'function') {
-                    productData = await window.getProductByKey(key);
-                }
-
-                // Fallback to local data if fetch fails
-                if (!productData && window.selectedSearchProductsSet) {
-                    for (let item of window.selectedSearchProductsSet) {
-                        if (typeof item === 'object' && item.key === key) {
-                            productData = item;
-                            break;
-                        }
-                    }
-                }
-
-                if (!productData) {
-                    throw new Error("Product not found");
-                }
-
-                // 3. Map Data using unified mapper
-                // Handle migration for locally stored items
-                if (!productData.ImageName && productData.img) {
-                    productData.ImageName = productData.img;
-                }
-
-                const mappedData = typeof window.mapProductData === 'function'
-                    ? window.mapProductData(productData)
-                    : productData;
-
-                // 4. Load View
-                if (typeof window.loadProductView === 'function') {
-                    window.loadProductView(mappedData, true);
-                }
-
-                if (typeof Swal !== 'undefined') Swal.close();
-
-            } catch (error) {
-                console.error("[Featured] Error opening product details:", error);
-                if (typeof Swal !== 'undefined') {
-                    Swal.fire(window.langu('gen_swal_error_title'), window.langu('pv_load_failed'), 'error');
-                }
-            }
-        };
-
-        // Expose to window to be called by home.html after data fetch
         window.initFeaturedModule = initFeaturedModule;
     })();</script>
