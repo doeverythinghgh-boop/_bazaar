@@ -1,7 +1,7 @@
 {
-  "version": "1.18.663",
+  "version": "1.18.664",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-02-14T05:33:29.421Z",
+  "lastUpdated": "2026-02-14T05:36:53.713Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -925,8 +925,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core-loader.js",
-      "hash": "6879b4db88a035d81453662c924392ee9946aa99c5c10ee0005b32099891d2b7",
-      "size": 6936
+      "hash": "8441f1b89a792aee6b16d6c51b1d88bbf81e61e1de117035061e920218e6699d",
+      "size": 7034
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/db/usersDB.js",
@@ -950,8 +950,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/index.js",
-      "hash": "202a179eca4cd38eea6fd3c1cba27d2e44ea5d391c16047c4c7605e91f21aa9f",
-      "size": 2394
+      "hash": "b18e4938f14bdc6e2548d633506089462343c3f9a9d70b9e8159d8f493bdd390",
+      "size": 2391
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/mobile-keyboard-handler.js",
@@ -990,8 +990,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/splash.js",
-      "hash": "38c1f9d6e90184ad3f41a846d67a82d8890fe2b6cebf140d27441a9c91b9c21f",
-      "size": 4437
+      "hash": "9db6472c02fe6ac6b79e80170dd1c1f88e377d98260c301978e5a3e441fa639a",
+      "size": 4518
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/tools.js",
@@ -2175,7 +2175,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "d931915a346ff1e692b15d01d84fe7e5d1b3deac0943511fc1ed3112b5b622cd",
+      "hash": "8d2eb75840826d6a659c18f30545384a2f4382e271ff83ba3808ccc54878c308",
       "size": 22
     }
   ]
