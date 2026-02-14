@@ -198,5 +198,65 @@
   "profile_passwords_mismatch": {
     "ar": "كلمتا المرور غير متطابقتين.",
     "en": "Passwords do not match."
+  },
+  "profile_avatar_label": {
+    "ar": "الصورة الشخصية",
+    "en": "Profile Picture"
+  },
+  "profile_avatar_change": {
+    "ar": "تغيير الصورة",
+    "en": "Change Picture"
+  },
+  "profile_tab_personal": {
+    "ar": "البيانات الشخصية",
+    "en": "Personal Info"
+  },
+  "profile_tab_business": {
+    "ar": "بيانات النشاط",
+    "en": "Business Info"
+  },
+  "business_account_toggle": {
+    "ar": "حساب نشاط تجاري (بائع)",
+    "en": "Business Account (Seller)"
+  },
+  "business_name_label": {
+    "ar": "اسم النشاط التجاري",
+    "en": "Business Name"
+  },
+  "business_name_placeholder": {
+    "ar": "مثلاً: مطعم السويس",
+    "en": "e.g., Suez Restaurant"
+  },
+  "business_bio_label": {
+    "ar": "وصف النشاط",
+    "en": "Business Bio"
+  },
+  "business_bio_placeholder": {
+    "ar": "نبذة عن ما تقدمه...",
+    "en": "A brief about what you offer..."
+  },
+  "business_category_label": {
+    "ar": "السوق الرئيسي",
+    "en": "Main Market"
+  },
+  "business_sub_category_label": {
+    "ar": "الأسواق الفرعية (تخصصاتك)",
+    "en": "Sub Markets (Your Specialties)"
+  },
+  "business_hours_label": {
+    "ar": "مواعيد العمل",
+    "en": "Working Hours"
+  },
+  "business_whatsapp_label": {
+    "ar": "رابط واتساب",
+    "en": "WhatsApp Link"
+  },
+  "business_whatsapp_placeholder": {
+    "ar": "مثلاً: 01012345678",
+    "en": "e.g., 01012345678"
+  },
+  "business_social_label": {
+    "ar": "روابط التواصل",
+    "en": "Social Links"
   }
 }
