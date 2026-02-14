@@ -1,7 +1,7 @@
 {
-  "version": "1.18.808",
+  "version": "1.18.809",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-02-14T09:28:12.927Z",
+  "lastUpdated": "2026-02-14T09:34:21.636Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -1970,13 +1970,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-elements.js",
-      "hash": "d0ab47254a2294dc23c09b09d0dda24bcc56777306db3741743b64fa4a128c59",
-      "size": 2108
+      "hash": "dbf547f65a8f986db035fb1d0e07d4c81809b2047f47b258a2bfe372d3621713",
+      "size": 2175
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-handlers.js",
-      "hash": "77f75f98a4a1f8a6b6b79236b3619f9ee4bb772e6c1387e1c5c6ca03c3a68b60",
-      "size": 12493
+      "hash": "c73547bc051cf263e01a4f665ae471ce5e22575993cff92f09e2a86721bc50f0",
+      "size": 12555
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-helpers.js",
@@ -1985,8 +1985,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-init.js",
-      "hash": "9ae49d208b58ecf0e79c7e7e48dafc109eca308d1ed180657449ef50faabd057",
-      "size": 4928
+      "hash": "902965344023b50cb88c66e89ad5ca54154d606ff40cafe2cb710f1ea2ae82c4",
+      "size": 5052
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-listeners.js",
@@ -2000,8 +2000,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/profile-modal.css",
-      "hash": "80339bdb90ea75295b9c8c04d7dc1bccacddd816767550e551cb253bda3bfe56",
-      "size": 9132
+      "hash": "a2dc4fea5c351089893310d8fbd4c8fe162b73c16500faffbf502fc331daacf6",
+      "size": 9143
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/profile-modal.html",
@@ -2200,7 +2200,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "d5bd592852763a3918d995461bcfe387f9656c8c0fe6fc7abda09f4c51e5a047",
+      "hash": "02e339258961338ed7fd7af44177b41438110f00c17944446122376978053aed",
       "size": 22
     }
   ]
