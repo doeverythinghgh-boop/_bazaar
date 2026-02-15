@@ -1,1 +1,0 @@
-function productView_updateTotalPrice(pricePerItem,dom){try{const total=parseFloat(pricePerItem)*(parseInt(dom.selectedQuantityInput.value,10)||1);dom.totalPriceEl&&(dom.totalPriceEl.textContent=`${total.toFixed(2)} ${window.langu("pv_currency_egp")}`)}catch(error){console.error("productView_updateTotalPrice - Error:",error)}}

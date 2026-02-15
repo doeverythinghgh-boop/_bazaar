@@ -1,1 +1,0 @@
-window.productView_state={};

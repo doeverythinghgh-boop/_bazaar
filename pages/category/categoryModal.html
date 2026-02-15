@@ -1,1 +1,36 @@
-<div id="category-modal" class="category-modal-backdrop"><div class="category-modal-content"><h2 class="category-modal-title" data-lkey="cat_modal_title">📋 تحديد فئة المنتج الجديد</h2><div class="category-selection-container"><div class="category-select-group"><label for="main-category" data-lkey="cat_main_label"><i class="fas fa-layer-group"></i> السوق الرئيسي</label> <select id="main-category" class="category-modal-select"><option value="" disabled="disabled" selected="selected" data-lkey="cat_select_main_placeholder">اختر السوق الرئيسي...</option></select></div><div class="category-select-group"><label for="sub-category" data-lkey="cat_sub_label"><i class="fas fa-tags"></i> السوق الفرعي</label> <select id="sub-category" class="category-modal-select" disabled="disabled"><option value="" disabled="disabled" selected="selected" data-lkey="cat_select_sub_placeholder">اختر السوق الفرعي...</option></select> <span id="validation-message" class="category-validation-error"></span></div></div><div class="category-modal-actions"><button id="cancel-modal-btn" class="category-modal-btn category-modal-btn-secondary"><i class="fas fa-times"></i> <span data-lkey="cat_cancel_btn">إلغاء</span></button> <button id="confirm-modal-btn" class="category-modal-btn category-modal-btn-primary"><i class="fas fa-check"></i> <span data-lkey="cat_confirm_btn">متابعة</span></button></div></div></div>
+<!-- pages/category/categoryModal.html -->
+<div id="category-modal" class="category-modal-backdrop">
+    <div class="category-modal-content">
+        <h2 class="category-modal-title" data-lkey="cat_modal_title">📋 تحديد فئة المنتج الجديد</h2>
+        
+        <div class="category-selection-container">
+            <div class="category-select-group">
+                <label for="main-category" data-lkey="cat_main_label">
+                    <i class="fas fa-layer-group"></i> السوق الرئيسي
+                </label>
+                <select id="main-category" class="category-modal-select">
+                    <option value="" disabled selected data-lkey="cat_select_main_placeholder">اختر السوق الرئيسي...</option>
+                </select>
+            </div>
+            
+            <div class="category-select-group">
+                <label for="sub-category" data-lkey="cat_sub_label">
+                    <i class="fas fa-tags"></i> السوق الفرعي
+                </label>
+                <select id="sub-category" class="category-modal-select" disabled>
+                    <option value="" disabled selected data-lkey="cat_select_sub_placeholder">اختر السوق الفرعي...</option>
+                </select>
+                <span id="validation-message" class="category-validation-error"></span>
+            </div>
+        </div>
+        
+        <div class="category-modal-actions">
+            <button id="cancel-modal-btn" class="category-modal-btn category-modal-btn-secondary">
+                <i class="fas fa-times"></i> <span data-lkey="cat_cancel_btn">إلغاء</span>
+            </button>
+            <button id="confirm-modal-btn" class="category-modal-btn category-modal-btn-primary">
+                <i class="fas fa-check"></i> <span data-lkey="cat_confirm_btn">متابعة</span>
+            </button>
+        </div>
+    </div>
+</div>

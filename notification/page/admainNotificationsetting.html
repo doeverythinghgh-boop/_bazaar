@@ -1,4 +1,87 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>إعدادات الإشعارات - Suez Bazaar</title><script src="/js/core-loader.js"></script><link rel="stylesheet" href="/notification/page/settings.css"></head><body id="notification-settings-page"><div id="header-injection-point"></div><div class="notifiSetting_container"><div class="notifiSetting_header"><div style="display:flex;align-items:center;gap:15px;margin-bottom:20px"><h1 data-lkey="notif_settings_title" style="margin:0"><i class="fas fa-cogs"></i> إعدادات نظام الإشعارات</h1></div><p class="notifiSetting_description" data-lkey="notif_settings_desc">تحكم في من يستقبل الإشعارات لكل حدث في النظام.</p></div><h2 class="notifiSetting_section-title"><i class="fas fa-shopping-cart"></i> إشعارات الطلبات</h2><div class="table-responsive"><table><thead><tr><th data-lkey="notif_event_col">الحدث (Event)</th><th><span data-lkey="notif_buyer_col">المشتري</span> <i class="fas fa-user"></i></th><th><span data-lkey="notif_admin_col">الإدارة</span> <i class="fas fa-user-shield"></i></th><th><span data-lkey="notif_sellers_col">البائعين</span> <i class="fas fa-store"></i></th><th><span data-lkey="notif_delivery_col">التوصيل</span> <i class="fas fa-truck"></i></th></tr></thead><tbody id="notifiSetting_settings-body"></tbody></table></div><h2 class="notifiSetting_section-title"><i class="fas fa-box"></i> إشعارات إدارة المتجر</h2><div class="table-responsive"><table><thead><tr><th data-lkey="notif_event_col">الحدث (Event)</th><th><span data-lkey="notif_admin_col">الإدارة</span> <i class="fas fa-user-shield"></i></th><th><span data-lkey="notif_sellers_col">البائعين</span> <i class="fas fa-store"></i></th></tr></thead><tbody id="notifiSetting_store-settings-body"></tbody></table></div><div class="notifiSetting_controls"><button id="notifiSetting_reset-btn" class="notifiSetting_btn notifiSetting_btn-reset"><i class="fas fa-undo"></i> <span data-lkey="notif_reset_btn">استعادة الافتراضيات</span></button></div></div><div id="notifiSetting_toast" class="notifiSetting_toast"></div><script src="/notification/page/settings-controller.js" defer="defer"></script><script src="/notification/page/settings-api.js" defer="defer"></script><script src="/notification/page/settings-ui.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', async function () {
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إعدادات الإشعارات - Suez Bazaar</title>
+
+    <!-- Core Loader -->
+    <script src="/js/core-loader.js"></script>
+
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="/notification/page/settings.css">
+
+    <!-- Core Scripts -->
+
+</head>
+
+<body id="notification-settings-page">
+
+    <div id="header-injection-point"></div>
+
+    <div class="notifiSetting_container">
+        <div class="notifiSetting_header">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+
+                <h1 data-lkey="notif_settings_title" style="margin: 0;"><i class="fas fa-cogs"></i> إعدادات نظام
+                    الإشعارات</h1>
+            </div>
+            <p class="notifiSetting_description" data-lkey="notif_settings_desc">تحكم في من يستقبل الإشعارات لكل حدث في
+                النظام.</p>
+        </div>
+
+        <h2 class="notifiSetting_section-title"><i class="fas fa-shopping-cart"></i> إشعارات الطلبات</h2>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-lkey="notif_event_col">الحدث (Event)</th>
+                        <th><span data-lkey="notif_buyer_col">المشتري</span> <i class="fas fa-user"></i></th>
+                        <th><span data-lkey="notif_admin_col">الإدارة</span> <i class="fas fa-user-shield"></i></th>
+                        <th><span data-lkey="notif_sellers_col">البائعين</span> <i class="fas fa-store"></i></th>
+                        <th><span data-lkey="notif_delivery_col">التوصيل</span> <i class="fas fa-truck"></i></th>
+                    </tr>
+                </thead>
+                <tbody id="notifiSetting_settings-body">
+                    <!-- Rows will be populated by JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="notifiSetting_section-title"><i class="fas fa-box"></i> إشعارات إدارة المتجر</h2>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-lkey="notif_event_col">الحدث (Event)</th>
+                        <th><span data-lkey="notif_admin_col">الإدارة</span> <i class="fas fa-user-shield"></i></th>
+                        <th><span data-lkey="notif_sellers_col">البائعين</span> <i class="fas fa-store"></i></th>
+                    </tr>
+                </thead>
+                <tbody id="notifiSetting_store-settings-body">
+                    <!-- Rows will be populated by JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="notifiSetting_controls">
+            <button id="notifiSetting_reset-btn" class="notifiSetting_btn notifiSetting_btn-reset">
+                <i class="fas fa-undo"></i> <span data-lkey="notif_reset_btn">استعادة الافتراضيات</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="notifiSetting_toast" class="notifiSetting_toast"></div>
+
+    <!-- Page Specific Scripts -->
+    <script src="/notification/page/settings-controller.js" defer></script>
+    <script src="/notification/page/settings-api.js" defer></script>
+    <script src="/notification/page/settings-ui.js" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
             // 1. Theme Init
             if (typeof initAppTheme === 'function') initAppTheme();
 
@@ -28,4 +111,8 @@
             if (typeof notifiSetting_Controller !== 'undefined' && typeof notifiSetting_Controller.notifiSetting_init === 'function') {
                 notifiSetting_Controller.notifiSetting_init();
             }
-        });</script></body></html>
+        });
+    </script>
+</body>
+
+</html>

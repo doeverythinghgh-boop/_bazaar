@@ -1,4 +1,54 @@
-<!DOCTYPE html><html id="index-html-root" lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Suez Bazaar - الرئيسية</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Suez Bazaar - الرئيسية</title><script src="/js/core-loader.js"></script><script src="/pages/advertisement/advertisement.js" defer="defer"></script><script src="/pages/categories/categories.js" defer="defer"></script></head><body style="background-color:var(--bg-color-light)"><div id="header-injection-point"></div><div id="home-main-wrapper" style="background-color:var(--bg-color-light)"><div id="loader-container" class="loader"></div><div class="section-header-custom1" id="home-ads-header" style="display:none"></div><div id="advertisement" style="background-color:var(--bg-color-light)"></div><div id="featured-products" style="background-color:transparent"></div><div class="section-header-custom" id="home-categories-header" style="display:none"><div class="section-header-icon-container" id="home-categories-icon-container"><i class="fas fa-store" id="home-categories-icon"></i></div><span id="home-categories-title-text" data-lkey="home_categories_title">أسواق السويس</span></div><div id="categories00" style="background-color:var(--bg-color-light)"></div></div><script>/**
+<!DOCTYPE html>
+<html id="index-html-root" lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Suez Bazaar - الرئيسية</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Suez Bazaar - الرئيسية</title>
+
+  <!-- Core Loader: Injects all standard Meta, CSS, and JS -->
+  <script src="/js/core-loader.js"></script>
+
+  <!-- Feature Modules (Page Specific) -->
+  <script src="/pages/advertisement/advertisement.js" defer></script>
+  <script src="/pages/categories/categories.js" defer></script>
+</head>
+
+<body style="background-color: var(--bg-color-light);">
+
+  <!-- Header Container -->
+  <div id="header-injection-point"></div>
+
+  <!-- Home Main Content -->
+  <div id="home-main-wrapper" style="background-color: var(--bg-color-light);">
+    <div id="loader-container" class="loader"></div>
+
+    <!-- Special Offers Header -->
+    <div class="section-header-custom1" id="home-ads-header" style="display: none;">
+    </div>
+    <div id="advertisement" style="background-color: var(--bg-color-light);"></div>
+
+    <!-- Featured Products Section -->
+    <div id="featured-products" style="background-color: transparent;"></div>
+
+    <!-- Categories Header -->
+    <div class="section-header-custom" id="home-categories-header" style="display: none;">
+      <div class="section-header-icon-container" id="home-categories-icon-container">
+        <i class="fas fa-store" id="home-categories-icon"></i>
+      </div>
+      <span id="home-categories-title-text" data-lkey="home_categories_title">أسواق السويس</span>
+    </div>
+    <div id="categories00" style="background-color: var(--bg-color-light);"></div>
+  </div>
+
+  <script>
+    /**
      * @function home_initContent
      * @description Fetches and initializes the dynamic parts of the home page.
      */
@@ -121,4 +171,8 @@
 
       // 7. Bootstrap content
       await home_initContent();
-    });</script></body></html>
+    });
+  </script>
+</body>
+
+</html>

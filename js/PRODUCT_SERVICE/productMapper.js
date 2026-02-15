@@ -1,1 +1,86 @@
-var mapProductData=function(rawProduct){if(!rawProduct||"object"!=typeof rawProduct)return console.warn("[ProductMapper] Attempted to map invalid product data."),null;if(rawProduct.error)return console.warn("[ProductMapper] Cannot map an error object:",rawProduct.error),null;var rawImages=rawProduct.ImageName||rawProduct.image||rawProduct.product_image||rawProduct.imageSrc||rawProduct.img||"",imageSrcArray=(Array.isArray(rawImages)?rawImages:"string"==typeof rawImages?rawImages.split(","):[]).map(function(name){var trimmedName=name.trim();return"function"==typeof getPublicR2FileUrl?getPublicR2FileUrl(trimmedName):trimmedName}),price=void 0!==rawProduct.product_price?rawProduct.product_price:void 0!==rawProduct.pricePerItem?rawProduct.pricePerItem:void 0!==rawProduct.Price?rawProduct.Price:rawProduct.price,quantity=void 0!==rawProduct.product_quantity?rawProduct.product_quantity:void 0!==rawProduct.availableQuantity?rawProduct.availableQuantity:void 0!==rawProduct.Quantity?rawProduct.Quantity:rawProduct.quantity,realPrice=void 0!==rawProduct.realPrice?rawProduct.realPrice:void 0!==rawProduct.real_price?rawProduct.real_price:price,heavyLoad=void 0!==rawProduct.heavyLoad?rawProduct.heavyLoad:void 0!==rawProduct.heavy_load?rawProduct.heavy_load:0,sellerName=rawProduct.seller_name||rawProduct.sellerName||rawProduct.seller_username||"بائع غير معروف",sellerPhone=rawProduct.seller_phone||rawProduct.sellerPhone||"";return{product_key:rawProduct.product_key||rawProduct.key,productName:rawProduct.productName||rawProduct.product_name||rawProduct.Name||rawProduct.name||"منتج غير مسمى",user_key:rawProduct.user_key,pricePerItem:price,original_price:rawProduct.original_price,image:imageSrcArray.length>0?imageSrcArray[0]:null,imageSrc:imageSrcArray,availableQuantity:quantity,sellerMessage:rawProduct.user_message||rawProduct.sellerMessage||"",description:rawProduct.product_description||rawProduct.description||"",sellerName:sellerName,sellerPhone:sellerPhone,seller_location:rawProduct.seller_location||"",MainCategory:rawProduct.MainCategory,SubCategory:rawProduct.SubCategory,realPrice:realPrice,heavyLoad:heavyLoad,limitPackage:void 0!==rawProduct.limitPackage?rawProduct.limitPackage:0,isDelivered:void 0!==rawProduct.isDelivered?rawProduct.isDelivered:0,type:void 0!==rawProduct.serviceType?rawProduct.serviceType:rawProduct.type}};window.mapProductData=mapProductData;
+/**
+ * @file js/PRODUCT_SERVICE/productMapper.js
+ * @description Centralized mapper to transform raw product data from various API endpoints into a unified frontend format.
+ * This ensures consistency across different views (Categories, Search, Sales Movement, etc.) and makes maintenance easier.
+ * @author Hisham
+ */
+
+/**
+ * @description Maps raw product data to a unified format used by the Product View and Cart.
+ * @function mapProductData
+ * @param {Object} rawProduct - The raw product object from the API.
+ * @returns {Object} The formatted product object for the frontend.
+ * @global
+ */
+var mapProductData = function (rawProduct) {
+    if (!rawProduct || typeof rawProduct !== 'object') {
+        console.warn("[ProductMapper] Attempted to map invalid product data.");
+        return null;
+    }
+
+    if (rawProduct.error) {
+        console.warn("[ProductMapper] Cannot map an error object:", rawProduct.error);
+        return null;
+    }
+
+    // 1. Process Images
+    // Split comma-separated image names and convert to full URLs
+    // Support multiple field names from different API versions (ImageName, image, product_image, imageSrc)
+    var rawImages = rawProduct.ImageName || rawProduct.image || rawProduct.product_image || rawProduct.imageSrc || rawProduct.img || "";
+    var imageNames = Array.isArray(rawImages) ? rawImages : (typeof rawImages === "string" ? rawImages.split(",") : []);
+    var imageSrcArray = imageNames.map(function (name) {
+        var trimmedName = name.trim();
+        // Use global helper if available, otherwise return raw name
+        return (typeof getPublicR2FileUrl === "function") ? getPublicR2FileUrl(trimmedName) : trimmedName;
+    });
+
+    // 2. Normalize Field Names
+    // Different API endpoints or database views might use slightly different naming conventions.
+    // We map them to a single standard used by loadProductView and cart logic.
+
+    // Price and Quantity
+    var price = (rawProduct.product_price !== undefined) ? rawProduct.product_price :
+        (rawProduct.pricePerItem !== undefined ? rawProduct.pricePerItem :
+            (rawProduct.Price !== undefined ? rawProduct.Price : rawProduct.price));
+
+    var quantity = (rawProduct.product_quantity !== undefined) ? rawProduct.product_quantity :
+        (rawProduct.availableQuantity !== undefined ? rawProduct.availableQuantity :
+            (rawProduct.Quantity !== undefined ? rawProduct.Quantity : rawProduct.quantity));
+
+    // App Price (Internal value used for delivery/admin verification)
+    var realPrice = (rawProduct.realPrice !== undefined) ? rawProduct.realPrice : (rawProduct.real_price !== undefined ? rawProduct.real_price : price);
+
+    // Shipping Weight / Load Factor
+    var heavyLoad = (rawProduct.heavyLoad !== undefined) ? rawProduct.heavyLoad : (rawProduct.heavy_load !== undefined ? rawProduct.heavy_load : 0);
+
+    // Seller Information (Handling all possible field names from database joins)
+    var sellerName = rawProduct.seller_name || rawProduct.sellerName || rawProduct.seller_username || "بائع غير معروف";
+    var sellerPhone = rawProduct.seller_phone || rawProduct.sellerPhone || "";
+
+    // 3. Construct Unified Object
+    return {
+        product_key: rawProduct.product_key || rawProduct.key,
+        productName: rawProduct.productName || rawProduct.product_name || rawProduct.Name || rawProduct.name || "منتج غير مسمى",
+        user_key: rawProduct.user_key,
+        pricePerItem: price,
+        original_price: rawProduct.original_price,
+        image: imageSrcArray.length > 0 ? imageSrcArray[0] : null, // Primary image
+        imageSrc: imageSrcArray, // All images array
+        availableQuantity: quantity,
+        sellerMessage: rawProduct.user_message || rawProduct.sellerMessage || "",
+        description: rawProduct.product_description || rawProduct.description || "",
+        sellerName: sellerName,
+        sellerPhone: sellerPhone,
+        seller_location: rawProduct.seller_location || "",
+        MainCategory: rawProduct.MainCategory,
+        SubCategory: rawProduct.SubCategory,
+        realPrice: realPrice,
+        heavyLoad: heavyLoad,
+        limitPackage: rawProduct.limitPackage !== undefined ? rawProduct.limitPackage : 0,
+        isDelivered: rawProduct.isDelivered !== undefined ? rawProduct.isDelivered : 0,
+        type: rawProduct.serviceType !== undefined ? rawProduct.serviceType : rawProduct.type,
+    };
+};
+
+// Ensure global accessibility
+window.mapProductData = mapProductData;

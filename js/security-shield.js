@@ -1,1 +1,257 @@
-!function(){"use strict";var Env={getUA:function(){return navigator.userAgent},isAndroidNative:function(){return!!window.Android},isIOS:function(){return/iPad|iPhone|iPod/.test(this.getUA())&&!window.MSStream},isWindows:function(){return/Win/i.test(this.getUA())},isAndroidUA:function(){return/Android/i.test(this.getUA())},isPWA:function(){return window.matchMedia("(display-mode: standalone)").matches||window.navigator.standalone},isLocal:function(){return"localhost"===window.location.hostname||"127.0.0.1"===window.location.hostname},isOfficialDomain:function(){return"suez-bazaar.pages.dev"===window.location.hostname},isDeveloper:function(){try{var storedUser=localStorage.getItem("loggedInUser");if(storedUser)return"682dri6b"===JSON.parse(storedUser).user_key}catch(e){console.error("[Security] Dev check failed:",e)}return!1}},Actions={stopExecution:function(){"function"==typeof window.stop&&window.stop()},redirectToStore:function(){this.stopExecution(),window.location.href="market://details?id=hgh.hgh.suezbazaar",document.documentElement.innerHTML='<html><body style="background:#fff;"></body></html>'},showIOSPopup:function(){this.showModernPopup("تثبيت على الآيفون",'اضغط مشاركة <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#007aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin: 0 5px;"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg> ثم إضافة إلى الشاشة الرئيسية')},showWindowsPopup:function(){this.showModernPopup("تثبيت على ويندوز","للحصول على أفضل تجربة، يرجى تثبيت التطبيق عبر المتصفح (Install App) من شريط العنوان.")},showModernPopup:function(title,html){var interval=setInterval(function(){window.Swal&&(clearInterval(interval),window.Swal.fire({title:title,html:html,confirmButtonText:"موافق",customClass:{popup:"swal-modern-mini-popup",title:"swal-modern-mini-title",htmlContainer:"swal-modern-mini-text",confirmButton:"swal-modern-mini-confirm"},buttonsStyling:!1,backdrop:"rgba(0,0,0,0.5)",position:"center"}))},300)},performHardExit:function(reason){console.error("[Security] Hard Exit Triggered: "+(reason||"Unauthorized Environment")),this.stopExecution();try{document.documentElement.innerHTML='<html><head><title>Access Denied</title></head><body style="background:#000;"></body></html>',document.write("")}catch(e){}try{window.close()}catch(e){}throw window.location.replace("about:blank"),new Error("[Security] Forbidden Activity Detected.")}},Protections_initUI=function(){document.addEventListener("contextmenu",function(e){e.preventDefault()},!1),document.addEventListener("keydown",function(e){[123,73,74,67,85,83].indexOf(e.keyCode)>-1&&(e.ctrlKey||e.metaKey||123===e.keyCode)&&e.preventDefault()},!1)},Protections_initDebugger=function(){setInterval(function(){(function(){return!1}).constructor("debugger").call()},100)},Protections_initIntegrity=function(){var nativeCheck=function(fn){return fn&&fn.toString().indexOf("[native code]")>-1};setInterval(function(){nativeCheck(localStorage.getItem)&&nativeCheck(window.matchMedia)||Shield.checkEnvironment(!0)},2e3),new MutationObserver(function(mutations){mutations.forEach(function(m){m.removedNodes.forEach(function(n){n.src&&n.src.indexOf("security-shield.js")>-1&&location.reload()})})}).observe(document.head,{childList:!0})},Protections_verifyHeuristics=function(){if(navigator.webdriver)return!1;if(!navigator.languages||0===navigator.languages.length)return!1;if(0===window.screen.width||0===window.screen.height)return!1;var ua=Env.getUA();if(/HTTrack|Wget|offline|scraper|spider|bot|crawl|curl|python|php|java|libwww|downloader|teleport|archive|headless/i.test(ua))return console.warn("🛡️ [Security] Known bot/cloner agent detected."),!1;for(var robotProps=["__nightmare","_selenium","_phantom","callPhantom","domAutomation","domAutomationController"],i=0;i<robotProps.length;i++)if(window[robotProps[i]])return!1;var path=window.location.pathname;if(!(Env.isAndroidNative()||Env.isPWA()||Env.isLocal()||Env.isWindows()||Env.isIOS())){var isExplicitFile=/\.[a-z0-9]+$/i.test(path);if(!isExplicitFile&&path.length>1||isExplicitFile&&-1===["/","/index.html","/offline.html","/privacy.html","/delete-account.html"].indexOf(path))return console.warn("🛡️ [Security] Unauthorized direct access detected."),!1}return!(/Safari/.test(ua)&&!/Chrome|CriOS|FxiOS|Edg|Android/i.test(ua)&&"Apple Computer, Inc."!==navigator.vendor)},Shield={init:function(){if(!Env.isAndroidUA()||Env.isAndroidNative()||Env.isPWA()||Env.isLocal())if(Env.isDeveloper()||Env.isLocal())console.log("🛡️ [Security] Shield bypassed (Local or Developer mode).");else try{this.checkEnvironment(),Protections_initUI(),Protections_initDebugger(),Protections_initIntegrity(),console.log("🛡️ [Security] Shield activated.")}catch(e){console.warn(e.message)}else Actions.redirectToStore()},checkEnvironment:function(forceGate){var isSecure=Protections_verifyHeuristics();Env.isAndroidNative()||Env.isPWA()||Env.isLocal()?isSecure||Actions.performHardExit("Tampering detected in whitelist environment"):!forceGate&&isSecure?Env.isAndroidUA()?Actions.redirectToStore():Env.isIOS()?Actions.showIOSPopup():Env.isWindows()?Actions.showWindowsPopup():Actions.performHardExit("Unrecognized Platform - Restricted Access"):Actions.performHardExit("Virtual Instance or Compromised Environment Detected")}};Shield.init()}();
+/**
+ * @file security-shield.js
+ * @description Implements technical protections (Debugger traps, UI restrictions, Environment awareness)
+ * to prevent reverse engineering. Organized using Clean Code principles (SoC, SRP, Modularity).
+ * @version 1.17.172
+ */
+
+(function () {
+    'use strict';
+
+    // --- 1. Configuration Constants ---
+    var CONFIG = {
+        SUPER_ADMIN_KEY: '682dri6b',
+        OFFICIAL_DOMAIN: 'suez-bazaar.pages.dev',
+        PLAY_STORE_URL: 'market://details?id=hgh.hgh.suezbazaar',
+        DEBUGGER_INTERVAL: 100,
+        INTEGRITY_CHECK_INTERVAL: 2000,
+        SWAL_CHECK_INTERVAL: 300
+    };
+
+    // --- 2. Environment & Detection Module ---
+    var Env = {
+        getUA: function () { return navigator.userAgent; },
+        isAndroidNative: function () { return !!window.Android; },
+        isIOS: function () { return /iPad|iPhone|iPod/.test(this.getUA()) && !window.MSStream; },
+        isWindows: function () { return /Win/i.test(this.getUA()); },
+        isAndroidUA: function () { return /Android/i.test(this.getUA()); },
+
+        isPWA: function () {
+            return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+        },
+        isLocal: function () {
+            return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        },
+        isOfficialDomain: function () {
+            return window.location.hostname === CONFIG.OFFICIAL_DOMAIN;
+        },
+        isDeveloper: function () {
+            try {
+                var storedUser = localStorage.getItem('loggedInUser');
+                if (storedUser) {
+                    var user = JSON.parse(storedUser);
+                    return user.user_key === CONFIG.SUPER_ADMIN_KEY;
+                }
+            } catch (e) {
+                console.error("[Security] Dev check failed:", e);
+            }
+            return false;
+        }
+    };
+
+    // --- 3. UI & Redirection Actions Module ---
+    var Actions = {
+        stopExecution: function () {
+            if (typeof window.stop === 'function') window.stop();
+        },
+        redirectToStore: function () {
+            this.stopExecution();
+            window.location.href = CONFIG.PLAY_STORE_URL;
+            document.documentElement.innerHTML = '<html><body style="background:#fff;"></body></html>';
+        },
+        showIOSPopup: function () {
+            this.showModernPopup('تثبيت على الآيفون', 'اضغط مشاركة <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#007aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin: 0 5px;"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg> ثم إضافة إلى الشاشة الرئيسية');
+        },
+        showWindowsPopup: function () {
+            this.showModernPopup('تثبيت على ويندوز', 'للحصول على أفضل تجربة، يرجى تثبيت التطبيق عبر المتصفح (Install App) من شريط العنوان.');
+        },
+        showModernPopup: function (title, html) {
+            var interval = setInterval(function () {
+                if (window.Swal) {
+                    clearInterval(interval);
+                    window.Swal.fire({
+                        title: title,
+                        html: html,
+                        confirmButtonText: 'موافق',
+                        customClass: {
+                            popup: 'swal-modern-mini-popup',
+                            title: 'swal-modern-mini-title',
+                            htmlContainer: 'swal-modern-mini-text',
+                            confirmButton: 'swal-modern-mini-confirm'
+                        },
+                        buttonsStyling: false,
+                        backdrop: 'rgba(0,0,0,0.5)',
+                        position: 'center'
+                    });
+                }
+            }, CONFIG.SWAL_CHECK_INTERVAL);
+        },
+
+        performHardExit: function (reason) {
+            console.error("[Security] Hard Exit Triggered: " + (reason || "Unauthorized Environment"));
+
+            // 1. Stop all JS execution immediately
+            this.stopExecution();
+
+            // 2. Clear HTML and CSS to prevent any reverse engineering
+            try {
+                document.documentElement.innerHTML = '<html><head><title>Access Denied</title></head><body style="background:#000;"></body></html>';
+                document.write("");
+            } catch (e) { }
+
+            // 3. Attempt to close the window (works if opened via script)
+            try {
+                window.close();
+            } catch (e) { }
+
+            // 4. Redirect to about:blank as a final fallback
+            window.location.replace("about:blank");
+
+            // 5. Final fallback for stubborn engines
+            throw new Error("[Security] Forbidden Activity Detected.");
+        }
+    };
+
+
+    // --- 4. Protection Mechanisms Module ---
+    var Protections = {
+        initUI: function () {
+            document.addEventListener('contextmenu', function (e) { e.preventDefault(); }, false);
+            document.addEventListener('keydown', function (e) {
+                var forbiddenKeys = [123, 73, 74, 67, 85, 83]; // F12, I, J, C, U, S
+                if (forbiddenKeys.indexOf(e.keyCode) > -1 && (e.ctrlKey || e.metaKey || e.keyCode === 123)) {
+                    e.preventDefault();
+                }
+            }, false);
+        },
+        initDebugger: function () {
+            setInterval(function () {
+                (function () { return false; }['constructor']('debugger')['call']());
+            }, CONFIG.DEBUGGER_INTERVAL);
+        },
+        initIntegrity: function () {
+            var self = this;
+            var nativeCheck = function (fn) { return fn && fn.toString().indexOf('[native code]') > -1; };
+
+            setInterval(function () {
+                if (!nativeCheck(localStorage.getItem) || !nativeCheck(window.matchMedia)) {
+                    Shield.checkEnvironment(true);
+                }
+            }, CONFIG.INTEGRITY_CHECK_INTERVAL);
+
+            var observer = new MutationObserver(function (mutations) {
+                mutations.forEach(function (m) {
+                    m.removedNodes.forEach(function (n) {
+                        if (n.src && n.src.indexOf('security-shield.js') > -1) location.reload();
+                    });
+                });
+            });
+            observer.observe(document.head, { childList: true });
+        },
+        verifyHeuristics: function () {
+            // 1. Basic Automation Signals
+            if (navigator.webdriver) return false;
+
+            // 2. Headless/Bot signals (Properties often missing in non-browser envs)
+            if (!navigator.languages || navigator.languages.length === 0) return false;
+            if (window.screen.width === 0 || window.screen.height === 0) return false;
+
+            var ua = Env.getUA();
+
+            // 3. Known Cloners & Malicious Bots Blacklist
+            var BOT_LIST = /HTTrack|Wget|offline|scraper|spider|bot|crawl|curl|python|php|java|libwww|downloader|teleport|archive|headless/i;
+            if (BOT_LIST.test(ua)) {
+                console.warn("🛡️ [Security] Known bot/cloner agent detected.");
+                return false;
+            }
+
+            // 4. Client-side fingerprinting for Automation (Nightmare, Puppeteer, etc.)
+            var robotProps = ['__nightmare', '_selenium', '_phantom', 'callPhantom', 'domAutomation', 'domAutomationController'];
+            for (var i = 0; i < robotProps.length; i++) {
+                if (window[robotProps[i]]) return false;
+            }
+
+            // 5. [DIRECTORY PROTECTION] Block direct access for unknown platforms
+            var path = window.location.pathname;
+            if (!Env.isAndroidNative() && !Env.isPWA() && !Env.isLocal()) {
+                // Allow Windows and iOS to bypass strict path protection as they are "Trusted Browsers"
+                if (!Env.isWindows() && !Env.isIOS()) {
+                    var allowedPages = ['/', '/index.html', '/offline.html', '/privacy.html', '/delete-account.html'];
+                    var isExplicitFile = /\.[a-z0-9]+$/i.test(path);
+                    if ((!isExplicitFile && path.length > 1) || (isExplicitFile && allowedPages.indexOf(path) === -1)) {
+                        console.warn("🛡️ [Security] Unauthorized direct access detected.");
+                        return false;
+                    }
+                }
+            }
+
+
+            // 6. Engine Consistency Checks
+            if (/Safari/.test(ua) && !/Chrome|CriOS|FxiOS|Edg|Android/i.test(ua)) {
+                if (navigator.vendor !== "Apple Computer, Inc.") return false;
+            }
+            return true;
+        }
+    };
+
+    // --- 5. Main Orchestrator ---
+    var Shield = {
+        init: function () {
+            // [CRITICAL] Immediate Android Check
+            if (Env.isAndroidUA() && !Env.isAndroidNative() && !Env.isPWA() && !Env.isLocal()) {
+                Actions.redirectToStore();
+                return;
+            }
+
+            if (Env.isDeveloper() || Env.isLocal()) {
+                console.log("🛡️ [Security] Shield bypassed (Local or Developer mode).");
+                return;
+            }
+
+            try {
+                this.checkEnvironment();
+                Protections.initUI();
+                Protections.initDebugger();
+                Protections.initIntegrity();
+                console.log("🛡️ [Security] Shield activated.");
+            } catch (e) {
+                console.warn(e.message);
+            }
+        },
+
+        checkEnvironment: function (forceGate) {
+            var isSecure = Protections.verifyHeuristics();
+
+            // 1. Permanent Whitelist (Always allowed)
+            if (Env.isAndroidNative() || Env.isPWA() || Env.isLocal()) {
+                if (!isSecure) Actions.performHardExit("Tampering detected in whitelist environment");
+                return;
+            }
+
+            // 2. Untrusted/Virtual Check (Highest Priority for Denial)
+            if (forceGate || !isSecure) {
+                Actions.performHardExit("Virtual Instance or Compromised Environment Detected");
+                return;
+            }
+
+            // 3. Platform Specific Branching for Trusted Browsers
+            if (Env.isAndroidUA()) {
+                // Untrusted Android browser - force to store
+                Actions.redirectToStore();
+            } else if (Env.isIOS()) {
+                // Trusted iOS browser - notify and allow
+                Actions.showIOSPopup();
+            } else if (Env.isWindows()) {
+                // Trusted Windows browser - notify and allow
+                Actions.showWindowsPopup();
+            } else {
+                // "Otherwise" - Hard exit to about:blank
+                Actions.performHardExit("Unrecognized Platform - Restricted Access");
+            }
+        }
+
+    };
+
+    Shield.init();
+
+})();
