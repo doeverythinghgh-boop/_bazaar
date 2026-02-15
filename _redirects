@@ -1,0 +1,13 @@
+# Redirect folder access to root
+/js/ / 301
+/style/ / 301
+/assets/ / 301
+/images/ / 301
+/lang/ / 301
+/maintenance/ / 301
+/note/ / 301
+/pages/ / 301
+/api/ / 301
+
+# Fallback forSPA
+/* /index.html 200

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="order_html">
+
+<head id="order_head">
+    <meta charset="UTF-8" id="order_meta_charset">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+    <title>تفاصيل الطلب - Suez Bazaar</title>
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/style/variables.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/utilities.css">
+    <link rel="stylesheet" href="/style/modals-and-dialogs.css">
+
+    <!-- Component Styles -->
+    <link rel="stylesheet" href="/orderStage/orderData/parts/common.css" id="order_css_common">
+    <link rel="stylesheet" href="/orderStage/orderData/parts/navigation.css" id="order_css_nav">
+
+    <!-- Core Scripts (Ordered by Dependency) -->
+    <script src="/assets/libs/sweetalert2/sweetalert2.all.min.js" defer></script>
+    <script src="/js/config.js" defer></script>
+    <script src="/js/globalVariable.js" defer></script>
+    <script src="/js/PRODUCT_SERVICE/serviceCategoryHelper.js" defer></script>
+    <script src="/js/PRODUCT_SERVICE/productStateManager.js" defer></script>
+    <script src="/js/PRODUCT_SERVICE/productMapper.js" defer></script>
+    <script src="/js/network.js" defer></script>
+    <script src="/js/tools.js" defer></script>
+    <script src="/orderStage/order-db-manager.js" defer></script>
+    <script src="/js/connectUsers.js" defer></script>
+    <script src="/js/auth/uiHelpers.js" defer></script>
+    <script src="/js/auth/validators.js" defer></script>
+    <script src="/js/auth/sessionManager.js" defer></script>
+    <script src="/js/auth.js" defer></script>
+    <script src="/js/app-nav.js" defer></script>
+    <script src="/js/app-header.js" defer></script>
+    <script src="/js/app-i18n.js" defer></script>
+    <script src="/js/app-theme.js" defer></script>
+    <script src="/js/app-config.js" defer></script>
+    <script src="/js/app-ux.js" defer></script>
+</head>
+
+<body id="order_body">
+
+    <!-- Header Injection Point -->
+    <div id="header-injection-point"></div>
+
+    <div id="order_page_wrapper" class="order_page_wrapper">
+
+
+
+        <!-- Section 1: Products View (Publicly visible to all roles) -->
+        <div id="order_role_products" class="order_role_section" style="display: none;">
+            <div id="order_title_products" class="order_section_title"><i id="order_icon_products"
+                    class="fas fa-boxes"></i> لوحة المنتجات</div>
+            <div id="order_content_products" class="order_role_content">جاري التحميل...</div>
+        </div>
+
+        <!-- Section 2: Buyer View -->
+        <div id="order_role_buyer" class="order_role_section" style="display: none;">
+            <div id="order_title_buyer" class="order_section_title"><i id="order_icon_buyer"
+                    class="fas fa-shopping-bag"></i> لوحة المشتري</div>
+            <div id="order_content_buyer" class="order_role_content">جاري التحميل...</div>
+        </div>
+
+        <!-- Section 3: Seller View -->
+        <div id="order_role_seller" class="order_role_section" style="display: none;">
+            <div id="order_title_seller" class="order_section_title"><i id="order_icon_seller" class="fas fa-store"></i>
+                لوحة البائع</div>
+            <div id="order_content_seller" class="order_role_content">جاري التحميل...</div>
+        </div>
+
+        <!-- Section 4: Delivery View -->
+        <div id="order_role_delivery" class="order_role_section" style="display: none;">
+            <div id="order_title_delivery" class="order_section_title"><i id="order_icon_delivery"
+                    class="fas fa-truck"></i> مهام التوصيل</div>
+            <div id="order_content_delivery" class="order_role_content">جاري التحميل...</div>
+        </div>
+
+        <!-- Section 5: Super Admin Exclusive -->
+        <div id="order_admaindata" class="order_container" style="display: none;">
+            <div id="order_loading_msg" class="order_loading">جاري تحميل البيانات الشاملة...</div>
+        </div>
+
+    </div>
+
+    <!-- Scripts: Components First -->
+    <script id="order_script_nav" src="/orderStage/orderData/parts/navigation.js"></script>
+
+    <!-- Shared Modules -->
+    <script id="order_script_parser" src="/orderStage/orderData/js/status-parser.js"></script>
+    <script id="order_script_ui_helpers" src="/orderStage/orderData/js/ui-helpers.js"></script>
+    <script id="order_script_stepper" src="/orderStage/orderData/js/stepper.js"></script>
+    <script id="order_script_item_actions" src="/orderStage/orderData/js/item-actions.js"></script>
+
+    <!-- Role Parts -->
+    <script id="order_script_buyer" src="/orderStage/orderData/parts/buyer.js"></script>
+    <script id="order_script_seller" src="/orderStage/orderData/parts/seller.js"></script>
+    <script id="order_script_delivery" src="/orderStage/orderData/parts/delivery.js"></script>
+    <script id="order_script_products" src="/orderStage/orderData/parts/products.js"></script>
+
+    <!-- Admin Partials -->
+    <script id="order_script_admin_header" src="/orderStage/orderData/parts/admin-partials/header.js"></script>
+    <script id="order_script_admin_buyer_info" src="/orderStage/orderData/parts/admin-partials/buyer-info.js"></script>
+    <script id="order_script_admin_items_list" src="/orderStage/orderData/parts/admin-partials/items-list.js"></script>
+    <script id="order_script_admin_grid_info" src="/orderStage/orderData/parts/admin-partials/grid-info.js"></script>
+    <script id="order_script_admin_permissions"
+        src="/orderStage/orderData/parts/admin-partials/permissions.js"></script>
+    <script id="order_script_admin_workflow"
+        src="/orderStage/orderData/parts/admin-partials/workflow-guide.js"></script>
+    <script id="order_script_admin_raw_data" src="/orderStage/orderData/parts/admin-partials/raw-data.js"></script>
+    <script id="order_script_admin_master" src="/orderStage/orderData/parts/admin.js"></script>
+
+    <!-- Main Orchestrator -->
+    <script id="order_script" src="/orderStage/orderData/order-data.js" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            // 1. Initialize Theme
+            if (typeof initAppTheme === 'function') initAppTheme();
+
+            // 2. Initialize Translations (CRITICAL: Load before session and header)
+            if (typeof loadIndexTranslations === 'function') {
+                await window.loadIndexTranslations();
+            }
+
+            // 3. Initialize Session (Syncs UI, depends on translations)
+            if (typeof SessionManager !== 'undefined') {
+                SessionManager.init();
+            }
+
+            // 4. Initialize Header (Depends on translations)
+            if (typeof AppHeader !== 'undefined') {
+                await AppHeader.init('header-injection-point', 'index-sales-movement-btn');
+            }
+
+            // 5. Apply Translations to Page
+            if (window.applyAppTranslations) window.applyAppTranslations();
+        });
+    </script>
+</body>
+
+</html>

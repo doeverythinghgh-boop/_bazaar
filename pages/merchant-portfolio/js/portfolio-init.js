@@ -7,6 +7,7 @@
  * Initializes the portfolio page logic.
  */
 async function initPortfolio() {
+    console.log(`%c[Portfolio] 0. بدء تهيئة صفحة ملف التاجر...`, "color: blue; font-weight: bold; font-size: 12px;");
     console.log("[Portfolio] Initializing...");
 
     // 1. Get User Key from URL
