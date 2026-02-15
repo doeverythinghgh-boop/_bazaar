@@ -108,8 +108,8 @@
     "en": "Yes, there is a minimum order limit"
   },
   "profile_min_order_value_label": {
-    "ar": "الحد الأدنى للطلب (ج.م):",
-    "en": "Minimum Order (EGP):"
+    "ar": "هل يوجد حد ادنى للطلب (ج.م)؟",
+    "en": "Is there a minimum order limit (EGP)?"
   },
   "profile_min_order_placeholder": {
     "ar": "مثلاً: 100",
@@ -248,8 +248,8 @@
     "en": "Working Hours"
   },
   "business_whatsapp_label": {
-    "ar": "رابط واتساب",
-    "en": "WhatsApp Link"
+    "ar": "رقم الواتساب",
+    "en": "WhatsApp Number"
   },
   "business_whatsapp_placeholder": {
     "ar": "مثلاً: 01012345678",
@@ -258,5 +258,65 @@
   "business_social_label": {
     "ar": "روابط التواصل",
     "en": "Social Links"
+  },
+  "business_facebook_label": {
+    "ar": "رابط فيسبوك",
+    "en": "Facebook Link"
+  },
+  "business_facebook_placeholder": {
+    "ar": "https://facebook.com/yourpage",
+    "en": "https://facebook.com/yourpage"
+  },
+  "business_instagram_label": {
+    "ar": "رابط إنستجرام",
+    "en": "Instagram Link"
+  },
+  "business_instagram_placeholder": {
+    "ar": "https://instagram.com/yourprofile",
+    "en": "https://instagram.com/yourprofile"
+  },
+  "business_tiktok_label": {
+    "ar": "رابط تيك توك",
+    "en": "TikTok Link"
+  },
+  "business_tiktok_placeholder": {
+    "ar": "https://tiktok.com/@username",
+    "en": "https://tiktok.com/@username"
+  },
+  "business_telegram_label": {
+    "ar": "رابط تليجرام",
+    "en": "Telegram Link"
+  },
+  "business_telegram_placeholder": {
+    "ar": "https://t.me/username",
+    "en": "https://t.me/username"
+  },
+  "business_website_label": {
+    "ar": "الموقع الإلكتروني",
+    "en": "Website"
+  },
+  "business_website_placeholder": {
+    "ar": "https://yourwebsite.com",
+    "en": "https://yourwebsite.com"
+  },
+  "business_x_label": {
+    "ar": "رابط منصة X",
+    "en": "X (Twitter) Link"
+  },
+  "business_x_placeholder": {
+    "ar": "https://x.com/username",
+    "en": "https://x.com/username"
+  },
+  "profile_business_category_label": {
+    "ar": "تخصصات النشاط",
+    "en": "Business Specializations"
+  },
+  "profile_select_categories_btn": {
+    "ar": "اختر التخصصات",
+    "en": "Select Specializations"
+  },
+  "register_error_no_category": {
+    "ar": "يرجى اختيار تخصص واحد على الأقل",
+    "en": "Please select at least one specialization"
   }
 }
