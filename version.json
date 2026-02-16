@@ -1,7 +1,7 @@
 {
-  "version": "1.18.16",
+  "version": "1.18.17",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-02-16T11:56:16.230Z",
+  "lastUpdated": "2026-02-16T12:17:15.485Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -1805,8 +1805,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-glass.css",
-      "hash": "58375dd6c0f40f10080594ce5a4a49310a1b517e1d61d4449c4ca3b8d4ae26db",
-      "size": 18508
+      "hash": "3abdbc4443fa1c11699ed6996fb381f8bee944a7ecb84e902125194b552d51e0",
+      "size": 18526
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions.js",
@@ -1815,8 +1815,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-fetch.js",
-      "hash": "6f10fbad0501862f01bb50549ddbd1ef6635662e8331c1e689a20ccc939fe836",
-      "size": 5325
+      "hash": "5badc6a788b6898f44ca63eb084b0e3384383cf11073e4b869ae5b6d9479aad6",
+      "size": 5410
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-init.js",
@@ -1825,8 +1825,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-render.js",
-      "hash": "3625e53b2dd7aab519ef741a5cbf629cc3a082963802e3464b44226629614271",
-      "size": 12871
+      "hash": "62711bf626944080f8aeebc4ca8cbef22ca5199f6a8147f2f84c0a55812dd61b",
+      "size": 13087
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/merchant-portfolio.html",
@@ -2355,7 +2355,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "ba65e6796e765a35236f5a73760c6f4ee5a478d00511544fb2fc1f9da59edc2a",
+      "hash": "a207ce3007f80d0c7bda33eb386e4567aaeddaa17d800c09729e7ddb85e3a35b",
       "size": 21
     }
   ]
