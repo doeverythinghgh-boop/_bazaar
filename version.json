@@ -1,7 +1,7 @@
 {
-  "version": "1.20.159",
+  "version": "1.20.160",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-02-18T11:58:53.096Z",
+  "lastUpdated": "2026-02-18T12:07:35.393Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -2185,8 +2185,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/css/search-results.css",
-      "hash": "7ec196a3e54486d07cfbb434da99f69007c7f699d557fca501c48e0b3524564c",
-      "size": 4092
+      "hash": "fa9889d68aedb5b83dbad614620b4060fd5264286ebb3c14cb4c772a3d605a27",
+      "size": 4199
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-admin.js",
@@ -2225,8 +2225,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-render.js",
-      "hash": "7177c1f6618e2a286861598d51b20e3987611e1186968b431ba32a894ec9a2df",
-      "size": 8862
+      "hash": "6b69ac5be7f7dd5bf044547867059e0a026d6a413b7cd2c64293bb37db0a7c45",
+      "size": 9663
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-state.js",
@@ -2390,7 +2390,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "6fd16504169a6d83e95e2e8dd969f42c5b793c610d378c67b1e801399281a20a",
+      "hash": "6787dba7175a2e131f5a22fcbc1f505ebace499974fd6055cfc2a3b1e7b52be3",
       "size": 22
     }
   ]
