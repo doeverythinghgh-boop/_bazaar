@@ -18,10 +18,12 @@
       font-family: "Tajawal", sans-serif;
       direction: rtl;
       text-align: right;
-      background: #fafafa;
-      color: #333;
+      background: transparent;
+      /* Changed to transparent for iframe integration */
+      color: var(--text-color-dark, #333);
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      /* Zero padding as requested */
       line-height: 1.8;
     }
 
@@ -36,29 +38,32 @@
     }
 
     h1 {
-      color: #333;
+      color: var(--dark-blue, #222);
       text-align: center;
-      margin-bottom: 2rem;
+      margin: 0 0 1.5rem 0;
+      /* Normalized margin */
     }
 
     h2 {
-      color: #007bff;
-      border-bottom: 2px solid #eee;
+      color: var(--primary-color, #007bff);
+      border-bottom: 2px solid var(--border-color-soft, #eee);
       padding-bottom: 0.5rem;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
     }
 
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      max-width: 100%;
+      /* Fill the iframe width */
+      margin: 0;
+      padding: 20px;
+      /* Internal content breathing room */
+      background: transparent;
+      border-radius: 0;
+      box-shadow: none;
     }
 
     a {
-      color: #007bff;
+      color: var(--primary-color, #007bff);
     }
   </style>
 </head>

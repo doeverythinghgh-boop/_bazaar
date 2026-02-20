@@ -1,0 +1,1 @@
+window.AppBehavior={isUnderMaintenance:!0};

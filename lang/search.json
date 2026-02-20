@@ -90,5 +90,25 @@
   "search_modal_no_criteria_error": {
     "ar": "يرجى إدخال نص للبحث أو اختيار قسم أولاً.",
     "en": "Please enter search text or select a category first."
+  },
+  "search_modal_load_more": {
+    "ar": "عرض المزيد",
+    "en": "Load More"
+  },
+  "search_results_criteria_label": {
+    "ar": "عناصر البحث",
+    "en": "Search Criteria"
+  },
+  "search_no_results_hint": {
+    "ar": "لم نجد أي تطابق للمعايير التالية:",
+    "en": "We found no match for the following criteria:"
+  },
+  "search_loading_status": {
+    "ar": "جاري التحميل...",
+    "en": "Loading..."
+  },
+  "search_retry_status": {
+    "ar": "حاول مرة أخرى",
+    "en": "Try Again"
   }
 }

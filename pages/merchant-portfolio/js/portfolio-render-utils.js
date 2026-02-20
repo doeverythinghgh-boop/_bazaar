@@ -1,0 +1,1 @@
+function portfolioGenerateStars(rating){let html="";for(let i=1;i<=5;i++)html+=rating>=i?'<i class="fas fa-star"></i>':rating>=i-.5?'<i class="fas fa-star-half-alt"></i>':'<i class="far fa-star"></i>';return html}window.portfolioGenerateStars=portfolioGenerateStars;
