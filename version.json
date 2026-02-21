@@ -1,7 +1,7 @@
 {
-  "version": "1.21.4",
+  "version": "1.21.5",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-02-21T08:04:23.275Z",
+  "lastUpdated": "2026-02-21T08:23:48.595Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -995,8 +995,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/dashboard-settings.js",
-      "hash": "d172598314782558a16036018ff7cdaafa2f88016b7b407b58358de3e54f5b9f",
-      "size": 19485
+      "hash": "3445a354c8f80dd47ffcb6069912d751bf0cfe79f14a29a94ec8da2119b881d7",
+      "size": 19462
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/splash.js",
@@ -1040,8 +1040,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/general.json",
-      "hash": "84bb967a3ac42b47d9c5435f37906f3bf03564a7a8b87ffc3b13cdfb120fa6f8",
-      "size": 23161
+      "hash": "37a9c5e4717a836dcfc6fd0b5e74ff47bd40f3f949cf1355f85f35cd4107b78e",
+      "size": 23149
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/index.json",
@@ -2040,13 +2040,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-actions.css",
-      "hash": "0dbc142249424939e4c3b258e29c8d6cb0073b7e16c0bdefaec7d8d6f5886713",
-      "size": 4000
+      "hash": "c596ad11875b0cec610f8608ed6253a5219620b9fde8ac8fb4c5394b11710a1d",
+      "size": 4177
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-base.css",
-      "hash": "32a81f8718235df4442013b3daa0543e94278ef9915c89733032c06bdbb7260a",
-      "size": 2172
+      "hash": "dcbf1960643600dedb7ee68fd802d365a8985062c57d14ab298a5b5ffb254d83",
+      "size": 2142
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-glass.css",
@@ -2055,12 +2055,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-header.css",
-      "hash": "253d99c772d1ef81ca1a5b93a88de745befbb879e5cc7afd37a10ab9a8f43672",
-      "size": 5016
+      "hash": "17d1a659ee61360d3edebada34ca6c4ef79edbd834b772f07ffc1f40b1cfb564",
+      "size": 4976
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-info.css",
-      "hash": "9de3d65e55eccade0e5086d1cac95464c935f14639b0381eba46d1dca5cecc4b",
+      "hash": "591d51cc15486c143bfa76c2af377a26a2e355e17a9f3c2552469e67dabd18ff",
       "size": 1281
     },
     {
@@ -2070,8 +2070,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-products.css",
-      "hash": "93e09f97bf438d400504741f6515bd0f7cf25136741c6be06b4d3d68f26e2f67",
-      "size": 8807
+      "hash": "8133714037a06397b365a6ef8395255f3fcaab5db56161a5b2ec15fefef3f03b",
+      "size": 9156
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions-mgmt.js",
@@ -2135,7 +2135,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/merchant-portfolio.html",
-      "hash": "8705ff70fad5bf99edb304c75e0a125fbc129a0f4e9cc1130c0f31f406ef1950",
+      "hash": "1f8c8ecfdfa8e885e3aca0cde344d66cf835724d3d7dc53847663ffd01c17228",
       "size": 9217
     },
     {
@@ -2860,7 +2860,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "0d9db707ed0675916abb021bb18287980c3ac361d69b4740875e6d8c2a2050a1",
+      "hash": "fa015bfdb5fd23b945029d8076d140789d7a3a87d49c36c383b25d247cb517a5",
       "size": 20
     }
   ]
