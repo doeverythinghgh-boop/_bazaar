@@ -440,8 +440,8 @@
     "en": "This field is required"
   },
   "gen_swal_title_confirm": {
-    "ar": "هل أنت متأكد؟",
-    "en": "Are you sure?"
+    "ar": "تأكيد العملية للبائع",
+    "en": "Confirm Action for Merchant"
   },
   "gen_swal_btn_yes_delete": {
     "ar": "نعم، احذفها!",
@@ -794,6 +794,30 @@
   "port_product_delete": {
     "ar": "حذف",
     "en": "Delete"
+  },
+  "port_featured_title": {
+    "ar": "منتجات مميزة",
+    "en": "Featured Products"
+  },
+  "port_featured_add_confirm": {
+    "ar": "هل تريد إضافة هذا المنتج لقائمة المنتجات المميزة للبائع؟",
+    "en": "Do you want to add this product to the merchant's featured list?"
+  },
+  "port_featured_remove_confirm": {
+    "ar": "هل تريد إزالة هذا المنتج من قائمة المنتجات المميزة للبائع؟",
+    "en": "Do you want to remove this product from the merchant's featured list?"
+  },
+  "port_feature_checkbox_tooltip": {
+    "ar": "إدارة المنتجات المميزة للبائع",
+    "en": "Manage Merchant Featured Products"
+  },
+  "port_filter_featured": {
+    "ar": "عرض المميزة فقط",
+    "en": "Show Featured Only"
+  },
+  "port_no_featured_found": {
+    "ar": "لا توجد منتجات مميزة لعرضها حالياً",
+    "en": "No featured products to display currently"
   },
   "port_delete_error": {
     "ar": "خطأ أثناء الحذف: {msg}",
