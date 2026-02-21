@@ -682,5 +682,149 @@
   "guest_mode_label": {
     "ar": "زائر",
     "en": "Guest"
+  },
+  "portfolio_title": {
+    "ar": "ملف التاجر | Suez Bazaar",
+    "en": "Merchant Profile | Suez Bazaar"
+  },
+  "merchant_image_alt": {
+    "ar": "صورة التاجر",
+    "en": "Merchant Image"
+  },
+  "ratings_count": {
+    "ar": "({count} تقييم)",
+    "en": "({count} ratings)"
+  },
+  "rating_label": {
+    "ar": "تقييم",
+    "en": "Rate"
+  },
+  "contact_title": {
+    "ar": "للتواصل",
+    "en": "Contact"
+  },
+  "load_more": {
+    "ar": "عرض المزيد",
+    "en": "Load More"
+  },
+  "no_products": {
+    "ar": "لا توجد منتجات حالياً",
+    "en": "No products yet"
+  },
+  "reviews_title": {
+    "ar": "التقييمات والمراجعات",
+    "en": "Ratings & Reviews"
+  },
+  "loading_reviews": {
+    "ar": "جاري تحميل التقييمات...",
+    "en": "Loading reviews..."
+  },
+  "merchant_not_found": {
+    "ar": "عذراً، لم يتم العثور على هذا التاجر.",
+    "en": "Sorry, this merchant was not found."
+  },
+  "back_to_home": {
+    "ar": "العودة للرئيسية",
+    "en": "Back to Home"
+  },
+  "no_reviews_yet": {
+    "ar": "لا توجد مراجعات بعد.",
+    "en": "No reviews yet."
+  },
+  "port_rate_login_required_title": {
+    "ar": "تنبيه",
+    "en": "Notice"
+  },
+  "port_rate_login_required_text": {
+    "ar": "يجب تسجيل الدخول لتقييم التاجر",
+    "en": "You must be logged in to rate this merchant"
+  },
+  "port_rate_dialog_title": {
+    "ar": "تقييم التاجر",
+    "en": "Rate Merchant"
+  },
+  "port_rate_note_placeholder": {
+    "ar": "أكتب ملاحظاتك هنا...",
+    "en": "Write your notes here..."
+  },
+  "port_rate_submit_btn": {
+    "ar": "إرسال التقييم",
+    "en": "Submit Rating"
+  },
+  "port_rate_cancel_btn": {
+    "ar": "إلغاء",
+    "en": "Cancel"
+  },
+  "port_rate_select_stars": {
+    "ar": "الرجاء اختيار عدد النجوم",
+    "en": "Please select a star rating"
+  },
+  "port_rate_success_title": {
+    "ar": "شكراً لك!",
+    "en": "Thank you!"
+  },
+  "port_rate_success_text": {
+    "ar": "تم إرسال تقييمك بنجاح",
+    "en": "Your rating was submitted successfully"
+  },
+  "port_rate_error_title": {
+    "ar": "خطأ",
+    "en": "Error"
+  },
+  "port_rate_error_text": {
+    "ar": "فشل في إرسال التقييم",
+    "en": "Failed to submit rating"
+  },
+  "port_product_status_pending": {
+    "ar": "قيد المراجعة",
+    "en": "Under Review"
+  },
+  "port_product_edit": {
+    "ar": "تعديل",
+    "en": "Edit"
+  },
+  "port_product_delete": {
+    "ar": "حذف",
+    "en": "Delete"
+  },
+  "port_delete_error": {
+    "ar": "خطأ أثناء الحذف: {msg}",
+    "en": "Error while deleting: {msg}"
+  },
+  "port_delete_success_title": {
+    "ar": "تم الحذف!",
+    "en": "Deleted!"
+  },
+  "port_delete_success_text": {
+    "ar": "تم حذف المنتج بنجاح.",
+    "en": "Product deleted successfully."
+  },
+  "port_share_copied_title": {
+    "ar": "تم نسخ الرابط!",
+    "en": "Link Copied!"
+  },
+  "port_share_copied_text": {
+    "ar": "تم نسخ رابط الملف الشخصي للحافظة",
+    "en": "Profile link copied to clipboard"
+  },
+  "port_add_product_modal_title": {
+    "ar": "تخصصات النشاط",
+    "en": "Business Specialties"
+  },
+  "port_edit_category_title": {
+    "ar": "السوق الحالي للمنتج",
+    "en": "Current Product Category"
+  },
+  "port_fetch_error_title": {
+    "ar": "خطأ",
+    "en": "Error"
+  },
+  "port_fetch_error_text": {
+    "ar": "لم يتم العثور على بيانات التاجر",
+    "en": "Merchant data not found"
+  },
+  "port_product_not_found": {
+    "ar": "لم يتم العثور على بيانات المنتج",
+    "en": "Product data not found"
   }
 }
