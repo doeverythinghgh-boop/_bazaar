@@ -468,8 +468,8 @@
     "en": "Discard changes?"
   },
   "gen_swal_discard_text": {
-    "ar": "سيتم مسح كافة البيانات والعودة للوحة التحكم.",
-    "en": "All data will be cleared and you will return to dashboard."
+    "ar": "سيتم مسح كافة البيانات والعودة للملف الشخصي.",
+    "en": "All data will be cleared and you will return to your profile."
   },
   "gen_swal_remove_text": {
     "ar": "هل تريد حقاً حذف هذه الصورة؟",
@@ -534,5 +534,153 @@
   "contact_tab_delete_desc": {
     "ar": "حذف الحساب",
     "en": "Delete Account"
+  },
+  "settings": {
+    "ar": "الإعدادات",
+    "en": "Settings"
+  },
+  "dash_welcome": {
+    "ar": "أهلاً بك، {name}",
+    "en": "Welcome, {name}"
+  },
+  "dash_edit_profile": {
+    "ar": "تعديل البيانات",
+    "en": "Edit Profile"
+  },
+  "dash_add_product": {
+    "ar": "إضافة منتج",
+    "en": "Add Product"
+  },
+  "dash_my_products": {
+    "ar": "منتجاتي",
+    "en": "My Products"
+  },
+  "dash_admin_panel": {
+    "ar": "لوحة المسؤول",
+    "en": "Admin Panel"
+  },
+  "dash_logout": {
+    "ar": "تسجيل الخروج",
+    "en": "Logout"
+  },
+  "dash_settings_title": {
+    "ar": "الإعدادات",
+    "en": "Settings"
+  },
+  "dash_choose_destination": {
+    "ar": "اختر وجهتك",
+    "en": "Choose Destination"
+  },
+  "dash_btn_users": {
+    "ar": "مستخدمين",
+    "en": "Users"
+  },
+  "dash_btn_advert": {
+    "ar": "الاعلان",
+    "en": "Ads"
+  },
+  "dash_btn_notifications": {
+    "ar": "اشعارات",
+    "en": "Notifications"
+  },
+  "dash_btn_pending_products": {
+    "ar": "المنتجات المعلقة",
+    "en": "Pending Products"
+  },
+  "dash_btn_factory_reset": {
+    "ar": "إعادة ضبط المصنع (مسح شامل)",
+    "en": "Factory Reset (Wipe All)"
+  },
+  "factory_reset_confirm": {
+    "title": {
+      "ar": "هل أنت متأكد؟",
+      "en": "Are you sure?"
+    },
+    "text": {
+      "ar": "سيتم مسح كافة البيانات المسجلة على هذا المتصفح تماماً وتسيجل الخروج، ولا يمكن التراجع عن هذه الخطوة!",
+      "en": "This will completely wipe all browser data and log you out. This action cannot be undone!"
+    },
+    "confirm_btn": {
+      "ar": "نعم، امسح كل شيء",
+      "en": "Yes, wipe everything"
+    }
+  },
+  "dash_support": {
+    "ar": "الدعم والمساعدة",
+    "en": "Support & Help"
+  },
+  "dash_notifications_tab": {
+    "ar": "الإشعارات",
+    "en": "Notifications"
+  },
+  "dash_profile_tab": {
+    "ar": "الملف الشخصي",
+    "en": "Profile"
+  },
+  "dash_theme_day": {
+    "ar": "الوضع النهاري",
+    "en": "Day Mode"
+  },
+  "dash_theme_night": {
+    "ar": "الوضع الليلي",
+    "en": "Night Mode"
+  },
+  "dash_fetch_orders_title": {
+    "ar": "متابعة الطلبات",
+    "en": "Track Orders"
+  },
+  "dash_opt_buyer": {
+    "ar": "مشتري",
+    "en": "Buyer"
+  },
+  "dash_opt_seller": {
+    "ar": "بائع",
+    "en": "Seller"
+  },
+  "dash_opt_delivery": {
+    "ar": "توصيل",
+    "en": "Delivery"
+  },
+  "dash_opt_admin": {
+    "ar": "مسؤول",
+    "en": "Admin"
+  },
+  "dash_opt_super_admin": {
+    "ar": "سوبر أدمن",
+    "en": "Super Admin"
+  },
+  "dash_alert_seller_switch": {
+    "title": {
+      "ar": "وضع البائع",
+      "en": "Seller Mode"
+    },
+    "text": {
+      "ar": "سوف تتم متابعة الطلبات التي تكون أنت فيها البائع للمنتجات.",
+      "en": "You will track orders where you are the seller."
+    }
+  },
+  "dash_alert_delivery_switch": {
+    "title": {
+      "ar": "وضع التوصيل",
+      "en": "Delivery Mode"
+    },
+    "text": {
+      "ar": "سوف تتم متابعة مهام التوصيل المسندة إليك.",
+      "en": "You will track delivery tasks assigned to you."
+    }
+  },
+  "dash_alert_buyer_switch": {
+    "title": {
+      "ar": "وضع المشتري",
+      "en": "Buyer Mode"
+    },
+    "text": {
+      "ar": "سوف تتم متابعة مشترياتك الشخصية.",
+      "en": "You will track your personal purchases."
+    }
+  },
+  "guest_mode_label": {
+    "ar": "زائر",
+    "en": "Guest"
   }
 }
