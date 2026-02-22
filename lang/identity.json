@@ -1,4 +1,12 @@
 {
+  "gen_next": {
+    "ar": "التالي",
+    "en": "Next"
+  },
+  "gen_prev": {
+    "ar": "السابق",
+    "en": "Previous"
+  },
   "logging_in": {
     "ar": "جاري تسجيل الدخول...",
     "en": "Logging in..."
@@ -99,21 +107,49 @@
     "ar": "مثلاً: شارع السلام، الدور الثالث، بجوار مسجد القدس",
     "en": "e.g. El Salam St, 3rd Floor, near El Qods Mosque"
   },
+  "register_error_username_required": {
+    "ar": "الأسم بالكامل مطلوب",
+    "en": "Full Name is required"
+  },
+  "register_error_phone_invalid": {
+    "ar": "رقم الهاتف غير صحيح",
+    "en": "Invalid phone number"
+  },
+  "register_error_phone_exists": {
+    "ar": "رقم الهاتف هذا مسجل مسبقاً، يرجى استخدام رقم آخر أو تسجيل الدخول.",
+    "en": "This phone number is already registered. Please use another or login."
+  },
+  "register_error_password_too_short": {
+    "ar": "كلمة المرور قصيرة جداً (أقل شيء 4)",
+    "en": "Password too short (min 4)"
+  },
+  "register_error_location_required": {
+    "ar": "يرجى تحديد الموقع على الخريطة أولاً",
+    "en": "Please select location on map first"
+  },
+  "register_error_address_required": {
+    "ar": "تفاصيل العنوان مطلوبة لسهولة الوصول إليك",
+    "en": "Address details are required"
+  },
+  "register_header_account_type": {
+    "ar": "نوع الحساب",
+    "en": "Account Type"
+  },
   "register_label_account_type": {
     "ar": "هل ترغب في عرض منتجاتك أو تقديم خدماتك؟",
     "en": "Do you want to display products or offer services?"
   },
   "register_label_account_roles": {
-    "ar": "تحديد الهوية (يمكنك اختيار أكثر من دور)",
-    "en": "Identify your roles (You can choose multiple)"
+    "ar": "يمكنك اختيار أكثر من نوع حساب",
+    "en": "You can choose multiple account types"
   },
   "role_buyer": {
     "ar": "مشتري",
     "en": "Buyer"
   },
   "role_seller": {
-    "ar": "بائع",
-    "en": "Seller"
+    "ar": "بائع منتجات",
+    "en": "Products Seller"
   },
   "role_delivery": {
     "ar": "خدمة توصيل",
@@ -122,6 +158,42 @@
   "role_service_provider": {
     "ar": "مقدم خدمة",
     "en": "Service Provider"
+  },
+  "role_desc_buyer": {
+    "ar": "ستتمكن من تصفح كافة أسواق السويس، مقارنة الأسعار، والطلب المباشر للمنتجات والخدمات بسهولة.",
+    "en": "Browse all Suez markets, compare prices, and order directly from one app."
+  },
+  "role_desc_seller": {
+    "ar": "ستمتلك متجراً رقمياً احترافياً لعرض منتجاتك وزيادة مبيعاتك، مع كامل صلاحيات الشراء من الآخرين.",
+    "en": "Get a professional digital store to boost your sales, with full buyer privileges."
+  },
+  "role_desc_delivery": {
+    "ar": "ستظهر لك لوحة متابعة لطلبات التوصيل المتاحة في السويس لزيادة دخلك، بجانب قدرتك على التسوق.",
+    "en": "Access a dashboard for delivery requests in Suez to increase your income."
+  },
+  "role_desc_service": {
+    "ar": "يمكنك الترويج لخدماتك المهنية (تعليم، خدمات طبية، خدمات هندسية، إلخ) والوصول لعملاء جدد بالسويس.",
+    "en": "Promote your professional services (Teaching, Medical, Engineering, etc.) to new clients."
+  },
+  "role_desc_seller_delivery": {
+    "ar": "تاجر ومندوب متكامل؛ يمكنك إدارة متجرك وتوصيل طلباتك بنفسك أو قبول طلبات توصيل خارجية.",
+    "en": "Merchant and delivery professional; manage your shop and deliver orders yourself."
+  },
+  "role_desc_seller_service": {
+    "ar": "هوية تجارية ومهنية شاملة؛ تتيح لك بيع المنتجات وتقديم خدماتك الفنية في آن واحد من حسابك.",
+    "en": "Complete commercial identity; sell products and offer technical services simultaneously."
+  },
+  "role_desc_delivery_service": {
+    "ar": "مقدم خدمات لوجستية ومهنية؛ يمكنك تقديم مهاراتك الفنية بجانب العمل كمندوب توصيل محترف.",
+    "en": "Logistics and professional services provider; offer technical skills and delivery."
+  },
+  "role_desc_all": {
+    "ar": "أنت الآن شريك استراتيجي؛ حسابك يدعم البيع، التوصيل، تقديم الخدمات المهنية، والتسوق الشامل!",
+    "en": "Strategic partner! Your account supports selling, delivery, services, and shopping."
+  },
+  "role_desc_fallback": {
+    "ar": "أنت الآن شريك في مجتمع سويس بازار؛ حسابك سيوفر لك كافة الأدوات اللازمة بناءً على تخصصاتك.",
+    "en": "You are a Suez Bazaar partner; your account provides tools based on your specialties."
   },
   "register_btn_submit": {
     "ar": "إنشاء الحساب",
@@ -610,5 +682,9 @@
   "profile_covers_mgmt_label": {
     "ar": "صور الغلاف (3 صور كحد أقصى)",
     "en": "Cover Images (Max 3)"
+  },
+  "splash_slogan": {
+    "ar": "السويس بين إيديك",
+    "en": "Suez in your hands"
   }
 }

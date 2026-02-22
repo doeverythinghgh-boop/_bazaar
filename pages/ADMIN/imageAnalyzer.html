@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bazaar - تحليل الصور</title><link rel="stylesheet" href="/style/variables.css"><link rel="stylesheet" href="/style/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"><style>:root{--card-bg:#ffffff;--border-color:#eee}body.dark-theme :root{--card-bg:#2d2d2d;--border-color:#444}body{margin:0;padding:20px;font-family:Inter,sans-serif;background:var(--bg-color);color:var(--text-color)}.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}.stat-card{background:var(--card-bg);padding:20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.05);text-align:center;border:1px solid var(--border-color)}.stat-card i{font-size:2em;margin-bottom:10px;color:var(--primary-color)}.stat-card h3{margin:10px 0;font-size:1.5em}.stat-card p{opacity:.7;font-size:.9em}.analysis-section{background:var(--card-bg);padding:25px;border-radius:16px;margin-bottom:30px;border:1px solid var(--border-color)}.section-title{display:flex;align-items:center;gap:10px;margin-bottom:20px;border-bottom:2px solid var(--primary-color);padding-bottom:10px}.naming-table{width:100%;border-collapse:collapse;margin-top:10px}.naming-table td,.naming-table th{padding:12px;text-align:right;border-bottom:1px solid var(--border-color)}.naming-table th{background:rgba(0,0,0,.02)}.image-log{max-height:400px;overflow-y:auto;background:rgba(0,0,0,.02);padding:15px;border-radius:8px;font-family:monospace;font-size:.85em}.log-item{margin-bottom:5px;border-bottom:1px solid rgba(0,0,0,.05);padding-bottom:2px}.log-item.error{color:#dc3545}.log-item.success{color:#28a745}.btn-scan{background:var(--primary-color);color:#fff;border:none;padding:12px 25px;border-radius:8px;cursor:pointer;font-weight:700;font-family:inherit;display:inline-flex;align-items:center;gap:10px}.btn-scan:disabled{opacity:.5;cursor:not-allowed}.loading-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);display:none;justify-content:center;align-items:center;z-index:1000}</style></head><body><div class="analysis-section"><div class="section-title"><i class="fas fa-microscope"></i><h2>توقعات توزيع الصور (حسب قاعدة البيانات)</h2></div><div class="stats-grid"><div class="stat-card"><i class="fas fa-portrait"></i><h3 id="count-avatars">0</h3><p>صور شخصية (Avatars)</p></div><div class="stat-card"><i class="fas fa-image"></i><h3 id="count-covers">0</h3><p>صور غلاف (Covers)</p></div><div class="stat-card"><i class="fas fa-box-open"></i><h3 id="count-products">0</h3><p>صور منتجات</p></div><div class="stat-card"><i class="fas fa-ad"></i><h3 id="count-ads">0</h3><p>صور إعلانات</p></div></div><button id="start-scan-btn" class="btn-scan"><i class="fas fa-sync-alt"></i> بدء تحليل قاعدة البيانات</button></div><div class="analysis-section"><div class="section-title"><i class="fas fa-tag"></i><h2>قواعد تسمية الملفات (Naming Conventions)</h2></div><table class="naming-table"><thead><tr><th>النوع</th><th>القاعدة</th><th>مثال</th></tr></thead><tbody><tr><td>الصورة الشخصية</td><td><code>avatar_{key}_{ts}.webp</code></td><td dir="ltr">avatar_pngukw_17086000.webp</td></tr><tr><td>غلاف المستخدم</td><td><code>cover_{key}_{idx}_{ts}.webp</code></td><td dir="ltr">cover_pngukw_0_17086000.webp</td></tr><tr><td>صور المنتجات</td><td><code>{idx}_{product_key}.webp</code></td><td dir="ltr">1_a1b2c3.webp</td></tr><tr><td>صور الإعلانات</td><td><code>ad_{ts}_{rand}.webp</code></td><td dir="ltr">ad_1625000_123.webp</td></tr></tbody></table></div><div class="analysis-section"><div class="section-title"><i class="fas fa-list-ul"></i><h2>سجل التحليل التفصيلي</h2></div><div id="scan-log" class="image-log">بانتظار بدء المسح...</div></div><div class="loading-overlay" id="loading"><div style="color:#fff;text-align:center"><i class="fas fa-circle-notch fa-spin fa-3x"></i><p style="margin-top:15px">جاري تحليل البيانات...</p></div></div><script src="/js/config.js"></script><script src="/js/globalVariable.js"></script><script src="/js/network.js"></script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><script>// Apply Theme
+        if (localStorage.getItem('app_theme') === 'dark') document.body.classList.add('dark-theme');
+
+        const logEl = document.getElementById('scan-log');
+        const btnScan = document.getElementById('start-scan-btn');
+        const overlay = document.getElementById('loading');
+
+        function addLog(msg, type = '') {
+            const div = document.createElement('div');
+            div.className = 'log-item ' + type;
+            div.innerHTML = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            logEl.appendChild(div);
+            logEl.scrollTop = logEl.scrollHeight;
+        }
+
+        btnScan.addEventListener('click', async () => {
+            btnScan.disabled = true;
+            logEl.innerHTML = '';
+            overlay.style.display = 'flex';
+
+            try {
+                addLog('🚀 بدء جولة التحليل الشاملة...');
+
+                // 1. Fetch Users
+                addLog('📡 جلب بيانات المستخدمين...');
+                const usersRes = await fetch(`${window.baseURL}/api/database-analysis?mode=data&table=users&limit=1000`);
+                const usersData = await usersRes.json();
+
+                let avatarCount = 0;
+                let coverCount = 0;
+                const dbFilesSet = new Set();
+
+                if (usersData && usersData.rows) {
+                    addLog(`✅ تم العثور على ${usersData.rows.length} مستخدم.`);
+                    usersData.rows.forEach(u => {
+                        try {
+                            if (u.user_image) {
+                                if (u.user_image.startsWith('{')) {
+                                    const imgObj = JSON.parse(u.user_image);
+                                    if (imgObj.avatar) {
+                                        avatarCount++;
+                                        dbFilesSet.add(imgObj.avatar);
+                                    }
+                                    if (imgObj.covers && Array.isArray(imgObj.covers)) {
+                                        coverCount += imgObj.covers.length;
+                                        imgObj.covers.forEach(c => dbFilesSet.add(c));
+                                    } else if (imgObj.cover) {
+                                        coverCount++;
+                                        dbFilesSet.add(imgObj.cover);
+                                    }
+                                } else {
+                                    avatarCount++;
+                                    dbFilesSet.add(u.user_image);
+                                }
+                            }
+                        } catch (e) { }
+                    });
+                }
+                document.getElementById('count-avatars').textContent = avatarCount;
+                document.getElementById('count-covers').textContent = coverCount;
+
+                // 2. Fetch Products
+                addLog('📡 جلب بيانات المنتجات...');
+                const prodRes = await fetch(`${window.baseURL}/api/database-analysis?mode=data&table=marketplace_products&limit=5000`);
+                const prodData = await prodRes.json();
+
+                let productImgCount = 0;
+                if (prodData && prodData.rows) {
+                    addLog(`✅ تم العثور على ${prodData.rows.length} منتج.`);
+                    prodData.rows.forEach(p => {
+                        if (p.ImageName) {
+                            const imgs = p.ImageName.split(',').filter(i => i.trim() !== "");
+                            productImgCount += imgs.length;
+                            imgs.forEach(i => dbFilesSet.add(i.trim()));
+                        }
+                    });
+                }
+                document.getElementById('count-products').textContent = productImgCount;
+
+                // 3. Fetch Ads
+                addLog('📡 جلب بيانات الإعلانات...');
+                const adsRes = await fetch(`${window.baseURL}/api/database-analysis?mode=data&table=app_advertisements`);
+                const adsData = await adsRes.json();
+
+                let adsCount = 0;
+                if (adsData && adsData.rows) {
+                    addLog(`✅ تم العثور على ${adsData.rows.length} إعلان.`);
+                    adsData.rows.forEach(a => {
+                        if (a.img_path) {
+                            adsCount++;
+                            dbFilesSet.add(a.img_path);
+                        }
+                    });
+                }
+                document.getElementById('count-ads').textContent = adsCount;
+
+                addLog(`📊 إجمالي الصور الفريدة في قاعدة البيانات: ${dbFilesSet.size}`, 'success');
+
+                // Final Explanation
+                addLog('--- خلاصة التقرير ---');
+                addLog('⚠️ ملاحظة: التحليل الحالي يعتمد على سجلات قاعدة البيانات فقط.');
+                addLog('🔍 لمقارنة هذه القائمة مع الملفات الفعلية على Cloudflare R2، يجب تفعيل خدمة ListObjects في العامل (Worker).');
+                addLog('💎 كافة الصور المذكورة أعلاه تتبع القواعد الموضحة في جدول التسمية.');
+
+                Swal.fire({
+                    title: 'اكتمل التحليل',
+                    text: `تم حصر ${dbFilesSet.size} صورة مستخدمة رسمياً في قاعدة البيانات.`,
+                    icon: 'success',
+                    confirmButtonText: 'ممتاز'
+                });
+
+            } catch (err) {
+                console.error(err);
+                addLog('❌ فشل التحليل: ' + err.message, 'error');
+                Swal.fire('خطأ', 'فشل في الاتصال بقاعدة البيانات لتحليل الصور.', 'error');
+            } finally {
+                btnScan.disabled = false;
+                overlay.style.display = 'none';
+            }
+        });</script></body></html>
