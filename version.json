@@ -1,7 +1,7 @@
 {
-  "version": "1.21.63",
+  "version": "1.21.64",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-02-22T00:41:47.953Z",
+  "lastUpdated": "2026-02-22T01:04:17.107Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -2025,8 +2025,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions-mgmt.js",
-      "hash": "f6ee0a7a6aa18a2c03873659af4d06a4b0cb5852ee85925858d82adac02516be",
-      "size": 3434
+      "hash": "33df6cece11796d3e56ee1ec9f31a6fd3d3cf352d4db1169ba6830c34027d1ff",
+      "size": 5692
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions-rate.js",
@@ -2055,8 +2055,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-init.js",
-      "hash": "aa9008ae73cd0917b9db4d4fd11ec1822739c16ab60dd98954a64d9df36668d7",
-      "size": 4039
+      "hash": "5caff8041ad3126ee16314cafaabd0d609e122f3a2c80059ee62364b1315d495",
+      "size": 4228
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-render-products.js",
@@ -2675,8 +2675,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-init.js",
-      "hash": "6eb4612b58f31efdbeec2db144c7b1bd4b4a6ed3784dedd01fe384bde382496a",
-      "size": 3598
+      "hash": "a60e2be4194d0bc56d505712714c3affc16c544810adc01b30f06c524b9bc1aa",
+      "size": 4135
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-pending.js",
@@ -2705,8 +2705,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-state.js",
-      "hash": "45a10f9b60fc3f95b29b1864823393c2921ca7d096a27275c20b64833fea3bd9",
-      "size": 3151
+      "hash": "3624a76a85e8e40253c11f28eeb7b757ea7dcd0e6b9187b8a220fd2eb2a9bfd4",
+      "size": 3807
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-utils.js",
@@ -2870,7 +2870,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "7b1c0782df39da7b99cf70f9a2031604b489c9086aa6c2da53d186a7523fd422",
+      "hash": "f001f4fd59b6b1f46cc84b4e05baf5dcde2d27dc3fe08d16f3c56a3fd2a4b78a",
       "size": 21
     }
   ]
