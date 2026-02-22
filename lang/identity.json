@@ -1,0 +1,594 @@
+{
+  "logging_in": {
+    "ar": "جاري تسجيل الدخول...",
+    "en": "Logging in..."
+  },
+  "login_invalid_credentials": {
+    "ar": "كلمة المرور او رقم الهاتف غير صحيحه",
+    "en": "Incorrect phone number or password."
+  },
+  "auth_wait_moment": {
+    "ar": "يرجى الانتظار لحظة.",
+    "en": "Please wait a moment."
+  },
+  "auth_confirm_identity": {
+    "ar": "التحقق من الهوية",
+    "en": "Identify Verification"
+  },
+  "auth_enter_password_to_continue": {
+    "ar": "يرجى إدخال كلمة المرور للمتابعة.",
+    "en": "Please enter password to continue."
+  },
+  "auth_enter_password_placeholder": {
+    "ar": "أدخل كلمة المرور",
+    "en": "Enter your password"
+  },
+  "auth_confirm_btn": {
+    "ar": "تأكيد",
+    "en": "Confirm"
+  },
+  "logout_confirm_title": {
+    "ar": "هل أنت متأكد؟",
+    "en": "Are you sure?"
+  },
+  "logout_confirm_text": {
+    "ar": "سيتم تسجيل خروجك.",
+    "en": "You will be logged out."
+  },
+  "logout_confirm_btn": {
+    "ar": "موافق",
+    "en": "OK"
+  },
+  "label_phone": {
+    "ar": "رقم الهاتف",
+    "en": "Phone Number"
+  },
+  "label_password": {
+    "ar": "كلمة المرور",
+    "en": "Password"
+  },
+  "no_account": {
+    "ar": "ليس لديك حساب؟",
+    "en": "Don't have an account?"
+  },
+  "register_now": {
+    "ar": "سجل الآن",
+    "en": "Register Now"
+  },
+  "or_you_can": {
+    "ar": "أو يمكنك",
+    "en": "Or you can"
+  },
+  "login_as_guest": {
+    "ar": "الدخول كضيف",
+    "en": "Login as Guest"
+  },
+  "to_browse_products": {
+    "ar": "لتصفح المنتجات",
+    "en": "to browse products"
+  },
+  "register_page_title": {
+    "ar": "إنشاء حساب جديد",
+    "en": "Create New Account"
+  },
+  "register_label_username": {
+    "ar": "الاسم",
+    "en": "Name"
+  },
+  "register_label_phone": {
+    "ar": "رقم الهاتف",
+    "en": "Phone Number"
+  },
+  "register_label_password": {
+    "ar": "كلمة المرور",
+    "en": "Password"
+  },
+  "register_form_hint": {
+    "ar": "يجب أن تتكون من 4 أحرف على الأقل لحماية حسابك.",
+    "en": "Must be at least 4 characters to protect your account."
+  },
+  "register_location_title": {
+    "ar": "الموقع على الخريطة",
+    "en": "Location on Map"
+  },
+  "register_label_address": {
+    "ar": "تفاصيل العنوان (مثل: الدور، علامة مميزة)",
+    "en": "Address Details (e.g. Floor, Landmark)"
+  },
+  "register_placeholder_address": {
+    "ar": "مثلاً: شارع السلام، الدور الثالث، بجوار مسجد القدس",
+    "en": "e.g. El Salam St, 3rd Floor, near El Qods Mosque"
+  },
+  "register_label_is_seller": {
+    "ar": "هل ترغب في عرض منتجاتك أو تقديم خدماتك؟",
+    "en": "Do you want to display products or offer services?"
+  },
+  "register_btn_submit": {
+    "ar": "إنشاء الحساب",
+    "en": "Create Account"
+  },
+  "register_login_question": {
+    "ar": "لديك حساب بالفعل؟",
+    "en": "Already have an account?"
+  },
+  "register_login_action": {
+    "ar": "سجل الدخول",
+    "en": "Login"
+  },
+  "register_error_unexpected": {
+    "ar": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.",
+    "en": "An unexpected error occurred. Please try again."
+  },
+  "register_error_app": {
+    "ar": "حدث خطأ في التطبيق. يرجى المحاولة مرة أخرى.",
+    "en": "An application error occurred. Please try again."
+  },
+  "register_seller_settings_title": {
+    "ar": "إعدادات البائع",
+    "en": "Seller Settings"
+  },
+  "register_delivery_question": {
+    "ar": "هل لديك خدمة توصيل خاصة بك؟",
+    "en": "Do you have your own delivery service?"
+  },
+  "register_delivery_no": {
+    "ar": "لا (الاعتماد على مناديب التطبيق)",
+    "en": "No (Depend on app couriers)"
+  },
+  "register_delivery_yes": {
+    "ar": "نعم (أقوم بالتوصيل بنفسي)",
+    "en": "Yes (I deliver myself)"
+  },
+  "register_min_order_question": {
+    "ar": "هل تضع حداً أدنى لطلبات الشراء؟",
+    "en": "Do you set a minimum order limit?"
+  },
+  "register_min_order_no": {
+    "ar": "لا يوجد حد أدنى",
+    "en": "No minimum limit"
+  },
+  "register_min_order_yes": {
+    "ar": "نعم، يوجد حد أدنى للطلب",
+    "en": "Yes, there is a minimum limit"
+  },
+  "register_min_order_value_label": {
+    "ar": "هل يوجد حد ادنى للطلب (ج.م)؟",
+    "en": "Is there a minimum order limit (EGP)?"
+  },
+  "register_min_order_placeholder": {
+    "ar": "مثلاً: 100",
+    "en": "e.g., 100"
+  },
+  "register_save_settings_btn": {
+    "ar": "حفظ الإعدادات",
+    "en": "Save Settings"
+  },
+  "register_invalid_min_order": {
+    "ar": "يرجى إدخال قيمة صحيحة للحد الأدنى",
+    "en": "Please enter a valid minimum value"
+  },
+  "register_seller_options_set": {
+    "ar": "(تم ضبط الإعدادات ✅)",
+    "en": "(Settings Set ✅)"
+  },
+  "register_seller_options_none": {
+    "ar": "(لا توجد إعدادات خاصة)",
+    "en": "(No special settings)"
+  },
+  "register_seller_options_btn": {
+    "ar": "خيارات البائع",
+    "en": "Seller Options"
+  },
+  "register_map_success": {
+    "ar": "تم ربط الموقع بنجاح!",
+    "en": "Location linked successfully!"
+  },
+  "register_map_mandatory_error": {
+    "ar": "يرجى تحديد موقعك على الخريطة أولاً لضمان سرعة التوصيل.",
+    "en": "Please select your location on the map first to ensure fast delivery."
+  },
+  "register_confirm_identity_title": {
+    "ar": "تأكيد الأمان",
+    "en": "Security Confirmation"
+  },
+  "register_confirm_identity_text": {
+    "ar": "أعد إدخال كلمة المرور للمتابعة",
+    "en": "Re-enter password to continue"
+  },
+  "register_password_placeholder": {
+    "ar": "كلمة المرور",
+    "en": "Password"
+  },
+  "register_confirm_account_btn": {
+    "ar": "تأكيد الحساب",
+    "en": "Confirm Account"
+  },
+  "register_error_no_password": {
+    "ar": "يرجى إدخال كلمة المرور",
+    "en": "Please enter the password"
+  },
+  "register_error_password_mismatch": {
+    "ar": "كلمات المرور غير متطابقة!",
+    "en": "Passwords do not match!"
+  },
+  "register_creating_account": {
+    "ar": "إنشاء حساب...",
+    "en": "Creating account..."
+  },
+  "register_success_title": {
+    "ar": "تم إنشاء الحساب بنجاح!",
+    "en": "Account created successfully!"
+  },
+  "register_success_subtitle": {
+    "ar": "أنت الآن جاهز لتجربة شراء فريدة!",
+    "en": "You are now ready for a unique shopping experience!"
+  },
+  "register_success_feature_1": {
+    "ar": "🛍️ تصفح آلاف المنتجات بسهولة.",
+    "en": "🛍️ Browse thousands of products easily."
+  },
+  "register_success_feature_2": {
+    "ar": "💰 استمتع بخصومات وعروض حصرية.",
+    "en": "💰 Enjoy exclusive discounts and offers."
+  },
+  "register_success_feature_3": {
+    "ar": "✨ اكتشف ما هو جديد في سوق السويس.",
+    "en": "✨ Discover what's new in Suez Market."
+  },
+  "register_go_home_btn": {
+    "ar": "الانتقال إلى الصفحة الرئيسية",
+    "en": "Go to Home Page"
+  },
+  "register_map_restored": {
+    "ar": "تم استرجاع موقعك المحفوظ.",
+    "en": "Saved location restored."
+  },
+  "register_avatar_label": {
+    "ar": "الصورة الشخصية",
+    "en": "Profile Picture"
+  },
+  "register_avatar_hint": {
+    "ar": "انقر لاختيار صورة",
+    "en": "Click to choose a picture"
+  },
+  "register_business_account_toggle": {
+    "ar": "هل هذا حساب لنشاط تجاري؟",
+    "en": "Is this a business account?"
+  },
+  "register_business_name_label": {
+    "ar": "اسم النشاط التجاري",
+    "en": "Business Name"
+  },
+  "register_business_bio_label": {
+    "ar": "وصف النشاط",
+    "en": "Business Bio"
+  },
+  "business_facebook_label": {
+    "ar": "رابط فيسبوك",
+    "en": "Facebook Link"
+  },
+  "business_facebook_placeholder": {
+    "ar": "https://facebook.com/yourpage",
+    "en": "https://facebook.com/yourpage"
+  },
+  "business_instagram_label": {
+    "ar": "رابط إنستجرام",
+    "en": "Instagram Link"
+  },
+  "business_instagram_placeholder": {
+    "ar": "https://instagram.com/yourprofile",
+    "en": "https://instagram.com/yourprofile"
+  },
+  "business_tiktok_label": {
+    "ar": "رابط تيك توك",
+    "en": "TikTok Link"
+  },
+  "business_tiktok_placeholder": {
+    "ar": "https://tiktok.com/@username",
+    "en": "https://tiktok.com/@username"
+  },
+  "business_telegram_label": {
+    "ar": "رابط تليجرام",
+    "en": "Telegram Link"
+  },
+  "business_telegram_placeholder": {
+    "ar": "https://t.me/username",
+    "en": "https://t.me/username"
+  },
+  "business_website_label": {
+    "ar": "الموقع الإلكتروني",
+    "en": "Website"
+  },
+  "business_website_placeholder": {
+    "ar": "https://yourwebsite.com",
+    "en": "https://yourwebsite.com"
+  },
+  "business_x_label": {
+    "ar": "رابط منصة X",
+    "en": "X (Twitter) Link"
+  },
+  "business_x_placeholder": {
+    "ar": "https://x.com/username",
+    "en": "https://x.com/username"
+  },
+  "profile_business_category_label": {
+    "ar": "تخصصات النشاط",
+    "en": "Business Specializations"
+  },
+  "profile_select_categories_btn": {
+    "ar": "اختر التخصصات",
+    "en": "Select Specializations"
+  },
+  "register_error_no_category": {
+    "ar": "يرجى اختيار تخصص واحد على الأقل",
+    "en": "Please select at least one specialization"
+  },
+  "business_social_title": {
+    "ar": "روابط خارجية",
+    "en": "External Links"
+  },
+  "profile_title": {
+    "ar": "تعديل بياناتك الشخصية",
+    "en": "Edit Personal Profile"
+  },
+  "profile_username_label": {
+    "ar": "الاسم",
+    "en": "Name"
+  },
+  "profile_username_placeholder": {
+    "ar": "الاسم",
+    "en": "Your Name"
+  },
+  "profile_phone_label": {
+    "ar": "رقم الهاتف",
+    "en": "Phone Number"
+  },
+  "profile_phone_placeholder": {
+    "ar": "رقم الهاتف",
+    "en": "Phone Number"
+  },
+  "profile_location_title": {
+    "ar": "الموقع",
+    "en": "Location"
+  },
+  "profile_address_label": {
+    "ar": "تفاصيل العنوان (مثل: الدور، علامة مميزة)",
+    "en": "Address Details (e.g., floor, landmark)"
+  },
+  "profile_address_placeholder": {
+    "ar": "مثلاً: شارع السلام، الدور الثالث، بجوار مسجد القدس",
+    "en": "e.g., El-Salam St, 3rd Floor, near Al-Quds Mosque"
+  },
+  "profile_change_password_label": {
+    "ar": "تغيير كلمة المرور",
+    "en": "Change Password"
+  },
+  "profile_new_password_label": {
+    "ar": "كلمة المرور الجديدة",
+    "en": "New Password"
+  },
+  "profile_new_password_placeholder": {
+    "ar": "كلمة المرور الجديدة",
+    "en": "New Password"
+  },
+  "profile_confirm_password_label": {
+    "ar": "تأكيد كلمة المرور",
+    "en": "Confirm Password"
+  },
+  "profile_confirm_password_placeholder": {
+    "ar": "تأكيد كلمة المرور الجديدة",
+    "en": "Confirm New Password"
+  },
+  "profile_seller_options_btn": {
+    "ar": "خيارات البائع (التوصيل والحد الأدنى)",
+    "en": "Seller Options (Delivery & Minimum Order)"
+  },
+  "profile_save_button": {
+    "ar": "حفظ التغييرات",
+    "en": "Save Changes"
+  },
+  "profile_delete_account_button": {
+    "ar": "حذف الحساب",
+    "en": "Delete Account"
+  },
+  "profile_confirm_identity_title": {
+    "ar": "تأكيد الهوية",
+    "en": "Verify Identity"
+  },
+  "profile_confirm_identity_text": {
+    "ar": "يرجى إدخال كلمة المرور الحالية لتغييرها.",
+    "en": "Please enter your current password to change it."
+  },
+  "profile_verifying": {
+    "ar": "جاري التحقق...",
+    "en": "Verifying..."
+  },
+  "profile_invalid_password": {
+    "ar": "كلمة المرور غير صحيحة.",
+    "en": "Incorrect password."
+  },
+  "profile_seller_settings_title": {
+    "ar": "إعدادات البائع",
+    "en": "Seller Settings"
+  },
+  "profile_delivery_question": {
+    "ar": "هل لديك خدمة توصيل خاصة بك؟",
+    "en": "Do you have your own delivery service?"
+  },
+  "profile_delivery_no": {
+    "ar": "لا (الاعتماد على مناديب التطبيق)",
+    "en": "No (Depend on app couriers)"
+  },
+  "profile_delivery_yes": {
+    "ar": "نعم (أقوم بالتوصيل بنفسي)",
+    "en": "Yes (I deliver myself)"
+  },
+  "profile_min_order_question": {
+    "ar": "هل تضع حداً أدنى لطلبات الشراء؟",
+    "en": "Do you set a minimum order limit?"
+  },
+  "profile_min_order_no": {
+    "ar": "لا يوجد حد أدنى",
+    "en": "No minimum limit"
+  },
+  "profile_min_order_yes": {
+    "ar": "نعم، يوجد حد أدنى للطلب",
+    "en": "Yes, there is a minimum order limit"
+  },
+  "profile_min_order_value_label": {
+    "ar": "هل يوجد حد ادنى للطلب (ج.م)؟",
+    "en": "Is there a minimum order limit (EGP)?"
+  },
+  "profile_min_order_placeholder": {
+    "ar": "مثلاً: 100",
+    "en": "e.g., 100"
+  },
+  "profile_save_settings_btn": {
+    "ar": "حفظ الإعدادات",
+    "en": "Save Settings"
+  },
+  "profile_invalid_min_order": {
+    "ar": "يرجى إدخال قيمة صحيحة للحد الأدنى",
+    "en": "Please enter a valid minimum value"
+  },
+  "profile_seller_options_set": {
+    "ar": "(تم الضبط ✅)",
+    "en": "(Configured ✅)"
+  },
+  "profile_map_mandatory_error": {
+    "ar": "يرجى تحديد موقعك على الخريطة أولاً لضمان سرعة التوصيل.",
+    "en": "Please locate your position on the map first to ensure delivery speed."
+  },
+  "profile_no_changes_title": {
+    "ar": "لم يتغير شيء",
+    "en": "No changes"
+  },
+  "profile_no_changes_text": {
+    "ar": "لم تقم بإجراء أي تغييرات.",
+    "en": "You haven't made any changes."
+  },
+  "profile_save_confirm_text": {
+    "ar": "أدخل كلمة المرور الحالية لحفظ التغييرات.",
+    "en": "Enter current password to save changes."
+  },
+  "profile_saving": {
+    "ar": "جاري الحفظ...",
+    "en": "Saving..."
+  },
+  "profile_update_success_title": {
+    "ar": "تم التحديث بنجاح!",
+    "en": "Update Successful!"
+  },
+  "profile_update_fail": {
+    "ar": "فشل التحديث.",
+    "en": "Update failed."
+  },
+  "profile_delete_confirm_title": {
+    "ar": "هل أنت متأكد تمامًا؟",
+    "en": "Are you absolutely sure?"
+  },
+  "profile_delete_confirm_text": {
+    "ar": "سيتم حذف حسابك نهائياً.",
+    "en": "Your account will be permanently deleted."
+  },
+  "profile_delete_yes": {
+    "ar": "نعم، حذف",
+    "en": "Yes, Delete"
+  },
+  "profile_delete_verify_title": {
+    "ar": "تأكيد الحذف",
+    "en": "Confirm Deletion"
+  },
+  "profile_delete_verify_text": {
+    "ar": "أدخل كلمة المرور لتأكيد الحذف.",
+    "en": "Enter password to confirm deletion."
+  },
+  "profile_deleting": {
+    "ar": "جاري الحذف...",
+    "en": "Deleting..."
+  },
+  "profile_delete_success_title": {
+    "ar": "تم الحذف",
+    "en": "Deleted"
+  },
+  "profile_delete_success_text": {
+    "ar": "تم حذف الحساب بنجاح.",
+    "en": "Account deleted successfully."
+  },
+  "profile_delete_fail": {
+    "ar": "حدث خطأ أثناء الحذف.",
+    "en": "An error occurred during deletion."
+  },
+  "profile_map_linked_success": {
+    "ar": "تم ربط الموقع بنجاح! شكراً لك.",
+    "en": "Location linked successfully! Thank you."
+  },
+  "profile_passwords_mismatch": {
+    "ar": "كلمتا المرور غير متطابقتين.",
+    "en": "Passwords do not match."
+  },
+  "profile_avatar_label": {
+    "ar": "الصورة الشخصية",
+    "en": "Profile Picture"
+  },
+  "profile_avatar_change": {
+    "ar": "تغيير الصورة",
+    "en": "Change Picture"
+  },
+  "profile_tab_personal": {
+    "ar": "البيانات الشخصية",
+    "en": "Personal Info"
+  },
+  "profile_tab_business": {
+    "ar": "بيانات النشاط",
+    "en": "Business Info"
+  },
+  "business_account_toggle": {
+    "ar": "حساب نشاط تجاري (بائع)",
+    "en": "Business Account (Seller)"
+  },
+  "business_name_label": {
+    "ar": "اسم النشاط التجاري",
+    "en": "Business Name"
+  },
+  "business_name_placeholder": {
+    "ar": "مثال: مطعم أسماك السويس",
+    "en": "e.g., Suez Fish Restaurant"
+  },
+  "business_bio_label": {
+    "ar": "وصف النشاط",
+    "en": "Business Bio"
+  },
+  "business_bio_placeholder": {
+    "ar": "نبذة عن ما تقدمه...",
+    "en": "A brief about what you offer..."
+  },
+  "business_category_label": {
+    "ar": "السوق الرئيسي",
+    "en": "Main Market"
+  },
+  "business_sub_category_label": {
+    "ar": "الأسواق الفرعية (تخصصاتك)",
+    "en": "Sub Markets (Your Specialties)"
+  },
+  "business_hours_label": {
+    "ar": "مواعيد العمل",
+    "en": "Working Hours"
+  },
+  "business_whatsapp_label": {
+    "ar": "رقم الواتساب",
+    "en": "WhatsApp Number"
+  },
+  "business_whatsapp_placeholder": {
+    "ar": "مثلاً: 01012345678",
+    "en": "e.g., 01012345678"
+  },
+  "business_social_label": {
+    "ar": "روابط التواصل",
+    "en": "Social Links"
+  },
+  "profile_covers_mgmt_label": {
+    "ar": "صور الغلاف (3 صور كحد أقصى)",
+    "en": "Cover Images (Max 3)"
+  }
+}

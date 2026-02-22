@@ -120,8 +120,8 @@
             document.documentElement.lang = lang;
             document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-            // Try to load general.json from cache/server
-            fetch('lang/general.json')
+            // Try to load core.json from cache/server
+            fetch('lang/core.json')
                 .then(r => r.json())
                 .then(data => {
                     document.querySelectorAll('[data-lkey]').forEach(el => {
