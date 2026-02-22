@@ -1,7 +1,7 @@
 {
-  "version": "1.21.66",
+  "version": "1.21.67",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-02-22T04:13:49.529Z",
+  "lastUpdated": "2026-02-22T04:24:06.391Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -990,8 +990,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/dashboard-admin.js",
-      "hash": "7a8445528e47db5c7e2a1e2743a35cdfd187bf47508df7c1f07aef028fb9c5d9",
-      "size": 4272
+      "hash": "8d3d8632e383ae25b137419dc872025eb2c772a21398661b499cb3506f4d1987",
+      "size": 91
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/dashboard-settings.js",
@@ -1437,6 +1437,11 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/seller.js",
       "hash": "b01c91b6fdd6e479eb2848eaab9ca70b4ac015c3e1c822d9208bdfa090e195bb",
       "size": 9136
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminHub.html",
+      "hash": "5329f18445b9567196b54c90828c89299fd4c06a3fef6a76f0085ad4f4b97fc0",
+      "size": 6615
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-actions.css",
@@ -2870,7 +2875,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "3780d1870369e668b9a0e5dcd99289d13a9a619df19d61eaf12590266b835b07",
+      "hash": "c11d07e6c2caa2a7b341775e5bdcb73f6c5832cbd0b3cf53f1ff571c97693bf7",
       "size": 21
     }
   ]
