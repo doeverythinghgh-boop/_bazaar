@@ -1,1 +1,1 @@
-window.AppBehavior={isUnderMaintenance:!0};
+window.AppBehavior={isUnderMaintenance:!0,disableAdminFeatures:!1};
