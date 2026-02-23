@@ -14,7 +14,10 @@
 @import url('register-forms.css');
 
 /* 4. Wizard System */
-@import url('register-wizard.css');
+@import url('css/wizard-base.css');
+@import url('css/wizard-nav.css');
+@import url('css/wizard-sequence.css');
+@import url('css/wizard-header.css');
 
 /* 5. Avatar Management */
 @import url('register-avatar.css');
