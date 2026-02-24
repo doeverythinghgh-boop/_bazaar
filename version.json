@@ -1,7 +1,7 @@
 {
-  "version": "1.21.607",
+  "version": "1.21.608",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-02-24T20:04:03.128Z",
+  "lastUpdated": "2026-02-24T20:05:59.805Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/ai-dashboard/discover.js",
@@ -1100,8 +1100,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/product-ratings.js",
-      "hash": "1262e06e34436dea4881b2b085aa175f4db2ea9daf5c19b6ac196e98aa57bc1f",
-      "size": 10141
+      "hash": "8a9f89644140127c8f8067fb444059f64d48ee3212adc14853ea07400e767c8b",
+      "size": 10168
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/splash.js",
@@ -2210,8 +2210,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-render-reviews.js",
-      "hash": "4bb977f1d4328b29ef79d889462f4702cfaa1de636d8082f858ca1d4776f2aa5",
-      "size": 7587
+      "hash": "a5e4c07adba4e0c11db741debb583f0a3274dbe440c469df5d90f5f0511a67cd",
+      "size": 7638
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-render-utils.js",
@@ -3145,7 +3145,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "f0ab8ea99f7757638b93c317f5650af7350b250fbd5ae0ece4bf4e4ae0cb14f1",
+      "hash": "2df9d9db471e8ed7f2dad48a6ee99844d8aa06094441cc1a57598c67e938b167",
       "size": 22
     }
   ]
