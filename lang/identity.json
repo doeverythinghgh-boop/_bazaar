@@ -686,5 +686,149 @@
   "splash_slogan": {
     "ar": "السويس بين إيديك",
     "en": "Suez in your hands"
+  },
+  "reg_hint_step1": {
+    "ar": "أدخل اسمك (3 أحرف على الأقل)",
+    "en": "Enter your name (at least 3 characters)"
+  },
+  "reg_hint_step2": {
+    "ar": "يمكنك تخطي هذه الخطوة أو رفع صورة شخصية",
+    "en": "You can skip this step or upload a profile picture"
+  },
+  "reg_hint_step3": {
+    "ar": "أدخل رقم هاتف صحيح وغير مسجل مسبقاً",
+    "en": "Enter a valid and unregistered phone number"
+  },
+  "reg_hint_step4": {
+    "ar": "أدخل كلمة مرور (4+) مع التأكيد المتطابق",
+    "en": "Enter a password (4+ characters) and confirm it"
+  },
+  "reg_hint_step5": {
+    "ar": "يرجى تحديد موقعك بدقة على الخريطة",
+    "en": "Please pinpoint your exact location on the map"
+  },
+  "reg_hint_step6": {
+    "ar": "أدخل تفاصيل العنوان (5 أحرف على الأقل)",
+    "en": "Enter address details (at least 5 characters)"
+  },
+  "reg_hint_step7": {
+    "ar": "يمكنك تخطي هذه الخطوة أو رفع صور",
+    "en": "You can skip this step or upload cover images"
+  },
+  "reg_hint_step8": {
+    "ar": "الاسم (3+) ونبذة عما تقدمه (10+)",
+    "en": "Name (3+) and bit about what you offer (10+)"
+  },
+  "reg_hint_step9": {
+    "ar": "حدد موقفك من خدمة التوصيل",
+    "en": "Define your delivery service status"
+  },
+  "reg_hint_step10": {
+    "ar": "حدد الحد الأدنى لقيمة الطلب",
+    "en": "Specify the minimum order value"
+  },
+  "reg_hint_step11": {
+    "ar": "اختر قسماً رئيساً وتخصصاً فرعياً واحداً على الأقل",
+    "en": "Select a main category and at least one specialty"
+  },
+  "reg_hint_step12": {
+    "ar": "أدخل رقم الواتساب (اختياري)",
+    "en": "Enter your WhatsApp number (optional)"
+  },
+  "reg_hint_step13": {
+    "ar": "أدخل روابط التواصل (اختياري)",
+    "en": "Enter social media links (optional)"
+  },
+  "reg_hint_success_step": {
+    "ar": "ممتاز، يمكنك الاستمرار الآن",
+    "en": "Excellent, you can continue now"
+  },
+  "reg_hint_success_last": {
+    "ar": "رائع! اضغط على إنشاء الحساب للبدء",
+    "en": "Great! Click Create Account to start"
+  },
+  "register_placeholder_username": {
+    "ar": "أدخل اسمك",
+    "en": "Enter your name"
+  },
+  "register_placeholder_bus_name": {
+    "ar": "اسم المحل أو النشاط",
+    "en": "Shop or business name"
+  },
+  "register_label_tagline": {
+    "ar": "نبذة عما تقدمه",
+    "en": "Brief about what you offer"
+  },
+  "register_placeholder_tagline": {
+    "ar": "مثال: أفضل أسعار إلكترونيات في السويس",
+    "en": "e.g., Best electronics prices in Suez"
+  },
+  "register_confirm_password_placeholder": {
+    "ar": "تأكيد كلمة المرور",
+    "en": "Confirm Password"
+  },
+  "register_placeholder_bio": {
+    "ar": "صف نشاطك بشكل مفصّل: ما الذي تقدمه، ما يميزك، وأي معلومات تريد أن يعرفها عملاؤك...",
+    "en": "Describe your business in detail: what you offer, what makes you unique, and any info you want clients to know..."
+  },
+  "reg_step_name_1": {
+    "ar": "الاسم",
+    "en": "Name"
+  },
+  "reg_step_name_2": {
+    "ar": "الصورة",
+    "en": "Avatar"
+  },
+  "reg_step_name_3": {
+    "ar": "الهاتف",
+    "en": "Phone"
+  },
+  "reg_step_name_4": {
+    "ar": "كلمة المرور",
+    "en": "Password"
+  },
+  "reg_step_name_5": {
+    "ar": "الموقع",
+    "en": "Location"
+  },
+  "reg_step_name_6": {
+    "ar": "العنوان",
+    "en": "Address"
+  },
+  "reg_step_name_7": {
+    "ar": "الغلاف",
+    "en": "Covers"
+  },
+  "reg_step_name_8": {
+    "ar": "النشاط",
+    "en": "Business"
+  },
+  "reg_step_name_9": {
+    "ar": "التوصيل",
+    "en": "Delivery"
+  },
+  "reg_step_name_10": {
+    "ar": "الحد الأدنى",
+    "en": "Min Order"
+  },
+  "reg_step_name_11": {
+    "ar": "التصنيفات",
+    "en": "Categories"
+  },
+  "reg_step_name_12": {
+    "ar": "واتساب",
+    "en": "WhatsApp"
+  },
+  "reg_step_name_13": {
+    "ar": "الروابط",
+    "en": "Links"
+  },
+  "gen_mandatory": {
+    "ar": "إلزامي",
+    "en": "Mandatory"
+  },
+  "gen_optional": {
+    "ar": "اختياري",
+    "en": "Optional"
   }
 }
