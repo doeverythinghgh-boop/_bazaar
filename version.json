@@ -1,7 +1,7 @@
 {
-  "version": "1.21.608",
+  "version": "1.21.609",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-02-25T23:14:23.043Z",
+  "lastUpdated": "2026-02-25T23:19:36.936Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/ai-dashboard/discover.js",
@@ -2665,8 +2665,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-step-validation.js",
-      "hash": "a9c61d41445181f609759d723310bdeda049c065d983de4861045b46267bc99b",
-      "size": 3665
+      "hash": "a126357a74e17df137df3007a2c9ae7fba7575f25dd2aeb254248de21f3a0f34",
+      "size": 3741
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-submit-handler.js",
@@ -2690,8 +2690,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-wizard-ui.js",
-      "hash": "d3e1a1763e2c6d3129026b4c189fd5dcb5738e446062ff8f06d3c70d52466611",
-      "size": 2785
+      "hash": "151190851e362c5cd3f267b386f9cd2eff40cd2cc130141fdce4c4d30aa2aca7",
+      "size": 2919
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/register-animations.css",
@@ -3145,7 +3145,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "2df9d9db471e8ed7f2dad48a6ee99844d8aa06094441cc1a57598c67e938b167",
+      "hash": "60d038cd8c060f2d224d4ccb2d61d00d0cbd0065c7e292688214e1717b5e8fa1",
       "size": 22
     }
   ]
