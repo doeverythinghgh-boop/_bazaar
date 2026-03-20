@@ -1,7 +1,7 @@
 {
-  "version": "1.22.12",
+  "version": "1.22.13",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-03-20T21:05:08.277Z",
+  "lastUpdated": "2026-03-20T21:20:51.202Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/ai-dashboard/discover.js",
@@ -1365,22 +1365,22 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-ui.js",
-      "hash": "27d66f5383235a20acd8fe1e323dabde6bbe5c5ba9d8adf6fffaeb43d40244f8",
-      "size": 8309
+      "hash": "4759bb6c2b06068e581ca2c92dd8a292ec0d83226aa62c019b0c7e6a7f68d775",
+      "size": 8308
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications.css",
-      "hash": "2c71dff95adf46a4d44a450b97a370d5b66082752394160d5ddf9500f93966e8",
-      "size": 12142
+      "hash": "da972924df453a7ec5ec3ace500a9d73bab500ee36e868b8befb246139323494",
+      "size": 12296
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications.html",
-      "hash": "02c97458ab814e13ae6f035ed86ceda3eca76d3512c3138cb0d4b355673caa12",
-      "size": 3308
+      "hash": "fd54ecbc6673312496ffc95bf8a13daa7136f06747f454266d2d44138b9fda26",
+      "size": 3236
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications.js",
-      "hash": "f62f71cdce9e293935cd6471fb9b0adb754a78196187a0d84bf6c55fd586b042",
+      "hash": "a57737251fff61c9ba4109918f229983036f43505faf1c2a5b2b103bcc4eca58",
       "size": 2048
     },
     {
@@ -3145,7 +3145,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "d2dd1715ba39e68f45e857e5496b51f4da460b51d2e3f9ff52d1ec923d968f2f",
+      "hash": "141800ab0100758ca9c52326bac29065897251cb32f657befdd7ca1baf009706",
       "size": 21
     }
   ]
