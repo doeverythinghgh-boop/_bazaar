@@ -1,7 +1,7 @@
 {
-  "version": "1.22.3",
+  "version": "1.22.4",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-03-20T18:49:42.949Z",
+  "lastUpdated": "2026-03-20T19:07:57.437Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/ai-dashboard/discover.js",
@@ -970,8 +970,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/auth/sessionManager.js",
-      "hash": "20312ecf16396a84e66f0214f8189ee2655d6fc1b977c8c58dfc6f130c815e6d",
-      "size": 6280
+      "hash": "37172ff9ae0e41056520eb7826fddf7d50402ef3d769f73e46e870f90a3d5895",
+      "size": 6595
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/auth/uiHelpers.js",
@@ -1095,8 +1095,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/dashboard-settings.js",
-      "hash": "9cf1b60cb420ca682ee47aa6708c89f3e01185716fe6ef7240c75ab2db799fb6",
-      "size": 22524
+      "hash": "09eb48986ad1414182fd8204bae69d205816027c3b52b5fa867021a7e4390bf9",
+      "size": 21984
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/product-ratings.js",
@@ -1225,13 +1225,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-android-setup.js",
-      "hash": "3a3c49c2013201b722a61451b7a25a827559c144d162091a0cc5dff7fbe077a4",
-      "size": 547
+      "hash": "24d578eb49399f84da3894c11ff75aa7a4fd19523b24c097d6193d1640d84f7f",
+      "size": 690
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-api.js",
-      "hash": "84e1b30f485bb95029601fead7bc16843e9086e977be27a052cdb355b7c022e2",
-      "size": 3345
+      "hash": "731e384e5a3863c822c416c9b165d8632eba8cedaca41daa20e7132a1a02599b",
+      "size": 5047
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-config.js",
@@ -1245,8 +1245,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-main-setup.js",
-      "hash": "3dab45c87264915941e49c4fda99e55ee72399ffa135cee4f4e40b289aab3f2a",
-      "size": 2000
+      "hash": "da8c0b01d496f98791495acf94c59bdac74e1ee2a1e5eeadab8fec0866833249",
+      "size": 2125
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-p2p-bridge.js",
@@ -1255,8 +1255,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-web-setup.js",
-      "hash": "4472bf972263c91d35c6df25236353e639a542044dd2fd29eafd5420ee137f36",
-      "size": 3584
+      "hash": "c56c608c5ad46efe3e32ec756667f70f0bc791fe1d4e26a139c5dc02c3360df9",
+      "size": 3613
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/notification-credentials.js",
@@ -1295,8 +1295,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/actions-permissions.js",
-      "hash": "71520daf0341ec68e6bb5f8ff596c342d3123c4ce95c134f1a9ada30d977e914",
-      "size": 5935
+      "hash": "307c1c6de6aea797af7ce408370f171e9beb4972d9e15d0660c874e1d984b8a6",
+      "size": 5488
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/admainNotificationsetting.html",
@@ -3145,7 +3145,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "78f51dda5b62805d75f00545acec27e2c81ec061d7268f8695fad2c01e62b9cf",
+      "hash": "1dc919ad3caad0b0756938a86e26e9cd1b263eeddcacb846b95f520acb9eea3b",
       "size": 20
     }
   ]
