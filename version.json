@@ -1,7 +1,7 @@
 {
-  "version": "1.22.14",
+  "version": "1.22.15",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-03-20T21:27:59.502Z",
+  "lastUpdated": "2026-03-20T21:29:08.225Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/ai-dashboard/discover.js",
@@ -1255,8 +1255,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-web-setup.js",
-      "hash": "666e7bb6b9e5a3a25eb545d0b9c07ffafa71cb2cbc5feb8669ba9cc9ca03898c",
-      "size": 3609
+      "hash": "e40365842605038f72cbb35ebe2efb48a978f91ebf771d2e62d7c56dc33e75cf",
+      "size": 3713
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/notification-credentials.js",
@@ -1365,8 +1365,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-ui.js",
-      "hash": "4759bb6c2b06068e581ca2c92dd8a292ec0d83226aa62c019b0c7e6a7f68d775",
-      "size": 8308
+      "hash": "b724547569f5765b78b3ab8305bc372cd6c0e17f8f4dd03ec2254202de460ee8",
+      "size": 8499
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications.css",
@@ -3145,7 +3145,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "b7aac15aa53a7a29d8439bb069ddcb6d5414a8c60fbeea08bc376a3128b8f85e",
+      "hash": "972a10693bd5d3ded5174e74528f82bdd048676b235b5f72085d2a27f1501d98",
       "size": 21
     }
   ]
