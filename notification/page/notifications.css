@@ -1,1 +1,29 @@
-.controls-bar,.header-stats{display:none!important}
+/**
+ * @file notifications.css
+ * @description Master stylesheet for the notifications page.
+ * Aggregates all modular CSS parts via @import.
+ */
+
+/* 1. Base Layout & Controls */
+@import url('notifications-base.css');
+
+/* 2. Notification Items & Chat Style */
+@import url('notifications-items.css');
+
+/* 3. Settings Interface */
+@import url('notifications-settings.css');
+
+/* 4. States & UI Feedback (Toasts/Empty/Loading) */
+@import url('notifications-states.css');
+
+/* 5. Responsive Design */
+@import url('notifications-responsive.css');
+
+/* 6. Themes & Dark Mode */
+@import url('notifications-dark.css');
+
+/* Global cleanup for unused elements in current version */
+.controls-bar,
+.header-stats {
+    display: none !important;
+}
