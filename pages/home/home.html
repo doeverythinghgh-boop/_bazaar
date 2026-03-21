@@ -1,10 +1,6 @@
-<!DOCTYPE html><html id="index-html-root" lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Suez Bazaar - الرئيسية</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Suez Bazaar - الرئيسية</title><script src="/js/core-loader.js"></script><script src="/pages/categories/categories-nav.js" defer="defer"></script><script src="/pages/categories/categories-loader.js" defer="defer"></script><script src="/pages/categories/categories-ui.js" defer="defer"></script><script src="/pages/categories/categories-products.js" defer="defer"></script><script src="/pages/categories/categories.js" defer="defer"></script></head><body style="background-color:var(--bg-color-light)"><div id="header-injection-point"></div><div id="home-main-wrapper" style="background-color:var(--bg-color-light)"><div id="loader-container" class="loader"></div><div class="section-header-custom1" id="home-ads-header" style="display:none"></div><div id="advertisement" style="background-color:var(--bg-color-light)"></div><div id="featured-products" style="background-color:transparent"></div><div class="section-header-custom" id="home-categories-header" style="display:none"><div class="section-header-icon-container" id="home-categories-icon-container"><i class="fas fa-store" id="home-categories-icon"></i></div><span id="home-categories-title-text" data-lkey="home_categories_title">أسواق السويس</span></div><div id="categories00" style="background-color:var(--bg-color-light)"></div></div><script>/**
-     * @function home_initContent
-     * @description Fetches and initializes the dynamic parts of the home page.
-     */
-    async function home_initContent() {
+<!DOCTYPE html><html id="index-html-root" lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Suez Bazaar - الرئيسية</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Suez Bazaar - الرئيسية</title><script src="/js/core-loader.js"></script><script src="/pages/categories/categories-nav.js" defer="defer"></script><script src="/pages/categories/categories-loader.js" defer="defer"></script><script src="/pages/categories/categories-ui.js" defer="defer"></script><script src="/pages/categories/categories-products.js" defer="defer"></script><script src="/pages/categories/categories.js" defer="defer"></script></head><body style="background-color:var(--bg-color-light)"><div id="header-injection-point"></div><div id="home-main-wrapper" style="background-color:var(--bg-color-light)"><div id="loader-container" class="loader"></div><div class="section-header-custom1" id="home-ads-header" style="display:none"></div><div id="advertisement" style="background-color:var(--bg-color-light)"></div><div id="featured-products" style="background-color:transparent"></div><div class="section-header-custom" id="home-categories-header" style="display:none"><div class="section-header-icon-container" id="home-categories-icon-container"><i class="fas fa-store" id="home-categories-icon"></i></div><span id="home-categories-title-text" data-lkey="home_categories_title">أسواق السويس</span></div><div id="categories00" style="background-color:var(--bg-color-light)"></div></div><script>async function home_initContent() {
       const initStartTime = performance.now();
-      console.log("🚀 [Home] Starting content initialization...");
+      console.log("[Home] Starting content initialization...");
 
       const loaderElement = document.getElementById("loader-container");
       const contentElements = [
@@ -21,24 +17,18 @@
       if (loaderElement) loaderElement.style.display = "block";
 
       try {
-        // Step 1: Load parts using absolute paths
-        console.log("📂 [Home] Fetching partials (Ads, Featured, Categories)...");
         await Promise.all([
           loader("/pages/advertisement/advertisement.html", "advertisement", 0),
           loader("/pages/featured/featured.html", "featured-products", 100),
           loader("/pages/categories/categories.html", "categories00", 300),
         ]);
-        console.log("✅ [Home] Partials fetched successfully.");
+        console.log("[Home] Partials fetched successfully.");
 
-        // Step 2: Initialize modules
-        console.log("⚙️ [Home] Initializing modules...");
         if (typeof initAdverModule === 'function') {
-          console.log("   - Initializing Advertisement module...");
           initAdverModule(document.getElementById("advertisement-section"));
         }
 
         if (typeof window.initSelectedProductsModule === 'function') {
-          console.log("   - Initializing Products module...");
           await window.initSelectedProductsModule();
           if (typeof window.initFeaturedModule === 'function') {
             window.initFeaturedModule();
@@ -46,18 +36,15 @@
         }
 
         if (typeof categories_loadCategoriesAsTable === 'function') {
-          console.log("   - Loading Category table...");
           categories_loadCategoriesAsTable();
         }
 
-        // Step 3: UI Adjustments
         const adsHeader = document.getElementById('home-ads-header');
         const catHeader = document.getElementById('home-categories-header');
         if (adsHeader) adsHeader.style.display = 'flex';
         if (catHeader) catHeader.style.display = 'flex';
 
         if (typeof window.applyAppTranslations === 'function') {
-          console.log("🌍 [Home] Re-applying translations to dynamic content...");
           window.applyAppTranslations();
         }
 
@@ -65,9 +52,7 @@
           if (el) el.style.display = originalDisplays.get(el);
         });
 
-        // Step 4: Version Footer
         try {
-          console.log("📄 [Home] Fetching version footer (v.json)...");
           const vUrl = `/v.json?v=${Date.now()}`;
           const versionResponse = await fetch(vUrl);
           if (versionResponse.ok) {
@@ -77,48 +62,42 @@
             footer.style.cssText = 'text-align: center; padding: 10px; font-size: 0.7rem; color: #888; width: 100%; border-top: 1px solid #eee; margin-top: 20px; background-color: #fafafa; font-family: sans-serif;';
             footer.innerHTML = `&copy; 2025 Suez Bazaar <span style="margin: 0 8px;">•</span> v${versionData.version}`;
             document.getElementById('home-main-wrapper').appendChild(footer);
-            console.log(`✅ [Home] Version identified: ${versionData.version}`);
           }
-        } catch (vErr) { console.warn("[Home] Footer error:", vErr); }
+        } catch (vErr) {
+          console.warn("[Home] Footer error:", vErr);
+        }
 
-        console.log(`✅ [Home] Full content ready in ${(performance.now() - initStartTime).toFixed(0)}ms.`);
+        console.log(`[Home] Full content ready in ${(performance.now() - initStartTime).toFixed(0)}ms.`);
 
       } catch (error) {
-        console.error("❌ [Home] Initialization failed:", error);
+        console.error("[Home] Initialization failed:", error);
       } finally {
         if (loaderElement) loaderElement.style.display = "none";
       }
     }
 
     document.addEventListener('DOMContentLoaded', async function () {
-      // 1. Theme
       if (typeof initAppTheme === 'function') window.initAppTheme();
 
-      // 2. Initialize Translations (CRITICAL: Load before session and header)
       if (typeof loadIndexTranslations === 'function') {
         await window.loadIndexTranslations();
       }
 
-      // 3. Initialize Session (Syncs UI, depends on translations)
       if (typeof SessionManager !== 'undefined') {
         SessionManager.init();
       }
 
-      // 4. Initialize Data
       if (typeof fetchAppCategories === 'function') await fetchAppCategories();
 
-      // 5. Initialize Header (Depends on translations)
       if (typeof AppHeader !== 'undefined' && AppHeader.init) {
         await AppHeader.init('header-injection-point', 'index-home-btn');
       }
 
       if (typeof applyAppTranslations === 'function') applyAppTranslations();
 
-      // 6. PWA & Notifications (Service Worker registration)
       if (typeof setupFCM === 'function') {
         setupFCM();
       }
 
-      // 7. Bootstrap content
       await home_initContent();
     });</script></body></html>
