@@ -87,83 +87,37 @@
 
   <script>
     (function initPrivacyTranslations() {
+      // Ensure we have access to the translation function
+      const l = window.langu || ((k) => k);
       const lang = localStorage.getItem('app_language') || 'ar';
-      const translations = {
-        ar: {
-          title: 'سياسة الخصوصية - Suez Bazaar',
-          intro: 'في <strong>Suez Bazaar</strong> نحترم خصوصية المستخدمين ونسعى لحماية بياناتهم الشخصية وفقًا لأفضل الممارسات.',
-          h1: 'سياسة الخصوصية - Suez Bazaar',
-          h2_1: 'المعلومات التي نقوم بجمعها',
-          p1: 'قد نقوم بجمع بعض المعلومات الأساسية مثل الاسم ورقم الهاتف عند التسجيل في التطبيق، وذلك لتحسين تجربة المستخدم وتسهيل عمليات الشراء والبيع.',
-          h2_2: 'كيفية استخدام المعلومات',
-          p2: 'نستخدم البيانات فقط لأغراض تشغيل التطبيق وتقديم الخدمات، مثل التواصل بين البائعين والمشترين، وتحسين الأداء، ودعم المستخدمين.',
-          h2_2b: 'مشاركة بيانات التواصل عند الشراء',
-          p2b: 'قد يظهر للبائع بعض بيانات التواصل مثل رقم الهاتف عند شراء منتج أو خدمة منه، وذلك لتنسيق التواصل وتسليم الطلب. وبإتمام الشراء، يقر المستخدم بعلمه بذلك، ولا تتحمل Suez Bazaar مسؤولية أي استخدام لهذه البيانات خارج نطاق تنفيذ الطلب.',
-          h2_2c: 'طبيعة المنصة وحدود المسؤولية',
-          p2c: 'تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، ولا تضمن جدية البائعين أو المشترين ولا جودة المنتج أو الخدمة. ويلتزم المستخدم بعدم الدفع إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها بنفسه. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.',
-          h2_3: 'مشاركة البيانات',
-          p3: 'لا نقوم بمشاركة بيانات المستخدم مع أي طرف ثالث إلا في حال وجود التزام قانوني أو لتحسين الخدمة عبر مزودين موثوقين.',
-          h2_4: 'أمان البيانات',
-          p4: 'نستخدم تقنيات آمنة لحماية بيانات المستخدم من الوصول غير المصرح به أو التعديل أو الحذف.',
-          h2_5: 'حقوق المستخدم',
-          p5: 'يحق للمستخدم طلب حذف بياناته أو تعديلها في أي وقت من خلال التواصل معنا عبر البريد الإلكتروني أدناه.',
-          h2_6: 'التحديثات',
-          p6: 'قد نقوم بتحديث سياسة الخصوصية من وقت لآخر، وسيتم نشر أي تغييرات في هذه الصفحة.',
-          h2_7: 'التواصل معنا',
-          p7: 'لأي استفسار أو ملاحظات، يمكنكم التواصل عبر البريد الإلكتروني: <a href="mailto:suezbazaar@gmail.com">suezbazaar@gmail.com</a>'
-        },
-        en: {
-          title: 'Privacy Policy - Suez Bazaar',
-          intro: 'At <strong>Suez Bazaar</strong>, we respect user privacy and strive to protect personal data in line with best practices.',
-          h1: 'Privacy Policy - Suez Bazaar',
-          h2_1: 'Information We Collect',
-          p1: 'We may collect some basic information such as your name and phone number when you register in the app, in order to improve the user experience and facilitate buying and selling.',
-          h2_2: 'How We Use Information',
-          p2: 'We use data only for operating the app and providing services, such as enabling communication between sellers and buyers, improving performance, and supporting users.',
-          h2_2b: 'Sharing Contact Details During Purchase',
-          p2b: 'Some contact details, such as your phone number, may be shown to the seller when you purchase a product or service to coordinate communication and delivery. By completing a purchase, the user acknowledges this, and Suez Bazaar is not responsible for any use of this data outside the scope of fulfilling the order.',
-          h2_2c: 'Platform Nature and Liability Limits',
-          p2c: 'Suez Bazaar operates as a platform for listing products and services and enabling communication between users. It does not guarantee the seriousness of sellers or buyers, nor the quality of any product or service. Users are required not to make any payment until they receive the product or obtain the service and verify it themselves. Suez Bazaar also commits to removing any product or service provider proven through reports or review to be offering fake products or services or engaging in any form of fraud or deception.',
-          h2_3: 'Data Sharing',
-          p3: 'We do not share user data with any third party except when required by law or when needed to improve the service through trusted providers.',
-          h2_4: 'Data Security',
-          p4: 'We use secure technologies to protect user data from unauthorized access, modification, or deletion.',
-          h2_5: 'User Rights',
-          p5: 'Users have the right to request deletion or modification of their data at any time by contacting us through the email below.',
-          h2_6: 'Updates',
-          p6: 'We may update this privacy policy from time to time, and any changes will be published on this page.',
-          h2_7: 'Contact Us',
-          p7: 'For any inquiry or feedback, you can contact us by email: <a href="mailto:suezbazaar@gmail.com">suezbazaar@gmail.com</a>'
-        }
-      };
 
-      const t = translations[lang] || translations.ar;
       document.documentElement.lang = lang;
       document.documentElement.dir = lang === 'en' ? 'ltr' : 'rtl';
       document.body.style.direction = lang === 'en' ? 'ltr' : 'rtl';
       document.body.style.textAlign = lang === 'en' ? 'left' : 'right';
-      document.title = t.title;
 
-      document.getElementById('privacy-title').textContent = t.h1;
-      document.getElementById('privacy-intro').innerHTML = t.intro;
-      document.getElementById('privacy-h2-1').textContent = t.h2_1;
-      document.getElementById('privacy-p-1').textContent = t.p1;
-      document.getElementById('privacy-h2-2').textContent = t.h2_2;
-      document.getElementById('privacy-p-2').textContent = t.p2;
-      document.getElementById('privacy-h2-2b').textContent = t.h2_2b;
-      document.getElementById('privacy-p-2b').textContent = t.p2b;
-      document.getElementById('privacy-h2-2c').textContent = t.h2_2c;
-      document.getElementById('privacy-p-2c').textContent = t.p2c;
-      document.getElementById('privacy-h2-3').textContent = t.h2_3;
-      document.getElementById('privacy-p-3').textContent = t.p3;
-      document.getElementById('privacy-h2-4').textContent = t.h2_4;
-      document.getElementById('privacy-p-4').textContent = t.p4;
-      document.getElementById('privacy-h2-5').textContent = t.h2_5;
-      document.getElementById('privacy-p-5').textContent = t.p5;
-      document.getElementById('privacy-h2-6').textContent = t.h2_6;
-      document.getElementById('privacy-p-6').textContent = t.p6;
-      document.getElementById('privacy-h2-7').textContent = t.h2_7;
-      document.getElementById('privacy-p-7').innerHTML = t.p7;
+      // Apply translations from the global system
+      document.title = l('privacy_page_title');
+      document.getElementById('privacy-title').textContent = l('privacy_page_title');
+      document.getElementById('privacy-intro').innerHTML = l('privacy_intro');
+      document.getElementById('privacy-h2-1').textContent = l('privacy_h2_1');
+      document.getElementById('privacy-p-1').textContent = l('privacy_p_1');
+      document.getElementById('privacy-h2-2').textContent = l('privacy_h2_2');
+      document.getElementById('privacy-p-2').textContent = l('privacy_p_2');
+      document.getElementById('privacy-h2-2b').textContent = l('privacy_h2_2b');
+      document.getElementById('privacy-p-2b').textContent = l('privacy_p_2b');
+      document.getElementById('privacy-h2-2c').textContent = l('privacy_h2_2c');
+      document.getElementById('privacy-p-2c').textContent = l('privacy_p_2c');
+      document.getElementById('privacy-h2-3').textContent = l('privacy_h2_3');
+      document.getElementById('privacy-p-3').textContent = l('privacy_p_3');
+      document.getElementById('privacy-h2-4').textContent = l('privacy_h2_4');
+      document.getElementById('privacy-p-4').textContent = l('privacy_p_4');
+      document.getElementById('privacy-h2-5').textContent = l('privacy_h2_5');
+      document.getElementById('privacy-p-5').textContent = l('privacy_p_5');
+      document.getElementById('privacy-h2-6').textContent = l('privacy_h2_6');
+      document.getElementById('privacy-p-6').textContent = l('privacy_p_6');
+      document.getElementById('privacy-h2-7').textContent = l('privacy_h2_7');
+      document.getElementById('privacy-p-7').innerHTML = l('privacy_p_7');
     })();
   </script>
 </body>

@@ -379,6 +379,22 @@
     "ar": "حدث خطأ في عرض الطلبات",
     "en": "Error displaying orders"
   },
+  "sales_updating_data_title": {
+    "ar": "جاري تحديث البيانات...",
+    "en": "Updating data..."
+  },
+  "sales_updating_data_text": {
+    "ar": "يتم جلب أحدث تفاصيل الطلب من السيرفر",
+    "en": "Fetching latest order details from server"
+  },
+  "sales_error_title": {
+    "ar": "خطأ",
+    "en": "Error"
+  },
+  "sales_error_open_details": {
+    "ar": "تعذر فتح تفاصيل الطلب، يرجى المحاولة لاحقاً",
+    "en": "Could not open order details, please try again later"
+  },
   "sales_modal_title": {
     "ar": "تفاصيل الطلب",
     "en": "Order Details"

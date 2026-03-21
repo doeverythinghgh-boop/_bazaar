@@ -206,5 +206,41 @@
   "search_modal_within_merchant": {
     "ar": "البحث داخل المتجر",
     "en": "Search inside store"
+  },
+  "subcat_no_pending_search": {
+    "ar": "لا توجد معايير بحث معلقة",
+    "en": "No pending search criteria"
+  },
+  "subcat_no_merchants": {
+    "ar": "لا يوجد تّجار في هذا التصنيف حالياً",
+    "en": "No merchants in this category currently"
+  },
+  "subcat_merchant_specialized": {
+    "ar": "متجر متخصص",
+    "en": "Specialized Store"
+  },
+  "subcat_fetch_error": {
+    "ar": "تعذر تحميل البيانات",
+    "en": "Failed to load data"
+  },
+  "subcat_merchant_default_name": {
+    "ar": "تاجر",
+    "en": "Merchant"
+  },
+  "subcat_no_description": {
+    "ar": "لا يوجد وصف متاح",
+    "en": "No description available"
+  },
+  "subcat_visit_store": {
+    "ar": "زيارة المتجر",
+    "en": "Visit Store"
+  },
+  "cat_selection_instruction": {
+    "ar": "يمكنك اختيار <b>3 أقسام رئيسية</b> كحد أقصى، مع اختيار أي عدد من التخصصات الفرعية.",
+    "en": "You can select up to <b>3 main categories</b>, with unlimited subcategories for each."
+  },
+  "cat_limit_main_msg": {
+    "ar": "أقصى عدد للأقسام الرئيسية هو 3",
+    "en": "Maximum 3 main categories allowed"
   }
 }
