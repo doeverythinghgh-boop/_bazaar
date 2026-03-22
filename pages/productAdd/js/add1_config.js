@@ -1,1 +1,1 @@
-var add1_IMAGE_MAX_WIDTH=1600,add1_IMAGE_MAX_HEIGHT=1600,add1_IMAGE_QUALITY=.75,add1_MAX_FILES=6,add1_images=[],add1_idCounter=1;window.isProcessingFilesAdd1=!1;
+var add1_IMAGE_MAX_WIDTH=1600,add1_IMAGE_MAX_HEIGHT=1600,add1_IMAGE_QUALITY=.75,add1_MAX_FILES=4,add1_images=[],add1_idCounter=1;window.isProcessingFilesAdd1=!1;
