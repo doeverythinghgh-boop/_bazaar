@@ -1,7 +1,7 @@
 {
-  "version": "1.22.44",
+  "version": "1.22.45",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-03-22T04:06:13.994Z",
+  "lastUpdated": "2026-03-22T04:15:18.047Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/ai-dashboard/discover.js",
@@ -1250,8 +1250,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-android-setup.js",
-      "hash": "ed66ac206a58f24564227a26a18b53a1973efb6cf2d5c307ec20d098c545edcd",
-      "size": 1079
+      "hash": "cbaf20877b9ecc521e42d75e7c7dd98ddfbd4adc5ec65fa5de5fd3f9eab5e066",
+      "size": 1151
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-api.js",
@@ -2090,8 +2090,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/login/login.js",
-      "hash": "0532ffad9c7c58eb0dfc5350f4b2574cf22c6db4c2c7b6e4754ef7ea1edc6edf",
-      "size": 9147
+      "hash": "ddcff33fdb4ef60f87153e48a63dd684f26de519a2cefcfcf6208d9a4595d795",
+      "size": 8596
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category-api.js",
@@ -3145,7 +3145,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "4f513a65b823594ac9f369502849655514681beed0748a2260be7483f92978a3",
+      "hash": "90ae4f3e89085af541388d7e7dba49b7ca64b3f8c23d04b284489df402a2b416",
       "size": 21
     }
   ]
