@@ -1,7 +1,7 @@
 {
-  "version": "1.22.45",
+  "version": "1.22.46",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-03-22T04:15:18.047Z",
+  "lastUpdated": "2026-03-22T04:21:40.136Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/ai-dashboard/discover.js",
@@ -1250,8 +1250,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-android-setup.js",
-      "hash": "cbaf20877b9ecc521e42d75e7c7dd98ddfbd4adc5ec65fa5de5fd3f9eab5e066",
-      "size": 1151
+      "hash": "808af8c529b06a7a8a3a5a4b364e10517fa01410325bdd9dfdaf9e49150d7305",
+      "size": 1241
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-api.js",
@@ -3145,7 +3145,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "90ae4f3e89085af541388d7e7dba49b7ca64b3f8c23d04b284489df402a2b416",
+      "hash": "70ba5e6db897d26657caa1dfcf4f8200023bd489e6edf36f359e9f6bfaacb8fc",
       "size": 21
     }
   ]
