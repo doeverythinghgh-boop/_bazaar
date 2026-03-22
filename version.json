@@ -1,7 +1,7 @@
 {
-  "version": "1.22.50",
+  "version": "1.22.51",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-03-22T15:42:48.690Z",
+  "lastUpdated": "2026-03-22T15:46:32.198Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/ai-dashboard/discover.js",
@@ -1165,8 +1165,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/core.json",
-      "hash": "cabe73e91b211be36f46064dcaaa7bee33c5b2413baa08583a9470d2de76d723",
-      "size": 32165
+      "hash": "fe3e8f11d92117138be18ed9b130811d650b7084862da67f48c0b2f30d38fc7c",
+      "size": 32139
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/identity.json",
@@ -3145,7 +3145,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "42985fc461ccfb6355c9ab6ab5d5a671c59c0c2be7802dd4aa1f5a346e3ab0f8",
+      "hash": "739b89ae856d2883c20b1e2bdf129e0cf9ae1aca076cccd44d5e34171be54073",
       "size": 21
     }
   ]
