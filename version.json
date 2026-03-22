@@ -1,7 +1,7 @@
 {
-  "version": "1.22.45",
+  "version": "1.22.46",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-03-22T14:27:12.535Z",
+  "lastUpdated": "2026-03-22T14:42:28.724Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/ai-dashboard/discover.js",
@@ -1315,8 +1315,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/actions-events.js",
-      "hash": "4a7f5d6dac16de4d8370e97933eeb6ff5a857cb9627b9e377ecb3e0a08e9a485",
-      "size": 2744
+      "hash": "b4779a7db96ca2601ad75b8da899c4cb60da54f46cd45483ac6e808238024be8",
+      "size": 2868
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/actions-permissions.js",
@@ -1400,8 +1400,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications.js",
-      "hash": "206bf45a2e1ae4df16710ac57ea241c516f0a230195fe23a91552ed4e47a3bec",
-      "size": 3631
+      "hash": "67374248ed9bd61e270c9e84ea3718f1cf1fe8f7bddc1f2c382f3554ad02884a",
+      "size": 4207
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/offline.html",
@@ -3040,8 +3040,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/style/index.css",
-      "hash": "4446e575b7d771392820d55626cb578e7e2ce79438b84a19845f8ea1124ab7f2",
-      "size": 5013
+      "hash": "757749096a17adf66dac12e4fa8f4a34e95b90e03af6345544c84f09305bcf5e",
+      "size": 5009
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/style/layout.css",
@@ -3145,7 +3145,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "90ae4f3e89085af541388d7e7dba49b7ca64b3f8c23d04b284489df402a2b416",
+      "hash": "70ba5e6db897d26657caa1dfcf4f8200023bd489e6edf36f359e9f6bfaacb8fc",
       "size": 21
     }
   ]
