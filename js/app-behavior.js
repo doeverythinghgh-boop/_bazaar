@@ -1,1 +1,1 @@
-window.AppBehavior={isUnderMaintenance:!1,disableAdminFeatures:!1,enableSecurityShield:!1,enablePWA:!1};
+window.AppBehavior={isUnderMaintenance:!0,disableAdminFeatures:!1,enableSecurityShield:!1,enablePWA:!1};
