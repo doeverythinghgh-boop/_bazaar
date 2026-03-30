@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>اختيار نوع الإضافة - Suez Bazaar</title><script src="/js/app-behavior.js"></script><script src="/js/core-loader.js"></script></head><body style="background:var(--bg-color-light)"><div id="header-injection-point"></div><main style="min-height:calc(100vh - 90px);display:grid;place-items:center;padding:24px"><section style="width:min(680px,100%);background:rgba(255,255,255,.9);border:1px solid rgba(0,0,0,.08);border-radius:28px;padding:28px;box-shadow:0 24px 60px rgba(0,0,0,.08);display:grid;gap:18px"><div style="display:grid;gap:8px;text-align:center"><h1 style="margin:0;font-size:1.8rem">اختر نوع الإضافة</h1><p id="product-type-chooser-text" style="margin:0;color:#5f6c7b;font-weight:600">حدد ما إذا كنت تريد إضافة منتج أو خدمة، ثم اختر القسم من داخل الصفحة التالية.</p></div><div id="product-type-chooser-actions" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px"><button id="chooser-add-product" type="button" style="display:none;border:none;border-radius:22px;padding:22px 18px;background:linear-gradient(135deg,#0ea5e9,#2563eb);color:#fff;font-size:1rem;font-weight:800;cursor:pointer">إضافة منتج</button> <button id="chooser-add-service" type="button" style="display:none;border:none;border-radius:22px;padding:22px 18px;background:linear-gradient(135deg,#f59e0b,#ea580c);color:#fff;font-size:1rem;font-weight:800;cursor:pointer">إضافة خدمة</button></div><button type="button" onclick="history.back()" style="justify-self:center;border:none;background:0 0;color:#4b5563;font-weight:700;cursor:pointer">رجوع</button></section></main><script>document.addEventListener('DOMContentLoaded', async function () {
+            if (typeof initAppTheme === 'function') initAppTheme();
+            if (typeof loadIndexTranslations === 'function') await loadIndexTranslations();
+            if (typeof SessionManager !== 'undefined') SessionManager.init();
+            if (typeof AppHeader !== 'undefined' && AppHeader.init) await AppHeader.init('header-injection-point', '');
+            if (typeof fetchAppCategories === 'function') await fetchAppCategories();
+
+            const availableTypes = (typeof window.ProductCategoryScope !== 'undefined')
+                ? window.ProductCategoryScope.detectAvailableTypes()
+                : { hasProduct: true, hasService: false };
+
+            const productBtn = document.getElementById('chooser-add-product');
+            const serviceBtn = document.getElementById('chooser-add-service');
+
+            if (productBtn) {
+                productBtn.style.display = availableTypes.hasProduct ? 'block' : 'none';
+                productBtn.onclick = function () {
+                    if (typeof loadProductForm === 'function') {
+                        loadProductForm({ editMode: false, itemTypeHint: 'product' });
+                    }
+                };
+            }
+
+            if (serviceBtn) {
+                serviceBtn.style.display = availableTypes.hasService ? 'block' : 'none';
+                serviceBtn.onclick = function () {
+                    if (typeof loadProductForm === 'function') {
+                        loadProductForm({ editMode: false, itemTypeHint: 'service' });
+                    }
+                };
+            }
+
+            if (availableTypes.hasProduct && !availableTypes.hasService && typeof loadProductForm === 'function') {
+                loadProductForm({ editMode: false, itemTypeHint: 'product' });
+            }
+
+            if (!availableTypes.hasProduct && availableTypes.hasService && typeof loadProductForm === 'function') {
+                loadProductForm({ editMode: false, itemTypeHint: 'service' });
+            }
+        });</script></body></html>

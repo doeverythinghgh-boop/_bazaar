@@ -1,0 +1,1 @@
+function productView_formatAmount(value){const amount=parseFloat(value)||0;return amount%1==0?amount:amount.toFixed(2)}
