@@ -1,1 +1,0 @@
-async function createOrder(orderData){return await apiFetch("/api/orders",{method:"POST",headers:{"Content-Type":"application/json"},body:orderData})}

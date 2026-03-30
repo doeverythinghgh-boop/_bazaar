@@ -1,1 +1,0 @@
-async function getLatestUpdate(){try{const data=void 0;return await apiFetch("/api/updates",{specialHandlers:{404:()=>({datetime:null})}})}catch(error){return console.error("%c[getLatestUpdate] فشل:","color: red;",error),null}}

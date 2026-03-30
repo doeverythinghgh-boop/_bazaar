@@ -1,1 +1,0 @@
-var add2_IMAGE_MAX_WIDTH=1600,add2_IMAGE_MAX_HEIGHT=1600,add2_IMAGE_QUALITY=.75,add2_MAX_FILES=4,add2_images=[],add2_idCounter=1;window.isProcessingFilesAdd2=!1;

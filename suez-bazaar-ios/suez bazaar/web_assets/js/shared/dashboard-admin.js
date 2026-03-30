@@ -1,1 +1,0 @@
-window.handleAdminPanelClick=function(){window.location.href="/pages/ADMIN/adminHub.html"};

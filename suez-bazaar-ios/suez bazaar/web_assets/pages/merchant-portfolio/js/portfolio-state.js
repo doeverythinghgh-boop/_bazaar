@@ -1,1 +1,0 @@
-const portfolioState={productOffset:0,productLimit:5,isFirstLoad:!0};window.portfolioState=portfolioState;

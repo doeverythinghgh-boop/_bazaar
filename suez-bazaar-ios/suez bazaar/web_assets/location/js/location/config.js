@@ -1,1 +1,0 @@
-const location_app={location_map:null,location_marker:null,location_accuracyCircle:null,location_longPressTimer:null,location_isBusy:!1,location_defaultCoords:[29.9668,32.5498],location_defaultZoom:13,location_storageKey:"saved_location"};
