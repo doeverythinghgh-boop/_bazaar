@@ -1,0 +1,41 @@
+<!DOCTYPE html><html id="index-html-root" lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>منتجاتي - Suez Bazaar</title><script src="/js/app-behavior.js"></script><script src="/js/core-loader.js"></script><link rel="stylesheet" href="/pages/product2Me/product2Me.css"></head><body id="product-2me-page"><p class="splash-loading-text">جاري التحميل...</p><div id="header-injection-point"></div><div class="p2m-products-container" id="p2m-products-container"><div class="p2m-search-container" id="p2m-search-container"><table id="p2m-search-table" style="width:100%;border-spacing:10px;table-layout:fixed"><tbody id="p2m-search-tbody"><tr id="p2m-filters-row"><td id="p2m-main-category-cell"><div class="p2m-form-group" id="p2m-main-category-group"><i class="fas fa-layer-group p2m-filter-icon" id="p2m-main-category-icon"></i> <select class="p2m-form-select" id="main-category-filter" aria-label="الفئة الرئيسية"><option value="" id="p2m-main-category-default">كل الاسواق الرئيسية</option></select></div></td><td id="p2m-sub-category-cell"><div class="p2m-form-group" id="p2m-sub-category-group"><i class="fas fa-tags p2m-filter-icon" id="p2m-sub-category-icon"></i> <select class="p2m-form-select" id="sub-category-filter" aria-label="الفئة الفرعية"><option value="" id="p2m-sub-category-default">كل الاسواق الفرعية</option></select></div></td></tr><tr id="p2m-search-input-row"><td colspan="2" id="p2m-search-input-cell"><div class="p2m-input-container" id="p2m-input-container" style="padding-right:0"><i class="fas fa-search p2m-input-icon" id="p2m-search-icon" aria-hidden="true"></i> <input type="search" id="search-input" placeholder="اكتب اسم المنتج الذي تبحث عنه..." autocomplete="off"></div></td></tr><tr id="p2m-action-row"><td id="p2m-sort-cell"><div class="p2m-form-group" id="p2m-sort-group"><i class="fas fa-sort-amount-down p2m-filter-icon" id="p2m-sort-icon"></i> <select class="p2m-form-select" id="sort-filter" aria-label="ترتيب حسب"><option value="default" id="p2m-sort-default">الترتيب الافتراضي</option><option value="price-asc" id="p2m-sort-price-asc">الأقل سعراً</option><option value="price-desc" id="p2m-sort-price-desc">الأعلى سعراً</option></select></div></td><td id="p2m-search-btn-cell"><button type="button" class="p2m-search-btn" id="search-btn" aria-label="بحث" style="width:100%;height:50px;border-radius:50px"><i class="fas fa-search" id="p2m-search-btn-icon"></i></button></td></tr></tbody></table></div><div class="p2m-products-grid" id="products-grid"></div><div class="p2m-loading-state" id="loading-state" style="display:none"><i class="fas fa-spinner fa-spin" id="p2m-loading-icon"></i><p id="p2m-loading-text">جاري تحميل المنتجات...</p></div><div class="p2m-empty-state" id="empty-state" style="display:none"><i class="fas fa-box-open" id="p2m-empty-icon"></i><p id="p2m-empty-text-1">لا توجد منتجات لعرضها</p><p id="p2m-empty-text-2">قم بإضافة منتجك الأول للبدء</p></div></div><script src="product2Me.js"></script><script>/**
+         * @description Initializes the standalone "My Products" page.
+         */
+        document.addEventListener('DOMContentLoaded', async function () {
+            try {
+                // 1. Initialize Theme
+                if (typeof initAppTheme === 'function') initAppTheme();
+                else if (typeof initTheme === 'function') initTheme();
+
+                // 2. Load Translations (CRITICAL: Must load before session and header)
+                if (typeof window.loadIndexTranslations === 'function') {
+                    await window.loadIndexTranslations();
+                }
+
+                // 3. Initialize Session (Syncs UI, depends on translations)
+                if (typeof SessionManager !== 'undefined' && SessionManager.init) SessionManager.init();
+
+                // 4. Inject Header (Now translations are ready)
+                if (typeof AppHeader !== 'undefined' && AppHeader.init) {
+                    await AppHeader.init('header-injection-point');
+                }
+
+                // 5. Initialize Page Data
+                if (typeof initializeProduct2Me === 'function') {
+                    await initializeProduct2Me();
+                }
+
+                // 6. Hide splash screen
+                setTimeout(() => {
+                    if (typeof hideSplashScreen === 'function') {
+                        hideSplashScreen();
+                    }
+                }, 600);
+
+                // Page specific initialization is handled by product2Me.js (IIFE)
+                // But we ensure it's loaded after core scripts.
+            } catch (error) {
+                console.error('[P2M] Error during initialization:', error);
+                if (typeof hideSplashScreen === 'function') hideSplashScreen();
+            }
+        });</script></body></html>

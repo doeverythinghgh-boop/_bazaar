@@ -1,0 +1,1 @@
+const PV2_IMAGE_MAX_WIDTH=1920,PV2_IMAGE_MAX_HEIGHT=1920,PV2_IMAGE_QUALITY=.8,PV2_MAX_ORDER_IMAGES=4,PV2_MAX_IMAGE_SIZE_MB=5;let pv2_sliderState={currentIndex:0,slides:[],dots:[],autoPlayInterval:null,images:[]},pv2_orderImages=[];

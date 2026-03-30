@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html><html id="html-root" lang="ar" dir="rtl"><head id="page-head"><meta id="meta-charset" charset="UTF-8"><meta id="meta-viewport" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title id="page-title">الفئات - Suez Bazaar</title><script src="/js/app-behavior.js"></script><script id="core-loader-script" src="/js/core-loader.js"></script><link id="categories-stylesheet" rel="stylesheet" href="/pages/categories/categories.css"><link id="page-stylesheet" rel="stylesheet" href="/pages/main-category/main-category.css"><script id="main-category-api" src="/pages/main-category/main-category-api.js" defer="defer"></script><script id="main-category-ui" src="/pages/main-category/main-category-ui.js" defer="defer"></script><script id="main-category-events" src="/pages/main-category/main-category-events.js" defer="defer"></script><script id="main-category-init" src="/pages/main-category/main-category-init.js" defer="defer"></script></head><body id="page-body" style="background-color:var(--bg-color-light)"><div id="header-injection-point"></div><div id="main-category-page" class="main-category-page"><div id="main-category-subcategories" class="main-category-subcategories"></div></div><script>document.addEventListener('DOMContentLoaded', async function () {
+      // 1. Initialize Theme (Dark Mode support)
+      if (typeof initAppTheme === 'function') {
+        window.initAppTheme();
+      }
+
+      // 2. Initialize Translations (CRITICAL: Load before session and header)
+      if (typeof loadIndexTranslations === 'function') {
+        await window.loadIndexTranslations();
+      }
+
+      // 3. Initialize Session (Syncs UI, depends on translations)
+      if (typeof SessionManager !== 'undefined') {
+        SessionManager.init();
+      }
+
+      // 4. Load Core Data
+      if (typeof fetchAppCategories === 'function') {
+        await fetchAppCategories();
+      }
+
+      // 5. Initialize Header (Depends on translations)
+      if (typeof AppHeader !== 'undefined' && AppHeader.init) {
+        await AppHeader.init('header-injection-point', 'index-home-btn');
+      }
+
+      if (typeof applyAppTranslations === 'function') {
+        window.applyAppTranslations();
+      }
+    });</script></body></html>

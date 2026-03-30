@@ -1,0 +1,1 @@
+const ADMIN_KEY_SEARCH="682dri6b",SEARCH_SESSION_KEY="search_page_state",SEARCH_LIMIT=10;let selectedSearchProducts=new Set,isAdminForSearch=!1,currentResults=[],searchOffset=0,searchElements={},merchantContext=null;
