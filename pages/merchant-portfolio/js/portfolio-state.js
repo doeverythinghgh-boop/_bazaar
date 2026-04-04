@@ -1,1 +1,1 @@
-const portfolioState={productOffset:0,productLimit:5,isFirstLoad:!0};window.portfolioState=portfolioState;
+const portfolioState={productOffset:0,productLimit:5,isFirstLoad:!0,allProducts:[],sellerSearch:{isOpen:!1,query:"",mainCategory:"",subCategory:"",sort:"default"}};window.portfolioState=portfolioState;
