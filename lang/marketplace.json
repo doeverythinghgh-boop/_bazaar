@@ -73,7 +73,7 @@
   },
   "cat_modal_title": {
     "ar": "📋 تحديد فئة المنتج",
-    "en": "📋 Select Product Category"
+    "en": "ðŸ“‹ Select Product Category"
   },
   "cat_main_label": {
     "ar": "السوق الرئيسي",
@@ -198,6 +198,34 @@
   "search_loading_status": {
     "ar": "جاري التحميل...",
     "en": "Loading..."
+  },
+  "port_search_panel_title": {
+    "ar": "بحث داخل منتجات البائع",
+    "en": "Search Seller Products"
+  },
+  "port_search_clear_all": {
+    "ar": "مسح الكل",
+    "en": "Clear All"
+  },
+  "port_search_ready": {
+    "ar": "جاهز للبحث",
+    "en": "Ready to search"
+  },
+  "port_search_results_count": {
+    "ar": "نتيجة",
+    "en": "results"
+  },
+  "port_search_text_title": {
+    "ar": "ابحث باسم المنتج أو الوصف",
+    "en": "Search by product name or description"
+  },
+  "port_search_text_placeholder": {
+    "ar": "أدخل الاسم أو الوصف",
+    "en": "Enter product name or description"
+  },
+  "port_search_execute_error": {
+    "ar": "تعذر تنفيذ البحث الآن. حاول مرة أخرى.",
+    "en": "Unable to perform search right now. Please try again."
   },
   "search_retry_status": {
     "ar": "حاول مرة أخرى",
