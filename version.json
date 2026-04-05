@@ -1,7 +1,7 @@
 {
-  "version": "1.24.10",
+  "version": "1.24.11",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-05T09:12:30.840Z",
+  "lastUpdated": "2026-04-05T10:05:48.001Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -905,8 +905,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/config.js",
-      "hash": "0e9cf447d9025956212701d53836b009c8f322da6c4ed17eed9d5cd9cf0916e8",
-      "size": 1754
+      "hash": "2b7a7dfeaf13b921a9561167102d0bc338afd101842eb7013060c43bc721c492",
+      "size": 1788
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/connectProduct.js",
@@ -920,8 +920,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core-loader.js",
-      "hash": "86c8267d4a31cb9f16edb0f381e39fbe2225437cde001184c0906b83faeaabeb",
-      "size": 12187
+      "hash": "d57ff5193dcb29c6fda3903d13515780abd081acc92e3a9d754c430bb998d2fc",
+      "size": 15013
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/db/usersDB.js",
@@ -985,8 +985,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/runtime-config.js",
-      "hash": "5c9b3d5df9b012973729e531494fa477cc789fd7d9a32ce08c79fc573e77f842",
-      "size": 4341
+      "hash": "2113fefc704bff597c2beedd04df2a418158ff7fded6394f449f8e300a723e32",
+      "size": 4582
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/security-shield.js",
@@ -3060,7 +3060,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "c96aadd7a5d94372591f3fb7e5d8f0345702a1252481a78648ef870dbabbb311",
+      "hash": "197c840129e98ff8bb3bc1a7e83d2795105d599ad50d174891d008d0d1aae560",
       "size": 21
     }
   ]
