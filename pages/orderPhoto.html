@@ -63,9 +63,12 @@
                     }
 
                     const ext = extensions[extIdx];
+                    const r2PublicUrl = (typeof window.getBazaarInfrastructureConfig === 'function'
+                        ? window.getBazaarInfrastructureConfig().r2PublicUrl
+                        : null) || '';
                     const url = typeof getPublicR2FileUrl === 'function'
                         ? getPublicR2FileUrl(`${baseName}.${ext}`)
-                        : `https://pub-e828389e2f1e484c89d8fb652c540c12.r2.dev/${baseName}.${ext}`;
+                        : `${r2PublicUrl}/${baseName}.${ext}`;
 
                     const img = new Image();
                     img.onload = () => resolve(url);
