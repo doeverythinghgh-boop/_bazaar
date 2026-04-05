@@ -1,7 +1,7 @@
 {
-  "version": "1.24.2",
+  "version": "1.24.3",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-04T14:46:12.987Z",
+  "lastUpdated": "2026-04-05T05:16:21.264Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -890,8 +890,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/bridge-manager.js",
-      "hash": "91e971357340e7ca65b91e4f9370b5914bae7f3dc18aac53b83f1a67524f55ce",
-      "size": 1506
+      "hash": "9a7855995d584bab519ec9325bfbd65d547fd55e53c24eed82218eb93e574369",
+      "size": 2664
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/category-tree-modal.js",
@@ -1230,8 +1230,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/global-counter.js",
-      "hash": "ecab68df761880d957f8e8497195614e3f54a953d9778a99378c38a72a69c2d9",
-      "size": 3983
+      "hash": "2b535db7afe26ba63a82cfe9b88ae950b0add3de903f4607d0852f9906999e18",
+      "size": 4022
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/global-events.js",
@@ -1935,8 +1935,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/home/home.html",
-      "hash": "b11065c7c4ec87053974a81c6e85fb41e3c9f98d89222b4326b82c81d01245de",
-      "size": 5720
+      "hash": "a2e88c7c4d77421b48a91cad38d5c7528392ac02eead1ffee5453ac361e78feb",
+      "size": 5885
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/login/login.css",
@@ -3055,7 +3055,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "9b4073830c07a2d50a5b91fa28cabdb1af46bb8aa0421d0ebe0ac766d8bcf4ba",
+      "hash": "b5807072f17010187294b026a720f074aa61638e6dd38c311f428a616b1ad357",
       "size": 20
     }
   ]

@@ -100,4 +100,8 @@
       }
 
       await home_initContent();
+
+      if (window.BridgeManager && typeof window.BridgeManager.signalReady === 'function') {
+        window.BridgeManager.signalReady('home_boot_complete');
+      }
     });</script></body></html>
