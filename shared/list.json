@@ -524,15 +524,6 @@
           "image": "Car Services.webp"
         },
         {
-          "id": 3,
-          "title": {
-            "ar": "خدمات الشحن والتوصيل",
-            "en": "Shipping & Delivery"
-          },
-          "icon": "fas fa-shipping-fast",
-          "image": "Shipping & Delivery.webp"
-        },
-        {
           "id": 5,
           "title": {
             "ar": "خدمات صيانه المركبات",
@@ -605,6 +596,16 @@
           "image": "Water Vehicles.webp"
         }
       ]
+    },
+    {
+      "id": 46,
+      "title": {
+        "ar": "خدمات التوصيل",
+        "en": "Delivery Services"
+      },
+      "icon": "fas fa-shipping-fast",
+      "image": "Shipping & Delivery.webp",
+      "subcategories": []
     },
     {
       "id": 5,
