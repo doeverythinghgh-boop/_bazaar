@@ -1,71 +1,201 @@
 {
-    "serviceMainCategories": [
-        6,
-        20,
-        7,
-        16,
-        46
-    ],
-    "serviceSubCategories": [
-        {
-            "mainId": 3,
-            "subId": 5,
-            "description": "خدمات تطوير المواقع والتطبيقات"
-        },
-        {
-            "mainId": 6,
-            "subId": 9,
-            "description": "خدمات تعليمية"
-        },
-        {
-            "mainId": 6,
-            "subId": 7,
-            "description": "خدمات تجميلية شخصية"
-        },
-        {
-            "mainId": 6,
-            "subId": 4,
-            "description": "تصميم جرافيك وتصوير"
-        },
-        {
-            "mainId": 12,
-            "subId": 5,
-            "description": "خدمات رعاية وتدريب الحيوانات"
-        },
-        {
-            "mainId": 13,
-            "subId": 7,
-            "description": "خدمات التغليف والتنسيق"
-        },
-        {
-            "mainId": 17,
-            "subId": 8,
-            "description": "خدمات تنظيم المناسبات"
-        },
-        {
-            "mainId": 17,
-            "subId": 5,
-            "description": "خدمات التصوير والفيديو"
-        },
-        {
-            "mainId": 44,
-            "subId": 4,
-            "description": "عضوية أوريفليم الجديدة"
-        },
-        {
-            "mainId": 45,
-            "subId": 4,
-            "description": "عضوية افون الجديدة"
-        },
-        {
-            "mainId": 23,
-            "subId": 4,
-            "description": "عضوية ماى واي الجديدة"
-        }
-    ],
-    "settings": {
-        "hidePrice": true,
-        "serviceType": "2",
-        "productType": "0"
+  "version": 2,
+  "defaultProfileKey": "product_default",
+  "serviceMainCategories": [
+    6,
+    20,
+    7,
+    16,
+    46
+  ],
+  "serviceSubCategories": [
+    {
+      "mainId": 3,
+      "subId": 5,
+      "description": "خدمات تطوير المواقع والتطبيقات",
+      "profileKey": "service_digital"
+    },
+    {
+      "mainId": 6,
+      "subId": 9,
+      "description": "خدمات تعليمية",
+      "profileKey": "service_education"
+    },
+    {
+      "mainId": 6,
+      "subId": 7,
+      "description": "خدمات تجميلية شخصية",
+      "profileKey": "service_personal_care"
+    },
+    {
+      "mainId": 6,
+      "subId": 4,
+      "description": "تصميم جرافيك وتصوير",
+      "profileKey": "service_creative"
+    },
+    {
+      "mainId": 12,
+      "subId": 5,
+      "description": "خدمات رعاية وتدريب الحيوانات",
+      "profileKey": "service_pet_care"
+    },
+    {
+      "mainId": 13,
+      "subId": 7,
+      "description": "خدمات التغليف والتنسيق",
+      "profileKey": "service_event_support"
+    },
+    {
+      "mainId": 17,
+      "subId": 8,
+      "description": "خدمات تنظيم المناسبات",
+      "profileKey": "service_event_support"
+    },
+    {
+      "mainId": 17,
+      "subId": 5,
+      "description": "خدمات التصوير والفيديو",
+      "profileKey": "service_creative"
+    },
+    {
+      "mainId": 44,
+      "subId": 4,
+      "description": "عضوية اوريفليم الجديدة",
+      "profileKey": "service_membership"
+    },
+    {
+      "mainId": 45,
+      "subId": 4,
+      "description": "عضوية افون الجديدة",
+      "profileKey": "service_membership"
+    },
+    {
+      "mainId": 23,
+      "subId": 4,
+      "description": "عضوية ماي واي الجديدة",
+      "profileKey": "service_membership"
     }
+  ],
+  "settings": {
+    "hidePrice": true,
+    "serviceType": "2",
+    "productType": "0"
+  },
+  "profiles": {
+    "product_default": {
+      "family": "product",
+      "typeKey": "physical_product",
+      "label": "Standard Product",
+      "serviceTypeValue": "0",
+      "hidePrice": false,
+      "listingPage": "/pages/products/productView/productView.html",
+      "addPage": "/pages/products/productAdd/productAdd.html",
+      "editPage": "/pages/products/productEdit/productEdit.html",
+      "flags": {
+        "isService": false,
+        "isProduct": true,
+        "requiresInventory": true,
+        "requiresBooking": false,
+        "supportsShipping": true
+      }
+    },
+    "service_default": {
+      "family": "service",
+      "typeKey": "general_service",
+      "label": "Standard Service",
+      "serviceTypeValue": "2",
+      "hidePrice": true,
+      "listingPage": "/pages/products/productView2/productView2.html",
+      "addPage": "/pages/products/productAdd2/productAdd2.html",
+      "editPage": "/pages/products/productEdit2/productEdit2.html",
+      "flags": {
+        "isService": true,
+        "isProduct": false,
+        "requiresInventory": false,
+        "requiresBooking": false,
+        "supportsShipping": false
+      }
+    },
+    "service_delivery": {
+      "family": "service",
+      "typeKey": "delivery_service",
+      "label": "Delivery Service",
+      "extends": "service_default",
+      "flags": {
+        "supportsShipping": false,
+        "requiresLocation": true
+      }
+    },
+    "service_digital": {
+      "family": "service",
+      "typeKey": "digital_service",
+      "label": "Digital Service",
+      "extends": "service_default"
+    },
+    "service_education": {
+      "family": "service",
+      "typeKey": "education_service",
+      "label": "Education Service",
+      "extends": "service_default",
+      "flags": {
+        "requiresBooking": true
+      }
+    },
+    "service_personal_care": {
+      "family": "service",
+      "typeKey": "personal_care_service",
+      "label": "Personal Care Service",
+      "extends": "service_default",
+      "flags": {
+        "requiresBooking": true
+      }
+    },
+    "service_creative": {
+      "family": "service",
+      "typeKey": "creative_service",
+      "label": "Creative Service",
+      "extends": "service_default"
+    },
+    "service_pet_care": {
+      "family": "service",
+      "typeKey": "pet_care_service",
+      "label": "Pet Care Service",
+      "extends": "service_default",
+      "flags": {
+        "requiresBooking": true
+      }
+    },
+    "service_event_support": {
+      "family": "service",
+      "typeKey": "event_support_service",
+      "label": "Event Support Service",
+      "extends": "service_default"
+    },
+    "service_membership": {
+      "family": "service",
+      "typeKey": "membership_service",
+      "label": "Membership Service",
+      "extends": "service_default"
+    }
+  },
+  "mainCategoryProfiles": {
+    "6": "service_default",
+    "7": "service_default",
+    "16": "service_default",
+    "20": "service_default",
+    "46": "service_delivery"
+  },
+  "subCategoryProfiles": {
+    "3:5": "service_digital",
+    "6:4": "service_creative",
+    "6:7": "service_personal_care",
+    "6:9": "service_education",
+    "12:5": "service_pet_care",
+    "13:7": "service_event_support",
+    "17:5": "service_creative",
+    "17:8": "service_event_support",
+    "23:4": "service_membership",
+    "44:4": "service_membership",
+    "45:4": "service_membership"
+  }
 }
