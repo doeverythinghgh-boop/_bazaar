@@ -1,854 +1,854 @@
-﻿{
-    "gen_next":  {
-                     "ar":  "Ø§Ù„ØªØ§Ù„ÙŠ",
-                     "en":  "Next"
-                 },
-    "gen_prev":  {
-                     "ar":  "Ø§Ù„Ø³Ø§Ø¨Ù‚",
-                     "en":  "Previous"
-                 },
-    "logging_in":  {
-                       "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø¯Ø®ÙˆÙ„...",
-                       "en":  "Logging in..."
-                   },
-    "login_invalid_credentials":  {
-                                      "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ø§Ùˆ Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ ØºÙŠØ± ØµØ­ÙŠØ­Ù‡",
-                                      "en":  "Incorrect phone number or password."
-                                  },
-    "auth_wait_moment":  {
-                             "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø± Ù„Ø­Ø¸Ø©.",
-                             "en":  "Please wait a moment."
-                         },
-    "auth_confirm_identity":  {
-                                  "ar":  "Ø§Ù„ØªØ­Ù‚Ù‚ Ù…Ù† Ø§Ù„Ù‡ÙˆÙŠØ©",
-                                  "en":  "Identify Verification"
-                              },
-    "auth_enter_password_to_continue":  {
-                                            "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ù„Ù„Ù…ØªØ§Ø¨Ø¹Ø©.",
-                                            "en":  "Please enter password to continue."
-                                        },
-    "auth_enter_password_placeholder":  {
-                                            "ar":  "Ø£Ø¯Ø®Ù„ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±",
-                                            "en":  "Enter your password"
-                                        },
-    "auth_confirm_btn":  {
-                             "ar":  "ØªØ£ÙƒÙŠØ¯",
-                             "en":  "Confirm"
-                         },
-    "logout_confirm_title":  {
-                                 "ar":  "Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ØŸ",
-                                 "en":  "Are you sure?"
-                             },
-    "logout_confirm_text":  {
-                                "ar":  "Ø³ÙŠØªÙ… ØªØ³Ø¬ÙŠÙ„ Ø®Ø±ÙˆØ¬Ùƒ.",
-                                "en":  "You will be logged out."
-                            },
-    "logout_confirm_btn":  {
-                               "ar":  "Ù…ÙˆØ§ÙÙ‚",
-                               "en":  "OK"
-                           },
-    "label_phone":  {
-                        "ar":  "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ",
-                        "en":  "Phone Number"
-                    },
-    "label_password":  {
-                           "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±",
-                           "en":  "Password"
-                       },
-    "no_account":  {
-                       "ar":  "Ù„ÙŠØ³ Ù„Ø¯ÙŠÙƒ Ø­Ø³Ø§Ø¨ØŸ",
-                       "en":  "Don\u0027t have an account?"
-                   },
-    "register_now":  {
-                         "ar":  "Ø³Ø¬Ù„ Ø§Ù„Ø¢Ù†",
-                         "en":  "Register Now"
-                     },
-    "or_you_can":  {
-                       "ar":  "Ø£Ùˆ ÙŠÙ…ÙƒÙ†Ùƒ",
-                       "en":  "Or you can"
-                   },
-    "login_as_guest":  {
-                           "ar":  "Ø§Ù„Ø¯Ø®ÙˆÙ„ ÙƒØ¶ÙŠÙ",
-                           "en":  "Login as Guest"
-                       },
-    "to_browse_products":  {
-                               "ar":  "Ù„ØªØµÙØ­ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª",
-                               "en":  "to browse products"
-                           },
-    "register_page_title":  {
-                                "ar":  "Ø¥Ù†Ø´Ø§Ø¡ Ø­Ø³Ø§Ø¨ Ø¬Ø¯ÙŠØ¯",
-                                "en":  "Create New Account"
-                            },
-    "register_label_username":  {
-                                    "ar":  "Ø§Ù„Ø§Ø³Ù…",
-                                    "en":  "Name"
-                                },
-    "register_label_phone":  {
-                                 "ar":  "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ",
-                                 "en":  "Phone Number"
-                             },
-    "register_label_password":  {
-                                    "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±",
-                                    "en":  "Password"
-                                },
-    "register_form_hint":  {
-                               "ar":  "ÙŠØ¬Ø¨ Ø£Ù† ØªØªÙƒÙˆÙ† Ù…Ù† 4 Ø£Ø­Ø±Ù Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ Ù„Ø­Ù…Ø§ÙŠØ© Ø­Ø³Ø§Ø¨Ùƒ.",
-                               "en":  "Must be at least 4 characters to protect your account."
-                           },
-    "register_location_title":  {
-                                    "ar":  "Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø±ÙŠØ·Ø©",
-                                    "en":  "Location on Map"
-                                },
-    "register_label_address":  {
-                                   "ar":  "ØªÙØ§ØµÙŠÙ„ Ø§Ù„Ø¹Ù†ÙˆØ§Ù† (Ù…Ø«Ù„: Ø§Ù„Ø¯ÙˆØ±ØŒ Ø¹Ù„Ø§Ù…Ø© Ù…Ù…ÙŠØ²Ø©)",
-                                   "en":  "Address Details (e.g. Floor, Landmark)"
-                               },
-    "register_placeholder_address":  {
-                                         "ar":  "Ù…Ø«Ù„Ø§Ù‹: Ø´Ø§Ø±Ø¹ Ø§Ù„Ø³Ù„Ø§Ù…ØŒ Ø§Ù„Ø¯ÙˆØ± Ø§Ù„Ø«Ø§Ù„Ø«ØŒ Ø¨Ø¬ÙˆØ§Ø± Ù…Ø³Ø¬Ø¯ Ø§Ù„Ù‚Ø¯Ø³",
-                                         "en":  "e.g. El Salam St, 3rd Floor, near El Qods Mosque"
-                                     },
-    "register_error_username_required":  {
-                                             "ar":  "Ø§Ù„Ø£Ø³Ù… Ø¨Ø§Ù„ÙƒØ§Ù…Ù„ Ù…Ø·Ù„ÙˆØ¨",
-                                             "en":  "Full Name is required"
-                                         },
-    "register_error_phone_invalid":  {
-                                         "ar":  "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ ØºÙŠØ± ØµØ­ÙŠØ­",
-                                         "en":  "Invalid phone number"
-                                     },
-    "register_error_phone_exists":  {
-                                        "ar":  "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ Ù‡Ø°Ø§ Ù…Ø³Ø¬Ù„ Ù…Ø³Ø¨Ù‚Ø§Ù‹ØŒ ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø±Ù‚Ù… Ø¢Ø®Ø± Ø£Ùˆ ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø¯Ø®ÙˆÙ„.",
-                                        "en":  "This phone number is already registered. Please use another or login."
-                                    },
-    "register_error_password_too_short":  {
-                                              "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ù‚ØµÙŠØ±Ø© Ø¬Ø¯Ø§Ù‹ (Ø£Ù‚Ù„ Ø´ÙŠØ¡ 4)",
-                                              "en":  "Password too short (min 4)"
-                                          },
-    "register_error_location_required":  {
-                                             "ar":  "ÙŠØ±Ø¬Ù‰ ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø±ÙŠØ·Ø© Ø£ÙˆÙ„Ø§Ù‹",
-                                             "en":  "Please select location on map first"
-                                         },
-    "register_error_address_required":  {
-                                            "ar":  "ØªÙØ§ØµÙŠÙ„ Ø§Ù„Ø¹Ù†ÙˆØ§Ù† Ù…Ø·Ù„ÙˆØ¨Ø© Ù„Ø³Ù‡ÙˆÙ„Ø© Ø§Ù„ÙˆØµÙˆÙ„ Ø¥Ù„ÙŠÙƒ",
-                                            "en":  "Address details are required"
-                                        },
-    "register_header_account_type":  {
-                                         "ar":  "Ù†ÙˆØ¹ Ø§Ù„Ø­Ø³Ø§Ø¨",
-                                         "en":  "Account Type"
-                                     },
-    "register_label_account_type":  {
-                                        "ar":  "Ù‡Ù„ ØªØ±ØºØ¨ ÙÙŠ Ø¹Ø±Ø¶ Ù…Ù†ØªØ¬Ø§ØªÙƒ Ø£Ùˆ ØªÙ‚Ø¯ÙŠÙ… Ø®Ø¯Ù…Ø§ØªÙƒØŸ",
-                                        "en":  "Do you want to display products or offer services?"
-                                    },
-    "register_label_account_roles":  {
-                                         "ar":  "ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ø®ØªÙŠØ§Ø± Ø£ÙƒØ«Ø± Ù…Ù† Ù†ÙˆØ¹ Ø­Ø³Ø§Ø¨",
-                                         "en":  "You can choose multiple account types"
-                                     },
-    "role_buyer":  {
-                       "ar":  "Ù…Ø´ØªØ±ÙŠ",
-                       "en":  "Buyer"
-                   },
-    "role_seller":  {
-                        "ar":  "???? ???? / ???? ?????",
-                        "en":  "Service Provider / Business"
-                    },
-    "role_delivery":  {
-                          "ar":  "Ø®Ø¯Ù…Ø© ØªÙˆØµÙŠÙ„",
-                          "en":  "Delivery Service"
-                      },
-    "role_service_provider":  {
-                                  "ar":  "Ù…Ù‚Ø¯Ù… Ø®Ø¯Ù…Ø©",
-                                  "en":  "Service Provider"
-                              },
-    "role_desc_buyer":  {
-                            "ar":  "Ø³ØªØªÙ…ÙƒÙ† Ù…Ù† ØªØµÙØ­ ÙƒØ§ÙØ© Ø£Ø³ÙˆØ§Ù‚ Ø§Ù„Ø³ÙˆÙŠØ³ØŒ Ù…Ù‚Ø§Ø±Ù†Ø© Ø§Ù„Ø£Ø³Ø¹Ø§Ø±ØŒ ÙˆØ§Ù„Ø·Ù„Ø¨ Ø§Ù„Ù…Ø¨Ø§Ø´Ø± Ù„Ù„Ù…Ù†ØªØ¬Ø§Øª ÙˆØ§Ù„Ø®Ø¯Ù…Ø§Øª Ø¨Ø³Ù‡ÙˆÙ„Ø©.",
-                            "en":  "Browse all Suez markets, compare prices, and order directly from one app."
-                        },
-    "role_desc_delivery":  {
-                               "ar":  "Ø³ØªØ¸Ù‡Ø± Ù„Ùƒ Ù„ÙˆØ­Ø© Ù…ØªØ§Ø¨Ø¹Ø© Ù„Ø·Ù„Ø¨Ø§Øª Ø§Ù„ØªÙˆØµÙŠÙ„ Ø§Ù„Ù…ØªØ§Ø­Ø© ÙÙŠ Ø§Ù„Ø³ÙˆÙŠØ³ Ù„Ø²ÙŠØ§Ø¯Ø© Ø¯Ø®Ù„ÙƒØŒ Ø¨Ø¬Ø§Ù†Ø¨ Ù‚Ø¯Ø±ØªÙƒ Ø¹Ù„Ù‰ Ø§Ù„ØªØ³ÙˆÙ‚.",
-                               "en":  "Access a dashboard for delivery requests in Suez to increase your income."
-                           },
-    "role_desc_service":  {
-                              "ar":  "ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ù„ØªØ±ÙˆÙŠØ¬ Ù„Ø®Ø¯Ù…Ø§ØªÙƒ Ø§Ù„Ù…Ù‡Ù†ÙŠØ© (ØªØ¹Ù„ÙŠÙ…ØŒ Ø®Ø¯Ù…Ø§Øª Ø·Ø¨ÙŠØ©ØŒ Ø®Ø¯Ù…Ø§Øª Ù‡Ù†Ø¯Ø³ÙŠØ©ØŒ Ø¥Ù„Ø®) ÙˆØ§Ù„ÙˆØµÙˆÙ„ Ù„Ø¹Ù…Ù„Ø§Ø¡ Ø¬Ø¯Ø¯ Ø¨Ø§Ù„Ø³ÙˆÙŠØ³.",
-                              "en":  "Promote your professional services (Teaching, Medical, Engineering, etc.) to new clients."
-                          },
-    "role_desc_delivery_service":  {
-                                       "ar":  "Ù…Ù‚Ø¯Ù… Ø®Ø¯Ù…Ø§Øª Ù„ÙˆØ¬Ø³ØªÙŠØ© ÙˆÙ…Ù‡Ù†ÙŠØ©Ø› ÙŠÙ…ÙƒÙ†Ùƒ ØªÙ‚Ø¯ÙŠÙ… Ù…Ù‡Ø§Ø±Ø§ØªÙƒ Ø§Ù„ÙÙ†ÙŠØ© Ø¨Ø¬Ø§Ù†Ø¨ Ø§Ù„Ø¹Ù…Ù„ ÙƒÙ…Ù†Ø¯ÙˆØ¨ ØªÙˆØµÙŠÙ„ Ù…Ø­ØªØ±Ù.",
-                                       "en":  "Logistics and professional services provider; offer technical skills and delivery."
-                                   },
-    "role_desc_fallback":  {
-                               "ar":  "Ø£Ù†Øª Ø§Ù„Ø¢Ù† Ø´Ø±ÙŠÙƒ ÙÙŠ Ù…Ø¬ØªÙ…Ø¹ Ø³ÙˆÙŠØ³ Ø¨Ø§Ø²Ø§Ø±Ø› Ø­Ø³Ø§Ø¨Ùƒ Ø³ÙŠÙˆÙØ± Ù„Ùƒ ÙƒØ§ÙØ© Ø§Ù„Ø£Ø¯ÙˆØ§Øª Ø§Ù„Ù„Ø§Ø²Ù…Ø© Ø¨Ù†Ø§Ø¡Ù‹ Ø¹Ù„Ù‰ ØªØ®ØµØµØ§ØªÙƒ.",
-                               "en":  "You are a Suez Bazaar partner; your account provides tools based on your specialties."
-                           },
-    "register_btn_submit":  {
-                                "ar":  "Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ø­Ø³Ø§Ø¨",
-                                "en":  "Create Account"
-                            },
-    "register_login_question":  {
-                                    "ar":  "Ù„Ø¯ÙŠÙƒ Ø­Ø³Ø§Ø¨ Ø¨Ø§Ù„ÙØ¹Ù„ØŸ",
-                                    "en":  "Already have an account?"
-                                },
-    "register_login_action":  {
-                                  "ar":  "Ø³Ø¬Ù„ Ø§Ù„Ø¯Ø®ÙˆÙ„",
-                                  "en":  "Login"
-                              },
-    "register_error_unexpected":  {
-                                      "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ ØºÙŠØ± Ù…ØªÙˆÙ‚Ø¹. ÙŠØ±Ø¬Ù‰ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                                      "en":  "An unexpected error occurred. Please try again."
-                                  },
-    "register_error_app":  {
-                               "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ ÙÙŠ Ø§Ù„ØªØ·Ø¨ÙŠÙ‚. ÙŠØ±Ø¬Ù‰ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                               "en":  "An application error occurred. Please try again."
-                           },
-    "register_seller_settings_title":  {
-                                           "ar":  "??????? ???? ??????",
-                                           "en":  "Service Provider Settings"
-                                       },
-    "register_delivery_question":  {
-                                       "ar":  "Ù‡Ù„ Ù„Ø¯ÙŠÙƒ Ø®Ø¯Ù…Ø© ØªÙˆØµÙŠÙ„ Ø®Ø§ØµØ© Ø¨ÙƒØŸ",
-                                       "en":  "Do you have your own delivery service?"
-                                   },
-    "register_delivery_no":  {
-                                 "ar":  "Ù„Ø§ (Ù„Ø§ Ø£Ù‚ÙˆÙ… Ø¨Ø§Ù„ØªÙˆØµÙŠÙ„ Ø¨Ù†ÙØ³ÙŠ)",
-                                 "en":  "No (I do not deliver orders myself)"
-                             },
-    "register_delivery_yes":  {
-                                  "ar":  "Ù†Ø¹Ù… (Ø£Ù‚ÙˆÙ… Ø¨Ø§Ù„ØªÙˆØµÙŠÙ„ Ø¨Ù†ÙØ³ÙŠ)",
-                                  "en":  "Yes (I deliver myself)"
-                              },
-    "register_min_order_question":  {
-                                        "ar":  "Ù‡Ù„ ØªØ¶Ø¹ Ø­Ø¯Ø§Ù‹ Ø£Ø¯Ù†Ù‰ Ù„Ø·Ù„Ø¨Ø§Øª Ø§Ù„Ø´Ø±Ø§Ø¡ØŸ",
-                                        "en":  "Do you set a minimum order limit?"
-                                    },
-    "register_min_order_no":  {
-                                  "ar":  "Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø¯ Ø£Ø¯Ù†Ù‰",
-                                  "en":  "No minimum limit"
-                              },
-    "register_min_order_yes":  {
-                                   "ar":  "Ù†Ø¹Ù…ØŒ ÙŠÙˆØ¬Ø¯ Ø­Ø¯ Ø£Ø¯Ù†Ù‰ Ù„Ù„Ø·Ù„Ø¨",
-                                   "en":  "Yes, there is a minimum limit"
-                               },
-    "register_min_order_value_label":  {
-                                           "ar":  "Ù‡Ù„ ÙŠÙˆØ¬Ø¯ Ø­Ø¯ Ø§Ø¯Ù†Ù‰ Ù„Ù„Ø·Ù„Ø¨ (Ø¬.Ù…)ØŸ",
-                                           "en":  "Is there a minimum order limit (EGP)?"
-                                       },
-    "register_min_order_placeholder":  {
-                                           "ar":  "Ù…Ø«Ù„Ø§Ù‹: 100",
-                                           "en":  "e.g., 100"
-                                       },
-    "register_save_settings_btn":  {
-                                       "ar":  "Ø­ÙØ¸ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª",
-                                       "en":  "Save Settings"
-                                   },
-    "register_invalid_min_order":  {
-                                       "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ Ù‚ÙŠÙ…Ø© ØµØ­ÙŠØ­Ø© Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ø¯Ù†Ù‰",
-                                       "en":  "Please enter a valid minimum value"
-                                   },
-    "register_seller_options_set":  {
-                                        "ar":  "(ØªÙ… Ø¶Ø¨Ø· Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª âœ…)",
-                                        "en":  "(Settings Set âœ…)"
-                                    },
-    "register_seller_options_none":  {
-                                         "ar":  "(?? ???? ??????? ??????)",
-                                         "en":  "(No additional settings)"
-                                     },
-    "register_seller_options_btn":  {
-                                        "ar":  "?????? ???? ??????",
-                                        "en":  "Service Provider Options"
-                                    },
-    "register_map_success":  {
-                                 "ar":  "ØªÙ… Ø±Ø¨Ø· Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø¨Ù†Ø¬Ø§Ø­!",
-                                 "en":  "Location linked successfully!"
-                             },
-    "register_map_mandatory_error":  {
-                                         "ar":  "ÙŠØ±Ø¬Ù‰ ØªØ­Ø¯ÙŠØ¯ Ù…ÙˆÙ‚Ø¹Ùƒ Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø±ÙŠØ·Ø© Ø£ÙˆÙ„Ø§Ù‹ Ù„Ø¶Ù…Ø§Ù† Ø³Ø±Ø¹Ø© Ø§Ù„ØªÙˆØµÙŠÙ„.",
-                                         "en":  "Please select your location on the map first to ensure fast delivery."
-                                     },
-    "register_confirm_identity_title":  {
-                                            "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø£Ù…Ø§Ù†",
-                                            "en":  "Security Confirmation"
-                                        },
-    "register_confirm_identity_text":  {
-                                           "ar":  "Ø£Ø¹Ø¯ Ø¥Ø¯Ø®Ø§Ù„ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ù„Ù„Ù…ØªØ§Ø¨Ø¹Ø©",
-                                           "en":  "Re-enter password to continue"
-                                       },
-    "register_password_placeholder":  {
-                                          "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±",
-                                          "en":  "Password"
-                                      },
-    "register_confirm_account_btn":  {
-                                         "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­Ø³Ø§Ø¨",
-                                         "en":  "Confirm Account"
-                                     },
-    "register_error_no_password":  {
-                                       "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±",
-                                       "en":  "Please enter the password"
-                                   },
-    "register_error_password_mismatch":  {
-                                             "ar":  "ÙƒÙ„Ù…Ø§Øª Ø§Ù„Ù…Ø±ÙˆØ± ØºÙŠØ± Ù…ØªØ·Ø§Ø¨Ù‚Ø©!",
-                                             "en":  "Passwords do not match!"
-                                         },
-    "register_creating_account":  {
-                                      "ar":  "Ø¥Ù†Ø´Ø§Ø¡ Ø­Ø³Ø§Ø¨...",
-                                      "en":  "Creating account..."
-                                  },
-    "register_success_title":  {
-                                   "ar":  "ØªÙ… Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ø­Ø³Ø§Ø¨ Ø¨Ù†Ø¬Ø§Ø­!",
-                                   "en":  "Account created successfully!"
-                               },
-    "register_success_subtitle":  {
-                                      "ar":  "Ø£Ù†Øª Ø§Ù„Ø¢Ù† Ø¬Ø§Ù‡Ø² Ù„ØªØ¬Ø±Ø¨Ø© Ø´Ø±Ø§Ø¡ ÙØ±ÙŠØ¯Ø©!",
-                                      "en":  "You are now ready for a unique shopping experience!"
-                                  },
-    "register_success_feature_1":  {
-                                       "ar":  "ðŸ›ï¸ ØªØµÙØ­ Ø¢Ù„Ø§Ù Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø¨Ø³Ù‡ÙˆÙ„Ø©.",
-                                       "en":  "ðŸ›ï¸ Browse thousands of products easily."
-                                   },
-    "register_success_feature_2":  {
-                                       "ar":  "ðŸ’° Ø§Ø³ØªÙ…ØªØ¹ Ø¨Ø®ØµÙˆÙ…Ø§Øª ÙˆØ¹Ø±ÙˆØ¶ Ø­ØµØ±ÙŠØ©.",
-                                       "en":  "ðŸ’° Enjoy exclusive discounts and offers."
-                                   },
-    "register_success_feature_3":  {
-                                       "ar":  "âœ¨ Ø§ÙƒØªØ´Ù Ù…Ø§ Ù‡Ùˆ Ø¬Ø¯ÙŠØ¯ ÙÙŠ Ø³ÙˆÙ‚ Ø§Ù„Ø³ÙˆÙŠØ³.",
-                                       "en":  "âœ¨ Discover what\u0027s new in Suez Market."
-                                   },
-    "register_go_home_btn":  {
-                                 "ar":  "Ø§Ù„Ø§Ù†ØªÙ‚Ø§Ù„ Ø¥Ù„Ù‰ Ø§Ù„ØµÙØ­Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©",
-                                 "en":  "Go to Home Page"
-                             },
-    "register_map_restored":  {
-                                  "ar":  "ØªÙ… Ø§Ø³ØªØ±Ø¬Ø§Ø¹ Ù…ÙˆÙ‚Ø¹Ùƒ Ø§Ù„Ù…Ø­ÙÙˆØ¸.",
-                                  "en":  "Saved location restored."
-                              },
-    "register_avatar_label":  {
-                                  "ar":  "Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ø´Ø®ØµÙŠØ©",
-                                  "en":  "Profile Picture"
-                              },
-    "register_avatar_hint":  {
-                                 "ar":  "Ø§Ù†Ù‚Ø± Ù„Ø§Ø®ØªÙŠØ§Ø± ØµÙˆØ±Ø©",
-                                 "en":  "Click to choose a picture"
-                             },
-    "register_business_account_toggle":  {
-                                             "ar":  "Ù‡Ù„ Ù‡Ø°Ø§ Ø­Ø³Ø§Ø¨ Ù„Ù†Ø´Ø§Ø· ØªØ¬Ø§Ø±ÙŠØŸ",
-                                             "en":  "Is this a business account?"
-                                         },
-    "register_business_name_label":  {
-                                         "ar":  "Ø§Ø³Ù… Ø§Ù„Ù†Ø´Ø§Ø· Ø§Ù„ØªØ¬Ø§Ø±ÙŠ",
-                                         "en":  "Business Name"
-                                     },
-    "register_business_bio_label":  {
-                                        "ar":  "ÙˆØµÙ Ø§Ù„Ù†Ø´Ø§Ø·",
-                                        "en":  "Business Bio"
-                                    },
-    "business_facebook_label":  {
-                                    "ar":  "Ø±Ø§Ø¨Ø· ÙÙŠØ³Ø¨ÙˆÙƒ",
-                                    "en":  "Facebook Link"
-                                },
-    "business_facebook_placeholder":  {
-                                          "ar":  "https://facebook.com/yourpage",
-                                          "en":  "https://facebook.com/yourpage"
-                                      },
-    "business_instagram_label":  {
-                                     "ar":  "Ø±Ø§Ø¨Ø· Ø¥Ù†Ø³ØªØ¬Ø±Ø§Ù…",
-                                     "en":  "Instagram Link"
-                                 },
-    "business_instagram_placeholder":  {
-                                           "ar":  "https://instagram.com/yourprofile",
-                                           "en":  "https://instagram.com/yourprofile"
-                                       },
-    "business_tiktok_label":  {
-                                  "ar":  "Ø±Ø§Ø¨Ø· ØªÙŠÙƒ ØªÙˆÙƒ",
-                                  "en":  "TikTok Link"
-                              },
-    "business_tiktok_placeholder":  {
-                                        "ar":  "https://tiktok.com/@username",
-                                        "en":  "https://tiktok.com/@username"
-                                    },
-    "business_telegram_label":  {
-                                    "ar":  "Ø±Ø§Ø¨Ø· ØªÙ„ÙŠØ¬Ø±Ø§Ù…",
-                                    "en":  "Telegram Link"
-                                },
-    "business_telegram_placeholder":  {
-                                          "ar":  "https://t.me/username",
-                                          "en":  "https://t.me/username"
-                                      },
-    "business_website_label":  {
-                                   "ar":  "Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ",
-                                   "en":  "Website"
-                               },
-    "business_website_placeholder":  {
-                                         "ar":  "https://yourwebsite.com",
-                                         "en":  "https://yourwebsite.com"
-                                     },
-    "business_x_label":  {
-                             "ar":  "Ø±Ø§Ø¨Ø· Ù…Ù†ØµØ© X",
-                             "en":  "X (Twitter) Link"
-                         },
-    "business_x_placeholder":  {
-                                   "ar":  "https://x.com/username",
-                                   "en":  "https://x.com/username"
-                               },
-    "profile_business_category_label":  {
-                                            "ar":  "ØªØ®ØµØµØ§Øª Ø§Ù„Ù†Ø´Ø§Ø·",
-                                            "en":  "Business Specializations"
-                                        },
-    "profile_select_categories_btn":  {
-                                          "ar":  "Ø§Ø®ØªØ± Ø§Ù„ØªØ®ØµØµØ§Øª",
-                                          "en":  "Select Specializations"
-                                      },
-    "register_error_no_category":  {
-                                       "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ø®ØªÙŠØ§Ø± ØªØ®ØµØµ ÙˆØ§Ø­Ø¯ Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„",
-                                       "en":  "Please select at least one specialization"
-                                   },
-    "business_social_title":  {
-                                  "ar":  "Ø±ÙˆØ§Ø¨Ø· Ø®Ø§Ø±Ø¬ÙŠØ©",
-                                  "en":  "External Links"
-                              },
-    "profile_title":  {
-                          "ar":  "ØªØ¹Ø¯ÙŠÙ„ Ø¨ÙŠØ§Ù†Ø§ØªÙƒ Ø§Ù„Ø´Ø®ØµÙŠØ©",
-                          "en":  "Edit Personal Profile"
-                      },
-    "profile_username_label":  {
-                                   "ar":  "Ø§Ù„Ø§Ø³Ù…",
-                                   "en":  "Name"
-                               },
-    "profile_username_placeholder":  {
-                                         "ar":  "Ø§Ù„Ø§Ø³Ù…",
-                                         "en":  "Your Name"
-                                     },
-    "profile_phone_label":  {
-                                "ar":  "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ",
-                                "en":  "Phone Number"
-                            },
-    "profile_phone_placeholder":  {
-                                      "ar":  "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ",
-                                      "en":  "Phone Number"
-                                  },
-    "profile_location_title":  {
-                                   "ar":  "Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                                   "en":  "Location"
-                               },
-    "profile_address_label":  {
-                                  "ar":  "ØªÙØ§ØµÙŠÙ„ Ø§Ù„Ø¹Ù†ÙˆØ§Ù† (Ù…Ø«Ù„: Ø§Ù„Ø¯ÙˆØ±ØŒ Ø¹Ù„Ø§Ù…Ø© Ù…Ù…ÙŠØ²Ø©)",
-                                  "en":  "Address Details (e.g., floor, landmark)"
-                              },
-    "profile_address_placeholder":  {
-                                        "ar":  "Ù…Ø«Ù„Ø§Ù‹: Ø´Ø§Ø±Ø¹ Ø§Ù„Ø³Ù„Ø§Ù…ØŒ Ø§Ù„Ø¯ÙˆØ± Ø§Ù„Ø«Ø§Ù„Ø«ØŒ Ø¨Ø¬ÙˆØ§Ø± Ù…Ø³Ø¬Ø¯ Ø§Ù„Ù‚Ø¯Ø³",
-                                        "en":  "e.g., El-Salam St, 3rd Floor, near Al-Quds Mosque"
-                                    },
-    "profile_change_password_label":  {
-                                          "ar":  "ØªØºÙŠÙŠØ± ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±",
-                                          "en":  "Change Password"
-                                      },
-    "profile_new_password_label":  {
-                                       "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ø§Ù„Ø¬Ø¯ÙŠØ¯Ø©",
-                                       "en":  "New Password"
-                                   },
-    "profile_new_password_placeholder":  {
-                                             "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ø§Ù„Ø¬Ø¯ÙŠØ¯Ø©",
-                                             "en":  "New Password"
-                                         },
-    "profile_confirm_password_label":  {
-                                           "ar":  "ØªØ£ÙƒÙŠØ¯ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±",
-                                           "en":  "Confirm Password"
-                                       },
-    "profile_confirm_password_placeholder":  {
-                                                 "ar":  "ØªØ£ÙƒÙŠØ¯ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ø§Ù„Ø¬Ø¯ÙŠØ¯Ø©",
-                                                 "en":  "Confirm New Password"
-                                             },
-    "profile_seller_options_btn":  {
-                                       "ar":  "?????? ???? ?????? (??????? ????? ??????)",
-                                       "en":  "Service Provider Options (Delivery \u0026 Minimum Order)"
-                                   },
-    "profile_save_button":  {
-                                "ar":  "Ø­ÙØ¸ Ø§Ù„ØªØºÙŠÙŠØ±Ø§Øª",
-                                "en":  "Save Changes"
-                            },
-    "profile_delete_account_button":  {
-                                          "ar":  "Ø­Ø°Ù Ø§Ù„Ø­Ø³Ø§Ø¨",
-                                          "en":  "Delete Account"
-                                      },
-    "profile_confirm_identity_title":  {
-                                           "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ù‡ÙˆÙŠØ©",
-                                           "en":  "Verify Identity"
-                                       },
-    "profile_confirm_identity_text":  {
-                                          "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ø§Ù„Ø­Ø§Ù„ÙŠØ© Ù„ØªØºÙŠÙŠØ±Ù‡Ø§.",
-                                          "en":  "Please enter your current password to change it."
-                                      },
-    "profile_verifying":  {
-                              "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„ØªØ­Ù‚Ù‚...",
-                              "en":  "Verifying..."
-                          },
-    "profile_invalid_password":  {
-                                     "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± ØºÙŠØ± ØµØ­ÙŠØ­Ø©.",
-                                     "en":  "Incorrect password."
-                                 },
-    "profile_seller_settings_title":  {
-                                          "ar":  "??????? ???? ??????",
-                                          "en":  "Service Provider Settings"
-                                      },
-    "profile_delivery_question":  {
-                                      "ar":  "Ù‡Ù„ Ù„Ø¯ÙŠÙƒ Ø®Ø¯Ù…Ø© ØªÙˆØµÙŠÙ„ Ø®Ø§ØµØ© Ø¨ÙƒØŸ",
-                                      "en":  "Do you have your own delivery service?"
-                                  },
-    "profile_delivery_no":  {
-                                "ar":  "Ù„Ø§ (Ù„Ø§ Ø£Ù‚ÙˆÙ… Ø¨Ø§Ù„ØªÙˆØµÙŠÙ„ Ø¨Ù†ÙØ³ÙŠ)",
-                                "en":  "No (I do not deliver myself)"
-                            },
-    "profile_delivery_yes":  {
-                                 "ar":  "Ù†Ø¹Ù… (Ø£Ù‚ÙˆÙ… Ø¨Ø§Ù„ØªÙˆØµÙŠÙ„ Ø¨Ù†ÙØ³ÙŠ)",
-                                 "en":  "Yes (I deliver myself)"
-                             },
-    "profile_min_order_question":  {
-                                       "ar":  "Ù‡Ù„ ØªØ¶Ø¹ Ø­Ø¯Ø§Ù‹ Ø£Ø¯Ù†Ù‰ Ù„Ø·Ù„Ø¨Ø§Øª Ø§Ù„Ø´Ø±Ø§Ø¡ØŸ",
-                                       "en":  "Do you set a minimum order limit?"
-                                   },
-    "profile_min_order_no":  {
-                                 "ar":  "Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø¯ Ø£Ø¯Ù†Ù‰",
-                                 "en":  "No minimum limit"
-                             },
-    "profile_min_order_yes":  {
-                                  "ar":  "Ù†Ø¹Ù…ØŒ ÙŠÙˆØ¬Ø¯ Ø­Ø¯ Ø£Ø¯Ù†Ù‰ Ù„Ù„Ø·Ù„Ø¨",
-                                  "en":  "Yes, there is a minimum order limit"
-                              },
-    "profile_min_order_value_label":  {
-                                          "ar":  "Ù‡Ù„ ÙŠÙˆØ¬Ø¯ Ø­Ø¯ Ø§Ø¯Ù†Ù‰ Ù„Ù„Ø·Ù„Ø¨ (Ø¬.Ù…)ØŸ",
-                                          "en":  "Is there a minimum order limit (EGP)?"
-                                      },
-    "profile_min_order_placeholder":  {
-                                          "ar":  "Ù…Ø«Ù„Ø§Ù‹: 100",
-                                          "en":  "e.g., 100"
-                                      },
-    "profile_save_settings_btn":  {
-                                      "ar":  "Ø­ÙØ¸ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª",
-                                      "en":  "Save Settings"
-                                  },
-    "profile_invalid_min_order":  {
-                                      "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ Ù‚ÙŠÙ…Ø© ØµØ­ÙŠØ­Ø© Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ø¯Ù†Ù‰",
-                                      "en":  "Please enter a valid minimum value"
-                                  },
-    "profile_seller_options_set":  {
-                                       "ar":  "(ØªÙ… Ø§Ù„Ø¶Ø¨Ø· âœ…)",
-                                       "en":  "(Configured âœ…)"
-                                   },
-    "profile_map_mandatory_error":  {
-                                        "ar":  "ÙŠØ±Ø¬Ù‰ ØªØ­Ø¯ÙŠØ¯ Ù…ÙˆÙ‚Ø¹Ùƒ Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø±ÙŠØ·Ø© Ø£ÙˆÙ„Ø§Ù‹ Ù„Ø¶Ù…Ø§Ù† Ø³Ø±Ø¹Ø© Ø§Ù„ØªÙˆØµÙŠÙ„.",
-                                        "en":  "Please locate your position on the map first to ensure delivery speed."
-                                    },
-    "profile_no_changes_title":  {
-                                     "ar":  "Ù„Ù… ÙŠØªØºÙŠØ± Ø´ÙŠØ¡",
-                                     "en":  "No changes"
-                                 },
-    "profile_no_changes_text":  {
-                                    "ar":  "Ù„Ù… ØªÙ‚Ù… Ø¨Ø¥Ø¬Ø±Ø§Ø¡ Ø£ÙŠ ØªØºÙŠÙŠØ±Ø§Øª.",
-                                    "en":  "You haven\u0027t made any changes."
-                                },
-    "profile_save_confirm_text":  {
-                                      "ar":  "Ø£Ø¯Ø®Ù„ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ø§Ù„Ø­Ø§Ù„ÙŠØ© Ù„Ø­ÙØ¸ Ø§Ù„ØªØºÙŠÙŠØ±Ø§Øª.",
-                                      "en":  "Enter current password to save changes."
-                                  },
-    "profile_saving":  {
-                           "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„Ø­ÙØ¸...",
-                           "en":  "Saving..."
-                       },
-    "profile_update_success_title":  {
-                                         "ar":  "ØªÙ… Ø§Ù„ØªØ­Ø¯ÙŠØ« Ø¨Ù†Ø¬Ø§Ø­!",
-                                         "en":  "Update Successful!"
-                                     },
-    "profile_update_fail":  {
-                                "ar":  "ÙØ´Ù„ Ø§Ù„ØªØ­Ø¯ÙŠØ«.",
-                                "en":  "Update failed."
-                            },
-    "profile_delete_confirm_title":  {
-                                         "ar":  "Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ ØªÙ…Ø§Ù…Ù‹Ø§ØŸ",
-                                         "en":  "Are you absolutely sure?"
-                                     },
-    "profile_delete_confirm_text":  {
-                                        "ar":  "Ø³ÙŠØªÙ… Ø­Ø°Ù Ø­Ø³Ø§Ø¨Ùƒ Ù†Ù‡Ø§Ø¦ÙŠØ§Ù‹.",
-                                        "en":  "Your account will be permanently deleted."
-                                    },
-    "profile_delete_yes":  {
-                               "ar":  "Ù†Ø¹Ù…ØŒ Ø­Ø°Ù",
-                               "en":  "Yes, Delete"
-                           },
-    "profile_delete_verify_title":  {
-                                        "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­Ø°Ù",
-                                        "en":  "Confirm Deletion"
-                                    },
-    "profile_delete_verify_text":  {
-                                       "ar":  "Ø£Ø¯Ø®Ù„ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± Ù„ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­Ø°Ù.",
-                                       "en":  "Enter password to confirm deletion."
-                                   },
-    "profile_deleting":  {
-                             "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„Ø­Ø°Ù...",
-                             "en":  "Deleting..."
-                         },
-    "profile_delete_success_title":  {
-                                         "ar":  "ØªÙ… Ø§Ù„Ø­Ø°Ù",
-                                         "en":  "Deleted"
-                                     },
-    "profile_delete_success_text":  {
-                                        "ar":  "ØªÙ… Ø­Ø°Ù Ø§Ù„Ø­Ø³Ø§Ø¨ Ø¨Ù†Ø¬Ø§Ø­.",
-                                        "en":  "Account deleted successfully."
-                                    },
-    "profile_delete_fail":  {
-                                "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„Ø­Ø°Ù.",
-                                "en":  "An error occurred during deletion."
-                            },
-    "profile_map_linked_success":  {
-                                       "ar":  "ØªÙ… Ø±Ø¨Ø· Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø¨Ù†Ø¬Ø§Ø­! Ø´ÙƒØ±Ø§Ù‹ Ù„Ùƒ.",
-                                       "en":  "Location linked successfully! Thank you."
-                                   },
-    "profile_passwords_mismatch":  {
-                                       "ar":  "ÙƒÙ„Ù…ØªØ§ Ø§Ù„Ù…Ø±ÙˆØ± ØºÙŠØ± Ù…ØªØ·Ø§Ø¨Ù‚ØªÙŠÙ†.",
-                                       "en":  "Passwords do not match."
-                                   },
-    "profile_avatar_label":  {
-                                 "ar":  "Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ø´Ø®ØµÙŠØ©",
-                                 "en":  "Profile Picture"
-                             },
-    "profile_avatar_change":  {
-                                  "ar":  "ØªØºÙŠÙŠØ± Ø§Ù„ØµÙˆØ±Ø©",
-                                  "en":  "Change Picture"
-                              },
-    "profile_tab_personal":  {
-                                 "ar":  "Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ø´Ø®ØµÙŠØ©",
-                                 "en":  "Personal Info"
-                             },
-    "profile_tab_business":  {
-                                 "ar":  "Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù†Ø´Ø§Ø·",
-                                 "en":  "Business Info"
-                             },
-    "business_account_toggle":  {
-                                    "ar":  "Ø­Ø³Ø§Ø¨ Ù†Ø´Ø§Ø· ØªØ¬Ø§Ø±ÙŠ (Ø¨Ø§Ø¦Ø¹)",
-                                    "en":  "Business Account (Seller)"
-                                },
-    "business_name_label":  {
-                                "ar":  "Ø§Ø³Ù… Ø§Ù„Ù†Ø´Ø§Ø· Ø§Ù„ØªØ¬Ø§Ø±ÙŠ",
-                                "en":  "Business Name"
-                            },
-    "business_name_placeholder":  {
-                                      "ar":  "Ù…Ø«Ø§Ù„: Ù…Ø·Ø¹Ù… Ø£Ø³Ù…Ø§Ùƒ Ø§Ù„Ø³ÙˆÙŠØ³",
-                                      "en":  "e.g., Suez Fish Restaurant"
-                                  },
-    "business_bio_label":  {
-                               "ar":  "ÙˆØµÙ Ø§Ù„Ù†Ø´Ø§Ø·",
-                               "en":  "Business Bio"
-                           },
-    "business_bio_placeholder":  {
-                                     "ar":  "Ù†Ø¨Ø°Ø© Ø¹Ù† Ù…Ø§ ØªÙ‚Ø¯Ù…Ù‡...",
-                                     "en":  "A brief about what you offer..."
-                                 },
-    "business_category_label":  {
-                                    "ar":  "Ø§Ù„Ø³ÙˆÙ‚ Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ",
-                                    "en":  "Main Market"
-                                },
-    "business_sub_category_label":  {
-                                        "ar":  "Ø§Ù„Ø£Ø³ÙˆØ§Ù‚ Ø§Ù„ÙØ±Ø¹ÙŠØ© (ØªØ®ØµØµØ§ØªÙƒ)",
-                                        "en":  "Sub Markets (Your Specialties)"
-                                    },
-    "business_hours_label":  {
-                                 "ar":  "Ù…ÙˆØ§Ø¹ÙŠØ¯ Ø§Ù„Ø¹Ù…Ù„",
-                                 "en":  "Working Hours"
-                             },
-    "business_whatsapp_label":  {
-                                    "ar":  "Ø±Ù‚Ù… Ø§Ù„ÙˆØ§ØªØ³Ø§Ø¨",
-                                    "en":  "WhatsApp Number"
-                                },
-    "business_whatsapp_placeholder":  {
-                                          "ar":  "Ù…Ø«Ù„Ø§Ù‹: 01012345678",
-                                          "en":  "e.g., 01012345678"
-                                      },
-    "business_social_label":  {
-                                  "ar":  "Ø±ÙˆØ§Ø¨Ø· Ø§Ù„ØªÙˆØ§ØµÙ„",
-                                  "en":  "Social Links"
-                              },
-    "profile_covers_mgmt_label":  {
-                                      "ar":  "ØµÙˆØ± Ø§Ù„ØºÙ„Ø§Ù (3 ØµÙˆØ± ÙƒØ­Ø¯ Ø£Ù‚ØµÙ‰)",
-                                      "en":  "Cover Images (Max 3)"
-                                  },
-    "splash_slogan":  {
-                          "ar":  "Ø§Ù„Ø³ÙˆÙŠØ³ Ø¨ÙŠÙ† Ø¥ÙŠØ¯ÙŠÙƒ",
-                          "en":  "Suez in your hands"
-                      },
-    "reg_hint_step1":  {
-                           "ar":  "Ø£Ø¯Ø®Ù„ Ø§Ø³Ù…Ùƒ (3 Ø£Ø­Ø±Ù Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„)",
-                           "en":  "Enter your name (at least 3 characters)"
-                       },
-    "reg_hint_step2":  {
-                           "ar":  "ÙŠÙ…ÙƒÙ†Ùƒ ØªØ®Ø·ÙŠ Ù‡Ø°Ù‡ Ø§Ù„Ø®Ø·ÙˆØ© Ø£Ùˆ Ø±ÙØ¹ ØµÙˆØ±Ø© Ø´Ø®ØµÙŠØ©",
-                           "en":  "You can skip this step or upload a profile picture"
-                       },
-    "reg_hint_step3":  {
-                           "ar":  "Ø£Ø¯Ø®Ù„ Ø±Ù‚Ù… Ù‡Ø§ØªÙ ØµØ­ÙŠØ­ ÙˆØºÙŠØ± Ù…Ø³Ø¬Ù„ Ù…Ø³Ø¨Ù‚Ø§Ù‹",
-                           "en":  "Enter a valid and unregistered phone number"
-                       },
-    "reg_hint_step4":  {
-                           "ar":  "Ø£Ø¯Ø®Ù„ ÙƒÙ„Ù…Ø© Ù…Ø±ÙˆØ± (4+) Ù…Ø¹ Ø§Ù„ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ù…ØªØ·Ø§Ø¨Ù‚",
-                           "en":  "Enter a password (4+ characters) and confirm it"
-                       },
-    "reg_hint_step5":  {
-                           "ar":  "ÙŠØ±Ø¬Ù‰ ØªØ­Ø¯ÙŠØ¯ Ù…ÙˆÙ‚Ø¹Ùƒ Ø¨Ø¯Ù‚Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø±ÙŠØ·Ø©",
-                           "en":  "Please pinpoint your exact location on the map"
-                       },
-    "reg_hint_step6":  {
-                           "ar":  "Ø£Ø¯Ø®Ù„ ØªÙØ§ØµÙŠÙ„ Ø§Ù„Ø¹Ù†ÙˆØ§Ù† (5 Ø£Ø­Ø±Ù Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„)",
-                           "en":  "Enter address details (at least 5 characters)"
-                       },
-    "reg_hint_step7":  {
-                           "ar":  "ÙŠÙ…ÙƒÙ†Ùƒ ØªØ®Ø·ÙŠ Ù‡Ø°Ù‡ Ø§Ù„Ø®Ø·ÙˆØ© Ø£Ùˆ Ø±ÙØ¹ ØµÙˆØ±",
-                           "en":  "You can skip this step or upload cover images"
-                       },
-    "reg_hint_step8":  {
-                           "ar":  "Ø§Ù„Ø§Ø³Ù… (3+) ÙˆÙ†Ø¨Ø°Ø© Ø¹Ù…Ø§ ØªÙ‚Ø¯Ù…Ù‡ (10+)",
-                           "en":  "Name (3+) and bit about what you offer (10+)"
-                       },
-    "reg_hint_step9":  {
-                           "ar":  "Ø­Ø¯Ø¯ Ù…ÙˆÙ‚ÙÙƒ Ù…Ù† Ø®Ø¯Ù…Ø© Ø§Ù„ØªÙˆØµÙŠÙ„",
-                           "en":  "Define your delivery service status"
-                       },
-    "reg_hint_step10":  {
-                            "ar":  "Ø­Ø¯Ø¯ Ø§Ù„Ø­Ø¯ Ø§Ù„Ø£Ø¯Ù†Ù‰ Ù„Ù‚ÙŠÙ…Ø© Ø§Ù„Ø·Ù„Ø¨",
-                            "en":  "Specify the minimum order value"
-                        },
-    "reg_hint_step11":  {
-                            "ar":  "Ø§Ø®ØªØ± Ù‚Ø³Ù…Ø§Ù‹ Ø±Ø¦ÙŠØ³Ø§Ù‹ ÙˆØªØ®ØµØµØ§Ù‹ ÙØ±Ø¹ÙŠØ§Ù‹ ÙˆØ§Ø­Ø¯Ø§Ù‹ Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„",
-                            "en":  "Select a main category and at least one specialty"
-                        },
-    "reg_hint_step12":  {
-                            "ar":  "Ø£Ø¯Ø®Ù„ Ø±Ù‚Ù… Ø§Ù„ÙˆØ§ØªØ³Ø§Ø¨ (Ø§Ø®ØªÙŠØ§Ø±ÙŠ)",
-                            "en":  "Enter your WhatsApp number (optional)"
-                        },
-    "reg_hint_step13":  {
-                            "ar":  "Ø£Ø¯Ø®Ù„ Ø±ÙˆØ§Ø¨Ø· Ø§Ù„ØªÙˆØ§ØµÙ„ (Ø§Ø®ØªÙŠØ§Ø±ÙŠ)",
-                            "en":  "Enter social media links (optional)"
-                        },
-    "rating_settings_title":  {
-                                  "ar":  "Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„ØªÙ‚ÙŠÙŠÙ…",
-                                  "en":  "Rating Settings"
-                              },
-    "rating_enable_label":  {
-                                "ar":  "ØªÙØ¹ÙŠÙ„ Ø§Ø³ØªÙ‚Ø¨Ø§Ù„ Ø§Ù„ØªÙ‚ÙŠÙŠÙ…Ø§Øª",
-                                "en":  "Enable receiving ratings"
-                            },
-    "rating_mode_stars_comments":  {
-                                       "ar":  "Ù†Ø¬ÙˆÙ… + ØªØ¹Ù„ÙŠÙ‚Ø§Øª",
-                                       "en":  "Stars + Comments"
-                                   },
-    "rating_mode_stars_only":  {
-                                   "ar":  "Ù†Ø¬ÙˆÙ… ÙÙ‚Ø·",
-                                   "en":  "Stars Only"
-                               },
-    "product_rating_settings_title":  {
-                                          "ar":  "Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª ØªÙ‚ÙŠÙŠÙ… Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª ÙˆØ§Ù„Ø®Ø¯Ù…Ø§Øª",
-                                          "en":  "Product \u0026 Service Rating Settings"
-                                      },
-    "product_rating_enable_label":  {
-                                        "ar":  "ØªÙØ¹ÙŠÙ„ Ø§Ø³ØªÙ‚Ø¨Ø§Ù„ ØªÙ‚ÙŠÙŠÙ…Ø§Øª Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª ÙˆØ§Ù„Ø®Ø¯Ù…Ø§Øª",
-                                        "en":  "Enable receiving product \u0026 service ratings"
-                                    },
-    "product_rating_mode_stars_comments":  {
-                                               "ar":  "Ù†Ø¬ÙˆÙ… + ØªØ¹Ù„ÙŠÙ‚Ø§Øª",
-                                               "en":  "Stars + Comments"
-                                           },
-    "product_rating_mode_stars_only":  {
-                                           "ar":  "Ù†Ø¬ÙˆÙ… ÙÙ‚Ø·",
-                                           "en":  "Stars Only"
-                                       },
-    "reg_hint_success_step":  {
-                                  "ar":  "Ù…Ù…ØªØ§Ø²ØŒ ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ù„Ø§Ø³ØªÙ…Ø±Ø§Ø± Ø§Ù„Ø¢Ù†",
-                                  "en":  "Excellent, you can continue now"
-                              },
-    "reg_hint_success_last":  {
-                                  "ar":  "Ø±Ø§Ø¦Ø¹! Ø§Ø¶ØºØ· Ø¹Ù„Ù‰ Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ø­Ø³Ø§Ø¨ Ù„Ù„Ø¨Ø¯Ø¡",
-                                  "en":  "Great! Click Create Account to start"
-                              },
-    "register_placeholder_username":  {
-                                          "ar":  "Ø£Ø¯Ø®Ù„ Ø§Ø³Ù…Ùƒ",
-                                          "en":  "Enter your name"
-                                      },
-    "register_placeholder_bus_name":  {
-                                          "ar":  "Ø§Ø³Ù… Ø§Ù„Ù…Ø­Ù„ Ø£Ùˆ Ø§Ù„Ù†Ø´Ø§Ø·",
-                                          "en":  "Shop or business name"
-                                      },
-    "register_label_tagline":  {
-                                   "ar":  "Ù†Ø¨Ø°Ø© Ø¹Ù…Ø§ ØªÙ‚Ø¯Ù…Ù‡",
-                                   "en":  "Brief about what you offer"
-                               },
-    "register_placeholder_tagline":  {
-                                         "ar":  "Ù…Ø«Ø§Ù„: Ø£ÙØ¶Ù„ Ø£Ø³Ø¹Ø§Ø± Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠØ§Øª ÙÙŠ Ø§Ù„Ø³ÙˆÙŠØ³",
-                                         "en":  "e.g., Best electronics prices in Suez"
-                                     },
-    "register_confirm_password_placeholder":  {
-                                                  "ar":  "ØªØ£ÙƒÙŠØ¯ ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±",
-                                                  "en":  "Confirm Password"
-                                              },
-    "register_placeholder_bio":  {
-                                     "ar":  "ØµÙ Ù†Ø´Ø§Ø·Ùƒ Ø¨Ø´ÙƒÙ„ Ù…ÙØµÙ‘Ù„: Ù…Ø§ Ø§Ù„Ø°ÙŠ ØªÙ‚Ø¯Ù…Ù‡ØŒ Ù…Ø§ ÙŠÙ…ÙŠØ²ÙƒØŒ ÙˆØ£ÙŠ Ù…Ø¹Ù„ÙˆÙ…Ø§Øª ØªØ±ÙŠØ¯ Ø£Ù† ÙŠØ¹Ø±ÙÙ‡Ø§ Ø¹Ù…Ù„Ø§Ø¤Ùƒ...",
-                                     "en":  "Describe your business in detail: what you offer, what makes you unique, and any info you want clients to know..."
-                                 },
-    "reg_step_name_1":  {
-                            "ar":  "Ø§Ù„Ø§Ø³Ù…",
-                            "en":  "Name"
-                        },
-    "reg_step_name_2":  {
-                            "ar":  "Ø§Ù„ØµÙˆØ±Ø©",
-                            "en":  "Avatar"
-                        },
-    "reg_step_name_3":  {
-                            "ar":  "Ø§Ù„Ù‡Ø§ØªÙ",
-                            "en":  "Phone"
-                        },
-    "reg_step_name_4":  {
-                            "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±",
-                            "en":  "Password"
-                        },
-    "reg_step_name_5":  {
-                            "ar":  "Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                            "en":  "Location"
-                        },
-    "reg_step_name_6":  {
-                            "ar":  "Ø§Ù„Ø¹Ù†ÙˆØ§Ù†",
-                            "en":  "Address"
-                        },
-    "reg_step_name_7":  {
-                            "ar":  "Ø§Ù„ØºÙ„Ø§Ù",
-                            "en":  "Covers"
-                        },
-    "reg_step_name_8":  {
-                            "ar":  "Ø§Ù„Ù†Ø´Ø§Ø·",
-                            "en":  "Business"
-                        },
-    "reg_step_name_9":  {
-                            "ar":  "Ø§Ù„ØªÙˆØµÙŠÙ„",
-                            "en":  "Delivery"
-                        },
-    "reg_step_name_10":  {
-                             "ar":  "Ø§Ù„Ø­Ø¯ Ø§Ù„Ø£Ø¯Ù†Ù‰",
-                             "en":  "Min Order"
-                         },
-    "reg_step_name_11":  {
-                             "ar":  "Ø§Ù„ØªØµÙ†ÙŠÙØ§Øª",
-                             "en":  "Categories"
-                         },
-    "reg_step_name_12":  {
-                             "ar":  "ÙˆØ§ØªØ³Ø§Ø¨",
-                             "en":  "WhatsApp"
-                         },
-    "reg_step_name_13":  {
-                             "ar":  "Ø§Ù„Ø±ÙˆØ§Ø¨Ø·",
-                             "en":  "Links"
-                         },
-    "reg_step_name_14":  {
-                             "ar":  "Ø§Ù„ØªÙ‚ÙŠÙ…",
-                             "en":  "Rating"
-                         },
-    "gen_mandatory":  {
-                          "ar":  "Ø¥Ù„Ø²Ø§Ù…ÙŠ",
-                          "en":  "Mandatory"
-                      },
-    "gen_optional":  {
-                         "ar":  "Ø§Ø®ØªÙŠØ§Ø±ÙŠ",
-                         "en":  "Optional"
-                     }
+{
+    "gen_next": {
+        "ar": "التالي",
+        "en": "Next"
+    },
+    "gen_prev": {
+        "ar": "السابق",
+        "en": "Previous"
+    },
+    "logging_in": {
+        "ar": "جاري تسجيل الدخول...",
+        "en": "Logging in..."
+    },
+    "login_invalid_credentials": {
+        "ar": "كلمة المرور او رقم الهاتف غير صحيحه",
+        "en": "Incorrect phone number or password."
+    },
+    "auth_wait_moment": {
+        "ar": "يرجى الانتظار لحظة.",
+        "en": "Please wait a moment."
+    },
+    "auth_confirm_identity": {
+        "ar": "التحقق من الهوية",
+        "en": "Identify Verification"
+    },
+    "auth_enter_password_to_continue": {
+        "ar": "يرجى إدخال كلمة المرور للمتابعة.",
+        "en": "Please enter password to continue."
+    },
+    "auth_enter_password_placeholder": {
+        "ar": "أدخل كلمة المرور",
+        "en": "Enter your password"
+    },
+    "auth_confirm_btn": {
+        "ar": "تأكيد",
+        "en": "Confirm"
+    },
+    "logout_confirm_title": {
+        "ar": "هل أنت متأكد؟",
+        "en": "Are you sure?"
+    },
+    "logout_confirm_text": {
+        "ar": "سيتم تسجيل خروجك.",
+        "en": "You will be logged out."
+    },
+    "logout_confirm_btn": {
+        "ar": "موافق",
+        "en": "OK"
+    },
+    "label_phone": {
+        "ar": "رقم الهاتف",
+        "en": "Phone Number"
+    },
+    "label_password": {
+        "ar": "كلمة المرور",
+        "en": "Password"
+    },
+    "no_account": {
+        "ar": "ليس لديك حساب؟",
+        "en": "Don't have an account?"
+    },
+    "register_now": {
+        "ar": "سجل الآن",
+        "en": "Register Now"
+    },
+    "or_you_can": {
+        "ar": "أو يمكنك",
+        "en": "Or you can"
+    },
+    "login_as_guest": {
+        "ar": "الدخول كضيف",
+        "en": "Login as Guest"
+    },
+    "to_browse_products": {
+        "ar": "لتصفح المنتجات",
+        "en": "to browse products"
+    },
+    "register_page_title": {
+        "ar": "إنشاء حساب جديد",
+        "en": "Create New Account"
+    },
+    "register_label_username": {
+        "ar": "الاسم",
+        "en": "Name"
+    },
+    "register_label_phone": {
+        "ar": "رقم الهاتف",
+        "en": "Phone Number"
+    },
+    "register_label_password": {
+        "ar": "كلمة المرور",
+        "en": "Password"
+    },
+    "register_form_hint": {
+        "ar": "يجب أن تتكون من 4 أحرف على الأقل لحماية حسابك.",
+        "en": "Must be at least 4 characters to protect your account."
+    },
+    "register_location_title": {
+        "ar": "الموقع على الخريطة",
+        "en": "Location on Map"
+    },
+    "register_label_address": {
+        "ar": "تفاصيل العنوان (مثل: الدور، علامة مميزة)",
+        "en": "Address Details (e.g. Floor, Landmark)"
+    },
+    "register_placeholder_address": {
+        "ar": "مثلاً: شارع السلام، الدور الثالث، بجوار مسجد القدس",
+        "en": "e.g. El Salam St, 3rd Floor, near El Qods Mosque"
+    },
+    "register_error_username_required": {
+        "ar": "الأسم بالكامل مطلوب",
+        "en": "Full Name is required"
+    },
+    "register_error_phone_invalid": {
+        "ar": "رقم الهاتف غير صحيح",
+        "en": "Invalid phone number"
+    },
+    "register_error_phone_exists": {
+        "ar": "رقم الهاتف هذا مسجل مسبقاً، يرجى استخدام رقم آخر أو تسجيل الدخول.",
+        "en": "This phone number is already registered. Please use another or login."
+    },
+    "register_error_password_too_short": {
+        "ar": "كلمة المرور قصيرة جداً (أقل شيء 4)",
+        "en": "Password too short (min 4)"
+    },
+    "register_error_location_required": {
+        "ar": "يرجى تحديد الموقع على الخريطة أولاً",
+        "en": "Please select location on map first"
+    },
+    "register_error_address_required": {
+        "ar": "تفاصيل العنوان مطلوبة لسهولة الوصول إليك",
+        "en": "Address details are required"
+    },
+    "register_header_account_type": {
+        "ar": "نوع الحساب",
+        "en": "Account Type"
+    },
+    "register_label_account_type": {
+        "ar": "هل ترغب في عرض منتجاتك أو تقديم خدماتك؟",
+        "en": "Do you want to display products or offer services?"
+    },
+    "register_label_account_roles": {
+        "ar": "يمكنك اختيار أكثر من نوع حساب",
+        "en": "You can choose multiple account types"
+    },
+    "role_buyer": {
+        "ar": "مشتري",
+        "en": "Buyer"
+    },
+    "role_seller": {
+        "ar": "مقدم خدمة / نشاط تجاري",
+        "en": "Service Provider / Business"
+    },
+    "role_delivery": {
+        "ar": "خدمة توصيل",
+        "en": "Delivery Service"
+    },
+    "role_service_provider": {
+        "ar": "مقدم خدمة",
+        "en": "Service Provider"
+    },
+    "role_desc_buyer": {
+        "ar": "ستتمكن من تصفح كافة أسواق السويس، مقارنة الأسعار، والطلب المباشر للمنتجات والخدمات بسهولة.",
+        "en": "Browse all Suez markets, compare prices, and order directly from one app."
+    },
+    "role_desc_delivery": {
+        "ar": "ستظهر لك لوحة متابعة لطلبات التوصيل المتاحة في السويس لزيادة دخلك، بجانب قدرتك على التسوق.",
+        "en": "Access a dashboard for delivery requests in Suez to increase your income."
+    },
+    "role_desc_service": {
+        "ar": "يمكنك الترويج لخدماتك المهنية (تعليم، خدمات طبية، خدمات هندسية، إلخ) والوصول لعملاء جدد بالسويس.",
+        "en": "Promote your professional services (Teaching, Medical, Engineering, etc.) to new clients."
+    },
+    "role_desc_delivery_service": {
+        "ar": "مقدم خدمات لوجستية ومهنية؛ يمكنك تقديم مهاراتك الفنية بجانب العمل كمندوب توصيل محترف.",
+        "en": "Logistics and professional services provider; offer technical skills and delivery."
+    },
+    "role_desc_fallback": {
+        "ar": "أنت الآن شريك في مجتمع سويس بازار؛ حسابك سيوفر لك كافة الأدوات اللازمة بناءً على تخصصاتك.",
+        "en": "You are a Suez Bazaar partner; your account provides tools based on your specialties."
+    },
+    "register_btn_submit": {
+        "ar": "إنشاء الحساب",
+        "en": "Create Account"
+    },
+    "register_login_question": {
+        "ar": "لديك حساب بالفعل؟",
+        "en": "Already have an account?"
+    },
+    "register_login_action": {
+        "ar": "سجل الدخول",
+        "en": "Login"
+    },
+    "register_error_unexpected": {
+        "ar": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.",
+        "en": "An unexpected error occurred. Please try again."
+    },
+    "register_error_app": {
+        "ar": "حدث خطأ في التطبيق. يرجى المحاولة مرة أخرى.",
+        "en": "An application error occurred. Please try again."
+    },
+    "register_seller_settings_title": {
+        "ar": "إعدادات مقدم الخدمة",
+        "en": "Service Provider Settings"
+    },
+    "register_delivery_question": {
+        "ar": "هل لديك خدمة توصيل خاصة بك؟",
+        "en": "Do you have your own delivery service?"
+    },
+    "register_delivery_no": {
+        "ar": "لا (لا أقوم بالتوصيل بنفسي)",
+        "en": "No (I do not deliver orders myself)"
+    },
+    "register_delivery_yes": {
+        "ar": "نعم (أقوم بالتوصيل بنفسي)",
+        "en": "Yes (I deliver myself)"
+    },
+    "register_min_order_question": {
+        "ar": "هل تضع حداً أدنى لطلبات الشراء؟",
+        "en": "Do you set a minimum order limit?"
+    },
+    "register_min_order_no": {
+        "ar": "لا يوجد حد أدنى",
+        "en": "No minimum limit"
+    },
+    "register_min_order_yes": {
+        "ar": "نعم، يوجد حد أدنى للطلب",
+        "en": "Yes, there is a minimum limit"
+    },
+    "register_min_order_value_label": {
+        "ar": "هل يوجد حد ادنى للطلب (ج.م)؟",
+        "en": "Is there a minimum order limit (EGP)?"
+    },
+    "register_min_order_placeholder": {
+        "ar": "مثلاً: 100",
+        "en": "e.g., 100"
+    },
+    "register_save_settings_btn": {
+        "ar": "حفظ الإعدادات",
+        "en": "Save Settings"
+    },
+    "register_invalid_min_order": {
+        "ar": "يرجى إدخال قيمة صحيحة للحد الأدنى",
+        "en": "Please enter a valid minimum value"
+    },
+    "register_seller_options_set": {
+        "ar": "(تم ضبط الإعدادات ✅)",
+        "en": "(Settings Set ✅)"
+    },
+    "register_seller_options_none": {
+        "ar": "(لا توجد إعدادات إضافية)",
+        "en": "(No additional settings)"
+    },
+    "register_seller_options_btn": {
+        "ar": "خيارات مقدم الخدمة",
+        "en": "Service Provider Options"
+    },
+    "register_map_success": {
+        "ar": "تم ربط الموقع بنجاح!",
+        "en": "Location linked successfully!"
+    },
+    "register_map_mandatory_error": {
+        "ar": "يرجى تحديد موقعك على الخريطة أولاً لضمان سرعة التوصيل.",
+        "en": "Please select your location on the map first to ensure fast delivery."
+    },
+    "register_confirm_identity_title": {
+        "ar": "تأكيد الأمان",
+        "en": "Security Confirmation"
+    },
+    "register_confirm_identity_text": {
+        "ar": "أعد إدخال كلمة المرور للمتابعة",
+        "en": "Re-enter password to continue"
+    },
+    "register_password_placeholder": {
+        "ar": "كلمة المرور",
+        "en": "Password"
+    },
+    "register_confirm_account_btn": {
+        "ar": "تأكيد الحساب",
+        "en": "Confirm Account"
+    },
+    "register_error_no_password": {
+        "ar": "يرجى إدخال كلمة المرور",
+        "en": "Please enter the password"
+    },
+    "register_error_password_mismatch": {
+        "ar": "كلمات المرور غير متطابقة!",
+        "en": "Passwords do not match!"
+    },
+    "register_creating_account": {
+        "ar": "إنشاء حساب...",
+        "en": "Creating account..."
+    },
+    "register_success_title": {
+        "ar": "تم إنشاء الحساب بنجاح!",
+        "en": "Account created successfully!"
+    },
+    "register_success_subtitle": {
+        "ar": "أنت الآن جاهز لتجربة شراء فريدة!",
+        "en": "You are now ready for a unique shopping experience!"
+    },
+    "register_success_feature_1": {
+        "ar": "🛍️ تصفح آلاف المنتجات بسهولة.",
+        "en": "🛍️ Browse thousands of products easily."
+    },
+    "register_success_feature_2": {
+        "ar": "💰 استمتع بخصومات وعروض حصرية.",
+        "en": "💰 Enjoy exclusive discounts and offers."
+    },
+    "register_success_feature_3": {
+        "ar": "✨ اكتشف ما هو جديد في سوق السويس.",
+        "en": "✨ Discover what's new in Suez Market."
+    },
+    "register_go_home_btn": {
+        "ar": "الانتقال إلى الصفحة الرئيسية",
+        "en": "Go to Home Page"
+    },
+    "register_map_restored": {
+        "ar": "تم استرجاع موقعك المحفوظ.",
+        "en": "Saved location restored."
+    },
+    "register_avatar_label": {
+        "ar": "الصورة الشخصية",
+        "en": "Profile Picture"
+    },
+    "register_avatar_hint": {
+        "ar": "انقر لاختيار صورة",
+        "en": "Click to choose a picture"
+    },
+    "register_business_account_toggle": {
+        "ar": "هل هذا حساب لنشاط تجاري؟",
+        "en": "Is this a business account?"
+    },
+    "register_business_name_label": {
+        "ar": "اسم النشاط التجاري",
+        "en": "Business Name"
+    },
+    "register_business_bio_label": {
+        "ar": "وصف النشاط",
+        "en": "Business Bio"
+    },
+    "business_facebook_label": {
+        "ar": "رابط فيسبوك",
+        "en": "Facebook Link"
+    },
+    "business_facebook_placeholder": {
+        "ar": "https://facebook.com/yourpage",
+        "en": "https://facebook.com/yourpage"
+    },
+    "business_instagram_label": {
+        "ar": "رابط إنستجرام",
+        "en": "Instagram Link"
+    },
+    "business_instagram_placeholder": {
+        "ar": "https://instagram.com/yourprofile",
+        "en": "https://instagram.com/yourprofile"
+    },
+    "business_tiktok_label": {
+        "ar": "رابط تيك توك",
+        "en": "TikTok Link"
+    },
+    "business_tiktok_placeholder": {
+        "ar": "https://tiktok.com/@username",
+        "en": "https://tiktok.com/@username"
+    },
+    "business_telegram_label": {
+        "ar": "رابط تليجرام",
+        "en": "Telegram Link"
+    },
+    "business_telegram_placeholder": {
+        "ar": "https://t.me/username",
+        "en": "https://t.me/username"
+    },
+    "business_website_label": {
+        "ar": "الموقع الإلكتروني",
+        "en": "Website"
+    },
+    "business_website_placeholder": {
+        "ar": "https://yourwebsite.com",
+        "en": "https://yourwebsite.com"
+    },
+    "business_x_label": {
+        "ar": "رابط منصة X",
+        "en": "X (Twitter) Link"
+    },
+    "business_x_placeholder": {
+        "ar": "https://x.com/username",
+        "en": "https://x.com/username"
+    },
+    "profile_business_category_label": {
+        "ar": "تخصصات النشاط",
+        "en": "Business Specializations"
+    },
+    "profile_select_categories_btn": {
+        "ar": "اختر التخصصات",
+        "en": "Select Specializations"
+    },
+    "register_error_no_category": {
+        "ar": "يرجى اختيار تخصص واحد على الأقل",
+        "en": "Please select at least one specialization"
+    },
+    "business_social_title": {
+        "ar": "روابط خارجية",
+        "en": "External Links"
+    },
+    "profile_title": {
+        "ar": "تعديل بياناتك الشخصية",
+        "en": "Edit Personal Profile"
+    },
+    "profile_username_label": {
+        "ar": "الاسم",
+        "en": "Name"
+    },
+    "profile_username_placeholder": {
+        "ar": "الاسم",
+        "en": "Your Name"
+    },
+    "profile_phone_label": {
+        "ar": "رقم الهاتف",
+        "en": "Phone Number"
+    },
+    "profile_phone_placeholder": {
+        "ar": "رقم الهاتف",
+        "en": "Phone Number"
+    },
+    "profile_location_title": {
+        "ar": "الموقع",
+        "en": "Location"
+    },
+    "profile_address_label": {
+        "ar": "تفاصيل العنوان (مثل: الدور، علامة مميزة)",
+        "en": "Address Details (e.g., floor, landmark)"
+    },
+    "profile_address_placeholder": {
+        "ar": "مثلاً: شارع السلام، الدور الثالث، بجوار مسجد القدس",
+        "en": "e.g., El-Salam St, 3rd Floor, near Al-Quds Mosque"
+    },
+    "profile_change_password_label": {
+        "ar": "تغيير كلمة المرور",
+        "en": "Change Password"
+    },
+    "profile_new_password_label": {
+        "ar": "كلمة المرور الجديدة",
+        "en": "New Password"
+    },
+    "profile_new_password_placeholder": {
+        "ar": "كلمة المرور الجديدة",
+        "en": "New Password"
+    },
+    "profile_confirm_password_label": {
+        "ar": "تأكيد كلمة المرور",
+        "en": "Confirm Password"
+    },
+    "profile_confirm_password_placeholder": {
+        "ar": "تأكيد كلمة المرور الجديدة",
+        "en": "Confirm New Password"
+    },
+    "profile_seller_options_btn": {
+        "ar": "خيارات مقدم الخدمة (التوصيل والحد الأدنى)",
+        "en": "Service Provider Options (Delivery & Minimum Order)"
+    },
+    "profile_save_button": {
+        "ar": "حفظ التغييرات",
+        "en": "Save Changes"
+    },
+    "profile_delete_account_button": {
+        "ar": "حذف الحساب",
+        "en": "Delete Account"
+    },
+    "profile_confirm_identity_title": {
+        "ar": "تأكيد الهوية",
+        "en": "Verify Identity"
+    },
+    "profile_confirm_identity_text": {
+        "ar": "يرجى إدخال كلمة المرور الحالية لتغييرها.",
+        "en": "Please enter your current password to change it."
+    },
+    "profile_verifying": {
+        "ar": "جاري التحقق...",
+        "en": "Verifying..."
+    },
+    "profile_invalid_password": {
+        "ar": "كلمة المرور غير صحيحة.",
+        "en": "Incorrect password."
+    },
+    "profile_seller_settings_title": {
+        "ar": "إعدادات مقدم الخدمة",
+        "en": "Service Provider Settings"
+    },
+    "profile_delivery_question": {
+        "ar": "هل لديك خدمة توصيل خاصة بك؟",
+        "en": "Do you have your own delivery service?"
+    },
+    "profile_delivery_no": {
+        "ar": "لا (لا أقوم بالتوصيل بنفسي)",
+        "en": "No (I do not deliver myself)"
+    },
+    "profile_delivery_yes": {
+        "ar": "نعم (أقوم بالتوصيل بنفسي)",
+        "en": "Yes (I deliver myself)"
+    },
+    "profile_min_order_question": {
+        "ar": "هل تضع حداً أدنى لطلبات الشراء؟",
+        "en": "Do you set a minimum order limit?"
+    },
+    "profile_min_order_no": {
+        "ar": "لا يوجد حد أدنى",
+        "en": "No minimum limit"
+    },
+    "profile_min_order_yes": {
+        "ar": "نعم، يوجد حد أدنى للطلب",
+        "en": "Yes, there is a minimum order limit"
+    },
+    "profile_min_order_value_label": {
+        "ar": "هل يوجد حد ادنى للطلب (ج.م)؟",
+        "en": "Is there a minimum order limit (EGP)?"
+    },
+    "profile_min_order_placeholder": {
+        "ar": "مثلاً: 100",
+        "en": "e.g., 100"
+    },
+    "profile_save_settings_btn": {
+        "ar": "حفظ الإعدادات",
+        "en": "Save Settings"
+    },
+    "profile_invalid_min_order": {
+        "ar": "يرجى إدخال قيمة صحيحة للحد الأدنى",
+        "en": "Please enter a valid minimum value"
+    },
+    "profile_seller_options_set": {
+        "ar": "(تم الضبط ✅)",
+        "en": "(Configured ✅)"
+    },
+    "profile_map_mandatory_error": {
+        "ar": "يرجى تحديد موقعك على الخريطة أولاً لضمان سرعة التوصيل.",
+        "en": "Please locate your position on the map first to ensure delivery speed."
+    },
+    "profile_no_changes_title": {
+        "ar": "لم يتغير شيء",
+        "en": "No changes"
+    },
+    "profile_no_changes_text": {
+        "ar": "لم تقم بإجراء أي تغييرات.",
+        "en": "You haven't made any changes."
+    },
+    "profile_save_confirm_text": {
+        "ar": "أدخل كلمة المرور الحالية لحفظ التغييرات.",
+        "en": "Enter current password to save changes."
+    },
+    "profile_saving": {
+        "ar": "جاري الحفظ...",
+        "en": "Saving..."
+    },
+    "profile_update_success_title": {
+        "ar": "تم التحديث بنجاح!",
+        "en": "Update Successful!"
+    },
+    "profile_update_fail": {
+        "ar": "فشل التحديث.",
+        "en": "Update failed."
+    },
+    "profile_delete_confirm_title": {
+        "ar": "هل أنت متأكد تمامًا؟",
+        "en": "Are you absolutely sure?"
+    },
+    "profile_delete_confirm_text": {
+        "ar": "سيتم حذف حسابك نهائياً.",
+        "en": "Your account will be permanently deleted."
+    },
+    "profile_delete_yes": {
+        "ar": "نعم، حذف",
+        "en": "Yes, Delete"
+    },
+    "profile_delete_verify_title": {
+        "ar": "تأكيد الحذف",
+        "en": "Confirm Deletion"
+    },
+    "profile_delete_verify_text": {
+        "ar": "أدخل كلمة المرور لتأكيد الحذف.",
+        "en": "Enter password to confirm deletion."
+    },
+    "profile_deleting": {
+        "ar": "جاري الحذف...",
+        "en": "Deleting..."
+    },
+    "profile_delete_success_title": {
+        "ar": "تم الحذف",
+        "en": "Deleted"
+    },
+    "profile_delete_success_text": {
+        "ar": "تم حذف الحساب بنجاح.",
+        "en": "Account deleted successfully."
+    },
+    "profile_delete_fail": {
+        "ar": "حدث خطأ أثناء الحذف.",
+        "en": "An error occurred during deletion."
+    },
+    "profile_map_linked_success": {
+        "ar": "تم ربط الموقع بنجاح! شكراً لك.",
+        "en": "Location linked successfully! Thank you."
+    },
+    "profile_passwords_mismatch": {
+        "ar": "كلمتا المرور غير متطابقتين.",
+        "en": "Passwords do not match."
+    },
+    "profile_avatar_label": {
+        "ar": "الصورة الشخصية",
+        "en": "Profile Picture"
+    },
+    "profile_avatar_change": {
+        "ar": "تغيير الصورة",
+        "en": "Change Picture"
+    },
+    "profile_tab_personal": {
+        "ar": "البيانات الشخصية",
+        "en": "Personal Info"
+    },
+    "profile_tab_business": {
+        "ar": "بيانات النشاط",
+        "en": "Business Info"
+    },
+    "business_account_toggle": {
+        "ar": "حساب نشاط تجاري (بائع)",
+        "en": "Business Account (Seller)"
+    },
+    "business_name_label": {
+        "ar": "اسم النشاط التجاري",
+        "en": "Business Name"
+    },
+    "business_name_placeholder": {
+        "ar": "مثال: مطعم أسماك السويس",
+        "en": "e.g., Suez Fish Restaurant"
+    },
+    "business_bio_label": {
+        "ar": "وصف النشاط",
+        "en": "Business Bio"
+    },
+    "business_bio_placeholder": {
+        "ar": "نبذة عن ما تقدمه...",
+        "en": "A brief about what you offer..."
+    },
+    "business_category_label": {
+        "ar": "السوق الرئيسي",
+        "en": "Main Market"
+    },
+    "business_sub_category_label": {
+        "ar": "الأسواق الفرعية (تخصصاتك)",
+        "en": "Sub Markets (Your Specialties)"
+    },
+    "business_hours_label": {
+        "ar": "مواعيد العمل",
+        "en": "Working Hours"
+    },
+    "business_whatsapp_label": {
+        "ar": "رقم الواتساب",
+        "en": "WhatsApp Number"
+    },
+    "business_whatsapp_placeholder": {
+        "ar": "مثلاً: 01012345678",
+        "en": "e.g., 01012345678"
+    },
+    "business_social_label": {
+        "ar": "روابط التواصل",
+        "en": "Social Links"
+    },
+    "profile_covers_mgmt_label": {
+        "ar": "صور الغلاف (3 صور كحد أقصى)",
+        "en": "Cover Images (Max 3)"
+    },
+    "splash_slogan": {
+        "ar": "السويس بين إيديك",
+        "en": "Suez in your hands"
+    },
+    "reg_hint_step1": {
+        "ar": "أدخل اسمك (3 أحرف على الأقل)",
+        "en": "Enter your name (at least 3 characters)"
+    },
+    "reg_hint_step2": {
+        "ar": "يمكنك تخطي هذه الخطوة أو رفع صورة شخصية",
+        "en": "You can skip this step or upload a profile picture"
+    },
+    "reg_hint_step3": {
+        "ar": "أدخل رقم هاتف صحيح وغير مسجل مسبقاً",
+        "en": "Enter a valid and unregistered phone number"
+    },
+    "reg_hint_step4": {
+        "ar": "أدخل كلمة مرور (4+) مع التأكيد المتطابق",
+        "en": "Enter a password (4+ characters) and confirm it"
+    },
+    "reg_hint_step5": {
+        "ar": "يرجى تحديد موقعك بدقة على الخريطة",
+        "en": "Please pinpoint your exact location on the map"
+    },
+    "reg_hint_step6": {
+        "ar": "أدخل تفاصيل العنوان (5 أحرف على الأقل)",
+        "en": "Enter address details (at least 5 characters)"
+    },
+    "reg_hint_step7": {
+        "ar": "يمكنك تخطي هذه الخطوة أو رفع صور",
+        "en": "You can skip this step or upload cover images"
+    },
+    "reg_hint_step8": {
+        "ar": "الاسم (3+) ونبذة عما تقدمه (10+)",
+        "en": "Name (3+) and bit about what you offer (10+)"
+    },
+    "reg_hint_step9": {
+        "ar": "حدد موقفك من خدمة التوصيل",
+        "en": "Define your delivery service status"
+    },
+    "reg_hint_step10": {
+        "ar": "حدد الحد الأدنى لقيمة الطلب",
+        "en": "Specify the minimum order value"
+    },
+    "reg_hint_step11": {
+        "ar": "اختر قسماً رئيساً وتخصصاً فرعياً واحداً على الأقل",
+        "en": "Select a main category and at least one specialty"
+    },
+    "reg_hint_step12": {
+        "ar": "أدخل رقم الواتساب (اختياري)",
+        "en": "Enter your WhatsApp number (optional)"
+    },
+    "reg_hint_step13": {
+        "ar": "أدخل روابط التواصل (اختياري)",
+        "en": "Enter social media links (optional)"
+    },
+    "rating_settings_title": {
+        "ar": "إعدادات التقييم",
+        "en": "Rating Settings"
+    },
+    "rating_enable_label": {
+        "ar": "تفعيل استقبال التقييمات",
+        "en": "Enable receiving ratings"
+    },
+    "rating_mode_stars_comments": {
+        "ar": "نجوم + تعليقات",
+        "en": "Stars + Comments"
+    },
+    "rating_mode_stars_only": {
+        "ar": "نجوم فقط",
+        "en": "Stars Only"
+    },
+    "product_rating_settings_title": {
+        "ar": "إعدادات تقييم المنتجات والخدمات",
+        "en": "Product & Service Rating Settings"
+    },
+    "product_rating_enable_label": {
+        "ar": "تفعيل استقبال تقييمات المنتجات والخدمات",
+        "en": "Enable receiving product & service ratings"
+    },
+    "product_rating_mode_stars_comments": {
+        "ar": "نجوم + تعليقات",
+        "en": "Stars + Comments"
+    },
+    "product_rating_mode_stars_only": {
+        "ar": "نجوم فقط",
+        "en": "Stars Only"
+    },
+    "reg_hint_success_step": {
+        "ar": "ممتاز، يمكنك الاستمرار الآن",
+        "en": "Excellent, you can continue now"
+    },
+    "reg_hint_success_last": {
+        "ar": "رائع! اضغط على إنشاء الحساب للبدء",
+        "en": "Great! Click Create Account to start"
+    },
+    "register_placeholder_username": {
+        "ar": "أدخل اسمك",
+        "en": "Enter your name"
+    },
+    "register_placeholder_bus_name": {
+        "ar": "اسم المحل أو النشاط",
+        "en": "Shop or business name"
+    },
+    "register_label_tagline": {
+        "ar": "نبذة عما تقدمه",
+        "en": "Brief about what you offer"
+    },
+    "register_placeholder_tagline": {
+        "ar": "مثال: أفضل أسعار إلكترونيات في السويس",
+        "en": "e.g., Best electronics prices in Suez"
+    },
+    "register_confirm_password_placeholder": {
+        "ar": "تأكيد كلمة المرور",
+        "en": "Confirm Password"
+    },
+    "register_placeholder_bio": {
+        "ar": "صف نشاطك بشكل مفصّل: ما الذي تقدمه، ما يميزك، وأي معلومات تريد أن يعرفها عملاؤك...",
+        "en": "Describe your business in detail: what you offer, what makes you unique, and any info you want clients to know..."
+    },
+    "reg_step_name_1": {
+        "ar": "الاسم",
+        "en": "Name"
+    },
+    "reg_step_name_2": {
+        "ar": "الصورة",
+        "en": "Avatar"
+    },
+    "reg_step_name_3": {
+        "ar": "الهاتف",
+        "en": "Phone"
+    },
+    "reg_step_name_4": {
+        "ar": "كلمة المرور",
+        "en": "Password"
+    },
+    "reg_step_name_5": {
+        "ar": "الموقع",
+        "en": "Location"
+    },
+    "reg_step_name_6": {
+        "ar": "العنوان",
+        "en": "Address"
+    },
+    "reg_step_name_7": {
+        "ar": "الغلاف",
+        "en": "Covers"
+    },
+    "reg_step_name_8": {
+        "ar": "النشاط",
+        "en": "Business"
+    },
+    "reg_step_name_9": {
+        "ar": "التوصيل",
+        "en": "Delivery"
+    },
+    "reg_step_name_10": {
+        "ar": "الحد الأدنى",
+        "en": "Min Order"
+    },
+    "reg_step_name_11": {
+        "ar": "التصنيفات",
+        "en": "Categories"
+    },
+    "reg_step_name_12": {
+        "ar": "واتساب",
+        "en": "WhatsApp"
+    },
+    "reg_step_name_13": {
+        "ar": "الروابط",
+        "en": "Links"
+    },
+    "reg_step_name_14": {
+        "ar": "التقيم",
+        "en": "Rating"
+    },
+    "gen_mandatory": {
+        "ar": "إلزامي",
+        "en": "Mandatory"
+    },
+    "gen_optional": {
+        "ar": "اختياري",
+        "en": "Optional"
+    }
 }

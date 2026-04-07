@@ -1,274 +1,274 @@
-﻿{
-    "tagline_1":  {
-                      "ar":  "Ø¨Ø§Ø²Ø§Ø± Ø§Ù„Ø³ÙˆÙŠØ³... ÙØ±ØµØ© ÙˆØ§Ø­Ø¯Ø© ØªØ¬Ù…Ø¹ ÙƒÙ„ Ø§Ù„ÙØ±Øµ",
-                      "en":  "Suez Bazaar... One opportunity for all opportunities"
-                  },
-    "tagline_2":  {
-                      "ar":  "Ø§ÙƒØªØ´Ù Ø¢Ù„Ø§Ù Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ù…Ù† Ù…ÙˆØ±Ø¯ÙŠÙ† Ù…ÙˆØ«ÙˆÙ‚ÙŠÙ† ÙÙŠ Ø§Ù„Ø³ÙˆÙŠØ³",
-                      "en":  "Discover thousands of products from trusted suppliers in Suez"
-                  },
-    "tagline_3":  {
-                      "ar":  "ØªØ§Ø¨Ø¹ Ø·Ù„Ø¨Ùƒ Ø­ØªÙ‰ Ø¨Ø§Ø¨ Ù…Ù†Ø²Ù„Ùƒ",
-                      "en":  "Track your order to your doorstep"
-                  },
-    "tagline_4":  {
-                      "ar":  "Ø¹Ø±ÙˆØ¶ ÙˆØ®ØµÙˆÙ…Ø§Øª Ø­ØµØ±ÙŠØ© Ù…Ù† Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ†",
-                      "en":  "Exclusive offers and discounts from suppliers"
-                  },
-    "tagline_5":  {
-                      "ar":  "Ø¬ÙˆØ¯Ø© Ù…Ø¶Ù…ÙˆÙ†Ø© ÙˆØªÙ‚ÙŠÙŠÙ… Ø´ÙØ§Ù Ù…Ù† Ø§Ù„Ù…Ø´ØªØ±ÙŠÙ†",
-                      "en":  "Guaranteed quality and transparent buyer reviews"
-                  },
-    "tagline_6":  {
-                      "ar":  "Ù…Ù† Ø§Ù„Ù…ÙˆØ±Ø¯ Ù„Ù„Ù…Ø³ØªÙ‡Ù„Ùƒ Ù…Ø¨Ø§Ø´Ø±Ø© Ø¬ÙˆØ¯Ø© ÙˆØ³Ø¹Ø± Ø£ÙØ¶Ù„",
-                      "en":  "Directly from supplier to consumer - better quality and price"
-                  },
-    "splash_slogan":  {
-                          "ar":  "Ø§Ù„Ø³ÙˆÙŠØ³ Ø¨ÙŠÙ† Ø¥ÙŠØ¯ÙŠÙƒ",
-                          "en":  "Suez in your hands"
-                      },
-    "featured_products_title":  {
-                                    "ar":  "Ø§Ù„Ø£ÙƒØ«Ø± Ø±ÙˆØ§Ø¬Ø§Ù‹",
-                                    "en":  "Featured Products"
-                                },
-    "home_ads_title":  {
-                           "ar":  "Ø§Ù„Ø¹Ø±ÙˆØ¶ Ø§Ù„Ù…Ù…ÙŠØ²Ø©",
-                           "en":  "Special Offers"
-                       },
-    "home_categories_title":  {
-                                  "ar":  "Ø£Ø³ÙˆØ§Ù‚ Ø§Ù„Ø³ÙˆÙŠØ³",
-                                  "en":  "Suez Markets"
-                              },
-    "cat_select_main_placeholder":  {
-                                        "ar":  "Ø§Ø®ØªØ± Ø§Ù„Ø³ÙˆÙ‚ Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ...",
-                                        "en":  "Select Main Category..."
-                                    },
-    "cat_select_sub_placeholder":  {
-                                       "ar":  "Ø§Ø®ØªØ± Ø§Ù„Ø³ÙˆÙ‚ Ø§Ù„ÙØ±Ø¹ÙŠ...",
-                                       "en":  "Select Sub-category..."
-                                   },
-    "cat_validation_required":  {
-                                    "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ø®ØªÙŠØ§Ø± Ø§Ù„ÙØ¦Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ© ÙˆØ§Ù„ÙØ±Ø¹ÙŠØ©",
-                                    "en":  "Please select both main and sub-category"
-                                },
-    "cat_empty_list_error":  {
-                                 "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ ØªØ­Ù…ÙŠÙ„ Ø§Ù„ÙØ¦Ø§Øª.",
-                                 "en":  "An error occurred while loading categories."
-                             },
-    "cat_view_toggle_title":  {
-                                  "ar":  "ØªØ¨Ø¯ÙŠÙ„ Ø§Ù„Ø¹Ø±Ø¶ (Ø´Ø¨ÙƒØ© / Ù‚Ø§Ø¦Ù…Ø©)",
-                                  "en":  "Toggle View (Grid / List)"
-                              },
-    "cat_view_all_btn":  {
-                             "ar":  "Ø¹Ø±Ø¶ Ø§Ù„ÙƒÙ„",
-                             "en":  "View All"
-                         },
-    "cat_no_products_message":  {
-                                    "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª ÙÙŠ Ù‡Ø°Ù‡ Ø§Ù„ÙØ¦Ø© Ø­Ø§Ù„ÙŠØ§Ù‹.",
-                                    "en":  "No products found in this category currently."
-                                },
-    "cat_fetch_products_error":  {
-                                     "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª. Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù„Ø§Ø­Ù‚Ø§Ù‹.",
-                                     "en":  "An error occurred while loading products. Please try again later."
-                                 },
-    "cat_modal_title":  {
-                            "ar":  "ðŸ“‹ ØªØ­Ø¯ÙŠØ¯ ÙØ¦Ø© Ø§Ù„Ù…Ù†ØªØ¬",
-                            "en":  "Ã°Å¸â€œâ€¹ Select Product Category"
-                        },
-    "cat_main_label":  {
-                           "ar":  "Ø§Ù„Ø³ÙˆÙ‚ Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ",
-                           "en":  "Main Category"
-                       },
-    "cat_sub_label":  {
-                          "ar":  "Ø§Ù„Ø³ÙˆÙ‚ Ø§Ù„ÙØ±Ø¹ÙŠ",
-                          "en":  "Sub Category"
-                      },
-    "cat_cancel_btn":  {
-                           "ar":  "Ø¥Ù„ØºØ§Ø¡",
-                           "en":  "Cancel"
-                       },
-    "cat_confirm_btn":  {
-                            "ar":  "Ù…ØªØ§Ø¨Ø¹Ø©",
-                            "en":  "Continue"
-                        },
-    "search_modal_main_category_label":  {
-                                             "ar":  "Ø§Ù„ÙØ¦Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©",
-                                             "en":  "Main Category"
-                                         },
-    "search_modal_main_category_default":  {
-                                               "ar":  "ÙƒÙ„ Ø§Ù„Ø§Ø³ÙˆØ§Ù‚ Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©",
-                                               "en":  "All Main Categories"
-                                           },
-    "search_modal_sub_category_label":  {
-                                            "ar":  "Ø§Ù„ÙØ¦Ø© Ø§Ù„ÙØ±Ø¹ÙŠØ©",
-                                            "en":  "Sub Category"
-                                        },
-    "search_modal_sub_category_default":  {
-                                              "ar":  "ÙƒÙ„ Ø§Ù„Ø§Ø³ÙˆØ§Ù‚ Ø§Ù„ÙØ±Ø¹ÙŠØ©",
-                                              "en":  "All Sub Categories"
-                                          },
-    "search_modal_input_placeholder":  {
-                                           "ar":  "Ø§Ø¨Ø­Ø« Ø¹Ù† Ù…Ù†ØªØ¬ Ø£Ùˆ Ø®Ø¯Ù…Ø©...",
-                                           "en":  "Search products or services..."
-                                       },
-    "search_modal_sort_label":  {
-                                    "ar":  "ØªØ±ØªÙŠØ¨ Ø­Ø³Ø¨",
-                                    "en":  "Sort By"
-                                },
-    "search_modal_sort_default":  {
-                                      "ar":  "Ø§Ù„ØªØ±ØªÙŠØ¨ Ø§Ù„Ø§ÙØªØ±Ø§Ø¶ÙŠ",
-                                      "en":  "Default Sorting"
-                                  },
-    "search_modal_sort_price_asc":  {
-                                        "ar":  "Ø§Ù„Ø£Ù‚Ù„ Ø³Ø¹Ø±Ø§Ù‹",
-                                        "en":  "Price: Low to High"
-                                    },
-    "search_modal_sort_price_desc":  {
-                                         "ar":  "Ø§Ù„Ø£Ø¹Ù„Ù‰ Ø³Ø¹Ø±Ø§Ù‹",
-                                         "en":  "Price: High to Low"
-                                     },
-    "search_modal_search_btn_aria":  {
-                                         "ar":  "Ø¨Ø­Ø«",
-                                         "en":  "Search"
-                                     },
-    "search_modal_no_results":  {
-                                    "ar":  "Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ù…Ù†ØªØ¬Ø§Øª Ù…Ø·Ø§Ø¨Ù‚Ø© Ù„Ø¨Ø­Ø«Ùƒ.",
-                                    "en":  "No products found matching your search."
-                                },
-    "search_modal_error_generic":  {
-                                       "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„Ø¨Ø­Ø«. ÙŠØ±Ø¬Ù‰ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                                       "en":  "An error occurred while searching. Please try again."
-                                   },
-    "search_modal_init_log":  {
-                                  "ar":  "Ø¨Ø¯Ø¡ ØªÙ‡ÙŠØ¦Ø© Ù†Ø§ÙØ°Ø© Ø§Ù„Ø¨Ø­Ø«",
-                                  "en":  "Initializing search modal"
-                              },
-    "currency_egp":  {
-                         "ar":  "Ø¬Ù†ÙŠÙ‡",
-                         "en":  "EGP"
-                     },
-    "search_modal_input_min_length_error":  {
-                                                "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ 3 Ø£Ø­Ø±Ù Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ Ù„Ù„Ø¨Ø­Ø« Ø¨Ø§Ù„Ø§Ø³Ù….",
-                                                "en":  "Please enter at least 3 characters to search by name."
-                                            },
-    "search_admin_checkbox_label":  {
-                                        "ar":  "Ø¥Ø¶Ø§ÙØ© Ù„Ù„Ù…ÙØ¶Ù„Ø©",
-                                        "en":  "Add to Favorites"
-                                    },
-    "search_mode_label":  {
-                              "ar":  "Ù†ÙˆØ¹ Ø§Ù„Ø¨Ø­Ø«",
-                              "en":  "Search Mode"
-                          },
-    "search_mode_products":  {
-                                 "ar":  "Ù…Ù†ØªØ¬Ø§Øª / Ø®Ø¯Ù…Ø§Øª",
-                                 "en":  "Products / Services"
-                             },
-    "search_mode_sellers":  {
-                                "ar":  "???? ???? / ???? ?????",
-                                "en":  "Service Provider / Business"
-                            },
-    "search_merchant_name_placeholder":  {
-                                             "ar":  "???? ???? ???? ?????? ?? ??????...",
-                                             "en":  "Search by service provider name or business..."
-                                         },
-    "search_modal_reset_filters":  {
-                                       "ar":  "Ø¥Ø¹Ø§Ø¯Ø© ØªØ¹ÙŠÙŠÙ† Ø§Ù„ÙÙ„Ø§ØªØ±",
-                                       "en":  "Reset Filters"
-                                   },
-    "search_merchant_prefix":  {
-                                   "ar":  "???? ??????",
-                                   "en":  "Service Provider"
-                               },
-    "search_modal_no_criteria_error":  {
-                                           "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ Ù†Øµ Ù„Ù„Ø¨Ø­Ø« Ø£Ùˆ Ø§Ø®ØªÙŠØ§Ø± Ù‚Ø³Ù… Ø£ÙˆÙ„Ø§Ù‹.",
-                                           "en":  "Please enter search text or select a category first."
-                                       },
-    "search_modal_load_more":  {
-                                   "ar":  "Ø¹Ø±Ø¶ Ø§Ù„Ù…Ø²ÙŠØ¯",
-                                   "en":  "Load More"
-                               },
-    "search_results_criteria_label":  {
-                                          "ar":  "Ø¹Ù†Ø§ØµØ± Ø§Ù„Ø¨Ø­Ø«",
-                                          "en":  "Search Criteria"
-                                      },
-    "search_no_results_hint":  {
-                                   "ar":  "Ù„Ù… Ù†Ø¬Ø¯ Ø£ÙŠ ØªØ·Ø§Ø¨Ù‚ Ù„Ù„Ù…Ø¹Ø§ÙŠÙŠØ± Ø§Ù„ØªØ§Ù„ÙŠØ©:",
-                                   "en":  "We found no match for the following criteria:"
-                               },
-    "search_loading_status":  {
-                                  "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„ØªØ­Ù…ÙŠÙ„...",
-                                  "en":  "Loading..."
-                              },
-    "port_search_panel_title":  {
-                                    "ar":  "Ø¨Ø­Ø« Ø¯Ø§Ø®Ù„ Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ø¨Ø§Ø¦Ø¹",
-                                    "en":  "Search Seller Products"
-                                },
-    "port_search_clear_all":  {
-                                  "ar":  "Ù…Ø³Ø­ Ø§Ù„ÙƒÙ„",
-                                  "en":  "Clear All"
-                              },
-    "port_search_ready":  {
-                              "ar":  "Ø¬Ø§Ù‡Ø² Ù„Ù„Ø¨Ø­Ø«",
-                              "en":  "Ready to search"
-                          },
-    "port_search_results_count":  {
-                                      "ar":  "Ù†ØªÙŠØ¬Ø©",
-                                      "en":  "results"
-                                  },
-    "port_search_text_title":  {
-                                   "ar":  "Ø§Ø¨Ø­Ø« Ø¨Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬ Ø£Ùˆ Ø§Ù„ÙˆØµÙ",
-                                   "en":  "Search by product name or description"
-                               },
-    "port_search_text_placeholder":  {
-                                         "ar":  "Ø£Ø¯Ø®Ù„ Ø§Ù„Ø§Ø³Ù… Ø£Ùˆ Ø§Ù„ÙˆØµÙ",
-                                         "en":  "Enter product name or description"
-                                     },
-    "port_search_execute_error":  {
-                                      "ar":  "ØªØ¹Ø°Ø± ØªÙ†ÙÙŠØ° Ø§Ù„Ø¨Ø­Ø« Ø§Ù„Ø¢Ù†. Ø­Ø§ÙˆÙ„ Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                                      "en":  "Unable to perform search right now. Please try again."
-                                  },
-    "search_retry_status":  {
-                                "ar":  "Ø­Ø§ÙˆÙ„ Ù…Ø±Ø© Ø£Ø®Ø±Ù‰",
-                                "en":  "Try Again"
-                            },
-    "search_modal_within_merchant":  {
-                                         "ar":  "Ø§Ù„Ø¨Ø­Ø« Ø¯Ø§Ø®Ù„ Ø§Ù„Ù…ØªØ¬Ø±",
-                                         "en":  "Search inside store"
-                                     },
-    "subcat_no_pending_search":  {
-                                     "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ø¹Ø§ÙŠÙŠØ± Ø¨Ø­Ø« Ù…Ø¹Ù„Ù‚Ø©",
-                                     "en":  "No pending search criteria"
-                                 },
-    "subcat_no_merchants":  {
-                                "ar":  "Ù„Ø§ ÙŠÙˆØ¬Ø¯ ØªÙ‘Ø¬Ø§Ø± ÙÙŠ Ù‡Ø°Ø§ Ø§Ù„ØªØµÙ†ÙŠÙ Ø­Ø§Ù„ÙŠØ§Ù‹",
-                                "en":  "No merchants in this category currently"
-                            },
-    "subcat_merchant_specialized":  {
-                                        "ar":  "Ù…ØªØ¬Ø± Ù…ØªØ®ØµØµ",
-                                        "en":  "Specialized Store"
-                                    },
-    "subcat_fetch_error":  {
-                               "ar":  "ØªØ¹Ø°Ø± ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª",
-                               "en":  "Failed to load data"
-                           },
-    "subcat_merchant_default_name":  {
-                                         "ar":  "ØªØ§Ø¬Ø±",
-                                         "en":  "Merchant"
-                                     },
-    "subcat_no_description":  {
-                                  "ar":  "Ù„Ø§ ÙŠÙˆØ¬Ø¯ ÙˆØµÙ Ù…ØªØ§Ø­",
-                                  "en":  "No description available"
-                              },
-    "subcat_visit_store":  {
-                               "ar":  "Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ¬Ø±",
-                               "en":  "Visit Store"
-                           },
-    "cat_selection_instruction":  {
-                                      "ar":  "ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ø®ØªÙŠØ§Ø± \u003cb\u003e3 Ø£Ù‚Ø³Ø§Ù… Ø±Ø¦ÙŠØ³ÙŠØ©\u003c/b\u003e ÙƒØ­Ø¯ Ø£Ù‚ØµÙ‰ØŒ Ù…Ø¹ Ø§Ø®ØªÙŠØ§Ø± Ø£ÙŠ Ø¹Ø¯Ø¯ Ù…Ù† Ø§Ù„ØªØ®ØµØµØ§Øª Ø§Ù„ÙØ±Ø¹ÙŠØ©.",
-                                      "en":  "You can select up to \u003cb\u003e3 main categories\u003c/b\u003e, with unlimited subcategories for each."
-                                  },
-    "cat_limit_main_msg":  {
-                               "ar":  "Ø£Ù‚ØµÙ‰ Ø¹Ø¯Ø¯ Ù„Ù„Ø£Ù‚Ø³Ø§Ù… Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ© Ù‡Ùˆ 3",
-                               "en":  "Maximum 3 main categories allowed"
-                           }
+{
+    "tagline_1": {
+        "ar": "بازار السويس... فرصة واحدة تجمع كل الفرص",
+        "en": "Suez Bazaar... One opportunity for all opportunities"
+    },
+    "tagline_2": {
+        "ar": "اكتشف آلاف المنتجات من موردين موثوقين في السويس",
+        "en": "Discover thousands of products from trusted suppliers in Suez"
+    },
+    "tagline_3": {
+        "ar": "تابع طلبك حتى باب منزلك",
+        "en": "Track your order to your doorstep"
+    },
+    "tagline_4": {
+        "ar": "عروض وخصومات حصرية من الموردين",
+        "en": "Exclusive offers and discounts from suppliers"
+    },
+    "tagline_5": {
+        "ar": "جودة مضمونة وتقييم شفاف من المشترين",
+        "en": "Guaranteed quality and transparent buyer reviews"
+    },
+    "tagline_6": {
+        "ar": "من المورد للمستهلك مباشرة جودة وسعر أفضل",
+        "en": "Directly from supplier to consumer - better quality and price"
+    },
+    "splash_slogan": {
+        "ar": "السويس بين إيديك",
+        "en": "Suez in your hands"
+    },
+    "featured_products_title": {
+        "ar": "الأكثر رواجاً",
+        "en": "Featured Products"
+    },
+    "home_ads_title": {
+        "ar": "العروض المميزة",
+        "en": "Special Offers"
+    },
+    "home_categories_title": {
+        "ar": "أسواق السويس",
+        "en": "Suez Markets"
+    },
+    "cat_select_main_placeholder": {
+        "ar": "اختر السوق الرئيسي...",
+        "en": "Select Main Category..."
+    },
+    "cat_select_sub_placeholder": {
+        "ar": "اختر السوق الفرعي...",
+        "en": "Select Sub-category..."
+    },
+    "cat_validation_required": {
+        "ar": "يرجى اختيار الفئة الرئيسية والفرعية",
+        "en": "Please select both main and sub-category"
+    },
+    "cat_empty_list_error": {
+        "ar": "حدث خطأ أثناء تحميل الفئات.",
+        "en": "An error occurred while loading categories."
+    },
+    "cat_view_toggle_title": {
+        "ar": "تبديل العرض (شبكة / قائمة)",
+        "en": "Toggle View (Grid / List)"
+    },
+    "cat_view_all_btn": {
+        "ar": "عرض الكل",
+        "en": "View All"
+    },
+    "cat_no_products_message": {
+        "ar": "لا توجد منتجات في هذه الفئة حالياً.",
+        "en": "No products found in this category currently."
+    },
+    "cat_fetch_products_error": {
+        "ar": "حدث خطأ أثناء تحميل المنتجات. الرجاء المحاولة لاحقاً.",
+        "en": "An error occurred while loading products. Please try again later."
+    },
+    "cat_modal_title": {
+        "ar": "اختر فئة المنتج",
+        "en": "?? Select Product Category"
+    },
+    "cat_main_label": {
+        "ar": "السوق الرئيسي",
+        "en": "Main Category"
+    },
+    "cat_sub_label": {
+        "ar": "السوق الفرعي",
+        "en": "Sub Category"
+    },
+    "cat_cancel_btn": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "cat_confirm_btn": {
+        "ar": "متابعة",
+        "en": "Continue"
+    },
+    "search_modal_main_category_label": {
+        "ar": "الفئة الرئيسية",
+        "en": "Main Category"
+    },
+    "search_modal_main_category_default": {
+        "ar": "كل الاسواق الرئيسية",
+        "en": "All Main Categories"
+    },
+    "search_modal_sub_category_label": {
+        "ar": "الفئة الفرعية",
+        "en": "Sub Category"
+    },
+    "search_modal_sub_category_default": {
+        "ar": "كل الاسواق الفرعية",
+        "en": "All Sub Categories"
+    },
+    "search_modal_input_placeholder": {
+        "ar": "ابحث عن منتج أو خدمة...",
+        "en": "Search products or services..."
+    },
+    "search_modal_sort_label": {
+        "ar": "ترتيب حسب",
+        "en": "Sort By"
+    },
+    "search_modal_sort_default": {
+        "ar": "الترتيب الافتراضي",
+        "en": "Default Sorting"
+    },
+    "search_modal_sort_price_asc": {
+        "ar": "الأقل سعراً",
+        "en": "Price: Low to High"
+    },
+    "search_modal_sort_price_desc": {
+        "ar": "الأعلى سعراً",
+        "en": "Price: High to Low"
+    },
+    "search_modal_search_btn_aria": {
+        "ar": "بحث",
+        "en": "Search"
+    },
+    "search_modal_no_results": {
+        "ar": "لم يتم العثور على منتجات مطابقة لبحثك.",
+        "en": "No products found matching your search."
+    },
+    "search_modal_error_generic": {
+        "ar": "حدث خطأ أثناء البحث. يرجى المحاولة مرة أخرى.",
+        "en": "An error occurred while searching. Please try again."
+    },
+    "search_modal_init_log": {
+        "ar": "بدء تهيئة نافذة البحث",
+        "en": "Initializing search modal"
+    },
+    "currency_egp": {
+        "ar": "جنيه",
+        "en": "EGP"
+    },
+    "search_modal_input_min_length_error": {
+        "ar": "يرجى إدخال 3 أحرف على الأقل للبحث بالاسم.",
+        "en": "Please enter at least 3 characters to search by name."
+    },
+    "search_admin_checkbox_label": {
+        "ar": "إضافة للمفضلة",
+        "en": "Add to Favorites"
+    },
+    "search_mode_label": {
+        "ar": "نوع البحث",
+        "en": "Search Mode"
+    },
+    "search_mode_products": {
+        "ar": "منتجات / خدمات",
+        "en": "Products / Services"
+    },
+    "search_mode_sellers": {
+        "ar": "مقدم خدمة / نشاط تجاري",
+        "en": "Service Provider / Business"
+    },
+    "search_merchant_name_placeholder": {
+        "ar": "ابحث باسم مقدم الخدمة أو النشاط...",
+        "en": "Search by service provider name or business..."
+    },
+    "search_modal_reset_filters": {
+        "ar": "إعادة تعيين الفلاتر",
+        "en": "Reset Filters"
+    },
+    "search_merchant_prefix": {
+        "ar": "مقدم خدمة",
+        "en": "Service Provider"
+    },
+    "search_modal_no_criteria_error": {
+        "ar": "يرجى إدخال نص للبحث أو اختيار قسم أولاً.",
+        "en": "Please enter search text or select a category first."
+    },
+    "search_modal_load_more": {
+        "ar": "عرض المزيد",
+        "en": "Load More"
+    },
+    "search_results_criteria_label": {
+        "ar": "عناصر البحث",
+        "en": "Search Criteria"
+    },
+    "search_no_results_hint": {
+        "ar": "لم نجد أي تطابق للمعايير التالية:",
+        "en": "We found no match for the following criteria:"
+    },
+    "search_loading_status": {
+        "ar": "جاري التحميل...",
+        "en": "Loading..."
+    },
+    "port_search_panel_title": {
+        "ar": "بحث داخل منتجات البائع",
+        "en": "Search Seller Products"
+    },
+    "port_search_clear_all": {
+        "ar": "مسح الكل",
+        "en": "Clear All"
+    },
+    "port_search_ready": {
+        "ar": "جاهز للبحث",
+        "en": "Ready to search"
+    },
+    "port_search_results_count": {
+        "ar": "نتيجة",
+        "en": "results"
+    },
+    "port_search_text_title": {
+        "ar": "ابحث باسم المنتج أو الوصف",
+        "en": "Search by product name or description"
+    },
+    "port_search_text_placeholder": {
+        "ar": "أدخل الاسم أو الوصف",
+        "en": "Enter product name or description"
+    },
+    "port_search_execute_error": {
+        "ar": "تعذر تنفيذ البحث الآن. حاول مرة أخرى.",
+        "en": "Unable to perform search right now. Please try again."
+    },
+    "search_retry_status": {
+        "ar": "حاول مرة أخرى",
+        "en": "Try Again"
+    },
+    "search_modal_within_merchant": {
+        "ar": "البحث داخل المتجر",
+        "en": "Search inside store"
+    },
+    "subcat_no_pending_search": {
+        "ar": "لا توجد معايير بحث معلقة",
+        "en": "No pending search criteria"
+    },
+    "subcat_no_merchants": {
+        "ar": "لا يوجد تّجار في هذا التصنيف حالياً",
+        "en": "No merchants in this category currently"
+    },
+    "subcat_merchant_specialized": {
+        "ar": "متجر متخصص",
+        "en": "Specialized Store"
+    },
+    "subcat_fetch_error": {
+        "ar": "تعذر تحميل البيانات",
+        "en": "Failed to load data"
+    },
+    "subcat_merchant_default_name": {
+        "ar": "تاجر",
+        "en": "Merchant"
+    },
+    "subcat_no_description": {
+        "ar": "لا يوجد وصف متاح",
+        "en": "No description available"
+    },
+    "subcat_visit_store": {
+        "ar": "زيارة المتجر",
+        "en": "Visit Store"
+    },
+    "cat_selection_instruction": {
+        "ar": "يمكنك اختيار <b>3 أقسام رئيسية</b> كحد أقصى، مع اختيار أي عدد من التخصصات الفرعية.",
+        "en": "You can select up to <b>3 main categories</b>, with unlimited subcategories for each."
+    },
+    "cat_limit_main_msg": {
+        "ar": "أقصى عدد للأقسام الرئيسية هو 3",
+        "en": "Maximum 3 main categories allowed"
+    }
 }

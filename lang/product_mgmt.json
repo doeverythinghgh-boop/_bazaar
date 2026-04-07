@@ -1,730 +1,730 @@
-﻿{
-    "add1_page_title":  {
-                            "ar":  "Ø¥Ø¶Ø§ÙØ© Ù…Ù†ØªØ¬ Ø¬Ø¯ÙŠØ¯",
-                            "en":  "Add New Product"
-                        },
-    "add1_images_heading":  {
-                                "ar":  "ØµÙˆØ± Ø§Ù„Ù…Ù†ØªØ¬",
-                                "en":  "Product Images"
-                            },
-    "add1_image_hint":  {
-                            "ar":  "Ø§Ù„Ù…Ø·Ù„ÙˆØ¨: ØµÙˆØ±Ø© ÙˆØ§Ø­Ø¯Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„. Ø§Ù„Ø¯Ø¹Ù…: jpg, png, webp.",
-                            "en":  "Required: At least one image. Supported: jpg, png, webp."
-                        },
-    "add1_label_product_name":  {
-                                    "ar":  "Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬",
-                                    "en":  "Product Name"
-                                },
-    "add1_placeholder_product_name":  {
-                                          "ar":  "ÙƒÙ„Ù…Ø§Øª Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬ Ù‡Ø§Ù…Ø© Ù„Ø¸Ù‡ÙˆØ± Ù…Ù†ØªØ¬Ùƒ ÙÙŠ Ø§Ù„Ø¨Ø­Ø«.",
-                                          "en":  "Product name keywords are important for search visibility."
-                                      },
-    "add1_label_description":  {
-                                   "ar":  "ÙˆØµÙ Ø§Ù„Ù…Ù†ØªØ¬",
-                                   "en":  "Product Description"
-                               },
-    "add1_placeholder_description":  {
-                                         "ar":  "Ø§ÙƒØªØ¨ ÙˆØµÙÙ‹Ø§ Ø¬Ø°Ø§Ø¨Ù‹Ø§ Ù„Ù„Ù…Ù†ØªØ¬...",
-                                         "en":  "Write a catchy description..."
-                                     },
-    "add1_label_seller_message":  {
-                                      "ar":  "Ø±Ø³Ø§Ù„Ø© ØªØ±Ø­ÙŠØ¨ÙŠØ©",
-                                      "en":  "Welcome Message"
-                                  },
-    "add1_placeholder_seller_message":  {
-                                            "ar":  "Ø±Ø³Ø§Ù„Ø© Ù‚ØµÙŠØ±Ø© ØªØ¸Ù‡Ø± Ù„Ù„Ø¹Ù…ÙŠÙ„...",
-                                            "en":  "Short message displayed to the customer..."
-                                        },
-    "add1_label_notes":  {
-                             "ar":  "Ù…Ù„Ø§Ø­Ø¸Ø§Øª",
-                             "en":  "Notes"
-                         },
-    "add1_placeholder_notes":  {
-                                   "ar":  "Ù‡Ø°Ø§ Ø§Ù„Ù†Øµ Ù„Ø§ ÙŠØ¸Ù‡Ø± Ù„Ù„Ù…Ø´ØªØ±ÙŠ",
-                                   "en":  "This text is not visible to the buyer"
-                               },
-    "add1_label_quantity":  {
-                                "ar":  "Ø§Ù„ÙƒÙ…ÙŠØ©",
-                                "en":  "Quantity"
-                            },
-    "add1_label_price":  {
-                             "ar":  "Ø§Ù„Ø³Ø¹Ø± Ø§Ù„Ø­Ø§Ù„ÙŠ",
-                             "en":  "Current Price"
-                         },
-    "add1_label_original_price":  {
-                                      "ar":  "Ø§Ù„Ø³Ø¹Ø± Ù‚Ø¨Ù„ Ø§Ù„Ø®ØµÙ…",
-                                      "en":  "Price Before Discount"
-                                  },
-    "add1_placeholder_number":  {
-                                    "ar":  "Ø§Ø¯Ø®Ù„ Ø±Ù‚Ù…",
-                                    "en":  "Enter Number"
-                                },
-    "add1_label_real_price":  {
-                                  "ar":  "Ø³Ø¹Ø± Ø§Ù„ØªØ·Ø¨ÙŠÙ‚",
-                                  "en":  "App Price"
-                              },
-    "add1_checkbox_heavy_load":  {
-                                     "ar":  "ÙŠØ­ØªØ§Ø¬ Ø¥Ù„Ù‰ Ø³ÙŠØ§Ø±Ø© ÙÙŠ Ø§Ù„ØªÙˆØµÙŠÙ„",
-                                     "en":  "Requires vehicle for delivery"
-                                 },
-    "add1_submit_btn_initial":  {
-                                    "ar":  "Ø§Ø¶Ù Ø§Ù„Ù…Ù†ØªØ¬ Ø§Ù„Ø¢Ù†",
-                                    "en":  "Add Product Now"
-                                },
-    "add1_submit_btn_saving":  {
-                                   "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„Ø­ÙØ¸ ÙˆØ§Ù„Ø±ÙØ¹...",
-                                   "en":  "Saving and Uploading..."
-                               },
-    "add1_submit_btn_ready":  {
-                                  "ar":  "Ø­ÙØ¸ ÙˆÙ†Ø´Ø± Ø§Ù„Ù…Ù†ØªØ¬ Ø§Ù„Ø¢Ù†",
-                                  "en":  "Save and Publish Product Now"
-                              },
-    "add1_err_img_required":  {
-                                  "ar":  "Ù…Ø·Ù„ÙˆØ¨ ØµÙˆØ±Ø© ÙˆØ§Ø­Ø¯Ø© Ù„Ù„Ù…Ù†ØªØ¬ Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„.",
-                                  "en":  "At least one product image is required."
-                              },
-    "add1_err_name_required":  {
-                                   "ar":  "Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬ Ù…Ø·Ù„ÙˆØ¨.",
-                                   "en":  "Product name is required."
-                               },
-    "add1_err_desc_required":  {
-                                   "ar":  "ÙˆØµÙ Ø§Ù„Ù…Ù†ØªØ¬ Ù…Ø·Ù„ÙˆØ¨ (Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 10 Ø£Ø­Ø±Ù).",
-                                   "en":  "Product description is required (at least 10 chars)."
-                               },
-    "add1_err_msg_required":  {
-                                  "ar":  "????? ???? ?????? ?????? (??? ????? 10 ????).",
-                                  "en":  "Service-provider message is required (at least 10 chars)."
-                              },
-    "add1_err_qty_required":  {
-                                  "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ ÙƒÙ…ÙŠØ© Ù…ØªØ§Ø­Ø© ØµØ§Ù„Ø­Ø© (Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 1).",
-                                  "en":  "Please enter a valid quantity (at least 1)."
-                              },
-    "add1_err_price_required":  {
-                                    "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ Ø³Ø¹Ø± Ù…Ù†ØªØ¬ ØµØ§Ù„Ø­.",
-                                    "en":  "Please enter a valid product price."
-                                },
-    "add1_swal_adding_title":  {
-                                   "ar":  "Ø¬Ø§Ø±ÙŠ Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ù…Ù†ØªØ¬...",
-                                   "en":  "Adding Product..."
-                               },
-    "add1_swal_uploading_text":  {
-                                     "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø± Ø¨ÙŠÙ†Ù…Ø§ ÙŠØªÙ… Ø±ÙØ¹ Ø§Ù„ØµÙˆØ±.",
-                                     "en":  "Please wait while images are uploading."
-                                 },
-    "add1_swal_success_text":  {
-                                   "ar":  "ØªÙ… Ø­ÙØ¸ Ø§Ù„Ù…Ù†ØªØ¬ ÙˆØ¥Ø±Ø³Ø§Ù„Ù‡ Ù„Ù„Ø¥Ø¯Ø§Ø±Ø© Ø¨Ù†Ø¬Ø§Ø­ Ù„Ù…Ø±Ø§Ø¬Ø¹ØªÙ‡ ÙˆÙ†Ø´Ø±Ù‡.",
-                                   "en":  "Product saved and sent to admin successfully for review and publishing."
-                               },
-    "add1_swal_error_text":  {
-                                 "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ù…Ù†ØªØ¬. ÙŠØ±Ø¬Ù‰ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                                 "en":  "An error occurred while adding the product. Please try again."
-                             },
-    "add2_page_title":  {
-                            "ar":  "Ø¥Ø¶Ø§ÙØ© Ø®Ø¯Ù…Ø© Ø¬Ø¯ÙŠØ¯Ø©",
-                            "en":  "Add New Service"
-                        },
-    "add2_images_heading":  {
-                                "ar":  "ØµÙˆØ± Ø§Ù„Ø®Ø¯Ù…Ø©",
-                                "en":  "Service Images"
-                            },
-    "add2_image_hint":  {
-                            "ar":  "Ø§Ù„Ù…Ø·Ù„ÙˆØ¨: ØµÙˆØ±Ø© ÙˆØ§Ø­Ø¯Ø© Ù„Ù„Ø®Ø¯Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„. Ø§Ù„Ø¯Ø¹Ù…: jpg, png, webp.",
-                            "en":  "Required: At least one service image. Supported: jpg, png, webp."
-                        },
-    "add2_label_product_name":  {
-                                    "ar":  "Ø§Ø³Ù… Ø§Ù„Ø®Ø¯Ù…Ø©",
-                                    "en":  "Service Name"
-                                },
-    "add2_placeholder_product_name":  {
-                                          "ar":  "Ø§ÙƒØªØ¨ Ø§Ø³Ù…Ù‹Ø§ ÙˆØ§Ø¶Ø­Ù‹Ø§ Ù„Ù„Ø®Ø¯Ù…Ø©...",
-                                          "en":  "Enter a clear service name..."
-                                      },
-    "add2_label_description":  {
-                                   "ar":  "ÙˆØµÙ Ø§Ù„Ø®Ø¯Ù…Ø©",
-                                   "en":  "Service Description"
-                               },
-    "add2_placeholder_description":  {
-                                         "ar":  "Ø§ÙƒØªØ¨ ÙˆØµÙÙ‹Ø§ Ø¬Ø°Ø§Ø¨Ù‹Ø§ Ù„Ù„Ø®Ø¯Ù…Ø©...",
-                                         "en":  "Write a catchy service description..."
-                                     },
-    "add2_label_seller_message":  {
-                                      "ar":  "Ø±Ø³Ø§Ù„Ø© Ù…Ù† Ù…Ù‚Ø¯Ù… Ø§Ù„Ø®Ø¯Ù…Ø©",
-                                      "en":  "Message from Provider"
-                                  },
-    "add2_placeholder_seller_message":  {
-                                            "ar":  "Ø§ÙƒØªØ¨ Ø±Ø³Ø§Ù„Ø© Ù‚ØµÙŠØ±Ø© ÙˆÙ…Ù…ÙŠØ²Ø© ØªØ¸Ù‡Ø± Ù„Ù„Ø¹Ù…ÙŠÙ„...",
-                                            "en":  "Write a short message to the customer..."
-                                        },
-    "add2_label_notes":  {
-                             "ar":  "Ù…Ù„Ø§Ø­Ø¸Ø§Øª",
-                             "en":  "Notes"
-                         },
-    "add2_placeholder_notes":  {
-                                   "ar":  "Ø§Ù„Ù†Øµ Ù‡Ù†Ø§ Ù„Ø§ ÙŠØ¸Ù‡Ø± Ù„Ù„Ù…Ø´ØªØ±ÙŠ Ù‡Ùˆ Ø®Ø§Øµ Ø¨Ùƒ Ø§Ù†Øª",
-                                   "en":  "This text is private and not visible to the buyer"
-                               },
-    "add2_btn_submit":  {
-                            "ar":  "Ø§Ø¶Ù Ø§Ù„Ø®Ø¯Ù…Ø© Ø§Ù„Ø¢Ù†",
-                            "en":  "Add Service Now"
-                        },
-    "add2_err_img_required":  {
-                                  "ar":  "Ù…Ø·Ù„ÙˆØ¨ ØµÙˆØ±Ø© ÙˆØ§Ø­Ø¯Ø© Ù„Ù„Ø®Ø¯Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„.",
-                                  "en":  "At least one service image is required."
-                              },
-    "add2_err_name_required":  {
-                                   "ar":  "Ø§Ø³Ù… Ø§Ù„Ø®Ø¯Ù…Ø© Ù…Ø·Ù„ÙˆØ¨.",
-                                   "en":  "Service name is required."
-                               },
-    "add2_err_desc_required":  {
-                                   "ar":  "ÙˆØµÙ Ø§Ù„Ø®Ø¯Ù…Ø© Ù…Ø·Ù„ÙˆØ¨ (Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 10 Ø£Ø­Ø±Ù).",
-                                   "en":  "Service description is required (at least 10 chars)."
-                               },
-    "add2_err_msg_required":  {
-                                  "ar":  "Ø±Ø³Ø§Ù„Ø© Ù…Ù‚Ø¯Ù… Ø§Ù„Ø®Ø¯Ù…Ø© Ù…Ø·Ù„ÙˆØ¨Ø© (Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 10 Ø£Ø­Ø±Ù).",
-                                  "en":  "Provider message is required (at least 10 chars)."
-                              },
-    "add2_swal_adding_title":  {
-                                   "ar":  "Ø¬Ø§Ø±ÙŠ Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ø®Ø¯Ù…Ø©...",
-                                   "en":  "Adding Service..."
-                               },
-    "add2_swal_uploading_text":  {
-                                     "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø± Ø¨ÙŠÙ†Ù…Ø§ ÙŠØªÙ… Ø±ÙØ¹ Ø§Ù„ØµÙˆØ±.",
-                                     "en":  "Please wait while images are uploading."
-                                 },
-    "add2_swal_success_text":  {
-                                   "ar":  "ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø®Ø¯Ù…Ø© ÙˆØ¥Ø±Ø³Ø§Ù„Ù‡Ø§ Ù„Ù„Ø¥Ø¯Ø§Ø±Ø© Ø¨Ù†Ø¬Ø§Ø­ Ù„Ù…Ø±Ø§Ø¬Ø¹ØªÙ‡Ø§ ÙˆÙ†Ø´Ø±Ù‡Ø§.",
-                                   "en":  "Service saved and sent to admin for review/publish."
-                               },
-    "add2_swal_error_text":  {
-                                 "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ø®Ø¯Ù…Ø©. ÙŠØ±Ø¬Ù‰ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                                 "en":  "An error occurred while adding the service. Please try again."
-                             },
-    "add2_swal_cancel_delete":  {
-                                    "ar":  "ØªØ±Ø§Ø¬Ø¹",
-                                    "en":  "Go Back"
-                                },
-    "edit_page_title":  {
-                            "ar":  "ØªØ¹Ø¯ÙŠÙ„ Ø§Ù„Ù…Ù†ØªØ¬",
-                            "en":  "Edit Product"
-                        },
-    "edit_images_heading":  {
-                                "ar":  "ØµÙˆØ± Ø§Ù„Ù…Ù†ØªØ¬",
-                                "en":  "Product Images"
-                            },
-    "edit_image_hint":  {
-                            "ar":  "Ø§Ù„Ù…Ø·Ù„ÙˆØ¨: ØµÙˆØ±Ø© ÙˆØ§Ø­Ø¯Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„. Ø§Ù„Ø¯Ø¹Ù…: jpg, png, webp.",
-                            "en":  "Required: At least one image. Supported: jpg, png, webp."
-                        },
-    "edit_label_product_name":  {
-                                    "ar":  "Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬",
-                                    "en":  "Product Name"
-                                },
-    "edit_placeholder_product_name":  {
-                                          "ar":  "Ø§ÙƒØªØ¨ Ø§Ø³Ù…Ù‹Ø§ ÙˆØ§Ø¶Ø­Ù‹Ø§ Ù„Ù„Ù…Ù†ØªØ¬...",
-                                          "en":  "Enter a clear product name..."
-                                      },
-    "edit_label_description":  {
-                                   "ar":  "Ø§Ù„ÙˆØµÙ",
-                                   "en":  "Description"
-                               },
-    "edit_placeholder_description":  {
-                                         "ar":  "Ø§ÙƒØªØ¨ ÙˆØµÙÙ‹Ø§ Ø¬Ø°Ø§Ø¨Ù‹Ø§ ...",
-                                         "en":  "Write a catchy description..."
-                                     },
-    "edit_label_seller_message":  {
-                                      "ar":  "????? ?? ???? ??????",
-                                      "en":  "Message from Service Provider"
-                                  },
-    "edit_placeholder_seller_message":  {
-                                            "ar":  "Ø§ÙƒØªØ¨ Ø±Ø³Ø§Ù„Ø© Ù‚ØµÙŠØ±Ø© ÙˆÙ…Ù…ÙŠØ²Ø© ØªØ¸Ù‡Ø± Ù„Ù„Ù…Ø´ØªØ±ÙŠ...",
-                                            "en":  "Write a short distinctive message for the buyer..."
-                                        },
-    "edit_label_notes":  {
-                             "ar":  "Ù…Ù„Ø§Ø­Ø¸Ø§Øª",
-                             "en":  "Notes"
-                         },
-    "edit_placeholder_notes":  {
-                                   "ar":  "Ø§Ù„Ù†Øµ Ù‡Ù†Ø§ Ù„Ø§ ÙŠØ¸Ù‡Ø± Ù„Ù„Ù…Ø´ØªØ±ÙŠ Ù‡Ùˆ Ø®Ø§Øµ Ø¨Ùƒ Ø§Ù†Øª",
-                                   "en":  "This text is private and not visible to the buyer"
-                               },
-    "edit_label_quantity":  {
-                                "ar":  "Ø§Ù„ÙƒÙ…ÙŠØ© Ø§Ù„Ù…ØªØ§Ø­Ø©",
-                                "en":  "Available Quantity"
-                            },
-    "edit_placeholder_quantity":  {
-                                      "ar":  "Ù…Ø«Ø§Ù„: 50",
-                                      "en":  "Ex: 50"
-                                  },
-    "edit_label_price":  {
-                             "ar":  "Ø³Ø¹Ø± Ø§Ù„Ù‚Ø·Ø¹Ø©",
-                             "en":  "Unit Price"
-                         },
-    "edit_placeholder_price":  {
-                                   "ar":  "Ø¨Ø§Ù„Ø¬Ù†ÙŠÙ‡",
-                                   "en":  "In Currency"
-                               },
-    "edit_label_original_price":  {
-                                      "ar":  "Ø§Ù„Ø³Ø¹Ø± Ù‚Ø¨Ù„ Ø§Ù„Ø®ØµÙ…",
-                                      "en":  "Price Before Discount"
-                                  },
-    "edit_placeholder_number":  {
-                                    "ar":  "Ø§Ø¯Ø®Ù„ Ø±Ù‚Ù…",
-                                    "en":  "Enter Number"
-                                },
-    "edit_label_real_price":  {
-                                  "ar":  "Ø³Ø¹Ø± Ø§Ù„ØªØ·Ø¨ÙŠÙ‚",
-                                  "en":  "App Price"
-                              },
-    "edit_checkbox_heavy_load":  {
-                                     "ar":  "ÙŠØ­ØªØ§Ø¬ Ø¥Ù„Ù‰ Ø³ÙŠØ§Ø±Ø© ÙÙŠ Ø§Ù„ØªÙˆØµÙŠÙ„",
-                                     "en":  "Requires vehicle for delivery"
-                                 },
-    "edit_btn_save":  {
-                          "ar":  "Ø­ÙØ¸ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„Ø§Øª",
-                          "en":  "Save Changes"
-                      },
-    "edit_swal_updating_title":  {
-                                     "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ø¯ÙŠØ« Ø§Ù„Ù…Ù†ØªØ¬...",
-                                     "en":  "Updating Product..."
-                                 },
-    "edit_swal_updating_text":  {
-                                    "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø± Ø¨ÙŠÙ†Ù…Ø§ ÙŠØªÙ… Ø­ÙØ¸ Ø§Ù„ØªØºÙŠÙŠØ±Ø§Øª.",
-                                    "en":  "Please wait while changes are being saved."
-                                },
-    "edit_swal_no_changes_title":  {
-                                       "ar":  "ØªÙ†Ø¨ÙŠÙ‡",
-                                       "en":  "Notice"
-                                   },
-    "edit_swal_no_changes_text":  {
-                                      "ar":  "Ù„Ù… ÙŠØªÙ… Ø¥Ø¬Ø±Ø§Ø¡ Ø£ÙŠ ØªØ¹Ø¯ÙŠÙ„Ø§Øª Ø¹Ù„Ù‰ Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù…Ù†ØªØ¬.",
-                                      "en":  "No changes were made to the product data."
-                                  },
-    "edit_swal_success_text":  {
-                                   "ar":  "ØªÙ… ØªØ­Ø¯ÙŠØ« Ø§Ù„Ù…Ù†ØªØ¬ Ø¨Ù†Ø¬Ø§Ø­.",
-                                   "en":  "Product updated successfully."
-                               },
-    "edit_swal_update_failed_text":  {
-                                         "ar":  "ÙØ´Ù„ ØªØ­Ø¯ÙŠØ« Ø§Ù„Ù…Ù†ØªØ¬:",
-                                         "en":  "Failed to update product:"
-                                     },
-    "edit_err_img_required":  {
-                                  "ar":  "Ù…Ø·Ù„ÙˆØ¨ ØµÙˆØ±Ø© ÙˆØ§Ø­Ø¯Ø© Ù„Ù„Ù…Ù†ØªØ¬ Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„.",
-                                  "en":  "At least one product image is required."
-                              },
-    "edit_err_name_required":  {
-                                   "ar":  "Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬ Ù…Ø·Ù„ÙˆØ¨.",
-                                   "en":  "Product name is required."
-                               },
-    "edit_err_desc_required":  {
-                                   "ar":  "ÙˆØµÙ Ø§Ù„Ù…Ù†ØªØ¬ Ù…Ø·Ù„ÙˆØ¨ (Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 10 Ø£Ø­Ø±Ù).",
-                                   "en":  "Product description is required (at least 10 chars)."
-                               },
-    "edit_err_msg_required":  {
-                                  "ar":  "????? ???? ?????? ?????? (??? ????? 10 ????).",
-                                  "en":  "Service-provider message is required (at least 10 chars)."
-                              },
-    "edit_err_qty_required":  {
-                                  "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ ÙƒÙ…ÙŠØ© Ù…ØªØ§Ø­Ø© ØµØ§Ù„Ø­Ø© (Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 1).",
-                                  "en":  "Please enter a valid quantity (at least 1)."
-                              },
-    "edit_err_price_required":  {
-                                    "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ Ø³Ø¹Ø± Ù…Ù†ØªØ¬ ØµØ§Ù„Ø­.",
-                                    "en":  "Please enter a valid product price."
-                                },
-    "edit_err_compression":  {
-                                 "ar":  "ÙØ´Ù„ Ø¶ØºØ· Ø§Ù„ØµÙˆØ±Ø©.",
-                                 "en":  "Image compression failed."
-                             },
-    "edit_err_img_processing":  {
-                                    "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø± Ø­ØªÙ‰ ÙŠÙ†ØªÙ‡ÙŠ Ø¶ØºØ· Ø§Ù„ØµÙˆØ± Ù‚Ø¨Ù„ Ø§Ù„Ø­ÙØ¸.",
-                                    "en":  "Please wait for image compression to finish before saving."
-                                },
-    "edit2_page_title":  {
-                             "ar":  "ØªØ¹Ø¯ÙŠÙ„ Ø§Ù„Ø®Ø¯Ù…Ø©",
-                             "en":  "Edit Service"
-                         },
-    "edit2_images_heading":  {
-                                 "ar":  "ØµÙˆØ± Ø§Ù„Ø®Ø¯Ù…Ø©",
-                                 "en":  "Service Images"
-                             },
-    "edit2_image_hint":  {
-                             "ar":  "Ø§Ù„Ù…Ø·Ù„ÙˆØ¨: ØµÙˆØ±Ø© ÙˆØ§Ø­Ø¯Ø© Ù„Ù„Ø®Ø¯Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„. Ø§Ù„Ø¯Ø¹Ù…: jpg, png, webp.",
-                             "en":  "Required: At least one service image. Supported: jpg, png, webp."
-                         },
-    "edit2_label_product_name":  {
-                                     "ar":  "Ø§Ø³Ù… Ø§Ù„Ø®Ø¯Ù…Ø©",
-                                     "en":  "Service Name"
-                                 },
-    "edit2_placeholder_product_name":  {
-                                           "ar":  "Ø§ÙƒØªØ¨ Ø§Ø³Ù…Ù‹Ø§ ÙˆØ§Ø¶Ø­Ù‹Ø§ Ù„Ù„Ø®Ø¯Ù…Ø©...",
-                                           "en":  "Enter a clear service name..."
-                                       },
-    "edit2_label_description":  {
-                                    "ar":  "ÙˆØµÙ Ø§Ù„Ø®Ø¯Ù…Ø©",
-                                    "en":  "Service Description"
-                                },
-    "edit2_placeholder_description":  {
-                                          "ar":  "Ø§ÙƒØªØ¨ ÙˆØµÙÙ‹Ø§ Ø¬Ø°Ø§Ø¨Ù‹Ø§ ...",
-                                          "en":  "Write a catchy description..."
-                                      },
-    "edit2_label_seller_message":  {
-                                       "ar":  "Ø±Ø³Ø§Ù„Ø© Ù…Ù† Ù…Ù‚Ø¯Ù… Ø§Ù„Ø®Ø¯Ù…Ø©",
-                                       "en":  "Message from Provider"
-                                   },
-    "edit2_placeholder_seller_message":  {
-                                             "ar":  "Ø§ÙƒØªØ¨ Ø±Ø³Ø§Ù„Ø© Ù‚ØµÙŠØ±Ø© ÙˆÙ…Ù…ÙŠØ²Ø© ØªØ¸Ù‡Ø± Ù„Ù„Ø¹Ù…ÙŠÙ„...",
-                                             "en":  "Write a short distinguished message..."
-                                         },
-    "edit2_label_notes":  {
-                              "ar":  "Ù…Ù„Ø§Ø­Ø¸Ø§Øª",
-                              "en":  "Notes"
-                          },
-    "edit2_placeholder_notes":  {
-                                    "ar":  "Ø§Ù„Ù†Øµ Ù‡Ù†Ø§ Ù„Ø§ ÙŠØ¸Ù‡Ø± Ù„Ù„Ù…Ø´ØªØ±ÙŠ Ù‡Ùˆ Ø®Ø§Øµ Ø¨Ùƒ Ø§Ù†Øª",
-                                    "en":  "Private notes, not visible to buyer"
-                                },
-    "edit2_btn_save":  {
-                           "ar":  "Ø­ÙØ¸ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„Ø§Øª",
-                           "en":  "Save Changes"
-                       },
-    "edit2_err_img_required":  {
-                                   "ar":  "Ù…Ø·Ù„ÙˆØ¨ ØµÙˆØ±Ø© ÙˆØ§Ø­Ø¯Ø© Ù„Ù„Ø®Ø¯Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„.",
-                                   "en":  "At least one service image is required."
-                               },
-    "edit2_err_name_required":  {
-                                    "ar":  "Ø§Ø³Ù… Ø§Ù„Ø®Ø¯Ù…Ø© Ù…Ø·Ù„ÙˆØ¨.",
-                                    "en":  "Service name is required."
-                                },
-    "edit2_err_desc_required":  {
-                                    "ar":  "ÙˆØµÙ Ø§Ù„Ø®Ø¯Ù…Ø© Ù…Ø·Ù„ÙˆØ¨ (Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 10 Ø£Ø­Ø±Ù).",
-                                    "en":  "Service description is required (at least 10 chars)."
-                                },
-    "edit2_err_msg_required":  {
-                                   "ar":  "Ø±Ø³Ø§Ù„Ø© Ù…Ù‚Ø¯Ù… Ø§Ù„Ø®Ø¯Ù…Ø© Ù…Ø·Ù„ÙˆØ¨Ø© (Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 10 Ø£Ø­Ø±Ù).",
-                                   "en":  "Provider message is required (at least 10 chars)."
-                               },
-    "edit2_swal_updating_title":  {
-                                      "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø®Ø¯Ù…Ø©...",
-                                      "en":  "Updating Service..."
-                                  },
-    "edit2_swal_updating_text":  {
-                                     "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø± Ø¨ÙŠÙ†Ù…Ø§ ÙŠØªÙ… Ø­ÙØ¸ Ø§Ù„ØªØºÙŠÙŠØ±Ø§Øª.",
-                                     "en":  "Please wait while changes are being saved."
-                                 },
-    "edit2_swal_no_changes_title":  {
-                                        "ar":  "ØªÙ†Ø¨ÙŠÙ‡",
-                                        "en":  "Notice"
-                                    },
-    "edit2_swal_no_changes_text":  {
-                                       "ar":  "Ù„Ù… ÙŠØªÙ… Ø¥Ø¬Ø±Ø§Ø¡ Ø£ÙŠ ØªØ¹Ø¯ÙŠÙ„Ø§Øª Ø¹Ù„Ù‰ Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ø®Ø¯Ù…Ø©.",
-                                       "en":  "No changes were made to the service data."
-                                   },
-    "edit2_swal_success_text":  {
-                                    "ar":  "ØªÙ… ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø®Ø¯Ù…Ø© Ø¨Ù†Ø¬Ø§Ø­.",
-                                    "en":  "Service updated successfully."
-                                },
-    "edit2_swal_update_failed_text":  {
-                                          "ar":  "ÙØ´Ù„ ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø®Ø¯Ù…Ø©:",
-                                          "en":  "Failed to update service:"
-                                      },
-    "pv_back":  {
-                    "ar":  "Ø±Ø¬ÙˆØ¹",
-                    "en":  "Back"
-                },
-    "pv_product_image_alt":  {
-                                 "ar":  "ØµÙˆØ±Ø© Ø§Ù„Ù…Ù†ØªØ¬",
-                                 "en":  "Product Image"
-                             },
-    "pv_available_quantity":  {
-                                  "ar":  "Ø§Ù„ÙƒÙ…ÙŠØ© Ø§Ù„Ù…ØªØ§Ø­Ø©:",
-                                  "en":  "Available Quantity:"
-                              },
-    "pv_original_price":  {
-                              "ar":  "Ø§Ù„Ø³Ø¹Ø± Ù‚Ø¨Ù„ Ø§Ù„Ø®ØµÙ…:",
-                              "en":  "Price before discount:"
-                          },
-    "pv_unit_price":  {
-                          "ar":  "Ø³Ø¹Ø± Ø§Ù„Ù‚Ø·Ø¹Ø©:",
-                          "en":  "Price per piece:"
-                      },
-    "pv_description_header":  {
-                                  "ar":  "ÙˆØµÙ Ø§Ù„Ù…Ù†ØªØ¬",
-                                  "en":  "Product Description"
-                              },
-    "pv_admin_seller_title":  {
-                                  "ar":  "?????? ???? ??????? ????? ?????? ???:",
-                                  "en":  "Information visible to Admin and Service Provider only:"
-                              },
-    "pv_label_name":  {
-                          "ar":  "Ø§Ù„Ø§Ø³Ù…:",
-                          "en":  "Name:"
-                      },
-    "pv_label_key":  {
-                         "ar":  "Ø§Ù„ÙƒÙŠ (Key):",
-                         "en":  "Key:"
-                     },
-    "pv_label_main_category":  {
-                                   "ar":  "Ø§Ù„ÙØ¦Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©:",
-                                   "en":  "Main Category:"
-                               },
-    "pv_label_sub_category":  {
-                                  "ar":  "Ø§Ù„ÙØ¦Ø© Ø§Ù„ÙØ±Ø¹ÙŠØ©:",
-                                  "en":  "Sub Category:"
-                              },
-    "pv_label_real_price":  {
-                                "ar":  "Ø³Ø¹Ø± Ø§Ù„ØªØ·Ø¨ÙŠÙ‚:",
-                                "en":  "App Price:"
-                            },
-    "pv_label_heavy_load":  {
-                                "ar":  "ÙŠØ­ØªØ§Ø¬ Ø³ÙŠØ§Ø±Ø©:",
-                                "en":  "Needs a car:"
-                            },
-    "pv_seller_message_header":  {
-                                     "ar":  "????? ?? ???? ??????",
-                                     "en":  "Message from Service Provider"
-                                 },
-    "pv_decrease_quantity":  {
-                                 "ar":  "Ø¥Ù†Ù‚Ø§Øµ Ø§Ù„ÙƒÙ…ÙŠØ©",
-                                 "en":  "Decrease Quantity"
-                             },
-    "pv_increase_quantity":  {
-                                 "ar":  "Ø²ÙŠØ§Ø¯Ø© Ø§Ù„ÙƒÙ…ÙŠØ©",
-                                 "en":  "Increase Quantity"
-                             },
-    "pv_selected_quantity_label":  {
-                                       "ar":  "Ø§Ù„ÙƒÙ…ÙŠØ© Ø§Ù„Ù…Ø®ØªØ§Ø±Ø©",
-                                       "en":  "Selected Quantity"
-                                   },
-    "pv_total_price_label":  {
-                                 "ar":  "Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ:",
-                                 "en":  "Total:"
-                             },
-    "pv_add_to_cart":  {
-                           "ar":  "Ø¥Ø¶Ø§ÙØ© Ø¥Ù„Ù‰ Ø§Ù„Ø³Ù„Ø©",
-                           "en":  "Add to Cart"
-                       },
-    "pv_no_description":  {
-                              "ar":  "Ù„Ø§ ÙŠÙˆØ¬Ø¯ ÙˆØµÙ Ù…ØªØ§Ø­.",
-                              "en":  "No description available."
-                          },
-    "pv_no_seller_message":  {
-                                 "ar":  "?? ???? ????? ?? ???? ??????.",
-                                 "en":  "No message from service provider."
-                             },
-    "pv_not_available":  {
-                             "ar":  "ØºÙŠØ± Ù…ØªÙˆÙØ±",
-                             "en":  "Not available"
-                         },
-    "pv_currency_egp":  {
-                            "ar":  "Ø¬Ù†ÙŠÙ‡",
-                            "en":  "EGP"
-                        },
-    "pv_max_quantity_reached":  {
-                                    "ar":  "ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ Ù„Ù„ÙƒÙ…ÙŠØ© Ø§Ù„Ù…ØªØ§Ø­Ø©.",
-                                    "en":  "Maximum available quantity reached."
-                                },
-    "pv_thumbnail_error":  {
-                               "ar":  "ÙØ´Ù„ ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ù…ØµØºØ±Ø©:",
-                               "en":  "Failed to load thumbnail:"
-                           },
-    "pv_load_failed":  {
-                           "ar":  "ÙØ´Ù„ Ø§Ù„ØªØ­Ù…ÙŠÙ„",
-                           "en":  "Load failed"
-                       },
-    "pv_loading_msg":  {
-                           "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„ØªØ­Ù…ÙŠÙ„...",
-                           "en":  "Loading..."
-                       },
-    "pv_error_init":  {
-                          "ar":  "Ø®Ø·Ø£ ÙÙŠ ØªÙ‡ÙŠØ¦Ø© Ù†Ø§ÙØ°Ø© Ø¹Ø±Ø¶ Ø§Ù„Ù…Ù†ØªØ¬:",
-                          "en":  "Error initializing product view window:"
-                      },
-    "pv_no_product_data":  {
-                               "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ø¨ÙŠØ§Ù†Ø§Øª Ù…Ù†ØªØ¬ ÙÙŠ Ù…Ø¯ÙŠØ± Ø§Ù„Ø­Ø§Ù„Ø©",
-                               "en":  "No product data in state manager"
-                           },
-    "pv_error_fetching_categories":  {
-                                         "ar":  "ÙØ´Ù„ ØªØ­Ù…ÙŠÙ„ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„ÙØ¦Ø§Øª",
-                                         "en":  "Failed to load categories list"
-                                     },
-    "pv_in_stock":  {
-                        "ar":  "Ù…ØªÙˆÙØ±",
-                        "en":  "In Stock"
-                    },
-    "pv_sold_by":  {
-                       "ar":  "Ø¨ÙˆØ§Ø³Ø·Ø©",
-                       "en":  "Sold by"
-                   },
-    "pv_view_portfolio":  {
-                              "ar":  "Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ¬Ø±",
-                              "en":  "Visit Store"
-                          },
-    "pv_savings_label":  {
-                             "ar":  "ÙˆÙØ±Øª:",
-                             "en":  "You Saved:"
-                         },
-    "pv_edit_product":  {
-                            "ar":  "ØªØ¹Ø¯ÙŠÙ„ Ø§Ù„Ù…Ù†ØªØ¬",
-                            "en":  "Edit Product"
-                        },
-    "pv_delete_product":  {
-                              "ar":  "Ø­Ø°Ù Ø§Ù„Ù…Ù†ØªØ¬",
-                              "en":  "Delete Product"
-                          },
-    "view2_desc_header":  {
-                              "ar":  "ÙˆØµÙ Ø§Ù„Ø®Ø¯Ù…Ø©",
-                              "en":  "Service Description"
-                          },
-    "view2_seller_msg_header":  {
-                                    "ar":  "????? ?? ???? ??????",
-                                    "en":  "Message from Service Provider"
-                                },
-    "view2_order_box_title":  {
-                                  "ar":  "Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ø§Ø±Ø³Ø§Ù„ ( Ø§Ø¶Ù Ù…Ù„Ø§Ø­Ø¸Ø§ØªÙƒ Ø§Ùˆ ØµÙˆØ± Ø§Ùˆ ÙƒÙ„Ø§Ù‡Ù…Ø§ Ù„ÙˆØµÙ Ø·Ù„Ø¨Ùƒ Ø¨Ø¯Ù‚Ø© )",
-                                  "en":  "Order Details (Add notes, photos, or both to describe your request accurately)"
-                              },
-    "view2_note_placeholder":  {
-                                   "ar":  "Ø£Ø¶Ù Ù…Ù„Ø§Ø­Ø¸Ø§ØªÙƒ ÙˆÙˆØµÙ Ø¯Ù‚ÙŠÙ‚ Ù„Ø·Ù„Ø¨Ùƒ (Ø¨Ø­Ø¯ Ø£Ù‚ØµÙ‰ 300 Ø­Ø±Ù)",
-                                   "en":  "Add your notes and precise description (max 300 chars)"
-                               },
-    "view2_upload_hint":  {
-                              "ar":  "(Ø¨Ø­Ø¯ Ø£Ù‚ØµÙ‰ 4 ØµÙˆØ± - 5 Ù…ÙŠØ¬Ø§Ø¨Ø§ÙŠØª Ù„ÙƒÙ„ ØµÙˆØ±Ø©)",
-                              "en":  "(Max 4 images - 5MB per image)"
-                          },
-    "view2_warn_no_content":  {
-                                  "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¶Ø§ÙØ© Ù…Ù„Ø§Ø­Ø¸Ø© Ø£Ùˆ ØµÙˆØ±Ø© ÙˆØ§Ø­Ø¯Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„",
-                                  "en":  "Please add at least a note or one image"
-                              },
-    "view2_err_no_product":  {
-                                 "ar":  "Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù…Ù†ØªØ¬",
-                                 "en":  "Product data not found"
-                             },
-    "view2_swal_sending_text":  {
-                                    "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø± Ø¨ÙŠÙ†Ù…Ø§ Ù†Ù‚ÙˆÙ… Ø¨Ø±ÙØ¹ Ø§Ù„ØµÙˆØ± ÙˆØ¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ø·Ù„Ø¨",
-                                    "en":  "Please wait while we upload images and create the order"
-                                },
-    "view2_err_create_order":  {
-                                   "ar":  "ÙØ´Ù„ Ø¥Ù†Ø´Ø§Ø¡ Ø§Ù„Ø·Ù„Ø¨",
-                                   "en":  "Failed to create order"
-                               },
-    "view2_no_desc":  {
-                          "ar":  "Ù„Ø§ ÙŠÙˆØ¬Ø¯ ÙˆØµÙ Ù…ØªØ§Ø­.",
-                          "en":  "No description available."
-                      },
-    "view2_no_seller_msg":  {
-                                "ar":  "?? ???? ????? ?? ???? ??????.",
-                                "en":  "No service-provider message."
-                            },
-    "view2_swal_pc_upload_hint":  {
-                                      "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø²Ø± Ø§Ø®ØªÙŠØ§Ø± Ø§Ù„Ù…Ù„ÙØ§Øª Ø¹Ù„Ù‰ Ø§Ù„ÙƒÙ…Ø¨ÙŠÙˆØªØ±",
-                                      "en":  "Please use the \u0027Pick Images\u0027 button on PC"
-                                  },
-    "view2_btn_capture_confirm":  {
-                                      "ar":  "Ø§Ù„ØªÙ‚Ø§Ø· Ø§Ù„ØµÙˆØ±Ø©",
-                                      "en":  "Capture Photo"
-                                  },
-    "portfolio_title":  {
-                            "ar":  "Ù…Ù„Ù Ø§Ù„ØªØ§Ø¬Ø± | Suez Bazaar",
-                            "en":  "Merchant Profile | Suez Bazaar"
-                        },
-    "port_search_within":  {
-                               "ar":  "Ø¨Ø­Ø«",
-                               "en":  "Search"
-                           },
-    "merchant_image_alt":  {
-                               "ar":  "ØµÙˆØ±Ø© Ø§Ù„ØªØ§Ø¬Ø±",
-                               "en":  "Merchant Image"
-                           },
-    "ratings_count":  {
-                          "ar":  "({count} ØªÙ‚ÙŠÙŠÙ…)",
-                          "en":  "({count} ratings)"
-                      },
-    "rating_label":  {
-                         "ar":  "ØªÙ‚ÙŠÙŠÙ…",
-                         "en":  "Rate"
-                     },
-    "reviews_title":  {
-                          "ar":  "Ø§Ù„ØªÙ‚ÙŠÙŠÙ…Ø§Øª ÙˆØ§Ù„Ù…Ø±Ø§Ø¬Ø¹Ø§Øª",
-                          "en":  "Ratings \u0026 Reviews"
-                      },
-    "loading_reviews":  {
-                            "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØªÙ‚ÙŠÙŠÙ…Ø§Øª...",
-                            "en":  "Loading reviews..."
-                        },
-    "merchant_not_found":  {
-                               "ar":  "Ø¹Ø°Ø±Ø§Ù‹ØŒ Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ù‡Ø°Ø§ Ø§Ù„ØªØ§Ø¬Ø±.",
-                               "en":  "Sorry, this merchant was not found."
-                           },
-    "back_to_home":  {
-                         "ar":  "Ø§Ù„Ø¹ÙˆØ¯Ø© Ù„Ù„Ø±Ø¦ÙŠØ³ÙŠØ©",
-                         "en":  "Back to Home"
-                     },
-    "no_reviews_yet":  {
-                           "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ø±Ø§Ø¬Ø¹Ø§Øª Ø¨Ø¹Ø¯.",
-                           "en":  "No reviews yet."
-                       },
-    "port_rate_note_placeholder":  {
-                                       "ar":  "Ø£ÙƒØªØ¨ Ù…Ù„Ø§Ø­Ø¸Ø§ØªÙƒ Ù‡Ù†Ø§...",
-                                       "en":  "Write your notes here..."
-                                   },
-    "port_rate_submit_btn":  {
-                                 "ar":  "Ø¥Ø±Ø³Ø§Ù„ Ø§Ù„ØªÙ‚ÙŠÙŠÙ…",
-                                 "en":  "Submit Rating"
-                             },
-    "port_rate_cancel_btn":  {
-                                 "ar":  "Ø¥Ù„ØºØ§Ø¡",
-                                 "en":  "Cancel"
-                             },
-    "port_rate_select_stars":  {
-                                   "ar":  "Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ø®ØªÙŠØ§Ø± Ø¹Ø¯Ø¯ Ø§Ù„Ù†Ø¬ÙˆÙ…",
-                                   "en":  "Please select a star rating"
-                               },
-    "port_product_status_pending":  {
-                                        "ar":  "Ù‚ÙŠØ¯ Ø§Ù„Ù…Ø±Ø§Ø¬Ø¹Ø©",
-                                        "en":  "Under Review"
-                                    },
-    "port_product_edit":  {
-                              "ar":  "ØªØ¹Ø¯ÙŠÙ„",
-                              "en":  "Edit"
-                          },
-    "port_product_delete":  {
-                                "ar":  "Ø­Ø°Ù",
-                                "en":  "Delete"
-                            },
-    "port_featured_title":  {
-                                "ar":  "Ù…Ù†ØªØ¬Ø§Øª Ù…Ù…ÙŠØ²Ø©",
-                                "en":  "Featured Products"
-                            },
-    "port_feature_checkbox_tooltip":  {
-                                          "ar":  "Ø¥Ø¯Ø§Ø±Ø© Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ù…ÙŠØ²Ø© Ù„Ù„Ø¨Ø§Ø¦Ø¹",
-                                          "en":  "Manage Merchant Featured Products"
-                                      },
-    "port_filter_featured":  {
-                                 "ar":  "Ø¹Ø±Ø¶ Ø§Ù„Ù…Ù…ÙŠØ²Ø© ÙÙ‚Ø·",
-                                 "en":  "Show Featured Only"
-                             },
-    "port_all_products":  {
-                              "ar":  "Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª",
-                              "en":  "All Products"
-                          },
-    "port_no_featured_found":  {
-                                   "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ù…Ù…ÙŠØ²Ø© Ù„Ø¹Ø±Ø¶Ù‡Ø§ Ø­Ø§Ù„ÙŠØ§Ù‹",
-                                   "en":  "No featured products to display currently"
-                               },
-    "port_delete_error":  {
-                              "ar":  "Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„Ø­Ø°Ù: {msg}",
-                              "en":  "Error while deleting: {msg}"
-                          },
-    "port_add_product_modal_title":  {
-                                         "ar":  "ØªØ®ØµØµØ§Øª Ø§Ù„Ù†Ø´Ø§Ø·",
-                                         "en":  "Business Specialties"
-                                     },
-    "port_edit_category_title":  {
-                                     "ar":  "Ø§Ù„Ø³ÙˆÙ‚ Ø§Ù„Ø­Ø§Ù„ÙŠ Ù„Ù„Ù…Ù†ØªØ¬",
-                                     "en":  "Current Product Category"
-                                 },
-    "port_product_not_found":  {
-                                   "ar":  "Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù…Ù†ØªØ¬",
-                                   "en":  "Product data not found"
-                               }
+{
+    "add1_page_title": {
+        "ar": "إضافة منتج جديد",
+        "en": "Add New Product"
+    },
+    "add1_images_heading": {
+        "ar": "صور المنتج",
+        "en": "Product Images"
+    },
+    "add1_image_hint": {
+        "ar": "المطلوب: صورة واحدة على الأقل. الدعم: jpg, png, webp.",
+        "en": "Required: At least one image. Supported: jpg, png, webp."
+    },
+    "add1_label_product_name": {
+        "ar": "اسم المنتج",
+        "en": "Product Name"
+    },
+    "add1_placeholder_product_name": {
+        "ar": "كلمات اسم المنتج هامة لظهور منتجك في البحث.",
+        "en": "Product name keywords are important for search visibility."
+    },
+    "add1_label_description": {
+        "ar": "وصف المنتج",
+        "en": "Product Description"
+    },
+    "add1_placeholder_description": {
+        "ar": "اكتب وصفًا جذابًا للمنتج...",
+        "en": "Write a catchy description..."
+    },
+    "add1_label_seller_message": {
+        "ar": "رسالة ترحيبية",
+        "en": "Welcome Message"
+    },
+    "add1_placeholder_seller_message": {
+        "ar": "رسالة قصيرة تظهر للعميل...",
+        "en": "Short message displayed to the customer..."
+    },
+    "add1_label_notes": {
+        "ar": "ملاحظات",
+        "en": "Notes"
+    },
+    "add1_placeholder_notes": {
+        "ar": "هذا النص لا يظهر للمشتري",
+        "en": "This text is not visible to the buyer"
+    },
+    "add1_label_quantity": {
+        "ar": "الكمية",
+        "en": "Quantity"
+    },
+    "add1_label_price": {
+        "ar": "السعر الحالي",
+        "en": "Current Price"
+    },
+    "add1_label_original_price": {
+        "ar": "السعر قبل الخصم",
+        "en": "Price Before Discount"
+    },
+    "add1_placeholder_number": {
+        "ar": "ادخل رقم",
+        "en": "Enter Number"
+    },
+    "add1_label_real_price": {
+        "ar": "سعر التطبيق",
+        "en": "App Price"
+    },
+    "add1_checkbox_heavy_load": {
+        "ar": "يحتاج إلى سيارة في التوصيل",
+        "en": "Requires vehicle for delivery"
+    },
+    "add1_submit_btn_initial": {
+        "ar": "اضف المنتج الآن",
+        "en": "Add Product Now"
+    },
+    "add1_submit_btn_saving": {
+        "ar": "جاري الحفظ والرفع...",
+        "en": "Saving and Uploading..."
+    },
+    "add1_submit_btn_ready": {
+        "ar": "حفظ ونشر المنتج الآن",
+        "en": "Save and Publish Product Now"
+    },
+    "add1_err_img_required": {
+        "ar": "مطلوب صورة واحدة للمنتج على الأقل.",
+        "en": "At least one product image is required."
+    },
+    "add1_err_name_required": {
+        "ar": "اسم المنتج مطلوب.",
+        "en": "Product name is required."
+    },
+    "add1_err_desc_required": {
+        "ar": "وصف المنتج مطلوب (على الأقل 10 أحرف).",
+        "en": "Product description is required (at least 10 chars)."
+    },
+    "add1_err_msg_required": {
+        "ar": "رسالة مقدم الخدمة مطلوبة (على الأقل 10 أحرف).",
+        "en": "Service-provider message is required (at least 10 chars)."
+    },
+    "add1_err_qty_required": {
+        "ar": "يرجى إدخال كمية متاحة صالحة (على الأقل 1).",
+        "en": "Please enter a valid quantity (at least 1)."
+    },
+    "add1_err_price_required": {
+        "ar": "يرجى إدخال سعر منتج صالح.",
+        "en": "Please enter a valid product price."
+    },
+    "add1_swal_adding_title": {
+        "ar": "جاري إضافة المنتج...",
+        "en": "Adding Product..."
+    },
+    "add1_swal_uploading_text": {
+        "ar": "يرجى الانتظار بينما يتم رفع الصور.",
+        "en": "Please wait while images are uploading."
+    },
+    "add1_swal_success_text": {
+        "ar": "تم حفظ المنتج وإرساله للإدارة بنجاح لمراجعته ونشره.",
+        "en": "Product saved and sent to admin successfully for review and publishing."
+    },
+    "add1_swal_error_text": {
+        "ar": "حدث خطأ أثناء إضافة المنتج. يرجى المحاولة مرة أخرى.",
+        "en": "An error occurred while adding the product. Please try again."
+    },
+    "add2_page_title": {
+        "ar": "إضافة خدمة جديدة",
+        "en": "Add New Service"
+    },
+    "add2_images_heading": {
+        "ar": "صور الخدمة",
+        "en": "Service Images"
+    },
+    "add2_image_hint": {
+        "ar": "المطلوب: صورة واحدة للخدمة على الأقل. الدعم: jpg, png, webp.",
+        "en": "Required: At least one service image. Supported: jpg, png, webp."
+    },
+    "add2_label_product_name": {
+        "ar": "اسم الخدمة",
+        "en": "Service Name"
+    },
+    "add2_placeholder_product_name": {
+        "ar": "اكتب اسمًا واضحًا للخدمة...",
+        "en": "Enter a clear service name..."
+    },
+    "add2_label_description": {
+        "ar": "وصف الخدمة",
+        "en": "Service Description"
+    },
+    "add2_placeholder_description": {
+        "ar": "اكتب وصفًا جذابًا للخدمة...",
+        "en": "Write a catchy service description..."
+    },
+    "add2_label_seller_message": {
+        "ar": "رسالة من مقدم الخدمة",
+        "en": "Message from Provider"
+    },
+    "add2_placeholder_seller_message": {
+        "ar": "اكتب رسالة قصيرة ومميزة تظهر للعميل...",
+        "en": "Write a short message to the customer..."
+    },
+    "add2_label_notes": {
+        "ar": "ملاحظات",
+        "en": "Notes"
+    },
+    "add2_placeholder_notes": {
+        "ar": "النص هنا لا يظهر للمشتري هو خاص بك انت",
+        "en": "This text is private and not visible to the buyer"
+    },
+    "add2_btn_submit": {
+        "ar": "اضف الخدمة الآن",
+        "en": "Add Service Now"
+    },
+    "add2_err_img_required": {
+        "ar": "مطلوب صورة واحدة للخدمة على الأقل.",
+        "en": "At least one service image is required."
+    },
+    "add2_err_name_required": {
+        "ar": "اسم الخدمة مطلوب.",
+        "en": "Service name is required."
+    },
+    "add2_err_desc_required": {
+        "ar": "وصف الخدمة مطلوب (على الأقل 10 أحرف).",
+        "en": "Service description is required (at least 10 chars)."
+    },
+    "add2_err_msg_required": {
+        "ar": "رسالة مقدم الخدمة مطلوبة (على الأقل 10 أحرف).",
+        "en": "Provider message is required (at least 10 chars)."
+    },
+    "add2_swal_adding_title": {
+        "ar": "جاري إضافة الخدمة...",
+        "en": "Adding Service..."
+    },
+    "add2_swal_uploading_text": {
+        "ar": "يرجى الانتظار بينما يتم رفع الصور.",
+        "en": "Please wait while images are uploading."
+    },
+    "add2_swal_success_text": {
+        "ar": "تم حفظ الخدمة وإرسالها للإدارة بنجاح لمراجعتها ونشرها.",
+        "en": "Service saved and sent to admin for review/publish."
+    },
+    "add2_swal_error_text": {
+        "ar": "حدث خطأ أثناء إضافة الخدمة. يرجى المحاولة مرة أخرى.",
+        "en": "An error occurred while adding the service. Please try again."
+    },
+    "add2_swal_cancel_delete": {
+        "ar": "تراجع",
+        "en": "Go Back"
+    },
+    "edit_page_title": {
+        "ar": "تعديل المنتج",
+        "en": "Edit Product"
+    },
+    "edit_images_heading": {
+        "ar": "صور المنتج",
+        "en": "Product Images"
+    },
+    "edit_image_hint": {
+        "ar": "المطلوب: صورة واحدة على الأقل. الدعم: jpg, png, webp.",
+        "en": "Required: At least one image. Supported: jpg, png, webp."
+    },
+    "edit_label_product_name": {
+        "ar": "اسم المنتج",
+        "en": "Product Name"
+    },
+    "edit_placeholder_product_name": {
+        "ar": "اكتب اسمًا واضحًا للمنتج...",
+        "en": "Enter a clear product name..."
+    },
+    "edit_label_description": {
+        "ar": "الوصف",
+        "en": "Description"
+    },
+    "edit_placeholder_description": {
+        "ar": "اكتب وصفًا جذابًا ...",
+        "en": "Write a catchy description..."
+    },
+    "edit_label_seller_message": {
+        "ar": "رسالة من مقدم الخدمة",
+        "en": "Message from Service Provider"
+    },
+    "edit_placeholder_seller_message": {
+        "ar": "اكتب رسالة قصيرة ومميزة تظهر للمشتري...",
+        "en": "Write a short distinctive message for the buyer..."
+    },
+    "edit_label_notes": {
+        "ar": "ملاحظات",
+        "en": "Notes"
+    },
+    "edit_placeholder_notes": {
+        "ar": "النص هنا لا يظهر للمشتري هو خاص بك انت",
+        "en": "This text is private and not visible to the buyer"
+    },
+    "edit_label_quantity": {
+        "ar": "الكمية المتاحة",
+        "en": "Available Quantity"
+    },
+    "edit_placeholder_quantity": {
+        "ar": "مثال: 50",
+        "en": "Ex: 50"
+    },
+    "edit_label_price": {
+        "ar": "سعر القطعة",
+        "en": "Unit Price"
+    },
+    "edit_placeholder_price": {
+        "ar": "بالجنيه",
+        "en": "In Currency"
+    },
+    "edit_label_original_price": {
+        "ar": "السعر قبل الخصم",
+        "en": "Price Before Discount"
+    },
+    "edit_placeholder_number": {
+        "ar": "ادخل رقم",
+        "en": "Enter Number"
+    },
+    "edit_label_real_price": {
+        "ar": "سعر التطبيق",
+        "en": "App Price"
+    },
+    "edit_checkbox_heavy_load": {
+        "ar": "يحتاج إلى سيارة في التوصيل",
+        "en": "Requires vehicle for delivery"
+    },
+    "edit_btn_save": {
+        "ar": "حفظ التعديلات",
+        "en": "Save Changes"
+    },
+    "edit_swal_updating_title": {
+        "ar": "جاري تحديث المنتج...",
+        "en": "Updating Product..."
+    },
+    "edit_swal_updating_text": {
+        "ar": "يرجى الانتظار بينما يتم حفظ التغييرات.",
+        "en": "Please wait while changes are being saved."
+    },
+    "edit_swal_no_changes_title": {
+        "ar": "تنبيه",
+        "en": "Notice"
+    },
+    "edit_swal_no_changes_text": {
+        "ar": "لم يتم إجراء أي تعديلات على بيانات المنتج.",
+        "en": "No changes were made to the product data."
+    },
+    "edit_swal_success_text": {
+        "ar": "تم تحديث المنتج بنجاح.",
+        "en": "Product updated successfully."
+    },
+    "edit_swal_update_failed_text": {
+        "ar": "فشل تحديث المنتج:",
+        "en": "Failed to update product:"
+    },
+    "edit_err_img_required": {
+        "ar": "مطلوب صورة واحدة للمنتج على الأقل.",
+        "en": "At least one product image is required."
+    },
+    "edit_err_name_required": {
+        "ar": "اسم المنتج مطلوب.",
+        "en": "Product name is required."
+    },
+    "edit_err_desc_required": {
+        "ar": "وصف المنتج مطلوب (على الأقل 10 أحرف).",
+        "en": "Product description is required (at least 10 chars)."
+    },
+    "edit_err_msg_required": {
+        "ar": "رسالة مقدم الخدمة مطلوبة (على الأقل 10 أحرف).",
+        "en": "Service-provider message is required (at least 10 chars)."
+    },
+    "edit_err_qty_required": {
+        "ar": "يرجى إدخال كمية متاحة صالحة (على الأقل 1).",
+        "en": "Please enter a valid quantity (at least 1)."
+    },
+    "edit_err_price_required": {
+        "ar": "يرجى إدخال سعر منتج صالح.",
+        "en": "Please enter a valid product price."
+    },
+    "edit_err_compression": {
+        "ar": "فشل ضغط الصورة.",
+        "en": "Image compression failed."
+    },
+    "edit_err_img_processing": {
+        "ar": "يرجى الانتظار حتى ينتهي ضغط الصور قبل الحفظ.",
+        "en": "Please wait for image compression to finish before saving."
+    },
+    "edit2_page_title": {
+        "ar": "تعديل الخدمة",
+        "en": "Edit Service"
+    },
+    "edit2_images_heading": {
+        "ar": "صور الخدمة",
+        "en": "Service Images"
+    },
+    "edit2_image_hint": {
+        "ar": "المطلوب: صورة واحدة للخدمة على الأقل. الدعم: jpg, png, webp.",
+        "en": "Required: At least one service image. Supported: jpg, png, webp."
+    },
+    "edit2_label_product_name": {
+        "ar": "اسم الخدمة",
+        "en": "Service Name"
+    },
+    "edit2_placeholder_product_name": {
+        "ar": "اكتب اسمًا واضحًا للخدمة...",
+        "en": "Enter a clear service name..."
+    },
+    "edit2_label_description": {
+        "ar": "وصف الخدمة",
+        "en": "Service Description"
+    },
+    "edit2_placeholder_description": {
+        "ar": "اكتب وصفًا جذابًا ...",
+        "en": "Write a catchy description..."
+    },
+    "edit2_label_seller_message": {
+        "ar": "رسالة من مقدم الخدمة",
+        "en": "Message from Provider"
+    },
+    "edit2_placeholder_seller_message": {
+        "ar": "اكتب رسالة قصيرة ومميزة تظهر للعميل...",
+        "en": "Write a short distinguished message..."
+    },
+    "edit2_label_notes": {
+        "ar": "ملاحظات",
+        "en": "Notes"
+    },
+    "edit2_placeholder_notes": {
+        "ar": "النص هنا لا يظهر للمشتري هو خاص بك انت",
+        "en": "Private notes, not visible to buyer"
+    },
+    "edit2_btn_save": {
+        "ar": "حفظ التعديلات",
+        "en": "Save Changes"
+    },
+    "edit2_err_img_required": {
+        "ar": "مطلوب صورة واحدة للخدمة على الأقل.",
+        "en": "At least one service image is required."
+    },
+    "edit2_err_name_required": {
+        "ar": "اسم الخدمة مطلوب.",
+        "en": "Service name is required."
+    },
+    "edit2_err_desc_required": {
+        "ar": "وصف الخدمة مطلوب (على الأقل 10 أحرف).",
+        "en": "Service description is required (at least 10 chars)."
+    },
+    "edit2_err_msg_required": {
+        "ar": "رسالة مقدم الخدمة مطلوبة (على الأقل 10 أحرف).",
+        "en": "Provider message is required (at least 10 chars)."
+    },
+    "edit2_swal_updating_title": {
+        "ar": "جاري تحديث الخدمة...",
+        "en": "Updating Service..."
+    },
+    "edit2_swal_updating_text": {
+        "ar": "يرجى الانتظار بينما يتم حفظ التغييرات.",
+        "en": "Please wait while changes are being saved."
+    },
+    "edit2_swal_no_changes_title": {
+        "ar": "تنبيه",
+        "en": "Notice"
+    },
+    "edit2_swal_no_changes_text": {
+        "ar": "لم يتم إجراء أي تعديلات على بيانات الخدمة.",
+        "en": "No changes were made to the service data."
+    },
+    "edit2_swal_success_text": {
+        "ar": "تم تحديث الخدمة بنجاح.",
+        "en": "Service updated successfully."
+    },
+    "edit2_swal_update_failed_text": {
+        "ar": "فشل تحديث الخدمة:",
+        "en": "Failed to update service:"
+    },
+    "pv_back": {
+        "ar": "رجوع",
+        "en": "Back"
+    },
+    "pv_product_image_alt": {
+        "ar": "صورة المنتج",
+        "en": "Product Image"
+    },
+    "pv_available_quantity": {
+        "ar": "الكمية المتاحة:",
+        "en": "Available Quantity:"
+    },
+    "pv_original_price": {
+        "ar": "السعر قبل الخصم:",
+        "en": "Price before discount:"
+    },
+    "pv_unit_price": {
+        "ar": "سعر القطعة:",
+        "en": "Price per piece:"
+    },
+    "pv_description_header": {
+        "ar": "وصف المنتج",
+        "en": "Product Description"
+    },
+    "pv_admin_seller_title": {
+        "ar": "معلومات تظهر للإدارة ومقدم الخدمة فقط:",
+        "en": "Information visible to Admin and Service Provider only:"
+    },
+    "pv_label_name": {
+        "ar": "الاسم:",
+        "en": "Name:"
+    },
+    "pv_label_key": {
+        "ar": "الكي (Key):",
+        "en": "Key:"
+    },
+    "pv_label_main_category": {
+        "ar": "الفئة الرئيسية:",
+        "en": "Main Category:"
+    },
+    "pv_label_sub_category": {
+        "ar": "الفئة الفرعية:",
+        "en": "Sub Category:"
+    },
+    "pv_label_real_price": {
+        "ar": "سعر التطبيق:",
+        "en": "App Price:"
+    },
+    "pv_label_heavy_load": {
+        "ar": "يحتاج سيارة:",
+        "en": "Needs a car:"
+    },
+    "pv_seller_message_header": {
+        "ar": "رسالة من مقدم الخدمة",
+        "en": "Message from Service Provider"
+    },
+    "pv_decrease_quantity": {
+        "ar": "إنقاص الكمية",
+        "en": "Decrease Quantity"
+    },
+    "pv_increase_quantity": {
+        "ar": "زيادة الكمية",
+        "en": "Increase Quantity"
+    },
+    "pv_selected_quantity_label": {
+        "ar": "الكمية المختارة",
+        "en": "Selected Quantity"
+    },
+    "pv_total_price_label": {
+        "ar": "الإجمالي:",
+        "en": "Total:"
+    },
+    "pv_add_to_cart": {
+        "ar": "إضافة إلى السلة",
+        "en": "Add to Cart"
+    },
+    "pv_no_description": {
+        "ar": "لا يوجد وصف متاح.",
+        "en": "No description available."
+    },
+    "pv_no_seller_message": {
+        "ar": "لا توجد رسالة من مقدم الخدمة.",
+        "en": "No message from service provider."
+    },
+    "pv_not_available": {
+        "ar": "غير متوفر",
+        "en": "Not available"
+    },
+    "pv_currency_egp": {
+        "ar": "جنيه",
+        "en": "EGP"
+    },
+    "pv_max_quantity_reached": {
+        "ar": "تم الوصول للحد الأقصى للكمية المتاحة.",
+        "en": "Maximum available quantity reached."
+    },
+    "pv_thumbnail_error": {
+        "ar": "فشل تحميل الصورة المصغرة:",
+        "en": "Failed to load thumbnail:"
+    },
+    "pv_load_failed": {
+        "ar": "فشل التحميل",
+        "en": "Load failed"
+    },
+    "pv_loading_msg": {
+        "ar": "جاري التحميل...",
+        "en": "Loading..."
+    },
+    "pv_error_init": {
+        "ar": "خطأ في تهيئة نافذة عرض المنتج:",
+        "en": "Error initializing product view window:"
+    },
+    "pv_no_product_data": {
+        "ar": "لا توجد بيانات منتج في مدير الحالة",
+        "en": "No product data in state manager"
+    },
+    "pv_error_fetching_categories": {
+        "ar": "فشل تحميل قائمة الفئات",
+        "en": "Failed to load categories list"
+    },
+    "pv_in_stock": {
+        "ar": "متوفر",
+        "en": "In Stock"
+    },
+    "pv_sold_by": {
+        "ar": "بواسطة",
+        "en": "Sold by"
+    },
+    "pv_view_portfolio": {
+        "ar": "زيارة المتجر",
+        "en": "Visit Store"
+    },
+    "pv_savings_label": {
+        "ar": "وفرت:",
+        "en": "You Saved:"
+    },
+    "pv_edit_product": {
+        "ar": "تعديل المنتج",
+        "en": "Edit Product"
+    },
+    "pv_delete_product": {
+        "ar": "حذف المنتج",
+        "en": "Delete Product"
+    },
+    "view2_desc_header": {
+        "ar": "وصف الخدمة",
+        "en": "Service Description"
+    },
+    "view2_seller_msg_header": {
+        "ar": "رسالة من مقدم الخدمة",
+        "en": "Message from Service Provider"
+    },
+    "view2_order_box_title": {
+        "ar": "بيانات الارسال ( اضف ملاحظاتك او صور او كلاهما لوصف طلبك بدقة )",
+        "en": "Order Details (Add notes, photos, or both to describe your request accurately)"
+    },
+    "view2_note_placeholder": {
+        "ar": "أضف ملاحظاتك ووصف دقيق لطلبك (بحد أقصى 300 حرف)",
+        "en": "Add your notes and precise description (max 300 chars)"
+    },
+    "view2_upload_hint": {
+        "ar": "(بحد أقصى 4 صور - 5 ميجابايت لكل صورة)",
+        "en": "(Max 4 images - 5MB per image)"
+    },
+    "view2_warn_no_content": {
+        "ar": "يرجى إضافة ملاحظة أو صورة واحدة على الأقل",
+        "en": "Please add at least a note or one image"
+    },
+    "view2_err_no_product": {
+        "ar": "لم يتم العثور على بيانات المنتج",
+        "en": "Product data not found"
+    },
+    "view2_swal_sending_text": {
+        "ar": "يرجى الانتظار بينما نقوم برفع الصور وإنشاء الطلب",
+        "en": "Please wait while we upload images and create the order"
+    },
+    "view2_err_create_order": {
+        "ar": "فشل إنشاء الطلب",
+        "en": "Failed to create order"
+    },
+    "view2_no_desc": {
+        "ar": "لا يوجد وصف متاح.",
+        "en": "No description available."
+    },
+    "view2_no_seller_msg": {
+        "ar": "لا توجد رسالة من مقدم الخدمة.",
+        "en": "No service-provider message."
+    },
+    "view2_swal_pc_upload_hint": {
+        "ar": "يرجى استخدام زر اختيار الملفات على الكمبيوتر",
+        "en": "Please use the 'Pick Images' button on PC"
+    },
+    "view2_btn_capture_confirm": {
+        "ar": "التقاط الصورة",
+        "en": "Capture Photo"
+    },
+    "portfolio_title": {
+        "ar": "ملف التاجر | Suez Bazaar",
+        "en": "Merchant Profile | Suez Bazaar"
+    },
+    "port_search_within": {
+        "ar": "بحث",
+        "en": "Search"
+    },
+    "merchant_image_alt": {
+        "ar": "صورة التاجر",
+        "en": "Merchant Image"
+    },
+    "ratings_count": {
+        "ar": "({count} تقييم)",
+        "en": "({count} ratings)"
+    },
+    "rating_label": {
+        "ar": "تقييم",
+        "en": "Rate"
+    },
+    "reviews_title": {
+        "ar": "التقييمات والمراجعات",
+        "en": "Ratings & Reviews"
+    },
+    "loading_reviews": {
+        "ar": "جاري تحميل التقييمات...",
+        "en": "Loading reviews..."
+    },
+    "merchant_not_found": {
+        "ar": "عذراً، لم يتم العثور على هذا التاجر.",
+        "en": "Sorry, this merchant was not found."
+    },
+    "back_to_home": {
+        "ar": "العودة للرئيسية",
+        "en": "Back to Home"
+    },
+    "no_reviews_yet": {
+        "ar": "لا توجد مراجعات بعد.",
+        "en": "No reviews yet."
+    },
+    "port_rate_note_placeholder": {
+        "ar": "أكتب ملاحظاتك هنا...",
+        "en": "Write your notes here..."
+    },
+    "port_rate_submit_btn": {
+        "ar": "إرسال التقييم",
+        "en": "Submit Rating"
+    },
+    "port_rate_cancel_btn": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "port_rate_select_stars": {
+        "ar": "الرجاء اختيار عدد النجوم",
+        "en": "Please select a star rating"
+    },
+    "port_product_status_pending": {
+        "ar": "قيد المراجعة",
+        "en": "Under Review"
+    },
+    "port_product_edit": {
+        "ar": "تعديل",
+        "en": "Edit"
+    },
+    "port_product_delete": {
+        "ar": "حذف",
+        "en": "Delete"
+    },
+    "port_featured_title": {
+        "ar": "منتجات مميزة",
+        "en": "Featured Products"
+    },
+    "port_feature_checkbox_tooltip": {
+        "ar": "إدارة المنتجات المميزة للبائع",
+        "en": "Manage Merchant Featured Products"
+    },
+    "port_filter_featured": {
+        "ar": "عرض المميزة فقط",
+        "en": "Show Featured Only"
+    },
+    "port_all_products": {
+        "ar": "قائمة المنتجات",
+        "en": "All Products"
+    },
+    "port_no_featured_found": {
+        "ar": "لا توجد منتجات مميزة لعرضها حالياً",
+        "en": "No featured products to display currently"
+    },
+    "port_delete_error": {
+        "ar": "خطأ أثناء الحذف: {msg}",
+        "en": "Error while deleting: {msg}"
+    },
+    "port_add_product_modal_title": {
+        "ar": "تخصصات النشاط",
+        "en": "Business Specialties"
+    },
+    "port_edit_category_title": {
+        "ar": "السوق الحالي للمنتج",
+        "en": "Current Product Category"
+    },
+    "port_product_not_found": {
+        "ar": "لم يتم العثور على بيانات المنتج",
+        "en": "Product data not found"
+    }
 }

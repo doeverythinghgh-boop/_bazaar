@@ -1,76 +1,91 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>لا يوجد اتصال</title><script src="../../js/core-loader.js"></script><style>:root{--primary:#2575fc;--secondary:#6a11cb;--text-dark:#333;--text-light:#666;--bg:#f4f7f6}body{margin:0;padding:0;height:100vh;display:flex;align-items:center;justify-content:center;background-color:var(--bg);font-family:Tajawal,-apple-system,BlinkMacSystemFont,sans-serif;text-align:center}*{scrollbar-width:none;-ms-overflow-style:none}::-webkit-scrollbar{display:none}.card{background:#fff;padding:40px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.1);max-width:90%;width:350px}.icon-container{width:120px;height:120px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;background:rgba(37,117,252,.1);border-radius:50%;animation:pulse 2s infinite}svg{width:60px;height:60px;fill:var(--primary)}h1{color:var(--text-dark);margin:0 0 10px;font-size:1.5rem}p{color:var(--text-light);margin:0 0 30px;line-height:1.6}button{background-color:var(--primary);color:#fff;border:none;padding:12px 30px;border-radius:50px;font-size:1rem;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 5px 15px rgba(37,117,252,.4);font-family:inherit}button:active{transform:scale(.95)}@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,117,252,.4)}70%{box-shadow:0 0 0 20px rgba(37,117,252,0)}100%{box-shadow:0 0 0 0 rgba(37,117,252,0)}}</style><script>(async function applyOfflineTranslations() {
-            const lang = localStorage.getItem('app_language') || 'ar';
-            const fallbackTranslations = {
-                ar: {
-                    offline_title: 'انقطع الاتصال',
-                    offline_desc: 'يبدو أنك غير متصل بالإنترنت حاليًا. يرجى التحقق من الشبكة والمحاولة مرة أخرى.',
-                    offline_retry: 'إعادة المحاولة'
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title></title><script src="../../js/core-loader.js"></script><style>:root{--primary:#2575fc;--text-dark:#333;--text-light:#666;--bg:#f4f7f6}body{margin:0;padding:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background-color:var(--bg);font-family:Tajawal,-apple-system,BlinkMacSystemFont,sans-serif;text-align:center}*{scrollbar-width:none;-ms-overflow-style:none}::-webkit-scrollbar{display:none}.card{background:#fff;padding:40px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.1);max-width:90%;width:350px}.icon-container{width:120px;height:120px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;background:rgba(37,117,252,.1);border-radius:50%;animation:pulse 2s infinite}svg{width:60px;height:60px;fill:var(--primary)}h1{color:var(--text-dark);margin:0 0 10px;font-size:1.5rem}p{color:var(--text-light);margin:0 0 30px;line-height:1.6}button{background-color:var(--primary);color:#fff;border:0;padding:12px 30px;border-radius:50px;font-size:1rem;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 5px 15px rgba(37,117,252,.4);font-family:inherit}button:active{transform:scale(.95)}@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,117,252,.4)}70%{box-shadow:0 0 0 20px rgba(37,117,252,0)}100%{box-shadow:0 0 0 0 rgba(37,117,252,0)}}</style><script>(async function initOfflineTranslations() {
+            const fallbackTexts = {
+                offline_title: {
+                    ar: "\u0627\u0646\u0642\u0637\u0639 \u0627\u0644\u0627\u062a\u0635\u0627\u0644",
+                    en: "No Connection"
                 },
-                en: {
-                    offline_title: 'No Connection',
-                    offline_desc: 'It seems you are currently offline. Please check your network and try again.',
-                    offline_retry: 'Retry'
+                offline_desc: {
+                    ar: "\u064a\u0628\u062f\u0648 \u0623\u0646\u0643 \u063a\u064a\u0631 \u0645\u062a\u0635\u0644 \u0628\u0627\u0644\u0625\u0646\u062a\u0631\u0646\u062a \u062d\u0627\u0644\u064a\u064b\u0627. \u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0634\u0628\u0643\u0629 \u0648\u0627\u0644\u0645\u062d\u0627\u0648\u0644\u0629 \u0645\u0631\u0629 \u0623\u062e\u0631\u0649.",
+                    en: "It seems you are currently offline. Please check your network and try again."
+                },
+                offline_retry: {
+                    ar: "\u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u0645\u062d\u0627\u0648\u0644\u0629",
+                    en: "Retry"
                 }
             };
 
-            function applyDocumentDirection(currentLang) {
-                document.documentElement.lang = currentLang;
-                document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+            const fields = [
+                ["offline-title", "offline_title"],
+                ["offline-desc", "offline_desc"],
+                ["offline-retry", "offline_retry"]
+            ];
+
+            function resolveLang() {
+                if (typeof window.syncAppLanguageFromNative === "function") {
+                    window.syncAppLanguageFromNative();
+                }
+
+                const lang = localStorage.getItem("app_language") || window.app_language || "ar";
+                return lang === "en" ? "en" : "ar";
             }
 
             function getAppTranslation(key) {
-                if (typeof window.langu !== 'function') return null;
+                if (typeof window.langu !== "function") return null;
                 const value = window.langu(key);
                 return value && value !== key ? value : null;
             }
 
-            function applyKeys(currentLang, translationSource) {
-                applyDocumentDirection(currentLang);
+            function getTranslationValue(key, translations, lang) {
+                const appValue = getAppTranslation(key);
+                if (appValue != null) return appValue;
 
-                document.querySelectorAll('[data-lkey]').forEach((el) => {
-                    const key = el.getAttribute('data-lkey');
-                    const appValue = getAppTranslation(key);
-                    if (appValue != null) {
-                        el.textContent = appValue;
-                        return;
-                    }
+                const entry = translations && translations[key];
+                if (entry && typeof entry === "object") {
+                    return entry[lang] || entry.ar || entry.en || "";
+                }
 
-                    if (translationSource && translationSource[key]) {
-                        el.textContent = translationSource[key][currentLang] || translationSource[key].ar || translationSource[key].en || key;
-                        return;
-                    }
-
-                    const fallbackBucket = fallbackTranslations[currentLang] || fallbackTranslations.ar;
-                    if (fallbackBucket[key]) {
-                        el.textContent = fallbackBucket[key];
-                    }
-                });
-
-                const title = getAppTranslation('offline_title')
-                    || (translationSource && translationSource.offline_title && (translationSource.offline_title[currentLang] || translationSource.offline_title.ar))
-                    || (fallbackTranslations[currentLang] || fallbackTranslations.ar).offline_title;
-
-                document.title = title;
+                const fallback = fallbackTexts[key];
+                return fallback ? (fallback[lang] || fallback.ar || fallback.en || key) : key;
             }
 
-            applyKeys(lang, null);
+            function applyDocumentDirection(lang) {
+                document.documentElement.lang = lang;
+                document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+                document.body.style.direction = lang === "ar" ? "rtl" : "ltr";
+                document.body.style.textAlign = "center";
+            }
+
+            function applyTranslations(translations) {
+                const lang = resolveLang();
+                applyDocumentDirection(lang);
+
+                fields.forEach(([id, key]) => {
+                    const element = document.getElementById(id);
+                    if (!element) return;
+                    element.textContent = getTranslationValue(key, translations, lang);
+                });
+
+                document.title = getTranslationValue("offline_title", translations, lang);
+            }
+
+            applyTranslations(null);
 
             try {
-                if (typeof window.loadIndexTranslations === 'function') {
+                if (typeof window.loadIndexTranslations === "function") {
                     await window.loadIndexTranslations();
-                    applyKeys(lang, window.appTranslations || null);
+                    applyTranslations(window.appTranslations || null);
                     return;
                 }
             } catch (error) {
-                console.warn('[Offline] Falling back to direct translation fetch.', error);
+                console.warn("[Offline] Falling back to direct translation fetch.", error);
             }
 
             try {
-                const response = await fetch('/lang/core.json');
-                const data = response.ok ? await response.json() : null;
-                applyKeys(lang, data);
+                const response = await fetch("../../lang/core.json");
+                const translations = response.ok ? await response.json() : null;
+                applyTranslations(translations);
             } catch (error) {
-                console.warn('Could not load translations for offline page, using defaults.', error);
-                applyKeys(lang, null);
+                console.warn("[Offline] Using built-in fallback translations.", error);
+                applyTranslations(null);
             }
-        })();</script></head><body><div class="card"><div class="icon-container"><svg viewBox="0 0 24 24"><path d="M23.64 7c-.45-.34-4.93-4-11.64-4-1.5 0-2.89.19-4.15.48L18.18 13.8 23.64 7zm-6.6 8.22L3.27 1.44 2 2.72l2.05 2.06C1.91 5.17 1.5 5.68 1 6.27l11 13.73 4.35-5.43 3.54 3.54 1.27-1.27-6.52-6.52zM7 9.91c-.3.23-.57.49-.82.77L12 18.06l1.09-1.36-6.09-6.79z"/></svg></div><h1 data-lkey="offline_title">انقطع الاتصال</h1><p data-lkey="offline_desc">يبدو أنك غير متصل بالإنترنت حاليًا. يرجى التحقق من الشبكة والمحاولة مرة أخرى.</p><button onclick="window.location.reload()" data-lkey="offline_retry">إعادة المحاولة</button></div></body></html>
+        })();</script></head><body><div class="card"><div class="icon-container" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23.64 7c-.45-.34-4.93-4-11.64-4-1.5 0-2.89.19-4.15.48L18.18 13.8 23.64 7zm-6.6 8.22L3.27 1.44 2 2.72l2.05 2.06C1.91 5.17 1.5 5.68 1 6.27l11 13.73 4.35-5.43 3.54 3.54 1.27-1.27-6.52-6.52zM7 9.91c-.3.23-.57.49-.82.77L12 18.06l1.09-1.36-6.09-6.79z"/></svg></div><h1 id="offline-title"></h1><p id="offline-desc"></p><button id="offline-retry" type="button" onclick="window.location.reload()"></button></div></body></html>

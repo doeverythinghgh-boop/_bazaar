@@ -1,130 +1,151 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>حذف الحساب على Suez Bazaar</title><script src="../../js/core-loader.js"></script><style>body{font-family:Tajawal,sans-serif;background-color:transparent;color:var(--text-color-dark,#333);margin:0;padding:0;line-height:1.6}.container{max-width:100%;margin:0;background-color:transparent;border-radius:0;padding:20px;box-shadow:none}h1{color:var(--dark-blue,#2c3e50);text-align:center;margin:0 0 1.5rem 0}p{margin:15px 0}ol{margin-inline-start:20px;padding-inline-start:20px}li{margin-bottom:10px}.highlight{color:var(--danger-color,#e74c3c);font-weight:700}</style></head><body><div class="container" id="main-content"><h1 id="delete-page-heading">حذف الحساب على Suez Bazaar</h1><p id="delete-page-intro">يمكنك حذف حسابك وجميع البيانات المرتبطة به بسهولة. للقيام بذلك، اتبع الخطوات التالية:</p><ol><li id="delete-step-1">افتح التطبيق وانتقل إلى صفحة <span class="highlight">التسجيل / حسابي</span>.</li><li id="delete-step-2">اختر <span class="highlight">تعديل بيانات</span> أو <span class="highlight">إعدادات الحساب</span>.</li><li id="delete-step-3">ابحث عن خيار <span class="highlight">حذف الحساب</span> واضغط عليه.</li><li id="delete-step-4"><span id="delete-step-4-label">سيتم حذف البيانات التالية نهائيًا:</span><ul id="delete-data-list"><li id="delete-data-1">اسم المستخدم</li><li id="delete-data-2">رقم الهاتف</li><li id="delete-data-3">البريد الإلكتروني</li><li id="delete-data-4">العنوان</li><li id="delete-data-5">سجل الطلبات والمشتريات</li><li id="delete-data-6">كافة البيانات الأخرى</li></ul></li></ol><p id="delete-warning"><span class="highlight">تنويه:</span> بعد حذف الحساب، لن تتمكن من استرجاع هذه البيانات.</p><p id="delete-contact">إذا كنت ترغب في حذف حسابك الآن أو واجهت أي مشكلة، يمكنك التواصل مع فريق الدعم عبر البريد الإلكتروني: <a href="mailto:suezbazaar@gmail.com">suezbazaar@gmail.com</a></p></div><script>(async function initDeleteAccountTranslations() {
-      const lang = localStorage.getItem('app_language') || 'ar';
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title></title><script src="../../js/core-loader.js"></script><style>body{font-family:Tajawal,sans-serif;background-color:transparent;color:var(--text-color-dark,#333);margin:0;padding:0;line-height:1.6}.container{max-width:100%;margin:0;background-color:transparent;border-radius:0;padding:20px;box-shadow:none}h1{color:var(--dark-blue,#2c3e50);text-align:center;margin:0 0 1.5rem 0}p{margin:15px 0}ol{margin-inline-start:20px;padding-inline-start:20px}li{margin-bottom:10px}.highlight{color:var(--danger-color,#e74c3c);font-weight:700}</style></head><body><div class="container" id="main-content"><h1 id="delete-page-heading"></h1><p id="delete-page-intro"></p><ol><li id="delete-step-1"></li><li id="delete-step-2"></li><li id="delete-step-3"></li><li><span id="delete-step-4-label"></span><ul id="delete-data-list"><li id="delete-data-1"></li><li id="delete-data-2"></li><li id="delete-data-3"></li><li id="delete-data-4"></li><li id="delete-data-5"></li><li id="delete-data-6"></li></ul></li></ol><p id="delete-warning"></p><p id="delete-contact"></p></div><script>(async function initDeleteAccountTranslations() {
       const fallbackTexts = {
         delete_account_title: {
-          ar: 'حذف الحساب على Suez Bazaar',
-          en: 'Delete Account on Suez Bazaar'
+          ar: "\u062d\u0630\u0641 \u0627\u0644\u062d\u0633\u0627\u0628 \u0639\u0644\u0649 Suez Bazaar",
+          en: "Delete Account on Suez Bazaar"
         },
         delete_account_heading: {
-          ar: 'حذف الحساب على Suez Bazaar',
-          en: 'Delete Account on Suez Bazaar'
+          ar: "\u062d\u0630\u0641 \u0627\u0644\u062d\u0633\u0627\u0628 \u0639\u0644\u0649 Suez Bazaar",
+          en: "Delete Account on Suez Bazaar"
         },
         delete_account_intro: {
-          ar: 'يمكنك حذف حسابك وجميع البيانات المرتبطة به بسهولة. للقيام بذلك، اتبع الخطوات التالية:',
-          en: 'You can delete your account and all associated data easily. To do so, follow these steps:'
+          ar: "\u064a\u0645\u0643\u0646\u0643 \u062d\u0630\u0641 \u062d\u0633\u0627\u0628\u0643 \u0648\u062c\u0645\u064a\u0639 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u0631\u062a\u0628\u0637\u0629 \u0628\u0647 \u0628\u0633\u0647\u0648\u0644\u0629. \u0644\u0644\u0642\u064a\u0627\u0645 \u0628\u0630\u0644\u0643\u060c \u0627\u062a\u0628\u0639 \u0627\u0644\u062e\u0637\u0648\u0627\u062a \u0627\u0644\u062a\u0627\u0644\u064a\u0629:",
+          en: "You can delete your account and all associated data easily. To do so, follow these steps:"
         },
         delete_account_step_1: {
-          ar: 'افتح التطبيق وانتقل إلى صفحة <span class="highlight">التسجيل / حسابي</span>.',
-          en: 'Open the app and go to the <span class="highlight">Login / My Account</span> page.'
+          ar: "\u0627\u0641\u062a\u062d \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u0648\u0627\u0646\u062a\u0642\u0644 \u0625\u0644\u0649 \u0635\u0641\u062d\u0629 <span class=\"highlight\">\u0627\u0644\u062a\u0633\u062c\u064a\u0644 / \u062d\u0633\u0627\u0628\u064a</span>.",
+          en: "Open the app and go to the <span class=\"highlight\">Login / My Account</span> page."
         },
         delete_account_step_2: {
-          ar: 'اختر <span class="highlight">تعديل بيانات</span> أو <span class="highlight">إعدادات الحساب</span>.',
-          en: 'Choose <span class="highlight">Edit Profile</span> or <span class="highlight">Account Settings</span>.'
+          ar: "\u0627\u062e\u062a\u0631 <span class=\"highlight\">\u062a\u0639\u062f\u064a\u0644 \u0628\u064a\u0627\u0646\u0627\u062a</span> \u0623\u0648 <span class=\"highlight\">\u0625\u0639\u062f\u0627\u062f\u0627\u062a \u0627\u0644\u062d\u0633\u0627\u0628</span>.",
+          en: "Choose <span class=\"highlight\">Edit Profile</span> or <span class=\"highlight\">Account Settings</span>."
         },
         delete_account_step_3: {
-          ar: 'ابحث عن خيار <span class="highlight">حذف الحساب</span> واضغط عليه.',
-          en: 'Find the <span class="highlight">Delete Account</span> option and tap it.'
+          ar: "\u0627\u0628\u062d\u062b \u0639\u0646 \u062e\u064a\u0627\u0631 <span class=\"highlight\">\u062d\u0630\u0641 \u0627\u0644\u062d\u0633\u0627\u0628</span> \u0648\u0627\u0636\u063a\u0637 \u0639\u0644\u064a\u0647.",
+          en: "Find the <span class=\"highlight\">Delete Account</span> option and tap it."
         },
         delete_account_step_4: {
-          ar: 'سيتم حذف البيانات التالية نهائيًا:',
-          en: 'The following data will be permanently deleted:'
+          ar: "\u0633\u064a\u062a\u0645 \u062d\u0630\u0641 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062a\u0627\u0644\u064a\u0629 \u0646\u0647\u0627\u0626\u064a\u064b\u0627:",
+          en: "The following data will be permanently deleted:"
         },
         delete_account_data_1: {
-          ar: 'اسم المستخدم',
-          en: 'Username'
+          ar: "\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645",
+          en: "Username"
         },
         delete_account_data_2: {
-          ar: 'رقم الهاتف',
-          en: 'Phone number'
+          ar: "\u0631\u0642\u0645 \u0627\u0644\u0647\u0627\u062a\u0641",
+          en: "Phone number"
         },
         delete_account_data_3: {
-          ar: 'البريد الإلكتروني',
-          en: 'Email address'
+          ar: "\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a",
+          en: "Email address"
         },
         delete_account_data_4: {
-          ar: 'العنوان',
-          en: 'Address'
+          ar: "\u0627\u0644\u0639\u0646\u0648\u0627\u0646",
+          en: "Address"
         },
         delete_account_data_5: {
-          ar: 'سجل الطلبات والمشتريات',
-          en: 'Orders and purchases history'
+          ar: "\u0633\u062c\u0644 \u0627\u0644\u0637\u0644\u0628\u0627\u062a \u0648\u0627\u0644\u0645\u0634\u062a\u0631\u064a\u0627\u062a",
+          en: "Orders and purchases history"
         },
         delete_account_data_6: {
-          ar: 'كافة البيانات الأخرى',
-          en: 'All other related data'
+          ar: "\u0643\u0627\u0641\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0623\u062e\u0631\u0649",
+          en: "All other related data"
         },
         delete_account_warning: {
-          ar: '<span class="highlight">تنويه:</span> بعد حذف الحساب، لن تتمكن من استرجاع هذه البيانات.',
-          en: '<span class="highlight">Note:</span> After deleting your account, you will not be able to recover this data.'
+          ar: "<span class=\"highlight\">\u062a\u0646\u0648\u064a\u0647:</span> \u0628\u0639\u062f \u062d\u0630\u0641 \u0627\u0644\u062d\u0633\u0627\u0628\u060c \u0644\u0646 \u062a\u062a\u0645\u0643\u0646 \u0645\u0646 \u0627\u0633\u062a\u0631\u062c\u0627\u0639 \u0647\u0630\u0647 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a.",
+          en: "<span class=\"highlight\">Note:</span> After deleting your account, you will not be able to recover this data."
         },
         delete_account_contact: {
-          ar: 'إذا كنت ترغب في حذف حسابك الآن أو واجهت أي مشكلة، يمكنك التواصل مع فريق الدعم عبر البريد الإلكتروني: <a href="mailto:suezbazaar@gmail.com">suezbazaar@gmail.com</a>',
-          en: 'If you want to delete your account now or face any issue, you can contact the support team by email: <a href="mailto:suezbazaar@gmail.com">suezbazaar@gmail.com</a>'
+          ar: "\u0625\u0630\u0627 \u0643\u0646\u062a \u062a\u0631\u063a\u0628 \u0641\u064a \u062d\u0630\u0641 \u062d\u0633\u0627\u0628\u0643 \u0627\u0644\u0622\u0646 \u0623\u0648 \u0648\u0627\u062c\u0647\u062a \u0623\u064a \u0645\u0634\u0643\u0644\u0629\u060c \u064a\u0645\u0643\u0646\u0643 \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u0641\u0631\u064a\u0642 \u0627\u0644\u062f\u0639\u0645 \u0639\u0628\u0631 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>",
+          en: "If you want to delete your account now or face any issue, you can contact the support team by email: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>"
         }
       };
 
+      const fields = [
+        ["delete-page-heading", "delete_account_heading", "text"],
+        ["delete-page-intro", "delete_account_intro", "text"],
+        ["delete-step-1", "delete_account_step_1", "html"],
+        ["delete-step-2", "delete_account_step_2", "html"],
+        ["delete-step-3", "delete_account_step_3", "html"],
+        ["delete-step-4-label", "delete_account_step_4", "text"],
+        ["delete-data-1", "delete_account_data_1", "text"],
+        ["delete-data-2", "delete_account_data_2", "text"],
+        ["delete-data-3", "delete_account_data_3", "text"],
+        ["delete-data-4", "delete_account_data_4", "text"],
+        ["delete-data-5", "delete_account_data_5", "text"],
+        ["delete-data-6", "delete_account_data_6", "text"],
+        ["delete-warning", "delete_account_warning", "html"],
+        ["delete-contact", "delete_account_contact", "html"]
+      ];
+
+      function resolveLang() {
+        if (typeof window.syncAppLanguageFromNative === "function") {
+          window.syncAppLanguageFromNative();
+        }
+
+        const lang = localStorage.getItem("app_language") || window.app_language || "ar";
+        return lang === "en" ? "en" : "ar";
+      }
+
       function getAppTranslation(key) {
-        if (typeof window.langu !== 'function') return null;
+        if (typeof window.langu !== "function") return null;
         const value = window.langu(key);
         return value && value !== key ? value : null;
       }
 
-      function translateValue(key, translations, currentLang) {
+      function translateValue(key, translations, lang) {
         const appValue = getAppTranslation(key);
         if (appValue != null) return appValue;
 
         const entry = translations && translations[key];
-        if (entry && typeof entry === 'object') {
-          return entry[currentLang] || entry.ar || entry.en || '';
+        if (entry && typeof entry === "object") {
+          return entry[lang] || entry.ar || entry.en || "";
         }
 
-        const fallbackEntry = fallbackTexts[key];
-        return (fallbackEntry && (fallbackEntry[currentLang] || fallbackEntry.ar || fallbackEntry.en)) || key;
+        const fallback = fallbackTexts[key];
+        return fallback ? (fallback[lang] || fallback.ar || fallback.en || key) : key;
       }
 
-      function applyLanguage(currentLang, translations) {
-        const resolvedLang = currentLang === 'en' ? 'en' : 'ar';
-        document.documentElement.lang = resolvedLang;
-        document.documentElement.dir = resolvedLang === 'en' ? 'ltr' : 'rtl';
-        document.body.style.direction = resolvedLang === 'en' ? 'ltr' : 'rtl';
-        document.body.style.textAlign = resolvedLang === 'en' ? 'left' : 'right';
+      function applyLanguage(translations) {
+        const lang = resolveLang();
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "en" ? "ltr" : "rtl";
+        document.body.style.direction = lang === "en" ? "ltr" : "rtl";
+        document.body.style.textAlign = lang === "en" ? "left" : "right";
 
-        document.title = translateValue('delete_account_title', translations, resolvedLang);
-        document.getElementById('delete-page-heading').textContent = translateValue('delete_account_heading', translations, resolvedLang);
-        document.getElementById('delete-page-intro').textContent = translateValue('delete_account_intro', translations, resolvedLang);
-        document.getElementById('delete-step-1').innerHTML = translateValue('delete_account_step_1', translations, resolvedLang);
-        document.getElementById('delete-step-2').innerHTML = translateValue('delete_account_step_2', translations, resolvedLang);
-        document.getElementById('delete-step-3').innerHTML = translateValue('delete_account_step_3', translations, resolvedLang);
-        document.getElementById('delete-step-4-label').textContent = translateValue('delete_account_step_4', translations, resolvedLang);
-        document.getElementById('delete-data-1').textContent = translateValue('delete_account_data_1', translations, resolvedLang);
-        document.getElementById('delete-data-2').textContent = translateValue('delete_account_data_2', translations, resolvedLang);
-        document.getElementById('delete-data-3').textContent = translateValue('delete_account_data_3', translations, resolvedLang);
-        document.getElementById('delete-data-4').textContent = translateValue('delete_account_data_4', translations, resolvedLang);
-        document.getElementById('delete-data-5').textContent = translateValue('delete_account_data_5', translations, resolvedLang);
-        document.getElementById('delete-data-6').textContent = translateValue('delete_account_data_6', translations, resolvedLang);
-        document.getElementById('delete-warning').innerHTML = translateValue('delete_account_warning', translations, resolvedLang);
-        document.getElementById('delete-contact').innerHTML = translateValue('delete_account_contact', translations, resolvedLang);
+        document.title = translateValue("delete_account_title", translations, lang);
+
+        fields.forEach(([id, key, mode]) => {
+          const element = document.getElementById(id);
+          if (!element) return;
+          const value = translateValue(key, translations, lang);
+          if (mode === "html") {
+            element.innerHTML = value;
+          } else {
+            element.textContent = value;
+          }
+        });
       }
 
-      applyLanguage(lang, null);
+      applyLanguage(null);
 
       try {
-        if (typeof window.loadIndexTranslations === 'function') {
+        if (typeof window.loadIndexTranslations === "function") {
           await window.loadIndexTranslations();
-          applyLanguage(lang, window.appTranslations || null);
+          applyLanguage(window.appTranslations || null);
           return;
         }
       } catch (error) {
-        console.warn('[DeleteAccount] Falling back to direct translation fetch.', error);
+        console.warn("[DeleteAccount] Falling back to direct translation fetch.", error);
       }
 
       try {
-        const response = await fetch('/lang/core.json');
+        const response = await fetch("../../lang/core.json");
         const translations = response.ok ? await response.json() : null;
-        if (translations) {
-          applyLanguage(lang, translations);
-        }
+        applyLanguage(translations);
       } catch (error) {
-        console.warn('[DeleteAccount] Using built-in fallback translations.', error);
+        console.warn("[DeleteAccount] Using built-in fallback translations.", error);
+        applyLanguage(null);
       }
     })();</script></body></html>

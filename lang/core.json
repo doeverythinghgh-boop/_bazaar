@@ -1,1022 +1,1296 @@
-﻿{
-    "login_text":  {
-                       "ar":  "ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø¯Ø®ÙˆÙ„",
-                       "en":  "Login"
-                   },
-    "gen_swal_confirm_btn":  {
-                                 "ar":  "Ù…ÙˆØ§ÙÙ‚",
-                                 "en":  "OK"
-                             },
-    "gen_swal_cancel_btn":  {
-                                "ar":  "Ø¥Ù„ØºØ§Ø¡",
-                                "en":  "Cancel"
-                            },
-    "home_text":  {
-                      "ar":  "Ø±Ø¦ÙŠØ³ÙŠ",
-                      "en":  "Home"
-                  },
-    "search_text":  {
-                        "ar":  "Ø¨Ø­Ø«",
-                        "en":  "Find"
-                    },
-    "search":  {
-                   "ar":  "Ø¨Ø­Ø«",
-                   "en":  "Search"
-               },
-    "notifications_text":  {
-                               "ar":  "Ø¥Ø´Ø¹Ø§Ø±",
-                               "en":  "Notify"
-                           },
-    "cart_text":  {
-                      "ar":  "Ø§Ù„Ø³Ù„Ø©",
-                      "en":  "Cart"
-                  },
-    "sales_text":  {
-                       "ar":  "Ø·Ù„Ø¨Ø§Øª",
-                       "en":  "Orders"
-                   },
-    "lang_arabic":  {
-                        "ar":  "Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©",
-                        "en":  "Arabic"
-                    },
-    "lang_english":  {
-                         "ar":  "Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ©",
-                         "en":  "English"
-                     },
-    "guest_mode_label":  {
-                             "ar":  "Ø²Ø§Ø¦Ø±",
-                             "en":  "Guest"
-                         },
-    "logo_short":  {
-                       "ar":  "SB",
-                       "en":  "SB"
-                   },
-    "unknown_status":  {
-                           "ar":  "ØºÙŠØ± Ù…Ø¹Ø±ÙˆÙ",
-                           "en":  "Unknown"
-                       },
-    "unknown_status_desc":  {
-                                "ar":  "Ø­Ø§Ù„Ø© Ø§Ù„Ø·Ù„Ø¨ ØºÙŠØ± Ù…Ø¹Ø±ÙˆÙØ©.",
-                                "en":  "Order status is unknown."
-                            },
-    "time_now":  {
-                     "ar":  "Ø§Ù„Ø¢Ù†",
-                     "en":  "Just now"
-                 },
-    "time_minutes_ago":  {
-                             "ar":  "Ù‚Ø¨Ù„ {n} Ø¯Ù‚ÙŠÙ‚Ø©",
-                             "en":  "{n} minutes ago"
-                         },
-    "time_hours_ago":  {
-                           "ar":  "Ù‚Ø¨Ù„ {n} Ø³Ø§Ø¹Ø©",
-                           "en":  "{n} hours ago"
-                       },
-    "time_days_ago":  {
-                          "ar":  "Ù‚Ø¨Ù„ {n} ÙŠÙˆÙ…",
-                          "en":  "{n} days ago"
-                      },
-    "sender_you":  {
-                       "ar":  "Ø£Ù†Øª",
-                       "en":  "You"
-                   },
-    "sender_user":  {
-                        "ar":  "Ù…Ø³ØªØ®Ø¯Ù…",
-                        "en":  "User"
-                    },
-    "delete_message":  {
-                           "ar":  "Ø­Ø°Ù Ø§Ù„Ø±Ø³Ø§Ù„Ø©",
-                           "en":  "Delete Message"
-                       },
-    "change_status":  {
-                          "ar":  "ØªØºÙŠÙŠØ± Ø§Ù„Ø­Ø§Ù„Ø©",
-                          "en":  "Change Status"
-                      },
-    "unexpected_error":  {
-                             "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ ØºÙŠØ± Ù…ØªÙˆÙ‚Ø¹.",
-                             "en":  "An unexpected error occurred."
-                         },
-    "page_title":  {
-                       "ar":  "Suez Bazaar",
-                       "en":  "Suez Bazaar"
-                   },
-    "admin_mode_watermark":  {
-                                 "ar":  "ÙˆØ¶Ø¹ Ø§Ù„Ù…Ø³Ø¤ÙˆÙ„: ØªØªØµÙØ­ Ø¨ØµÙ„Ø§Ø­ÙŠØ§Øª Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…",
-                                 "en":  "Admin Mode: Browsing as user"
-                             },
-    "gen_cam_error_title":  {
-                                "ar":  "Ù…Ø´ÙƒÙ„Ø© ÙÙŠ Ø§Ù„ÙƒØ§Ù…ÙŠØ±Ø§",
-                                "en":  "Camera Issue"
-                            },
-    "gen_cam_error_text":  {
-                               "ar":  "Ø­Ø§ÙˆÙ„ ÙØªØ­ Ø§Ù„ÙƒØ§Ù…ÙŠØ±Ø§ Ø¨Ø·Ø±ÙŠÙ‚Ø© Ø£Ø®Ø±Ù‰",
-                               "en":  "Try opening camera another way"
-                           },
-    "gen_cam_use_gallery":  {
-                                "ar":  "Ø§Ø®ØªØ± Ù…Ù† Ø§Ù„Ù…Ø¹Ø±Ø¶",
-                                "en":  "Pick from Gallery"
-                            },
-    "gen_btn_send_order":  {
-                               "ar":  "Ø¥Ø±Ø³Ø§Ù„ Ø§Ù„Ø·Ù„Ø¨",
-                               "en":  "Send Order"
-                           },
-    "gen_btn_back":  {
-                         "ar":  "Ø±Ø¬ÙˆØ¹",
-                         "en":  "Back"
-                     },
-    "gen_btn_hide":  {
-                         "ar":  "Ø¥Ø®ÙØ§Ø¡",
-                         "en":  "Hide"
-                     },
-    "gen_btn_discard":  {
-                            "ar":  "ØªØ¬Ø§Ù‡Ù„",
-                            "en":  "Discard"
-                        },
-    "gen_btn_save":  {
-                         "ar":  "Ø­ÙØ¸",
-                         "en":  "Save"
-                     },
-    "gen_btn_pick_images":  {
-                                "ar":  "Ø§Ø®ØªØ± ØµÙˆØ±Ù‹Ø§",
-                                "en":  "Pick Images"
-                            },
-    "gen_btn_take_photo":  {
-                               "ar":  "Ø§Ù„ØªÙ‚Ø§Ø· Ù…Ù† Ø§Ù„ÙƒØ§Ù…ÙŠØ±Ø§",
-                               "en":  "Take Photo"
-                           },
-    "gen_btn_upload":  {
-                           "ar":  "Ø±ÙØ¹",
-                           "en":  "Upload"
-                       },
-    "gen_lbl_processing":  {
-                               "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„Ù…Ø¹Ø§Ù„Ø¬Ø©...",
-                               "en":  "Processing..."
-                           },
-    "gen_lbl_loading_images":  {
-                                   "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØµÙˆØ±...",
-                                   "en":  "Loading Images..."
-                               },
-    "loading_status":  {
-                           "ar":  "جاري التحميل...",
-                           "en":  "Loading..."
-                       },
-    "updating":  {
-                     "ar":  "جاري التحديث...",
-                     "en":  "Updating..."
-                 },
-    "gen_unit_bytes":  {
-                           "ar":  "Ø¨Ø§ÙŠØª",
-                           "en":  "Bytes"
-                       },
-    "gen_err_compression":  {
-                                "ar":  "Ø®Ø·Ø£ ÙÙŠ Ø§Ù„Ø¶ØºØ·",
-                                "en":  "Compression Error"
-                            },
-    "gen_err_max_files":  {
-                              "ar":  "Ù„Ø§ ÙŠÙ…ÙƒÙ† Ø¥Ø¶Ø§ÙØ© Ø£ÙƒØ«Ø± Ù…Ù† {n} ØµÙˆØ±",
-                              "en":  "Cannot add more than {n} images"
-                          },
-    "gen_err_upload_failed":  {
-                                  "ar":  "ÙØ´Ù„ Ø§Ù„ØªØ­Ù…ÙŠÙ„",
-                                  "en":  "Upload Failed"
-                              },
-    "gen_err_required":  {
-                             "ar":  "Ù‡Ø°Ø§ Ø§Ù„Ø­Ù‚Ù„ Ù…Ø·Ù„ÙˆØ¨",
-                             "en":  "This field is required"
-                         },
-    "gen_tooltip_remove_image":  {
-                                     "ar":  "Ø­Ø°Ù Ø§Ù„ØµÙˆØ±Ø©",
-                                     "en":  "Remove Image"
-                                 },
-    "gen_lbl_current_img":  {
-                                "ar":  "Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ø­Ø§Ù„ÙŠØ©",
-                                "en":  "Current Image"
-                            },
-    "gen_btn_capture_photo":  {
-                                  "ar":  "Ø§Ù„ØªÙ‚Ø§Ø· ØµÙˆØ±Ø©",
-                                  "en":  "Capture Photo"
-                              },
-    "gen_lbl_no_images":  {
-                              "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ ØµÙˆØ± Ù…ØªØ§Ø­Ø©.",
-                              "en":  "No images available."
-                          },
-    "gen_lbl_sending":  {
-                            "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„Ø¥Ø±Ø³Ø§Ù„...",
-                            "en":  "Sending..."
-                        },
-    "gen_lbl_unavailable":  {
-                                "ar":  "ØºÙŠØ± Ù…ØªÙˆÙØ±",
-                                "en":  "Unavailable"
-                            },
-    "load_more":  {
-                      "ar":  "Ø¹Ø±Ø¶ Ø§Ù„Ù…Ø²ÙŠØ¯",
-                      "en":  "Load More"
-                  },
-    "no_products":  {
-                        "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ø­Ø§Ù„ÙŠØ§Ù‹",
-                        "en":  "No products yet"
-                    },
-    "pv_in_stock":  {
-                        "ar":  "Ù…ØªÙˆÙØ±",
-                        "en":  "In Stock"
-                    },
-    "pv_sold_by":  {
-                       "ar":  "Ø¨ÙˆØ§Ø³Ø·Ø©",
-                       "en":  "Sold by"
-                   },
-    "pv_view_portfolio":  {
-                              "ar":  "Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ¬Ø±",
-                              "en":  "Visit Store"
-                          },
-    "pv_share_product":  {
-                             "ar":  "Ù…Ø´Ø§Ø±ÙƒØ©",
-                             "en":  "Share"
-                         },
-    "pv_share_copied_title":  {
-                                  "ar":  "ØªÙ… Ù†Ø³Ø® Ø±Ø§Ø¨Ø· Ø§Ù„Ù…Ù†ØªØ¬!",
-                                  "en":  "Product Link Copied!"
-                              },
-    "pv_share_copied_text":  {
-                                 "ar":  "ØªÙ… Ù†Ø³Ø® Ø±Ø§Ø¨Ø· ØµÙØ­Ø© Ø§Ù„Ù…Ù†ØªØ¬ Ù„Ù„Ø­Ø§ÙØ¸Ø©",
-                                 "en":  "Product page link copied to clipboard"
-                             },
-    "pv_requested_quantity":  {
-                                  "ar":  "Ø§Ù„ÙƒÙ…ÙŠØ© Ø§Ù„Ù…Ø·Ù„ÙˆØ¨Ø©",
-                                  "en":  "Requested Quantity"
-                              },
-    "pv_total_label":  {
-                           "ar":  "Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ",
-                           "en":  "Total"
-                       },
-    "notification_enabled_title":  {
-                                       "ar":  "Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ù…ÙØ¹Ù„Ø©",
-                                       "en":  "Notifications Enabled"
-                                   },
-    "notification_enabled_desc":  {
-                                      "ar":  "Ø³ØªØµÙ„Ùƒ ØªÙ†Ø¨ÙŠÙ‡Ø§Øª Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ ÙˆØªØ­Ø¯ÙŠØ«Ø§Øª Ø·Ù„Ø¨Ø§ØªÙƒ ÙÙˆØ± ØµØ¯ÙˆØ±Ù‡Ø§.",
-                                      "en":  "You will receive message alerts and order updates immediately."
-                                  },
-    "notification_disabled_title":  {
-                                        "ar":  "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
-                                        "en":  "Enable Notifications"
-                                    },
-    "notification_disabled_desc":  {
-                                       "ar":  "Ù‚Ù… Ø¨Ø§Ù„ØªÙØ¹ÙŠÙ„ Ù„Ø§Ø³ØªÙ„Ø§Ù… ØªÙ†Ø¨ÙŠÙ‡Ø§Øª Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ ÙˆØ§Ù„ØªØ­Ø¯ÙŠØ«Ø§Øª Ø§Ù„Ø®Ø§ØµØ© Ø¨Ø·Ù„Ø¨Ø§ØªÙƒ.",
-                                       "en":  "Enable to receive message alerts and updates for your orders."
-                                   },
-    "alert_lang_change_title":  {
-                                    "ar":  "ØªØºÙŠÙŠØ± Ø§Ù„Ù„ØºØ©",
-                                    "en":  "Language Change"
-                                },
-    "alert_lang_change_text":  {
-                                   "ar":  "Ø³ÙŠØªÙ… Ø¥Ø¹Ø§Ø¯Ø© ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØµÙØ­Ø© Ù„ØªØ·Ø¨ÙŠÙ‚ ØªØºÙŠÙŠØ± Ø§Ù„Ù„ØºØ©.",
-                                   "en":  "The page will be reloaded to apply the language change."
-                               },
-    "alert_confirm_btn":  {
-                              "ar":  "Ù…ÙˆØ§ÙÙ‚",
-                              "en":  "OK"
-                          },
-    "alert_cancel_btn":  {
-                             "ar":  "Ø¥Ù„ØºØ§Ø¡",
-                             "en":  "Cancel"
-                         },
-    "alert_confirm_yes":  {
-                              "ar":  "Ù†Ø¹Ù…",
-                              "en":  "Yes"
-                          },
-    "alert_confirm_no":  {
-                             "ar":  "Ù„Ø§",
-                             "en":  "No"
-                         },
-    "failed_operation_title":  {
-                                   "ar":  "ÙØ´Ù„ Ø§Ù„Ø¹Ù…Ù„ÙŠØ©",
-                                   "en":  "Operation Failed"
-                               },
-    "success_operation_title":  {
-                                    "ar":  "ØªÙ…Øª Ø§Ù„Ø¹Ù…Ù„ÙŠØ© Ø¨Ù†Ø¬Ø§Ø­",
-                                    "en":  "Operation Successful"
-                                },
-    "gen_swal_success_title":  {
-                                   "ar":  "Ù†Ø¬Ø§Ø­",
-                                   "en":  "Success"
-                               },
-    "gen_swal_error_title":  {
-                                 "ar":  "Ø®Ø·Ø£",
-                                 "en":  "Error"
-                             },
-    "error":  {
-                   "ar":  "خطأ",
-                   "en":  "Error"
-               },
-    "gen_swal_info_title":  {
-                                "ar":  "ØªÙ†Ø¨ÙŠÙ‡",
-                                "en":  "Notice"
-                            },
-    "alert_title_info":  {
-                             "ar":  "ØªÙ†Ø¨ÙŠÙ‡",
-                             "en":  "Alert"
-                         },
-    "alert_login_required":  {
-                                 "ar":  "ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ù„Ø¯Ø®ÙˆÙ„ ÙƒØ¶ÙŠÙ Ø§Ùˆ Ø§Ø³ØªÙƒÙ…Ø§Ù„ Ø§Ù„ØªØ³Ø¬ÙŠÙ„. ",
-                                 "en":  "You can login as guest or complete registration."
-                             },
-    "gen_swal_title_confirm":  {
-                                   "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø¹Ù…Ù„ÙŠØ© Ù„Ù„Ø¨Ø§Ø¦Ø¹",
-                                   "en":  "Confirm Action for Merchant"
-                               },
-    "gen_swal_btn_yes_delete":  {
-                                    "ar":  "Ù†Ø¹Ù…ØŒ Ø§Ø­Ø°ÙÙ‡Ø§!",
-                                    "en":  "Yes, delete it!"
-                                },
-    "gen_swal_btn_yes_discard":  {
-                                     "ar":  "Ù†Ø¹Ù…ØŒ ØªØ¬Ø§Ù‡Ù„",
-                                     "en":  "Yes, Discard"
-                                 },
-    "gen_swal_delete_success":  {
-                                    "ar":  "تم حذف المنتج بنجاح.",
-                                    "en":  "The product was deleted successfully."
-                                },
-    "gen_swal_btn_cancel":  {
-                                "ar":  "Ø¥Ù„ØºØ§Ø¡",
-                                "en":  "Cancel"
-                            },
-    "gen_swal_btn_back":  {
-                              "ar":  "ØªØ±Ø§Ø¬Ø¹",
-                              "en":  "Go Back"
-                          },
-    "gen_swal_discard_title":  {
-                                   "ar":  "ØªØ¬Ø§Ù‡Ù„ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„Ø§ØªØŸ",
-                                   "en":  "Discard changes?"
-                               },
-    "gen_swal_discard_text":  {
-                                  "ar":  "Ø³ÙŠØªÙ… Ù…Ø³Ø­ ÙƒØ§ÙØ© Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª ÙˆØ§Ù„Ø¹ÙˆØ¯Ø© Ù„Ù„Ù…Ù„Ù Ø§Ù„Ø´Ø®ØµÙŠ.",
-                                  "en":  "All data will be cleared and you will return to your profile."
-                              },
-    "gen_swal_remove_text":  {
-                                 "ar":  "Ù‡Ù„ ØªØ±ÙŠØ¯ Ø­Ù‚Ø§Ù‹ Ø­Ø°Ù Ù‡Ø°Ù‡ Ø§Ù„ØµÙˆØ±Ø©ØŸ",
-                                 "en":  "Do you really want to delete this image?"
-                             },
-    "factory_reset_confirm":  {
-                                  "title":  {
-                                                "ar":  "Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ØŸ",
-                                                "en":  "Are you sure?"
-                                            },
-                                  "text":  {
-                                               "ar":  "Ø³ÙŠØªÙ… Ù…Ø³Ø­ ÙƒØ§ÙØ© Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù…Ø³Ø¬Ù„Ø© Ø¹Ù„Ù‰ Ù‡Ø°Ø§ Ø§Ù„Ù…ØªØµÙØ­ ØªÙ…Ø§Ù…Ø§Ù‹ ÙˆØªØ³ÙŠØ¬Ù„ Ø§Ù„Ø®Ø±ÙˆØ¬ØŒ ÙˆÙ„Ø§ ÙŠÙ…ÙƒÙ† Ø§Ù„ØªØ±Ø§Ø¬Ø¹ Ø¹Ù† Ù‡Ø°Ù‡ Ø§Ù„Ø®Ø·ÙˆØ©!",
-                                               "en":  "This will completely wipe all browser data and log you out. This action cannot be undone!"
-                                           },
-                                  "confirm_btn":  {
-                                                      "ar":  "Ù†Ø¹Ù…ØŒ Ø§Ù…Ø³Ø­ ÙƒÙ„ Ø´ÙŠØ¡",
-                                                      "en":  "Yes, wipe everything"
-                                                  }
-                              },
-    "dash_alert_seller_switch":  {
-                                     "title":  {
-                                                   "ar":  "??? ???? ??????",
-                                                   "en":  "Service Provider Mode"
-                                               },
-                                     "text":  {
-                                                  "ar":  "??? ??? ?????? ??????? ???? ???? ??? ???? ???? ?????? ?? ???? ??????.",
-                                                  "en":  "You will track orders where you are the service provider or business owner."
-                                              }
-                                 },
-    "dash_alert_delivery_switch":  {
-                                       "title":  {
-                                                     "ar":  "ÙˆØ¶Ø¹ Ø§Ù„ØªÙˆØµÙŠÙ„",
-                                                     "en":  "Delivery Mode"
-                                                 },
-                                       "text":  {
-                                                    "ar":  "Ø³ÙˆÙ ØªØªÙ… Ù…ØªØ§Ø¨Ø¹Ø© Ù…Ù‡Ø§Ù… Ø§Ù„ØªÙˆØµÙŠÙ„ Ø§Ù„Ù…Ø³Ù†Ø¯Ø© Ø¥Ù„ÙŠÙƒ.",
-                                                    "en":  "You will track delivery tasks assigned to you."
-                                                }
-                                   },
-    "dash_alert_buyer_switch":  {
-                                    "title":  {
-                                                  "ar":  "ÙˆØ¶Ø¹ Ø§Ù„Ù…Ø´ØªØ±ÙŠ",
-                                                  "en":  "Buyer Mode"
-                                              },
-                                    "text":  {
-                                                 "ar":  "Ø³ÙˆÙ ØªØªÙ… Ù…ØªØ§Ø¨Ø¹Ø© Ù…Ø´ØªØ±ÙŠØ§ØªÙƒ Ø§Ù„Ø´Ø®ØµÙŠØ©.",
-                                                 "en":  "You will track your personal purchases."
-                                             }
-                                },
-    "port_rate_login_required_title":  {
-                                           "ar":  "ØªÙ†Ø¨ÙŠÙ‡",
-                                           "en":  "Notice"
-                                       },
-    "port_rate_login_required_text":  {
-                                          "ar":  "ÙŠØ¬Ø¨ ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø¯Ø®ÙˆÙ„ Ù„ØªÙ‚ÙŠÙŠÙ… Ø§Ù„ØªØ§Ø¬Ø±",
-                                          "en":  "You must be logged in to rate this merchant"
-                                      },
-    "port_rate_dialog_title":  {
-                                   "ar":  "ØªÙ‚ÙŠÙŠÙ… Ø§Ù„ØªØ§Ø¬Ø±",
-                                   "en":  "Rate Merchant"
-                               },
-    "port_rate_success_title":  {
-                                    "ar":  "Ø´ÙƒØ±Ø§Ù‹ Ù„Ùƒ!",
-                                    "en":  "Thank you!"
-                                },
-    "port_rate_success_text":  {
-                                   "ar":  "ØªÙ… Ø¥Ø±Ø³Ø§Ù„ ØªÙ‚ÙŠÙŠÙ…Ùƒ Ø¨Ù†Ø¬Ø§Ø­",
-                                   "en":  "Your rating was submitted successfully"
-                               },
-    "port_rate_error_title":  {
-                                  "ar":  "Ø®Ø·Ø£",
-                                  "en":  "Error"
-                              },
-    "port_rate_error_text":  {
-                                 "ar":  "ÙØ´Ù„ ÙÙŠ Ø¥Ø±Ø³Ø§Ù„ Ø§Ù„ØªÙ‚ÙŠÙŠÙ…",
-                                 "en":  "Failed to submit rating"
-                             },
-    "port_featured_add_confirm":  {
-                                      "ar":  "Ù‡Ù„ ØªØ±ÙŠØ¯ Ø¥Ø¶Ø§ÙØ© Ù‡Ø°Ø§ Ø§Ù„Ù…Ù†ØªØ¬ Ù„Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ù…ÙŠØ²Ø© Ù„Ù„Ø¨Ø§Ø¦Ø¹ØŸ",
-                                      "en":  "Do you want to add this product to the merchant\u0027s featured list?"
-                                  },
-    "port_featured_remove_confirm":  {
-                                         "ar":  "Ù‡Ù„ ØªØ±ÙŠØ¯ Ø¥Ø²Ø§Ù„Ø© Ù‡Ø°Ø§ Ø§Ù„Ù…Ù†ØªØ¬ Ù…Ù† Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ù…ÙŠØ²Ø© Ù„Ù„Ø¨Ø§Ø¦Ø¹ØŸ",
-                                         "en":  "Do you want to remove this product from the merchant\u0027s featured list?"
-                                     },
-    "port_delete_success_title":  {
-                                      "ar":  "ØªÙ… Ø§Ù„Ø­Ø°Ù!",
-                                      "en":  "Deleted!"
-                                  },
-    "port_delete_success_text":  {
-                                     "ar":  "ØªÙ… Ø­Ø°Ù Ø§Ù„Ù…Ù†ØªØ¬ Ø¨Ù†Ø¬Ø§Ø­.",
-                                     "en":  "Product deleted successfully."
-                                 },
-    "port_share_copied_title":  {
-                                    "ar":  "ØªÙ… Ù†Ø³Ø® Ø§Ù„Ø±Ø§Ø¨Ø·!",
-                                    "en":  "Link Copied!"
-                                },
-    "port_share_copied_text":  {
-                                   "ar":  "ØªÙ… Ù†Ø³Ø® Ø±Ø§Ø¨Ø· Ø§Ù„Ù…Ù„Ù Ø§Ù„Ø´Ø®ØµÙŠ Ù„Ù„Ø­Ø§ÙØ¸Ø©",
-                                   "en":  "Profile link copied to clipboard"
-                               },
-    "port_fetch_error_title":  {
-                                   "ar":  "Ø®Ø·Ø£",
-                                   "en":  "Error"
-                               },
-    "port_fetch_error_text":  {
-                                  "ar":  "Ù„Ù… ÙŠØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„ØªØ§Ø¬Ø±",
-                                  "en":  "Merchant data not found"
-                              },
-    "net_no_connection":  {
-                              "ar":  "Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø§ØªØµØ§Ù„ Ø¨Ø§Ù„Ø¥Ù†ØªØ±Ù†Øª",
-                              "en":  "No internet connection"
-                          },
-    "net_restored":  {
-                         "ar":  "ØªÙ… Ø§Ø³ØªØ¹Ø§Ø¯Ø© Ø§Ù„Ø§ØªØµØ§Ù„ Ø¨Ø§Ù„Ø¥Ù†ØªØ±Ù†Øª.",
-                         "en":  "Internet connection restored."
-                     },
-    "net_lost":  {
-                     "ar":  "Ø§Ù†Ù‚Ø·Ø¹ Ø§Ù„Ø§ØªØµØ§Ù„ Ø¨Ø§Ù„Ø¥Ù†ØªØ±Ù†Øª.",
-                     "en":  "Internet connection lost."
-                 },
-    "offline_title":  {
-                          "ar":  "Ø§Ù†Ù‚Ø·Ø¹ Ø§Ù„Ø§ØªØµØ§Ù„",
-                          "en":  "No Connection"
-                      },
-    "offline_desc":  {
-                         "ar":  "ÙŠØ¨Ø¯Ùˆ Ø£Ù†Ùƒ ØºÙŠØ± Ù…ØªØµÙ„ Ø¨Ø§Ù„Ø¥Ù†ØªØ±Ù†Øª Ø­Ø§Ù„ÙŠØ§Ù‹. ÙŠØ±Ø¬Ù‰ Ø§Ù„ØªØ­Ù‚Ù‚ Ù…Ù† Ø§Ù„Ø´Ø¨ÙƒØ© ÙˆØ§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                         "en":  "It seems you are currently offline. Please check your network and try again."
-                     },
-    "offline_retry":  {
-                          "ar":  "Ø¥Ø¹Ø§Ø¯Ø© Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø©",
-                          "en":  "Retry"
-                      },
-    "net_weak_or_disconnected":  {
-                                     "ar":  "Ø§ØªØµØ§Ù„ Ø§Ù„Ø¥Ù†ØªØ±Ù†Øª Ø¶Ø¹ÙŠÙ Ø£Ùˆ Ù…Ù‚Ø·ÙˆØ¹",
-                                     "en":  "Internet connection is weak or disconnected"
-                                 },
-    "api_fetch_label":  {
-                            "ar":  "[Ø¬Ù„Ø¨ API]",
-                            "en":  "[API Fetch]"
-                        },
-    "api_http_error":  {
-                           "ar":  "Ø®Ø·Ø£ HTTP! Ø§Ù„Ø­Ø§Ù„Ø©:",
-                           "en":  "HTTP Error! Status:"
-                       },
-    "api_connection_failed":  {
-                                  "ar":  "ÙØ´Ù„ Ø§Ù„Ø§ØªØµØ§Ù„:",
-                                  "en":  "Connection failed:"
-                              },
-    "install_pwa_title":  {
-                              "ar":  "Ø§Ø®ØªØ± Ø§Ù„Ø·Ø±ÙŠÙ‚Ø© Ø§Ù„Ù…Ù†Ø§Ø³Ø¨Ø© Ù„Ùƒ",
-                              "en":  "Choose the Suitable Method"
-                          },
-    "install_ios_title":  {
-                              "ar":  "Ø§Ù„ØªØ«Ø¨ÙŠØª Ø¹Ù„Ù‰ Ø§Ù„Ø¢ÙŠÙÙˆÙ† ÙƒØªØ·Ø¨ÙŠÙ‚ ÙˆÙŠØ¨",
-                              "en":  "Install on iPhone as a Web App"
-                          },
-    "install_ios_desc":  {
-                             "ar":  "Ù„ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØªØ·Ø¨ÙŠÙ‚ØŒ ÙŠØ±Ø¬Ù‰ Ø§ØªØ¨Ø§Ø¹ Ø§Ù„Ø¢ØªÙŠ:",
-                             "en":  "To install the app, please follow these steps:"
-                         },
-    "install_ios_step_1":  {
-                               "ar":  "1. Ø§Ø¶ØºØ· Ø¹Ù„Ù‰ Ù‡Ø°Ø§ Ø§Ù„Ø²Ø± ÙÙŠ Ø§Ù„Ù…ØªØµÙØ­.",
-                               "en":  "1. Tap this button in the browser."
-                           },
-    "install_ios_step_2":  {
-                               "ar":  "2. Ù‚Ù… Ø¨Ø§Ù„ØªÙ…Ø±ÙŠØ± Ù„Ø£Ø³ÙÙ„ Ù„ØªØ¨Ø­Ø« Ø¹Ù† Ø®ÙŠØ§Ø± \u003cb\u003eØ¥Ø¶Ø§ÙØ© Ø¥Ù„Ù‰ Ø§Ù„ØµÙØ­Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©\u003c/b\u003e.",
-                               "en":  "2. Scroll down to find \u003cb\u003eAdd to Home Screen\u003c/b\u003e."
-                           },
-    "install_ios_step_3":  {
-                               "ar":  "3. Ø§Ø®ØªØ± \u003cb\u003eØ¥Ø¶Ø§ÙØ© Ø¥Ù„Ù‰ Ø§Ù„ØµÙØ­Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ© (Add to Home Screen)\u003c/b\u003e Ù…Ù† Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©.",
-                               "en":  "3. Select \u003cb\u003eAdd to Home Screen\u003c/b\u003e from the list."
-                           },
-    "install_ios_step_4":  {
-                               "ar":  "4. Ø§Ø¶ØºØ· Ø¹Ù„Ù‰ ÙƒÙ„Ù…Ø© \u003cb\u003eØ¥Ø¶Ø§ÙØ© (Add)\u003c/b\u003e ÙÙŠ Ø£Ø¹Ù„Ù‰ ÙŠÙ…ÙŠÙ† Ø§Ù„Ø´Ø§Ø´Ø©.",
-                               "en":  "4. Tap \u003cb\u003eAdd\u003c/b\u003e at the top right of the screen."
-                           },
-    "pwa_install_small_text":  {
-                                   "ar":  "ØªÙ†ØµÙŠØ¨ ÙƒÙ€",
-                                   "en":  "INSTALL AS"
-                               },
-    "pwa_install_main_text":  {
-                                  "ar":  "ØªØ·Ø¨ÙŠÙ‚ ÙˆÙŠØ¨ PWA",
-                                  "en":  "Web App PWA"
-                              },
-    "play_store_get_it_on":  {
-                                 "ar":  "Ù…ØªÙˆÙØ± Ø¹Ù„Ù‰",
-                                 "en":  "GET IT ON"
-                             },
-    "play_store_name":  {
-                            "ar":  "Ø¬ÙˆØ¬Ù„ Ø¨Ù„Ø§ÙŠ",
-                            "en":  "Google Play"
-                        },
-    "install_done_btn":  {
-                             "ar":  "ØªÙ…",
-                             "en":  "Done"
-                         },
-    "dash_welcome":  {
-                         "ar":  "Ø£Ù‡Ù„Ø§Ù‹ Ø¨ÙƒØŒ {name}",
-                         "en":  "Welcome, {name}"
-                     },
-    "dash_edit_profile":  {
-                              "ar":  "ØªØ¹Ø¯ÙŠÙ„ Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª",
-                              "en":  "Edit Profile"
-                          },
-    "dash_add_product":  {
-                             "ar":  "Ø¥Ø¶Ø§ÙØ© Ù…Ù†ØªØ¬",
-                             "en":  "Add Product"
-                         },
-    "dash_my_products":  {
-                             "ar":  "Ù…Ù†ØªØ¬Ø§ØªÙŠ",
-                             "en":  "My Products"
-                         },
-    "dash_admin_panel":  {
-                             "ar":  "Ù„ÙˆØ­Ø© Ø§Ù„Ù…Ø³Ø¤ÙˆÙ„",
-                             "en":  "Admin Panel"
-                         },
-    "dash_logout":  {
-                        "ar":  "ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø®Ø±ÙˆØ¬",
-                        "en":  "Logout"
-                    },
-    "dash_settings_title":  {
-                                "ar":  "Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª",
-                                "en":  "Settings"
-                            },
-    "dash_choose_destination":  {
-                                    "ar":  "Ø§Ø®ØªØ± ÙˆØ¬Ù‡ØªÙƒ",
-                                    "en":  "Choose Destination"
-                                },
-    "dash_btn_users":  {
-                           "ar":  "Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ†",
-                           "en":  "Users"
-                       },
-    "dash_btn_advert":  {
-                            "ar":  "Ø§Ù„Ø§Ø¹Ù„Ø§Ù†",
-                            "en":  "Ads"
-                        },
-    "dash_btn_notifications":  {
-                                   "ar":  "Ø§Ø´Ø¹Ø§Ø±Ø§Øª",
-                                   "en":  "Notifications"
-                               },
-    "dash_btn_pending_products":  {
-                                      "ar":  "Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø¹Ù„Ù‚Ø©",
-                                      "en":  "Pending Products"
-                                  },
-    "dash_btn_factory_reset":  {
-                                   "ar":  "Ø¥Ø¹Ø§Ø¯Ø© Ø¶Ø¨Ø· Ø§Ù„Ù…ØµÙ†Ø¹ (Ù…Ø³Ø­ Ø´Ø§Ù…Ù„)",
-                                   "en":  "Factory Reset (Wipe All)"
-                               },
-    "dash_support":  {
-                         "ar":  "Ø§Ù„Ø¯Ø¹Ù… ÙˆØ§Ù„Ù…Ø³Ø§Ø¹Ø¯Ø©",
-                         "en":  "Support \u0026 Help"
-                     },
-    "dash_notifications_tab":  {
-                                   "ar":  "Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
-                                   "en":  "Notifications"
-                               },
-    "dash_profile_tab":  {
-                             "ar":  "ØªØ¹Ø¯ÙŠÙ„ Ø§Ù„Ù…Ù„Ù Ø§Ù„Ø´Ø®ØµÙŠ",
-                             "en":  "Edit Profile"
-                         },
-    "dash_theme_day":  {
-                           "ar":  "Ø§Ù„ÙˆØ¶Ø¹ Ø§Ù„Ù†Ù‡Ø§Ø±ÙŠ",
-                           "en":  "Day Mode"
-                       },
-    "dash_theme_night":  {
-                             "ar":  "Ø§Ù„ÙˆØ¶Ø¹ Ø§Ù„Ù„ÙŠÙ„ÙŠ",
-                             "en":  "Night Mode"
-                         },
-    "dash_fetch_orders_title":  {
-                                    "ar":  "Ù…ØªØ§Ø¨Ø¹Ø© Ø§Ù„Ø·Ù„Ø¨Ø§Øª",
-                                    "en":  "Track Orders"
-                                },
-    "dash_opt_buyer":  {
-                           "ar":  "Ù…Ø´ØªØ±ÙŠ",
-                           "en":  "Buyer"
-                       },
-    "dash_opt_seller":  {
-                            "ar":  "Ø¨Ø§Ø¦Ø¹",
-                            "en":  "Seller"
-                        },
-    "dash_opt_delivery":  {
-                              "ar":  "ØªÙˆØµÙŠÙ„",
-                              "en":  "Delivery"
-                          },
-    "dash_opt_admin":  {
-                           "ar":  "Ù…Ø³Ø¤ÙˆÙ„",
-                           "en":  "Admin"
-                       },
-    "dash_opt_super_admin":  {
-                                 "ar":  "Ø³ÙˆØ¨Ø± Ø£Ø¯Ù…Ù†",
-                                 "en":  "Super Admin"
-                             },
-    "settings":  {
-                     "ar":  "Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª",
-                     "en":  "Settings"
-                 },
-    "contact_details_title_phone":  {
-                                        "ar":  "Ù‡Ø§ØªÙ Ø§Ùˆ ÙˆØ§ØªØ³ Ø§Ø¨",
-                                        "en":  "Phone or WhatsApp"
-                                    },
-    "contact_title":  {
-                          "ar":  "Ù„Ù„ØªÙˆØ§ØµÙ„",
-                          "en":  "Contact"
-                      },
-    "contact_tab_form_desc":  {
-                                  "ar":  "Ø±Ø§Ø³Ù„Ù†Ø§",
-                                  "en":  "Message Us"
-                              },
-    "contact_tab_services_desc":  {
-                                      "ar":  "Ø®Ø¯Ù…Ø§ØªÙ†Ø§",
-                                      "en":  "Our Services"
-                                  },
-    "contact_tab_privacy_desc":  {
-                                     "ar":  "Ø§Ù„Ø®ØµÙˆØµÙŠØ©",
-                                     "en":  "Privacy"
-                                 },
-    "contact_tab_delete_desc":  {
-                                    "ar":  "Ø­Ø°Ù Ø§Ù„Ø­Ø³Ø§Ø¨",
-                                    "en":  "Delete Account"
-                                },
-    "contact_page_title":  {
-                               "ar":  "Suez Bazaar - ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§",
-                               "en":  "Suez Bazaar - Contact Us"
-                           },
-    "contact_faq_title":  {
-                              "ar":  "Ø§Ù„Ø£Ø³Ø¦Ù„Ø© Ø§Ù„Ø´Ø§Ø¦Ø¹Ø©",
-                              "en":  "Frequently Asked Questions"
-                          },
-    "contact_faq_q1":  {
-                           "ar":  "Ù„Ù…Ø§Ø°Ø§ Ù†Ø«Ù‚ ÙÙŠ Ø®Ø¯Ù…Ø§ØªÙ†Ø§ØŸ",
-                           "en":  "Why do we trust our services?"
-                       },
-    "contact_faq_a1":  {
-                           "ar":  "Ù†Ø«Ù‚ ÙÙŠ Ø®Ø¯Ù…Ø§ØªÙ†Ø§ Ù„Ø£Ù†Ù‡Ø§ ØªØ¹Ù…Ù„ Ø¹Ù„Ù‰ Ø¨Ù†ÙŠØ© ØªØ­ØªÙŠØ© Ø³Ø­Ø§Ø¨ÙŠØ© Ø¹Ø§Ù„Ù…ÙŠØ© ØªÙˆÙØ± Ø§Ø³ØªÙ‚Ø±Ø§Ø±Ù‹Ø§ Ø¹Ø§Ù„ÙŠÙ‹Ø§ ÙˆØ³Ø±Ø¹Ø© ÙÙŠ Ø§Ù„Ø§Ø³ØªØ¬Ø§Ø¨Ø© ÙˆÙˆÙ‚Øª ØªØ´ØºÙŠÙ„ Ù…Ø±ØªÙØ¹. Ù‡Ø°Ø§ Ø§Ù„ØªØ·Ø¨ÙŠÙ‚ ÙŠØ¹ØªÙ…Ø¯ Ø¹Ù„Ù‰ Ø®Ø¯Ù…Ø§Øª ÙˆØªÙ‚Ù†ÙŠØ§Øª Ù…ØªÙ‚Ø¯Ù…Ø© Ù…Ù† Google Ù„Ø¯Ø¹Ù… Ø§Ù„Ø£Ø¯Ø§Ø¡ØŒ ÙˆØ­Ù…Ø§ÙŠØ© Ø§Ù„Ø¨ÙŠØ§Ù†Ø§ØªØŒ ÙˆØ§Ø³ØªÙ…Ø±Ø§Ø±ÙŠØ© Ø§Ù„Ø®Ø¯Ù…Ø© Ø¨Ø£Ø¹Ù„Ù‰ Ù‚Ø¯Ø± Ù…Ù…ÙƒÙ† Ù…Ù† Ø§Ù„Ø£Ù…Ø§Ù† ÙˆØ§Ù„Ø§Ø¹ØªÙ…Ø§Ø¯ÙŠØ©.",
-                           "en":  "We trust our services because they run on a global cloud infrastructure that provides strong stability, fast response times, and high uptime. This app relies on advanced Google cloud services and technologies to support performance, data protection, and reliable service continuity."
-                       },
-    "contact_faq_q2":  {
-                           "ar":  "ÙƒÙŠÙ ÙŠØ¹Ù…Ù„ Suez Bazaar ÙÙŠ Ø§Ù„ØªØ³Ø¬ÙŠÙ„ Ø£Ùˆ Ø´Ø±Ø§Ø¡ Ø£Ùˆ Ø¨ÙŠØ¹ Ù…Ù†ØªØ¬ØŸ",
-                           "en":  "How does Suez Bazaar work for registration, buying, or selling a product?"
-                       },
-    "contact_faq_a2":  {
-                           "ar":  "Ø§Ù„ØªØ³Ø¬ÙŠÙ„ ÙÙŠ Ø³ÙˆÙŠØ³ Ø¨Ø§Ø²Ø§Ø± Ù…Ø¬Ø§Ù†ÙŠ ØªÙ…Ø§Ù…Ù‹Ø§ ÙˆØ³ÙŠØ¸Ù„ Ù…Ø¬Ø§Ù†ÙŠÙ‹Ø§ Ø¯ÙˆÙ† Ø±Ø³ÙˆÙ… Ø£Ùˆ Ø§Ø´ØªØ±Ø§ÙƒØ§Øª. ÙŠÙ…ÙƒÙ†Ùƒ Ø´Ø±Ø§Ø¡ Ø£ÙŠ Ù…Ù†ØªØ¬ Ø¨Ø³Ù‡ÙˆÙ„Ø© ÙˆØ¥ØªÙ…Ø§Ù… Ø§Ù„Ø·Ù„Ø¨ ÙˆÙ…ØªØ§Ø¨Ø¹Ø© Ø­Ø§Ù„ØªÙ‡ Ø­ØªÙ‰ Ø§Ù„Ø§Ø³ØªÙ„Ø§Ù….",
-                           "en":  "Registration on Suez Bazaar is completely free and stays free. You can buy products easily, complete the order, and track it until delivery."
-                       },
-    "contact_faq_q3":  {
-                           "ar":  "ÙƒÙŠÙ ÙŠÙ…ÙƒÙ†Ù†ÙŠ Ø¹Ù…Ù„ Ø¥Ø¹Ù„Ø§Ù† Ø£Ùˆ Ø­Ù…Ù„Ø© ØªØ³ÙˆÙŠÙ‚ÙŠØ© Ù…Ø¬Ø§Ù†ÙŠØ© Ø£Ùˆ Ù…Ø®ØµØµØ©ØŸ",
-                           "en":  "How can I create a free or customized advertisement or marketing campaign?"
-                       },
-    "contact_faq_a3":  {
-                           "ar":  "Ø¨Ù…Ø¬Ø±Ø¯ Ø¥Ù†Ø´Ø§Ø¡ ØµÙØ­ØªÙƒ Ø§Ù„Ø®Ø§ØµØ© Ø¹Ù„Ù‰ Ø³ÙˆÙŠØ³ Ø¨Ø§Ø²Ø§Ø±ØŒ ÙØ¥Ù†Ù‡Ø§ ØªØµØ¨Ø­ ÙˆØ§Ø¬Ù‡Ø© Ø¥Ø¹Ù„Ø§Ù†ÙŠØ© Ù…Ù…ÙŠØ²Ø© Ù„ÙƒØŒ Ø­ÙŠØ« ÙŠÙ…ÙƒÙ†Ùƒ Ø¥Ø¶Ø§ÙØ© Ù…Ù†ØªØ¬Ø§ØªÙƒØŒ ÙˆØ¥Ø¨Ø±Ø§Ø² Ø§Ù„Ù…Ù…ÙŠØ² Ù…Ù†Ù‡Ø§ØŒ ÙˆØ¹Ø±Ø¶ Ù…Ø¹Ù„ÙˆÙ…Ø§ØªÙƒ Ù„Ù„ØªÙˆØ§ØµÙ„ØŒ ÙƒÙ…Ø§ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø´Ø§Ø±ÙƒØ© ØµÙØ­ØªÙƒ Ù…Ø¹ Ø£ÙŠ Ø´Ø®Øµ ÙÙŠ Ø£ÙŠ Ù…ÙƒØ§Ù†. ÙˆÙŠÙ…ÙƒÙ†Ùƒ Ø£ÙŠØ¶Ù‹Ø§ Ø¥Ù†Ø´Ø§Ø¡ Ø­Ù…Ù„Ø© Ø¯Ø§Ø¦Ù…Ø© Ø¯Ø§Ø®Ù„ Ø³ÙˆÙŠØ³ Ø¨Ø§Ø²Ø§Ø± Ø¹Ø¨Ø± Ø¥Ø¶Ø§ÙØ© Ù…Ù†ØªØ¬ Ø®Ø¯Ù…ÙŠ Ù„ÙŠØ¸Ù‡Ø± Ù„Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† ÙƒØ¥Ø¹Ù„Ø§Ù† Ù…Ø³ØªÙ…Ø±ØŒ Ø£Ùˆ Ø§Ù„ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§ Ù„Ø·Ù„Ø¨ Ø­Ù…Ù„Ø§Øª Ø¹Ø§Ù…Ø© Ø£Ùˆ Ù…Ø®ØµØµØ© ØªÙ†Ø§Ø³Ø¨ Ù†Ø´Ø§Ø·Ùƒ.",
-                           "en":  "Once you create your own page on Suez Bazaar, it becomes a distinctive promotional storefront for you, where you can add your products, highlight featured ones, show your contact information, and share your page with anyone anywhere. You can also create an ongoing campaign inside Suez Bazaar by adding a service product that appears to users as a continuous ad, or contact us for general or customized campaigns that suit your business."
-                       },
-    "contact_faq_q5":  {
-                           "ar":  "Ù…Ø§ Ø­Ø¯ÙˆØ¯ Ù…Ø³Ø¤ÙˆÙ„ÙŠØ© Suez Bazaar ØªØ¬Ø§Ù‡ Ø§Ù„Ø¨Ø§Ø¦Ø¹ÙŠÙ† ÙˆØ§Ù„Ù…Ø´ØªØ±ÙŠÙ† ÙˆØ¬ÙˆØ¯Ø© Ø§Ù„Ù…Ø¹Ø±ÙˆØ¶ØŸ",
-                           "en":  "What are Suez Bazaar\u0027s responsibility limits regarding sellers, buyers, and the quality of listed products or services?"
-                       },
-    "contact_faq_a5":  {
-                           "ar":  "ØªØ¹Ù…Ù„ Suez Bazaar ÙƒÙ…Ù†ØµØ© Ù„Ø¹Ø±Ø¶ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª ÙˆØ§Ù„Ø®Ø¯Ù…Ø§Øª ÙˆØ§Ù„ØªÙˆØ§ØµÙ„ Ø¨ÙŠÙ† Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ†ØŒ ÙˆÙ‡ÙŠ Ù„Ø§ ØªØ¶Ù…Ù† Ø¬Ø¯ÙŠØ© Ø§Ù„Ø¨Ø§Ø¦Ø¹ Ø£Ùˆ Ø§Ù„Ù…Ø´ØªØ±ÙŠ ÙˆÙ„Ø§ Ø¬ÙˆØ¯Ø© Ø§Ù„Ù…Ù†ØªØ¬ Ø£Ùˆ Ø§Ù„Ø®Ø¯Ù…Ø©. Ù„Ø°Ù„Ùƒ ÙŠØ¬Ø¨ Ø¹Ù„Ù‰ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ø§Ù„ØªØ£ÙƒØ¯ Ø¨Ù†ÙØ³Ù‡ Ù…Ù† Ø§Ù„Ø·Ø±Ù Ø§Ù„Ø¢Ø®Ø±ØŒ ÙˆØ¹Ø¯Ù… Ø¯ÙØ¹ Ø£ÙŠ Ù…Ø¨Ù„Øº Ø¥Ù„Ø§ Ø¨Ø¹Ø¯ Ø§Ø³ØªÙ„Ø§Ù… Ø§Ù„Ù…Ù†ØªØ¬ Ø£Ùˆ Ø§Ù„Ø­ØµÙˆÙ„ Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø¯Ù…Ø© ÙˆØ§Ù„ØªØ£ÙƒØ¯ Ù…Ù†Ù‡Ø§. ÙƒÙ…Ø§ ØªÙ„ØªØ²Ù… Suez Bazaar Ø¨Ø­Ø°Ù Ø£ÙŠ ØµØ§Ø­Ø¨ Ù…Ù†ØªØ¬ Ø£Ùˆ Ø®Ø¯Ù…Ø© ÙŠØ«Ø¨Øª Ù…Ù† Ø®Ù„Ø§Ù„ Ø§Ù„Ø¨Ù„Ø§ØºØ§Øª Ø£Ùˆ Ø§Ù„Ù…Ø±Ø§Ø¬Ø¹Ø© Ø£Ù†Ù‡ ÙŠØ¹Ø±Ø¶ Ù…Ù†ØªØ¬Ù‹Ø§ Ø£Ùˆ Ø®Ø¯Ù…Ø© ØºÙŠØ± Ø­Ù‚ÙŠÙ‚ÙŠØ© Ø£Ùˆ ÙŠÙ…Ø§Ø±Ø³ Ø£ÙŠ Ù†ÙˆØ¹ Ù…Ù† Ø£Ù†ÙˆØ§Ø¹ Ø§Ù„ØºØ´ Ø£Ùˆ Ø§Ù„ØªØ¶Ù„ÙŠÙ„.",
-                           "en":  "Suez Bazaar operates as a platform for listing products and services and enabling communication between users. It does not guarantee the seriousness of sellers or buyers, nor the quality of any product or service. Users should verify the other party themselves and should not make any payment until they receive the product or obtain the service and confirm it. Suez Bazaar also commits to removing any product or service provider proven through reports or review to be offering fake products or services or engaging in any form of fraud or deception."
-                       },
-    "contact_info_title":  {
-                               "ar":  "Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ù„Ø§ØªØµØ§Ù„",
-                               "en":  "Contact Information"
-                           },
-    "contact_details_title_email":  {
-                                        "ar":  "Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ",
-                                        "en":  "Email"
-                                    },
-    "contact_details_title_hours":  {
-                                        "ar":  "Ø³Ø§Ø¹Ø§Øª Ø§Ù„Ø¹Ù…Ù„",
-                                        "en":  "Working Hours"
-                                    },
-    "contact_hours_text":  {
-                               "ar":  "ÙŠÙˆÙ…ÙŠÙ‹Ø§: 9:00 ØµØ¨Ø§Ø­Ù‹Ø§ - 10:00 Ù…Ø³Ø§Ø¡Ù‹",
-                               "en":  "Daily: 9:00 AM - 10:00 PM"
-                           },
-    "contact_qr_title":  {
-                             "ar":  "Ø§Ù…Ø³Ø­ Ø§Ù„Ø±Ù…Ø² Ù„Ù„ÙˆØµÙˆÙ„ Ø§Ù„Ø³Ø±ÙŠØ¹",
-                             "en":  "Scan the code for quick access"
-                         },
-    "contact_label_name":  {
-                               "ar":  "Ø§Ù„Ø§Ø³Ù… Ø§Ù„ÙƒØ§Ù…Ù„ *",
-                               "en":  "Full Name *"
-                           },
-    "contact_label_email":  {
-                                "ar":  "Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ *",
-                                "en":  "Email *"
-                            },
-    "contact_label_phone":  {
-                                "ar":  "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ",
-                                "en":  "Phone Number"
-                            },
-    "contact_label_service":  {
-                                  "ar":  "Ù†ÙˆØ¹ Ø§Ù„Ø®Ø¯Ù…Ø© Ø§Ù„Ù…Ø·Ù„ÙˆØ¨Ø©",
-                                  "en":  "Requested Service Type"
-                              },
-    "contact_option_default":  {
-                                   "ar":  "Ø§Ø®ØªØ± Ø®Ø¯Ù…Ø©",
-                                   "en":  "Choose a service"
-                               },
-    "contact_option_consulting":  {
-                                      "ar":  "Ø§Ø³ØªØ´Ø§Ø±Ø§Øª ØªØ³ÙˆÙŠÙ‚ÙŠØ©",
-                                      "en":  "Marketing Consulting"
-                                  },
-    "contact_option_digital":  {
-                                   "ar":  "ØªØ³ÙˆÙŠÙ‚ Ø±Ù‚Ù…ÙŠ",
-                                   "en":  "Digital Marketing"
-                               },
-    "contact_option_branding":  {
-                                    "ar":  "ØªØµÙ…ÙŠÙ… Ø§Ù„Ù‡ÙˆÙŠØ© Ø§Ù„Ø¨ØµØ±ÙŠØ©",
-                                    "en":  "Brand Identity Design"
-                                },
-    "contact_option_other":  {
-                                 "ar":  "Ø®Ø¯Ù…Ø© Ø£Ø®Ø±Ù‰",
-                                 "en":  "Other Service"
-                             },
-    "contact_label_message":  {
-                                  "ar":  "Ø§Ù„Ø±Ø³Ø§Ù„Ø© *",
-                                  "en":  "Message *"
-                              },
-    "contact_submit_button":  {
-                                  "ar":  "Ø¥Ø±Ø³Ø§Ù„ Ø§Ù„Ø±Ø³Ø§Ù„Ø©",
-                                  "en":  "Send Message"
-                              },
-    "contact_service_title_1":  {
-                                    "ar":  "Ø§Ù„ØªØ³ÙˆÙŠÙ‚ Ø§Ù„Ø±Ù‚Ù…ÙŠ",
-                                    "en":  "Digital Marketing"
-                                },
-    "contact_service_p_1":  {
-                                "ar":  "Ø­Ù„ÙˆÙ„ ØªØ³ÙˆÙŠÙ‚ Ø±Ù‚Ù…ÙŠ Ù…ØªÙƒØ§Ù…Ù„Ø© Ù„Ø²ÙŠØ§Ø¯Ø© ÙˆØµÙˆÙ„ Ø¹Ù„Ø§Ù…ØªÙƒ Ø§Ù„ØªØ¬Ø§Ø±ÙŠØ©",
-                                "en":  "Integrated digital marketing solutions to expand your brand reach"
-                            },
-    "contact_service_title_2":  {
-                                    "ar":  "ØªØ­Ù„ÙŠÙ„ Ø§Ù„Ø³ÙˆÙ‚",
-                                    "en":  "Market Analysis"
-                                },
-    "contact_service_p_2":  {
-                                "ar":  "Ø¯Ø±Ø§Ø³Ø§Øª ÙˆØªØ­Ù„ÙŠÙ„Ø§Øª Ù…ØªØ¹Ù…Ù‚Ø© Ù„ÙÙ‡Ù… Ø§Ù„Ø³ÙˆÙ‚ Ø§Ù„Ù…Ø³ØªÙ‡Ø¯Ù",
-                                "en":  "In-depth studies and analysis to understand your target market"
-                            },
-    "contact_service_title_3":  {
-                                    "ar":  "Ø§Ù„Ø¥Ø¹Ù„Ø§Ù†Ø§Øª",
-                                    "en":  "Advertising"
-                                },
-    "contact_service_p_3":  {
-                                "ar":  "Ø¥Ø¯Ø§Ø±Ø© Ø­Ù…Ù„Ø§Øª Ø¥Ø¹Ù„Ø§Ù†ÙŠØ© ÙØ¹Ø§Ù„Ø© Ø¹Ø¨Ø± Suez Bazaar",
-                                "en":  "Managing effective advertising campaigns through Suez Bazaar"
-                            },
-    "contact_footer_title_1":  {
-                                   "ar":  "ØªØ§Ø¨Ø¹Ù†Ø§",
-                                   "en":  "Follow Us"
-                               },
-    "contact_footer_p_1":  {
-                               "ar":  "Ù†Ù‚Ø¯Ù… Ø­Ù„ÙˆÙ„ ØªØ³ÙˆÙŠÙ‚ÙŠØ© Ù…Ø¨ØªÙƒØ±Ø© ÙˆÙ…Ø®ØµØµØ© Ù„Ù…Ø³Ø§Ø¹Ø¯Ø© Ø£Ø¹Ù…Ø§Ù„Ùƒ Ø¹Ù„Ù‰ Ø§Ù„Ù†Ù…Ùˆ ÙˆØ§Ù„Ø§Ø²Ø¯Ù‡Ø§Ø± ÙÙŠ Ø§Ù„Ø³ÙˆÙ‚ Ø§Ù„ØªÙ†Ø§ÙØ³ÙŠ.",
-                               "en":  "We provide innovative and tailored marketing solutions to help your business grow and thrive in a competitive market."
-                           },
-    "contact_copyright_p":  {
-                                "ar":  "Â© 2025. Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø­Ù‚ÙˆÙ‚ Ù…Ø­ÙÙˆØ¸Ø©.",
-                                "en":  "Â© 2025. All rights reserved."
-                            },
-    "contact_form_required_alert":  {
-                                        "ar":  "ÙŠØ±Ø¬Ù‰ Ù…Ù„Ø¡ Ø§Ù„Ø­Ù‚ÙˆÙ„ Ø§Ù„Ù…Ø·Ù„ÙˆØ¨Ø© (Ø§Ù„Ø§Ø³Ù…ØŒ Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠØŒ Ø§Ù„Ø±Ø³Ø§Ù„Ø©)",
-                                        "en":  "Please fill in the required fields (name, email, message)"
-                                    },
-    "contact_mail_subject":  {
-                                 "ar":  "Ø±Ø³Ø§Ù„Ø© Ù…Ù† {name} - Ù†Ù…ÙˆØ°Ø¬ Ø§Ù„Ø§ØªØµØ§Ù„",
-                                 "en":  "Message from {name} - Contact Form"
-                             },
-    "privacy_page_title":  {
-                               "ar":  "Ø³ÙŠØ§Ø³Ø© Ø§Ù„Ø®ØµÙˆØµÙŠØ© - Suez Bazaar",
-                               "en":  "Privacy Policy - Suez Bazaar"
-                           },
-    "privacy_intro":  {
-                          "ar":  "ÙÙŠ \u003cstrong\u003eSuez Bazaar\u003c/strong\u003e Ù†Ø­ØªØ±Ù… Ø®ØµÙˆØµÙŠØ© Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† ÙˆÙ†Ø³Ø¹Ù‰ Ù„Ø­Ù…Ø§ÙŠØ© Ø¨ÙŠØ§Ù†Ø§ØªÙ‡Ù… Ø§Ù„Ø´Ø®ØµÙŠØ© ÙˆÙÙ‚Ù‹Ø§ Ù„Ø£ÙØ¶Ù„ Ø§Ù„Ù…Ù…Ø§Ø±Ø³Ø§Øª.",
-                          "en":  "At \u003cstrong\u003eSuez Bazaar\u003c/strong\u003e, we respect user privacy and strive to protect personal data according to best practices."
-                      },
-    "privacy_h2_1":  {
-                         "ar":  "Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ù„ØªÙŠ Ù†Ù‚ÙˆÙ… Ø¨Ø¬Ù…Ø¹Ù‡Ø§",
-                         "en":  "Information We Collect"
-                     },
-    "privacy_p_1":  {
-                        "ar":  "Ù‚Ø¯ Ù†Ù‚ÙˆÙ… Ø¨Ø¬Ù…Ø¹ Ø¨Ø¹Ø¶ Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ù„Ø£Ø³Ø§Ø³ÙŠØ© Ù…Ø«Ù„ Ø§Ù„Ø§Ø³Ù… ÙˆØ±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ Ø¹Ù†Ø¯ Ø§Ù„ØªØ³Ø¬ÙŠÙ„ ÙÙŠ Ø§Ù„ØªØ·Ø¨ÙŠÙ‚ØŒ ÙˆØ°Ù„Ùƒ Ù„ØªØ­Ø³ÙŠÙ† ØªØ¬Ø±Ø¨Ø© Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… ÙˆØªØ³Ù‡ÙŠÙ„ Ø¹Ù…Ù„ÙŠØ§Øª Ø§Ù„Ø´Ø±Ø§Ø¡ ÙˆØ§Ù„Ø¨ÙŠØ¹.",
-                        "en":  "We may collect core information such as name and phone number during registration to enhance user experience and facilitate buying and selling."
-                    },
-    "privacy_h2_2":  {
-                         "ar":  "ÙƒÙŠÙÙŠØ© Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª",
-                         "en":  "How We Use Information"
-                     },
-    "privacy_p_2":  {
-                        "ar":  "Ù†Ø³ØªØ®Ø¯Ù… Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª ÙÙ‚Ø· Ù„Ø£ØºØ±Ø§Ø¶ ØªØ´ØºÙŠÙ„ Ø§Ù„ØªØ·Ø¨ÙŠÙ‚ ÙˆØªÙ‚Ø¯ÙŠÙ… Ø§Ù„Ø®Ø¯Ù…Ø§ØªØŒ Ù…Ø«Ù„ Ø§Ù„ØªÙˆØ§ØµÙ„ Ø¨ÙŠÙ† Ø§Ù„Ø¨Ø§Ø¦Ø¹ÙŠÙ† ÙˆØ§Ù„Ù…Ø´ØªØ±ÙŠÙ†ØŒ ÙˆØªØ­Ø³ÙŠÙ† Ø§Ù„Ø£Ø¯Ø§Ø¡ØŒ ÙˆØ¯Ø¹Ù… Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ†.",
-                        "en":  "Data is used only for app operation and services, such as facilitating communication between buyers and sellers and improving performance."
-                    },
-    "privacy_h2_2b":  {
-                          "ar":  "Ù…Ø´Ø§Ø±ÙƒØ© Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„ØªÙˆØ§ØµÙ„ Ø¹Ù†Ø¯ Ø§Ù„Ø´Ø±Ø§Ø¡",
-                          "en":  "Contact Data Sharing Upon Purchase"
-                      },
-    "privacy_p_2b":  {
-                         "ar":  "Ù‚Ø¯ ÙŠØ¸Ù‡Ø± Ù„Ù„Ø¨Ø§Ø¦Ø¹ Ø¨Ø¹Ø¶ Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„ØªÙˆØ§ØµÙ„ Ù…Ø«Ù„ Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ Ø¹Ù†Ø¯ Ø´Ø±Ø§Ø¡ Ù…Ù†ØªØ¬ Ø£Ùˆ Ø®Ø¯Ù…Ø© Ù…Ù†Ù‡ØŒ ÙˆØ°Ù„Ùƒ Ù„ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„ØªÙˆØ§ØµÙ„ ÙˆØªØ³Ù„ÙŠÙ… Ø§Ù„Ø·Ù„Ø¨. ÙˆØ¨Ø¥ØªÙ…Ø§Ù… Ø§Ù„Ø´Ø±Ø§Ø¡ØŒ ÙŠÙ‚Ø± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ø¨Ø¹Ù„Ù…Ù‡ Ø¨Ø°Ù„ÙƒØŒ ÙˆÙ„Ø§ ØªØªØ­Ù…Ù„ Suez Bazaar Ù…Ø³Ø¤ÙˆÙ„ÙŠØ© Ø£ÙŠ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ù„Ù‡Ø°Ù‡ Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª Ø®Ø§Ø±Ø¬ Ù†Ø·Ø§Ù‚ ØªÙ†ÙÙŠØ° Ø§Ù„Ø·Ù„Ø¨.",
-                         "en":  "Sellers may see contact info such as phone number upon a purchase to coordinate delivery. By purchasing, users acknowledge this; Suez Bazaar is not liable for data use outside order fulfillment."
-                     },
-    "privacy_h2_2c":  {
-                          "ar":  "Ø·Ø¨ÙŠØ¹Ø© Ø§Ù„Ù…Ù†ØµØ© ÙˆØ­Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø³Ø¤ÙˆÙ„ÙŠØ©",
-                          "en":  "Platform Nature \u0026 Liability Limits"
-                      },
-    "privacy_p_2c":  {
-                         "ar":  "ØªØ¹Ù…Ù„ Suez Bazaar ÙƒÙ…Ù†ØµØ© Ù„Ø¹Ø±Ø¶ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª ÙˆØ§Ù„Ø®Ø¯Ù…Ø§Øª ÙˆØ§Ù„ØªÙˆØ§ØµÙ„ Ø¨ÙŠÙ† Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ†ØŒ ÙˆÙ„Ø§ ØªØ¶Ù…Ù† Ø¬Ø¯ÙŠØ© Ø§Ù„Ø¨Ø§Ø¦Ø¹ÙŠÙ† Ø£Ùˆ Ø§Ù„Ù…Ø´ØªØ±ÙŠÙ† ÙˆÙ„Ø§ Ø¬ÙˆØ¯Ø© Ø§Ù„Ù…Ù†ØªØ¬ Ø£Ùˆ Ø§Ù„Ø®Ø¯Ù…Ø©. ÙˆÙŠÙ„ØªØ²Ù… Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ø¨Ø¹Ø¯Ù… Ø§Ù„Ø¯ÙØ¹ Ø¥Ù„Ø§ Ø¨Ø¹Ø¯ Ø§Ø³ØªÙ„Ø§Ù… Ø§Ù„Ù…Ù†ØªØ¬ Ø£Ùˆ Ø§Ù„Ø­ØµÙˆÙ„ Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø¯Ù…Ø© ÙˆØ§Ù„ØªØ£ÙƒØ¯ Ù…Ù†Ù‡Ø§ Ø¨Ù†ÙØ³Ù‡. ÙƒÙ…Ø§ ØªÙ„ØªØ²Ù… Suez Bazaar Ø¨Ø­Ø°Ù Ø£ÙŠ ØµØ§Ø­Ø¨ Ù…Ù†ØªØ¬ Ø£Ùˆ Ø®Ø¯Ù…Ø© ÙŠØ«Ø¨Øª Ù…Ù† Ø®Ù„Ø§Ù„ Ø§Ù„Ø¨Ù„Ø§ØºØ§Øª Ø£Ùˆ Ø§Ù„Ù…Ø±Ø§Ø¬Ø¹Ø© Ø£Ù†Ù‡ ÙŠØ¹Ø±Ø¶ Ù…Ù†ØªØ¬Ù‹Ø§ Ø£Ùˆ Ø®Ø¯Ù…Ø© ØºÙŠØ± Ø­Ù‚ÙŠÙ‚ÙŠØ© Ø£Ùˆ ÙŠÙ…Ø§Ø±Ø³ Ø£ÙŠ Ù†ÙˆØ¹ Ù…Ù† Ø£Ù†ÙˆØ§Ø¹ Ø§Ù„ØºØ´ Ø£Ùˆ Ø§Ù„ØªØ¶Ù„ÙŠÙ„.",
-                         "en":  "Suez Bazaar is a listing platform and does not guarantee the reliability of users or quality of products. Users should not pay until they verify the product/service themselves. We commit to removing any listings proven to be fraudulent or misleading."
-                     },
-    "privacy_h2_3":  {
-                         "ar":  "Ù…Ø´Ø§Ø±ÙƒØ© Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª",
-                         "en":  "Data Sharing"
-                     },
-    "privacy_p_3":  {
-                        "ar":  "Ù„Ø§ Ù†Ù‚ÙˆÙ… Ø¨Ù…Ø´Ø§Ø±ÙƒØ© Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù…Ø¹ Ø£ÙŠ Ø·Ø±Ù Ø«Ø§Ù„Ø« Ø¥Ù„Ø§ ÙÙŠ Ø­Ø§Ù„ ÙˆØ¬ÙˆØ¯ Ø§Ù„ØªØ²Ø§Ù… Ù‚Ø§Ù†ÙˆÙ†ÙŠ Ø£Ùˆ Ù„ØªØ­Ø³ÙŠÙ† Ø§Ù„Ø®Ø¯Ù…Ø© Ø¹Ø¨Ø± Ù…Ø²ÙˆØ¯ÙŠÙ† Ù…ÙˆØ«ÙˆÙ‚ÙŠÙ†.",
-                        "en":  "We do not share user data with third parties unless required by law or to improve service via trusted providers."
-                    },
-    "privacy_h2_4":  {
-                         "ar":  "Ø£Ù…Ø§Ù† Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª",
-                         "en":  "Data Security"
-                     },
-    "privacy_p_4":  {
-                        "ar":  "Ù†Ø³ØªØ®Ø¯Ù… ØªÙ‚Ù†ÙŠØ§Øª Ø¢Ù…Ù†Ø© Ù„Ø­Ù…Ø§ÙŠØ© Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù…Ù† Ø§Ù„ÙˆØµÙˆÙ„ ØºÙŠØ± Ø§Ù„Ù…ØµØ±Ø­ Ø¨Ù‡ Ø£Ùˆ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„ Ø£Ùˆ Ø§Ù„Ø­Ø°Ù.",
-                        "en":  "We use secure technologies to protect user data from unauthorized access, modification, or deletion."
-                    },
-    "privacy_h2_5":  {
-                         "ar":  "Ø­Ù‚ÙˆÙ‚ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…",
-                         "en":  "User Rights"
-                     },
-    "privacy_p_5":  {
-                        "ar":  "ÙŠØ­Ù‚ Ù„Ù„Ù…Ø³ØªØ®Ø¯Ù… Ø·Ù„Ø¨ Ø­Ø°Ù Ø¨ÙŠØ§Ù†Ø§ØªÙ‡ Ø£Ùˆ ØªØ¹Ø¯ÙŠÙ„Ù‡Ø§ ÙÙŠ Ø£ÙŠ ÙˆÙ‚Øª Ù…Ù† Ø®Ù„Ø§Ù„ Ø§Ù„ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§ Ø¹Ø¨Ø± Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ Ø£Ø¯Ù†Ø§Ù‡.",
-                        "en":  "Users have the right to request deletion or modification of their data at any time by contacting us via email."
-                    },
-    "privacy_h2_6":  {
-                         "ar":  "Ø§Ù„ØªØ­Ø¯ÙŠØ«Ø§Øª",
-                         "en":  "Updates"
-                     },
-    "privacy_p_6":  {
-                        "ar":  "Ù‚Ø¯ Ù†Ù‚ÙˆÙ… Ø¨ØªØ­Ø¯ÙŠØ« Ø³ÙŠØ§Ø³Ø© Ø§Ù„Ø®ØµÙˆØµÙŠØ© Ù…Ù† ÙˆÙ‚Øª Ù„Ø¢Ø®Ø±ØŒ ÙˆØ³ÙŠØªÙ… Ù†Ø´Ø± Ø£ÙŠ ØªØºÙŠÙŠØ±Ø§Øª ÙÙŠ Ù‡Ø°Ù‡ Ø§Ù„ØµÙØ­Ø©.",
-                        "en":  "We may update the privacy policy periodically; any changes will be posted on this page."
-                    },
-    "privacy_h2_7":  {
-                         "ar":  "Ø§Ù„ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§",
-                         "en":  "Contact Us"
-                     },
-    "privacy_p_7":  {
-                        "ar":  "Ù„Ø£ÙŠ Ø§Ø³ØªÙØ³Ø§Ø± Ø£Ùˆ Ù…Ù„Ø§Ø­Ø¸Ø§ØªØŒ ÙŠÙ…ÙƒÙ†ÙƒÙ… Ø§Ù„ØªÙˆØ§ØµÙ„ Ø¹Ø¨Ø± Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ: \u003ca href=\"mailto:suezbazaar@gmail.com\"\u003esuezbazaar@gmail.com\u003c/a\u003e",
-                        "en":  "For any inquiries, contact us via email: \u003ca href=\"mailto:suezbazaar@gmail.com\"\u003esuezbazaar@gmail.com\u003c/a\u003e"
-                    },
-    "delete_account_title":  {
-                                 "ar":  "حذف الحساب على Suez Bazaar",
-                                 "en":  "Delete Account on Suez Bazaar"
-                             },
-    "delete_account_heading":  {
-                                   "ar":  "حذف الحساب على Suez Bazaar",
-                                   "en":  "Delete Account on Suez Bazaar"
-                               },
-    "delete_account_intro":  {
-                                 "ar":  "يمكنك حذف حسابك وجميع البيانات المرتبطة به بسهولة. للقيام بذلك، اتبع الخطوات التالية:",
-                                 "en":  "You can delete your account and all associated data easily. To do so, follow these steps:"
-                             },
-    "delete_account_step_1":  {
-                                  "ar":  "افتح التطبيق وانتقل إلى صفحة \u003cspan class=\"highlight\"\u003eالتسجيل / حسابي\u003c/span\u003e.",
-                                  "en":  "Open the app and go to the \u003cspan class=\"highlight\"\u003eLogin / My Account\u003c/span\u003e page."
-                              },
-    "delete_account_step_2":  {
-                                  "ar":  "اختر \u003cspan class=\"highlight\"\u003eتعديل بيانات\u003c/span\u003e أو \u003cspan class=\"highlight\"\u003eإعدادات الحساب\u003c/span\u003e.",
-                                  "en":  "Choose \u003cspan class=\"highlight\"\u003eEdit Profile\u003c/span\u003e or \u003cspan class=\"highlight\"\u003eAccount Settings\u003c/span\u003e."
-                              },
-    "delete_account_step_3":  {
-                                  "ar":  "ابحث عن خيار \u003cspan class=\"highlight\"\u003eحذف الحساب\u003c/span\u003e واضغط عليه.",
-                                  "en":  "Find the \u003cspan class=\"highlight\"\u003eDelete Account\u003c/span\u003e option and tap it."
-                              },
-    "delete_account_step_4":  {
-                                  "ar":  "سيتم حذف البيانات التالية نهائيًا:",
-                                  "en":  "The following data will be permanently deleted:"
-                              },
-    "delete_account_data_1":  {
-                                  "ar":  "اسم المستخدم",
-                                  "en":  "Username"
-                              },
-    "delete_account_data_2":  {
-                                  "ar":  "رقم الهاتف",
-                                  "en":  "Phone number"
-                              },
-    "delete_account_data_3":  {
-                                  "ar":  "البريد الإلكتروني",
-                                  "en":  "Email address"
-                              },
-    "delete_account_data_4":  {
-                                  "ar":  "العنوان",
-                                  "en":  "Address"
-                              },
-    "delete_account_data_5":  {
-                                  "ar":  "سجل الطلبات والمشتريات",
-                                  "en":  "Orders and purchases history"
-                              },
-    "delete_account_data_6":  {
-                                  "ar":  "كافة البيانات الأخرى",
-                                  "en":  "All other related data"
-                              },
-    "delete_account_warning":  {
-                                  "ar":  "\u003cspan class=\"highlight\"\u003eتنويه:\u003c/span\u003e بعد حذف الحساب، لن تتمكن من استرجاع هذه البيانات.",
-                                  "en":  "\u003cspan class=\"highlight\"\u003eNote:\u003c/span\u003e After deleting your account, you will not be able to recover this data."
-                              },
-    "delete_account_contact":  {
-                                  "ar":  "إذا كنت ترغب في حذف حسابك الآن أو واجهت أي مشكلة، يمكنك التواصل مع فريق الدعم عبر البريد الإلكتروني: \u003ca href=\"mailto:suezbazaar@gmail.com\"\u003esuezbazaar@gmail.com\u003c/a\u003e",
-                                  "en":  "If you want to delete your account now or face any issue, you can contact the support team by email: \u003ca href=\"mailto:suezbazaar@gmail.com\"\u003esuezbazaar@gmail.com\u003c/a\u003e"
-                              },
-    "maint_title":  {
-                        "ar":  "Ø§Ù„ØªØ·Ø¨ÙŠÙ‚ Ù‚ÙŠØ¯ Ø§Ù„ØªØ­Ø¯ÙŠØ«",
-                        "en":  "Application Updating"
-                    },
-    "maint_desc":  {
-                       "ar":  "Ù†Ø­Ù† Ù†Ù‚ÙˆÙ… Ø¨Ø¨Ø¹Ø¶ Ø§Ù„ØªØ­Ø³ÙŠÙ†Ø§Øª Ø§Ù„Ø¢Ù†ØŒ Ø³Ù†Ø¹ÙˆØ¯ Ù„Ù„Ø®Ø¯Ù…Ø© Ù‚Ø±ÙŠØ¨Ø§Ù‹ Ø¬Ø¯Ø§Ù‹.",
-                       "en":  "We are making some improvements now, we will be back in service very soon."
-                   },
-    "maint_input_placeholder":  {
-                                    "ar":  "ÙƒÙ„Ù…Ø© Ù…Ø±ÙˆØ± Ø§Ù„Ø¥Ø¯Ø§Ø±Ø©",
-                                    "en":  "Admin Password"
-                                },
-    "maint_bypass_btn":  {
-                             "ar":  "ØªØ¬Ø§ÙˆØ² Ø§Ù„Ù†Ø¸Ø§Ù…",
-                             "en":  "Bypass System"
-                         },
-    "maint_error_pwd":  {
-                            "ar":  "ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ± ØºÙŠØ± ØµØ­ÙŠØ­Ø©ØŒ Ø§Ù„ÙˆØµÙˆÙ„ Ù…Ø±ÙÙˆØ¶.",
-                            "en":  "Incorrect password, access denied."
-                        },
-    "contact_mail_name":  {
-                              "ar":  "Ø§Ù„Ø§Ø³Ù…",
-                              "en":  "Name"
-                          },
-    "contact_mail_email":  {
-                               "ar":  "Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ",
-                               "en":  "Email"
-                           },
-    "contact_mail_phone":  {
-                               "ar":  "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ",
-                               "en":  "Phone"
-                           },
-    "contact_mail_service":  {
-                                 "ar":  "Ù†ÙˆØ¹ Ø§Ù„Ø®Ø¯Ù…Ø©",
-                                 "en":  "Service Type"
-                             },
-    "contact_mail_message":  {
-                                 "ar":  "Ø§Ù„Ø±Ø³Ø§Ù„Ø©",
-                                 "en":  "Message"
-                             },
-    "share":  {
-                  "ar":  "Ù…Ø´Ø§Ø±ÙƒØ©",
-                  "en":  "Share"
-              },
-    "location_on_map":  {
-                            "ar":  "Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                            "en":  "Map"
-                        },
-    "provides_delivery":  {
-                              "ar":  "ÙŠÙˆÙØ± Ø®Ø¯Ù…Ø© ØªÙˆØµÙŠÙ„",
-                              "en":  "Provides Delivery Service"
-                          },
-    "contact_faq_q4":  {
-                           "ar":  "Ù‡Ù„ ØªÙ‚Ø¯Ù…ÙˆÙ† Ø®Ø¯Ù…Ø§Øª ØªØ³ÙˆÙŠÙ‚ÙŠØ© Ù„Ù„Ø´Ø±ÙƒØ§Øª Ø§Ù„ØµØºÙŠØ±Ø©ØŸ",
-                           "en":  "Do you provide marketing services for small businesses?"
-                       },
-    "contact_faq_a4":  {
-                           "ar":  "Ù†Ø¹Ù…ØŒ Ù†Ù‚Ø¯Ù… Ø­Ù„ÙˆÙ„Ù‹Ø§ ØªØ³ÙˆÙŠÙ‚ÙŠØ© ØªÙ†Ø§Ø³Ø¨ Ø§Ù„Ø´Ø±ÙƒØ§Øª Ø§Ù„Ù†Ø§Ø´Ø¦Ø© ÙˆØ§Ù„ØµØºÙŠØ±Ø© ÙˆØ§Ù„Ù…ØªÙˆØ³Ø·Ø© ÙˆØ­ØªÙ‰ Ø§Ù„Ù…Ø¤Ø³Ø³Ø§Øª Ø§Ù„ÙƒØ¨ÙŠØ±Ø©ØŒ Ù…Ø¹ Ø®ÙŠØ§Ø±Ø§Øª Ù…Ø±Ù†Ø© Ø­Ø³Ø¨ Ø§Ù„Ù…ÙŠØ²Ø§Ù†ÙŠØ© ÙˆØ§Ù„Ù‡Ø¯Ù.",
-                           "en":  "Yes. We provide marketing solutions for startups, small and medium businesses, and larger companies, with flexible options based on budget and goals."
-                       }
+{
+    "login_text": {
+        "ar": "تسجيل الدخول",
+        "en": "Login"
+    },
+    "gen_swal_confirm_btn": {
+        "ar": "موافق",
+        "en": "OK"
+    },
+    "gen_swal_cancel_btn": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "home_text": {
+        "ar": "رئيسي",
+        "en": "Home"
+    },
+    "search_text": {
+        "ar": "بحث",
+        "en": "Find"
+    },
+    "search": {
+        "ar": "بحث",
+        "en": "Search"
+    },
+    "notifications_text": {
+        "ar": "إشعار",
+        "en": "Notify"
+    },
+    "cart_text": {
+        "ar": "السلة",
+        "en": "Cart"
+    },
+    "sales_text": {
+        "ar": "طلبات",
+        "en": "Orders"
+    },
+    "lang_arabic": {
+        "ar": "العربية",
+        "en": "Arabic"
+    },
+    "lang_english": {
+        "ar": "الإنجليزية",
+        "en": "English"
+    },
+    "language_change_confirm": {
+        "title": {
+            "ar": "تغيير إلى الإنجليزية؟",
+            "en": "Change to Arabic?"
+        },
+        "text": {
+            "ar": "سيتم تغيير لغة واجهة التطبيق التلقائية.",
+            "en": "The app interface language will be changed."
+        },
+        "confirm_btn": {
+            "ar": "موافق",
+            "en": "Confirm"
+        },
+        "cancel_btn": {
+            "ar": "غير موافق",
+            "en": "Cancel"
+        }
+    },
+    "guest_mode_label": {
+        "ar": "زائر",
+        "en": "Guest"
+    },
+    "logo_short": {
+        "ar": "SB",
+        "en": "SB"
+    },
+    "unknown_status": {
+        "ar": "غير معروف",
+        "en": "Unknown"
+    },
+    "unknown_status_desc": {
+        "ar": "حالة الطلب غير معروفة.",
+        "en": "Order status is unknown."
+    },
+    "time_now": {
+        "ar": "الآن",
+        "en": "Just now"
+    },
+    "time_minutes_ago": {
+        "ar": "قبل {n} دقيقة",
+        "en": "{n} minutes ago"
+    },
+    "time_hours_ago": {
+        "ar": "قبل {n} ساعة",
+        "en": "{n} hours ago"
+    },
+    "time_days_ago": {
+        "ar": "قبل {n} يوم",
+        "en": "{n} days ago"
+    },
+    "sender_you": {
+        "ar": "أنت",
+        "en": "You"
+    },
+    "sender_user": {
+        "ar": "مستخدم",
+        "en": "User"
+    },
+    "delete_message": {
+        "ar": "حذف الرسالة",
+        "en": "Delete Message"
+    },
+    "change_status": {
+        "ar": "تغيير الحالة",
+        "en": "Change Status"
+    },
+    "unexpected_error": {
+        "ar": "حدث خطأ غير متوقع.",
+        "en": "An unexpected error occurred."
+    },
+    "page_title": {
+        "ar": "Suez Bazaar",
+        "en": "Suez Bazaar"
+    },
+    "gen_cam_error_title": {
+        "ar": "مشكلة في الكاميرا",
+        "en": "Camera Issue"
+    },
+    "gen_cam_error_text": {
+        "ar": "حاول فتح الكاميرا بطريقة أخرى",
+        "en": "Try opening camera another way"
+    },
+    "gen_cam_use_gallery": {
+        "ar": "اختر من المعرض",
+        "en": "Pick from Gallery"
+    },
+    "gen_btn_send_order": {
+        "ar": "إرسال الطلب",
+        "en": "Send Order"
+    },
+    "gen_btn_back": {
+        "ar": "رجوع",
+        "en": "Back"
+    },
+    "gen_btn_hide": {
+        "ar": "إخفاء",
+        "en": "Hide"
+    },
+    "gen_btn_discard": {
+        "ar": "تجاهل",
+        "en": "Discard"
+    },
+    "gen_btn_save": {
+        "ar": "حفظ",
+        "en": "Save"
+    },
+    "gen_btn_pick_images": {
+        "ar": "اختر صورًا",
+        "en": "Pick Images"
+    },
+    "gen_btn_take_photo": {
+        "ar": "التقاط من الكاميرا",
+        "en": "Take Photo"
+    },
+    "gen_btn_upload": {
+        "ar": "رفع",
+        "en": "Upload"
+    },
+    "gen_lbl_processing": {
+        "ar": "جاري المعالجة...",
+        "en": "Processing..."
+    },
+    "gen_lbl_loading_images": {
+        "ar": "جاري تحميل الصور...",
+        "en": "Loading Images..."
+    },
+    "loading_status": {
+        "ar": "جاري التحميل...",
+        "en": "Loading..."
+    },
+    "loading": {
+        "ar": "جاري التحميل...",
+        "en": "Loading..."
+    },
+    "updating": {
+        "ar": "جاري التحديث...",
+        "en": "Updating..."
+    },
+    "update_dialog_title": {
+        "ar": "تحديث جديد متوفر",
+        "en": "New Update Available"
+    },
+    "update_dialog_message": {
+        "ar": "يتوفر إصدار جديد من محتوى التطبيق. هل تريد التحديث الآن؟",
+        "en": "A new version of app content is available. Do you want to update now?"
+    },
+    "update_dialog_ok": {
+        "ar": "تحديث الآن",
+        "en": "Update Now"
+    },
+    "update_dialog_ignore": {
+        "ar": "تجاهل",
+        "en": "Ignore"
+    },
+    "gen_unit_bytes": {
+        "ar": "بايت",
+        "en": "Bytes"
+    },
+    "gen_err_compression": {
+        "ar": "خطأ في الضغط",
+        "en": "Compression Error"
+    },
+    "gen_err_max_files": {
+        "ar": "لا يمكن إضافة أكثر من {n} صور",
+        "en": "Cannot add more than {n} images"
+    },
+    "gen_err_upload_failed": {
+        "ar": "فشل التحميل",
+        "en": "Upload Failed"
+    },
+    "gen_err_required": {
+        "ar": "هذا الحقل مطلوب",
+        "en": "This field is required"
+    },
+    "gen_tooltip_remove_image": {
+        "ar": "حذف الصورة",
+        "en": "Remove Image"
+    },
+    "gen_lbl_current_img": {
+        "ar": "الصورة الحالية",
+        "en": "Current Image"
+    },
+    "gen_btn_capture_photo": {
+        "ar": "التقاط صورة",
+        "en": "Capture Photo"
+    },
+    "gen_lbl_no_images": {
+        "ar": "لا توجد صور متاحة.",
+        "en": "No images available."
+    },
+    "gen_lbl_sending": {
+        "ar": "جاري الإرسال...",
+        "en": "Sending..."
+    },
+    "gen_lbl_unavailable": {
+        "ar": "غير متوفر",
+        "en": "Unavailable"
+    },
+    "load_more": {
+        "ar": "عرض المزيد",
+        "en": "Load More"
+    },
+    "no_products": {
+        "ar": "لا توجد منتجات حالياً",
+        "en": "No products yet"
+    },
+    "pv_in_stock": {
+        "ar": "متوفر",
+        "en": "In Stock"
+    },
+    "pv_sold_by": {
+        "ar": "بواسطة",
+        "en": "Sold by"
+    },
+    "pv_view_portfolio": {
+        "ar": "زيارة المتجر",
+        "en": "Visit Store"
+    },
+    "pv_share_product": {
+        "ar": "مشاركة",
+        "en": "Share"
+    },
+    "pv_share_copied_title": {
+        "ar": "تم نسخ رابط المنتج!",
+        "en": "Product Link Copied!"
+    },
+    "pv_share_copied_text": {
+        "ar": "تم نسخ رابط صفحة المنتج للحافظة",
+        "en": "Product page link copied to clipboard"
+    },
+    "pv_requested_quantity": {
+        "ar": "الكمية المطلوبة",
+        "en": "Requested Quantity"
+    },
+    "pv_total_label": {
+        "ar": "الإجمالي",
+        "en": "Total"
+    },
+    "notification_enabled_title": {
+        "ar": "الإشعارات مفعلة",
+        "en": "Notifications Enabled"
+    },
+    "notification_enabled_desc": {
+        "ar": "ستصلك تنبيهات الرسائل وتحديثات طلباتك فور صدورها.",
+        "en": "You will receive message alerts and order updates immediately."
+    },
+    "notification_disabled_title": {
+        "ar": "تفعيل الإشعارات",
+        "en": "Enable Notifications"
+    },
+    "notification_disabled_desc": {
+        "ar": "قم بالتفعيل لاستلام تنبيهات الرسائل والتحديثات الخاصة بطلباتك.",
+        "en": "Enable to receive message alerts and updates for your orders."
+    },
+    "alert_lang_change_title": {
+        "ar": "تغيير اللغة",
+        "en": "Language Change"
+    },
+    "alert_lang_change_text": {
+        "ar": "سيتم إعادة تحميل الصفحة لتطبيق تغيير اللغة.",
+        "en": "The page will be reloaded to apply the language change."
+    },
+    "alert_confirm_btn": {
+        "ar": "موافق",
+        "en": "OK"
+    },
+    "alert_cancel_btn": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "alert_confirm_yes": {
+        "ar": "نعم",
+        "en": "Yes"
+    },
+    "alert_confirm_no": {
+        "ar": "لا",
+        "en": "No"
+    },
+    "failed_operation_title": {
+        "ar": "فشل العملية",
+        "en": "Operation Failed"
+    },
+    "success_operation_title": {
+        "ar": "تمت العملية بنجاح",
+        "en": "Operation Successful"
+    },
+    "gen_swal_success_title": {
+        "ar": "نجاح",
+        "en": "Success"
+    },
+    "gen_swal_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "error": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "gen_swal_info_title": {
+        "ar": "تنبيه",
+        "en": "Notice"
+    },
+    "alert_title_info": {
+        "ar": "تنبيه",
+        "en": "Alert"
+    },
+    "alert_login_required": {
+        "ar": "يمكنك الدخول كضيف او استكمال التسجيل. ",
+        "en": "You can login as guest or complete registration."
+    },
+    "gen_swal_title_confirm": {
+        "ar": "تأكيد العملية للبائع",
+        "en": "Confirm Action for Merchant"
+    },
+    "gen_swal_btn_yes_delete": {
+        "ar": "نعم، احذفها!",
+        "en": "Yes, delete it!"
+    },
+    "gen_swal_btn_yes_discard": {
+        "ar": "نعم، تجاهل",
+        "en": "Yes, Discard"
+    },
+    "gen_swal_delete_success": {
+        "ar": "تم حذف المنتج بنجاح.",
+        "en": "The product was deleted successfully."
+    },
+    "gen_swal_btn_cancel": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "gen_swal_btn_back": {
+        "ar": "تراجع",
+        "en": "Go Back"
+    },
+    "gen_swal_discard_title": {
+        "ar": "تجاهل التعديلات؟",
+        "en": "Discard changes?"
+    },
+    "gen_swal_discard_text": {
+        "ar": "سيتم مسح كافة البيانات والعودة للملف الشخصي.",
+        "en": "All data will be cleared and you will return to your profile."
+    },
+    "gen_swal_remove_text": {
+        "ar": "هل تريد حقاً حذف هذه الصورة؟",
+        "en": "Do you really want to delete this image?"
+    },
+    "factory_reset_confirm": {
+        "title": {
+            "ar": "هل أنت متأكد؟",
+            "en": "Are you sure?"
+        },
+        "text": {
+            "ar": "سيتم مسح كافة البيانات المسجلة على هذا المتصفح تماماً وتسيجل الخروج، ولا يمكن التراجع عن هذه الخطوة!",
+            "en": "This will completely wipe all browser data and log you out. This action cannot be undone!"
+        },
+        "confirm_btn": {
+            "ar": "نعم، امسح كل شيء",
+            "en": "Yes, wipe everything"
+        }
+    },
+    "dash_alert_seller_switch": {
+        "title": {
+            "ar": "وضع مقدم الخدمة",
+            "en": "Service Provider Mode"
+        },
+        "text": {
+            "ar": "ستتابع الطلبات التي تكون فيها مقدم الخدمة أو صاحب النشاط.",
+            "en": "You will track orders where you are the service provider or business owner."
+        }
+    },
+    "dash_alert_delivery_switch": {
+        "title": {
+            "ar": "وضع التوصيل",
+            "en": "Delivery Mode"
+        },
+        "text": {
+            "ar": "سوف تتم متابعة مهام التوصيل المسندة إليك.",
+            "en": "You will track delivery tasks assigned to you."
+        }
+    },
+    "dash_alert_buyer_switch": {
+        "title": {
+            "ar": "وضع المشتري",
+            "en": "Buyer Mode"
+        },
+        "text": {
+            "ar": "سوف تتم متابعة مشترياتك الشخصية.",
+            "en": "You will track your personal purchases."
+        }
+    },
+    "port_rate_login_required_title": {
+        "ar": "تنبيه",
+        "en": "Notice"
+    },
+    "port_rate_login_required_text": {
+        "ar": "يجب تسجيل الدخول لتقييم التاجر",
+        "en": "You must be logged in to rate this merchant"
+    },
+    "port_rate_dialog_title": {
+        "ar": "تقييم التاجر",
+        "en": "Rate Merchant"
+    },
+    "port_rate_success_title": {
+        "ar": "شكراً لك!",
+        "en": "Thank you!"
+    },
+    "port_rate_success_text": {
+        "ar": "تم إرسال تقييمك بنجاح",
+        "en": "Your rating was submitted successfully"
+    },
+    "port_rate_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "port_rate_error_text": {
+        "ar": "فشل في إرسال التقييم",
+        "en": "Failed to submit rating"
+    },
+    "port_edit_review_title": {
+        "ar": "تعديل تقييمك",
+        "en": "Edit your review"
+    },
+    "port_edit_review_failed": {
+        "ar": "تعذر تعديل التقييم",
+        "en": "Unable to update the review"
+    },
+    "port_delete_review_failed": {
+        "ar": "تعذر حذف التقييم",
+        "en": "Unable to delete the review"
+    },
+    "port_review_select_stars": {
+        "ar": "اختر عدد النجوم",
+        "en": "Choose the number of stars"
+    },
+    "product_select_category_required": {
+        "ar": "يرجى اختيار القسم الرئيسي والفرعي.",
+        "en": "Please select the main and sub category."
+    },
+    "security_ios_install_title": {
+        "ar": "تثبيت على الآيفون",
+        "en": "Install on iPhone"
+    },
+    "security_ios_install_text": {
+        "ar": "اضغط مشاركة <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#007aff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display: inline-block; vertical-align: middle; margin: 0 5px;\"><path d=\"M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8\"></path><polyline points=\"16 6 12 2 8 6\"></polyline><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"15\"></line></svg> ثم إضافة إلى الشاشة الرئيسية",
+        "en": "Tap Share <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#007aff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"display: inline-block; vertical-align: middle; margin: 0 5px;\"><path d=\"M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8\"></path><polyline points=\"16 6 12 2 8 6\"></polyline><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"15\"></line></svg> then Add to Home Screen"
+    },
+    "security_windows_install_title": {
+        "ar": "تثبيت على ويندوز",
+        "en": "Install on Windows"
+    },
+    "security_windows_install_text": {
+        "ar": "للحصول على أفضل تجربة، يرجى تثبيت التطبيق عبر المتصفح (Install App) من شريط العنوان.",
+        "en": "For the best experience, please install the app from the browser using Install App in the address bar."
+    },
+    "port_profile_specialties_required_title": {
+        "ar": "خطوة مطلوبة",
+        "en": "Action required"
+    },
+    "port_profile_specialties_required_text": {
+        "ar": "يرجى تحديث تخصصات النشاط في ملفك الشخصي أولاً لتتمكن من إضافة منتجاتك بالقسم الصحيح.",
+        "en": "Please update your business specialties in your profile settings first to add products to the correct category."
+    },
+    "port_profile_specialties_required_confirm": {
+        "ar": "تعديل البيانات",
+        "en": "Edit profile"
+    },
+    "port_featured_add_confirm": {
+        "ar": "هل تريد إضافة هذا المنتج لقائمة المنتجات المميزة للبائع؟",
+        "en": "Do you want to add this product to the merchant's featured list?"
+    },
+    "port_featured_remove_confirm": {
+        "ar": "هل تريد إزالة هذا المنتج من قائمة المنتجات المميزة للبائع؟",
+        "en": "Do you want to remove this product from the merchant's featured list?"
+    },
+    "port_delete_success_title": {
+        "ar": "تم الحذف!",
+        "en": "Deleted!"
+    },
+    "port_delete_success_text": {
+        "ar": "تم حذف المنتج بنجاح.",
+        "en": "Product deleted successfully."
+    },
+    "port_share_copied_title": {
+        "ar": "تم نسخ الرابط!",
+        "en": "Link Copied!"
+    },
+    "port_share_copied_text": {
+        "ar": "تم نسخ رابط الملف الشخصي للحافظة",
+        "en": "Profile link copied to clipboard"
+    },
+    "port_fetch_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "port_fetch_error_text": {
+        "ar": "لم يتم العثور على بيانات التاجر",
+        "en": "Merchant data not found"
+    },
+    "net_no_connection": {
+        "ar": "لا يوجد اتصال بالإنترنت",
+        "en": "No internet connection"
+    },
+    "net_restored": {
+        "ar": "تم استعادة الاتصال بالإنترنت.",
+        "en": "Internet connection restored."
+    },
+    "net_lost": {
+        "ar": "انقطع الاتصال بالإنترنت.",
+        "en": "Internet connection lost."
+    },
+    "offline_title": {
+        "ar": "انقطع الاتصال",
+        "en": "No Connection"
+    },
+    "offline_desc": {
+        "ar": "يبدو أنك غير متصل بالإنترنت حالياً. يرجى التحقق من الشبكة والمحاولة مرة أخرى.",
+        "en": "It seems you are currently offline. Please check your network and try again."
+    },
+    "offline_retry": {
+        "ar": "إعادة المحاولة",
+        "en": "Retry"
+    },
+    "net_weak_or_disconnected": {
+        "ar": "اتصال الإنترنت ضعيف أو مقطوع",
+        "en": "Internet connection is weak or disconnected"
+    },
+    "api_fetch_label": {
+        "ar": "[جلب API]",
+        "en": "[API Fetch]"
+    },
+    "api_http_error": {
+        "ar": "خطأ HTTP! الحالة:",
+        "en": "HTTP Error! Status:"
+    },
+    "api_connection_failed": {
+        "ar": "فشل الاتصال:",
+        "en": "Connection failed:"
+    },
+    "install_pwa_title": {
+        "ar": "اختر الطريقة المناسبة لك",
+        "en": "Choose the Suitable Method"
+    },
+    "install_ios_title": {
+        "ar": "التثبيت على الآيفون كتطبيق ويب",
+        "en": "Install on iPhone as a Web App"
+    },
+    "install_ios_desc": {
+        "ar": "لتحميل التطبيق، يرجى اتباع الآتي:",
+        "en": "To install the app, please follow these steps:"
+    },
+    "install_ios_step_1": {
+        "ar": "1. اضغط على هذا الزر في المتصفح.",
+        "en": "1. Tap this button in the browser."
+    },
+    "install_ios_step_2": {
+        "ar": "2. قم بالتمرير لأسفل لتبحث عن خيار <b>إضافة إلى الصفحة الرئيسية</b>.",
+        "en": "2. Scroll down to find <b>Add to Home Screen</b>."
+    },
+    "install_ios_step_3": {
+        "ar": "3. اختر <b>إضافة إلى الصفحة الرئيسية (Add to Home Screen)</b> من القائمة.",
+        "en": "3. Select <b>Add to Home Screen</b> from the list."
+    },
+    "install_ios_step_4": {
+        "ar": "4. اضغط على كلمة <b>إضافة (Add)</b> في أعلى يمين الشاشة.",
+        "en": "4. Tap <b>Add</b> at the top right of the screen."
+    },
+    "pwa_install_small_text": {
+        "ar": "تنصيب كـ",
+        "en": "INSTALL AS"
+    },
+    "pwa_install_main_text": {
+        "ar": "تطبيق ويب PWA",
+        "en": "Web App PWA"
+    },
+    "play_store_get_it_on": {
+        "ar": "متوفر على",
+        "en": "GET IT ON"
+    },
+    "play_store_name": {
+        "ar": "جوجل بلاي",
+        "en": "Google Play"
+    },
+    "install_done_btn": {
+        "ar": "تم",
+        "en": "Done"
+    },
+    "dash_welcome": {
+        "ar": "أهلاً بك، {name}",
+        "en": "Welcome, {name}"
+    },
+    "dash_edit_profile": {
+        "ar": "تعديل البيانات",
+        "en": "Edit Profile"
+    },
+    "dash_add_product": {
+        "ar": "إضافة منتج",
+        "en": "Add Product"
+    },
+    "dash_my_products": {
+        "ar": "منتجاتي",
+        "en": "My Products"
+    },
+    "dash_admin_panel": {
+        "ar": "لوحة المسؤول",
+        "en": "Admin Panel"
+    },
+    "dash_logout": {
+        "ar": "تسجيل الخروج",
+        "en": "Logout"
+    },
+    "dash_settings_title": {
+        "ar": "الإعدادات",
+        "en": "Settings"
+    },
+    "dash_choose_destination": {
+        "ar": "اختر وجهتك",
+        "en": "Choose Destination"
+    },
+    "dash_btn_users": {
+        "ar": "مستخدمين",
+        "en": "Users"
+    },
+    "dash_btn_advert": {
+        "ar": "الاعلان",
+        "en": "Ads"
+    },
+    "dash_btn_notifications": {
+        "ar": "اشعارات",
+        "en": "Notifications"
+    },
+    "dash_btn_pending_products": {
+        "ar": "المنتجات المعلقة",
+        "en": "Pending Products"
+    },
+    "dash_btn_image_analyzer": {
+        "ar": "مدير الصور",
+        "en": "Image Manager"
+    },
+    "dash_btn_factory_reset": {
+        "ar": "إعادة ضبط المصنع (مسح شامل)",
+        "en": "Factory Reset (Wipe All)"
+    },
+    "dash_support": {
+        "ar": "الدعم والمساعدة",
+        "en": "Support & Help"
+    },
+    "dash_notifications_tab": {
+        "ar": "الإشعارات",
+        "en": "Notifications"
+    },
+    "dash_profile_tab": {
+        "ar": "تعديل الملف الشخصي",
+        "en": "Edit Profile"
+    },
+    "dash_theme_day": {
+        "ar": "الوضع النهاري",
+        "en": "Day Mode"
+    },
+    "dash_theme_night": {
+        "ar": "الوضع الليلي",
+        "en": "Night Mode"
+    },
+    "dash_fetch_orders_title": {
+        "ar": "متابعة الطلبات",
+        "en": "Track Orders"
+    },
+    "dash_opt_buyer": {
+        "ar": "مشتري",
+        "en": "Buyer"
+    },
+    "dash_opt_seller": {
+        "ar": "بائع",
+        "en": "Seller"
+    },
+    "dash_opt_delivery": {
+        "ar": "توصيل",
+        "en": "Delivery"
+    },
+    "dash_opt_admin": {
+        "ar": "مسؤول",
+        "en": "Admin"
+    },
+    "dash_opt_super_admin": {
+        "ar": "سوبر أدمن",
+        "en": "Super Admin"
+    },
+    "settings": {
+        "ar": "الإعدادات",
+        "en": "Settings"
+    },
+    "contact_details_title_phone": {
+        "ar": "هاتف او واتس اب",
+        "en": "Phone or WhatsApp"
+    },
+    "contact_title": {
+        "ar": "للتواصل",
+        "en": "Contact"
+    },
+    "contact_tab_form_desc": {
+        "ar": "راسلنا",
+        "en": "Message Us"
+    },
+    "contact_tab_services_desc": {
+        "ar": "خدماتنا",
+        "en": "Our Services"
+    },
+    "contact_tab_privacy_desc": {
+        "ar": "الخصوصية",
+        "en": "Privacy"
+    },
+    "contact_tab_delete_desc": {
+        "ar": "حذف الحساب",
+        "en": "Delete Account"
+    },
+    "contact_page_title": {
+        "ar": "Suez Bazaar - تواصل معنا",
+        "en": "Suez Bazaar - Contact Us"
+    },
+    "contact_faq_title": {
+        "ar": "الأسئلة الشائعة",
+        "en": "Frequently Asked Questions"
+    },
+    "contact_faq_q1": {
+        "ar": "لماذا نثق في خدماتنا؟",
+        "en": "Why do we trust our services?"
+    },
+    "contact_faq_a1": {
+        "ar": "نثق في خدماتنا لأنها تعمل على بنية تحتية سحابية عالمية توفر استقرارًا عاليًا وسرعة في الاستجابة ووقت تشغيل مرتفع. هذا التطبيق يعتمد على خدمات وتقنيات متقدمة من Google لدعم الأداء، وحماية البيانات، واستمرارية الخدمة بأعلى قدر ممكن من الأمان والاعتمادية.",
+        "en": "We trust our services because they run on a global cloud infrastructure that provides strong stability, fast response times, and high uptime. This app relies on advanced Google cloud services and technologies to support performance, data protection, and reliable service continuity."
+    },
+    "contact_faq_q2": {
+        "ar": "كيف يعمل Suez Bazaar في التسجيل أو شراء أو بيع منتج؟",
+        "en": "How does Suez Bazaar work for registration, buying, or selling a product?"
+    },
+    "contact_faq_a2": {
+        "ar": "التسجيل في سويس بازار مجاني تمامًا وسيظل مجانيًا دون رسوم أو اشتراكات. يمكنك شراء أي منتج بسهولة وإتمام الطلب ومتابعة حالته حتى الاستلام.",
+        "en": "Registration on Suez Bazaar is completely free and stays free. You can buy products easily, complete the order, and track it until delivery."
+    },
+    "contact_faq_q3": {
+        "ar": "كيف يمكنني عمل إعلان أو حملة تسويقية مجانية أو مخصصة؟",
+        "en": "How can I create a free or customized advertisement or marketing campaign?"
+    },
+    "contact_faq_a3": {
+        "ar": "بمجرد إنشاء صفحتك الخاصة على سويس بازار، فإنها تصبح واجهة إعلانية مميزة لك، حيث يمكنك إضافة منتجاتك، وإبراز المميز منها، وعرض معلوماتك للتواصل، كما يمكنك مشاركة صفحتك مع أي شخص في أي مكان. ويمكنك أيضًا إنشاء حملة دائمة داخل سويس بازار عبر إضافة منتج خدمي ليظهر للمستخدمين كإعلان مستمر، أو التواصل معنا لطلب حملات عامة أو مخصصة تناسب نشاطك.",
+        "en": "Once you create your own page on Suez Bazaar, it becomes a distinctive promotional storefront for you, where you can add your products, highlight featured ones, show your contact information, and share your page with anyone anywhere. You can also create an ongoing campaign inside Suez Bazaar by adding a service product that appears to users as a continuous ad, or contact us for general or customized campaigns that suit your business."
+    },
+    "contact_faq_q5": {
+        "ar": "ما حدود مسؤولية Suez Bazaar تجاه البائعين والمشترين وجودة المعروض؟",
+        "en": "What are Suez Bazaar's responsibility limits regarding sellers, buyers, and the quality of listed products or services?"
+    },
+    "contact_faq_a5": {
+        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، وهي لا تضمن جدية البائع أو المشتري ولا جودة المنتج أو الخدمة. لذلك يجب على المستخدم التأكد بنفسه من الطرف الآخر، وعدم دفع أي مبلغ إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
+        "en": "Suez Bazaar operates as a platform for listing products and services and enabling communication between users. It does not guarantee the seriousness of sellers or buyers, nor the quality of any product or service. Users should verify the other party themselves and should not make any payment until they receive the product or obtain the service and confirm it. Suez Bazaar also commits to removing any product or service provider proven through reports or review to be offering fake products or services or engaging in any form of fraud or deception."
+    },
+    "contact_info_title": {
+        "ar": "معلومات الاتصال",
+        "en": "Contact Information"
+    },
+    "contact_details_title_email": {
+        "ar": "البريد الإلكتروني",
+        "en": "Email"
+    },
+    "contact_details_title_hours": {
+        "ar": "ساعات العمل",
+        "en": "Working Hours"
+    },
+    "contact_hours_text": {
+        "ar": "يوميًا: 9:00 صباحًا - 10:00 مساءً",
+        "en": "Daily: 9:00 AM - 10:00 PM"
+    },
+    "contact_qr_title": {
+        "ar": "امسح الرمز للوصول السريع",
+        "en": "Scan the code for quick access"
+    },
+    "contact_label_name": {
+        "ar": "الاسم الكامل *",
+        "en": "Full Name *"
+    },
+    "contact_label_email": {
+        "ar": "البريد الإلكتروني *",
+        "en": "Email *"
+    },
+    "contact_label_phone": {
+        "ar": "رقم الهاتف",
+        "en": "Phone Number"
+    },
+    "contact_label_service": {
+        "ar": "نوع الخدمة المطلوبة",
+        "en": "Requested Service Type"
+    },
+    "contact_option_default": {
+        "ar": "اختر خدمة",
+        "en": "Choose a service"
+    },
+    "contact_option_consulting": {
+        "ar": "استشارات تسويقية",
+        "en": "Marketing Consulting"
+    },
+    "contact_option_digital": {
+        "ar": "تسويق رقمي",
+        "en": "Digital Marketing"
+    },
+    "contact_option_branding": {
+        "ar": "تصميم الهوية البصرية",
+        "en": "Brand Identity Design"
+    },
+    "contact_option_other": {
+        "ar": "خدمة أخرى",
+        "en": "Other Service"
+    },
+    "contact_label_message": {
+        "ar": "الرسالة *",
+        "en": "Message *"
+    },
+    "contact_submit_button": {
+        "ar": "إرسال الرسالة",
+        "en": "Send Message"
+    },
+    "contact_service_title_1": {
+        "ar": "التسويق الرقمي",
+        "en": "Digital Marketing"
+    },
+    "contact_service_p_1": {
+        "ar": "حلول تسويق رقمي متكاملة لزيادة وصول علامتك التجارية",
+        "en": "Integrated digital marketing solutions to expand your brand reach"
+    },
+    "contact_service_title_2": {
+        "ar": "تحليل السوق",
+        "en": "Market Analysis"
+    },
+    "contact_service_p_2": {
+        "ar": "دراسات وتحليلات متعمقة لفهم السوق المستهدف",
+        "en": "In-depth studies and analysis to understand your target market"
+    },
+    "contact_service_title_3": {
+        "ar": "الإعلانات",
+        "en": "Advertising"
+    },
+    "contact_service_p_3": {
+        "ar": "إدارة حملات إعلانية فعالة عبر Suez Bazaar",
+        "en": "Managing effective advertising campaigns through Suez Bazaar"
+    },
+    "contact_footer_title_1": {
+        "ar": "تابعنا",
+        "en": "Follow Us"
+    },
+    "contact_footer_p_1": {
+        "ar": "نقدم حلول تسويقية مبتكرة ومخصصة لمساعدة أعمالك على النمو والازدهار في السوق التنافسي.",
+        "en": "We provide innovative and tailored marketing solutions to help your business grow and thrive in a competitive market."
+    },
+    "contact_copyright_p": {
+        "ar": "© 2025. جميع الحقوق محفوظة.",
+        "en": "? 2025. All rights reserved."
+    },
+    "contact_form_required_alert": {
+        "ar": "يرجى ملء الحقول المطلوبة (الاسم، البريد الإلكتروني، الرسالة)",
+        "en": "Please fill in the required fields (name, email, message)"
+    },
+    "contact_mail_subject": {
+        "ar": "رسالة من {name} - نموذج الاتصال",
+        "en": "Message from {name} - Contact Form"
+    },
+    "privacy_page_title": {
+        "ar": "سياسة الخصوصية - Suez Bazaar",
+        "en": "Privacy Policy - Suez Bazaar"
+    },
+    "privacy_intro": {
+        "ar": "في <strong>Suez Bazaar</strong> نحترم خصوصية المستخدمين ونسعى لحماية بياناتهم الشخصية وفقًا لأفضل الممارسات.",
+        "en": "At <strong>Suez Bazaar</strong>, we respect user privacy and strive to protect personal data according to best practices."
+    },
+    "privacy_h2_1": {
+        "ar": "المعلومات التي نقوم بجمعها",
+        "en": "Information We Collect"
+    },
+    "privacy_p_1": {
+        "ar": "قد نقوم بجمع بعض المعلومات الأساسية مثل الاسم ورقم الهاتف عند التسجيل في التطبيق، وذلك لتحسين تجربة المستخدم وتسهيل عمليات الشراء والبيع.",
+        "en": "We may collect core information such as name and phone number during registration to enhance user experience and facilitate buying and selling."
+    },
+    "privacy_h2_2": {
+        "ar": "كيفية استخدام المعلومات",
+        "en": "How We Use Information"
+    },
+    "privacy_p_2": {
+        "ar": "نستخدم البيانات فقط لأغراض تشغيل التطبيق وتقديم الخدمات، مثل التواصل بين البائعين والمشترين، وتحسين الأداء، ودعم المستخدمين.",
+        "en": "Data is used only for app operation and services, such as facilitating communication between buyers and sellers and improving performance."
+    },
+    "privacy_h2_2b": {
+        "ar": "مشاركة بيانات التواصل عند الشراء",
+        "en": "Contact Data Sharing Upon Purchase"
+    },
+    "privacy_p_2b": {
+        "ar": "قد يظهر للبائع بعض بيانات التواصل مثل رقم الهاتف عند شراء منتج أو خدمة منه، وذلك لتنسيق التواصل وتسليم الطلب. وبإتمام الشراء، يقر المستخدم بعلمه بذلك، ولا تتحمل Suez Bazaar مسؤولية أي استخدام لهذه البيانات خارج نطاق تنفيذ الطلب.",
+        "en": "Sellers may see contact info such as phone number upon a purchase to coordinate delivery. By purchasing, users acknowledge this; Suez Bazaar is not liable for data use outside order fulfillment."
+    },
+    "privacy_h2_2c": {
+        "ar": "طبيعة المنصة وحدود المسؤولية",
+        "en": "Platform Nature & Liability Limits"
+    },
+    "privacy_p_2c": {
+        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، ولا تضمن جدية البائعين أو المشترين ولا جودة المنتج أو الخدمة. ويلتزم المستخدم بعدم الدفع إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها بنفسه. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
+        "en": "Suez Bazaar is a listing platform and does not guarantee the reliability of users or quality of products. Users should not pay until they verify the product/service themselves. We commit to removing any listings proven to be fraudulent or misleading."
+    },
+    "privacy_h2_3": {
+        "ar": "مشاركة البيانات",
+        "en": "Data Sharing"
+    },
+    "privacy_p_3": {
+        "ar": "لا نقوم بمشاركة بيانات المستخدم مع أي طرف ثالث إلا في حال وجود التزام قانوني أو لتحسين الخدمة عبر مزودين موثوقين.",
+        "en": "We do not share user data with third parties unless required by law or to improve service via trusted providers."
+    },
+    "privacy_h2_4": {
+        "ar": "أمان البيانات",
+        "en": "Data Security"
+    },
+    "privacy_p_4": {
+        "ar": "نستخدم تقنيات آمنة لحماية بيانات المستخدم من الوصول غير المصرح به أو التعديل أو الحذف.",
+        "en": "We use secure technologies to protect user data from unauthorized access, modification, or deletion."
+    },
+    "privacy_h2_5": {
+        "ar": "حقوق المستخدم",
+        "en": "User Rights"
+    },
+    "privacy_p_5": {
+        "ar": "يحق للمستخدم طلب حذف بياناته أو تعديلها في أي وقت من خلال التواصل معنا عبر البريد الإلكتروني أدناه.",
+        "en": "Users have the right to request deletion or modification of their data at any time by contacting us via email."
+    },
+    "privacy_h2_6": {
+        "ar": "التحديثات",
+        "en": "Updates"
+    },
+    "privacy_p_6": {
+        "ar": "قد نقوم بتحديث سياسة الخصوصية من وقت لآخر، وسيتم نشر أي تغييرات في هذه الصفحة.",
+        "en": "We may update the privacy policy periodically; any changes will be posted on this page."
+    },
+    "privacy_h2_7": {
+        "ar": "التواصل معنا",
+        "en": "Contact Us"
+    },
+    "privacy_p_7": {
+        "ar": "لأي استفسار أو ملاحظات، يمكنكم التواصل عبر البريد الإلكتروني: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>",
+        "en": "For any inquiries, contact us via email: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>"
+    },
+    "delete_account_title": {
+        "ar": "حذف الحساب على Suez Bazaar",
+        "en": "Delete Account on Suez Bazaar"
+    },
+    "delete_account_heading": {
+        "ar": "حذف الحساب على Suez Bazaar",
+        "en": "Delete Account on Suez Bazaar"
+    },
+    "delete_account_intro": {
+        "ar": "يمكنك حذف حسابك وجميع البيانات المرتبطة به بسهولة. للقيام بذلك، اتبع الخطوات التالية:",
+        "en": "You can delete your account and all associated data easily. To do so, follow these steps:"
+    },
+    "delete_account_step_1": {
+        "ar": "افتح التطبيق وانتقل إلى صفحة <span class=\"highlight\">التسجيل / حسابي</span>.",
+        "en": "Open the app and go to the <span class=\"highlight\">Login / My Account</span> page."
+    },
+    "delete_account_step_2": {
+        "ar": "اختر <span class=\"highlight\">تعديل بيانات</span> أو <span class=\"highlight\">إعدادات الحساب</span>.",
+        "en": "Choose <span class=\"highlight\">Edit Profile</span> or <span class=\"highlight\">Account Settings</span>."
+    },
+    "delete_account_step_3": {
+        "ar": "ابحث عن خيار <span class=\"highlight\">حذف الحساب</span> واضغط عليه.",
+        "en": "Find the <span class=\"highlight\">Delete Account</span> option and tap it."
+    },
+    "delete_account_step_4": {
+        "ar": "سيتم حذف البيانات التالية نهائيًا:",
+        "en": "The following data will be permanently deleted:"
+    },
+    "delete_account_data_1": {
+        "ar": "اسم المستخدم",
+        "en": "Username"
+    },
+    "delete_account_data_2": {
+        "ar": "رقم الهاتف",
+        "en": "Phone number"
+    },
+    "delete_account_data_3": {
+        "ar": "البريد الإلكتروني",
+        "en": "Email address"
+    },
+    "delete_account_data_4": {
+        "ar": "العنوان",
+        "en": "Address"
+    },
+    "delete_account_data_5": {
+        "ar": "سجل الطلبات والمشتريات",
+        "en": "Orders and purchases history"
+    },
+    "delete_account_data_6": {
+        "ar": "كافة البيانات الأخرى",
+        "en": "All other related data"
+    },
+    "delete_account_warning": {
+        "ar": "<span class=\"highlight\">تنويه:</span> بعد حذف الحساب، لن تتمكن من استرجاع هذه البيانات.",
+        "en": "<span class=\"highlight\">Note:</span> After deleting your account, you will not be able to recover this data."
+    },
+    "delete_account_contact": {
+        "ar": "إذا كنت ترغب في حذف حسابك الآن أو واجهت أي مشكلة، يمكنك التواصل مع فريق الدعم عبر البريد الإلكتروني: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>",
+        "en": "If you want to delete your account now or face any issue, you can contact the support team by email: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>"
+    },
+    "maint_title": {
+        "ar": "التطبيق قيد التحديث",
+        "en": "Application Updating"
+    },
+    "maint_desc": {
+        "ar": "نحن نقوم ببعض التحسينات الآن، سنعود للخدمة قريباً جداً.",
+        "en": "We are making some improvements now, we will be back in service very soon."
+    },
+    "maint_input_placeholder": {
+        "ar": "كلمة مرور الإدارة",
+        "en": "Admin Password"
+    },
+    "maint_bypass_btn": {
+        "ar": "تجاوز النظام",
+        "en": "Bypass System"
+    },
+    "maint_error_pwd": {
+        "ar": "كلمة المرور غير صحيحة، الوصول مرفوض.",
+        "en": "Incorrect password, access denied."
+    },
+    "contact_mail_name": {
+        "ar": "الاسم",
+        "en": "Name"
+    },
+    "contact_mail_email": {
+        "ar": "البريد الإلكتروني",
+        "en": "Email"
+    },
+    "contact_mail_phone": {
+        "ar": "رقم الهاتف",
+        "en": "Phone"
+    },
+    "contact_mail_service": {
+        "ar": "نوع الخدمة",
+        "en": "Service Type"
+    },
+    "contact_mail_message": {
+        "ar": "الرسالة",
+        "en": "Message"
+    },
+    "share": {
+        "ar": "مشاركة",
+        "en": "Share"
+    },
+    "location_on_map": {
+        "ar": "الموقع",
+        "en": "Map"
+    },
+    "provides_delivery": {
+        "ar": "يوفر خدمة توصيل",
+        "en": "Provides Delivery Service"
+    },
+    "contact_faq_q4": {
+        "ar": "هل تقدمون خدمات تسويقية للشركات الصغيرة؟",
+        "en": "Do you provide marketing services for small businesses?"
+    },
+    "contact_faq_a4": {
+        "ar": "نعم، نقدم حلولًا تسويقية تناسب الشركات الناشئة والصغيرة والمتوسطة وحتى المؤسسات الكبيرة، مع خيارات مرنة حسب الميزانية والهدف.",
+        "en": "Yes. We provide marketing solutions for startups, small and medium businesses, and larger companies, with flexible options based on budget and goals."
+    },
+    "auth_validation_phone_required": {
+        "ar": "رقم الهاتف مطلوب.",
+        "en": "Phone number is required."
+    },
+    "auth_validation_phone_min": {
+        "ar": "يجب أن يتكون رقم الهاتف من 11 رقمًا على الأقل.",
+        "en": "Phone number must be at least 11 digits."
+    },
+    "auth_validation_password_required": {
+        "ar": "كلمة المرور مطلوبة.",
+        "en": "Password is required."
+    },
+    "auth_validation_password_min": {
+        "ar": "يجب أن تتكون كلمة المرور من 4 أحرف على الأقل.",
+        "en": "Password must be at least 4 characters."
+    },
+    "auth_validation_username_required": {
+        "ar": "الاسم مطلوب.",
+        "en": "Name is required."
+    },
+    "auth_validation_username_length": {
+        "ar": "يجب أن يكون الاسم بين 3 و30 حرفًا.",
+        "en": "Name must be between 3 and 30 characters."
+    },
+    "auth_validation_address_details_required": {
+        "ar": "يرجى كتابة تفاصيل عنوان دقيقة مثل الدور أو علامة مميزة.",
+        "en": "Please write a precise address detail, such as a floor or landmark."
+    },
+    "auth_validation_address_delivery_hint": {
+        "ar": "يرجى إضافة مزيد من تفاصيل العنوان لتسهيل التوصيل.",
+        "en": "Please add more address detail to make delivery easier."
+    },
+    "auth_validation_address_min": {
+        "ar": "يرجى إدخال عنوان أكثر تفصيلًا (على الأقل 5 أحرف).",
+        "en": "Please enter a more detailed address (at least 5 characters)."
+    },
+    "product_mapper_unknown_provider": {
+        "ar": "مقدم خدمة غير معروف",
+        "en": "Unknown service provider"
+    },
+    "product_mapper_unnamed_product": {
+        "ar": "منتج بلا اسم",
+        "en": "Unnamed product"
+    },
+    "p2m_empty_subtitle": {
+        "ar": "أضف أول منتج لديك للبدء",
+        "en": "Add your first product to get started"
+    },
+    "p2m_delete_failed_prefix": {
+        "ar": "فشل الحذف:",
+        "en": "Delete failed:"
+    },
+    "p2m_all_categories": {
+        "ar": "كل الفئات",
+        "en": "All Categories"
+    },
+    "p2m_all_subcategories": {
+        "ar": "كل الفئات الفرعية",
+        "en": "All Subcategories"
+    },
+    "sales_role_buyer_title": {
+        "ar": "طلباتك كمشتري",
+        "en": "Your Orders as Buyer"
+    },
+    "sales_role_commercial_title": {
+        "ar": "طلباتك كمقدم خدمة",
+        "en": "Your Orders as Service Provider"
+    },
+    "sales_role_delivery_title": {
+        "ar": "طلباتك كمندوب توصيل",
+        "en": "Your Orders as Delivery"
+    },
+    "sales_role_admin_title": {
+        "ar": "كل الطلبات",
+        "en": "All Orders"
+    },
+    "sales_empty_buyer": {
+        "ar": "لا توجد طلبات كمشتري.",
+        "en": "No buyer orders found."
+    },
+    "sales_empty_commercial": {
+        "ar": "لا توجد طلبات كمقدم خدمة.",
+        "en": "No service-provider orders found."
+    },
+    "sales_empty_delivery": {
+        "ar": "لا توجد طلبات توصيل.",
+        "en": "No delivery orders found."
+    },
+    "sales_empty_admin": {
+        "ar": "لا توجد طلبات.",
+        "en": "No orders found."
+    },
+    "profile_product_rating_settings_title": {
+        "ar": "إعدادات تقييم المنتجات والخدمات",
+        "en": "Product and Service Rating Settings"
+    },
+    "profile_product_rating_enable_label": {
+        "ar": "تفعيل استقبال تقييمات المنتجات والخدمات",
+        "en": "Enable receiving product and service ratings"
+    },
+    "profile_product_rating_mode_stars_comments": {
+        "ar": "نجوم + تعليقات",
+        "en": "Stars + comments"
+    },
+    "profile_product_rating_mode_stars_only": {
+        "ar": "نجوم فقط",
+        "en": "Stars only"
+    },
+    "profile_guest_access_title": {
+        "ar": "مصادقة",
+        "en": "Authentication"
+    },
+    "profile_guest_access_text": {
+        "ar": "يجب تسجيل الدخول للوصول إلى الملف الشخصي",
+        "en": "You must sign in to access the profile"
+    },
+    "sales_no_orders": {
+        "ar": "لا توجد طلبات.",
+        "en": "No orders found."
+    },
+    "sales_order_id": {
+        "ar": "رقم الطلب #",
+        "en": "Order #"
+    },
+    "sales_date": {
+        "ar": "التاريخ",
+        "en": "Date"
+    },
+    "sales_items_count": {
+        "ar": "عدد العناصر",
+        "en": "Items count"
+    },
+    "sales_sellers_count": {
+        "ar": "عدد البائعين",
+        "en": "Sellers count"
+    },
+    "sales_error": {
+        "ar": "حدث خطأ أثناء تحميل الطلبات.",
+        "en": "An error occurred while loading orders."
+    },
+    "sales_updating_data_title": {
+        "ar": "جارٍ تحديث البيانات",
+        "en": "Updating data"
+    },
+    "sales_updating_data_text": {
+        "ar": "يتم الآن جلب أحدث تفاصيل الطلب...",
+        "en": "Fetching the latest order details now..."
+    },
+    "sales_error_title": {
+        "ar": "تعذر فتح الطلب",
+        "en": "Unable to open order"
+    },
+    "sales_error_open_details": {
+        "ar": "حدث خطأ أثناء فتح تفاصيل الطلب.",
+        "en": "An error occurred while opening order details."
+    },
+    "advertisement_no_ads": {
+        "ar": "لا توجد إعلانات متاحة الآن",
+        "en": "No ads available right now"
+    },
+    "cat_product_load_failed": {
+        "ar": "فشل التحميل",
+        "en": "Failed to load"
+    },
+    "main_category_select_error": {
+        "ar": "تعذر تحديد الفئة الرئيسية.",
+        "en": "Unable to determine the main category."
+    },
+    "main_category_load_error": {
+        "ar": "تعذر تحميل بيانات الفئة.",
+        "en": "Unable to load category data."
+    },
+    "main_category_unexpected_error": {
+        "ar": "حدث خطأ غير متوقع أثناء التحميل.",
+        "en": "An unexpected error occurred while loading."
+    },
+    "main_category_no_subcategories": {
+        "ar": "لا توجد فئات فرعية متاحة.",
+        "en": "No subcategories available."
+    },
+    "main_category_product_load_error": {
+        "ar": "تعذر تحميل المنتج",
+        "en": "Unable to load product"
+    },
+    "login_legacy_wrong_password": {
+        "ar": "كلمة المرور غير صحيحة.",
+        "en": "Wrong password."
+    }
 }

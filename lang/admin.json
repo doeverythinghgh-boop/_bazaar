@@ -1,0 +1,906 @@
+{
+    "admin_mode_watermark": {
+        "ar": "وضع المسؤول: تتصفح بصلاحيات المستخدم",
+        "en": "Admin Mode: Browsing as user"
+    },
+    "admin_impersonate_confirm_title": {
+        "ar": "تأكيد الدخول",
+        "en": "Confirm Login"
+    },
+    "admin_impersonate_confirm_text": {
+        "ar": "هل أنت متأكد أنك تريد تسجيل الدخول بهذا المستخدم؟ سيتم تسجيل خروج جلستك الحالية.",
+        "en": "Are you sure you want to sign in as this user? Your current session will be logged out."
+    },
+    "admin_impersonate_confirm_btn": {
+        "ar": "نعم، سجّل الدخول",
+        "en": "Yes, Sign In"
+    },
+    "admin_impersonate_loading_title": {
+        "ar": "جارٍ تبديل المستخدم...",
+        "en": "Switching user..."
+    },
+    "admin_impersonate_loading_text": {
+        "ar": "جارٍ تسجيل الخروج ومسح بيانات الجلسة الحالية...",
+        "en": "Signing out and clearing current data..."
+    },
+    "admin_user_not_found": {
+        "ar": "المستخدم غير موجود",
+        "en": "User not found"
+    },
+    "admin_impersonate_error": {
+        "ar": "حدث خطأ أثناء تبديل المستخدم.",
+        "en": "An error occurred while switching users."
+    },
+    "admin_notify_message_required": {
+        "ar": "يرجى إدخال رسالة",
+        "en": "Please enter a message."
+    },
+    "admin_notify_no_token": {
+        "ar": "هذا المستخدم لا يملك رمز إشعارات (FCM Token) مسجلًا.",
+        "en": "This user does not have a registered FCM token."
+    },
+    "admin_notify_title_manual": {
+        "ar": "إشعار من الإدارة",
+        "en": "Notification from Admin"
+    },
+    "admin_notify_sent": {
+        "ar": "تم الإرسال بنجاح",
+        "en": "Sent successfully"
+    },
+    "admin_broadcast_confirm_title": {
+        "ar": "تأكيد الإرسال الجماعي",
+        "en": "Confirm Broadcast"
+    },
+    "admin_broadcast_confirm_text": {
+        "ar": "هل أنت متأكد أنك تريد إرسال هذه الرسالة إلى جميع المستخدمين؟ قد يستغرق ذلك بعض الوقت حسب عدد المستخدمين.",
+        "en": "Are you sure you want to send this message to all users? This may take some time depending on the number of users."
+    },
+    "admin_broadcast_confirm_btn": {
+        "ar": "نعم، أرسل للجميع",
+        "en": "Yes, Send to Everyone"
+    },
+    "admin_broadcast_prepare_title": {
+        "ar": "جارٍ التحضير...",
+        "en": "Preparing..."
+    },
+    "admin_broadcast_prepare_text": {
+        "ar": "جارٍ جلب المستخدمين وتجهيز الإشعارات...",
+        "en": "Fetching users and preparing notifications..."
+    },
+    "admin_broadcast_no_users_with_tokens": {
+        "ar": "لا يوجد حاليًا مستخدمون لديهم رموز إشعارات (FCM Token) مسجلة في النظام.",
+        "en": "There are currently no users with registered FCM tokens in the system."
+    },
+    "admin_broadcast_token_fetch_failed": {
+        "ar": "فشل في جلب رموز المستخدمين من الخادم.",
+        "en": "Failed to fetch user tokens from the server."
+    },
+    "admin_broadcast_title_manual": {
+        "ar": "رسالة جماعية من الإدارة",
+        "en": "Admin Broadcast"
+    },
+    "admin_broadcast_sent_text": {
+        "ar": "تم إرسال الرسالة بنجاح إلى {count} جهاز.",
+        "en": "The message was sent successfully to {count} devices."
+    },
+    "admin_broadcast_error": {
+        "ar": "حدث خطأ غير متوقع أثناء إرسال الرسائل الجماعية. يرجى المحاولة مرة أخرى.",
+        "en": "An unexpected error occurred while sending broadcast messages. Please try again."
+    },
+    "admin_users_loading": {
+        "ar": "جارٍ تحميل بيانات المستخدمين...",
+        "en": "Loading user data..."
+    },
+    "admin_users_load_error": {
+        "ar": "حدث خطأ أثناء تحميل بيانات المستخدمين.",
+        "en": "An error occurred while loading user data."
+    },
+    "admin_relations_loading": {
+        "ar": "جارٍ تحميل العلاقات...",
+        "en": "Loading relationships..."
+    },
+    "admin_relations_fetch_failed": {
+        "ar": "فشل جلب العلاقات",
+        "en": "Failed to fetch relationships"
+    },
+    "admin_relations_manage_title": {
+        "ar": "إدارة العلاقات: {username}",
+        "en": "Manage Relationships: {username}"
+    },
+    "admin_relations_as_seller_header": {
+        "ar": "الموزعون المرتبطون به (كموزعين له)",
+        "en": "Distributors linked to this user (as your distributors)"
+    },
+    "admin_relations_empty_seller": {
+        "ar": "لا يوجد موزعون مرتبطون.",
+        "en": "No linked distributors."
+    },
+    "admin_relations_as_delivery_header": {
+        "ar": "مقدمو الخدمة المرتبطون به (حيث يكون هذا المستخدم موزعهم)",
+        "en": "Service providers linked to them (where this user is their distributor)"
+    },
+    "admin_relations_empty_delivery": {
+        "ar": "لا يوجد مقدمو خدمة مرتبطون.",
+        "en": "No linked service providers."
+    },
+    "admin_relations_add_title": {
+        "ar": "إضافة علاقة جديدة",
+        "en": "Add New Relationship"
+    },
+    "admin_relations_user_key_placeholder": {
+        "ar": "مفتاح المستخدم...",
+        "en": "User key..."
+    },
+    "admin_relations_type_delivery": {
+        "ar": "هذا المستخدم هو موزعي",
+        "en": "This user is my distributor"
+    },
+    "admin_relations_type_commercial": {
+        "ar": "هذا المستخدم هو مقدم خدمتي",
+        "en": "This user is my service provider"
+    },
+    "admin_relations_link_now": {
+        "ar": "اربط الآن",
+        "en": "Link Now"
+    },
+    "admin_relations_load_error": {
+        "ar": "حدث خطأ أثناء تحميل العلاقات",
+        "en": "An error occurred while loading relationships"
+    },
+    "admin_relations_action_deactivate": {
+        "ar": "تعطيل",
+        "en": "Deactivate"
+    },
+    "admin_relations_action_activate": {
+        "ar": "تفعيل",
+        "en": "Activate"
+    },
+    "admin_relations_default_username": {
+        "ar": "بدون اسم",
+        "en": "Unnamed"
+    },
+    "admin_relations_status_active": {
+        "ar": "نشط",
+        "en": "Active"
+    },
+    "admin_relations_status_inactive": {
+        "ar": "غير نشط",
+        "en": "Inactive"
+    },
+    "admin_relations_validation_user_key": {
+        "ar": "يرجى إدخال مفتاح المستخدم",
+        "en": "Please enter the user key."
+    },
+    "admin_relations_add_failed": {
+        "ar": "فشل إضافة العلاقة",
+        "en": "Failed to add relationship"
+    },
+    "admin_relations_added": {
+        "ar": "تمت إضافة العلاقة بنجاح",
+        "en": "Relationship added successfully"
+    },
+    "admin_relations_update_failed": {
+        "ar": "فشل تحديث العلاقة",
+        "en": "Failed to update relationship"
+    },
+    "admin_relations_updated": {
+        "ar": "تم التحديث",
+        "en": "Updated"
+    },
+    "admin_filter_role_buyer": {
+        "ar": "مشتري",
+        "en": "Buyer"
+    },
+    "admin_filter_role_provider": {
+        "ar": "مقدم خدمة",
+        "en": "Service Provider"
+    },
+    "admin_filter_role_delivery": {
+        "ar": "خدمة توصيل",
+        "en": "Delivery Service"
+    },
+    "admin_filter_buyers_only": {
+        "ar": "المشترون فقط",
+        "en": "Buyers Only"
+    },
+    "admin_filter_show_all": {
+        "ar": "عرض الكل",
+        "en": "Show All"
+    },
+    "admin_filter_admins_short": {
+        "ar": "إدارة / سوبر أدمن",
+        "en": "Admin / Super Admin"
+    },
+    "admin_filter_admins_only": {
+        "ar": "الإداريون / السوبر أدمن فقط",
+        "en": "Admins / Super Admins Only"
+    },
+    "admin_filter_created_last_days": {
+        "ar": "تم الإنشاء خلال {days} يوم",
+        "en": "Created within last {days} days"
+    },
+    "admin_filter_login_last_days": {
+        "ar": "آخر دخول خلال {days} يوم",
+        "en": "Logged in within last {days} days"
+    },
+    "admin_filter_hint": {
+        "ar": "اختر نوع الحساب، أو اعرض الإداريين فقط، أو طبّق فلاتر زمنية للحسابات الجديدة وآخر تسجيل دخول.",
+        "en": "Choose account type, show admins only, or apply time-based filters for newly created accounts and last login."
+    },
+    "admin_filter_account_types": {
+        "ar": "أنواع الحسابات",
+        "en": "Account Types"
+    },
+    "admin_filter_time_filters": {
+        "ar": "فلاتر الوقت",
+        "en": "Time Filters"
+    },
+    "admin_filter_latest_accounts_during": {
+        "ar": "أحدث الحسابات خلال",
+        "en": "Newest accounts within"
+    },
+    "admin_filter_last_login_during": {
+        "ar": "آخر دخول خلال",
+        "en": "Last login within"
+    },
+    "admin_filter_days_suffix": {
+        "ar": "يوم",
+        "en": "days"
+    },
+    "admin_filter_current_state": {
+        "ar": "الحالة الحالية",
+        "en": "Current State"
+    },
+    "admin_filter_all_users_no_filters": {
+        "ar": "عرض جميع المستخدمين بدون أي فلاتر",
+        "en": "Showing all users with no filters"
+    },
+    "admin_filter_admins_summary": {
+        "ar": "عرض الإداريين والسوبر أدمن فقط",
+        "en": "Showing admins and super admins only"
+    },
+    "admin_filter_users_title": {
+        "ar": "فلترة المستخدمين",
+        "en": "Filter Users"
+    },
+    "admin_filter_apply": {
+        "ar": "تطبيق",
+        "en": "Apply"
+    },
+    "admin_page_title": {
+        "ar": "إدارة المستخدمين - Suez Bazaar",
+        "en": "User Management - Suez Bazaar"
+    },
+    "admin_panel_title": {
+        "ar": "لوحة تحكم المستخدمين",
+        "en": "Users Control Panel"
+    },
+    "admin_broadcast_section_title": {
+        "ar": "إرسال رسالة لكل المستخدمين",
+        "en": "Broadcast Message to All Users"
+    },
+    "admin_broadcast_placeholder": {
+        "ar": "اكتب رسالتك إلى جميع مستخدمي التطبيق هنا...",
+        "en": "Write your message to all app users here..."
+    },
+    "admin_broadcast_send_btn": {
+        "ar": "إرسال جماعي",
+        "en": "Send Broadcast"
+    },
+    "admin_search_placeholder": {
+        "ar": "ابحث بالاسم أو الكود...",
+        "en": "Search by name or code..."
+    },
+    "admin_users_count_label": {
+        "ar": "المستخدمون:",
+        "en": "Users:"
+    },
+    "admin_ui_no_users_match": {
+        "ar": "لا يوجد مستخدمون مطابقون لبحثك.",
+        "en": "No users match your search."
+    },
+    "admin_ui_not_available": {
+        "ar": "غير متاح",
+        "en": "Not available"
+    },
+    "admin_ui_has_token": {
+        "ar": "لديه رمز",
+        "en": "Has token"
+    },
+    "admin_ui_no_token": {
+        "ar": "لا يوجد رمز",
+        "en": "No token"
+    },
+    "admin_ui_role_distributor": {
+        "ar": "موزع",
+        "en": "Distributor"
+    },
+    "admin_ui_role_super_admin": {
+        "ar": "سوبر أدمن",
+        "en": "Super Admin"
+    },
+    "admin_ui_role_admin": {
+        "ar": "أدمن",
+        "en": "Admin"
+    },
+    "admin_ui_refresh_user": {
+        "ar": "تحديث البيانات",
+        "en": "Refresh data"
+    },
+    "admin_ui_phone": {
+        "ar": "الهاتف",
+        "en": "Phone"
+    },
+    "admin_ui_password": {
+        "ar": "كلمة المرور",
+        "en": "Password"
+    },
+    "admin_ui_address": {
+        "ar": "العنوان",
+        "en": "Address"
+    },
+    "admin_ui_platform": {
+        "ar": "المنصة",
+        "en": "Platform"
+    },
+    "admin_ui_created_at": {
+        "ar": "تاريخ إنشاء الحساب",
+        "en": "Account creation date"
+    },
+    "admin_ui_last_visit": {
+        "ar": "آخر زيارة",
+        "en": "Last visit"
+    },
+    "admin_ui_none": {
+        "ar": "لا يوجد",
+        "en": "None"
+    },
+    "admin_ui_roles_relations": {
+        "ar": "الأدوار والعلاقات",
+        "en": "Roles and Relationships"
+    },
+    "admin_ui_manage_account": {
+        "ar": "إدارة الحساب",
+        "en": "Manage Account"
+    },
+    "admin_ui_delivery_settings": {
+        "ar": "إعدادات التوصيل",
+        "en": "Delivery Settings"
+    },
+    "admin_ui_package_limit": {
+        "ar": "حد الباقة",
+        "en": "Package limit"
+    },
+    "admin_ui_smart_messages": {
+        "ar": "رسائل ذكية",
+        "en": "Smart Messages"
+    },
+    "admin_ui_notification_text": {
+        "ar": "نص الإشعار...",
+        "en": "Notification text..."
+    },
+    "admin_ui_login_as_user": {
+        "ar": "دخول كمستخدم",
+        "en": "Login as User"
+    },
+    "admin_ui_copied": {
+        "ar": "تم النسخ:",
+        "en": "Copied:"
+    },
+    "admin_api_enter_valid_value": {
+        "ar": "يرجى إدخال قيمة صحيحة",
+        "en": "Please enter a valid value."
+    },
+    "admin_api_update_success": {
+        "ar": "تم التحديث بنجاح",
+        "en": "Updated successfully"
+    },
+    "admin_api_update_failed": {
+        "ar": "فشل تحديث البيانات",
+        "en": "Failed to update data"
+    },
+    "admin_api_update_error": {
+        "ar": "حدث خطأ أثناء التحديث.",
+        "en": "An error occurred while updating."
+    },
+    "settings_fetch_mode_provider": {
+        "ar": "وضع مقدم الخدمة",
+        "en": "Service Provider Mode"
+    },
+    "settings_fetch_mode_change": {
+        "ar": "تغيير الوضع",
+        "en": "Change Mode"
+    },
+    "settings_fetch_mode_changed": {
+        "ar": "تم تغيير وضع جلب الطلبات.",
+        "en": "Order fetching mode has been changed."
+    },
+    "settings_notifications_enable": {
+        "ar": "تفعيل",
+        "en": "Enable"
+    },
+    "settings_notifications_disable": {
+        "ar": "تعطيل",
+        "en": "Disable"
+    },
+    "settings_notifications_enabled_state": {
+        "ar": "مفعلة",
+        "en": "enabled"
+    },
+    "settings_notifications_disabled_state": {
+        "ar": "معطلة",
+        "en": "disabled"
+    },
+    "settings_notifications_confirm_title": {
+        "ar": "{action} الإشعارات؟",
+        "en": "{action} notifications?"
+    },
+    "settings_notifications_confirm_text": {
+        "ar": "سيتم تغيير حالة استقبال الإشعارات إلى {status}.",
+        "en": "Your notification receiving status will be changed to {status}."
+    },
+    "settings_notifications_not_ready": {
+        "ar": "نظام الإشعارات غير جاهز بعد. يرجى الانتظار لحظة.",
+        "en": "The notification system is not ready yet. Please wait a moment."
+    },
+    "admin_ads_page_title": {
+        "ar": "إدارة الإعلانات - Suez Bazaar",
+        "en": "Advertisements Management - Suez Bazaar"
+    },
+    "admin_ads_title": {
+        "ar": "مدير الإعلانات الرئيسية",
+        "en": "Main Advertisements Manager"
+    },
+    "admin_ads_subtitle": {
+        "ar": "ارفع وأدر صور البنرات والمنتجات المميزة",
+        "en": "Upload and manage banner images and featured products"
+    },
+    "admin_ads_important_info": {
+        "ar": "معلومات مهمة",
+        "en": "Important Information"
+    },
+    "admin_ads_info_1": {
+        "ar": "الصور المرفوعة ستظهر في الصفحة الرئيسية",
+        "en": "Uploaded images will appear on the home page"
+    },
+    "admin_ads_info_2": {
+        "ar": "يُفضّل استخدام صور بدقة عالية",
+        "en": "It is recommended to use high resolution images"
+    },
+    "admin_ads_info_3": {
+        "ar": "سيتم تحويل الصور تلقائيًا إلى WebP",
+        "en": "Images will be automatically converted to WebP"
+    },
+    "admin_ads_pick_images": {
+        "ar": "اختر صور الإعلانات",
+        "en": "?? Choose advertisement images"
+    },
+    "admin_ads_pick_hint": {
+        "ar": "استخدم الأزرار بالأسفل لاختيار الصور",
+        "en": "Use the buttons below to choose images"
+    },
+    "admin_ads_pick_files": {
+        "ar": "اختيار الملفات",
+        "en": "Choose Files"
+    },
+    "admin_ads_clear_all_btn": {
+        "ar": "حذف الكل",
+        "en": "Delete All"
+    },
+    "admin_ads_upload_btn": {
+        "ar": "رفع الإعلانات",
+        "en": "Upload Advertisements"
+    },
+    "admin_ads_featured_products": {
+        "ar": "المنتجات المميزة",
+        "en": "Featured Products"
+    },
+    "admin_ads_max_files": {
+        "ar": "الحد الأقصى هو {max} صورة. (المتبقي: {remaining})",
+        "en": "The maximum is {max} images. (Remaining: {remaining})"
+    },
+    "admin_ads_ready": {
+        "ar": "جاهز",
+        "en": "Ready"
+    },
+    "admin_ads_compress_error": {
+        "ar": "خطأ في الضغط",
+        "en": "Compression error"
+    },
+    "admin_ads_delete_image": {
+        "ar": "حذف الصورة؟",
+        "en": "Delete image?"
+    },
+    "admin_ads_resize_title": {
+        "ar": "تغيير حجم الصورة",
+        "en": "Resize Image"
+    },
+    "admin_ads_width_px": {
+        "ar": "العرض (px)",
+        "en": "Width (px)"
+    },
+    "admin_ads_height_px": {
+        "ar": "الارتفاع (px)",
+        "en": "Height (px)"
+    },
+    "admin_ads_resize_btn": {
+        "ar": "تغيير الحجم",
+        "en": "Resize"
+    },
+    "admin_ads_processing": {
+        "ar": "جارٍ المعالجة...",
+        "en": "Processing..."
+    },
+    "admin_ads_resize_cors_warning": {
+        "ar": "لا يمكن تعديل حجم الصور المرفوعة سابقًا بسبب قيود الأمان (CORS). يرجى حذف الصورة ثم إعادة رفعها لتعديل حجمها.",
+        "en": "Previously uploaded images cannot be resized because of CORS security restrictions. Please delete and re-upload the image to resize it."
+    },
+    "admin_ads_resize_success": {
+        "ar": "تم تغيير الأبعاد بنجاح. اضغط \"نشر\" لحفظ التغييرات.",
+        "en": "Dimensions changed successfully. Press publish to save the changes."
+    },
+    "admin_ads_processing_error": {
+        "ar": "حدث خطأ أثناء المعالجة",
+        "en": "An error occurred during processing"
+    },
+    "admin_ads_delete_product": {
+        "ar": "حذف المنتج؟",
+        "en": "Delete product?"
+    },
+    "admin_ads_delete_featured_text": {
+        "ar": "سيتم حذف المنتج من القائمة المميزة فورًا.",
+        "en": "The product will be removed from the featured list immediately."
+    },
+    "admin_ads_yes_delete": {
+        "ar": "نعم، احذف",
+        "en": "Yes, delete"
+    },
+    "admin_ads_featured_updated": {
+        "ar": "تم تحديث القائمة بنجاح.",
+        "en": "The list was updated successfully."
+    },
+    "admin_ads_save_failed": {
+        "ar": "فشل حفظ التغييرات.",
+        "en": "Failed to save changes."
+    },
+    "admin_ads_publishing": {
+        "ar": "جارٍ النشر...",
+        "en": "Publishing..."
+    },
+    "admin_ads_update_log": {
+        "ar": "تحديث الإعلانات",
+        "en": "Update advertisements"
+    },
+    "admin_ads_publish_success": {
+        "ar": "تم تحديث الإعلانات بنجاح.",
+        "en": "Advertisements updated successfully."
+    },
+    "admin_ads_upload_failed": {
+        "ar": "فشل رفع البيانات.",
+        "en": "Failed to upload data."
+    },
+    "admin_ads_clear_all": {
+        "ar": "حذف الكل؟",
+        "en": "Delete all?"
+    },
+    "admin_ads_published": {
+        "ar": "منشور",
+        "en": "Published"
+    },
+    "admin_ads_new": {
+        "ar": "جديد",
+        "en": "New"
+    },
+    "admin_ads_search_keyword_optional": {
+        "ar": "كلمة بحث (اختياري)",
+        "en": "Search keyword (optional)"
+    },
+    "admin_ads_no_featured_products": {
+        "ar": "لا توجد منتجات مميزة حاليًا.",
+        "en": "There are no featured products currently."
+    },
+    "admin_pending_page_title": {
+        "ar": "إدارة المنتجات - Suez Bazaar",
+        "en": "Products Management - Suez Bazaar"
+    },
+    "admin_pending_title": {
+        "ar": "إدارة المنتجات",
+        "en": "Products Management"
+    },
+    "admin_pending_refresh_all": {
+        "ar": "تحديث الكل",
+        "en": "Refresh All"
+    },
+    "admin_pending_pending_products": {
+        "ar": "المنتجات المعلقة (بانتظار الموافقة)",
+        "en": "Pending products (awaiting approval)"
+    },
+    "admin_pending_published_products": {
+        "ar": "المنتجات المنشورة",
+        "en": "Published products"
+    },
+    "admin_pending_approve_publish": {
+        "ar": "اعتماد ونشر",
+        "en": "Approve and Publish"
+    },
+    "admin_pending_unpublish": {
+        "ar": "إلغاء النشر",
+        "en": "Unpublish"
+    },
+    "admin_pending_confirm_action": {
+        "ar": "تأكيد {action}",
+        "en": "Confirm {action}"
+    },
+    "admin_pending_confirm_action_text": {
+        "ar": "هل أنت متأكد أنك تريد {action} المنتج \"{name}\"؟",
+        "en": "Are you sure you want to {action} product \"{name}\"?"
+    },
+    "admin_pending_update_failed": {
+        "ar": "فشل التحديث",
+        "en": "Update failed"
+    },
+    "admin_pending_success_title": {
+        "ar": "تم بنجاح",
+        "en": "Done successfully"
+    },
+    "admin_pending_success_text": {
+        "ar": "تم {action} بنجاح",
+        "en": "{action} completed successfully"
+    },
+    "admin_pending_delete_product": {
+        "ar": "حذف المنتج",
+        "en": "Delete Product"
+    },
+    "admin_pending_delete_text": {
+        "ar": "هل أنت متأكد أنك تريد حذف \"{name}\" نهائيًا؟ ستُحذف أيضًا جميع الصور المرتبطة به من السحابة.",
+        "en": "Are you sure you want to permanently delete \"{name}\"? All related images will also be removed from the cloud."
+    },
+    "admin_pending_delete_forever": {
+        "ar": "نعم، احذف نهائيًا",
+        "en": "Yes, delete permanently"
+    },
+    "admin_pending_deleted_rejected_title": {
+        "ar": "تم الحذف والرفض",
+        "en": "Deleted and Rejected"
+    },
+    "admin_pending_deleted_rejected_text": {
+        "ar": "تم حذف المنتج بنجاح وتم إرسال إشعار رفض إلى مقدم الخدمة.",
+        "en": "The product was deleted successfully and a rejection notification was sent to the service provider."
+    },
+    "admin_pending_no_pending": {
+        "ar": "لا توجد منتجات معلقة حاليًا.",
+        "en": "No pending products were found."
+    },
+    "admin_pending_load_error": {
+        "ar": "خطأ في تحميل البيانات",
+        "en": "Error loading data"
+    },
+    "admin_pending_no_published": {
+        "ar": "لا توجد منتجات منشورة حاليًا.",
+        "en": "No published products were found."
+    },
+    "admin_pending_provider_label": {
+        "ar": "مقدم الخدمة:",
+        "en": "Service provider:"
+    },
+    "admin_pending_price_label": {
+        "ar": "السعر:",
+        "en": "Price:"
+    },
+    "admin_pending_currency": {
+        "ar": "جنيه",
+        "en": "EGP"
+    },
+    "admin_pending_approve": {
+        "ar": "اعتماد",
+        "en": "Approve"
+    },
+    "admin_pending_reject": {
+        "ar": "رفض",
+        "en": "Reject"
+    },
+    "admin_pending_preview": {
+        "ar": "معاينة",
+        "en": "Preview"
+    },
+    "admin_pending_product_name": {
+        "ar": "اسم المنتج",
+        "en": "Product Name"
+    },
+    "admin_pending_provider": {
+        "ar": "مقدم الخدمة",
+        "en": "Service Provider"
+    },
+    "admin_pending_actions": {
+        "ar": "الإجراءات",
+        "en": "Actions"
+    },
+    "service_behavior_physical_product": {
+        "ar": "منتج فعلي",
+        "en": "Physical Product"
+    },
+    "service_behavior_general_service": {
+        "ar": "خدمة",
+        "en": "Service"
+    },
+    "service_behavior_delivery_service": {
+        "ar": "خدمة توصيل",
+        "en": "Delivery Service"
+    },
+    "service_behavior_digital_service": {
+        "ar": "خدمة رقمية",
+        "en": "Digital Service"
+    },
+    "service_behavior_education_service": {
+        "ar": "خدمة تعليمية",
+        "en": "Education Service"
+    },
+    "service_behavior_personal_care_service": {
+        "ar": "خدمة عناية شخصية",
+        "en": "Personal Care Service"
+    },
+    "service_behavior_creative_service": {
+        "ar": "خدمة إبداعية",
+        "en": "Creative Service"
+    },
+    "service_behavior_pet_care_service": {
+        "ar": "خدمة رعاية حيوانات",
+        "en": "Pet Care Service"
+    },
+    "service_behavior_event_support_service": {
+        "ar": "خدمة دعم فعاليات",
+        "en": "Event Support Service"
+    },
+    "service_behavior_membership_service": {
+        "ar": "خدمة اشتراك",
+        "en": "Membership Service"
+    },
+    "service_hint_hidden_price": {
+        "ar": "قد يكون السعر مخفيًا في بطاقات العرض العامة",
+        "en": "Price may be hidden in public cards"
+    },
+    "service_hint_requires_booking": {
+        "ar": "قد يتطلب هذا النوع تنسيقًا أو حجزًا مسبقًا",
+        "en": "This type may require coordination or booking"
+    },
+    "service_hint_supports_shipping": {
+        "ar": "هذا النوع يدعم الشحن كمنتج فعلي",
+        "en": "This type supports shipping as a product"
+    },
+    "service_hint_requires_location": {
+        "ar": "هذا النوع يعتمد غالبًا على الموقع ومسار التوصيل",
+        "en": "This type usually depends on location and delivery routing"
+    },
+    "service_hint_requires_inventory": {
+        "ar": "يعتمد هذا النوع على الكمية والمخزون",
+        "en": "This type depends on quantity and stock"
+    },
+    "image_analyzer_page_title": {
+        "ar": "محلل ديون الصور المتقدم v5.0 - Admin Hub",
+        "en": "Advanced Image Debt Analyzer v5.0 - Admin Hub"
+    },
+    "image_analyzer_tagline": {
+        "ar": "أداة ذكية لتحليل ومزامنة وتنظيف أصول الصور في Suez Bazaar",
+        "en": "AI for analyzing, synchronizing, and cleaning image assets in Suez Bazaar"
+    },
+    "image_analyzer_active_label": {
+        "ar": "الصور النشطة والمستخدمة",
+        "en": "Active and Used Images"
+    },
+    "image_analyzer_active_sub": {
+        "ar": "موجودة على الخادم وفي قاعدة البيانات",
+        "en": "Present on the server and in the database"
+    },
+    "image_analyzer_dead_label": {
+        "ar": "الصور الميتة (يتيمة)",
+        "en": "Dead Images (Orphaned)"
+    },
+    "image_analyzer_dead_sub": {
+        "ar": "ملفات متروكة بلا مراجع في قاعدة البيانات",
+        "en": "Stray files with no database references"
+    },
+    "image_analyzer_broken_label": {
+        "ar": "روابط مكسورة (مفقودة)",
+        "en": "Broken Links (Missing)"
+    },
+    "image_analyzer_broken_sub": {
+        "ar": "مراجع في قاعدة البيانات بلا ملفات مقابلة",
+        "en": "Database references with no files found"
+    },
+    "image_analyzer_run_scan": {
+        "ar": "ابدأ فحص الرادار الكامل",
+        "en": "Start Full Radar Scan"
+    },
+    "image_analyzer_mass_delete": {
+        "ar": "احذف كل الصور الميتة",
+        "en": "Delete All Dead Images"
+    },
+    "image_analyzer_tab_all": {
+        "ar": "كل الملفات",
+        "en": "All Files"
+    },
+    "image_analyzer_tab_dead": {
+        "ar": "الصور الميتة",
+        "en": "Dead Images"
+    },
+    "image_analyzer_tab_broken": {
+        "ar": "الروابط المكسورة",
+        "en": "Broken Links"
+    },
+    "image_analyzer_tab_products": {
+        "ar": "صور المنتجات",
+        "en": "Product Images"
+    },
+    "image_analyzer_tab_users": {
+        "ar": "صور المستخدمين",
+        "en": "User Images"
+    },
+    "image_analyzer_tab_ads": {
+        "ar": "الإعلانات",
+        "en": "Advertisements"
+    },
+    "image_analyzer_tab_orders": {
+        "ar": "صور الطلبات",
+        "en": "Order Images"
+    },
+    "image_analyzer_tab_featured": {
+        "ar": "المميزة (كاش)",
+        "en": "Featured (Cache)"
+    },
+    "image_analyzer_logs_cleared": {
+        "ar": "تم مسح السجلات.",
+        "en": "Logs were cleared."
+    },
+    "image_analyzer_clear_logs": {
+        "ar": "مسح السجلات",
+        "en": "Clear Logs"
+    },
+    "image_analyzer_ready_log": {
+        "ar": "نظام المحلل v5.0 جاهز...",
+        "en": "Analyzer system v5.0 is ready..."
+    },
+    "image_analyzer_search_placeholder": {
+        "ar": "ابحث باسم الملف أو النوع...",
+        "en": "Search by file name or type..."
+    },
+    "image_analyzer_waiting_scan": {
+        "ar": "بانتظار بدء عملية الفحص...",
+        "en": "Waiting for scan execution..."
+    },
+    "image_analyzer_rules_title": {
+        "ar": "دليل تقني لتسمية ملفات Suez Bazaar",
+        "en": "Technical Guide for Naming Suez Bazaar Files"
+    },
+    "image_analyzer_rule_product": {
+        "ar": "صور المنتجات الحديثة",
+        "en": "?? Modern product images"
+    },
+    "image_analyzer_rule_avatar": {
+        "ar": "صور الحسابات الشخصية (Avatars)",
+        "en": "?? Profile images (Avatars)"
+    },
+    "image_analyzer_rule_cover": {
+        "ar": "صور أغلفة المتاجر (Covers)",
+        "en": "Store cover images (Covers)"
+    },
+    "image_analyzer_rule_order": {
+        "ar": "صور طلبات الخدمة (Legacy)",
+        "en": "?? Service order images (Legacy)"
+    },
+    "image_analyzer_rule_ad": {
+        "ar": "صور الإعلانات الذكية",
+        "en": "?? Smart advertisement images"
+    },
+    "image_analyzer_rule_note": {
+        "ar": "ملاحظة تقنية",
+        "en": "?? Technical Note"
+    },
+    "image_analyzer_rule_note_value": {
+        "ar": "الصيغة المفضلة: WebP (غير حساسة لحالة الأحرف)",
+        "en": "Preferred format: WebP (Case Insensitive)"
+    },
+    "image_analyzer_rules_footer": {
+        "ar": "* يقوم المحلل بتصفية هذه الأنماط تلقائيًا لحماية صور المستخدمين والمنتجات حتى إذا تغيرت بنية قاعدة البيانات.",
+        "en": "* The analyzer automatically filters these patterns to protect user and product images even if the database structure changes."
+    }
+}

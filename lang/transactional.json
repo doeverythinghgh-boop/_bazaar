@@ -1,1346 +1,1346 @@
-﻿{
-    "cart_loading":  {
-                         "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ù…ÙŠÙ„ Ø³Ù„Ø© Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª...",
-                         "en":  "Loading shopping cart..."
-                     },
-    "cart_summary_title":  {
-                               "ar":  "Ù…Ù„Ø®Øµ Ø§Ù„Ø·Ù„Ø¨",
-                               "en":  "Order Summary"
-                           },
-    "cart_item_count":  {
-                            "ar":  "Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª:",
-                            "en":  "Item Count:"
-                        },
-    "cart_subtotal":  {
-                          "ar":  "Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹ Ø§Ù„Ø¬Ø²Ø¦ÙŠ:",
-                          "en":  "Subtotal:"
-                      },
-    "cart_savings":  {
-                         "ar":  "Ø§Ù„ØªÙˆÙÙŠØ±:",
-                         "en":  "Savings:"
-                     },
-    "cart_delivery_fee":  {
-                              "ar":  "Ø®Ø¯Ù…Ù‡ Ø§Ù„ØªÙˆØµÙŠÙ„:",
-                              "en":  "Delivery Fee:"
-                          },
-    "cart_smart_delivery":  {
-                                "ar":  "Ø§Ù„ØªÙˆØµÙŠÙ„ Ø§Ù„Ø°ÙƒÙŠ:",
-                                "en":  "Smart Delivery:"
-                            },
-    "cart_details":  {
-                         "ar":  "ØªÙØ§ØµÙŠÙ„",
-                         "en":  "Details"
-                     },
-    "cart_total":  {
-                       "ar":  "Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹ Ø§Ù„ÙƒÙ„ÙŠ:",
-                       "en":  "Total Amount:"
-                   },
-    "cart_checkout_btn":  {
-                              "ar":  "Ø¥ØªÙ…Ø§Ù… Ø¹Ù…Ù„ÙŠØ© Ø§Ù„Ø´Ø±Ø§Ø¡",
-                              "en":  "Checkout"
-                          },
-    "cart_clear_btn":  {
-                           "ar":  "ØªÙØ±ÙŠØº Ø§Ù„Ø³Ù„Ø©",
-                           "en":  "Clear Cart"
-                       },
-    "cart_empty_title":  {
-                             "ar":  "Ø³Ù„Ø© Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª ÙØ§Ø±ØºØ©",
-                             "en":  "Cart is Empty"
-                         },
-    "cart_empty_message":  {
-                               "ar":  "Ù„Ù… ØªÙ‚Ù… Ø¨Ø¥Ø¶Ø§ÙØ© Ø£ÙŠ Ù…Ù†ØªØ¬Ø§Øª Ø¥Ù„Ù‰ Ø³Ù„Ø© Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª Ø¨Ø¹Ø¯. Ø§Ø¨Ø¯Ø£ Ø§Ù„ØªØ³ÙˆÙ‚ Ø§Ù„Ø¢Ù† Ù„Ø¥Ø¶Ø§ÙØ© Ù…Ù†ØªØ¬Ø§Øª Ø±Ø§Ø¦Ø¹Ø©!",
-                               "en":  "You haven\u0027t added any products to your cart yet. Start shopping now to add great products!"
-                           },
-    "cart_continue_shopping":  {
-                                   "ar":  "Ù…ØªØ§Ø¨Ø¹Ø© Ø§Ù„ØªØ³ÙˆÙ‚",
-                                   "en":  "Continue Shopping"
-                               },
-    "cart_edit_note":  {
-                           "ar":  "ØªØ¹Ø¯ÙŠÙ„ Ø§Ù„Ù…Ù„Ø§Ø­Ø¸Ø©",
-                           "en":  "Edit Note"
-                       },
-    "cart_note_placeholder":  {
-                                  "ar":  "Ø£Ø¶Ù Ù…Ù„Ø§Ø­Ø¸Ø© Ø®Ø§ØµØ© Ù„Ù‡Ø°Ø§ Ø§Ù„Ù…Ù†ØªØ¬ (Ø§Ø®ØªÙŠØ§Ø±ÙŠ)",
-                                  "en":  "Add a special note for this product (optional)"
-                              },
-    "cart_save":  {
-                      "ar":  "Ø­ÙØ¸",
-                      "en":  "Save"
-                  },
-    "cart_cancel":  {
-                        "ar":  "Ø¥Ù„ØºØ§Ø¡",
-                        "en":  "Cancel"
-                    },
-    "cart_photo_order_success":  {
-                                     "ar":  "ØªÙ… Ø§Ø³ØªÙ„Ø§Ù… Ø·Ù„Ø¨Ùƒ Ø§Ù„Ø®Ø§Øµ Ø¨Ø§Ù„ØµÙˆØ±!",
-                                     "en":  "Your photo order has been received!"
-                                 },
-    "cart_photo_order_desc":  {
-                                  "ar":  "Ù„Ù‚Ø¯ Ù‚Ù…Øª Ø¨Ø¥Ø±Ø³Ø§Ù„ Ø·Ù„Ø¨ ÙŠØ­ØªÙˆÙŠ Ø¹Ù„Ù‰ ØµÙˆØ± ÙˆÙ…Ù„Ø§Ø­Ø¸Ø§Øª. Ø³ÙŠØªÙ… Ù…Ø±Ø§Ø¬Ø¹ØªÙ‡ Ù‚Ø±ÙŠØ¨Ø§Ù‹.",
-                                  "en":  "You have submitted an order with photos and notes. It will be reviewed soon."
-                              },
-    "cart_delete_confirm_title":  {
-                                      "ar":  "Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ØŸ",
-                                      "en":  "Are you sure?"
-                                  },
-    "cart_delete_confirm_text":  {
-                                     "ar":  "Ø³ÙŠØªÙ… Ø­Ø°Ù Ù‡Ø°Ø§ Ø§Ù„Ù…Ù†ØªØ¬ Ù…Ù† Ø³Ù„Ø© Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª.",
-                                     "en":  "This product will be removed from your cart."
-                                 },
-    "cart_delete_success_title":  {
-                                      "ar":  "ØªÙ… Ø§Ù„Ø­Ø°Ù!",
-                                      "en":  "Deleted!"
-                                  },
-    "cart_delete_success_text":  {
-                                     "ar":  "ØªÙ… Ø­Ø°Ù Ø§Ù„Ù…Ù†ØªØ¬ Ù…Ù† Ø§Ù„Ø³Ù„Ø© Ø¨Ù†Ø¬Ø§Ø­.",
-                                     "en":  "Product removed from cart successfully."
-                                 },
-    "cart_clear_confirm_title":  {
-                                     "ar":  "ØªÙØ±ÙŠØº Ø§Ù„Ø³Ù„Ø©",
-                                     "en":  "Clear Cart"
-                                 },
-    "cart_clear_confirm_text":  {
-                                    "ar":  "Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ Ù…Ù† ØªÙØ±ÙŠØº ÙƒØ§ÙØ© Ù…Ø­ØªÙˆÙŠØ§Øª Ø§Ù„Ø³Ù„Ø©ØŸ",
-                                    "en":  "Are you sure you want to clear all items from the cart?"
-                                },
-    "cart_clear_success_title":  {
-                                     "ar":  "ØªÙ… Ø§Ù„ØªÙØ±ÙŠØº!",
-                                     "en":  "Cleared!"
-                                 },
-    "cart_clear_success_text":  {
-                                    "ar":  "ØªÙ… ØªÙØ±ÙŠØº Ø³Ù„Ø© Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª Ø¨Ù†Ø¬Ø§Ø­.",
-                                    "en":  "Shopping cart cleared successfully."
-                                },
-    "cart_empty_checkout_title":  {
-                                      "ar":  "Ø§Ù„Ø³Ù„Ø© ÙØ§Ø±ØºØ©",
-                                      "en":  "Empty Cart"
-                                  },
-    "cart_empty_checkout_text":  {
-                                     "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª ÙÙŠ Ø§Ù„Ø³Ù„Ø© Ù„Ø¥ØªÙ…Ø§Ù… Ø§Ù„Ø´Ø±Ø§Ø¡.",
-                                     "en":  "There are no products in the cart to complete the purchase."
-                                 },
-    "cart_confirm_order_title":  {
-                                     "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø·Ù„Ø¨",
-                                     "en":  "Confirm Order"
-                                 },
-    "cart_confirm_order_text":  {
-                                    "ar":  "Ø³ÙŠØªÙ… Ø¥Ø±Ø³Ø§Ù„ Ø·Ù„Ø¨Ùƒ Ø¥Ù„Ù‰ Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ†.",
-                                    "en":  "Your order will be sent to the suppliers."
-                                },
-    "cart_send_order_success_title":  {
-                                          "ar":  "ØªÙ… Ø§Ù„Ø¥Ø±Ø³Ø§Ù„!",
-                                          "en":  "Sent!"
-                                      },
-    "cart_send_order_success_text":  {
-                                         "ar":  "ØªÙ… Ø¥Ø±Ø³Ø§Ù„ Ø·Ù„Ø¨Ùƒ Ø¨Ù†Ø¬Ø§Ø­.",
-                                         "en":  "Your order has been sent successfully."
-                                     },
-    "cart_error_update_qty":  {
-                                  "ar":  "ÙØ´Ù„ ÙÙŠ ØªØ­Ø¯ÙŠØ« Ø§Ù„ÙƒÙ…ÙŠØ©.",
-                                  "en":  "Failed to update quantity."
-                              },
-    "cart_error_own_product_title":  {
-                                         "ar":  "Ø¹Ø°Ø±Ø§Ù‹",
-                                         "en":  "Sorry"
-                                     },
-    "cart_error_own_product_text":  {
-                                        "ar":  "Ù„Ø§ ÙŠÙ…ÙƒÙ†Ùƒ Ø´Ø±Ø§Ø¡ Ù…Ù†ØªØ¬Ø§ØªÙƒ Ø§Ù„Ø®Ø§ØµØ©",
-                                        "en":  "You cannot buy your own products"
-                                    },
-    "cart_added_success":  {
-                               "ar":  "ØªÙ…Øª Ø¥Ø¶Ø§ÙØ© \"{name}\" Ø¥Ù„Ù‰ Ø§Ù„Ø³Ù„Ø©",
-                               "en":  "\"{name}\" added to cart"
-                           },
-    "cart_added_desc":  {
-                            "ar":  "ÙŠÙ…ÙƒÙ†Ùƒ Ù…ØªØ§Ø¨Ø¹Ø© Ø§Ù„ØªØ³ÙˆÙ‚.",
-                            "en":  "You can continue shopping."
-                        },
-    "cart_limit_title":  {
-                             "ar":  "ØªÙ†Ø¨ÙŠÙ‡: Ø­Ø¯ Ø§Ù„Ø¨Ø§Ù‚Ø©",
-                             "en":  "Warning: Order Limit"
-                         },
-    "cart_limit_text":  {
-                            "ar":  "Ø¹Ø°Ø±Ø§Ù‹ØŒ Ù„Ø§ ÙŠÙ…ÙƒÙ† Ø§Ù„Ø´Ø±Ø§Ø¡ Ù…Ù† Ø§Ù„Ø¨Ø§Ø¦Ø¹ Ø¨Ø£Ù‚Ù„ Ù…Ù† {limit} {currency}. Ù…Ø¬Ù…ÙˆØ¹ Ù…Ø´ØªØ±ÙŠØ§ØªÙƒ Ø§Ù„Ø­Ø§Ù„ÙŠØ© Ù…Ù†Ù‡ Ù‡Ùˆ {total} {currency}.",
-                            "en":  "Sorry, you cannot buy from this seller for less than {limit} {currency}. Your current total is {total} {currency}."
-                        },
-    "cart_total_confirm":  {
-                               "ar":  "Ø§Ù„Ù…Ø¨Ù„Øº Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ù‡Ùˆ {amount} {currency}. Ù‡Ù„ ØªØ±ÙŠØ¯ Ø§Ù„Ù…ØªØ§Ø¨Ø¹Ø©ØŸ",
-                               "en":  "The total amount is {amount} {currency}. Do you want to continue?"
-                           },
-    "cart_checkout_success_title":  {
-                                        "ar":  "ØªÙ… Ø¥ØªÙ…Ø§Ù… Ø·Ù„Ø¨Ùƒ Ø¨Ù†Ø¬Ø§Ø­! ðŸŽ‰",
-                                        "en":  "Your order has been placed successfully! ðŸŽ‰"
-                                    },
-    "cart_order_id":  {
-                          "ar":  "Ø±Ù‚Ù… Ø§Ù„Ø·Ù„Ø¨: #{id}",
-                          "en":  "Order ID: #{id}"
-                      },
-    "cart_success_ok":  {
-                            "ar":  "Ø­Ø³Ù†Ø§Ù‹",
-                            "en":  "OK"
-                        },
-    "cart_discount_badge":  {
-                                "ar":  "ØªÙˆÙÙŠØ± {n}%",
-                                "en":  "Save {n}%"
-                            },
-    "cart_notes_label":  {
-                             "ar":  "Ù…Ù„Ø§Ø­Ø¸Ø§ØªÙƒ:",
-                             "en":  "Your Notes:"
-                         },
-    "cart_no_notes":  {
-                          "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù„Ø§Ø­Ø¸Ø§Øª",
-                          "en":  "No notes"
-                      },
-    "cart_delete_btn":  {
-                            "ar":  "Ø­Ø°Ù",
-                            "en":  "Delete"
-                        },
-    "cart_not_available":  {
-                               "ar":  "ØºÙŠØ± Ù…ØªØ§Ø­",
-                               "en":  "N/A"
-                           },
-    "cart_delivery_details_title":  {
-                                        "ar":  "ðŸ“Š ØªÙØ§ØµÙŠÙ„ Ø­Ø³Ø§Ø¨ Ø®Ø¯Ù…Ø© Ø§Ù„ØªÙˆØµÙŠÙ„",
-                                        "en":  "ðŸ“Š Delivery Calculation Details"
-                                    },
-    "cart_delivery_stages":  {
-                                 "ar":  "ðŸ“ Ù…Ø±Ø§Ø­Ù„ Ø§Ù„ØªÙˆØµÙŠÙ„:",
-                                 "en":  "ðŸ“ Delivery Stages:"
-                             },
-    "cart_delivery_total_dist":  {
-                                     "ar":  "Ø§Ù„Ù…Ø³Ø§ÙØ© Ø§Ù„ÙƒÙ„ÙŠØ©:",
-                                     "en":  "Total Distance:"
-                                 },
-    "cart_delivery_dist_cost":  {
-                                    "ar":  "ØªÙƒÙ„ÙØ© Ø§Ù„Ù…Ø³Ø§ÙØ© ({dist} Ã— {price}):",
-                                    "en":  "Distance Cost ({dist} Ã— {price}):"
-                                },
-    "cart_delivery_segment_direct":  {
-                                         "ar":  "ðŸ¢ Ø§Ù„Ù…ÙƒØªØ¨ â† ðŸ  Ø§Ù„Ø¹Ù…ÙŠÙ„",
-                                         "en":  "ðŸ¢ Office â† ðŸ  Customer"
-                                     },
-    "cart_delivery_segment_first":  {
-                                        "ar":  "ðŸ¢ Ø§Ù„Ù…ÙƒØªØ¨ â† ðŸ“¦ Ø§Ù„Ø¨Ø§Ø¦Ø¹ Ø§Ù„Ø£ÙˆÙ„",
-                                        "en":  "ðŸ¢ Office â† ðŸ“¦ First Seller"
-                                    },
-    "cart_delivery_segment_between":  {
-                                          "ar":  "ðŸ“¦ Ø§Ù„Ø¨Ø§Ø¦Ø¹ {i} â† ðŸ“¦ Ø§Ù„Ø¨Ø§Ø¦Ø¹ {j}",
-                                          "en":  "ðŸ“¦ Seller {i} â† ðŸ“¦ Seller {j}"
-                                      },
-    "cart_delivery_segment_last":  {
-                                       "ar":  "ðŸ“¦ Ø§Ù„Ø¨Ø§Ø¦Ø¹ Ø§Ù„Ø£Ø®ÙŠØ± â† ðŸ  Ø§Ù„Ø¹Ù…ÙŠÙ„",
-                                       "en":  "ðŸ“¦ Last Seller â† ðŸ  Customer"
-                                   },
-    "cart_delivery_vehicle_label":  {
-                                        "ar":  "ðŸš— Ù†ÙˆØ¹ Ø§Ù„Ù…Ø±ÙƒØ¨Ø©:",
-                                        "en":  "ðŸš— Vehicle Type:"
-                                    },
-    "cart_delivery_vehicle_truck":  {
-                                        "ar":  "ðŸš› Ø´Ø§Ø­Ù†Ø©",
-                                        "en":  "ðŸš› Truck"
-                                    },
-    "cart_delivery_vehicle_car":  {
-                                      "ar":  "ðŸš— Ø³ÙŠØ§Ø±Ø©",
-                                      "en":  "ðŸš— Car"
-                                  },
-    "cart_delivery_vehicle_bike":  {
-                                       "ar":  "ðŸï¸ Ø¯Ø±Ø§Ø¬Ø© Ù†Ø§Ø±ÙŠØ©",
-                                       "en":  "ðŸï¸ Motorcycle"
-                                   },
-    "cart_delivery_value_label":  {
-                                      "ar":  "ðŸ’° Ù‚ÙŠÙ…Ø© Ø§Ù„Ø·Ù„Ø¨:",
-                                      "en":  "ðŸ’° Order Value:"
-                                  },
-    "cart_delivery_weather_label":  {
-                                        "ar":  "ðŸŒ¦ï¸ Ø­Ø§Ù„Ø© Ø§Ù„Ø·Ù‚Ø³:",
-                                        "en":  "ðŸŒ¦ï¸ Weather Status:"
-                                    },
-    "cart_delivery_weather_heavy":  {
-                                        "ar":  "ðŸŒ§ï¸ Ø£Ù…Ø·Ø§Ø± ØºØ²ÙŠØ±Ø©",
-                                        "en":  "ðŸŒ§ï¸ Heavy Rain"
-                                    },
-    "cart_delivery_weather_light":  {
-                                        "ar":  "ðŸŒ¦ï¸ Ø£Ù…Ø·Ø§Ø± Ø®ÙÙŠÙØ©",
-                                        "en":  "ðŸŒ¦ï¸ Light Rain"
-                                    },
-    "cart_delivery_weather_normal":  {
-                                         "ar":  "â˜€ï¸ Ø·Ù‚Ø³ Ø¹Ø§Ø¯ÙŠ",
-                                         "en":  "â˜€ï¸ Normal Weather"
-                                     },
-    "cart_delivery_location_label":  {
-                                         "ar":  "ðŸ“ Ø§Ù„Ù…Ù†Ø·Ù‚Ø©:",
-                                         "en":  "ðŸ“ Region:"
-                                     },
-    "cart_delivery_location_outside":  {
-                                           "ar":  "ðŸžï¸ Ø®Ø§Ø±Ø¬ Ø§Ù„Ù…Ø¯ÙŠÙ†Ø©",
-                                           "en":  "ðŸžï¸ Outside City"
-                                       },
-    "cart_delivery_location_suburbs":  {
-                                           "ar":  "ðŸ˜ï¸ Ø§Ù„Ø¶ÙˆØ§Ø­ÙŠ",
-                                           "en":  "ðŸ˜ï¸ Suburbs"
-                                       },
-    "cart_delivery_location_inside":  {
-                                          "ar":  "ðŸ™ï¸ Ø¯Ø§Ø®Ù„ Ø§Ù„Ù…Ø¯ÙŠÙ†Ø©",
-                                          "en":  "ðŸ™ï¸ Inside City"
-                                      },
-    "cart_delivery_speed_label":  {
-                                      "ar":  "âš¡ Ø³Ø±Ø¹Ø© Ø§Ù„ØªÙˆØµÙŠÙ„:",
-                                      "en":  "âš¡ Delivery Speed:"
-                                  },
-    "cart_delivery_speed_instant":  {
-                                        "ar":  "ðŸš€ ÙÙˆØ±ÙŠ",
-                                        "en":  "ðŸš€ Instant"
-                                    },
-    "cart_delivery_speed_fast":  {
-                                     "ar":  "âš¡ Ø³Ø±ÙŠØ¹",
-                                     "en":  "âš¡ Fast"
-                                 },
-    "cart_delivery_speed_normal":  {
-                                       "ar":  "ðŸ• Ø¹Ø§Ø¯ÙŠ",
-                                       "en":  "ðŸ• Normal"
-                                   },
-    "cart_delivery_special_label":  {
-                                        "ar":  "âš ï¸ Ù…Ø±ÙƒØ¨Ø© Ø®Ø§ØµØ©:",
-                                        "en":  "âš ï¸ Special Vehicle:"
-                                    },
-    "cart_delivery_special_yes":  {
-                                      "ar":  "Ù†Ø¹Ù… (Ø­Ù…ÙˆÙ„Ø© Ø«Ù‚ÙŠÙ„Ø©)",
-                                      "en":  "Yes (Heavy Load)"
-                                  },
-    "cart_delivery_rating_label":  {
-                                       "ar":  "â­ ØªÙ‚ÙŠÙŠÙ… Ø§Ù„Ø³Ø§Ø¦Ù‚:",
-                                       "en":  "â­ Driver Rating:"
-                                   },
-    "cart_delivery_stars":  {
-                                "ar":  "{n} Ù†Ø¬ÙˆÙ…",
-                                "en":  "{n} Stars"
-                            },
-    "cart_delivery_base_fee":  {
-                                   "ar":  "ðŸ’³ Ø§Ù„Ø±Ø³ÙˆÙ… Ø§Ù„Ø£Ø³Ø§Ø³ÙŠØ©:",
-                                   "en":  "ðŸ’³ Base Fee:"
-                               },
-    "cart_delivery_discount_label":  {
-                                         "ar":  "ðŸŽ Ø§Ù„Ø®ØµÙ…:",
-                                         "en":  "ðŸŽ Discount:"
-                                     },
-    "cart_delivery_final_total":  {
-                                      "ar":  "ðŸ’µ Ø§Ù„ØªÙƒÙ„ÙØ© Ø§Ù„Ù†Ù‡Ø§Ø¦ÙŠØ©: {total} {currency}",
-                                      "en":  "ðŸ’µ Final Cost: {total} {currency}"
-                                  },
-    "cart_currency":  {
-                          "ar":  "Ø¬.Ù…",
-                          "en":  "EGP"
-                      },
-    "sales_buyer":  {
-                        "ar":  "Ù…Ø´ØªØ±ÙŠ",
-                        "en":  "Buyer"
-                    },
-    "sales_seller":  {
-                         "ar":  "???? ????",
-                         "en":  "Service Provider"
-                     },
-    "sales_delivery":  {
-                           "ar":  "ØªÙˆØµÙŠÙ„",
-                           "en":  "Delivery"
-                       },
-    "sales_admin":  {
-                        "ar":  "Ù…Ø³Ø¤ÙˆÙ„",
-                        "en":  "Admin"
-                    },
-    "sales_refresh":  {
-                          "ar":  "ØªØ­Ø¯ÙŠØ«",
-                          "en":  "Refresh"
-                      },
-    "sales_no_orders":  {
-                            "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ø·Ù„Ø¨Ø§Øª Ø­Ø§Ù„ÙŠØ§Ù‹",
-                            "en":  "No orders currently"
-                        },
-    "sales_order_id":  {
-                           "ar":  "Ø·Ù„Ø¨ #{id}",
-                           "en":  "Order #{id}"
-                       },
-    "sales_date":  {
-                       "ar":  "Ø§Ù„ØªØ§Ø±ÙŠØ®:",
-                       "en":  "Date:"
-                   },
-    "sales_items_count":  {
-                              "ar":  "Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª:",
-                              "en":  "Item count:"
-                          },
-    "sales_sellers_count":  {
-                                "ar":  "??? ????? ??????:",
-                                "en":  "Service providers count:"
-                            },
-    "sales_loading":  {
-                          "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ø·Ù„Ø¨Ø§Øª...",
-                          "en":  "Loading orders..."
-                      },
-    "sales_error":  {
-                        "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ ÙÙŠ Ø¹Ø±Ø¶ Ø§Ù„Ø·Ù„Ø¨Ø§Øª",
-                        "en":  "Error displaying orders"
-                    },
-    "sales_updating_data_title":  {
-                                      "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª...",
-                                      "en":  "Updating data..."
-                                  },
-    "sales_updating_data_text":  {
-                                     "ar":  "ÙŠØªÙ… Ø¬Ù„Ø¨ Ø£Ø­Ø¯Ø« ØªÙØ§ØµÙŠÙ„ Ø§Ù„Ø·Ù„Ø¨ Ù…Ù† Ø§Ù„Ø³ÙŠØ±ÙØ±",
-                                     "en":  "Fetching latest order details from server"
-                                 },
-    "sales_error_title":  {
-                              "ar":  "Ø®Ø·Ø£",
-                              "en":  "Error"
-                          },
-    "sales_error_open_details":  {
-                                     "ar":  "ØªØ¹Ø°Ø± ÙØªØ­ ØªÙØ§ØµÙŠÙ„ Ø§Ù„Ø·Ù„Ø¨ØŒ ÙŠØ±Ø¬Ù‰ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù„Ø§Ø­Ù‚Ø§Ù‹",
-                                     "en":  "Could not open order details, please try again later"
-                                 },
-    "sales_modal_title":  {
-                              "ar":  "ØªÙØ§ØµÙŠÙ„ Ø§Ù„Ø·Ù„Ø¨",
-                              "en":  "Order Details"
-                          },
-    "stepper_title":  {
-                          "ar":  "Ø´Ø±ÙŠØ· Ø§Ù„ØªÙ‚Ø¯Ù…",
-                          "en":  "Progress Bar"
-                      },
-    "step_review":  {
-                        "ar":  "Ù…Ø±Ø§Ø¬Ø¹Ø©",
-                        "en":  "Review"
-                    },
-    "step_confirmed":  {
-                           "ar":  "Ù…Ø¤ÙƒØ¯",
-                           "en":  "Confirmed"
-                       },
-    "step_shipped":  {
-                         "ar":  "Ø´ÙØ­Ù†",
-                         "en":  "Shipped"
-                     },
-    "step_delivered":  {
-                           "ar":  "ØªÙ… Ø§Ù„ØªØ³Ù„ÙŠÙ…",
-                           "en":  "Delivered"
-                       },
-    "step_cancelled":  {
-                           "ar":  "Ù…Ù„ØºÙŠ",
-                           "en":  "Cancelled"
-                       },
-    "step_rejected":  {
-                          "ar":  "Ù…Ø±ÙÙˆØ¶",
-                          "en":  "Rejected"
-                      },
-    "step_returned":  {
-                          "ar":  "Ù…Ø±ØªØ¬Ø¹",
-                          "en":  "Returned"
-                      },
-    "stepper_view_photos":  {
-                                "ar":  "Ø¹Ø±Ø¶ ØµÙˆØ± Ø§Ù„Ø·Ù„Ø¨ Ø§Ù„Ø®Ø§Øµ",
-                                "en":  "View special order photos"
-                            },
-    "stepper_order_value":  {
-                                "ar":  "Ù‚ÙŠÙ…Ø© Ø§Ù„Ø·Ù„Ø¨:",
-                                "en":  "Order Value:"
-                            },
-    "stepper_save_value":  {
-                               "ar":  "Ø­ÙØ¸ Ø§Ù„Ù‚ÙŠÙ…Ø©",
-                               "en":  "Save Value"
-                           },
-    "stepper_unauthorized_alert":  {
-                                       "ar":  "Ù„ÙŠØ³ Ù„Ø¯ÙŠÙƒ Ø§Ù„ØµÙ„Ø§Ø­ÙŠØ© Ù„Ù‡Ø°Ù‡ Ø§Ù„Ù…Ø±Ø­Ù„Ø©",
-                                       "en":  "You don\u0027t have permission for this stage"
-                                   },
-    "stepper_activate_step":  {
-                                  "ar":  "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ù…Ø±Ø­Ù„Ø©",
-                                  "en":  "Activate Stage"
-                              },
-    "stepper_error_title":  {
-                                "ar":  "Ø®Ø·Ø£",
-                                "en":  "Error"
-                            },
-    "stepper_invalid_number":  {
-                                   "ar":  "ÙŠØ±Ø¬Ù‰ Ø¥Ø¯Ø®Ø§Ù„ Ø±Ù‚Ù… ØµØ­ÙŠØ­",
-                                   "en":  "Please enter a valid number"
-                               },
-    "stepper_confirm_title":  {
-                                  "ar":  "Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ØŸ",
-                                  "en":  "Are you sure?"
-                              },
-    "stepper_confirm_save_text":  {
-                                      "ar":  "Ù‡Ù„ ØªØ±ÙŠØ¯ Ø§Ø¹ØªÙ…Ø§Ø¯ Ù‚ÙŠÙ…Ø© {amount} ÙƒÙ‚ÙŠÙ…Ø© Ù†Ù‡Ø§Ø¦ÙŠØ© Ù„Ù„Ø·Ù„Ø¨ØŸ",
-                                      "en":  "Do you want to set {amount} as the final order value?"
-                                  },
-    "stepper_save_success_title":  {
-                                       "ar":  "ØªÙ… Ø§Ù„Ø­ÙØ¸",
-                                       "en":  "Saved"
-                                   },
-    "stepper_save_success_text":  {
-                                      "ar":  "ØªÙ… ØªØ­Ø¯ÙŠØ« Ù‚ÙŠÙ…Ø© Ø§Ù„Ø·Ù„Ø¨ Ø¨Ù†Ø¬Ø§Ø­",
-                                      "en":  "Order value updated successfully"
-                                  },
-    "stepper_save_fail_title":  {
-                                    "ar":  "ÙØ´Ù„ Ø§Ù„Ø­ÙØ¸",
-                                    "en":  "Save Failed"
-                                },
-    "stepper_activation_confirm_title":  {
-                                             "ar":  "ØªØ£ÙƒÙŠØ¯ ØªÙØ¹ÙŠÙ„ Ø§Ù„Ù…Ø±Ø­Ù„Ø©",
-                                             "en":  "Confirm Stage Activation"
-                                         },
-    "stepper_activation_confirm_text":  {
-                                            "ar":  "Ø¨Ù…Ø¬Ø±Ø¯ ØªÙØ¹ÙŠÙ„ Ù‡Ø°Ù‡ Ø§Ù„Ù…Ø±Ø­Ù„Ø©ØŒ Ù„Ø§ ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ù„ØªØ±Ø§Ø¬Ø¹. Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ØŸ",
-                                            "en":  "Once this stage is activated, you cannot go back. Are you sure?"
-                                        },
-    "stepper_activation_confirm_btn":  {
-                                           "ar":  "Ù†Ø¹Ù…ØŒ Ù‚Ù… Ø¨Ø§Ù„ØªÙØ¹ÙŠÙ„",
-                                           "en":  "Yes, Activate"
-                                       },
-    "stepper_rejected_products_title":  {
-                                            "ar":  "Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø±ÙÙˆØ¶Ø©",
-                                            "en":  "Rejected Products"
-                                        },
-    "stepper_no_delivered_products":  {
-                                          "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª ØªÙ… ØªÙˆØµÙŠÙ„Ù‡Ø§/Ø´Ø­Ù†Ù‡Ø§",
-                                          "en":  "No delivered/shipped products"
-                                      },
-    "stepper_no_delivered_desc":  {
-                                      "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª ÙÙŠ Ù…Ø±Ø­Ù„Ø© Ø§Ù„ØªÙˆØµÙŠÙ„.",
-                                      "en":  "No products in delivery stage."
-                                  },
-    "stepper_delivery_confirm_title":  {
-                                           "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ø³ØªÙ„Ø§Ù… Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª (Ù‚Ø±Ø§Ø¡Ø© ÙÙ‚Ø·)",
-                                           "en":  "Confirm Product Receipt (Read-Only)"
-                                       },
-    "stepper_returned_products_title":  {
-                                            "ar":  "Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø±ØªØ¬Ø¹Ø© (Ù‚Ø±Ø§Ø¡Ø© ÙÙ‚Ø·)",
-                                            "en":  "Returned Products (Read-Only)"
-                                        },
-    "status_pending":  {
-                           "ar":  "Ù…Ø¹Ù„Ù‚",
-                           "en":  "Pending"
-                       },
-    "status_confirmed":  {
-                             "ar":  "Ù…Ø¤ÙƒØ¯",
-                             "en":  "Confirmed"
-                         },
-    "status_shipped":  {
-                           "ar":  "Ù…Ø´Ø­ÙˆÙ†",
-                           "en":  "Shipped"
-                       },
-    "status_delivered":  {
-                             "ar":  "ØªÙ… Ø§Ù„ØªØ³Ù„ÙŠÙ…",
-                             "en":  "Delivered"
-                         },
-    "status_returned":  {
-                            "ar":  "Ù…Ø±ØªØ¬Ø¹",
-                            "en":  "Returned"
-                        },
-    "status_cancelled":  {
-                             "ar":  "Ù…Ù„ØºÙŠ",
-                             "en":  "Cancelled"
-                         },
-    "status_rejected":  {
-                            "ar":  "Ù…Ø±ÙÙˆØ¶",
-                            "en":  "Rejected"
-                        },
-    "time_am":  {
-                    "ar":  "Øµ",
-                    "en":  "AM"
-                },
-    "time_pm":  {
-                    "ar":  "Ù…",
-                    "en":  "PM"
-                },
-    "alert_close_btn":  {
-                            "ar":  "Ø¥ØºÙ„Ø§Ù‚",
-                            "en":  "Close"
-                        },
-    "shipping_shipped_products":  {
-                                      "ar":  "ðŸ“¦ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø´Ø­ÙˆÙ†Ø© ({count}):",
-                                      "en":  "ðŸ“¦ Shipped Products ({count}):"
-                                  },
-    "shipping_not_shipped_products":  {
-                                          "ar":  "â¸ï¸ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª ØºÙŠØ± Ø§Ù„Ù…Ø´Ø­ÙˆÙ†Ø© ({count}):",
-                                          "en":  "â¸ï¸ Not Shipped Products ({count}):"
-                                      },
-    "shipping_warning_title":  {
-                                   "ar":  "âš ï¸ ØªØ­Ø°ÙŠØ± Ù‡Ø§Ù…:",
-                                   "en":  "âš ï¸ Important Warning:"
-                               },
-    "shipping_warning_text":  {
-                                  "ar":  "Ø¨Ø¹Ø¯ Ø§Ù„Ø¶ØºØ· Ø¹Ù„Ù‰ \"ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­ÙØ¸\"ØŒ Ù„Ù† ØªØªÙ…ÙƒÙ† Ù…Ù† Ø§Ù„ØªØ¹Ø¯ÙŠÙ„ Ù…Ø±Ø© Ø£Ø®Ø±Ù‰. Ù‡Ø°Ø§ Ø§Ù„Ø¥Ø¬Ø±Ø§Ø¡ Ù†Ù‡Ø§Ø¦ÙŠ ÙˆÙ„Ø§ ÙŠÙ…ÙƒÙ† Ø§Ù„ØªØ±Ø§Ø¬Ø¹ Ø¹Ù†Ù‡.",
-                                  "en":  "After clicking \"Confirm Save\", you will not be able to edit again. This action is final and irreversible."
-                              },
-    "shipping_confirm_save_title":  {
-                                        "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­ÙØ¸ Ø§Ù„Ù†Ù‡Ø§Ø¦ÙŠ",
-                                        "en":  "Confirm Final Save"
-                                    },
-    "shipping_confirm_save_btn":  {
-                                      "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­ÙØ¸",
-                                      "en":  "Confirm Save"
-                                  },
-    "shipping_saving_title":  {
-                                  "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„Ø­ÙØ¸...",
-                                  "en":  "Saving..."
-                              },
-    "shipping_saving_text":  {
-                                 "ar":  "ÙŠØªÙ… Ø­ÙØ¸ Ø§Ù„Ø´Ø­Ù† ÙˆØ§Ù„Ù‚ÙÙ„...",
-                                 "en":  "Saving shipping and locking..."
-                             },
-    "shipping_save_success_title":  {
-                                        "ar":  "ØªÙ… Ø§Ù„Ø­ÙØ¸ Ø¨Ù†Ø¬Ø§Ø­",
-                                        "en":  "Saved Successfully"
-                                    },
-    "shipping_save_success_text":  {
-                                       "ar":  "ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø´Ø­Ù† Ø¨Ø´ÙƒÙ„ Ù†Ù‡Ø§Ø¦ÙŠ.",
-                                       "en":  "Shipping saved permanently."
-                                   },
-    "shipping_notify_buyer":  {
-                                  "ar":  "Ø´Ø­Ù† Ø§Ù„Ø·Ù„Ø¨",
-                                  "en":  "Order Shipped"
-                              },
-    "shipping_save_fail_text":  {
-                                    "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„Ø§ØªØµØ§Ù„ Ø¨Ø§Ù„Ø³ÙŠØ±ÙØ±.",
-                                    "en":  "Error connecting to the server."
-                                },
-    "shipping_no_products_title":  {
-                                       "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ù„Ù„Ø´Ø­Ù†",
-                                       "en":  "No products to ship"
-                                   },
-    "shipping_no_products_desc":  {
-                                      "ar":  "ÙŠØ¬Ø¨ ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø£ÙˆÙ„Ø§Ù‹.",
-                                      "en":  "Products must be confirmed first."
-                                  },
-    "shipping_modal_title":  {
-                                 "ar":  "Ø´Ø­Ù† Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª",
-                                 "en":  "Ship Products"
-                             },
-    "shipping_modal_readonly_title":  {
-                                          "ar":  "Ø´Ø­Ù† Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª (Ù‚Ø±Ø§Ø¡Ø© ÙÙ‚Ø·)",
-                                          "en":  "Ship Products (Read-Only)"
-                                      },
-    "shipping_update_btn":  {
-                                "ar":  "ØªØ­Ø¯ÙŠØ« Ø­Ø§Ù„Ø© Ø§Ù„Ø´Ø­Ù†",
-                                "en":  "Update Shipping Status"
-                            },
-    "shipping_locked_info":  {
-                                 "ar":  "ðŸ”’ ØªÙ… Ù‚ÙÙ„ Ø§Ù„Ø´Ø­Ù† Ø¨Ø´ÙƒÙ„ Ø¯Ø§Ø¦Ù… - Ù„Ø§ ÙŠÙ…ÙƒÙ† Ø§Ù„ØªØ¹Ø¯ÙŠÙ„",
-                                 "en":  "ðŸ”’ Shipping locked permanently - cannot edit"
-                             },
-    "conf_accepted_products":  {
-                                   "ar":  "âœ… Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ù‚Ø¨ÙˆÙ„Ø© ({count}):",
-                                   "en":  "âœ… Accepted Products ({count}):"
-                               },
-    "conf_rejected_products":  {
-                                   "ar":  "âŒ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø±ÙÙˆØ¶Ø© ({count}):",
-                                   "en":  "âŒ Rejected Products ({count}):"
-                               },
-    "conf_saving_text":  {
-                             "ar":  "ÙŠØªÙ… Ø­ÙØ¸ Ø§Ù„ØªØ£ÙƒÙŠØ¯ ÙˆØ§Ù„Ù‚ÙÙ„...",
-                             "en":  "Saving confirmation and locking..."
-                         },
-    "conf_save_success_text":  {
-                                   "ar":  "ØªÙ… Ø­ÙØ¸ Ø§Ù„ØªØ£ÙƒÙŠØ¯ Ø¨Ø´ÙƒÙ„ Ù†Ù‡Ø§Ø¦ÙŠ.",
-                                   "en":  "Confirmation saved permanently."
-                               },
-    "conf_notify_confirmed":  {
-                                  "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø·Ù„Ø¨",
-                                  "en":  "Order Confirmed"
-                              },
-    "conf_notify_rejected":  {
-                                 "ar":  "Ù…Ù†ØªØ¬Ø§Øª Ù…Ø±ÙÙˆØ¶Ø©",
-                                 "en":  "Rejected Products"
-                             },
-    "conf_modal_title":  {
-                             "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª",
-                             "en":  "Confirm Products"
-                         },
-    "conf_modal_readonly_title":  {
-                                      "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª (Ù‚Ø±Ø§Ø¡Ø© ÙÙ‚Ø·)",
-                                      "en":  "Confirm Products (Read-Only)"
-                                  },
-    "conf_save_btn":  {
-                          "ar":  "Ø­ÙØ¸ Ø§Ù„ØªØºÙŠÙŠØ±Ø§Øª",
-                          "en":  "Save Changes"
-                      },
-    "conf_locked_info":  {
-                             "ar":  "ðŸ”’ ØªÙ… Ù‚ÙÙ„ Ø§Ù„ØªØ£ÙƒÙŠØ¯ Ø¨Ø´ÙƒÙ„ Ø¯Ø§Ø¦Ù… - Ù„Ø§ ÙŠÙ…ÙƒÙ† Ø§Ù„ØªØ¹Ø¯ÙŠÙ„",
-                             "en":  "ðŸ”’ Confirmation locked permanently - cannot edit"
-                         },
-    "buyer_cancelled_products":  {
-                                     "ar":  "Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ù„ØºØ§Ø©",
-                                     "en":  "Cancelled Products"
-                                 },
-    "buyer_returned_products":  {
-                                    "ar":  "Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø±ØªØ¬Ø¹Ø©",
-                                    "en":  "Returned Products"
-                                },
-    "buyer_confirmed_products":  {
-                                     "ar":  "Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø¤ÙƒØ¯Ø©",
-                                     "en":  "Confirmed Products"
-                                 },
-    "buyer_shipping_products":  {
-                                    "ar":  "Ù…Ù†ØªØ¬Ø§Øª Ù‚ÙŠØ¯ Ø§Ù„Ø´Ø­Ù†",
-                                    "en":  "Products in Shipping"
-                                },
-    "courier_products_to_deliver":  {
-                                        "ar":  "Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø·Ù„ÙˆØ¨ ØªÙˆØµÙŠÙ„Ù‡Ø§",
-                                        "en":  "Products to Deliver"
-                                    },
-    "courier_no_confirmed_products":  {
-                                          "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ù…Ø¤ÙƒØ¯Ø© Ø­Ø§Ù„ÙŠØ§Ù‹.",
-                                          "en":  "No confirmed products currently."
-                                      },
-    "review_saving_text":  {
-                               "ar":  "Ø¨Ø±Ø¬Ø§Ø¡ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø± Ø¨ÙŠÙ†Ù…Ø§ ÙŠØªÙ… Ø­ÙØ¸ Ø§Ù„ØªØºÙŠÙŠØ±Ø§Øª.",
-                               "en":  "Please wait while changes are being saved."
-                           },
-    "review_update_success_title":  {
-                                        "ar":  "ØªÙ… Ø§Ù„ØªØ­Ø¯ÙŠØ«",
-                                        "en":  "Updated"
-                                    },
-    "review_update_success_text":  {
-                                       "ar":  "ØªÙ… ØªØ­Ø¯ÙŠØ« Ø§Ø®ØªÙŠØ§Ø± Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø¨Ù†Ø¬Ø§Ø­.",
-                                       "en":  "Product selection updated successfully."
-                                   },
-    "review_notify_cancelled":  {
-                                    "ar":  "Ù…Ù†ØªØ¬Ø§Øª Ù…Ù„ØºØ§Ø©",
-                                    "en":  "Cancelled Products"
-                                },
-    "review_save_fail_text":  {
-                                  "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø­ÙØ¸ Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª. Ø¨Ø±Ø¬Ø§Ø¡ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                                  "en":  "An error occurred while saving data. Please try again."
-                              },
-    "review_modal_view_title":  {
-                                    "ar":  "Ø¹Ø±Ø¶ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª",
-                                    "en":  "View Products"
-                                },
-    "review_modal_select_title":  {
-                                      "ar":  "Ø§Ø®ØªØ± Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª:",
-                                      "en":  "Select Products:"
-                                  },
-    "review_readonly_info":  {
-                                 "ar":  "Ù„Ù„Ù…Ø´Ø§Ù‡Ø¯Ø© ÙÙ‚Ø· - Ø§Ù„ØªØ¹Ø¯ÙŠÙ„Ø§Øª Ù…Ù‚ÙŠØ¯Ø©.",
-                                 "en":  "View only - modifications restricted."
-                             },
-    "review_save_btn":  {
-                            "ar":  "Ø­ÙØ¸ Ø§Ù„Ø§Ø®ØªÙŠØ§Ø±Ø§Øª",
-                            "en":  "Save Selections"
-                        },
-    "deliv_received_products":  {
-                                    "ar":  "âœ… Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø³ØªÙ„Ù…Ø© ({count}):",
-                                    "en":  "âœ… Received Products ({count}):"
-                                },
-    "deliv_not_received_products":  {
-                                        "ar":  "â³ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª ØºÙŠØ± Ø§Ù„Ù…Ø³ØªÙ„Ù…Ø© ({count}):",
-                                        "en":  "â³ Products not received ({count}):"
-                                    },
-    "deliv_saving_text":  {
-                              "ar":  "ÙŠØªÙ… Ø­ÙØ¸ Ø§Ù„ØªØ³Ù„ÙŠÙ… ÙˆØ§Ù„Ù‚ÙÙ„...",
-                              "en":  "Saving delivery and locking..."
-                          },
-    "deliv_save_success_text":  {
-                                    "ar":  "ØªÙ… Ø­ÙØ¸ Ø§Ù„ØªØ³Ù„ÙŠÙ… Ø¨Ø´ÙƒÙ„ Ù†Ù‡Ø§Ø¦ÙŠ.",
-                                    "en":  "Delivery saved permanently."
-                                },
-    "deliv_notify_received":  {
-                                  "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø§Ø³ØªÙ„Ø§Ù…",
-                                  "en":  "Confirm Receipt"
-                              },
-    "deliv_no_products_title":  {
-                                    "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ù„ØªØ£ÙƒÙŠØ¯ Ø§Ø³ØªÙ„Ø§Ù…Ù‡Ø§",
-                                    "en":  "No products to confirm receipt"
-                                },
-    "deliv_no_products_desc":  {
-                                   "ar":  "Ø¨Ø§Ù†ØªØ¸Ø§Ø± Ø´Ø­Ù† Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª.",
-                                   "en":  "Waiting for products to be shipped."
-                               },
-    "deliv_modal_title":  {
-                              "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ø³ØªÙ„Ø§Ù… Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª",
-                              "en":  "Confirm Product Receipt"
-                          },
-    "deliv_modal_readonly_title":  {
-                                       "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ø³ØªÙ„Ø§Ù… Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª (Ù‚Ø±Ø§Ø¡Ø© ÙÙ‚Ø·)",
-                                       "en":  "Confirm Product Receipt (Read-Only)"
-                                   },
-    "deliv_save_btn":  {
-                           "ar":  "ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø§Ø³ØªÙ„Ø§Ù…",
-                           "en":  "Confirm Receipt"
-                       },
-    "deliv_locked_info":  {
-                              "ar":  "ðŸ”’ ØªÙ… Ù‚ÙÙ„ Ø§Ù„ØªØ³Ù„ÙŠÙ… Ø¨Ø´ÙƒÙ„ Ø¯Ø§Ø¦Ù… - Ù„Ø§ ÙŠÙ…ÙƒÙ† Ø§Ù„ØªØ¹Ø¯ÙŠÙ„",
-                              "en":  "ðŸ”’ Delivery locked permanently - cannot edit"
-                          },
-    "ui_no_review_products":  {
-                                  "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ù„Ù„Ù…Ø±Ø§Ø¬Ø¹Ø© Ø­Ø§Ù„ÙŠØ§Ù‹.",
-                                  "en":  "No products for review currently."
-                              },
-    "ui_no_cancelled_products":  {
-                                     "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª ØªÙ… Ø¥Ù„ØºØ§Ø¤Ù‡Ø§ Ø­Ø§Ù„ÙŠØ§Ù‹",
-                                     "en":  "No cancelled products currently"
-                                 },
-    "ui_label_name":  {
-                          "ar":  "Ø§Ù„Ø§Ø³Ù…:",
-                          "en":  "Name:"
-                      },
-    "ui_label_phone":  {
-                           "ar":  "Ø§Ù„Ù‡Ø§ØªÙ:",
-                           "en":  "Phone:"
-                       },
-    "ui_label_address":  {
-                             "ar":  "Ø§Ù„Ø¹Ù†ÙˆØ§Ù†:",
-                             "en":  "Address:"
-                         },
-    "ui_view_on_map":  {
-                           "ar":  "Ø¹Ø±Ø¶ Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø±ÙŠØ·Ø©",
-                           "en":  "View on Map"
-                       },
-    "ui_no_returned_products":  {
-                                    "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª ØªÙ… Ø¥Ø±Ø¬Ø§Ø¹Ù‡Ø§ Ø­Ø§Ù„ÙŠØ§Ù‹",
-                                    "en":  "No returned products currently"
-                                },
-    "ui_returned_products_title":  {
-                                       "ar":  "Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø±Ø¬Ø¹Ø©:",
-                                       "en":  "Returned Products:"
-                                   },
-    "ui_no_confirmed_products":  {
-                                     "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ù…Ø¤ÙƒØ¯Ø© Ø¨Ø¹Ø¯.",
-                                     "en":  "No confirmed products yet."
-                                 },
-    "ui_label_delivery_agent":  {
-                                    "ar":  "Ø§Ù„Ù…Ù†Ø¯ÙˆØ¨:",
-                                    "en":  "Delivery Agent:"
-                                },
-    "ui_confirmed_by_seller_title":  {
-                                         "ar":  "???????? ???? ?? ??????? ?????? ???? ??????:",
-                                         "en":  "Products confirmed by service provider:"
-                                     },
-    "ui_no_products":  {
-                           "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª.",
-                           "en":  "No products."
-                       },
-    "ui_label_seller":  {
-                            "ar":  "???? ??????:",
-                            "en":  "Service Provider:"
-                        },
-    "ui_col_product":  {
-                           "ar":  "Ø§Ù„Ù…Ù†ØªØ¬",
-                           "en":  "Product"
-                       },
-    "ui_col_unit_price":  {
-                              "ar":  "Ø³Ø¹Ø± Ø§Ù„Ù‚Ø·Ø¹Ø©",
-                              "en":  "Unit Price"
-                          },
-    "ui_col_app_price":  {
-                             "ar":  "Ø³Ø¹Ø± Ø§Ù„ØªØ·Ø¨ÙŠÙ‚",
-                             "en":  "App Price"
-                         },
-    "ui_col_quantity":  {
-                            "ar":  "Ø§Ù„ÙƒÙ…ÙŠØ©",
-                            "en":  "Quantity"
-                        },
-    "ui_col_total":  {
-                         "ar":  "Ø¥Ø¬Ù…Ø§Ù„ÙŠ",
-                         "en":  "Total"
-                     },
-    "ui_total_seller_account":  {
-                                    "ar":  "?????? ???? ???? ?????? (??? ?????):",
-                                    "en":  "Total Service Provider Account (Sales Price):"
-                                },
-    "ui_currency_egp":  {
-                            "ar":  "Ø¬Ù†ÙŠÙ‡",
-                            "en":  "EGP"
-                        },
-    "ui_total_app_price":  {
-                               "ar":  "Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ø³Ø¹Ø± Ø§Ù„ØªØ·Ø¨ÙŠÙ‚:",
-                               "en":  "Total App Price:"
-                           },
-    "ui_total_sales_price":  {
-                                 "ar":  "Ø¥Ø¬Ù…Ø§Ù„ÙŠ (Ø³Ø¹Ø± Ø§Ù„Ø¨ÙŠØ¹):",
-                                 "en":  "Total (Sales Price):"
-                             },
-    "ui_total_app_price_summary":  {
-                                       "ar":  "Ø¥Ø¬Ù…Ø§Ù„ÙŠ (Ø³Ø¹Ø± Ø§Ù„ØªØ·Ø¨ÙŠÙ‚):",
-                                       "en":  "Total (App Price):"
-                                   },
-    "ui_no_products_to_show":  {
-                                   "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ù„Ø¹Ø±Ø¶Ù‡Ø§.",
-                                   "en":  "No products to show."
-                               },
-    "ui_col_product_confirm":  {
-                                   "ar":  "Ø§Ù„Ù…Ù†ØªØ¬ (Ø­Ø¯Ø¯ Ù„Ù„ØªØ£ÙƒÙŠØ¯)",
-                                   "en":  "Product (Select to Confirm)"
-                               },
-    "ui_col_notes":  {
-                         "ar":  "Ù…Ù„Ø§Ø­Ø¸Ø§Øª",
-                         "en":  "Notes"
-                     },
-    "ui_col_delivery_agent":  {
-                                  "ar":  "Ù…Ù†Ø¯ÙˆØ¨ Ø§Ù„ØªÙˆØµÙŠÙ„",
-                                  "en":  "Delivery Agent"
-                              },
-    "ui_col_phone_number":  {
-                                "ar":  "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ",
-                                "en":  "Phone Number"
-                            },
-    "ui_no_rejected_products":  {
-                                    "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ù…Ø±ÙÙˆØ¶Ø©.",
-                                    "en":  "No rejected products."
-                                },
-    "ui_rejected_products_title":  {
-                                       "ar":  "Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ø±ÙÙˆØ¶Ø©:",
-                                       "en":  "Rejected Products:"
-                                   },
-    "ui_shipping_instruction":  {
-                                    "ar":  "Ø­Ø¯Ø¯ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ù„ØªØºÙŠÙŠØ± Ø­Ø§Ù„ØªÙ‡Ø§ Ø¥Ù„Ù‰ \"Ù…Ø´Ø­ÙˆÙ†\":",
-                                    "en":  "Select products to change status to \"shipped\":"
-                                },
-    "ui_col_courier":  {
-                           "ar":  "Ù…ÙˆØµÙ„",
-                           "en":  "Courier"
-                       },
-    "ui_col_phone":  {
-                         "ar":  "Ù‡Ø§ØªÙ",
-                         "en":  "Phone"
-                     },
-    "notifications_page_title":  {
-                                     "ar":  "Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
-                                     "en":  "Notifications"
-                                 },
-    "notifications_loading":  {
-                                  "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª...",
-                                  "en":  "Loading notifications..."
-                              },
-    "notifications_empty_title":  {
-                                      "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ø­ØªÙ‰ Ø§Ù„Ø¢Ù†",
-                                      "en":  "No notifications yet"
-                                  },
-    "notifications_empty_desc":  {
-                                     "ar":  "Ø³ÙŠØ¸Ù‡Ø± Ù‡Ù†Ø§ Ø£ÙŠ Ø¥Ø´Ø¹Ø§Ø±Ø§Øª ØªØµÙ„ Ø¥Ù„ÙŠÙƒ",
-                                     "en":  "Your notifications will appear here"
-                                 },
-    "notifications_error_title":  {
-                                      "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
-                                      "en":  "Error loading notifications"
-                                  },
-    "notifications_error_desc":  {
-                                     "ar":  "ÙØ´Ù„ ÙÙŠ ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª. ØªØ£ÙƒØ¯ Ù…Ù† Ø§ØªØµØ§Ù„Ùƒ Ø¨Ø§Ù„Ø¥Ù†ØªØ±Ù†Øª.",
-                                     "en":  "Failed to load notifications. Please check your internet connection."
-                                 },
-    "notifications_new_received":  {
-                                       "ar":  "ØªÙ… Ø§Ø³ØªÙ‚Ø¨Ø§Ù„ Ø¥Ø´Ø¹Ø§Ø± Ø¬Ø¯ÙŠØ¯",
-                                       "en":  "New notification received"
-                                   },
-    "notifications_delete_confirm_title":  {
-                                               "ar":  "Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ØŸ",
-                                               "en":  "Are you sure?"
-                                           },
-    "notifications_delete_confirm_text":  {
-                                              "ar":  "Ø³ÙŠØªÙ… Ø­Ø°Ù Ù‡Ø°Ù‡ Ø§Ù„Ø±Ø³Ø§Ù„Ø© Ù†Ù‡Ø§Ø¦ÙŠØ§Ù‹ Ù…Ù† Ø¬Ù‡Ø§Ø²Ùƒ.",
-                                              "en":  "This message will be permanently deleted from your device."
-                                          },
-    "notifications_delete_success":  {
-                                         "ar":  "ØªÙ… Ø­Ø°Ù Ø§Ù„Ø±Ø³Ø§Ù„Ø© Ø¨Ù†Ø¬Ø§Ø­",
-                                         "en":  "Message deleted successfully"
-                                     },
-    "notifications_delete_fail":  {
-                                      "ar":  "ÙØ´Ù„ Ø­Ø°Ù Ø§Ù„Ø±Ø³Ø§Ù„Ø©",
-                                      "en":  "Failed to delete message"
-                                  },
-    "notifications_mark_all_read_confirm":  {
-                                                "ar":  "Ù‡Ù„ ØªØ±ÙŠØ¯ ØªØ­Ø¯ÙŠØ¯ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª ÙƒÙ…Ù‚Ø±ÙˆØ¡Ø©ØŸ",
-                                                "en":  "Do you want to mark all notifications as read?"
-                                            },
-    "notifications_mark_all_read_success":  {
-                                                "ar":  "ØªÙ… ØªØ­Ø¯ÙŠØ¯ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª ÙƒÙ…Ù‚Ø±ÙˆØ¡Ø©",
-                                                "en":  "All notifications marked as read"
-                                            },
-    "notifications_sys_permission_required":  {
-                                                  "ar":  "Ø¥Ø°Ù† Ø§Ù„Ù†Ø¸Ø§Ù… Ù…Ø·Ù„ÙˆØ¨",
-                                                  "en":  "System permission required"
-                                              },
-    "notifications_sys_permission_text":  {
-                                              "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø³Ù…Ø§Ø­ Ø¨Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ù…Ù† Ù†Ø§ÙØ°Ø© Ø§Ù„Ù†Ø¸Ø§Ù… Ø§Ù„ØªÙŠ Ø³ØªØ¸Ù‡Ø± Ø§Ù„Ø¢Ù†.",
-                                              "en":  "Please allow notifications from the system popup that will appear."
-                                          },
-    "notifications_blocked_title":  {
-                                        "ar":  "Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ù…Ø­Ø¸ÙˆØ±Ø©",
-                                        "en":  "Notifications blocked"
-                                    },
-    "notifications_blocked_text":  {
-                                       "ar":  "Ù„Ù‚Ø¯ Ù‚Ù…Øª Ø¨Ø­Ø¸Ø± Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ù…Ø³Ø¨Ù‚Ø§Ù‹. ÙŠØ±Ø¬Ù‰ ÙÙƒ Ø§Ù„Ø­Ø¸Ø±ØŒ Ø§Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø«Ù… Ø§Ø®ØªØ± Ø§Ù„ØªØ·Ø¨ÙŠÙ‚ ÙˆÙØ¹Ù„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ù„ØªØªÙ…ÙƒÙ† Ù…Ù† Ø§Ø³ØªÙ‚Ø¨Ø§Ù„ Ø§Ù„ØªÙ†Ø¨ÙŠÙ‡Ø§Øª.",
-                                       "en":  "You have blocked notifications. Please unblock them in settings to receive alerts."
-                                   },
-    "notifications_enabling":  {
-                                   "ar":  "Ø¬Ø§Ø±ÙŠ ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª...",
-                                   "en":  "Enabling notifications..."
-                               },
-    "notifications_enabled_success":  {
-                                          "ar":  "ØªÙ… Ø§Ù„ØªÙØ¹ÙŠÙ„ Ø¨Ù†Ø¬Ø§Ø­",
-                                          "en":  "Notifications enabled successfully"
-                                      },
-    "notifications_enabled_desc":  {
-                                       "ar":  "Ø³ØªØµÙ„Ùƒ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª ÙÙˆØ± ØµØ¯ÙˆØ±Ù‡Ø§",
-                                       "en":  "You will receive notifications as they occur"
-                                   },
-    "notifications_disable_confirm_title":  {
-                                                "ar":  "Ù‡Ù„ ØªØ±ÙŠØ¯ ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§ØªØŸ",
-                                                "en":  "Do you want to disable notifications?"
-                                            },
-    "notifications_disable_confirm_text":  {
-                                               "ar":  "Ù„Ù† ØªØµÙ„Ùƒ ØªÙ†Ø¨ÙŠÙ‡Ø§Øª Ø¨Ø®ØµÙˆØµ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ø¬Ø¯ÙŠØ¯Ø©",
-                                               "en":  "You will not receive alerts for new messages"
-                                           },
-    "notifications_disabled_success":  {
-                                           "ar":  "ØªÙ… Ø§Ù„ØªØ¹Ø·ÙŠÙ„",
-                                           "en":  "Notifications disabled"
-                                       },
-    "notifications_disabled_desc":  {
-                                        "ar":  "ØªÙ… Ø¥ÙŠÙ‚Ø§Ù Ø§Ø³ØªÙ‚Ø¨Ø§Ù„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ø¹Ù„Ù‰ Ù‡Ø°Ø§ Ø§Ù„Ø¬Ù‡Ø§Ø²",
-                                        "en":  "Notification reception has been stopped on this device"
-                                    },
-    "notifications_init_error":  {
-                                     "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ ÙÙŠ ØªÙ‡ÙŠØ¦Ø© ØµÙØ­Ø© Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
-                                     "en":  "Error initializing notifications page"
-                                 },
-    "notif_settings_title":  {
-                                 "ar":  "Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ù†Ø¸Ø§Ù… Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
-                                 "en":  "Notification System Settings"
-                             },
-    "notif_settings_desc":  {
-                                "ar":  "ØªØ­ÙƒÙ… ÙÙŠ Ù…Ù† ÙŠØ³ØªÙ‚Ø¨Ù„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ù„ÙƒÙ„ Ø­Ø¯Ø« ÙÙŠ Ø§Ù„Ù†Ø¸Ø§Ù….",
-                                "en":  "Control who receives notifications for each system event."
-                            },
-    "notif_event_col":  {
-                            "ar":  "Ø§Ù„Ø­Ø¯Ø«",
-                            "en":  "Event"
-                        },
-    "notif_buyer_col":  {
-                            "ar":  "Ø§Ù„Ù…Ø´ØªØ±ÙŠ",
-                            "en":  "Buyer"
-                        },
-    "notif_admin_col":  {
-                            "ar":  "Ø§Ù„Ø¥Ø¯Ø§Ø±Ø©",
-                            "en":  "Admin"
-                        },
-    "notif_sellers_col":  {
-                              "ar":  "????? ??????",
-                              "en":  "Service Providers"
-                          },
-    "notif_delivery_col":  {
-                               "ar":  "Ø§Ù„ØªÙˆØµÙŠÙ„",
-                               "en":  "Delivery"
-                           },
-    "notif_reset_btn":  {
-                            "ar":  "Ø§Ø³ØªØ¹Ø§Ø¯Ø© Ø§Ù„Ø§ÙØªØ±Ø§Ø¶ÙŠØ§Øª",
-                            "en":  "Restore Defaults"
-                        },
-    "notif_uploading":  {
-                            "ar":  "Ø¬Ø§Ø±ÙŠ Ø±ÙØ¹ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ù„Ù„Ø³Ø­Ø§Ø¨Ø©... â˜ï¸",
-                            "en":  "Uploading settings to cloud... â˜ï¸"
-                        },
-    "notif_save_success":  {
-                               "ar":  "ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª ÙˆØªØ­Ø¯ÙŠØ« Ø§Ù„Ø³Ø­Ø§Ø¨Ø© Ø¨Ù†Ø¬Ø§Ø­ âœ…",
-                               "en":  "Settings saved and cloud updated successfully âœ…"
-                           },
-    "notif_save_fail":  {
-                            "ar":  "ÙØ´Ù„ Ø­ÙØ¸ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª ÙÙŠ Ø§Ù„Ø³Ø­Ø§Ø¨Ø© âŒ",
-                            "en":  "Failed to save settings to cloud âŒ"
-                        },
-    "notif_reset_confirm":  {
-                                "ar":  "Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ Ù…Ù† Ø§Ø³ØªØ¹Ø§Ø¯Ø© Ø§Ù„Ø§ÙØªØ±Ø§Ø¶ÙŠØ§ØªØŸ",
-                                "en":  "Are you sure you want to restore defaults?"
-                            },
-    "notif_load_fail":  {
-                            "ar":  "ÙØ´Ù„ ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª âš ï¸",
-                            "en":  "Failed to load settings âš ï¸"
-                        },
-    "notif_label_purchase":  {
-                                 "ar":  "Ø´Ø±Ø§Ø¡",
-                                 "en":  "Purchase"
-                             },
-    "notif_label_review":  {
-                               "ar":  "Ù…Ø±Ø§Ø¬Ø¹Ø©",
-                               "en":  "Review"
-                           },
-    "notif_label_cancelled":  {
-                                  "ar":  "Ù…Ù„ØºÙŠ",
-                                  "en":  "Cancelled"
-                              },
-    "notif_label_confirmed":  {
-                                  "ar":  "ØªØ£ÙƒÙŠØ¯",
-                                  "en":  "Confirmed"
-                              },
-    "notif_label_rejected":  {
-                                 "ar":  "Ù…Ø±ÙÙˆØ¶",
-                                 "en":  "Rejected"
-                             },
-    "notif_label_shipped":  {
-                                "ar":  "Ø´Ø­Ù†",
-                                "en":  "Shipped"
-                            },
-    "notif_label_delivered":  {
-                                  "ar":  "ØªØ³Ù„ÙŠÙ…",
-                                  "en":  "Delivered"
-                              },
-    "notif_label_returned":  {
-                                 "ar":  "Ù…Ø±ØªØ¬Ø¹",
-                                 "en":  "Returned"
-                             },
-    "notif_status_enabled":  {
-                                 "ar":  "Ù…ÙØ¹Ù„",
-                                 "en":  "Enabled"
-                             },
-    "notif_status_disabled":  {
-                                  "ar":  "Ù…Ø¹Ø·Ù„",
-                                  "en":  "Disabled"
-                              },
-    "notifications_delete_tooltip":  {
-                                         "ar":  "Ø­Ø°Ù Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±",
-                                         "en":  "Delete Notification"
-                                     },
-    "notifications_retry_btn":  {
-                                    "ar":  "Ø¥Ø¹Ø§Ø¯Ø© Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø©",
-                                    "en":  "Retry"
-                                },
-    "notifications_sender_user":  {
-                                      "ar":  "Ù…Ø³ØªØ®Ø¯Ù…",
-                                      "en":  "User"
-                                  },
-    "notifications_sender_you":  {
-                                     "ar":  "Ø£Ù†Øª",
-                                     "en":  "You"
-                                 },
-    "notifications_status_tooltip":  {
-                                         "ar":  "Ø­Ø§Ù„Ø© Ø§Ù„Ù‚Ø±Ø§Ø¡Ø©",
-                                         "en":  "Read Status"
-                                     },
-    "notifications_enable_title":  {
-                                       "ar":  "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
-                                       "en":  "Enable Notifications"
-                                   },
-    "notifications_enable_on_login":  {
-                                          "ar":  "Ù‡Ù„ ØªØ±ØºØ¨ ÙÙŠ Ø§Ø³ØªÙ‚Ø¨Ø§Ù„ Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ø¨Ø§Ù„Ø¹Ø±ÙˆØ¶ ÙˆØªØ­Ø¯ÙŠØ«Ø§Øª Ø§Ù„Ø·Ù„Ø¨Ø§ØªØŸ",
-                                          "en":  "Would you like to receive notifications regarding offers and order updates?"
-                                      },
-    "location_title":  {
-                           "ar":  "ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                           "en":  "Select Location"
-                       },
-    "location_alert_title":  {
-                                 "ar":  "ØªÙ†Ø¨ÙŠÙ‡",
-                                 "en":  "Notice"
-                             },
-    "location_select_on_map_first":  {
-                                         "ar":  "ÙŠØ±Ø¬Ù‰ ØªØ­Ø¯ÙŠØ¯ Ù…ÙˆÙ‚Ø¹ Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø±ÙŠØ·Ø© Ø£ÙˆÙ„Ø§Ù‹",
-                                         "en":  "Please select a location on the map first"
-                                     },
-    "location_saved_title":  {
-                                 "ar":  "ØªÙ… Ø§Ù„Ø­ÙØ¸",
-                                 "en":  "Saved"
-                             },
-    "location_saved_success":  {
-                                   "ar":  "ØªÙ… Ø­ÙØ¸ Ø§Ù„Ù…ÙˆÙ‚Ø¹ ÙˆØ¥Ø±Ø³Ø§Ù„Ù‡ Ø¨Ù†Ø¬Ø§Ø­",
-                                   "en":  "Location saved and sent successfully"
-                               },
-    "location_reset_confirm_title":  {
-                                         "ar":  "Ø¥Ø¹Ø§Ø¯Ø© Ø§Ù„ØªØ¹ÙŠÙŠÙ†ØŸ",
-                                         "en":  "Reset Location?"
-                                     },
-    "location_reset_confirm_text":  {
-                                        "ar":  "Ø³ÙŠØªÙ… Ø­Ø°Ù Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ù…Ø­ÙÙˆØ¸ ÙˆØ¥Ø¹Ø§Ø¯Ø© Ø§Ù„ØªØ¹ÙŠÙŠÙ† Ø¥Ù„Ù‰ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø§ÙØªØ±Ø§Ø¶ÙŠØ©",
-                                        "en":  "The saved location will be deleted and reset to defaults"
-                                    },
-    "location_reset_yes":  {
-                               "ar":  "Ù†Ø¹Ù…ØŒ Ø§Ø­Ø°Ù",
-                               "en":  "Yes, Delete"
-                           },
-    "location_reset_cancel":  {
-                                  "ar":  "Ø¥Ù„ØºØ§Ø¡",
-                                  "en":  "Cancel"
-                              },
-    "location_reset_error":  {
-                                 "ar":  "ØªØ¹Ø°Ø± Ø¥Ø¹Ø§Ø¯Ø© Ø§Ù„ØªØ¹ÙŠÙŠÙ†",
-                                 "en":  "Could not reset"
-                             },
-    "location_no_data_title":  {
-                                   "ar":  "Ù„Ø§ ØªÙˆØ¬Ø¯ Ø¨ÙŠØ§Ù†Ø§Øª",
-                                   "en":  "No Data"
-                               },
-    "location_no_location_saved":  {
-                                       "ar":  "Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…ÙˆÙ‚Ø¹ Ù…Ø­ÙÙˆØ¸ Ù„Ù…Ø´Ø§Ø±ÙƒØªÙ‡",
-                                       "en":  "No saved location to share"
-                                   },
-    "location_options_title":  {
-                                   "ar":  "Ø®ÙŠØ§Ø±Ø§Øª Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                                   "en":  "Location Options"
-                               },
-    "location_options_text":  {
-                                  "ar":  "Ù…Ø§Ø°Ø§ ØªØ±ÙŠØ¯ Ø£Ù† ØªÙØ¹Ù„ Ø¨Ø§Ù„Ø¥Ø­Ø¯Ø§Ø«ÙŠØ§ØªØŸ",
-                                  "en":  "What do you want to do with the coordinates?"
-                              },
-    "location_open_in_maps":  {
-                                  "ar":  "ÙØªØ­ ÙÙŠ Ø§Ù„Ø®Ø±Ø§Ø¦Ø·",
-                                  "en":  "Open in Maps"
-                              },
-    "location_copy_coordinates":  {
-                                      "ar":  "Ù†Ø³Ø® Ø§Ù„Ø¥Ø­Ø¯Ø§Ø«ÙŠØ§Øª",
-                                      "en":  "Copy Coordinates"
-                                  },
-    "location_copied_title":  {
-                                  "ar":  "ØªÙ… Ø§Ù„Ù†Ø³Ø®",
-                                  "en":  "Copied"
-                              },
-    "location_copied_success":  {
-                                    "ar":  "ØªÙ… Ù†Ø³Ø® Ø§Ù„Ø¥Ø­Ø¯Ø§Ø«ÙŠØ§Øª Ø¥Ù„Ù‰ Ø§Ù„Ø­Ø§ÙØ¸Ø©",
-                                    "en":  "Coordinates copied to clipboard"
-                                },
-    "location_error_title":  {
-                                 "ar":  "Ø®Ø·Ø£",
-                                 "en":  "Error"
-                             },
-    "location_unexpected_error":  {
-                                      "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ ÙÙŠ Ù…Ø¹Ø§Ù„Ø¬Ø© Ø·Ù„Ø¨Ùƒ",
-                                      "en":  "An error occurred while processing your request"
-                                  },
-    "location_confirm_ok":  {
-                                "ar":  "Ø­Ø³Ù†Ø§Ù‹",
-                                "en":  "OK"
-                            },
-    "location_loading_map":  {
-                                 "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ø®Ø±ÙŠØ·Ø©...",
-                                 "en":  "Loading map..."
-                             },
-    "location_btn_save":  {
-                              "ar":  "Ø­ÙØ¸",
-                              "en":  "Save"
-                          },
-    "location_btn_my_location":  {
-                                     "ar":  "Ù…ÙˆÙ‚Ø¹ÙŠ",
-                                     "en":  "My Location"
-                                 },
-    "location_btn_share":  {
-                               "ar":  "Ù…Ø´Ø§Ø±ÙƒØ©",
-                               "en":  "Share"
-                           },
-    "location_btn_reset":  {
-                               "ar":  "Ø¥Ø¹Ø§Ø¯Ø© Ø¶Ø¨Ø·",
-                               "en":  "Reset"
-                           },
-    "location_not_supported":  {
-                                   "ar":  "ØºÙŠØ± Ù…Ø¯Ø¹ÙˆÙ…",
-                                   "en":  "Not Supported"
-                               },
-    "location_browser_not_supported":  {
-                                           "ar":  "Ø§Ù„Ù…ØªØµÙØ­ Ø§Ù„Ø­Ø§Ù„ÙŠ Ù„Ø§ ÙŠØ¯Ø¹Ù… Ø®Ø¯Ù…Ø© ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                                           "en":  "This browser does not support geolocation services"
-                                       },
-    "location_busy_title":  {
-                                "ar":  "Ø¬Ø§Ø±ÙŠ Ø§Ù„Ø¹Ù…Ù„",
-                                "en":  "In Progress"
-                            },
-    "location_busy_text":  {
-                               "ar":  "ÙŠØªÙ… Ø§Ù„Ø¢Ù† ØªØ­Ø¯ÙŠØ¯ Ù…ÙˆÙ‚Ø¹ Ø¢Ø®Ø±ØŒ Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ù„Ø§Ù†ØªØ¸Ø§Ø±",
-                               "en":  "Another location operation is in progress, please wait"
-                           },
-    "location_finding_title":  {
-                                   "ar":  "Ø¬Ø§Ø±ÙŠ ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…ÙˆÙ‚Ø¹...",
-                                   "en":  "Finding location..."
-                               },
-    "location_allow_access":  {
-                                  "ar":  "ÙŠØ±Ø¬Ù‰ Ø§Ù„Ø³Ù…Ø§Ø­ Ø¨Ø§Ù„ÙˆØµÙˆÙ„ Ø¥Ù„Ù‰ Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                                  "en":  "Please allow access to location data"
-                              },
-    "location_enable_service_short":  {
-                                          "ar":  "ÙŠØ±Ø¬Ù‰ ØªØ´ØºÙŠÙ„ Ø®Ø¯Ù…Ø© Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                                          "en":  "Please turn on location services"
-                                      },
-    "location_open_settings":  {
-                                   "ar":  "ÙØªØ­ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª",
-                                   "en":  "Open Settings"
-                               },
-    "location_error_gps_title":  {
-                                     "ar":  "Ø®Ø·Ø£ ÙÙŠ ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                                     "en":  "Location Discovery Error"
-                                 },
-    "location_error_denied":  {
-                                  "ar":  "ØªÙ… Ø±ÙØ¶ Ø§Ù„Ø¥Ø°Ù†. Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ù„Ø³Ù…Ø§Ø­ Ø¨Ø§Ù„ÙˆØµÙˆÙ„ Ø¥Ù„Ù‰ Ø§Ù„Ù…ÙˆÙ‚Ø¹ ÙÙŠ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ù…ØªØµÙØ­.",
-                                  "en":  "Permission denied. Please allow location access in browser settings."
-                              },
-    "location_error_unavailable":  {
-                                       "ar":  "Ø§Ù„Ù…ÙˆÙ‚Ø¹ ØºÙŠØ± Ù…ØªØ§Ø­ Ø­Ø§Ù„ÙŠØ§Ù‹. ØªØ­Ù‚Ù‚ Ù…Ù† Ø§ØªØµØ§Ù„ Ø§Ù„Ø¥Ù†ØªØ±Ù†Øª.",
-                                       "en":  "Location is currently unavailable. Check your internet connection."
-                                   },
-    "location_error_timeout":  {
-                                   "ar":  "Ø§Ø³ØªØºØ±Ù‚Øª Ø§Ù„Ø¹Ù…Ù„ÙŠØ© ÙˆÙ‚ØªØ§Ù‹ Ø·ÙˆÙŠÙ„Ø§Ù‹. Ø­Ø§ÙˆÙ„ Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                                   "en":  "The operation timed out. Please try again."
-                               },
-    "location_error_unknown":  {
-                                   "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ ØºÙŠØ± Ù…ØªÙˆÙ‚Ø¹ Ø£Ø«Ù†Ø§Ø¡ ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…ÙˆÙ‚Ø¹.",
-                                   "en":  "An unexpected error occurred while finding location."
-                               },
-    "location_init_error_title":  {
-                                      "ar":  "Ø®Ø·Ø£ ÙÙŠ Ø§Ù„ØªÙ‡ÙŠØ¦Ø©",
-                                      "en":  "Initialization Error"
-                                  },
-    "location_init_error_text":  {
-                                     "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØªØ·Ø¨ÙŠÙ‚. ÙŠØ±Ø¬Ù‰ ØªØ­Ø¯ÙŠØ« Ø§Ù„ØµÙØ­Ø©.",
-                                     "en":  "An error occurred while loading the application. Please refresh the page."
-                                 },
-    "location_recenter_title":  {
-                                    "ar":  "ØªÙˆØ³ÙŠØ· Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ù…Ø®ØªØ§Ø±",
-                                    "en":  "Recenter to Selected Location"
-                                },
-    "location_load_error":  {
-                                "ar":  "ØªØ¹Ø°Ø± ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ø®Ø±ÙŠØ·Ø©. ØªØ­Ù‚Ù‚ Ù…Ù† Ø§ØªØµØ§Ù„ Ø§Ù„Ø¥Ù†ØªØ±Ù†Øª.",
-                                "en":  "Could not load map. Check your internet connection."
-                            },
-    "location_marker_title":  {
-                                  "ar":  "Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ù…Ø­Ø¯Ø¯",
-                                  "en":  "Selected Location"
-                              },
-    "location_marker_alt":  {
-                                "ar":  "Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ø¹Ù„Ù‰ Ø§Ù„Ø®Ø±ÙŠØ·Ø©",
-                                "en":  "User\u0027s location on the map"
-                            },
-    "location_lat_label":  {
-                               "ar":  "Ø®Ø· Ø§Ù„Ø¹Ø±Ø¶",
-                               "en":  "Latitude"
-                           },
-    "location_lng_label":  {
-                               "ar":  "Ø®Ø· Ø§Ù„Ø·ÙˆÙ„",
-                               "en":  "Longitude"
-                           },
-    "location_invalid_coords":  {
-                                    "ar":  "Ø¥Ø­Ø¯Ø§Ø«ÙŠØ§Øª ØºÙŠØ± ØµØ§Ù„Ø­Ø©",
-                                    "en":  "Invalid coordinates"
-                                },
-    "location_edit_confirm_title":  {
-                                        "ar":  "ØªØ¹Ø¯ÙŠÙ„ Ø§Ù„Ù…ÙˆÙ‚Ø¹ØŸ",
-                                        "en":  "Edit Location?"
-                                    },
-    "location_edit_confirm_text":  {
-                                       "ar":  "Ù‡Ù„ ØªØ±ÙŠØ¯ Ø§Ø³ØªØ¨Ø¯Ø§Ù„ Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ù…Ø­ÙÙˆØ¸ Ø¨Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ø¬Ø¯ÙŠØ¯ØŸ",
-                                       "en":  "Do you want to replace the saved location with the new one?"
-                                   },
-    "location_edit_replace":  {
-                                  "ar":  "Ù†Ø¹Ù…ØŒ Ø§Ø³ØªØ¨Ø¯Ù„",
-                                  "en":  "Yes, Replace"
-                              },
-    "location_save_error":  {
-                                "ar":  "ØªØ¹Ø°Ø± Ø­ÙØ¸ Ø§Ù„Ù…ÙˆÙ‚Ø¹",
-                                "en":  "Could not save location"
-                            },
-    "location_critical_load_error":  {
-                                         "ar":  "Ù„Ù… ÙŠØªÙ… ØªØ­Ù…ÙŠÙ„ ÙˆØ­Ø¯Ø§Øª Ø§Ù„ØªØ·Ø¨ÙŠÙ‚ Ø§Ù„Ø£Ø³Ø§Ø³ÙŠØ© Ø¨Ø´ÙƒÙ„ ØµØ­ÙŠØ­.",
-                                         "en":  "Core application modules were not loaded correctly."
-                                     },
-    "location_critical_error_title":  {
-                                          "ar":  "Ø®Ø·Ø£ ÙÙŠ Ø§Ù„ØªØ­Ù…ÙŠÙ„",
-                                          "en":  "Load Error"
-                                      },
-    "location_critical_error_text":  {
-                                         "ar":  "Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ ØªØ´ØºÙŠÙ„ Ø§Ù„ØªØ·Ø¨ÙŠÙ‚. ÙŠØ±Ø¬Ù‰ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.",
-                                         "en":  "An error occurred while launching the application. Please try again."
-                                     },
-    "location_reload_btn":  {
-                                "ar":  "ØªØ­Ø¯ÙŠØ« Ø§Ù„ØµÙØ­Ø©",
-                                "en":  "Refresh Page"
-                            }
+{
+    "cart_loading": {
+        "ar": "جاري تحميل سلة المشتريات...",
+        "en": "Loading shopping cart..."
+    },
+    "cart_summary_title": {
+        "ar": "ملخص الطلب",
+        "en": "Order Summary"
+    },
+    "cart_item_count": {
+        "ar": "عدد المنتجات:",
+        "en": "Item Count:"
+    },
+    "cart_subtotal": {
+        "ar": "المجموع الجزئي:",
+        "en": "Subtotal:"
+    },
+    "cart_savings": {
+        "ar": "التوفير:",
+        "en": "Savings:"
+    },
+    "cart_delivery_fee": {
+        "ar": "خدمه التوصيل:",
+        "en": "Delivery Fee:"
+    },
+    "cart_smart_delivery": {
+        "ar": "التوصيل الذكي:",
+        "en": "Smart Delivery:"
+    },
+    "cart_details": {
+        "ar": "تفاصيل",
+        "en": "Details"
+    },
+    "cart_total": {
+        "ar": "المجموع الكلي:",
+        "en": "Total Amount:"
+    },
+    "cart_checkout_btn": {
+        "ar": "إتمام عملية الشراء",
+        "en": "Checkout"
+    },
+    "cart_clear_btn": {
+        "ar": "تفريغ السلة",
+        "en": "Clear Cart"
+    },
+    "cart_empty_title": {
+        "ar": "سلة المشتريات فارغة",
+        "en": "Cart is Empty"
+    },
+    "cart_empty_message": {
+        "ar": "لم تقم بإضافة أي منتجات إلى سلة المشتريات بعد. ابدأ التسوق الآن لإضافة منتجات رائعة!",
+        "en": "You haven't added any products to your cart yet. Start shopping now to add great products!"
+    },
+    "cart_continue_shopping": {
+        "ar": "متابعة التسوق",
+        "en": "Continue Shopping"
+    },
+    "cart_edit_note": {
+        "ar": "تعديل الملاحظة",
+        "en": "Edit Note"
+    },
+    "cart_note_placeholder": {
+        "ar": "أضف ملاحظة خاصة لهذا المنتج (اختياري)",
+        "en": "Add a special note for this product (optional)"
+    },
+    "cart_save": {
+        "ar": "حفظ",
+        "en": "Save"
+    },
+    "cart_cancel": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "cart_photo_order_success": {
+        "ar": "تم استلام طلبك الخاص بالصور!",
+        "en": "Your photo order has been received!"
+    },
+    "cart_photo_order_desc": {
+        "ar": "لقد قمت بإرسال طلب يحتوي على صور وملاحظات. سيتم مراجعته قريباً.",
+        "en": "You have submitted an order with photos and notes. It will be reviewed soon."
+    },
+    "cart_delete_confirm_title": {
+        "ar": "هل أنت متأكد؟",
+        "en": "Are you sure?"
+    },
+    "cart_delete_confirm_text": {
+        "ar": "سيتم حذف هذا المنتج من سلة المشتريات.",
+        "en": "This product will be removed from your cart."
+    },
+    "cart_delete_success_title": {
+        "ar": "تم الحذف!",
+        "en": "Deleted!"
+    },
+    "cart_delete_success_text": {
+        "ar": "تم حذف المنتج من السلة بنجاح.",
+        "en": "Product removed from cart successfully."
+    },
+    "cart_clear_confirm_title": {
+        "ar": "تفريغ السلة",
+        "en": "Clear Cart"
+    },
+    "cart_clear_confirm_text": {
+        "ar": "هل أنت متأكد من تفريغ كافة محتويات السلة؟",
+        "en": "Are you sure you want to clear all items from the cart?"
+    },
+    "cart_clear_success_title": {
+        "ar": "تم التفريغ!",
+        "en": "Cleared!"
+    },
+    "cart_clear_success_text": {
+        "ar": "تم تفريغ سلة المشتريات بنجاح.",
+        "en": "Shopping cart cleared successfully."
+    },
+    "cart_empty_checkout_title": {
+        "ar": "السلة فارغة",
+        "en": "Empty Cart"
+    },
+    "cart_empty_checkout_text": {
+        "ar": "لا توجد منتجات في السلة لإتمام الشراء.",
+        "en": "There are no products in the cart to complete the purchase."
+    },
+    "cart_confirm_order_title": {
+        "ar": "تأكيد الطلب",
+        "en": "Confirm Order"
+    },
+    "cart_confirm_order_text": {
+        "ar": "سيتم إرسال طلبك إلى الموردين.",
+        "en": "Your order will be sent to the suppliers."
+    },
+    "cart_send_order_success_title": {
+        "ar": "تم الإرسال!",
+        "en": "Sent!"
+    },
+    "cart_send_order_success_text": {
+        "ar": "تم إرسال طلبك بنجاح.",
+        "en": "Your order has been sent successfully."
+    },
+    "cart_error_update_qty": {
+        "ar": "فشل في تحديث الكمية.",
+        "en": "Failed to update quantity."
+    },
+    "cart_error_own_product_title": {
+        "ar": "عذراً",
+        "en": "Sorry"
+    },
+    "cart_error_own_product_text": {
+        "ar": "لا يمكنك شراء منتجاتك الخاصة",
+        "en": "You cannot buy your own products"
+    },
+    "cart_added_success": {
+        "ar": "تمت إضافة \"{name}\" إلى السلة",
+        "en": "\"{name}\" added to cart"
+    },
+    "cart_added_desc": {
+        "ar": "يمكنك متابعة التسوق.",
+        "en": "You can continue shopping."
+    },
+    "cart_limit_title": {
+        "ar": "تنبيه: حد الباقة",
+        "en": "Warning: Order Limit"
+    },
+    "cart_limit_text": {
+        "ar": "عذراً، لا يمكن الشراء من البائع بأقل من {limit} {currency}. مجموع مشترياتك الحالية منه هو {total} {currency}.",
+        "en": "Sorry, you cannot buy from this seller for less than {limit} {currency}. Your current total is {total} {currency}."
+    },
+    "cart_total_confirm": {
+        "ar": "المبلغ الإجمالي هو {amount} {currency}. هل تريد المتابعة؟",
+        "en": "The total amount is {amount} {currency}. Do you want to continue?"
+    },
+    "cart_checkout_success_title": {
+        "ar": "تم إتمام طلبك بنجاح! 🎉",
+        "en": "Your order has been placed successfully! 🎉"
+    },
+    "cart_order_id": {
+        "ar": "رقم الطلب: #{id}",
+        "en": "Order ID: #{id}"
+    },
+    "cart_success_ok": {
+        "ar": "حسناً",
+        "en": "OK"
+    },
+    "cart_discount_badge": {
+        "ar": "توفير {n}%",
+        "en": "Save {n}%"
+    },
+    "cart_notes_label": {
+        "ar": "ملاحظاتك:",
+        "en": "Your Notes:"
+    },
+    "cart_no_notes": {
+        "ar": "لا توجد ملاحظات",
+        "en": "No notes"
+    },
+    "cart_delete_btn": {
+        "ar": "حذف",
+        "en": "Delete"
+    },
+    "cart_not_available": {
+        "ar": "غير متاح",
+        "en": "N/A"
+    },
+    "cart_delivery_details_title": {
+        "ar": "📊 تفاصيل حساب خدمة التوصيل",
+        "en": "📊 Delivery Calculation Details"
+    },
+    "cart_delivery_stages": {
+        "ar": "📏 مراحل التوصيل:",
+        "en": "📏 Delivery Stages:"
+    },
+    "cart_delivery_total_dist": {
+        "ar": "المسافة الكلية:",
+        "en": "Total Distance:"
+    },
+    "cart_delivery_dist_cost": {
+        "ar": "تكلفة المسافة ({dist} × {price}):",
+        "en": "Distance Cost ({dist} × {price}):"
+    },
+    "cart_delivery_segment_direct": {
+        "ar": "🏢 المكتب ← 🏠 العميل",
+        "en": "🏢 Office ← 🏠 Customer"
+    },
+    "cart_delivery_segment_first": {
+        "ar": "🏢 المكتب ← 📦 البائع الأول",
+        "en": "🏢 Office ← 📦 First Seller"
+    },
+    "cart_delivery_segment_between": {
+        "ar": "📦 البائع {i} ← 📦 البائع {j}",
+        "en": "📦 Seller {i} ← 📦 Seller {j}"
+    },
+    "cart_delivery_segment_last": {
+        "ar": "📦 البائع الأخير ← 🏠 العميل",
+        "en": "📦 Last Seller ← 🏠 Customer"
+    },
+    "cart_delivery_vehicle_label": {
+        "ar": "🚗 نوع المركبة:",
+        "en": "🚗 Vehicle Type:"
+    },
+    "cart_delivery_vehicle_truck": {
+        "ar": "🚛 شاحنة",
+        "en": "🚛 Truck"
+    },
+    "cart_delivery_vehicle_car": {
+        "ar": "🚗 سيارة",
+        "en": "🚗 Car"
+    },
+    "cart_delivery_vehicle_bike": {
+        "ar": "🏍️ دراجة نارية",
+        "en": "🏍️ Motorcycle"
+    },
+    "cart_delivery_value_label": {
+        "ar": "💰 قيمة الطلب:",
+        "en": "💰 Order Value:"
+    },
+    "cart_delivery_weather_label": {
+        "ar": "🌦️ حالة الطقس:",
+        "en": "🌦️ Weather Status:"
+    },
+    "cart_delivery_weather_heavy": {
+        "ar": "🌧️ أمطار غزيرة",
+        "en": "🌧️ Heavy Rain"
+    },
+    "cart_delivery_weather_light": {
+        "ar": "🌦️ أمطار خفيفة",
+        "en": "🌦️ Light Rain"
+    },
+    "cart_delivery_weather_normal": {
+        "ar": "☀️ طقس عادي",
+        "en": "☀️ Normal Weather"
+    },
+    "cart_delivery_location_label": {
+        "ar": "📍 المنطقة:",
+        "en": "📍 Region:"
+    },
+    "cart_delivery_location_outside": {
+        "ar": "🏞️ خارج المدينة",
+        "en": "🏞️ Outside City"
+    },
+    "cart_delivery_location_suburbs": {
+        "ar": "🏘️ الضواحي",
+        "en": "🏘️ Suburbs"
+    },
+    "cart_delivery_location_inside": {
+        "ar": "🏙️ داخل المدينة",
+        "en": "🏙️ Inside City"
+    },
+    "cart_delivery_speed_label": {
+        "ar": "⚡ سرعة التوصيل:",
+        "en": "⚡ Delivery Speed:"
+    },
+    "cart_delivery_speed_instant": {
+        "ar": "🚀 فوري",
+        "en": "🚀 Instant"
+    },
+    "cart_delivery_speed_fast": {
+        "ar": "⚡ سريع",
+        "en": "⚡ Fast"
+    },
+    "cart_delivery_speed_normal": {
+        "ar": "🕐 عادي",
+        "en": "🕐 Normal"
+    },
+    "cart_delivery_special_label": {
+        "ar": "⚠️ مركبة خاصة:",
+        "en": "⚠️ Special Vehicle:"
+    },
+    "cart_delivery_special_yes": {
+        "ar": "نعم (حمولة ثقيلة)",
+        "en": "Yes (Heavy Load)"
+    },
+    "cart_delivery_rating_label": {
+        "ar": "⭐ تقييم السائق:",
+        "en": "â­ Driver Rating:"
+    },
+    "cart_delivery_stars": {
+        "ar": "{n} نجوم",
+        "en": "{n} Stars"
+    },
+    "cart_delivery_base_fee": {
+        "ar": "💳 الرسوم الأساسية:",
+        "en": "💳 Base Fee:"
+    },
+    "cart_delivery_discount_label": {
+        "ar": "🎁 الخصم:",
+        "en": "🎁 Discount:"
+    },
+    "cart_delivery_final_total": {
+        "ar": "💵 التكلفة النهائية: {total} {currency}",
+        "en": "💵 Final Cost: {total} {currency}"
+    },
+    "cart_currency": {
+        "ar": "ج.م",
+        "en": "EGP"
+    },
+    "sales_buyer": {
+        "ar": "مشتري",
+        "en": "Buyer"
+    },
+    "sales_seller": {
+        "ar": "مقدم خدمة",
+        "en": "Service Provider"
+    },
+    "sales_delivery": {
+        "ar": "توصيل",
+        "en": "Delivery"
+    },
+    "sales_admin": {
+        "ar": "مسؤول",
+        "en": "Admin"
+    },
+    "sales_refresh": {
+        "ar": "تحديث",
+        "en": "Refresh"
+    },
+    "sales_no_orders": {
+        "ar": "لا توجد طلبات حالياً",
+        "en": "No orders currently"
+    },
+    "sales_order_id": {
+        "ar": "طلب #{id}",
+        "en": "Order #{id}"
+    },
+    "sales_date": {
+        "ar": "التاريخ:",
+        "en": "Date:"
+    },
+    "sales_items_count": {
+        "ar": "عدد المنتجات:",
+        "en": "Item count:"
+    },
+    "sales_sellers_count": {
+        "ar": "عدد مقدمي الخدمة:",
+        "en": "Service providers count:"
+    },
+    "sales_loading": {
+        "ar": "جاري تحميل الطلبات...",
+        "en": "Loading orders..."
+    },
+    "sales_error": {
+        "ar": "حدث خطأ في عرض الطلبات",
+        "en": "Error displaying orders"
+    },
+    "sales_updating_data_title": {
+        "ar": "جاري تحديث البيانات...",
+        "en": "Updating data..."
+    },
+    "sales_updating_data_text": {
+        "ar": "يتم جلب أحدث تفاصيل الطلب من السيرفر",
+        "en": "Fetching latest order details from server"
+    },
+    "sales_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "sales_error_open_details": {
+        "ar": "تعذر فتح تفاصيل الطلب، يرجى المحاولة لاحقاً",
+        "en": "Could not open order details, please try again later"
+    },
+    "sales_modal_title": {
+        "ar": "تفاصيل الطلب",
+        "en": "Order Details"
+    },
+    "stepper_title": {
+        "ar": "شريط التقدم",
+        "en": "Progress Bar"
+    },
+    "step_review": {
+        "ar": "مراجعة",
+        "en": "Review"
+    },
+    "step_confirmed": {
+        "ar": "مؤكد",
+        "en": "Confirmed"
+    },
+    "step_shipped": {
+        "ar": "شُحن",
+        "en": "Shipped"
+    },
+    "step_delivered": {
+        "ar": "تم التسليم",
+        "en": "Delivered"
+    },
+    "step_cancelled": {
+        "ar": "ملغي",
+        "en": "Cancelled"
+    },
+    "step_rejected": {
+        "ar": "مرفوض",
+        "en": "Rejected"
+    },
+    "step_returned": {
+        "ar": "مرتجع",
+        "en": "Returned"
+    },
+    "stepper_view_photos": {
+        "ar": "عرض صور الطلب الخاص",
+        "en": "View special order photos"
+    },
+    "stepper_order_value": {
+        "ar": "قيمة الطلب:",
+        "en": "Order Value:"
+    },
+    "stepper_save_value": {
+        "ar": "حفظ القيمة",
+        "en": "Save Value"
+    },
+    "stepper_unauthorized_alert": {
+        "ar": "ليس لديك الصلاحية لهذه المرحلة",
+        "en": "You don't have permission for this stage"
+    },
+    "stepper_activate_step": {
+        "ar": "تفعيل المرحلة",
+        "en": "Activate Stage"
+    },
+    "stepper_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "stepper_invalid_number": {
+        "ar": "يرجى إدخال رقم صحيح",
+        "en": "Please enter a valid number"
+    },
+    "stepper_confirm_title": {
+        "ar": "هل أنت متأكد؟",
+        "en": "Are you sure?"
+    },
+    "stepper_confirm_save_text": {
+        "ar": "هل تريد اعتماد قيمة {amount} كقيمة نهائية للطلب؟",
+        "en": "Do you want to set {amount} as the final order value?"
+    },
+    "stepper_save_success_title": {
+        "ar": "تم الحفظ",
+        "en": "Saved"
+    },
+    "stepper_save_success_text": {
+        "ar": "تم تحديث قيمة الطلب بنجاح",
+        "en": "Order value updated successfully"
+    },
+    "stepper_save_fail_title": {
+        "ar": "فشل الحفظ",
+        "en": "Save Failed"
+    },
+    "stepper_activation_confirm_title": {
+        "ar": "تأكيد تفعيل المرحلة",
+        "en": "Confirm Stage Activation"
+    },
+    "stepper_activation_confirm_text": {
+        "ar": "بمجرد تفعيل هذه المرحلة، لا يمكنك التراجع. هل أنت متأكد؟",
+        "en": "Once this stage is activated, you cannot go back. Are you sure?"
+    },
+    "stepper_activation_confirm_btn": {
+        "ar": "نعم، قم بالتفعيل",
+        "en": "Yes, Activate"
+    },
+    "stepper_rejected_products_title": {
+        "ar": "المنتجات المرفوضة",
+        "en": "Rejected Products"
+    },
+    "stepper_no_delivered_products": {
+        "ar": "لا توجد منتجات تم توصيلها/شحنها",
+        "en": "No delivered/shipped products"
+    },
+    "stepper_no_delivered_desc": {
+        "ar": "لا توجد منتجات في مرحلة التوصيل.",
+        "en": "No products in delivery stage."
+    },
+    "stepper_delivery_confirm_title": {
+        "ar": "تأكيد استلام المنتجات (قراءة فقط)",
+        "en": "Confirm Product Receipt (Read-Only)"
+    },
+    "stepper_returned_products_title": {
+        "ar": "المنتجات المرتجعة (قراءة فقط)",
+        "en": "Returned Products (Read-Only)"
+    },
+    "status_pending": {
+        "ar": "معلق",
+        "en": "Pending"
+    },
+    "status_confirmed": {
+        "ar": "مؤكد",
+        "en": "Confirmed"
+    },
+    "status_shipped": {
+        "ar": "مشحون",
+        "en": "Shipped"
+    },
+    "status_delivered": {
+        "ar": "تم التسليم",
+        "en": "Delivered"
+    },
+    "status_returned": {
+        "ar": "مرتجع",
+        "en": "Returned"
+    },
+    "status_cancelled": {
+        "ar": "ملغي",
+        "en": "Cancelled"
+    },
+    "status_rejected": {
+        "ar": "مرفوض",
+        "en": "Rejected"
+    },
+    "time_am": {
+        "ar": "ص",
+        "en": "AM"
+    },
+    "time_pm": {
+        "ar": "م",
+        "en": "PM"
+    },
+    "alert_close_btn": {
+        "ar": "إغلاق",
+        "en": "Close"
+    },
+    "shipping_shipped_products": {
+        "ar": "المنتجات المشحونة ({count}):",
+        "en": "?? Shipped Products ({count}):"
+    },
+    "shipping_not_shipped_products": {
+        "ar": "المنتجات غير المشحونة ({count}):",
+        "en": "?? Not Shipped Products ({count}):"
+    },
+    "shipping_warning_title": {
+        "ar": "تنبيه مهم:",
+        "en": "?? Important Warning:"
+    },
+    "shipping_warning_text": {
+        "ar": "بعد الضغط على \"تأكيد الحفظ\"، لن تتمكن من التعديل مرة أخرى. هذا الإجراء نهائي ولا يمكن التراجع عنه.",
+        "en": "After clicking \"Confirm Save\", you will not be able to edit again. This action is final and irreversible."
+    },
+    "shipping_confirm_save_title": {
+        "ar": "تأكيد الحفظ النهائي",
+        "en": "Confirm Final Save"
+    },
+    "shipping_confirm_save_btn": {
+        "ar": "تأكيد الحفظ",
+        "en": "Confirm Save"
+    },
+    "shipping_saving_title": {
+        "ar": "جاري الحفظ...",
+        "en": "Saving..."
+    },
+    "shipping_saving_text": {
+        "ar": "يتم حفظ الشحن والقفل...",
+        "en": "Saving shipping and locking..."
+    },
+    "shipping_save_success_title": {
+        "ar": "تم الحفظ بنجاح",
+        "en": "Saved Successfully"
+    },
+    "shipping_save_success_text": {
+        "ar": "تم حفظ الشحن بشكل نهائي.",
+        "en": "Shipping saved permanently."
+    },
+    "shipping_notify_buyer": {
+        "ar": "شحن الطلب",
+        "en": "Order Shipped"
+    },
+    "shipping_save_fail_text": {
+        "ar": "حدث خطأ أثناء الاتصال بالسيرفر.",
+        "en": "Error connecting to the server."
+    },
+    "shipping_no_products_title": {
+        "ar": "لا توجد منتجات للشحن",
+        "en": "No products to ship"
+    },
+    "shipping_no_products_desc": {
+        "ar": "يجب تأكيد المنتجات أولاً.",
+        "en": "Products must be confirmed first."
+    },
+    "shipping_modal_title": {
+        "ar": "شحن المنتجات",
+        "en": "Ship Products"
+    },
+    "shipping_modal_readonly_title": {
+        "ar": "شحن المنتجات (قراءة فقط)",
+        "en": "Ship Products (Read-Only)"
+    },
+    "shipping_update_btn": {
+        "ar": "تحديث حالة الشحن",
+        "en": "Update Shipping Status"
+    },
+    "shipping_locked_info": {
+        "ar": "🔒 تم قفل الشحن بشكل دائم - لا يمكن التعديل",
+        "en": "🔒 Shipping locked permanently - cannot edit"
+    },
+    "conf_accepted_products": {
+        "ar": "✅ المنتجات المقبولة ({count}):",
+        "en": "✅ Accepted Products ({count}):"
+    },
+    "conf_rejected_products": {
+        "ar": "❌ المنتجات المرفوضة ({count}):",
+        "en": "❌ Rejected Products ({count}):"
+    },
+    "conf_saving_text": {
+        "ar": "يتم حفظ التأكيد والقفل...",
+        "en": "Saving confirmation and locking..."
+    },
+    "conf_save_success_text": {
+        "ar": "تم حفظ التأكيد بشكل نهائي.",
+        "en": "Confirmation saved permanently."
+    },
+    "conf_notify_confirmed": {
+        "ar": "تأكيد الطلب",
+        "en": "Order Confirmed"
+    },
+    "conf_notify_rejected": {
+        "ar": "منتجات مرفوضة",
+        "en": "Rejected Products"
+    },
+    "conf_modal_title": {
+        "ar": "تأكيد المنتجات",
+        "en": "Confirm Products"
+    },
+    "conf_modal_readonly_title": {
+        "ar": "تأكيد المنتجات (قراءة فقط)",
+        "en": "Confirm Products (Read-Only)"
+    },
+    "conf_save_btn": {
+        "ar": "حفظ التغييرات",
+        "en": "Save Changes"
+    },
+    "conf_locked_info": {
+        "ar": "🔒 تم قفل التأكيد بشكل دائم - لا يمكن التعديل",
+        "en": "🔒 Confirmation locked permanently - cannot edit"
+    },
+    "buyer_cancelled_products": {
+        "ar": "المنتجات الملغاة",
+        "en": "Cancelled Products"
+    },
+    "buyer_returned_products": {
+        "ar": "المنتجات المرتجعة",
+        "en": "Returned Products"
+    },
+    "buyer_confirmed_products": {
+        "ar": "المنتجات المؤكدة",
+        "en": "Confirmed Products"
+    },
+    "buyer_shipping_products": {
+        "ar": "منتجات قيد الشحن",
+        "en": "Products in Shipping"
+    },
+    "courier_products_to_deliver": {
+        "ar": "المنتجات المطلوب توصيلها",
+        "en": "Products to Deliver"
+    },
+    "courier_no_confirmed_products": {
+        "ar": "لا توجد منتجات مؤكدة حالياً.",
+        "en": "No confirmed products currently."
+    },
+    "review_saving_text": {
+        "ar": "برجاء الانتظار بينما يتم حفظ التغييرات.",
+        "en": "Please wait while changes are being saved."
+    },
+    "review_update_success_title": {
+        "ar": "تم التحديث",
+        "en": "Updated"
+    },
+    "review_update_success_text": {
+        "ar": "تم تحديث اختيار المنتجات بنجاح.",
+        "en": "Product selection updated successfully."
+    },
+    "review_notify_cancelled": {
+        "ar": "منتجات ملغاة",
+        "en": "Cancelled Products"
+    },
+    "review_save_fail_text": {
+        "ar": "حدث خطأ أثناء حفظ البيانات. برجاء المحاولة مرة أخرى.",
+        "en": "An error occurred while saving data. Please try again."
+    },
+    "review_modal_view_title": {
+        "ar": "عرض المنتجات",
+        "en": "View Products"
+    },
+    "review_modal_select_title": {
+        "ar": "اختر المنتجات:",
+        "en": "Select Products:"
+    },
+    "review_readonly_info": {
+        "ar": "للمشاهدة فقط - التعديلات مقيدة.",
+        "en": "View only - modifications restricted."
+    },
+    "review_save_btn": {
+        "ar": "حفظ الاختيارات",
+        "en": "Save Selections"
+    },
+    "deliv_received_products": {
+        "ar": "✅ المنتجات المستلمة ({count}):",
+        "en": "✅ Received Products ({count}):"
+    },
+    "deliv_not_received_products": {
+        "ar": "⏳ المنتجات غير المستلمة ({count}):",
+        "en": "â³ Products not received ({count}):"
+    },
+    "deliv_saving_text": {
+        "ar": "يتم حفظ التسليم والقفل...",
+        "en": "Saving delivery and locking..."
+    },
+    "deliv_save_success_text": {
+        "ar": "تم حفظ التسليم بشكل نهائي.",
+        "en": "Delivery saved permanently."
+    },
+    "deliv_notify_received": {
+        "ar": "تأكيد الاستلام",
+        "en": "Confirm Receipt"
+    },
+    "deliv_no_products_title": {
+        "ar": "لا توجد منتجات لتأكيد استلامها",
+        "en": "No products to confirm receipt"
+    },
+    "deliv_no_products_desc": {
+        "ar": "بانتظار شحن المنتجات.",
+        "en": "Waiting for products to be shipped."
+    },
+    "deliv_modal_title": {
+        "ar": "تأكيد استلام المنتجات",
+        "en": "Confirm Product Receipt"
+    },
+    "deliv_modal_readonly_title": {
+        "ar": "تأكيد استلام المنتجات (قراءة فقط)",
+        "en": "Confirm Product Receipt (Read-Only)"
+    },
+    "deliv_save_btn": {
+        "ar": "تأكيد الاستلام",
+        "en": "Confirm Receipt"
+    },
+    "deliv_locked_info": {
+        "ar": "🔒 تم قفل التسليم بشكل دائم - لا يمكن التعديل",
+        "en": "🔒 Delivery locked permanently - cannot edit"
+    },
+    "ui_no_review_products": {
+        "ar": "لا توجد منتجات للمراجعة حالياً.",
+        "en": "No products for review currently."
+    },
+    "ui_no_cancelled_products": {
+        "ar": "لا توجد منتجات تم إلغاؤها حالياً",
+        "en": "No cancelled products currently"
+    },
+    "ui_label_name": {
+        "ar": "الاسم:",
+        "en": "Name:"
+    },
+    "ui_label_phone": {
+        "ar": "الهاتف:",
+        "en": "Phone:"
+    },
+    "ui_label_address": {
+        "ar": "العنوان:",
+        "en": "Address:"
+    },
+    "ui_view_on_map": {
+        "ar": "عرض على الخريطة",
+        "en": "View on Map"
+    },
+    "ui_no_returned_products": {
+        "ar": "لا توجد منتجات تم إرجاعها حالياً",
+        "en": "No returned products currently"
+    },
+    "ui_returned_products_title": {
+        "ar": "المنتجات المرجعة:",
+        "en": "Returned Products:"
+    },
+    "ui_no_confirmed_products": {
+        "ar": "لا توجد منتجات مؤكدة بعد.",
+        "en": "No confirmed products yet."
+    },
+    "ui_label_delivery_agent": {
+        "ar": "المندوب:",
+        "en": "Delivery Agent:"
+    },
+    "ui_confirmed_by_seller_title": {
+        "ar": "المنتجات التي أكدها مقدم الخدمة:",
+        "en": "Products confirmed by service provider:"
+    },
+    "ui_no_products": {
+        "ar": "لا توجد منتجات.",
+        "en": "No products."
+    },
+    "ui_label_seller": {
+        "ar": "مقدم الخدمة:",
+        "en": "Service Provider:"
+    },
+    "ui_col_product": {
+        "ar": "المنتج",
+        "en": "Product"
+    },
+    "ui_col_unit_price": {
+        "ar": "سعر القطعة",
+        "en": "Unit Price"
+    },
+    "ui_col_app_price": {
+        "ar": "سعر التطبيق",
+        "en": "App Price"
+    },
+    "ui_col_quantity": {
+        "ar": "الكمية",
+        "en": "Quantity"
+    },
+    "ui_col_total": {
+        "ar": "إجمالي",
+        "en": "Total"
+    },
+    "ui_total_seller_account": {
+        "ar": "إجمالي حساب مقدم الخدمة (سعر البيع):",
+        "en": "Total Service Provider Account (Sales Price):"
+    },
+    "ui_currency_egp": {
+        "ar": "جنيه",
+        "en": "EGP"
+    },
+    "ui_total_app_price": {
+        "ar": "إجمالي سعر التطبيق:",
+        "en": "Total App Price:"
+    },
+    "ui_total_sales_price": {
+        "ar": "إجمالي (سعر البيع):",
+        "en": "Total (Sales Price):"
+    },
+    "ui_total_app_price_summary": {
+        "ar": "إجمالي (سعر التطبيق):",
+        "en": "Total (App Price):"
+    },
+    "ui_no_products_to_show": {
+        "ar": "لا توجد منتجات لعرضها.",
+        "en": "No products to show."
+    },
+    "ui_col_product_confirm": {
+        "ar": "المنتج (حدد للتأكيد)",
+        "en": "Product (Select to Confirm)"
+    },
+    "ui_col_notes": {
+        "ar": "ملاحظات",
+        "en": "Notes"
+    },
+    "ui_col_delivery_agent": {
+        "ar": "مندوب التوصيل",
+        "en": "Delivery Agent"
+    },
+    "ui_col_phone_number": {
+        "ar": "رقم الهاتف",
+        "en": "Phone Number"
+    },
+    "ui_no_rejected_products": {
+        "ar": "لا توجد منتجات مرفوضة.",
+        "en": "No rejected products."
+    },
+    "ui_rejected_products_title": {
+        "ar": "المنتجات المرفوضة:",
+        "en": "Rejected Products:"
+    },
+    "ui_shipping_instruction": {
+        "ar": "حدد المنتجات لتغيير حالتها إلى \"مشحون\":",
+        "en": "Select products to change status to \"shipped\":"
+    },
+    "ui_col_courier": {
+        "ar": "موصل",
+        "en": "Courier"
+    },
+    "ui_col_phone": {
+        "ar": "هاتف",
+        "en": "Phone"
+    },
+    "notifications_page_title": {
+        "ar": "الإشعارات",
+        "en": "Notifications"
+    },
+    "notifications_loading": {
+        "ar": "جاري تحميل الإشعارات...",
+        "en": "Loading notifications..."
+    },
+    "notifications_empty_title": {
+        "ar": "لا توجد إشعارات حتى الآن",
+        "en": "No notifications yet"
+    },
+    "notifications_empty_desc": {
+        "ar": "سيظهر هنا أي إشعارات تصل إليك",
+        "en": "Your notifications will appear here"
+    },
+    "notifications_error_title": {
+        "ar": "حدث خطأ أثناء تحميل الإشعارات",
+        "en": "Error loading notifications"
+    },
+    "notifications_error_desc": {
+        "ar": "فشل في تحميل الإشعارات. تأكد من اتصالك بالإنترنت.",
+        "en": "Failed to load notifications. Please check your internet connection."
+    },
+    "notifications_new_received": {
+        "ar": "تم استقبال إشعار جديد",
+        "en": "New notification received"
+    },
+    "notifications_delete_confirm_title": {
+        "ar": "هل أنت متأكد؟",
+        "en": "Are you sure?"
+    },
+    "notifications_delete_confirm_text": {
+        "ar": "سيتم حذف هذه الرسالة نهائياً من جهازك.",
+        "en": "This message will be permanently deleted from your device."
+    },
+    "notifications_delete_success": {
+        "ar": "تم حذف الرسالة بنجاح",
+        "en": "Message deleted successfully"
+    },
+    "notifications_delete_fail": {
+        "ar": "فشل حذف الرسالة",
+        "en": "Failed to delete message"
+    },
+    "notifications_mark_all_read_confirm": {
+        "ar": "هل تريد تحديد جميع الإشعارات كمقروءة؟",
+        "en": "Do you want to mark all notifications as read?"
+    },
+    "notifications_mark_all_read_success": {
+        "ar": "تم تحديد جميع الإشعارات كمقروءة",
+        "en": "All notifications marked as read"
+    },
+    "notifications_sys_permission_required": {
+        "ar": "إذن النظام مطلوب",
+        "en": "System permission required"
+    },
+    "notifications_sys_permission_text": {
+        "ar": "يرجى السماح بالإشعارات من نافذة النظام التي ستظهر الآن.",
+        "en": "Please allow notifications from the system popup that will appear."
+    },
+    "notifications_blocked_title": {
+        "ar": "الإشعارات محظورة",
+        "en": "Notifications blocked"
+    },
+    "notifications_blocked_text": {
+        "ar": "لقد قمت بحظر الإشعارات مسبقاً. يرجى فك الحظر، اذهب إلى الإعدادات ثم اختر التطبيق وفعل الإشعارات لتتمكن من استقبال التنبيهات.",
+        "en": "You have blocked notifications. Please unblock them in settings to receive alerts."
+    },
+    "notifications_enabling": {
+        "ar": "جاري تفعيل الإشعارات...",
+        "en": "Enabling notifications..."
+    },
+    "notifications_enabled_success": {
+        "ar": "تم التفعيل بنجاح",
+        "en": "Notifications enabled successfully"
+    },
+    "notifications_enabled_desc": {
+        "ar": "ستصلك الإشعارات فور صدورها",
+        "en": "You will receive notifications as they occur"
+    },
+    "notifications_disable_confirm_title": {
+        "ar": "هل تريد تعطيل الإشعارات؟",
+        "en": "Do you want to disable notifications?"
+    },
+    "notifications_disable_confirm_text": {
+        "ar": "لن تصلك تنبيهات بخصوص الرسائل الجديدة",
+        "en": "You will not receive alerts for new messages"
+    },
+    "notifications_disabled_success": {
+        "ar": "تم التعطيل",
+        "en": "Notifications disabled"
+    },
+    "notifications_disabled_desc": {
+        "ar": "تم إيقاف استقبال الإشعارات على هذا الجهاز",
+        "en": "Notification reception has been stopped on this device"
+    },
+    "notifications_init_error": {
+        "ar": "حدث خطأ في تهيئة صفحة الإشعارات",
+        "en": "Error initializing notifications page"
+    },
+    "notif_settings_title": {
+        "ar": "إعدادات نظام الإشعارات",
+        "en": "Notification System Settings"
+    },
+    "notif_settings_desc": {
+        "ar": "تحكم في من يستقبل الإشعارات لكل حدث في النظام.",
+        "en": "Control who receives notifications for each system event."
+    },
+    "notif_event_col": {
+        "ar": "الحدث",
+        "en": "Event"
+    },
+    "notif_buyer_col": {
+        "ar": "المشتري",
+        "en": "Buyer"
+    },
+    "notif_admin_col": {
+        "ar": "الإدارة",
+        "en": "Admin"
+    },
+    "notif_sellers_col": {
+        "ar": "مقدمو الخدمة",
+        "en": "Service Providers"
+    },
+    "notif_delivery_col": {
+        "ar": "التوصيل",
+        "en": "Delivery"
+    },
+    "notif_reset_btn": {
+        "ar": "استعادة الافتراضيات",
+        "en": "Restore Defaults"
+    },
+    "notif_uploading": {
+        "ar": "جاري رفع الإعدادات للسحابة... ☁️",
+        "en": "Uploading settings to cloud... ☁️"
+    },
+    "notif_save_success": {
+        "ar": "تم حفظ الإعدادات وتحديث السحابة بنجاح ✅",
+        "en": "Settings saved and cloud updated successfully ✅"
+    },
+    "notif_save_fail": {
+        "ar": "فشل حفظ الإعدادات في السحابة ❌",
+        "en": "Failed to save settings to cloud ❌"
+    },
+    "notif_reset_confirm": {
+        "ar": "هل أنت متأكد من استعادة الافتراضيات؟",
+        "en": "Are you sure you want to restore defaults?"
+    },
+    "notif_load_fail": {
+        "ar": "فشل تحميل الإعدادات ⚠️",
+        "en": "Failed to load settings ⚠️"
+    },
+    "notif_label_purchase": {
+        "ar": "شراء",
+        "en": "Purchase"
+    },
+    "notif_label_review": {
+        "ar": "مراجعة",
+        "en": "Review"
+    },
+    "notif_label_cancelled": {
+        "ar": "ملغي",
+        "en": "Cancelled"
+    },
+    "notif_label_confirmed": {
+        "ar": "تأكيد",
+        "en": "Confirmed"
+    },
+    "notif_label_rejected": {
+        "ar": "مرفوض",
+        "en": "Rejected"
+    },
+    "notif_label_shipped": {
+        "ar": "شحن",
+        "en": "Shipped"
+    },
+    "notif_label_delivered": {
+        "ar": "تسليم",
+        "en": "Delivered"
+    },
+    "notif_label_returned": {
+        "ar": "مرتجع",
+        "en": "Returned"
+    },
+    "notif_status_enabled": {
+        "ar": "مفعل",
+        "en": "Enabled"
+    },
+    "notif_status_disabled": {
+        "ar": "معطل",
+        "en": "Disabled"
+    },
+    "notifications_delete_tooltip": {
+        "ar": "حذف الإشعار",
+        "en": "Delete Notification"
+    },
+    "notifications_retry_btn": {
+        "ar": "إعادة المحاولة",
+        "en": "Retry"
+    },
+    "notifications_sender_user": {
+        "ar": "مستخدم",
+        "en": "User"
+    },
+    "notifications_sender_you": {
+        "ar": "أنت",
+        "en": "You"
+    },
+    "notifications_status_tooltip": {
+        "ar": "حالة القراءة",
+        "en": "Read Status"
+    },
+    "notifications_enable_title": {
+        "ar": "تفعيل الإشعارات",
+        "en": "Enable Notifications"
+    },
+    "notifications_enable_on_login": {
+        "ar": "هل ترغب في استقبال إشعارات بالعروض وتحديثات الطلبات؟",
+        "en": "Would you like to receive notifications regarding offers and order updates?"
+    },
+    "location_title": {
+        "ar": "تحديد الموقع",
+        "en": "Select Location"
+    },
+    "location_alert_title": {
+        "ar": "تنبيه",
+        "en": "Notice"
+    },
+    "location_select_on_map_first": {
+        "ar": "يرجى تحديد موقع على الخريطة أولاً",
+        "en": "Please select a location on the map first"
+    },
+    "location_saved_title": {
+        "ar": "تم الحفظ",
+        "en": "Saved"
+    },
+    "location_saved_success": {
+        "ar": "تم حفظ الموقع وإرساله بنجاح",
+        "en": "Location saved and sent successfully"
+    },
+    "location_reset_confirm_title": {
+        "ar": "إعادة التعيين؟",
+        "en": "Reset Location?"
+    },
+    "location_reset_confirm_text": {
+        "ar": "سيتم حذف الموقع المحفوظ وإعادة التعيين إلى الإعدادات الافتراضية",
+        "en": "The saved location will be deleted and reset to defaults"
+    },
+    "location_reset_yes": {
+        "ar": "نعم، احذف",
+        "en": "Yes, Delete"
+    },
+    "location_reset_cancel": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "location_reset_error": {
+        "ar": "تعذر إعادة التعيين",
+        "en": "Could not reset"
+    },
+    "location_no_data_title": {
+        "ar": "لا توجد بيانات",
+        "en": "No Data"
+    },
+    "location_no_location_saved": {
+        "ar": "لا يوجد موقع محفوظ لمشاركته",
+        "en": "No saved location to share"
+    },
+    "location_options_title": {
+        "ar": "خيارات الموقع",
+        "en": "Location Options"
+    },
+    "location_options_text": {
+        "ar": "ماذا تريد أن تفعل بالإحداثيات؟",
+        "en": "What do you want to do with the coordinates?"
+    },
+    "location_open_in_maps": {
+        "ar": "فتح في الخرائط",
+        "en": "Open in Maps"
+    },
+    "location_copy_coordinates": {
+        "ar": "نسخ الإحداثيات",
+        "en": "Copy Coordinates"
+    },
+    "location_copied_title": {
+        "ar": "تم النسخ",
+        "en": "Copied"
+    },
+    "location_copied_success": {
+        "ar": "تم نسخ الإحداثيات إلى الحافظة",
+        "en": "Coordinates copied to clipboard"
+    },
+    "location_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "location_unexpected_error": {
+        "ar": "حدث خطأ في معالجة طلبك",
+        "en": "An error occurred while processing your request"
+    },
+    "location_confirm_ok": {
+        "ar": "حسناً",
+        "en": "OK"
+    },
+    "location_loading_map": {
+        "ar": "جاري تحميل الخريطة...",
+        "en": "Loading map..."
+    },
+    "location_btn_save": {
+        "ar": "حفظ",
+        "en": "Save"
+    },
+    "location_btn_my_location": {
+        "ar": "موقعي",
+        "en": "My Location"
+    },
+    "location_btn_share": {
+        "ar": "مشاركة",
+        "en": "Share"
+    },
+    "location_btn_reset": {
+        "ar": "إعادة ضبط",
+        "en": "Reset"
+    },
+    "location_not_supported": {
+        "ar": "غير مدعوم",
+        "en": "Not Supported"
+    },
+    "location_browser_not_supported": {
+        "ar": "المتصفح الحالي لا يدعم خدمة تحديد الموقع",
+        "en": "This browser does not support geolocation services"
+    },
+    "location_busy_title": {
+        "ar": "جاري العمل",
+        "en": "In Progress"
+    },
+    "location_busy_text": {
+        "ar": "يتم الآن تحديد موقع آخر، الرجاء الانتظار",
+        "en": "Another location operation is in progress, please wait"
+    },
+    "location_finding_title": {
+        "ar": "جاري تحديد الموقع...",
+        "en": "Finding location..."
+    },
+    "location_allow_access": {
+        "ar": "يرجى السماح بالوصول إلى بيانات الموقع",
+        "en": "Please allow access to location data"
+    },
+    "location_enable_service_short": {
+        "ar": "يرجى تشغيل خدمة الموقع",
+        "en": "Please turn on location services"
+    },
+    "location_open_settings": {
+        "ar": "فتح الإعدادات",
+        "en": "Open Settings"
+    },
+    "location_error_gps_title": {
+        "ar": "خطأ في تحديد الموقع",
+        "en": "Location Discovery Error"
+    },
+    "location_error_denied": {
+        "ar": "تم رفض الإذن. الرجاء السماح بالوصول إلى الموقع في إعدادات المتصفح.",
+        "en": "Permission denied. Please allow location access in browser settings."
+    },
+    "location_error_unavailable": {
+        "ar": "الموقع غير متاح حالياً. تحقق من اتصال الإنترنت.",
+        "en": "Location is currently unavailable. Check your internet connection."
+    },
+    "location_error_timeout": {
+        "ar": "استغرقت العملية وقتاً طويلاً. حاول مرة أخرى.",
+        "en": "The operation timed out. Please try again."
+    },
+    "location_error_unknown": {
+        "ar": "حدث خطأ غير متوقع أثناء تحديد الموقع.",
+        "en": "An unexpected error occurred while finding location."
+    },
+    "location_init_error_title": {
+        "ar": "خطأ في التهيئة",
+        "en": "Initialization Error"
+    },
+    "location_init_error_text": {
+        "ar": "حدث خطأ أثناء تحميل التطبيق. يرجى تحديث الصفحة.",
+        "en": "An error occurred while loading the application. Please refresh the page."
+    },
+    "location_recenter_title": {
+        "ar": "توسيط الموقع المختار",
+        "en": "Recenter to Selected Location"
+    },
+    "location_load_error": {
+        "ar": "تعذر تحميل الخريطة. تحقق من اتصال الإنترنت.",
+        "en": "Could not load map. Check your internet connection."
+    },
+    "location_marker_title": {
+        "ar": "الموقع المحدد",
+        "en": "Selected Location"
+    },
+    "location_marker_alt": {
+        "ar": "موقع المستخدم على الخريطة",
+        "en": "User's location on the map"
+    },
+    "location_lat_label": {
+        "ar": "خط العرض",
+        "en": "Latitude"
+    },
+    "location_lng_label": {
+        "ar": "خط الطول",
+        "en": "Longitude"
+    },
+    "location_invalid_coords": {
+        "ar": "إحداثيات غير صالحة",
+        "en": "Invalid coordinates"
+    },
+    "location_edit_confirm_title": {
+        "ar": "تعديل الموقع؟",
+        "en": "Edit Location?"
+    },
+    "location_edit_confirm_text": {
+        "ar": "هل تريد استبدال الموقع المحفوظ بالموقع الجديد؟",
+        "en": "Do you want to replace the saved location with the new one?"
+    },
+    "location_edit_replace": {
+        "ar": "نعم، استبدل",
+        "en": "Yes, Replace"
+    },
+    "location_save_error": {
+        "ar": "تعذر حفظ الموقع",
+        "en": "Could not save location"
+    },
+    "location_critical_load_error": {
+        "ar": "لم يتم تحميل وحدات التطبيق الأساسية بشكل صحيح.",
+        "en": "Core application modules were not loaded correctly."
+    },
+    "location_critical_error_title": {
+        "ar": "خطأ في التحميل",
+        "en": "Load Error"
+    },
+    "location_critical_error_text": {
+        "ar": "حدث خطأ أثناء تشغيل التطبيق. يرجى المحاولة مرة أخرى.",
+        "en": "An error occurred while launching the application. Please try again."
+    },
+    "location_reload_btn": {
+        "ar": "تحديث الصفحة",
+        "en": "Refresh Page"
+    }
 }
