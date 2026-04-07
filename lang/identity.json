@@ -188,8 +188,8 @@
     "en": "Logistics and professional services provider; offer technical skills and delivery."
   },
   "role_desc_all": {
-    "ar": "أنت الآن شريك استراتيجي؛ حسابك يدعم البيع، التوصيل، تقديم الخدمات المهنية، والتسوق الشامل!",
-    "en": "Strategic partner! Your account supports selling, delivery, services, and shopping."
+    "ar": "أنت الآن شريك استراتيجي؛ حسابك يدعم البيع، تقديم الخدمات المهنية، والتسوق الشامل!",
+    "en": "Strategic partner! Your account supports selling, services, and shopping."
   },
   "role_desc_fallback": {
     "ar": "أنت الآن شريك في مجتمع سويس بازار؛ حسابك سيوفر لك كافة الأدوات اللازمة بناءً على تخصصاتك.",
@@ -224,8 +224,8 @@
     "en": "Do you have your own delivery service?"
   },
   "register_delivery_no": {
-    "ar": "لا (الاعتماد على مناديب التطبيق)",
-    "en": "No (Depend on app couriers)"
+    "ar": "لا (لا أقوم بالتوصيل بنفسي)",
+    "en": "No (I do not deliver orders myself)"
   },
   "register_delivery_yes": {
     "ar": "نعم (أقوم بالتوصيل بنفسي)",
@@ -508,8 +508,8 @@
     "en": "Do you have your own delivery service?"
   },
   "profile_delivery_no": {
-    "ar": "لا (الاعتماد على مناديب التطبيق)",
-    "en": "No (Depend on app couriers)"
+    "ar": "لا (لا أقوم بالتوصيل بنفسي)",
+    "en": "No (I do not deliver myself)"
   },
   "profile_delivery_yes": {
     "ar": "نعم (أقوم بالتوصيل بنفسي)",
@@ -740,35 +740,35 @@
     "en": "Enter social media links (optional)"
   },
   "rating_settings_title": {
-    "ar": "\u0625\u0639\u062f\u0627\u062f\u0627\u062a \u0627\u0644\u062a\u0642\u064a\u064a\u0645",
+    "ar": "إعدادات التقييم",
     "en": "Rating Settings"
   },
   "rating_enable_label": {
-    "ar": "\u062a\u0641\u0639\u064a\u0644 \u0627\u0633\u062a\u0642\u0628\u0627\u0644 \u0627\u0644\u062a\u0642\u064a\u064a\u0645\u0627\u062a",
+    "ar": "تفعيل استقبال التقييمات",
     "en": "Enable receiving ratings"
   },
   "rating_mode_stars_comments": {
-    "ar": "\u0646\u062c\u0648\u0645 + \u062a\u0639\u0644\u064a\u0642\u0627\u062a",
+    "ar": "نجوم + تعليقات",
     "en": "Stars + Comments"
   },
   "rating_mode_stars_only": {
-    "ar": "\u0646\u062c\u0648\u0645 \u0641\u0642\u0637",
+    "ar": "نجوم فقط",
     "en": "Stars Only"
   },
   "product_rating_settings_title": {
-    "ar": "\u0625\u0639\u062f\u0627\u062f\u0627\u062a \u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a",
+    "ar": "إعدادات تقييم المنتجات والخدمات",
     "en": "Product & Service Rating Settings"
   },
   "product_rating_enable_label": {
-    "ar": "\u062a\u0641\u0639\u064a\u0644 \u0627\u0633\u062a\u0642\u0628\u0627\u0644 \u062a\u0642\u064a\u064a\u0645\u0627\u062a \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a",
+    "ar": "تفعيل استقبال تقييمات المنتجات والخدمات",
     "en": "Enable receiving product & service ratings"
   },
   "product_rating_mode_stars_comments": {
-    "ar": "\u0646\u062c\u0648\u0645 + \u062a\u0639\u0644\u064a\u0642\u0627\u062a",
+    "ar": "نجوم + تعليقات",
     "en": "Stars + Comments"
   },
   "product_rating_mode_stars_only": {
-    "ar": "\u0646\u062c\u0648\u0645 \u0641\u0642\u0637",
+    "ar": "نجوم فقط",
     "en": "Stars Only"
   },
   "reg_hint_success_step": {
@@ -856,7 +856,7 @@
     "en": "Links"
   },
   "reg_step_name_14": {
-    "ar": "\u0627\u0644\u062a\u0642\u064a\u0645",
+    "ar": "التقيم",
     "en": "Rating"
   },
   "gen_mandatory": {

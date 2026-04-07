@@ -1,1 +1,1 @@
-var FCM_ADMIN_SDK_KEY={client_email:"PASTE_YOUR_SERVICE_ACCOUNT_EMAIL_HERE",private_key:"PASTE_YOUR_PRIVATE_KEY_HERE"};
+const runtimeFirebaseConfig="function"==typeof window.getBazaarFirebaseConfig?window.getBazaarFirebaseConfig():{};window.FCM_ADMIN_SDK_KEY=runtimeFirebaseConfig.adminServiceAccount||window.FCM_ADMIN_SDK_KEY;
