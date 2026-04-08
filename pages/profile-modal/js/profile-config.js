@@ -1,1 +1,1 @@
-var profileIsPasswordVerified=!1;
+var profileIsPasswordVerified=!1,profileIsSaving=!1,profileIsDeleting=!1;
