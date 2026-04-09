@@ -1,7 +1,7 @@
 {
   "version": "1.24.46",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-09T04:31:53.653Z",
+  "lastUpdated": "2026-04-09T05:11:01.865Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -192,11 +192,6 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/qr-code.png",
       "hash": "ee2bc7940be8a43a6c09fbd693a40fd2e8e6cf8ed66baa45fc1697527c070610",
       "size": 81741
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Abayas & Galabiyas.webp",
-      "hash": "0f7b06f39c91dc737bb4fc550bb3f48367434d61c624b8691a6f47485a69c566",
-      "size": 3076
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Animal Care & Training.webp",
@@ -900,8 +895,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/identity.json",
-      "hash": "367b661930ea5c30464e4e80cb3fcb3b59819b2eb04893929b5f39f0a7006acc",
-      "size": 30760
+      "hash": "e1694f14c65d3f6ec23f67f9a88ff864774b6b778c1af2f3ab310ed6244eaade",
+      "size": 30790
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/marketplace.json",
@@ -2365,13 +2360,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-elements.js",
-      "hash": "a8d3aa8c6556e1e5864d47b9167ee560a1b2cb6c71d27c238fec8faa05136502",
-      "size": 4160
+      "hash": "2e279fb5d251efb06a9abdcf2c383a5e8f691128046d43e50151902437ff383a",
+      "size": 4217
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-helpers.js",
-      "hash": "ae8da0d2ecd2866b2ba86ad853508c819e1400281c2d672220a550433c5e25c5",
-      "size": 9785
+      "hash": "1e5dbff278046417c729c9218e3444a4bff6e5c78aae5e62ce95529737a1db4d",
+      "size": 10099
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-init.js",
@@ -2535,13 +2530,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step5-location-address.html",
-      "hash": "7f1900e711a1217dcd00604183daf836efa38dffa812f0be1f66bc8fd5c6b724",
-      "size": 1975
+      "hash": "9ff74493e1e37b8975114d4b368a7b474e596553a063c40f86f17ec53fb1e7d8",
+      "size": 2077
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step5-map.html",
-      "hash": "81fa5672706438c7a7e01b75957b621d366f8805598f5803147a82d797322145",
-      "size": 664
+      "hash": "10785d110e2d4fe817b2184a78676d562d4d4993f8923216e31fef91ab90889d",
+      "size": 766
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step6-address.html",
@@ -2755,8 +2750,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/shared/list.json",
-      "hash": "4a10922c55e39f3548ca1b830d2db4e9e79857d16cd687592137529e9cae7cc1",
-      "size": 28577
+      "hash": "5df459f1f337e5b08a76e481200fec78cf5a8976f34ff99c4fed2eac6edc8352",
+      "size": 28743
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/style/cart-package-modal.css",
