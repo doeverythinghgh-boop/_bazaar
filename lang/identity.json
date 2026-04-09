@@ -99,6 +99,10 @@
         "ar": "الموقع على الخريطة",
         "en": "Location on Map"
     },
+    "register_label_location": {
+        "ar": "تحديد الموقع",
+        "en": "Select Location"
+    },
     "register_label_address": {
         "ar": "تفاصيل العنوان (مثل: الدور، علامة مميزة)",
         "en": "Address Details (e.g. Floor, Landmark)"
@@ -335,6 +339,10 @@
         "ar": "اسم النشاط التجاري",
         "en": "Business Name"
     },
+    "register_business_setup_note": {
+        "ar": "أضف الاسم والوصف المختصر والتفصيلي لنشاطك بشكل واضح وجذاب.",
+        "en": "Add your business name, short tagline, and detailed description clearly and attractively."
+    },
     "register_business_bio_label": {
         "ar": "وصف النشاط",
         "en": "Business Bio"
@@ -554,6 +562,10 @@
     "profile_update_success_title": {
         "ar": "تم التحديث بنجاح!",
         "en": "Update Successful!"
+    },
+    "profile_save_success": {
+        "ar": "تم حفظ التغييرات بنجاح",
+        "en": "Changes saved successfully"
     },
     "profile_update_fail": {
         "ar": "فشل التحديث.",

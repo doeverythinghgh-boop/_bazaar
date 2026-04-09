@@ -111,6 +111,10 @@
         "ar": "ابحث عن منتج أو خدمة...",
         "en": "Search products or services..."
     },
+    "search_modal_title": {
+        "ar": "البحث",
+        "en": "Search"
+    },
     "search_modal_sort_label": {
         "ar": "ترتيب حسب",
         "en": "Sort By"
@@ -234,6 +238,18 @@
     "search_modal_within_merchant": {
         "ar": "البحث داخل المتجر",
         "en": "Search inside store"
+    },
+    "search_modal_merchant_specialties": {
+        "ar": "تخصصات مقدم الخدمة",
+        "en": "Merchant Specialties"
+    },
+    "search_admin_save_success": {
+        "ar": "تم حفظ العناصر المميزة بنجاح",
+        "en": "Featured items saved successfully"
+    },
+    "search_admin_save_error": {
+        "ar": "تعذر حفظ العناصر المميزة",
+        "en": "Failed to save featured items"
     },
     "subcat_no_pending_search": {
         "ar": "لا توجد معايير بحث معلقة",

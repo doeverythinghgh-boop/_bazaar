@@ -213,6 +213,10 @@
         "ar": "فشل التحميل",
         "en": "Upload Failed"
     },
+    "gen_err_upload": {
+        "ar": "فشل رفع الملف",
+        "en": "Failed to upload file"
+    },
     "gen_err_required": {
         "ar": "هذا الحقل مطلوب",
         "en": "This field is required"
@@ -348,6 +352,10 @@
     "alert_title_info": {
         "ar": "تنبيه",
         "en": "Alert"
+    },
+    "alert_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
     },
     "alert_login_required": {
         "ar": "يمكنك الدخول كضيف او استكمال التسجيل. ",
