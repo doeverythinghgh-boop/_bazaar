@@ -100,31 +100,13 @@
           "image": "Underwear & Sleepwear.webp"
         },
         {
-          "id": 10,
-          "title": {
-            "ar": "أقمشة ومستلزمات خياطة",
-            "en": "Fabrics & Sewing Supplies"
-          },
-          "icon": "fas fa-ruler-combined",
-          "image": "Fabrics & Sewing Supplies.webp"
-        },
-        {
           "id": 11,
           "title": {
-            "ar": "ملابس مستعملة بحالة جيدة",
-            "en": "Good Condition Used Clothes"
+            "ar": "استوكات",
+            "en": "Stock Lots"
           },
           "icon": "fas fa-recycle",
           "image": "Good Condition Used Clothes.webp"
-        },
-        {
-          "id": 12,
-          "title": {
-            "ar": "أزياء وملابس ذات علامات تجارية",
-            "en": "Branded Fashion & Clothing"
-          },
-          "icon": "fas fa-star",
-          "image": "Branded Fashion & Clothing.webp"
         }
       ]
     },
@@ -140,8 +122,8 @@
         {
           "id": 1,
           "title": {
-            "ar": "الأطباق الرئيسية والوجبات الجاهزة",
-            "en": "Main Dishes & Ready Meals"
+            "ar": "اطباق و وجبات سريعة",
+            "en": "Quick Dishes & Fast Meals"
           },
           "icon": "fas fa-concierge-bell",
           "image": "Main Dishes & Ready Meals.webp"
@@ -176,7 +158,7 @@
         {
           "id": 13,
           "title": {
-            "ar": "كفيهات",
+            "ar": "كافيهات",
             "en": "Cafes"
           },
           "icon": "fas fa-mug-hot",
@@ -349,15 +331,6 @@
           "image": "Hygiene & Bath Supplies.webp"
         },
         {
-          "id": 7,
-          "title": {
-            "ar": "أجهزة ومعدات اللياقة البدنية",
-            "en": "Fitness Equipment"
-          },
-          "icon": "fas fa-dumbbell",
-          "image": "Fitness Equipment.webp"
-        },
-        {
           "id": 11,
           "title": {
             "ar": "أدوات العناية الشخصية الكهربائية",
@@ -369,8 +342,8 @@
         {
           "id": 12,
           "title": {
-            "ar": "خدمات تجميلية شخصية",
-            "en": "Personal Beauty Services"
+            "ar": "مراكز تجميل",
+            "en": "Beauty Centers"
           },
           "icon": "fas fa-cut",
           "image": "Personal Beauty Services.webp"
@@ -436,8 +409,8 @@
         {
           "id": 6,
           "title": {
-            "ar": "خدمات تأجير المركبات",
-            "en": "Vehicle Rental"
+            "ar": "خدمات تأجير السيارات",
+            "en": "Car Rental Services"
           },
           "icon": "fas fa-key",
           "image": "Vehicle Rental.webp"
@@ -520,10 +493,19 @@
         {
           "id": 4,
           "title": {
-            "ar": "المطبخ",
-            "en": "Kitchen"
+            "ar": "مستلزامات المطبخ",
+            "en": "Kitchen Supplies"
           },
           "icon": "fas fa-utensils",
+          "image": "Kitchen & Tableware.webp"
+        },
+        {
+          "id": 14,
+          "title": {
+            "ar": "اثاث المطبخ",
+            "en": "Kitchen Furniture"
+          },
+          "icon": "fas fa-chair",
           "image": "Kitchen & Tableware.webp"
         },
         {
@@ -778,15 +760,6 @@
           "image": "Leather & Wood Products.webp"
         },
         {
-          "id": 7,
-          "title": {
-            "ar": "خدمات التغليف والتنسيق",
-            "en": "Packaging & Styling"
-          },
-          "icon": "fas fa-gift",
-          "image": "Packaging & Styling.webp"
-        },
-        {
           "id": 8,
           "title": {
             "ar": "الحرف التراثية والتقليدية",
@@ -865,10 +838,19 @@
         {
           "id": 5,
           "title": {
-            "ar": "معلبات ومنظفات",
-            "en": "Canned Goods & Cleaners"
+            "ar": "معلبات غذائية",
+            "en": "Canned Food"
           },
           "icon": "fas fa-box-open",
+          "image": "Home Cleaning Tools.webp"
+        },
+        {
+          "id": 6,
+          "title": {
+            "ar": "منظفات منزلية",
+            "en": "Household Cleaners"
+          },
+          "icon": "fas fa-pump-soap",
           "image": "Home Cleaning Tools.webp"
         }
       ]
