@@ -387,6 +387,54 @@
         "ar": "تم النسخ:",
         "en": "Copied:"
     },
+    "admin_phone_integrity_title": {
+        "ar": "سلامة أرقام الهواتف",
+        "en": "Phone Integrity"
+    },
+    "admin_phone_integrity_subtitle": {
+        "ar": "فحص حي من قاعدة البيانات لتطابق الرقم الأساسي ووجود قائمة الأرقام.",
+        "en": "Live database audit for primary-phone alignment and phones availability."
+    },
+    "admin_phone_integrity_badge_issues": {
+        "ar": "{count} حساب بحاجة مراجعة",
+        "en": "{count} accounts need review"
+    },
+    "admin_phone_integrity_badge_clean": {
+        "ar": "كل الحسابات سليمة",
+        "en": "All accounts are healthy"
+    },
+    "admin_phone_integrity_stat_scanned": {
+        "ar": "المفحوص",
+        "en": "Scanned"
+    },
+    "admin_phone_integrity_stat_healthy": {
+        "ar": "السليم",
+        "en": "Healthy"
+    },
+    "admin_phone_integrity_stat_issues": {
+        "ar": "المشكلات",
+        "en": "Issues"
+    },
+    "admin_ui_phone_primary_suffix": {
+        "ar": "أساسي",
+        "en": "Primary"
+    },
+    "admin_ui_phone_whatsapp_suffix": {
+        "ar": "واتساب",
+        "en": "WA"
+    },
+    "admin_ui_phone_health_ok": {
+        "ar": "سليم",
+        "en": "Healthy"
+    },
+    "admin_ui_phone_health_review": {
+        "ar": "مراجعة",
+        "en": "Review"
+    },
+    "admin_ui_all_phones": {
+        "ar": "كل الأرقام",
+        "en": "All Phones"
+    },
     "admin_api_enter_valid_value": {
         "ar": "يرجى إدخال قيمة صحيحة",
         "en": "Please enter a valid value."
