@@ -1316,5 +1316,237 @@
     "profile_label_has_whatsapp": {
         "ar": "واتساب",
         "en": "WhatsApp"
+    },
+    "splash_slogan_1": {
+        "ar": "بازار السويس... فرصة واحدة تجمع كل الفرص",
+        "en": "Suez Bazaar... One chance for all opportunities"
+    },
+    "splash_slogan_2": {
+        "ar": "اكتشف آلاف المنتجات من موردين موثوقين في السويس",
+        "en": "Discover thousands of products from trusted suppliers in Suez"
+    },
+    "splash_slogan_3": {
+        "ar": "تابع طلبك حتى باب منزلك",
+        "en": "Track your order to your doorstep"
+    },
+    "splash_slogan_4": {
+        "ar": "عروض وخصومات حصرية من الموردين",
+        "en": "Exclusive offers and discounts from suppliers"
+    },
+    "splash_slogan_5": {
+        "ar": "جودة مضمونة وتقييم شفاف من المشترين",
+        "en": "Guaranteed quality and transparent ratings from buyers"
+    },
+    "splash_slogan_6": {
+        "ar": "من المورد للمستهلك مباشرة جودة وسعر أفضل",
+        "en": "Direct from supplier to consumer, better quality and price"
+    },
+    "cfg_list_products": {
+        "ar": "قائمة المنتجات",
+        "en": "Product List"
+    },
+    "cfg_featured_products": {
+        "ar": "منتجات مختارة",
+        "en": "Featured Products"
+    },
+    "cfg_search_products": {
+        "ar": "ابحث داخل المنتجات",
+        "en": "Search Products"
+    },
+    "cfg_no_products": {
+        "ar": "لا توجد منتجات حالياً",
+        "en": "No products currently available"
+    },
+    "cfg_no_featured_products": {
+        "ar": "لا توجد منتجات مميزة لعرضها",
+        "en": "No featured products to display"
+    },
+    "cfg_list_services": {
+        "ar": "قائمة الخدمات",
+        "en": "Service List"
+    },
+    "cfg_featured_services": {
+        "ar": "خدمات مختارة",
+        "en": "Featured Services"
+    },
+    "cfg_search_services": {
+        "ar": "ابحث داخل الخدمات",
+        "en": "Search Services"
+    },
+    "cfg_no_services": {
+        "ar": "لا توجد خدمات حالياً",
+        "en": "No services currently available"
+    },
+    "cfg_no_featured_services": {
+        "ar": "لا توجد خدمات مميزة لعرضها",
+        "en": "No featured services to display"
+    },
+    "cfg_delivery_services": {
+        "ar": "خدمات التوصيل",
+        "en": "Delivery Services"
+    },
+    "cfg_featured_delivery": {
+        "ar": "خدمات توصيل مختارة",
+        "en": "Featured Delivery Services"
+    },
+    "cfg_search_delivery": {
+        "ar": "ابحث داخل خدمات التوصيل",
+        "en": "Search Delivery Services"
+    },
+    "cfg_no_delivery": {
+        "ar": "لا توجد خدمات توصيل حالياً",
+        "en": "No delivery services available"
+    },
+    "cfg_activity_delivery": {
+        "ar": "خدمة توصيل",
+        "en": "Delivery Activity"
+    },
+    "role_buyer": {
+        "ar": "مشتري",
+        "en": "Buyer"
+    },
+    "role_service_provider": {
+        "ar": "مقدم خدمة",
+        "en": "Service Provider"
+    },
+    "role_delivery_agent": {
+        "ar": "مندوب توصيل",
+        "en": "Delivery Agent"
+    },
+    "role_admin": {
+        "ar": "أدمن",
+        "en": "Admin"
+    },
+    "role_super_admin": {
+        "ar": "سوبر أدمن",
+        "en": "Super Admin"
+    },
+    "order_photo_incomplete": {
+        "ar": "بيانات الطلب غير مكتملة (المفاتيح ناقصة). لا يمكن عرض الصور.",
+        "en": "Incomplete order data. Cannot display images."
+    },
+    "order_photo_none": {
+        "ar": "لا توجد صور محفوظة لهذا الطلب.",
+        "en": "No images saved for this order."
+    },
+    "order_photo_error": {
+        "ar": "حدث خطأ أثناء تحميل الصور.",
+        "en": "An error occurred while loading images."
+    },
+    "splash_main_slogan": {
+        "ar": "السويس بين إيديك",
+        "en": "Suez in Your Hands"
+    },
+    "gen_loading": {
+        "ar": "جاري التحميل...",
+        "en": "Loading..."
+    },
+    "cfg_edu_services": {
+        "ar": "الخدمات التعليمية",
+        "en": "Educational Services"
+    },
+    "cfg_edu_featured": {
+        "ar": "دروس وخدمات مختارة",
+        "en": "Selected Lessons & Services"
+    },
+    "cfg_pers_care_services": {
+        "ar": "خدمات العناية الشخصية",
+        "en": "Personal Care Services"
+    },
+    "cfg_creative_services": {
+        "ar": "الخدمات الإبداعية",
+        "en": "Creative Services"
+    },
+    "cfg_creative_featured": {
+        "ar": "أعمال وخدمات مختارة",
+        "en": "Selected Works & Services"
+    },
+    "cfg_pet_care_services": {
+        "ar": "خدمات رعاية الحيوانات",
+        "en": "Pet Care Services"
+    },
+    "cfg_fashion_collection": {
+        "ar": "التشكيلة",
+        "en": "Collection"
+    },
+    "cfg_fashion_featured": {
+        "ar": "مختارات الأزياء",
+        "en": "Fashion Picks"
+    },
+    "cfg_fashion_search": {
+        "ar": "ابحث داخل التشكيلة",
+        "en": "Search Collection"
+    },
+    "cfg_fashion_badge": {
+        "ar": "نشاط أزياء",
+        "en": "Fashion Activity"
+    },
+    "cfg_food_list": {
+        "ar": "قائمة الأصناف",
+        "en": "Menu Items"
+    },
+    "cfg_food_featured": {
+        "ar": "أصناف مختارة",
+        "en": "Selected Items"
+    },
+    "cfg_food_search": {
+        "ar": "ابحث داخل الأصناف",
+        "en": "Search Menu"
+    },
+    "cfg_food_badge": {
+        "ar": "نشاط أغذية",
+        "en": "Food Activity"
+    },
+    "cfg_tech_products": {
+        "ar": "المنتجات التقنية",
+        "en": "Tech Products"
+    },
+    "cfg_tech_featured": {
+        "ar": "مختارات تقنية",
+        "en": "Tech Picks"
+    },
+    "cfg_tech_search": {
+        "ar": "ابحث داخل المنتجات التقنية",
+        "en": "Search Tech"
+    },
+    "cfg_tech_badge": {
+        "ar": "نشاط تقني",
+        "en": "Tech Activity"
+    },
+    "cfg_service_list": {
+        "ar": "قائمة الخدمات",
+        "en": "Services List"
+    },
+    "cfg_service_badge": {
+        "ar": "نشاط خدمي",
+        "en": "Service Activity"
+    },
+    "cfg_med_services": {
+        "ar": "الخدمات الطبية",
+        "en": "Medical Services"
+    },
+    "cfg_med_search": {
+        "ar": "ابحث داخل الخدمات الطبية",
+        "en": "Search Medical"
+    },
+    "cfg_med_badge": {
+        "ar": "نشاط طبي",
+        "en": "Medical Activity"
+    },
+    "order_photo_title": {
+        "ar": "صور الطلب الخاص",
+        "en": "Special Order Photos"
+    },
+    "order_photo_searching": {
+        "ar": "جاري البحث عن الصور وتحميلها...",
+        "en": "Searching for and loading images..."
+    },
+    "dev_reset_confirm": {
+        "ar": "سيتم مسح Service Workers والكاش والتوكنات. هل أنت متأكد؟",
+        "en": "Service Workers, cache, and tokens will be cleared. Are you sure?"
+    },
+    "dev_reset_fcm_error": {
+        "ar": "دالة resetFCM غير معرفة حالياً.",
+        "en": "resetFCM function is currently undefined."
     }
 }

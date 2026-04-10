@@ -1,7 +1,7 @@
 {
-  "version": "1.24.56",
+  "version": "1.24.57",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-10T08:09:00.745Z",
+  "lastUpdated": "2026-04-10T08:21:48.294Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -665,8 +665,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/index.html",
-      "hash": "3575d17c67c9c52ad0258814e522b72cd1a10f8e2e3124b11bb1272852522c4b",
-      "size": 1111
+      "hash": "bcb84a7469722871564f87c2c97b7e46db90d2af72f8e6edb220d6922984264a",
+      "size": 1166
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/android-runtime-config.json",
@@ -750,8 +750,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/config.js",
-      "hash": "cb0e08dd3fc8bbf63235ef40740e353e26fe78f457e0f190ddfab9013cedf30b",
-      "size": 18730
+      "hash": "24cc03af90fa0d5234b0944ab329018c0a4b6b24d3bfc363415fc2f21d25b559",
+      "size": 18237
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/connectProduct.js",
@@ -775,13 +775,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/dev-console.js",
-      "hash": "05b6c618cb4af191b1c38ae775eae816074f2933dc9f522b403be0ea5ecf9c3a",
-      "size": 8155
+      "hash": "1786efca2f88b70686e6963367fd17ce385f9a700b7a25cdcb685d4196522f4f",
+      "size": 8081
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/forms.js",
-      "hash": "c18d4d11de2ebcc294d4059489f3d4683a368e0998bcbe206d55543cbee65082",
-      "size": 7203
+      "hash": "798e91c571d655eaf62ac91c8148e29f6e9437255a6618f9ecb5e496a0100985",
+      "size": 6773
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/globalVariable.js",
@@ -885,8 +885,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/splash.js",
-      "hash": "9dea6ae27cc9e9ae0fd519c0ec0bda6ce55b1a0ca6062bf45ab92478ff6aaf70",
-      "size": 4744
+      "hash": "9724dff53ba55a111dd938d6b41f3c0fa8c06c735a55515041eaf6aa00d6fb5a",
+      "size": 4245
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/tools-loader.js",
@@ -925,8 +925,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/core.json",
-      "hash": "f94d9fb585b15ea2fac07c70c72f050b0129a1b2aec3edebf09dbb4df604c18e",
-      "size": 52226
+      "hash": "6d8fde83ae37185e12d2cfc60d61c736fd35d09ebae47e517a2f6dde200743e6",
+      "size": 59938
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/identity.json",
@@ -1995,8 +1995,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/orderPhoto.html",
-      "hash": "3d9c2863e7d42b0047a97f07d748c043cb3f0196f71e3cf15eb0fd8006911aa7",
-      "size": 6496
+      "hash": "91b28a40b335bc8a630e64a952ae6b6ad6496e689f5f4eca6ae25ee364987a45",
+      "size": 6477
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/privacy/privacy.html",
@@ -2459,11 +2459,6 @@
       "size": 3794
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/test-scanner.js",
-      "hash": "0f191dfcacf975522aa2122f33a12df3bd794c74e6b6bd39442538a2a4d7388f",
-      "size": 114
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/register-animations.css",
       "hash": "11132dda8c4253877c3e59f6fccc426bbd48fa52d8a148669cd3690430ddb246",
       "size": 2347
@@ -2920,7 +2915,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "28e073a63e39e320c35e7661df25246385243a8e4ad58b28f5a5e901c1b3cd44",
+      "hash": "04ce98bc749a9b37896ae3ae30fc9219502818bd718f148bfad704d9a13370ab",
       "size": 21
     }
   ]
