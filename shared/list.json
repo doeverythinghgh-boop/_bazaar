@@ -391,7 +391,7 @@
         {
           "id": 5,
           "title": {
-            "ar": "خدمات صيانه المركبات",
+            "ar": "خدمات صيانه السيارات",
             "en": "Vehicle Maintenance"
           },
           "icon": "fas fa-wrench",
@@ -427,7 +427,7 @@
         {
           "id": 4,
           "title": {
-            "ar": "خدمات إكسسوارات وكماليات المركبات",
+            "ar": "خدمات إكسسوارات وكماليات السيارات",
             "en": "Vehicle Accessories"
           },
           "icon": "fas fa-car-battery",
@@ -509,7 +509,7 @@
           "image": "Carpets, Curtains & Rugs.webp"
         },
         {
-          "id": 6,
+          "id": 16,
           "title": {
             "ar": "الإضاءة ومستلزمات الإنارة",
             "en": "Lighting & Lamps"
@@ -552,6 +552,24 @@
           },
           "icon": "fas fa-blender",
           "image": "Home Electrical Appliances.webp"
+        },
+        {
+          "id": 6,
+          "title": {
+            "ar": "التصميم والديكور الداخلي",
+            "en": "Interior Design & Decoration"
+          },
+          "icon": "fas fa-drafting-compass",
+          "image": "Interior Design & Decoration.webp"
+        },
+        {
+          "id": 8,
+          "title": {
+            "ar": "مستلزمات الحمام",
+            "en": "Bathroom & Toilet Supplies"
+          },
+          "icon": "fas fa-toilet",
+          "image": "Bathroom & Toilet Supplies.webp"
         }
       ]
     },
@@ -608,24 +626,6 @@
           },
           "icon": "fas fa-building",
           "image": "Offices & Workspaces.webp"
-        },
-        {
-          "id": 6,
-          "title": {
-            "ar": "التصميم والديكور الداخلي",
-            "en": "Interior Design & Decoration"
-          },
-          "icon": "fas fa-drafting-compass",
-          "image": "Interior Design & Decoration.webp"
-        },
-        {
-          "id": 8,
-          "title": {
-            "ar": "مستلزمات الحمام والمرحاض",
-            "en": "Bathroom & Toilet Supplies"
-          },
-          "icon": "fas fa-toilet",
-          "image": "Bathroom & Toilet Supplies.webp"
         }
       ]
     },
