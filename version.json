@@ -1,7 +1,7 @@
 {
-  "version": "1.24.78",
+  "version": "1.24.79",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-10T12:34:05.924Z",
+  "lastUpdated": "2026-04-10T12:40:58.367Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -254,6 +254,11 @@
       "size": 6036
     },
     {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Cafes.webp",
+      "hash": "10bf65db78810e644a7d0b035811f096faee5ee6d97d2474cdea6caa8bf94274",
+      "size": 6320
+    },
+    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Candles & Home Fragrances.webp",
       "hash": "b4251f317356ba6a7749eccb1702ff5f3dab38e2ac9ab01a6aa0f47efd735974",
       "size": 8116
@@ -310,8 +315,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Drinks & Natural Juices.webp",
-      "hash": "015aa5df0206e694a48795d0957bacf303789f4ee521704520fa2bf399f60e38",
-      "size": 7768
+      "hash": "65db67016fd1fbab3addc9897e33a420f14b9efedb878fe68487ee732a33822b",
+      "size": 4876
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Educational Centers.webp",
@@ -447,6 +452,16 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Kitchen & Tableware.webp",
       "hash": "cfc07fed7f1f2615c01d5b1b400c4e844155b03f70f2d2e459fa9dd7cb1995d5",
       "size": 4642
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Kitchen Furniture.webp",
+      "hash": "ca05a5d84b49eeb59207dd07ba7e0a6ab042190f717d08cd3bf24c339ad99486",
+      "size": 4502
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Kitchen Supplies.webp",
+      "hash": "d5811705897b6f874a3bd1e3798b500e005a98dff7814fbe2c65a945acf6af92",
+      "size": 4638
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Lab Tests & Checks.webp",
@@ -2795,8 +2810,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/shared/list.json",
-      "hash": "700df149ec44699e0a9335dfce3aceaf19ac07f42ab3371fb3b6fc0b763224f9",
-      "size": 28629
+      "hash": "d27e357bd9471e9df696159b3c267ab2f56fe3ccfdd80f7005e627486ddb937d",
+      "size": 28606
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/style/cart-package-modal.css",
@@ -2925,7 +2940,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "3388629c5a17f0e756f9ba682cef437b48feb919ff3c016bc39d3a9f732356d6",
+      "hash": "1435b1cab36f3708b49945a083f1d7386b87bea8e97294ac945525f9963d7df2",
       "size": 21
     }
   ]
