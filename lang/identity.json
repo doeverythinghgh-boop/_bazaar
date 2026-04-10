@@ -123,6 +123,14 @@
         "ar": "رقم الهاتف هذا مسجل مسبقاً، يرجى استخدام رقم آخر أو تسجيل الدخول.",
         "en": "This phone number is already registered. Please use another or login."
     },
+    "register_phone_available": {
+        "ar": "رقم الهاتف متاح للاستخدام",
+        "en": "Phone number is available"
+    },
+    "register_phone_verifying": {
+        "ar": "جاري التحقق من الرقم...",
+        "en": "Checking phone number..."
+    },
     "register_error_password_too_short": {
         "ar": "كلمة المرور قصيرة جداً (أقل شيء 4)",
         "en": "Password too short (min 4)"

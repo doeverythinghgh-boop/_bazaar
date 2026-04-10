@@ -1,7 +1,7 @@
 {
-  "version": "1.24.59",
+  "version": "1.24.60",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-10T08:55:11.938Z",
+  "lastUpdated": "2026-04-10T09:02:30.419Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -930,8 +930,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/identity.json",
-      "hash": "12164eb1d7cdb92c5bd9b69968660958b8e8b60226781e1ca0c42e2c7b1b3f85",
-      "size": 30881
+      "hash": "e6f4398b045ee2ac8830f9f519c87a77c603e610b68b6bce3799974521bb21db",
+      "size": 31177
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/marketplace.json",
@@ -2400,8 +2400,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-helpers.js",
-      "hash": "3289a8143e69db21db49a2c652f0b2c3635123c4d3feb0b83192cd2803afeb01",
-      "size": 13218
+      "hash": "ecacc45c347d37ef0ba6e1753db3ba608b415926a52a82570d968d7cf524f068",
+      "size": 13081
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-init.js",
@@ -2410,8 +2410,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-listeners.js",
-      "hash": "f5b633ecb90f0630618ff6e8ca22c1b1ad27bcfd9ff3ba53df8183daa2d92c53",
-      "size": 7458
+      "hash": "06ed5f8a05b77fd0ece609b06758efd52673086a9e1492626209b59de21a62f2",
+      "size": 7863
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-loader.js",
@@ -2915,7 +2915,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "3eb1c5826123202f0bfee5b933b13b1ebb457d43a2acafb7a2731ff775444372",
+      "hash": "6d4b7d7eb922ede30f11cb1d9af4a6694bb52b13c40a282526b87c2ae2299cfb",
       "size": 21
     }
   ]
