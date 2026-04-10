@@ -1,7 +1,7 @@
 {
-  "version": "1.24.52",
+  "version": "1.24.53",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-10T07:56:41.528Z",
+  "lastUpdated": "2026-04-10T08:00:13.829Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -925,8 +925,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/core.json",
-      "hash": "3b8cb1e751963c36589be3f332d2fbd7c29743fd77383ac67fe6afefb74b8b7f",
-      "size": 52030
+      "hash": "2648a73fb10e540b2bf01bc2b7a001d9041f0adb469d88f2fe3a750b51d6809a",
+      "size": 52253
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/identity.json",
@@ -2325,8 +2325,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-helpers.js",
-      "hash": "65693bddb50f2757441f75005a9941da472ce8777d3f214673979de516e94f3e",
-      "size": 4276
+      "hash": "53b504d70f646d22305625d4fe31c09b65b9f1d911fc1af1c0a8b75f61e23f2f",
+      "size": 4323
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-image-handlers.js",
@@ -2915,7 +2915,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "073f34049780048e5ac5444ee2c2d2cc57f01b58f7cb3ac205ed348f89bc7043",
+      "hash": "30793153fbb875faa68298ce555765bb456ffa1bd834991f591a1e0f359efbb1",
       "size": 21
     }
   ]
