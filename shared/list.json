@@ -827,22 +827,22 @@
           "image": "Cosmetics.webp"
         },
         {
-          "id": 5,
-          "title": {
-            "ar": "معلبات غذائية",
-            "en": "Canned Food"
-          },
-          "icon": "fas fa-box-open",
-          "image": "Home Cleaning Tools.webp"
-        },
-        {
           "id": 6,
           "title": {
             "ar": "منظفات منزلية",
             "en": "Household Cleaners"
           },
+          "icon": "fas fa-box-open",
+          "image": "Household Cleaners.webp"
+        },
+        {
+          "id": 5,
+          "title": {
+            "ar": "معلبات غذائية",
+            "en": "Canned Food"
+          },
           "icon": "fas fa-pump-soap",
-          "image": "Home Cleaning Tools.webp"
+          "image": "Canned Food.webp"
         }
       ]
     },

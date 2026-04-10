@@ -1,7 +1,7 @@
 {
-  "version": "1.24.62",
+  "version": "1.24.63",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-10T09:04:42.747Z",
+  "lastUpdated": "2026-04-10T09:46:10.813Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -259,6 +259,11 @@
       "size": 8116
     },
     {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Canned Food.webp",
+      "hash": "192de232ddb8ca3cb8b4cbbb34fe2cfda432034672e9a2a41f57ab66199403eb",
+      "size": 4950
+    },
+    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Car Services.webp",
       "hash": "6b57bb971f3f56ce33e86574a5136ff1772d57298457a86bcd560e6a86face58",
       "size": 7282
@@ -422,6 +427,11 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Home Nursing.webp",
       "hash": "c489f2b2f58cdcef68e7c9fec88e3b44e11c093a14de22011b9dc09a5b40d7db",
       "size": 1374
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Household Cleaners.webp",
+      "hash": "63f5dc04b4719637ac03407b32620e12335a5370bf96e757fa76ab619a67e896",
+      "size": 5162
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Hygiene & Bath Supplies.webp",
@@ -1815,23 +1825,23 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category-init.js",
-      "hash": "689fbaac565fa6bd6aa36b098d4c96f5c71fdb15f7a642a5e225f02dbf6e05fe",
-      "size": 2749
+      "hash": "7235a38cd4ac892db7bd9a8697ed0fb7d4454f59b16dbbc29b5947e79a7fecd5",
+      "size": 2905
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category-ui.js",
-      "hash": "466cc86c136a10a063b92138ab68130ee29cac1b4d24518609d7f11da3b30424",
-      "size": 8085
+      "hash": "45272ae24390b52dc69a8c26a70d05ed7c5fe78291de2ce88a5dacb9bd8b0e1f",
+      "size": 8262
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category.css",
-      "hash": "244cd1bc2dcaf68ee2386c3220be5a0298e3a9946cc573903ac94827c0560fe5",
-      "size": 7547
+      "hash": "5ce929a430c10d7a9d333954e5eccfc2234aa0b05a9da06350c6c12214c4e5d0",
+      "size": 7472
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category.html",
-      "hash": "d8b09cbf92fff41438d552172f761a0176734e84ca5074c472599d23f6523682",
-      "size": 3216
+      "hash": "e7221f8f3e8dd3754f9092b8b2df237334abdba6445f4fa5462482caa27d4c4b",
+      "size": 2856
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-actions.css",
@@ -2785,8 +2795,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/shared/list.json",
-      "hash": "3d39914ae46fb9165647e440ba5911b23e389add69b33800fd651ae524b79f51",
-      "size": 28638
+      "hash": "700df149ec44699e0a9335dfce3aceaf19ac07f42ab3371fb3b6fc0b763224f9",
+      "size": 28629
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/style/cart-package-modal.css",
@@ -2915,7 +2925,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "969bbd691737f265bfa5ffe93fa7baa40c9d57b6931eac4d28aab8cc857acba2",
+      "hash": "53221d6c709988f8ea95c8f06f2d416853cd6d6fdf8c65070caa776cd73a181f",
       "size": 21
     }
   ]
