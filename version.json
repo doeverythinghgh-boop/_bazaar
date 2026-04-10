@@ -1,7 +1,7 @@
 {
-  "version": "1.24.70",
+  "version": "1.24.71",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-10T10:56:29.092Z",
+  "lastUpdated": "2026-04-10T11:02:09.572Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -2410,8 +2410,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-helpers.js",
-      "hash": "ecacc45c347d37ef0ba6e1753db3ba608b415926a52a82570d968d7cf524f068",
-      "size": 13081
+      "hash": "bf32383cc205f7c531a3ce42b0a3d753af85d87fbec811980c88532cac2b7b94",
+      "size": 13248
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-init.js",
@@ -2450,8 +2450,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-validation.js",
-      "hash": "7c1424daca514ab12ba6df189115860a86e2eb83b8b3497b0866751d2194ab8c",
-      "size": 4640
+      "hash": "ac80d6148fd77c09121a403d56e0fa4aa78e4eef723af1ee8be692e558cd4321",
+      "size": 4893
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-wizard-core.js",
@@ -2925,7 +2925,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "7b57b6652a4d5ee0a5de76bc518527fa38b6f344a5a8fa115fa6e841bc4723b4",
+      "hash": "94febbf008124aafc7e348b9e7bee349b14d2c4014cd285ab3ff399f7d762363",
       "size": 21
     }
   ]
