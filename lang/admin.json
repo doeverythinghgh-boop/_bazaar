@@ -950,5 +950,37 @@
     "image_analyzer_rules_footer": {
         "ar": "* يقوم المحلل بتصفية هذه الأنماط تلقائيًا لحماية صور المستخدمين والمنتجات حتى إذا تغيرت بنية قاعدة البيانات.",
         "en": "* The analyzer automatically filters these patterns to protect user and product images even if the database structure changes."
+    },
+    "image_analyzer_tab_issues": {
+        "ar": "المشكلات المكتشفة",
+        "en": "Detected Issues"
+    },
+    "image_analyzer_summary_visible": {
+        "ar": "النتائج المعروضة",
+        "en": "Displayed Results"
+    },
+    "image_analyzer_summary_search": {
+        "ar": "البحث الحالي",
+        "en": "Current Search"
+    },
+    "image_analyzer_summary_all_items": {
+        "ar": "كل العناصر",
+        "en": "All Items"
+    },
+    "image_analyzer_summary_last_scan": {
+        "ar": "آخر مسح",
+        "en": "Last Scan"
+    },
+    "image_analyzer_not_executed": {
+        "ar": "لم ينفذ بعد",
+        "en": "Not executed yet"
+    },
+    "image_analyzer_summary_duration": {
+        "ar": "مدة المسح",
+        "en": "Scan Duration"
+    },
+    "image_analyzer_copy_log": {
+        "ar": "نسخ السجل",
+        "en": "Copy Log"
     }
 }
