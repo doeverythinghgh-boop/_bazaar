@@ -21,6 +21,11 @@
                 // 5. Apply Global translations
                 if (window.applyAppTranslations) window.applyAppTranslations();
 
+                // 6. Initialize Page Data (Wait for translations first)
+                if (typeof initSubProductsPage === 'function') {
+                    await initSubProductsPage();
+                }
+
             } catch (error) {
                 console.error('[SubProducts] Page initialization failed:', error);
             }
