@@ -1,7 +1,7 @@
 {
-  "version": "1.24.61",
+  "version": "1.24.62",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-10T09:03:11.416Z",
+  "lastUpdated": "2026-04-10T09:04:42.747Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -2410,8 +2410,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-listeners.js",
-      "hash": "06ed5f8a05b77fd0ece609b06758efd52673086a9e1492626209b59de21a62f2",
-      "size": 7863
+      "hash": "bd91632c52486e84e24c7e1f76445ca10b665da8915204b4e9737b25986dca30",
+      "size": 7723
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-loader.js",
@@ -2915,7 +2915,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "4294265579ca11915fef3d17965fb1d1b3acd5f01d7717aea9cfe3c92c4200eb",
+      "hash": "969bbd691737f265bfa5ffe93fa7baa40c9d57b6931eac4d28aab8cc857acba2",
       "size": 21
     }
   ]
