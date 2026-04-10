@@ -1,7 +1,7 @@
 {
-  "version": "1.24.73",
+  "version": "1.24.74",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-10T11:12:17.507Z",
+  "lastUpdated": "2026-04-10T11:18:54.977Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -2410,8 +2410,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-helpers.js",
-      "hash": "0615f8247859451be821f6c628d1bab60c994f440feccd154fe6e5ae4913b92e",
-      "size": 13147
+      "hash": "0d5d858d1bf29ff3219f05fbed5e941694fb68d8dfb07de2bf3a5ebd6b521727",
+      "size": 14153
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-init.js",
@@ -2420,8 +2420,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-listeners.js",
-      "hash": "bd91632c52486e84e24c7e1f76445ca10b665da8915204b4e9737b25986dca30",
-      "size": 7723
+      "hash": "245e39e717ec7911e5163f8f70245a668309bc2bf28bc53fdb3df5e33c4a014e",
+      "size": 7565
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-loader.js",
@@ -2440,8 +2440,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-step-validation.js",
-      "hash": "c1f6e81e24f25f94da5a3e7c85186c2d3e00c35886111b0aac94845aae81a4de",
-      "size": 5412
+      "hash": "81955c7919e7691ed5c095b1eb363501550b233ffd8b95950eb6cb31b056cbbc",
+      "size": 5517
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-submit-handler.js",
@@ -2925,7 +2925,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "182523790edffdb2dbd41c026e3aedaf44c30d5aa2584c2a88da2c68f1a27edc",
+      "hash": "4e7580256ba06eb85611db599c37fb6faceb1d2952c703bf11da6c8055a7a3b6",
       "size": 21
     }
   ]
