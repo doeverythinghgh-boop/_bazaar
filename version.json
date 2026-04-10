@@ -1,7 +1,7 @@
 {
-  "version": "1.24.58",
+  "version": "1.24.59",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-10T08:22:29.295Z",
+  "lastUpdated": "2026-04-10T08:55:11.938Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -2400,8 +2400,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-helpers.js",
-      "hash": "359931d983e0ed02c9194ad1d07eeb3dc2ebfda2cacd9ac98933a53da3ad2ae5",
-      "size": 12671
+      "hash": "3289a8143e69db21db49a2c652f0b2c3635123c4d3feb0b83192cd2803afeb01",
+      "size": 13218
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-init.js",
@@ -2410,8 +2410,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-listeners.js",
-      "hash": "bbe602fd5ce22d75b490b7073de9504e6156cd87f70e03d45dc2a31761bf9539",
-      "size": 7126
+      "hash": "f5b633ecb90f0630618ff6e8ca22c1b1ad27bcfd9ff3ba53df8183daa2d92c53",
+      "size": 7458
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-loader.js",
@@ -2915,7 +2915,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "77115b13b88e553363ed8ac4b125281628c009c01b948868a00d4db915ddfdd2",
+      "hash": "3eb1c5826123202f0bfee5b933b13b1ebb457d43a2acafb7a2731ff775444372",
       "size": 21
     }
   ]
