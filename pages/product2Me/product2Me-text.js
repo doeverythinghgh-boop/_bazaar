@@ -1,0 +1,1 @@
+function p2mText(key,fallback){const value="function"==typeof window.langu?window.langu(key):null;return value&&value!==key?value:fallback}function p2mStaticText(key,fallback){return p2mText(key,fallback)}
