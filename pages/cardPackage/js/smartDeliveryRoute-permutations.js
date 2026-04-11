@@ -1,0 +1,1 @@
+function generatePermutations(array){return 0===array.length?[[]]:array.flatMap((item,index)=>{const remaining=void 0;return generatePermutations(array.filter((_,i)=>i!==index)).map(permutation=>[item,...permutation])})}
