@@ -1,0 +1,1 @@
+const DEG_TO_KM_APPROX=111;function createEmptyDeliveryResult(deliveryConfig=null){return{totalCost:0,totalDistanceKm:0,optimalRoute:[],costBreakdown:null,deliveryConfig:deliveryConfig}}function createDeliveryErrorResult(error){return{totalCost:0,totalDistanceKm:0,optimalRoute:[],error:error.message}}

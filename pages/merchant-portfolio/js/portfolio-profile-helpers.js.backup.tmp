@@ -1,0 +1,410 @@
+/**
+ * @file pages/merchant-portfolio/js/portfolio-profile-helpers.js
+ * @description Profile rendering helpers for merchant portfolio.
+ */
+
+window.portfolioResolveProfileSettings = function (user) {
+    let settings = {};
+    try {
+        settings = typeof user.settings === 'string' ? JSON.parse(user.settings || '{}') : (user.settings || {});
+    } catch (e) {
+        settings = {};
+    }
+    return settings;
+};
+
+window.portfolioResolveSpecialtyProfileData = function (user) {
+    const specialtyViewModel = typeof window.resolvePortfolioSpecialtyViewModel === 'function'
+        ? (user?.portfolio_view_model || window.resolvePortfolioSpecialtyViewModel(user))
+        : null;
+    const specialtyProfile = specialtyViewModel?.profile || user?.specialty_profile || (
+        typeof window.buildBusinessSpecialtyProfile === 'function'
+            ? window.buildBusinessSpecialtyProfile(user)
+            : null
+    );
+    const specialtyDisplayMeta = typeof window.resolveBusinessSpecialtyDisplayMeta === 'function'
+        ? window.resolveBusinessSpecialtyDisplayMeta(specialtyProfile || user)
+        : null;
+    const specialtyAccent = typeof window.resolveBusinessSpecialtyAccent === 'function'
+        ? window.resolveBusinessSpecialtyAccent(specialtyProfile || user)
+        : null;
+
+    user.portfolio_view_model = specialtyViewModel || null;
+    user.specialty_profile = specialtyProfile || null;
+
+    return { specialtyViewModel, specialtyProfile, specialtyDisplayMeta, specialtyAccent };
+};
+
+window.portfolioRenderProfileImages = function (user) {
+    const images = (typeof parseProfileImages === 'function')
+        ? parseProfileImages(user.user_image)
+        : { avatar: user.user_image, cover: null };
+
+    const avatarImg = document.getElementById('portfolio-avatar');
+    const avatarFallback = document.getElementById('portfolio-avatar-fallback');
+    const showAvatarFallback = () => {
+        if (avatarImg) avatarImg.style.display = 'none';
+        if (avatarFallback) avatarFallback.style.display = 'flex';
+    };
+    const showAvatarImage = (src) => {
+        if (avatarImg) {
+            avatarImg.style.display = 'block';
+            avatarImg.src = src;
+        }
+        if (avatarFallback) avatarFallback.style.display = 'none';
+    };
+
+    if (user.user_key === 'guest_user') {
+        showAvatarFallback();
+    } else if (images.avatar) {
+        const imgUrl = typeof getPublicR2FileUrl === 'function'
+            ? getPublicR2FileUrl(images.avatar)
+            : `${((typeof window.getBazaarInfrastructureConfig === 'function'
+                ? window.getBazaarInfrastructureConfig().r2PublicUrl
+                : null) || '')}/${images.avatar}`;
+        showAvatarImage(imgUrl);
+    } else {
+        showAvatarFallback();
+    }
+
+    if (typeof portfolioInitializeSlider === 'function') {
+        portfolioInitializeSlider(images.covers);
+    }
+};
+
+window.portfolioRenderProfileHeaderActions = function (user) {
+    document.getElementById('portfolio-name').textContent = user.business_name || user.username;
+
+    const existingBtn = document.getElementById('btn-share-mini');
+    if (existingBtn) existingBtn.remove();
+    const existingWrapper = document.querySelector('.username-share-wrapper');
+    if (existingWrapper) existingWrapper.remove();
+    const existingContainer = document.getElementById('portfolio-share-main-container');
+    if (existingContainer) existingContainer.remove();
+
+    const shareContainer = document.createElement('div');
+    shareContainer.id = 'portfolio-share-main-container';
+    shareContainer.className = 'share-button-container';
+    shareContainer.style.gap = '20px';
+
+    const applyModernBtnStyle = (btn) => {
+        btn.style.display = 'flex';
+        btn.style.setProperty('display', 'flex', 'important');
+        btn.style.setProperty('width', 'auto', 'important');
+        btn.style.setProperty('height', 'auto', 'important');
+        btn.style.setProperty('border-radius', '12px', 'important');
+        btn.style.setProperty('padding', '8px 20px', 'important');
+        btn.style.setProperty('flex-direction', 'column', 'important');
+        btn.style.setProperty('gap', '0', 'important');
+        btn.style.setProperty('background', 'transparent', 'important');
+        btn.style.setProperty('border', 'none', 'important');
+        btn.style.setProperty('box-shadow', 'none', 'important');
+        btn.style.setProperty('backdrop-filter', 'none', 'important');
+        btn.style.setProperty('color', 'inherit', 'important');
+
+        if (user.user_key === 'guest_user' && btn.id !== 'btn-settings-mini') {
+            btn.style.setProperty('opacity', '0.5', 'important');
+            btn.style.setProperty('pointer-events', 'none', 'important');
+            btn.style.setProperty('cursor', 'default', 'important');
+        }
+    };
+
+    const shareBtn = document.createElement('a');
+    shareBtn.id = 'btn-share-mini';
+    shareBtn.href = '#';
+    shareBtn.className = 'glass-btn contact-btn';
+    const shareLabelText = typeof window.langu === 'function' ? window.langu('share') : 'مشاركة';
+    shareBtn.innerHTML = `<i class="fas fa-share-alt"></i> <span data-lkey="share" style="font-size: 0.5rem; margin-top: 5px; display: block;">${shareLabelText}</span>`;
+    applyModernBtnStyle(shareBtn);
+    shareBtn.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (typeof portfolioHandleShare === 'function') {
+            portfolioHandleShare(user);
+        }
+    };
+    shareContainer.appendChild(shareBtn);
+
+    if (user.location && user.location.trim() !== '') {
+        const coords = user.location.replace(/\s/g, '');
+        const mapUrl = `https://www.google.com/maps/search/?api=1&query=${coords}`;
+
+        const mapBtn = document.createElement('a');
+        mapBtn.id = 'btn-map-mini';
+        mapBtn.href = mapUrl;
+        mapBtn.onclick = (e) => e.stopPropagation();
+        mapBtn.className = 'glass-btn contact-btn';
+        const mapLabelText = typeof window.langu === 'function' ? window.langu('location_on_map') : 'الموقع';
+        mapBtn.innerHTML = `<i class="fas fa-map-location-dot"></i> <span data-lkey="location_on_map" style="font-size: 0.5rem; margin-top: 5px; display: block;">${mapLabelText}</span>`;
+        applyModernBtnStyle(mapBtn);
+        shareContainer.appendChild(mapBtn);
+    }
+
+    const settingsBtn = document.createElement('a');
+    settingsBtn.id = 'btn-settings-mini';
+    settingsBtn.href = '#';
+    settingsBtn.className = 'glass-btn contact-btn';
+    settingsBtn.setAttribute('data-lkey-title', 'settings');
+    settingsBtn.innerHTML = `
+        <i class="fas fa-cog"></i>
+        <span data-lkey="settings" style="font-size: 0.5rem; margin-top: 5px; display: block;">${typeof window.langu === 'function' ? window.langu('settings') : 'الإعدادات'}</span>
+    `;
+    applyModernBtnStyle(settingsBtn);
+    shareContainer.appendChild(settingsBtn);
+
+    const nameContainer = document.getElementById('portfolio-name-container');
+    nameContainer.style.display = 'flex';
+    nameContainer.style.flexDirection = 'column';
+    nameContainer.style.alignItems = 'center';
+    nameContainer.appendChild(shareContainer);
+
+    if (typeof window.dashboardSetupSettings === 'function') {
+        window.dashboardSetupSettings('btn-settings-mini');
+    }
+
+    shareContainer.querySelectorAll('[data-lkey]').forEach((el) => {
+        if (typeof window.langu === 'function') {
+            el.textContent = window.langu(el.getAttribute('data-lkey'));
+        }
+    });
+};
+
+window.portfolioRenderProfileInfo = function (user) {
+    const bioEl = document.getElementById('portfolio-bio');
+    bioEl.textContent = user.business_bio || '';
+
+    const existingInfo = document.querySelector('.profile-info-list');
+    if (existingInfo) existingInfo.remove();
+
+    const infoContainer = document.createElement('div');
+    infoContainer.id = 'portfolio-info-list';
+    infoContainer.className = 'profile-info-list';
+
+    let hasInfo = false;
+    if (user.address && user.address.trim() !== '') {
+        hasInfo = true;
+        infoContainer.innerHTML += `
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>${user.address}</span>
+            </div>
+        `;
+    }
+
+    if (hasInfo) {
+        bioEl.after(infoContainer);
+    }
+};
+
+window.portfolioRenderProfileRatings = function (user, options) {
+    const { settings, specialtyViewModel } = options;
+    const ratingEnabled = settings.ratingEnabled !== false;
+    const ratingMode = settings.ratingMode || 'stars_comments';
+    window.portfolioRatingConfig = { ratingEnabled, ratingMode };
+
+    const ratingSummaryEl = document.getElementById('portfolio-rating-summary');
+    const rateBtnEl = document.getElementById('btn-rate-merchant');
+
+    if (!ratingEnabled || specialtyViewModel?.showRatingsSection === false) {
+        if (ratingSummaryEl) ratingSummaryEl.style.display = 'none';
+        if (rateBtnEl) rateBtnEl.style.display = 'none';
+        return;
+    }
+
+    if (ratingSummaryEl) ratingSummaryEl.style.display = 'flex';
+    if (rateBtnEl) rateBtnEl.style.display = 'inline-flex';
+
+    let ratings = [];
+    try {
+        if (Array.isArray(user.ratings)) {
+            ratings = user.ratings;
+        } else if (typeof user.ratings === 'string' && user.ratings.trim() !== '') {
+            ratings = JSON.parse(user.ratings);
+        } else if (user.ratings && typeof user.ratings === 'object') {
+            ratings = user.ratings;
+        }
+    } catch (e) {
+        try {
+            const normalized = String(user.ratings || '')
+                .replace(/\\'/g, "'")
+                .replace(/'/g, '"');
+            ratings = JSON.parse(normalized);
+        } catch (e2) {
+            console.error('Error parsing ratings', e2);
+            ratings = [];
+        }
+    }
+    if (!Array.isArray(ratings)) ratings = [];
+
+    let average = 0;
+    if (ratings.length > 0) {
+        const sum = ratings.reduce((a, b) => a + (b.rating || 0), 0);
+        average = (sum / ratings.length).toFixed(1);
+    }
+
+    const starsContainer = document.getElementById('portfolio-stars');
+    if (typeof portfolioGenerateStars === 'function') {
+        starsContainer.innerHTML = portfolioGenerateStars(average);
+    }
+
+    const countEl = document.getElementById('portfolio-rating-count');
+    const ratingsCountLabel = typeof window.langu === 'function' ? window.langu('ratings_count') || '({count} تقييم)' : '({count} تقييم)';
+    countEl.textContent = ratingsCountLabel.replace('{count}', ratings.length);
+
+    if (ratingEnabled && ratings.length > 0) {
+        countEl.style.cursor = 'pointer';
+        countEl.style.textDecoration = 'underline';
+        countEl.onclick = () => {
+            if (typeof portfolioShowReviews === 'function') portfolioShowReviews(ratings);
+        };
+        starsContainer.style.cursor = 'pointer';
+        starsContainer.onclick = () => {
+            if (typeof portfolioShowReviews === 'function') portfolioShowReviews(ratings);
+        };
+    } else {
+        countEl.style.cursor = 'default';
+        countEl.style.textDecoration = 'none';
+        countEl.onclick = null;
+        starsContainer.style.cursor = 'default';
+        starsContainer.onclick = null;
+    }
+};
+
+window.portfolioRenderProfileTags = function (user, options) {
+    const { specialtyViewModel, specialtyProfile, specialtyDisplayMeta, specialtyAccent } = options;
+    const tagsContainer = document.getElementById('portfolio-tags');
+    tagsContainer.innerHTML = '';
+
+    if (specialtyDisplayMeta?.modeBadgeLabel) {
+        const modeTag = document.createElement('span');
+        modeTag.id = 'portfolio-tag-mode';
+        modeTag.className = 'tag tag-mode';
+        if (specialtyAccent?.color) modeTag.style.color = specialtyAccent.color;
+        if (specialtyAccent?.soft) modeTag.style.background = specialtyAccent.soft;
+        if (specialtyAccent?.border) modeTag.style.border = `1px solid ${specialtyAccent.border}`;
+        modeTag.innerHTML = `<i class="${specialtyDisplayMeta.primaryCategoryIcon || 'fas fa-store'}"></i> ${specialtyDisplayMeta.modeBadgeLabel}`;
+        tagsContainer.appendChild(modeTag);
+    }
+
+    if (user.username) {
+        const usernameTag = document.createElement('span');
+        usernameTag.className = 'tag tag-identity';
+        usernameTag.innerHTML = `<i class="fas fa-at"></i> ${user.username}`;
+        tagsContainer.appendChild(usernameTag);
+    }
+
+    if (specialtyProfile?.canDeliver || user.isDelivered == 1) {
+        const deliveryTag = document.createElement('span');
+        deliveryTag.id = 'portfolio-tag-delivery';
+        deliveryTag.className = 'tag tag-delivery';
+        const deliveryText = typeof window.langu === 'function' ? window.langu('provides_delivery') : 'يوفر توصيل';
+        deliveryTag.innerHTML = `<i class="fas fa-truck"></i> ${deliveryText}`;
+        tagsContainer.appendChild(deliveryTag);
+    }
+
+    if (Array.isArray(specialtyProfile?.titles)) {
+        specialtyProfile.titles.forEach((specialty, index) => {
+            const label = String(specialty?.label || '').trim();
+            if (!label) return;
+            const specialtyTag = document.createElement('span');
+            specialtyTag.id = `portfolio-tag-specialty-${index + 1}`;
+            specialtyTag.className = 'tag tag-specialty';
+            specialtyTag.innerHTML = `<i class="fas fa-certificate"></i> ${label}`;
+            tagsContainer.appendChild(specialtyTag);
+        });
+    }
+
+    if (specialtyViewModel?.showProfileTags === false) {
+        tagsContainer.style.display = 'none';
+    } else if (tagsContainer.children.length > 0) {
+        tagsContainer.style.display = 'flex';
+    }
+};
+
+window.portfolioRenderProfileContacts = function (user, options) {
+    const { specialtyViewModel } = options;
+    const waBtn = document.getElementById('btn-whatsapp');
+    const fbBtn = document.getElementById('btn-facebook');
+    const igBtn = document.getElementById('btn-instagram');
+    const tkBtn = document.getElementById('btn-tiktok');
+    const tgBtn = document.getElementById('btn-telegram');
+    const xBtn = document.getElementById('btn-x');
+    const webBtn = document.getElementById('btn-website');
+    const callBtn = document.getElementById('btn-call');
+
+    let socialLinks = {};
+    if (user.links) {
+        try {
+            socialLinks = typeof user.links === 'string' ? JSON.parse(user.links) : user.links;
+        } catch (e) {
+            console.error('Error parsing social links:', e);
+        }
+    }
+
+    const isValidValue = (value) => {
+        if (!value || typeof value !== 'string') return false;
+        const trimmed = value.trim();
+        if (trimmed === '' || trimmed.toLowerCase() === 'null' || trimmed.toLowerCase() === 'undefined') {
+            return false;
+        }
+        return true;
+    };
+
+    [waBtn, fbBtn, igBtn, tkBtn, tgBtn, xBtn, webBtn, callBtn].forEach((btn) => {
+        if (btn) btn.style.setProperty('display', 'none', 'important');
+    });
+
+    let hasContact = false;
+    const phones = Array.isArray(user.phones) ? user.phones : [];
+    const waValue = user.whatsapp_phone || user.business_whatsapp || user.phone;
+    if (isValidValue(waValue)) {
+        let waClean = waValue.replace(/\D/g, '');
+        if (waClean.startsWith('01') && waClean.length === 11) {
+            waClean = '2' + waClean;
+        }
+        waBtn.href = `https://wa.me/${waClean}`;
+        waBtn.onclick = (e) => e.stopPropagation();
+        waBtn.style.setProperty('display', 'flex', 'important');
+        hasContact = true;
+    }
+
+    const socialMappings = [
+        { key: 'facebook', btn: fbBtn },
+        { key: 'instagram', btn: igBtn },
+        { key: 'tiktok', btn: tkBtn },
+        { key: 'telegram', btn: tgBtn },
+        { key: 'x', btn: xBtn },
+        { key: 'website', btn: webBtn }
+    ];
+
+    socialMappings.forEach(({ key, btn }) => {
+        if (isValidValue(socialLinks[key])) {
+            btn.href = socialLinks[key].startsWith('http') ? socialLinks[key] : `https://${socialLinks[key]}`;
+            btn.onclick = (e) => e.stopPropagation();
+            btn.style.setProperty('display', 'flex', 'important');
+            hasContact = true;
+        }
+    });
+
+    if (phones.length || isValidValue(user.phone)) {
+        const primaryCallPhone = user.primary_phone || user.phone;
+        const telClean = String(primaryCallPhone || '').replace(/[^\d+]/g, '');
+        callBtn.href = `tel:${telClean}`;
+        callBtn.onclick = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (typeof window.portfolioOpenPhoneChooser === 'function') {
+                window.portfolioOpenPhoneChooser(user);
+            } else if (telClean) {
+                window.location.href = `tel:${telClean}`;
+            }
+        };
+        callBtn.style.setProperty('display', 'flex', 'important');
+        hasContact = true;
+    }
+
+    const wrapper = document.getElementById('portfolio-connect-wrapper');
+    if (wrapper) {
+        wrapper.style.display = (hasContact && specialtyViewModel?.showContactSection !== false) ? 'block' : 'none';
+    }
+};
