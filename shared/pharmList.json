@@ -1,0 +1,363 @@
+[
+  {
+    "id": 1,
+    "title": "الأدوية والعلاج",
+    "name_en": "Medicines & Treatments",
+    "icon": "fas fa-pills",
+    "sub": [
+      { "id": 101, "title": "مسكنات الألم وخافض الحرارة", "name_en": "Pain Relievers & Antipyretics" },
+      { "id": 102, "title": "أدوية البرد والسعال", "name_en": "Cold & Cough Medicines" },
+      { "id": 103, "title": "أدوية الجهاز الهضمي", "name_en": "Gastrointestinal Medicines" },
+      { "id": 104, "title": "أدوية الحساسية", "name_en": "Allergy Medicines" },
+      { "id": 105, "title": "المضادات الحيوية (بوصفة)", "name_en": "Antibiotics (Prescription)" },
+      { "id": 106, "title": "قطرات العين والأنف والأذن", "name_en": "Eye, Nose & Ear Drops" },
+      { "id": 107, "title": "كريمات ومراهم علاجية", "name_en": "Therapeutic Creams & Ointments" },
+      { "id": 108, "title": "أدوية الضغط والقلب", "name_en": "Blood Pressure & Heart Medicines" },
+      { "id": 109, "title": "أدوية السكري والغدد", "name_en": "Diabetes & Glandular Medicines" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "العناية بالبشرة",
+    "name_en": "Skin Care",
+    "icon": "fas fa-spa",
+    "sub": [
+      { "id": 201, "title": "غسول ومنظفات", "name_en": "Cleansers & Washes" },
+      { "id": 202, "title": "مرطبات ولوشن", "name_en": "Moisturizers & Lotions" },
+      { "id": 203, "title": "واقي الشمس", "name_en": "Sunscreen" },
+      { "id": 204, "title": "تفتيح وتوحيد اللون", "name_en": "Lightening & Skin Tone Evening" },
+      { "id": 205, "title": "مضاد التجاعيد", "name_en": "Anti-Wrinkle" },
+      { "id": 206, "title": "علاج الحبوب", "name_en": "Acne Treatment" },
+      { "id": 207, "title": "ماسكات وسكراب", "name_en": "Masks & Scrubs" },
+      { "id": 208, "title": "العناية بالشفاه والعين", "name_en": "Lip & Eye Care" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "العناية بالشعر",
+    "name_en": "Hair Care",
+    "icon": "fas fa-pump-soap",
+    "sub": [
+      { "id": 301, "title": "شامبو وبلسم", "name_en": "Shampoo & Conditioner" },
+      { "id": 302, "title": "تساقط الشعر", "name_en": "Hair Loss" },
+      { "id": 303, "title": "زيوت وسيروم", "name_en": "Oils & Serums" },
+      { "id": 304, "title": "ماسكات وحمامات كريم", "name_en": "Masks & Cream Baths" },
+      { "id": 305, "title": "قشرة الشعر", "name_en": "Dandruff" },
+      { "id": 306, "title": "صبغات الشعر", "name_en": "Hair Dyes" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "العناية الشخصية",
+    "name_en": "Personal Care",
+    "icon": "fas fa-bath",
+    "sub": [
+      { "id": 401, "title": "العناية بالفم والأسنان", "name_en": "Oral & Dental Care" },
+      { "id": 402, "title": "مزيلات العرق", "name_en": "Deodorants" },
+      { "id": 403, "title": "شاور جل وصابون", "name_en": "Shower Gel & Soap" },
+      { "id": 404, "title": "العناية النسائية", "name_en": "Feminine Care" },
+      { "id": 405, "title": "العناية الرجالية", "name_en": "Men's Care" },
+      { "id": 406, "title": "إزالة الشعر", "name_en": "Hair Removal" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "الأم والطفل",
+    "name_en": "Mother & Baby",
+    "icon": "fas fa-baby",
+    "sub": [
+      { "id": 501, "title": "حفاضات", "name_en": "Diapers" },
+      { "id": 502, "title": "حليب أطفال", "name_en": "Baby Formula" },
+      { "id": 503, "title": "أغذية أطفال", "name_en": "Baby Food" },
+      { "id": 504, "title": "مستلزمات الرضاعة", "name_en": "Nursing Supplies" },
+      { "id": 505, "title": "عناية ببشرة الطفل", "name_en": "Baby Skin Care" },
+      { "id": 506, "title": "طفح الحفاض", "name_en": "Diaper Rash" },
+      { "id": 507, "title": "مستلزمات السلامة للأطفال", "name_en": "Baby Safety Supplies" },
+      { "id": 508, "title": "ميزان حرارة أطفال رقمي", "name_en": "Digital Baby Thermometer" },
+      { "id": 509, "title": "شفاطات أنف أطفال", "name_en": "Baby Nasal Aspirators" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "الفيتامينات والمكملات",
+    "name_en": "Vitamins & Supplements",
+    "icon": "fas fa-capsules",
+    "sub": [
+      { "id": 601, "title": "فيتامينات عامة", "name_en": "General Vitamins" },
+      { "id": 602, "title": "المناعة", "name_en": "Immunity" },
+      { "id": 603, "title": "العظام والمفاصل", "name_en": "Bones & Joints" },
+      { "id": 604, "title": "الحديد", "name_en": "Iron" },
+      { "id": 605, "title": "أوميجا 3", "name_en": "Omega 3" },
+      { "id": 606, "title": "مكملات الأطفال", "name_en": "Children's Supplements" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "الأجهزة والمستلزمات الطبية",
+    "name_en": "Medical Devices & Supplies",
+    "icon": "fas fa-stethoscope",
+    "sub": [
+      { "id": 701, "title": "أجهزة الضغط", "name_en": "Blood Pressure Monitors" },
+      { "id": 702, "title": "أجهزة السكر", "name_en": "Blood Glucose Monitors" },
+      { "id": 703, "title": "ترمومترات", "name_en": "Thermometers" },
+      { "id": 704, "title": "أجهزة تنفس", "name_en": "Nebulizers & Respiratory" },
+      { "id": 705, "title": "إسعافات أولية", "name_en": "First Aid" },
+      { "id": 706, "title": "دعامات وأربطة", "name_en": "Braces & Bandages" }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "الصحة المتكاملة والوقاية",
+    "name_en": "Integrated Health & Prevention",
+    "icon": "fas fa-shield-alt",
+    "sub": [
+      { "id": 801, "title": "كمامات ومعقمات", "name_en": "Masks & Sanitizers" },
+      { "id": 802, "title": "مطهرات", "name_en": "Antiseptics" },
+      { "id": 803, "title": "منتجات الدايت والسناكس الصحي", "name_en": "Diet Products & Healthy Snacks" },
+      { "id": 804, "title": "مكملات غذائية رياضية (بروتين)", "name_en": "Sports Supplements (Protein)" },
+      { "id": 805, "title": "الرعاية المنزلية للجروح", "name_en": "Home Wound Care" },
+      { "id": 806, "title": "مستلزمات ما بعد العمليات", "name_en": "Post-Operative Supplies" },
+      { "id": 807, "title": "منتجات الإسعافات الأولية المنزلية", "name_en": "Home First Aid Products" },
+      { "id": 808, "title": "أجهزة قياس الحرارة والرطوبة", "name_en": "Temperature & Humidity Monitors" },
+      { "id": 809, "title": "منتجات مكافحة الحشرات (طبيعية)", "name_en": "Insect Repellents (Natural)" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "التجميل والمكياج",
+    "name_en": "Beauty & Makeup",
+    "icon": "fas fa-magic",
+    "sub": [
+      { "id": 901, "title": "مكياج الوجه", "name_en": "Face Makeup" },
+      { "id": 902, "title": "مكياج العيون", "name_en": "Eye Makeup" },
+      { "id": 903, "title": "مكياج الشفاه", "name_en": "Lip Makeup" },
+      { "id": 904, "title": "العناية بالأظافر", "name_en": "Nail Care" },
+      { "id": 905, "title": "فرش وأدوات", "name_en": "Brushes & Tools" }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "الصحة الجنسية والزواجية",
+    "name_en": "Sexual & Marital Health",
+    "icon": "fas fa-venus-mars",
+    "sub": [
+      { "id": 1001, "title": "واقيات ذكرية وأنثوية", "name_en": "Condoms & Protection" },
+      { "id": 1002, "title": "مواد تشحيم (جل خاص)", "name_en": "Lubricants" },
+      { "id": 1003, "title": "منتجات تأخير القذف", "name_en": "Delay Products" },
+      { "id": 1004, "title": "اختبارات حمل وتبويض", "name_en": "Pregnancy & Ovulation Tests" },
+      { "id": 1005, "title": "منتجات تعزيز الرغبة", "name_en": "Desire Enhancers" },
+      { "id": 1006, "title": "مكملات خصوبة", "name_en": "Fertility Supplements" }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "العناية بالقدم واليدين",
+    "name_en": "Foot & Hand Care",
+    "icon": "fas fa-hands",
+    "sub": [
+      { "id": 1101, "title": "كريمات تشقق القدمين", "name_en": "Cracked Heel Creams" },
+      { "id": 1102, "title": "لاصقات مسامير القدم", "name_en": "Corn Plasters" },
+      { "id": 1103, "title": "علاج فطريات الأظافر والقدم", "name_en": "Nail & Foot Fungus Treatment" },
+      { "id": 1104, "title": "بخاخات تطهير القدمين", "name_en": "Foot Sanitizing Sprays" },
+      { "id": 1105, "title": "أدوات العناية بالأظافر", "name_en": "Nail Care Tools" },
+      { "id": 1106, "title": "طلاءات أظافر علاجية", "name_en": "Therapeutic Nail Polishes" },
+      { "id": 1107, "title": "جوارب ضاغطة للقدمين", "name_en": "Compression Socks" },
+      { "id": 1108, "title": "منتجات علاج تشقق اليدين الشديد", "name_en": "Severe Hand Crack Treatments" }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "الاسترخاء والنوم والعناية بالعقل",
+    "name_en": "Relaxation, Sleep & Mind Care",
+    "icon": "fas fa-bed",
+    "sub": [
+      { "id": 1201, "title": "مكملات طبيعية للنوم (ميلاتونين)", "name_en": "Natural Sleep Supplements (Melatonin)" },
+      { "id": 1202, "title": "زيوت عطرية مهدئة", "name_en": "Soothing Essential Oils" },
+      { "id": 1203, "title": "أجهزة الضوضاء البيضاء", "name_en": "White Noise Machines" },
+      { "id": 1204, "title": "أقنعة العين", "name_en": "Eye Masks" },
+      { "id": 1205, "title": "منتجات تخفيف التوتر", "name_en": "Stress Relief Products" },
+      { "id": 1206, "title": "بخاخات وسائد مهدئة", "name_en": "Soothing Pillow Sprays" }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "كبار السن والرعاية المنزلية",
+    "name_en": "Elderly & Home Care",
+    "icon": "fas fa-wheelchair",
+    "sub": [
+      { "id": 1301, "title": "فيتامينات كبار السن", "name_en": "Senior Vitamins" },
+      { "id": 1302, "title": "مستلزمات الحركة (عكازات، مشايات)", "name_en": "Mobility Aids (Crutches, Walkers)" },
+      { "id": 1303, "title": "العناية اليومية لكبار السن", "name_en": "Daily Elderly Care" },
+      { "id": 1304, "title": "مستلزمات سلس البول", "name_en": "Incontinence Supplies" },
+      { "id": 1305, "title": "أجهزة قياس الضغط والسكر", "name_en": "BP & Glucose Monitors" },
+      { "id": 1306, "title": "أجراس تنبيه ومساعدات طوارئ", "name_en": "Alert Bells & Emergency Aids" },
+      { "id": 1307, "title": "مقاعد حمام وكراسي متحركة صغيرة", "name_en": "Bath Seats & Small Wheelchairs" }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "الرياضة واللياقة البدنية",
+    "name_en": "Sports & Fitness",
+    "icon": "fas fa-dumbbell",
+    "sub": [
+      { "id": 1401, "title": "مشروبات طاقة ورياضية", "name_en": "Energy & Sports Drinks" },
+      { "id": 1402, "title": "بروتين بار ووجبات خفيفة", "name_en": "Protein Bars & Snacks" },
+      { "id": 1403, "title": "مكملات قبل وبعد التمرين", "name_en": "Pre & Post Workout Supplements" },
+      { "id": 1404, "title": "أحماض أمينية (BCAA)", "name_en": "Amino Acids (BCAA)" },
+      { "id": 1405, "title": "كريمات ومراهم للعضلات", "name_en": "Muscle Creams & Ointments" },
+      { "id": 1406, "title": "أشرطة لاصقة رياضية (كينيسيو)", "name_en": "Kinesio Tapes" },
+      { "id": 1407, "title": "زجاجات مياه رياضية", "name_en": "Sports Water Bottles" }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "البيطري والعناية بالحيوانات الأليفة",
+    "name_en": "Veterinary & Pet Care",
+    "icon": "fas fa-paw",
+    "sub": [
+      { "id": 1501, "title": "فيتامينات ومكملات للحيوانات", "name_en": "Pet Vitamins & Supplements" },
+      { "id": 1502, "title": "شامبو ومنظفات للحيوانات", "name_en": "Pet Shampoos & Cleansers" },
+      { "id": 1503, "title": "مضادات براغيث وقراد", "name_en": "Flea & Tick Treatments" },
+      { "id": 1504, "title": "مستلزمات تنظيف الأسنان", "name_en": "Dental Care Supplies" },
+      { "id": 1505, "title": "ألعاب ومستلزمات يومية", "name_en": "Toys & Daily Supplies" }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "الإقلاع عن التدخين",
+    "name_en": "Smoking Cessation",
+    "icon": "fas fa-smoking-ban",
+    "sub": [
+      { "id": 1601, "title": "لاصقات النيكوتين", "name_en": "Nicotine Patches" },
+      { "id": 1602, "title": "علكة النيكوتين", "name_en": "Nicotine Gum" },
+      { "id": 1603, "title": "بخاخات الفم", "name_en": "Mouth Sprays" },
+      { "id": 1604, "title": "أجهزة التدخين الإلكتروني (حسب التشريع)", "name_en": "E-Smoking Devices (per regulation)" },
+      { "id": 1605, "title": "كتب وكتيبات توعوية", "name_en": "Awareness Books & Booklets" }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "المنتجات العضوية والطبيعية",
+    "name_en": "Organic & Natural Products",
+    "icon": "fas fa-leaf",
+    "sub": [
+      { "id": 1701, "title": "عناية بشرة طبيعية", "name_en": "Natural Skin Care" },
+      { "id": 1702, "title": "عناية شعر طبيعية", "name_en": "Natural Hair Care" },
+      { "id": 1703, "title": "مكملات غذائية عضوية", "name_en": "Organic Dietary Supplements" },
+      { "id": 1704, "title": "زيوت طبيعية نادرة", "name_en": "Rare Natural Oils" },
+      { "id": 1705, "title": "منتجات منزلية صديقة للبيئة", "name_en": "Eco-Friendly Home Products" }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "خدمات صيدلانية",
+    "name_en": "Pharmacy Services",
+    "icon": "fas fa-clinic-medical",
+    "sub": [
+      { "id": 1801, "title": "قياس ضغط الدم", "name_en": "Blood Pressure Measurement" },
+      { "id": 1802, "title": "قياس السكر", "name_en": "Blood Glucose Measurement" },
+      { "id": 1803, "title": "استشارات دوائية", "name_en": "Medication Consultations" },
+      { "id": 1804, "title": "تطعيمات (إن وجدت)", "name_en": "Vaccinations (if available)" },
+      { "id": 1805, "title": "تحليل سريع (كوليسترول - فيتامين د)", "name_en": "Quick Tests (Cholesterol - Vit D)" }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "🎁 هدايا وعطور",
+    "name_en": "Gifts & Perfumes",
+    "icon": "fas fa-gift",
+    "sub": [
+      { "id": 1901, "title": "عطور رجالية", "name_en": "Men's Perfumes" },
+      { "id": 1902, "title": "عطور نسائية", "name_en": "Women's Perfumes" },
+      { "id": 1903, "title": "مجموعات هدايا تجميلية", "name_en": "Cosmetic Gift Sets" },
+      { "id": 1904, "title": "شموع معطرة", "name_en": "Scented Candles" },
+      { "id": 1905, "title": "بوكسات هدايا جاهزة", "name_en": "Ready-Made Gift Boxes" }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "🔥 الأكثر مبيعاً",
+    "name_en": "Best Sellers",
+    "icon": "fas fa-fire-alt",
+    "sub": [
+      { "id": 2001, "title": "أفضل مسكنات الألم", "name_en": "Top Pain Relievers" },
+      { "id": 2002, "title": "أفضل فيتامينات", "name_en": "Top Vitamins" },
+      { "id": 2003, "title": "أفضل كريمات البشرة", "name_en": "Top Skin Creams" },
+      { "id": 2004, "title": "أفضل منتجات الشعر", "name_en": "Top Hair Products" }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "🎒 العودة للمدارس (موسمي)",
+    "name_en": "Back to School (Seasonal)",
+    "icon": "fas fa-school",
+    "sub": [
+      { "id": 2201, "title": "معقمات ومطهرات للحقائب", "name_en": "Sanitizers for Bags" },
+      { "id": 2202, "title": "فيتامينات للتركيز والذاكرة", "name_en": "Vitamins for Focus & Memory" },
+      { "id": 2203, "title": "مستلزمات الإسعافات المدرسية", "name_en": "School First Aid Supplies" },
+      { "id": 2204, "title": "كريمات واقية من الشمس للأطفال", "name_en": "Kids Sunscreen Creams" }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "☀️ الصيف والعناية بالشمس (موسمي)",
+    "name_en": "Summer & Sun Care (Seasonal)",
+    "icon": "fas fa-sun",
+    "sub": [
+      { "id": 2201, "title": "واقيات شمس للأطفال والكبار", "name_en": "Sunscreen for Kids & Adults" },
+      { "id": 2202, "title": "مرطبات ما بعد الشمس", "name_en": "After-Sun Moisturizers" },
+      { "id": 2203, "title": "طاردات البعوض والحشرات", "name_en": "Mosquito & Insect Repellents" },
+      { "id": 2204, "title": "منتجات علاج لسعات الحشرات", "name_en": "Insect Bite Treatments" }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "❄️ الشتاء ونزلات البرد (موسمي)",
+    "name_en": "Winter & Colds (Seasonal)",
+    "icon": "fas fa-snowflake",
+    "sub": [
+      { "id": 2301, "title": "مرطبات شفاه وأيدي", "name_en": "Lip & Hand Moisturizers" },
+      { "id": 2302, "title": "فيتامين سي والمناعة", "name_en": "Vitamin C & Immunity" },
+      { "id": 2303, "title": "أجهزة ترطيب الجو", "name_en": "Air Humidifiers" },
+      { "id": 2304, "title": "مراهم وقائية من البرد", "name_en": "Preventive Cold Ointments" }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "⭐ عروض وصفقات خاصة",
+    "name_en": "Special Offers & Deals",
+    "icon": "fas fa-percent",
+    "sub": [
+      { "id": 2401, "title": "خصم 50% على منتجات مختارة", "name_en": "50% Off Select Products" },
+      { "id": 2402, "title": "اشتري 2 واحصل على الثالث مجاناً", "name_en": "Buy 2 Get 1 Free" },
+      { "id": 2403, "title": "عرض الشهر", "name_en": "Offer of the Month" }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "إنقاص الوزن والسمنة",
+    "name_en": "Weight Loss & Obesity",
+    "icon": "fas fa-weight",
+    "sub": [
+      { "id": 2501, "title": "مثبطات الشهية الطبيعية", "name_en": "Natural Appetite Suppressants" },
+      { "id": 2502, "title": "بدائل الوجبات", "name_en": "Meal Replacements" },
+      { "id": 2503, "title": "مشروبات حارقة للدهون", "name_en": "Fat Burner Drinks" },
+      { "id": 2504, "title": "أجهزة قياس الوزن والدهون", "name_en": "Weight & Body Fat Scales" },
+      { "id": 2505, "title": "كريمات تنسيق الجسم", "name_en": "Body Contouring Creams" },
+      { "id": 2506, "title": "أحزمة ومشدات", "name_en": "Belts & Corsets" }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "الحجامة والطب البديل",
+    "name_en": "Cupping & Alternative Medicine",
+    "icon": "fas fa-mortar-pestle",
+    "sub": [
+      { "id": 2601, "title": "أدوات الحجامة (كاسات)", "name_en": "Cupping Tools (Cups)" },
+      { "id": 2602, "title": "زيوت طبيعية للحجامة", "name_en": "Natural Oils for Cupping" },
+      { "id": 2603, "title": "أعشاب طبية (ينسون، بابونج، زعتر)", "name_en": "Medicinal Herbs (Anise, Chamomile, Thyme)" },
+      { "id": 2604, "title": "عسل طبيعي وملكات النحل", "name_en": "Natural Honey & Royal Jelly" },
+      { "id": 2605, "title": "حبة البركة وزيتها", "name_en": "Black Seed & Oil" }
+    ]
+  }
+]
