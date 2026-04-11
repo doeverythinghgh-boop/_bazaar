@@ -1,7 +1,7 @@
 {
-  "version": "1.24.91",
+  "version": "1.24.92",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-11T18:23:17.610Z",
+  "lastUpdated": "2026-04-11T18:45:57.589Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -2220,8 +2220,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-render-products.js",
-      "hash": "2ba0aa5c87225349df2f9b96f0c612ecf1be7455dd39f5a8b956ea634663c4eb",
-      "size": 11208
+      "hash": "599395fae4df91d46d7f7fb07431ee14cb80bd5657ee42d0d50e1f3cc5f37ab4",
+      "size": 10858
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-render-utils.js",
@@ -3315,7 +3315,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "807656986a641a66840d1c6d369c6c0c747c5a966bd6b61c584f0dd2f5d37f22",
+      "hash": "725007e0b4991535c4d7dd78269ace6bb6255e4a9f84e604e5a8a4a1f861eddc",
       "size": 21
     }
   ]
