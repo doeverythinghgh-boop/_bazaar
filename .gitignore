@@ -1,23 +1,13 @@
-# --- Global Exclusions ---
+# Publish repo should keep deployable assets tracked.
+# Ignore only local/dev-only clutter.
 node_modules/
 test/
 .vscode/
 .idea/
-.gradle/
-build/
-bin/
-gen/
-out/
-
-# --- System Files ---
-*.exe
-*.bat
 *.log
-local.properties
 Thumbs.db
 [Dd]s_Store
 
-# --- Project Specific ---
 databaseBackup/
 note/
 scratch/

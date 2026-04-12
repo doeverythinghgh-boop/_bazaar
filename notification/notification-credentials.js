@@ -1,1 +1,0 @@
-const runtimeFirebaseConfig="function"==typeof window.getBazaarFirebaseConfig?window.getBazaarFirebaseConfig():{};window.FCM_ADMIN_SDK_KEY=runtimeFirebaseConfig.adminServiceAccount||window.FCM_ADMIN_SDK_KEY;
