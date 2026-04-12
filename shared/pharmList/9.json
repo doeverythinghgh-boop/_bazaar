@@ -1,0 +1,176 @@
+{
+  "id": 9,
+  "title": "التجميل والمكياج",
+  "name_en": "Beauty & Makeup",
+  "sub": [
+    {
+      "id": 901,
+      "title": "مكياج الوجه",
+      "name_en": "Face Makeup",
+      "active_ingredients": [
+        {
+          "name_ar": "كريم أساس و BB",
+          "name_en": "Foundations & BB Creams",
+          "form_ref": [
+            "form_14",
+            "form_21"
+          ],
+          "id": [
+            901001,
+            901002
+          ],
+          "brand_en": [
+            "Maybelline Fit Me",
+            "L'Oreal Infallible"
+          ],
+          "brand_ar": [
+            "ميبيلين فيت مي",
+            "لوريال إنفاليبل"
+          ],
+          "image_url": "https://example.com/fitme.jpg",
+          "strength_ref": [
+            "str_97"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 902,
+      "title": "مكياج العيون",
+      "name_en": "Eye Makeup",
+      "active_ingredients": [
+        {
+          "name_ar": "مكياج وماسكارا العيون",
+          "name_en": "Eye Makeup & Mascara",
+          "form_ref": [
+            "form_51",
+            "form_52"
+          ],
+          "id": [
+            902001,
+            902002
+          ],
+          "brand_en": [
+            "Maybelline Sky High",
+            "L'Oreal Lash Paradise"
+          ],
+          "brand_ar": [
+            "ميبيلين سكاي هاي",
+            "لوريال لاش بارادايس"
+          ],
+          "image_url": "https://example.com/skyhigh.jpg",
+          "strength_ref": [
+            "str_98"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 903,
+      "title": "مكياج الشفاه",
+      "name_en": "Lip Makeup",
+      "active_ingredients": [
+        {
+          "name_ar": "مكياج الشفاه",
+          "name_en": "Lip Makeup",
+          "form_ref": [
+            "form_53"
+          ],
+          "id": [
+            903001
+          ],
+          "brand_en": [
+            "Labello"
+          ],
+          "brand_ar": [
+            "لابيلو"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بلسم شفاه طبي (مركز)",
+          "name_en": "Medical Grade Lip Balm",
+          "form_ref": [
+            "form_53"
+          ],
+          "id": [
+            903408
+          ],
+          "brand_en": [
+            "Medical Grade Lip Balm"
+          ],
+          "brand_ar": [
+            "بلسم شفاه طبي (مركز)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 904,
+      "title": "العناية بالأظافر",
+      "name_en": "Nail Care",
+      "active_ingredients": [
+        {
+          "name_ar": "العناية بالأظافر",
+          "name_en": "Nail Care",
+          "form_ref": [
+            "form_54"
+          ],
+          "id": [
+            904001
+          ],
+          "brand_en": [
+            "Essie"
+          ],
+          "brand_ar": [
+            "إيسي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 905,
+      "title": "فرش وأدوات",
+      "name_en": "Brushes & Tools",
+      "active_ingredients": [
+        {
+          "name_ar": "فرش وأدوات",
+          "name_en": "Brushes & Tools",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            905001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

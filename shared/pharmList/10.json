@@ -1,0 +1,228 @@
+{
+  "id": 10,
+  "title": "الصحة الجنسية والزواجية",
+  "name_en": "Sexual & Marital Health",
+  "sub": [
+    {
+      "id": 1001,
+      "title": "واقيات ذكرية وأنثوية",
+      "name_en": "Condoms & Protection",
+      "active_ingredients": [
+        {
+          "name_ar": "واقي ذكري",
+          "name_en": "Condoms",
+          "form_ref": [
+            "form_55",
+            "form_56"
+          ],
+          "id": [
+            1001001,
+            1001002
+          ],
+          "brand_en": [
+            "Durex Extended Pleasure",
+            "Durex Fetherlite"
+          ],
+          "brand_ar": [
+            "ديوركس اکستندد بليجر",
+            "ديوركس فيذرلايت"
+          ],
+          "image_url": "https://example.com/durex.jpg",
+          "strength_ref": [
+            "str_99"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "لاصقات منع الحمل",
+          "name_en": "Birth Control Patches",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1001060
+          ],
+          "brand_en": [
+            "Birth Control Patches"
+          ],
+          "brand_ar": [
+            "لاصقات منع الحمل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "حبوب منع الحمل الطارئة",
+          "name_en": "Emergency Contraceptive",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1001061
+          ],
+          "brand_en": [
+            "Emergency Contraceptive"
+          ],
+          "brand_ar": [
+            "حبوب منع الحمل الطارئة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "title": "مواد تشحيم (جل خاص)",
+      "name_en": "Lubricants",
+      "active_ingredients": [
+        {
+          "name_ar": "مزلقات حميمية طبية",
+          "name_en": "Medical Lubricants",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            1002001,
+            1002002
+          ],
+          "brand_en": [
+            "Durex Play Saucy Strawberry",
+            "Dettol Lubricant"
+          ],
+          "brand_ar": [
+            "ديوركس بلاي فراولة",
+            "مزلق ديتول"
+          ],
+          "image_url": "https://example.com/durex-play.jpg",
+          "strength_ref": [
+            "str_42"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "title": "منتجات تأخير القذف",
+      "name_en": "Delay Products",
+      "active_ingredients": [
+        {
+          "name_ar": "منتجات تأخير القذف",
+          "name_en": "Delay Products",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1003001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1004,
+      "title": "اختبارات حمل وتبويض",
+      "name_en": "Pregnancy & Ovulation Tests",
+      "active_ingredients": [
+        {
+          "name_ar": "اختبارات الحمل والتبويض المنزلية",
+          "name_en": "Home Pregnancy & Ovulation Tests",
+          "form_ref": [
+            "form_57"
+          ],
+          "id": [
+            1004001,
+            1004002
+          ],
+          "brand_en": [
+            "Clearblue Digital",
+            "First Response"
+          ],
+          "brand_ar": [
+            "كلير بلو ديجيتال",
+            "فيرست ريسبونس"
+          ],
+          "image_url": "https://example.com/clearblue.jpg",
+          "strength_ref": [
+            "str_100",
+            "str_101"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1005,
+      "title": "منتجات تعزيز الرغبة",
+      "name_en": "Desire Enhancers",
+      "active_ingredients": [
+        {
+          "name_ar": "منتجات تعزيز الرغبة",
+          "name_en": "Desire Enhancers",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1005001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "title": "مكملات خصوبة",
+      "name_en": "Fertility Supplements",
+      "active_ingredients": [
+        {
+          "name_ar": "مكملات خصوبة",
+          "name_en": "Fertility Supplements",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1006001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

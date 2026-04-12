@@ -1,0 +1,1996 @@
+{
+  "id": 7,
+  "title": "الأجهزة والمستلزمات الطبية",
+  "name_en": "Medical Devices & Supplies",
+  "sub": [
+    {
+      "id": 701,
+      "title": "أجهزة الضغط",
+      "name_en": "Blood Pressure Monitors",
+      "active_ingredients": [
+        {
+          "name_ar": "أجهزة ضغط الدم",
+          "name_en": "Blood Pressure Monitors",
+          "form_ref": [
+            "form_35",
+            "form_42"
+          ],
+          "id": [
+            701001,
+            701002
+          ],
+          "brand_en": [
+            "Omron M3",
+            "Beurer"
+          ],
+          "brand_ar": [
+            "أومرون",
+            "بيورير"
+          ],
+          "image_url": "https://example.com/omron.jpg",
+          "strength_ref": [
+            "str_79"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جبيرة أصبع",
+          "name_en": "Finger Splint",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701060
+          ],
+          "brand_en": [
+            "Finger Splint"
+          ],
+          "brand_ar": [
+            "جبيرة أصبع"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حزام دعم أسفل الظهر",
+          "name_en": "Lower Back Support Belt",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701061
+          ],
+          "brand_en": [
+            "Lower Back Support Belt"
+          ],
+          "brand_ar": [
+            "حزام دعم أسفل الظهر"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس أكسجين الدم ( pulse oximeter )",
+          "name_en": "Pulse Oximeter",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701062
+          ],
+          "brand_en": [
+            "Pulse Oximeter"
+          ],
+          "brand_ar": [
+            "جهاز قياس أكسجين الدم ( pulse oximeter )"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سماعة طبية",
+          "name_en": "Stethoscope",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            701145
+          ],
+          "brand_en": [
+            "Stethoscope"
+          ],
+          "brand_ar": [
+            "سماعة طبية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سرير طبي منزلي",
+          "name_en": "Home Hospital Bed",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701150
+          ],
+          "brand_en": [
+            "Home Hospital Bed"
+          ],
+          "brand_ar": [
+            "سرير طبي منزلي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مرتبة ضد القرحة (Air Mattress)",
+          "name_en": "Anti-Decubitus Mattress",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701151
+          ],
+          "brand_en": [
+            "Anti-Decubitus Mattress"
+          ],
+          "brand_ar": [
+            "مرتبة ضد القرحة (Air Mattress)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قسطرة بولية",
+          "name_en": "Urinary Catheter",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701152
+          ],
+          "brand_en": [
+            "Urinary Catheter"
+          ],
+          "brand_ar": [
+            "قسطرة بولية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أكياس تجميع بول",
+          "name_en": "Urine Collection Bags",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701153
+          ],
+          "brand_en": [
+            "Urine Collection Bags"
+          ],
+          "brand_ar": [
+            "أكياس تجميع بول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تدليك القدم بالضغط",
+          "name_en": "Foot Compression Massager",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            701225
+          ],
+          "brand_en": [
+            "Foot Compression Massager"
+          ],
+          "brand_ar": [
+            "جهاز تدليك القدم بالضغط"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "نظارات حماية من الشاشات",
+          "name_en": "Blue Light Blocking Glasses",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701257
+          ],
+          "brand_en": [
+            "Blue Light Blocking Glasses"
+          ],
+          "brand_ar": [
+            "نظارات حماية من الشاشات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غطاء عين حراري",
+          "name_en": "Heated Eye Mask",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701258
+          ],
+          "brand_en": [
+            "Heated Eye Mask"
+          ],
+          "brand_ar": [
+            "غطاء عين حراري"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تدليك العين",
+          "name_en": "Eye Massager",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            701259
+          ],
+          "brand_en": [
+            "Eye Massager"
+          ],
+          "brand_ar": [
+            "جهاز تدليك العين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سرير مستشفى منزلي كهربائي",
+          "name_en": "Electric Home Hospital Bed",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701360
+          ],
+          "brand_en": [
+            "Electric Home Hospital Bed"
+          ],
+          "brand_ar": [
+            "سرير مستشفى منزلي كهربائي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مرتبة هوائية مضادة لقرحة الفراش",
+          "name_en": "Alternating Pressure Mattress",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701361
+          ],
+          "brand_en": [
+            "Alternating Pressure Mattress"
+          ],
+          "brand_ar": [
+            "مرتبة هوائية مضادة لقرحة الفراش"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كرسي حمام (مقعد مرحاض مرتفع)",
+          "name_en": "Raised Toilet Seat",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701362
+          ],
+          "brand_en": [
+            "Raised Toilet Seat"
+          ],
+          "brand_ar": [
+            "كرسي حمام (مقعد مرحاض مرتفع)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مقعد دش (قابل للطي)",
+          "name_en": "Shower Chair (Foldable)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701363
+          ],
+          "brand_en": [
+            "Shower Chair (Foldable)"
+          ],
+          "brand_ar": [
+            "مقعد دش (قابل للطي)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قضبان مساعدة للحائط",
+          "name_en": "Wall Grab Bars",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            701364
+          ],
+          "brand_en": [
+            "Wall Grab Bars"
+          ],
+          "brand_ar": [
+            "قضبان مساعدة للحائط"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مكثف أكسجين منزلي (5 لتر)",
+          "name_en": "Home Oxygen Concentrator 5L",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            701500
+          ],
+          "brand_en": [
+            "Home Oxygen Concentrator 5L"
+          ],
+          "brand_ar": [
+            "مكثف أكسجين منزلي (5 لتر)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        }
+      ]
+    },
+    {
+      "id": 702,
+      "title": "أجهزة السكر",
+      "name_en": "Blood Glucose Monitors",
+      "active_ingredients": [
+        {
+          "name_ar": "أجهزة السكر",
+          "name_en": "Blood Glucose Meters",
+          "form_ref": [
+            "form_35",
+            "form_43"
+          ],
+          "id": [
+            702001,
+            702002
+          ],
+          "brand_en": [
+            "Accu-Chek Active Strips",
+            "Contour Plus"
+          ],
+          "brand_ar": [
+            "أكوا تشيك",
+            "كونتور بلس"
+          ],
+          "image_url": "https://example.com/accuchek.jpg",
+          "strength_ref": [
+            "str_87"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تقوية السمع (سماعة)",
+          "name_en": "Hearing Amplifier",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            702279
+          ],
+          "brand_en": [
+            "Hearing Amplifier"
+          ],
+          "brand_ar": [
+            "جهاز تقوية السمع (سماعة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز مراقبة تنفس الطفل",
+          "name_en": "Baby Breathing Monitor",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            702290
+          ],
+          "brand_en": [
+            "Baby Breathing Monitor"
+          ],
+          "brand_ar": [
+            "جهاز مراقبة تنفس الطفل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كاميرا مراقبة لاسلكية",
+          "name_en": "Wireless Baby Monitor",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            702291
+          ],
+          "brand_en": [
+            "Wireless Baby Monitor"
+          ],
+          "brand_ar": [
+            "كاميرا مراقبة لاسلكية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ميزان حرارة لاسلكي للطفل",
+          "name_en": "Wireless Baby Thermometer",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            702292
+          ],
+          "brand_en": [
+            "Wireless Baby Thermometer"
+          ],
+          "brand_ar": [
+            "ميزان حرارة لاسلكي للطفل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس صفار الأطفال (بيليروبين)",
+          "name_en": "Home Bilirubin Meter",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            702293
+          ],
+          "brand_en": [
+            "Home Bilirubin Meter"
+          ],
+          "brand_ar": [
+            "جهاز قياس صفار الأطفال (بيليروبين)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "جهاز قياس أكسجين للرضع (مشبك قدم)",
+          "name_en": "Infant Pulse Oximeter (Foot Clip)",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            702503
+          ],
+          "brand_en": [
+            "Infant Pulse Oximeter (Foot Clip)"
+          ],
+          "brand_ar": [
+            "جهاز قياس أكسجين للرضع (مشبك قدم)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 703,
+      "title": "ترمومترات",
+      "name_en": "Thermometers",
+      "active_ingredients": [
+        {
+          "name_ar": "أجهزة قياس الحرارة الرقمية",
+          "name_en": "Digital Thermometers",
+          "form_ref": [
+            "form_44"
+          ],
+          "id": [
+            703001,
+            703002
+          ],
+          "brand_en": [
+            "Omron Digital Thermometer",
+            "Braun ThermoScan"
+          ],
+          "brand_ar": [
+            "جهاز قياس حرارة أومرون",
+            "براون ثيرموسكان"
+          ],
+          "image_url": "https://example.com/omron-therm.jpg",
+          "strength_ref": [
+            "str_79"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مرطب هواء محمول",
+          "name_en": "Portable Humidifier",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            703060
+          ],
+          "brand_en": [
+            "Portable Humidifier"
+          ],
+          "brand_ar": [
+            "مرطب هواء محمول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس حرارة بالأشعة تحت الحمراء",
+          "name_en": "Infrared Thermometer",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            703061
+          ],
+          "brand_en": [
+            "Infrared Thermometer"
+          ],
+          "brand_ar": [
+            "جهاز قياس حرارة بالأشعة تحت الحمراء"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ميزان حرارة لاصق للجبهة",
+          "name_en": "Forehead Thermometer Strip",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703137
+          ],
+          "brand_en": [
+            "Forehead Thermometer Strip"
+          ],
+          "brand_ar": [
+            "ميزان حرارة لاصق للجبهة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس ضغط الزئبقي",
+          "name_en": "Mercury Sphygmomanometer",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703146
+          ],
+          "brand_en": [
+            "Mercury Sphygmomanometer"
+          ],
+          "brand_ar": [
+            "جهاز قياس ضغط الزئبقي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز شفط منزلي",
+          "name_en": "Home Suction Unit",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703154
+          ],
+          "brand_en": [
+            "Home Suction Unit"
+          ],
+          "brand_ar": [
+            "جهاز شفط منزلي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز بخاخ (نيبولايزر) محمول",
+          "name_en": "Portable Nebulizer",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703210
+          ],
+          "brand_en": [
+            "Portable Nebulizer"
+          ],
+          "brand_ar": [
+            "جهاز بخاخ (نيبولايزر) محمول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أقنعة نيبولايزر للأطفال",
+          "name_en": "Pediatric Nebulizer Mask",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            703211
+          ],
+          "brand_en": [
+            "Pediatric Nebulizer Mask"
+          ],
+          "brand_ar": [
+            "أقنعة نيبولايزر للأطفال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس ذروة الجريان (Peak Flow Meter)",
+          "name_en": "Peak Flow Meter",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703212
+          ],
+          "brand_en": [
+            "Peak Flow Meter"
+          ],
+          "brand_ar": [
+            "جهاز قياس ذروة الجريان (Peak Flow Meter)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سبيسر للأجهزة الاستنشاقية",
+          "name_en": "Spacer for Inhalers",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            703213
+          ],
+          "brand_en": [
+            "Spacer for Inhalers"
+          ],
+          "brand_ar": [
+            "سبيسر للأجهزة الاستنشاقية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز ترطيب الغرفة",
+          "name_en": "Room Humidifier",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703219
+          ],
+          "brand_en": [
+            "Room Humidifier"
+          ],
+          "brand_ar": [
+            "جهاز ترطيب الغرفة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس ضغط الكاحل الذراعي (ABI)",
+          "name_en": "ABI Measurement Device",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703229
+          ],
+          "brand_en": [
+            "ABI Measurement Device"
+          ],
+          "brand_ar": [
+            "جهاز قياس ضغط الكاحل الذراعي (ABI)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "جهاز قياس الكوليسترول الكامل",
+          "name_en": "Complete Cholesterol Meter",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703230
+          ],
+          "brand_en": [
+            "Complete Cholesterol Meter"
+          ],
+          "brand_ar": [
+            "جهاز قياس الكوليسترول الكامل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شرائط اختبار الكوليسترول",
+          "name_en": "Cholesterol Test Strips",
+          "form_ref": [
+            "form_43"
+          ],
+          "id": [
+            703231
+          ],
+          "brand_en": [
+            "Cholesterol Test Strips"
+          ],
+          "brand_ar": [
+            "شرائط اختبار الكوليسترول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس حمض البوليك",
+          "name_en": "Uric Acid Meter",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703232
+          ],
+          "brand_en": [
+            "Uric Acid Meter"
+          ],
+          "brand_ar": [
+            "جهاز قياس حمض البوليك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شرائط حمض البوليك",
+          "name_en": "Uric Acid Strips",
+          "form_ref": [
+            "form_43"
+          ],
+          "id": [
+            703233
+          ],
+          "brand_en": [
+            "Uric Acid Strips"
+          ],
+          "brand_ar": [
+            "شرائط حمض البوليك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس فيتامين د المنزلي",
+          "name_en": "Home Vitamin D Tester",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703234
+          ],
+          "brand_en": [
+            "Home Vitamin D Tester"
+          ],
+          "brand_ar": [
+            "جهاز قياس فيتامين د المنزلي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس الحديد (فيريتين)",
+          "name_en": "Ferritin Home Test",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703235
+          ],
+          "brand_en": [
+            "Ferritin Home Test"
+          ],
+          "brand_ar": [
+            "جهاز قياس الحديد (فيريتين)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "اختبار البراز المناعي (FIT)",
+          "name_en": "Fecal Immunochemical Test",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703236
+          ],
+          "brand_en": [
+            "Fecal Immunochemical Test"
+          ],
+          "brand_ar": [
+            "اختبار البراز المناعي (FIT)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تحليل البول متعدد المعايير",
+          "name_en": "Multi-parameter Urine Analyzer",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703237
+          ],
+          "brand_en": [
+            "Multi-parameter Urine Analyzer"
+          ],
+          "brand_ar": [
+            "جهاز تحليل البول متعدد المعايير"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شرائط تحليل البول",
+          "name_en": "Urine Test Strips",
+          "form_ref": [
+            "form_43"
+          ],
+          "id": [
+            703238
+          ],
+          "brand_en": [
+            "Urine Test Strips"
+          ],
+          "brand_ar": [
+            "شرائط تحليل البول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس هرمون التستوستيرون",
+          "name_en": "Testosterone Home Test",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703239
+          ],
+          "brand_en": [
+            "Testosterone Home Test"
+          ],
+          "brand_ar": [
+            "جهاز قياس هرمون التستوستيرون"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز شفط شمع الأذن",
+          "name_en": "Ear Wax Vacuum",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703272
+          ],
+          "brand_en": [
+            "Ear Wax Vacuum"
+          ],
+          "brand_ar": [
+            "جهاز شفط شمع الأذن"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كشاف أذن (أوتوسكوب) منزلي",
+          "name_en": "Home Otoscope",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703273
+          ],
+          "brand_en": [
+            "Home Otoscope"
+          ],
+          "brand_ar": [
+            "كشاف أذن (أوتوسكوب) منزلي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز ترطيب غرفة الأطفال",
+          "name_en": "Baby Humidifier",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703294
+          ],
+          "brand_en": [
+            "Baby Humidifier"
+          ],
+          "brand_ar": [
+            "جهاز ترطيب غرفة الأطفال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "علبة أدوية أسبوعية (7 أيام)",
+          "name_en": "Weekly Pill Organizer",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            703321
+          ],
+          "brand_en": [
+            "Weekly Pill Organizer"
+          ],
+          "brand_ar": [
+            "علبة أدوية أسبوعية (7 أيام)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "علبة أدوية شهرية",
+          "name_en": "Monthly Pill Organizer",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            703322
+          ],
+          "brand_en": [
+            "Monthly Pill Organizer"
+          ],
+          "brand_ar": [
+            "علبة أدوية شهرية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "موزع أدوات إلكتروني (منبه)",
+          "name_en": "Electronic Pill Dispenser",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703323
+          ],
+          "brand_en": [
+            "Electronic Pill Dispenser"
+          ],
+          "brand_ar": [
+            "موزع أدوات إلكتروني (منبه)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كبسولات ذكية لتذكير الدواء",
+          "name_en": "Smart Medication Caps",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703324
+          ],
+          "brand_en": [
+            "Smart Medication Caps"
+          ],
+          "brand_ar": [
+            "كبسولات ذكية لتذكير الدواء"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تكسير الأقراص",
+          "name_en": "Pill Crusher",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            703325
+          ],
+          "brand_en": [
+            "Pill Crusher"
+          ],
+          "brand_ar": [
+            "جهاز تكسير الأقراص"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تقطيع الأقراص",
+          "name_en": "Pill Splitter",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            703326
+          ],
+          "brand_en": [
+            "Pill Splitter"
+          ],
+          "brand_ar": [
+            "جهاز تقطيع الأقراص"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فاحص بصمات الأدوية (تفاعلات)",
+          "name_en": "Drug Interaction Checker",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703327
+          ],
+          "brand_en": [
+            "Drug Interaction Checker"
+          ],
+          "brand_ar": [
+            "فاحص بصمات الأدوية (تفاعلات)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ميزان دقيق للجرعات (ملجم)",
+          "name_en": "Precision Milligram Scale",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703329
+          ],
+          "brand_en": [
+            "Precision Milligram Scale"
+          ],
+          "brand_ar": [
+            "ميزان دقيق للجرعات (ملجم)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تتبع النوم (ساعة ذكية)",
+          "name_en": "Sleep Tracker Watch",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703333
+          ],
+          "brand_en": [
+            "Sleep Tracker Watch"
+          ],
+          "brand_ar": [
+            "جهاز تتبع النوم (ساعة ذكية)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "خاتم تتبع النوم",
+          "name_en": "Sleep Tracking Ring",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703334
+          ],
+          "brand_en": [
+            "Sleep Tracking Ring"
+          ],
+          "brand_ar": [
+            "خاتم تتبع النوم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز الضوضاء البيضاء (طبيعة)",
+          "name_en": "White Noise Machine (Nature)",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703337
+          ],
+          "brand_en": [
+            "White Noise Machine (Nature)"
+          ],
+          "brand_ar": [
+            "جهاز الضوضاء البيضاء (طبيعة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مصباح محاكاة الشروق",
+          "name_en": "Sunrise Alarm Clock",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703338
+          ],
+          "brand_en": [
+            "Sunrise Alarm Clock"
+          ],
+          "brand_ar": [
+            "مصباح محاكاة الشروق"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تنفس موجه (بايوفيدباك)",
+          "name_en": "Guided Breathing Device",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703346
+          ],
+          "brand_en": [
+            "Guided Breathing Device"
+          ],
+          "brand_ar": [
+            "جهاز تنفس موجه (بايوفيدباك)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سوار كشف التوتر (موصلية الجلد)",
+          "name_en": "Stress Detection Bracelet",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703347
+          ],
+          "brand_en": [
+            "Stress Detection Bracelet"
+          ],
+          "brand_ar": [
+            "سوار كشف التوتر (موصلية الجلد)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تعقيم الأدوات المنزلية بالأشعة فوق البنفسجية",
+          "name_en": "UV Sterilizer Box",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703369
+          ],
+          "brand_en": [
+            "UV Sterilizer Box"
+          ],
+          "brand_ar": [
+            "جهاز تعقيم الأدوات المنزلية بالأشعة فوق البنفسجية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أقنعة أكسجين (بتركيز عالي)",
+          "name_en": "High Concentration Oxygen Mask",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            703501
+          ],
+          "brand_en": [
+            "High Concentration Oxygen Mask"
+          ],
+          "brand_ar": [
+            "أقنعة أكسجين (بتركيز عالي)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز قياس نسبة الأكسجين (Pulse Oximeter)",
+          "name_en": "Pulse Oximeter (Fingertip)",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            703502
+          ],
+          "brand_en": [
+            "Pulse Oximeter (Fingertip)"
+          ],
+          "brand_ar": [
+            "جهاز قياس نسبة الأكسجين (Pulse Oximeter)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 704,
+      "title": "أجهزة تنفس",
+      "name_en": "Nebulizers & Respiratory",
+      "active_ingredients": [
+        {
+          "name_ar": "أجهزة الاستنشاق والنيبولايزر",
+          "name_en": "Nebulizers & Inhalers",
+          "form_ref": [
+            "form_45"
+          ],
+          "id": [
+            704001
+          ],
+          "brand_en": [
+            "Omron CompAir"
+          ],
+          "brand_ar": [
+            "جهاز نيبولايزر أومرون"
+          ],
+          "image_url": "https://example.com/omron-neb.jpg",
+          "strength_ref": [
+            "str_79"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 705,
+      "title": "إسعافات أولية",
+      "name_en": "First Aid",
+      "active_ingredients": [
+        {
+          "name_ar": "لاصقات جروح ومستلزمات إسعاف",
+          "name_en": "Adhesive Bandages & First Aid Supplies",
+          "form_ref": [
+            "form_46"
+          ],
+          "id": [
+            705001,
+            705002
+          ],
+          "brand_en": [
+            "Hansaplast",
+            "Band-Aid"
+          ],
+          "brand_ar": [
+            "هانسابلاست",
+            "باند إيد"
+          ],
+          "image_url": "https://example.com/hansaplast.jpg",
+          "strength_ref": [
+            "str_88",
+            "str_89"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شاش طبي",
+          "name_en": "Medical Gauze",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705060
+          ],
+          "brand_en": [
+            "Medical Gauze"
+          ],
+          "brand_ar": [
+            "شاش طبي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "رباط ضاغط",
+          "name_en": "Elastic Bandage",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705061
+          ],
+          "brand_en": [
+            "Elastic Bandage"
+          ],
+          "brand_ar": [
+            "رباط ضاغط"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم عناية بالجروح",
+          "name_en": "Wound Care Kit",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705062
+          ],
+          "brand_en": [
+            "Wound Care Kit"
+          ],
+          "brand_ar": [
+            "طقم عناية بالجروح"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حزام معصم لرفع الأثقال",
+          "name_en": "Wrist Wraps",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705170
+          ],
+          "brand_en": [
+            "Wrist Wraps"
+          ],
+          "brand_ar": [
+            "حزام معصم لرفع الأثقال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حزام رفع الأثقال",
+          "name_en": "Lifting Belt",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705171
+          ],
+          "brand_en": [
+            "Lifting Belt"
+          ],
+          "brand_ar": [
+            "حزام رفع الأثقال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سدادات أذن للسباحة",
+          "name_en": "Swim Ear Plugs",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705275
+          ],
+          "brand_en": [
+            "Swim Ear Plugs"
+          ],
+          "brand_ar": [
+            "سدادات أذن للسباحة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سدادات أذن للنوم",
+          "name_en": "Sleep Ear Plugs",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705276
+          ],
+          "brand_en": [
+            "Sleep Ear Plugs"
+          ],
+          "brand_ar": [
+            "سدادات أذن للنوم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سدادات أذن لحماية من الضوضاء",
+          "name_en": "Noise Cancelling Ear Plugs",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705277
+          ],
+          "brand_en": [
+            "Noise Cancelling Ear Plugs"
+          ],
+          "brand_ar": [
+            "سدادات أذن لحماية من الضوضاء"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حزام دعم البطن",
+          "name_en": "Maternity Belly Support Belt",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705283
+          ],
+          "brand_en": [
+            "Maternity Belly Support Belt"
+          ],
+          "brand_ar": [
+            "حزام دعم البطن"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ضمادات هيدروجيل",
+          "name_en": "Hydrogel Dressings",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705300
+          ],
+          "brand_en": [
+            "Hydrogel Dressings"
+          ],
+          "brand_ar": [
+            "ضمادات هيدروجيل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ضمادات هيدروكولويد",
+          "name_en": "Hydrocolloid Dressings",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705301
+          ],
+          "brand_en": [
+            "Hydrocolloid Dressings"
+          ],
+          "brand_ar": [
+            "ضمادات هيدروكولويد"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ضمادات فوم (رغوة)",
+          "name_en": "Foam Dressings",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705302
+          ],
+          "brand_en": [
+            "Foam Dressings"
+          ],
+          "brand_ar": [
+            "ضمادات فوم (رغوة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ضمادات ألجينات (طحالب)",
+          "name_en": "Alginate Dressings",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705303
+          ],
+          "brand_en": [
+            "Alginate Dressings"
+          ],
+          "brand_ar": [
+            "ضمادات ألجينات (طحالب)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ضمادات سيلفر (فضة)",
+          "name_en": "Silver Dressings",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705304
+          ],
+          "brand_en": [
+            "Silver Dressings"
+          ],
+          "brand_ar": [
+            "ضمادات سيلفر (فضة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ضمادات كولاجين",
+          "name_en": "Collagen Dressings",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705305
+          ],
+          "brand_en": [
+            "Collagen Dressings"
+          ],
+          "brand_ar": [
+            "ضمادات كولاجين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ضمادات هيدروفايبر",
+          "name_en": "Hydrofiber Dressings",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705306
+          ],
+          "brand_en": [
+            "Hydrofiber Dressings"
+          ],
+          "brand_ar": [
+            "ضمادات هيدروفايبر"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "لاصقات فراشة (لتقريب الجرح)",
+          "name_en": "Butterfly Wound Closures",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705309
+          ],
+          "brand_en": [
+            "Butterfly Wound Closures"
+          ],
+          "brand_ar": [
+            "لاصقات فراشة (لتقريب الجرح)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كمادات هلامية (حرارة/برودة)",
+          "name_en": "Gel Compress (Hot/Cold)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705370
+          ],
+          "brand_en": [
+            "Gel Compress (Hot/Cold)"
+          ],
+          "brand_ar": [
+            "كمادات هلامية (حرارة/برودة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كمادات فورية (باردة)",
+          "name_en": "Instant Cold Pack",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705371
+          ],
+          "brand_en": [
+            "Instant Cold Pack"
+          ],
+          "brand_ar": [
+            "كمادات فورية (باردة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كمادات فورية (ساخنة)",
+          "name_en": "Instant Heat Pack",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705372
+          ],
+          "brand_en": [
+            "Instant Heat Pack"
+          ],
+          "brand_ar": [
+            "كمادات فورية (ساخنة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قفازات تدفئة (كيميائية)",
+          "name_en": "Hand Warmers (Chemical)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            705378
+          ],
+          "brand_en": [
+            "Hand Warmers (Chemical)"
+          ],
+          "brand_ar": [
+            "قفازات تدفئة (كيميائية)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 706,
+      "title": "دعامات وأربطة",
+      "name_en": "Braces & Bandages",
+      "active_ingredients": [
+        {
+          "name_ar": "دعامات وأربطة",
+          "name_en": "Braces & Bandages",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            706001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

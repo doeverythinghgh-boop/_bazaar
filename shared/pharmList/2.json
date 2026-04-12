@@ -1,0 +1,534 @@
+{
+  "id": 2,
+  "title": "العناية بالبشرة",
+  "name_en": "Skin Care",
+  "sub": [
+    {
+      "id": 201,
+      "title": "غسول ومنظفات",
+      "name_en": "Cleansers & Washes",
+      "active_ingredients": [
+        {
+          "name_ar": "الغسول الرغوي للبشرة",
+          "name_en": "Foaming Cleansers",
+          "form_ref": [
+            "form_6",
+            "form_17"
+          ],
+          "id": [
+            201001,
+            201002,
+            201003
+          ],
+          "brand_en": [
+            "La Roche-Posay Effaclar",
+            "Bioderma Sebium",
+            "Cerave Foaming Cleanser"
+          ],
+          "brand_ar": [
+            "لاروش بوزيه إيفاكلار",
+            "بيوديرما سيبيوم",
+            "سيرافي غسول رغوي"
+          ],
+          "image_url": "images/products/201001.webp",
+          "strength_ref": [
+            "str_39",
+            "str_40"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "منظفات سيرافي للبشرة",
+          "name_en": "Cerave Face Cleansers",
+          "form_ref": [
+            "form_6",
+            "form_16"
+          ],
+          "id": [
+            201010
+          ],
+          "brand_en": [
+            "Cerave Hydrating Cleanser"
+          ],
+          "brand_ar": [
+            "سيرافي منظف مرطب"
+          ],
+          "image_url": "images/products/201010.webp",
+          "strength_ref": [
+            "str_40",
+            "str_41"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غسول كبريت للبشرة الدهنية",
+          "name_en": "Sulfur Wash",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            201249
+          ],
+          "brand_en": [
+            "Sulfur Wash"
+          ],
+          "brand_ar": [
+            "غسول كبريت للبشرة الدهنية"
+          ],
+          "image_url": "images/products/201249.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "title": "مرطبات ولوشن",
+      "name_en": "Moisturizers & Lotions",
+      "active_ingredients": [
+        {
+          "name_ar": "حمض الهيالورونيك",
+          "name_en": "Hyaluronic Acid",
+          "form_ref": [
+            "form_14",
+            "form_6"
+          ],
+          "id": [
+            202001,
+            202002
+          ],
+          "brand_en": [
+            "Neutrogena Hydro Boost",
+            "Cerave Moisturizing Cream"
+          ],
+          "brand_ar": [
+            "نيتروجينا هيدرو بوست",
+            "سيرافي كريم"
+          ],
+          "image_url": "images/products/202001.webp",
+          "strength_ref": [
+            "str_42",
+            "str_43"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريمات لاروش بوزيه المرممة",
+          "name_en": "La Roche-Posay Repair Creams",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            202010
+          ],
+          "brand_en": [
+            "La Roche-Posay Cicaplast Baume B5"
+          ],
+          "brand_ar": [
+            "سيكابلاست بوم B5"
+          ],
+          "image_url": "images/products/202010.webp",
+          "strength_ref": [
+            "str_44",
+            "str_45"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كولاجين",
+          "name_en": "Collagen",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            202060
+          ],
+          "brand_en": [
+            "Collagen"
+          ],
+          "brand_ar": [
+            "كولاجين"
+          ],
+          "image_url": "images/products/202060.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "نياسيناميد",
+          "name_en": "Niacinamide",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            202110
+          ],
+          "brand_en": [
+            "Niacinamide"
+          ],
+          "brand_ar": [
+            "نياسيناميد"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سنسكرين معدني (زنك/تيتانيوم)",
+          "name_en": "Mineral Sunscreen",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            202115
+          ],
+          "brand_en": [
+            "Mineral Sunscreen"
+          ],
+          "brand_ar": [
+            "سنسكرين معدني (زنك/تيتانيوم)"
+          ],
+          "image_url": "images/products/202115.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيروم فيتامين سي + فيريوليك",
+          "name_en": "Vitamin C + Ferulic Serum",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            202118
+          ],
+          "brand_en": [
+            "Vitamin C + Ferulic Serum"
+          ],
+          "brand_ar": [
+            "سيروم فيتامين سي + فيريوليك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم إيجلوكس",
+          "name_en": "Eyelid Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            202119
+          ],
+          "brand_en": [
+            "Eyelid Cream"
+          ],
+          "brand_ar": [
+            "كريم إيجلوكس"
+          ],
+          "image_url": "images/products/202119.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيروم تطويل الرموش",
+          "name_en": "Lash Growth Serum",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            202126
+          ],
+          "brand_en": [
+            "Lash Growth Serum"
+          ],
+          "brand_ar": [
+            "سيروم تطويل الرموش"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم تمدد الحمل (ستريتش مارك)",
+          "name_en": "Stretch Mark Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            202280
+          ],
+          "brand_en": [
+            "Stretch Mark Cream"
+          ],
+          "brand_ar": [
+            "كريم تمدد الحمل (ستريتش مارك)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قفازات ترطيب ليلية (جل)",
+          "name_en": "Overnight Moisturizing Gloves",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            202404
+          ],
+          "brand_en": [
+            "Overnight Moisturizing Gloves"
+          ],
+          "brand_ar": [
+            "قفازات ترطيب ليلية (جل)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جوارب ترطيب ليلية (جل)",
+          "name_en": "Overnight Moisturizing Socks",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            202405
+          ],
+          "brand_en": [
+            "Overnight Moisturizing Socks"
+          ],
+          "brand_ar": [
+            "جوارب ترطيب ليلية (جل)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم حماية الأظافر أثناء الكيماوي",
+          "name_en": "Nail Protection Cream (Chemo)",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            202407
+          ],
+          "brand_en": [
+            "Nail Protection Cream (Chemo)"
+          ],
+          "brand_ar": [
+            "كريم حماية الأظافر أثناء الكيماوي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "title": "واقي الشمس",
+      "name_en": "Sunscreen",
+      "active_ingredients": [
+        {
+          "name_ar": "واقي الشمس SPF 50+",
+          "name_en": "Sunscreen SPF 50+",
+          "form_ref": [
+            "form_14",
+            "form_18"
+          ],
+          "id": [
+            203001,
+            203002
+          ],
+          "brand_en": [
+            "Eucerin Oil Control SPF50+",
+            "La Roche-Posay Anthelios"
+          ],
+          "brand_ar": [
+            "يوسيرين أอยل كنترول",
+            "لاروش أنثيليوس"
+          ],
+          "image_url": "https://example.com/eucerin-oil.jpg",
+          "strength_ref": [
+            "str_42"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 204,
+      "title": "تفتيح وتوحيد اللون",
+      "name_en": "Lightening & Skin Tone Evening",
+      "active_ingredients": [
+        {
+          "name_ar": "فيتامين سي عالي التركيز",
+          "name_en": "High Concentration Vitamin C",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            204001,
+            204002
+          ],
+          "brand_en": [
+            "Vichy Liftactiv Vitamin C",
+            "The Ordinary Vitamin C"
+          ],
+          "brand_ar": [
+            "فيتشي ليفت أكتيف فيتامين سي",
+            "ذا أورديناري فيتامين سي"
+          ],
+          "image_url": "https://example.com/vichy-vitc.jpg",
+          "strength_ref": [
+            "str_46",
+            "str_47"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "title": "مضاد التجاعيد",
+      "name_en": "Anti-Wrinkle",
+      "active_ingredients": [
+        {
+          "name_ar": "كريمات وسيروم الريتينول (مكافحة الشوفوخة)",
+          "name_en": "Retinol Anti-Aging Creams & Serums",
+          "form_ref": [
+            "form_14",
+            "form_19"
+          ],
+          "id": [
+            205001,
+            205002
+          ],
+          "brand_en": [
+            "The Ordinary Retinol",
+            "Olay Regenerist"
+          ],
+          "brand_ar": [
+            "ذا أورديناري ريتينول",
+            "أولاي ريجينيريست"
+          ],
+          "image_url": "https://example.com/ordinary-retinol.jpg",
+          "strength_ref": [
+            "str_48",
+            "str_49"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "title": "علاج الحبوب",
+      "name_en": "Acne Treatment",
+      "active_ingredients": [
+        {
+          "name_ar": "علاجات حب الشباب (بنزويل بيروكسيد)",
+          "name_en": "Acne Treatments (Benzoyl Peroxide)",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            206001
+          ],
+          "brand_en": [
+            "Benzac AC"
+          ],
+          "brand_ar": [
+            "بنزاك اى سى"
+          ],
+          "image_url": "https://example.com/benzac-2.jpg",
+          "strength_ref": [
+            "str_50",
+            "str_51"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 207,
+      "title": "ماسكات وسكراب",
+      "name_en": "Masks & Scrubs",
+      "active_ingredients": [
+        {
+          "name_ar": "ماسكات وسكراب",
+          "name_en": "Masks & Scrubs",
+          "form_ref": [
+            "form_20"
+          ],
+          "id": [
+            207001
+          ],
+          "brand_en": [
+            "Garnier"
+          ],
+          "brand_ar": [
+            "غارنييه"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 208,
+      "title": "العناية بالشفاه والعين",
+      "name_en": "Lip & Eye Care",
+      "active_ingredients": [
+        {
+          "name_ar": "العناية بالشفاه والعين",
+          "name_en": "Lip & Eye Care",
+          "form_ref": [
+            "form_21"
+          ],
+          "id": [
+            208001
+          ],
+          "brand_en": [
+            "L'Oreal"
+          ],
+          "brand_ar": [
+            "لوريال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# --- Global Exclusions ---
+node_modules/
+test/
+.vscode/
+.idea/
+.gradle/
+build/
+bin/
+gen/
+out/
+
+# --- System Files ---
+*.exe
+*.bat
+*.log
+local.properties
+Thumbs.db
+[Dd]s_Store
+
+# --- Project Specific ---
+databaseBackup/
+note/
+scratch/
+large_files_list.json
+notification/notification-credentials.js
+standalone_dist.js
+Run_Smart_Downloader.bat

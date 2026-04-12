@@ -1,0 +1,396 @@
+{
+  "id": 13,
+  "title": "كبار السن والرعاية المنزلية",
+  "name_en": "Elderly & Home Care",
+  "sub": [
+    {
+      "id": 1301,
+      "title": "فيتامينات كبار السن",
+      "name_en": "Senior Vitamins",
+      "active_ingredients": [
+        {
+          "name_ar": "فيتامينات مخصصة لكبار السن (فوق 50)",
+          "name_en": "Vitamins for Seniors (50+)",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            1301001
+          ],
+          "brand_en": [
+            "Centrum Silver"
+          ],
+          "brand_ar": [
+            "سنتروم سيلفر"
+          ],
+          "image_url": "https://example.com/centrum-silver.jpg",
+          "strength_ref": [
+            "str_83"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "عكاز طبي قابل للتعديل",
+          "name_en": "Adjustable Crutch",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1301147
+          ],
+          "brand_en": [
+            "Adjustable Crutch"
+          ],
+          "brand_ar": [
+            "عكاز طبي قابل للتعديل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مشاية كبار السن (Walker)",
+          "name_en": "Senior Walker",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1301148
+          ],
+          "brand_en": [
+            "Senior Walker"
+          ],
+          "brand_ar": [
+            "مشاية كبار السن (Walker)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جوارب ضاغطة للطيران",
+          "name_en": "Compression Flight Socks",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1301220
+          ],
+          "brand_en": [
+            "Compression Flight Socks"
+          ],
+          "brand_ar": [
+            "جوارب ضاغطة للطيران"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جوارب ضاغطة للحامل",
+          "name_en": "Maternity Compression Socks",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1301284
+          ],
+          "brand_en": [
+            "Maternity Compression Socks"
+          ],
+          "brand_ar": [
+            "جوارب ضاغطة للحامل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1302,
+      "title": "مستلزمات الحركة (عكازات، مشايات)",
+      "name_en": "Mobility Aids (Crutches, Walkers)",
+      "active_ingredients": [
+        {
+          "name_ar": "مستلزمات الحركة (عكازات، مشايات)",
+          "name_en": "Mobility Aids (Crutches, Walkers)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1302001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كرسي متحرك يدوي",
+          "name_en": "Manual Wheelchair",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1302149
+          ],
+          "brand_en": [
+            "Manual Wheelchair"
+          ],
+          "brand_ar": [
+            "كرسي متحرك يدوي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "وسادة رفع القدمين",
+          "name_en": "Leg Elevation Pillow",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1302226
+          ],
+          "brand_en": [
+            "Leg Elevation Pillow"
+          ],
+          "brand_ar": [
+            "وسادة رفع القدمين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جوارب كهربائية للتدفئة",
+          "name_en": "Heated Socks",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1302227
+          ],
+          "brand_en": [
+            "Heated Socks"
+          ],
+          "brand_ar": [
+            "جوارب كهربائية للتدفئة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سلم متحرك منزلي",
+          "name_en": "Stairlift",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1302365
+          ],
+          "brand_en": [
+            "Stairlift"
+          ],
+          "brand_ar": [
+            "سلم متحرك منزلي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جوارب تدفئة تعمل بالبطارية",
+          "name_en": "Battery Heated Socks",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1302379
+          ],
+          "brand_en": [
+            "Battery Heated Socks"
+          ],
+          "brand_ar": [
+            "جوارب تدفئة تعمل بالبطارية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1303,
+      "title": "العناية اليومية لكبار السن",
+      "name_en": "Daily Elderly Care",
+      "active_ingredients": [
+        {
+          "name_ar": "العناية اليومية لكبار السن",
+          "name_en": "Daily Elderly Care",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1303001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1304,
+      "title": "مستلزمات سلس البول",
+      "name_en": "Incontinence Supplies",
+      "active_ingredients": [
+        {
+          "name_ar": "حفاضات ومستلزمات كبار السن",
+          "name_en": "Adult Diapers & Incontinence Supplies",
+          "form_ref": [
+            "form_58"
+          ],
+          "id": [
+            1304001,
+            1304002
+          ],
+          "brand_en": [
+            "Tena Slip",
+            "Depend"
+          ],
+          "brand_ar": [
+            "تينا سلب",
+            "ديبيند حفاضات"
+          ],
+          "image_url": "https://example.com/tena.jpg",
+          "strength_ref": [
+            "str_103",
+            "str_104"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1305,
+      "title": "أجهزة قياس الضغط والسكر",
+      "name_en": "BP & Glucose Monitors",
+      "active_ingredients": [
+        {
+          "name_ar": "أجهزة قياس الضغط والسكر",
+          "name_en": "BP & Glucose Monitors",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            1305001
+          ],
+          "brand_en": [
+            "Beurer"
+          ],
+          "brand_ar": [
+            "بيورير"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1306,
+      "title": "أجراس تنبيه ومساعدات طوارئ",
+      "name_en": "Alert Bells & Emergency Aids",
+      "active_ingredients": [
+        {
+          "name_ar": "أجراس تنبيه ومساعدات طوارئ",
+          "name_en": "Alert Bells & Emergency Aids",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1306001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1307,
+      "title": "مقاعد حمام وكراسي متحركة صغيرة",
+      "name_en": "Bath Seats & Small Wheelchairs",
+      "active_ingredients": [
+        {
+          "name_ar": "مقاعد حمام وكراسي متحركة صغيرة",
+          "name_en": "Bath Seats & Small Wheelchairs",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            1307001
+          ],
+          "brand_en": [
+            "L'Oreal Elvive"
+          ],
+          "brand_ar": [
+            "لوريال إلفيف"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

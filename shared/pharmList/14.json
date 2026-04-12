@@ -1,0 +1,321 @@
+{
+  "id": 14,
+  "title": "الرياضة واللياقة البدنية",
+  "name_en": "Sports & Fitness",
+  "sub": [
+    {
+      "id": 1401,
+      "title": "مشروبات طاقة ورياضية",
+      "name_en": "Energy & Sports Drinks",
+      "active_ingredients": [
+        {
+          "name_ar": "مشروبات الطاقة والرياضة",
+          "name_en": "Energy & Sports Drinks",
+          "form_ref": [
+            "form_59",
+            "form_60"
+          ],
+          "id": [
+            1401001,
+            1401002
+          ],
+          "brand_en": [
+            "Red Bull",
+            "Gatorade"
+          ],
+          "brand_ar": [
+            "ريد بول",
+            "جاتوريد"
+          ],
+          "image_url": "https://example.com/redbull.jpg",
+          "strength_ref": [
+            "str_105",
+            "str_55"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غشاء جرح سائل (بخاخ)",
+          "name_en": "Liquid Bandage Spray",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            1401307
+          ],
+          "brand_en": [
+            "Liquid Bandage Spray"
+          ],
+          "brand_ar": [
+            "غشاء جرح سائل (بخاخ)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بودرة مرقئ للنزيف",
+          "name_en": "Hemostatic Powder",
+          "form_ref": [
+            "form_50"
+          ],
+          "id": [
+            1401308
+          ],
+          "brand_en": [
+            "Hemostatic Powder"
+          ],
+          "brand_ar": [
+            "بودرة مرقئ للنزيف"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قلم إنذار الأدرينالين (EpiPen)",
+          "name_en": "Epinephrine Auto-Injector",
+          "form_ref": [
+            "form_7"
+          ],
+          "id": [
+            1401316
+          ],
+          "brand_en": [
+            "Epinephrine Auto-Injector"
+          ],
+          "brand_ar": [
+            "قلم إنذار الأدرينالين (EpiPen)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "بطانية طوارئ حرارية (فضية)",
+          "name_en": "Emergency Thermal Blanket",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1401376
+          ],
+          "brand_en": [
+            "Emergency Thermal Blanket"
+          ],
+          "brand_ar": [
+            "بطانية طوارئ حرارية (فضية)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كيس نوم حراري",
+          "name_en": "Thermal Sleeping Bag",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1401377
+          ],
+          "brand_en": [
+            "Thermal Sleeping Bag"
+          ],
+          "brand_ar": [
+            "كيس نوم حراري"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1402,
+      "title": "بروتين بار ووجبات خفيفة",
+      "name_en": "Protein Bars & Snacks",
+      "active_ingredients": [
+        {
+          "name_ar": "ألواح البروتين والوجبات الخفيفة الرياضية",
+          "name_en": "Protein Bars & Sports Snacks",
+          "form_ref": [
+            "form_61"
+          ],
+          "id": [
+            1402001,
+            1402002
+          ],
+          "brand_en": [
+            "Quest Protein Bar",
+            "Grenade Carb Killa"
+          ],
+          "brand_ar": [
+            "كويست بروتين بار",
+            "جرينيد كارب كيلا"
+          ],
+          "image_url": "https://example.com/quest-bar.jpg",
+          "strength_ref": [
+            "str_77"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1403,
+      "title": "مكملات قبل وبعد التمرين",
+      "name_en": "Pre & Post Workout Supplements",
+      "active_ingredients": [
+        {
+          "name_ar": "مكملات قبل وبعد التمرين",
+          "name_en": "Pre & Post Workout Supplements",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1403001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1404,
+      "title": "أحماض أمينية (BCAA)",
+      "name_en": "Amino Acids (BCAA)",
+      "active_ingredients": [
+        {
+          "name_ar": "أحماض أمينية (BCAA)",
+          "name_en": "Amino Acids (BCAA)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1404001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1405,
+      "title": "كريمات ومراهم للعضلات",
+      "name_en": "Muscle Creams & Ointments",
+      "active_ingredients": [
+        {
+          "name_ar": "كريمات مسكنة لآلام العضلات والمفاصل",
+          "name_en": "Muscle & Joint Pain Relief Creams",
+          "form_ref": [
+            "form_14",
+            "form_15"
+          ],
+          "id": [
+            1405001,
+            1405002
+          ],
+          "brand_en": [
+            "Moov Rapid Relief",
+            "Deep Heat Spray"
+          ],
+          "brand_ar": [
+            "موف مسكن آلام",
+            "ديب هيت بخاخ"
+          ],
+          "image_url": "https://example.com/moov.jpg",
+          "strength_ref": [
+            "str_49",
+            "str_22"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1406,
+      "title": "أشرطة لاصقة رياضية (كينيسيو)",
+      "name_en": "Kinesio Tapes",
+      "active_ingredients": [
+        {
+          "name_ar": "أشرطة لاصقة رياضية (كينيسيو)",
+          "name_en": "Kinesio Tapes",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1406001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1407,
+      "title": "زجاجات مياه رياضية",
+      "name_en": "Sports Water Bottles",
+      "active_ingredients": [
+        {
+          "name_ar": "زجاجات مياه رياضية",
+          "name_en": "Sports Water Bottles",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1407001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

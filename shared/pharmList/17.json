@@ -1,0 +1,252 @@
+{
+  "id": 17,
+  "title": "المنتجات العضوية والطبيعية",
+  "name_en": "Organic & Natural Products",
+  "sub": [
+    {
+      "id": 1701,
+      "title": "عناية بشرة طبيعية",
+      "name_en": "Natural Skin Care",
+      "active_ingredients": [
+        {
+          "name_ar": "عناية بشرة طبيعية",
+          "name_en": "Natural Skin Care",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1701001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زيت الخروع",
+          "name_en": "Castor Oil",
+          "form_ref": [
+            "form_24"
+          ],
+          "id": [
+            1701155
+          ],
+          "brand_en": [
+            "Castor Oil"
+          ],
+          "brand_ar": [
+            "زيت الخروع"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زيت اللوز الحلو",
+          "name_en": "Sweet Almond Oil",
+          "form_ref": [
+            "form_24"
+          ],
+          "id": [
+            1701156
+          ],
+          "brand_en": [
+            "Sweet Almond Oil"
+          ],
+          "brand_ar": [
+            "زيت اللوز الحلو"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "عسل مانوكا",
+          "name_en": "Manuka Honey",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1701157
+          ],
+          "brand_en": [
+            "Manuka Honey"
+          ],
+          "brand_ar": [
+            "عسل مانوكا"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حبة البركة المطحونة",
+          "name_en": "Ground Black Seed",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1701159
+          ],
+          "brand_en": [
+            "Ground Black Seed"
+          ],
+          "brand_ar": [
+            "حبة البركة المطحونة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زيت اللوز الحلو للحامل",
+          "name_en": "Sweet Almond Oil for Pregnancy",
+          "form_ref": [
+            "form_24"
+          ],
+          "id": [
+            1701281
+          ],
+          "brand_en": [
+            "Sweet Almond Oil for Pregnancy"
+          ],
+          "brand_ar": [
+            "زيت اللوز الحلو للحامل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1702,
+      "title": "عناية شعر طبيعية",
+      "name_en": "Natural Hair Care",
+      "active_ingredients": [
+        {
+          "name_ar": "عناية شعر طبيعية",
+          "name_en": "Natural Hair Care",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            1702001
+          ],
+          "brand_en": [
+            "L'Oreal Elvive"
+          ],
+          "brand_ar": [
+            "لوريال إلفيف"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1703,
+      "title": "مكملات غذائية عضوية",
+      "name_en": "Organic Dietary Supplements",
+      "active_ingredients": [
+        {
+          "name_ar": "مكملات غذائية عضوية",
+          "name_en": "Organic Dietary Supplements",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1703001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1704,
+      "title": "زيوت طبيعية نادرة",
+      "name_en": "Rare Natural Oils",
+      "active_ingredients": [
+        {
+          "name_ar": "زيوت طبيعية نادرة",
+          "name_en": "Rare Natural Oils",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1704001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1705,
+      "title": "منتجات منزلية صديقة للبيئة",
+      "name_en": "Eco-Friendly Home Products",
+      "active_ingredients": [
+        {
+          "name_ar": "منتجات منزلية صديقة للبيئة",
+          "name_en": "Eco-Friendly Home Products",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1705001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

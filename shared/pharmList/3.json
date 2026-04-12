@@ -1,0 +1,398 @@
+{
+  "id": 3,
+  "title": "العناية بالشعر",
+  "name_en": "Hair Care",
+  "sub": [
+    {
+      "id": 301,
+      "title": "شامبو وبلسم",
+      "name_en": "Shampoo & Conditioner",
+      "active_ingredients": [
+        {
+          "name_ar": "شامبوهات طبية",
+          "name_en": "Medicated Shampoos",
+          "form_ref": [
+            "form_22"
+          ],
+          "id": [
+            301001,
+            301002
+          ],
+          "brand_en": [
+            "Nizoral",
+            "Vichy Dercos Anti-Dandruff"
+          ],
+          "brand_ar": [
+            "نيزورال",
+            "فيتشي ديركوس"
+          ],
+          "image_url": "https://example.com/nizoral.jpg",
+          "strength_ref": [
+            "str_53",
+            "str_39"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بيوتين",
+          "name_en": "Biotin",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            301060
+          ],
+          "brand_en": [
+            "Biotin"
+          ],
+          "brand_ar": [
+            "بيوتين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شامبو ضد القمل",
+          "name_en": "Anti-lice Shampoo",
+          "form_ref": [
+            "form_22"
+          ],
+          "id": [
+            301061
+          ],
+          "brand_en": [
+            "Anti-lice Shampoo"
+          ],
+          "brand_ar": [
+            "شامبو ضد القمل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مشط القمل",
+          "name_en": "Lice Comb",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            301062
+          ],
+          "brand_en": [
+            "Lice Comb"
+          ],
+          "brand_ar": [
+            "مشط القمل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كيراتين سائل",
+          "name_en": "Liquid Keratin",
+          "form_ref": [
+            "form_22"
+          ],
+          "id": [
+            301123
+          ],
+          "brand_en": [
+            "Liquid Keratin"
+          ],
+          "brand_ar": [
+            "كيراتين سائل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ حماية من الحرارة",
+          "name_en": "Heat Protectant Spray",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            301124
+          ],
+          "brand_en": [
+            "Heat Protectant Spray"
+          ],
+          "brand_ar": [
+            "بخاخ حماية من الحرارة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شامبو جاف",
+          "name_en": "Dry Shampoo",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            301125
+          ],
+          "brand_en": [
+            "Dry Shampoo"
+          ],
+          "brand_ar": [
+            "شامبو جاف"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "صبغة شعر طبيعية (حناء)",
+          "name_en": "Natural Henna Dye",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            301127
+          ],
+          "brand_en": [
+            "Natural Henna Dye"
+          ],
+          "brand_ar": [
+            "صبغة شعر طبيعية (حناء)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 302,
+      "title": "تساقط الشعر",
+      "name_en": "Hair Loss",
+      "active_ingredients": [
+        {
+          "name_ar": "المينوكسيديل",
+          "name_en": "Minoxidil",
+          "form_ref": [
+            "form_23",
+            "form_17"
+          ],
+          "id": [
+            302001,
+            302002
+          ],
+          "brand_en": [
+            "Hair Plus Back",
+            "Rogaine"
+          ],
+          "brand_ar": [
+            "هير بلس باك",
+            "روجين"
+          ],
+          "image_url": "https://example.com/hairplus.jpg",
+          "strength_ref": [
+            "str_51"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 303,
+      "title": "زيوت وسيروم",
+      "name_en": "Oils & Serums",
+      "active_ingredients": [
+        {
+          "name_ar": "زيوت وسيروم مغذي للشعر",
+          "name_en": "Nourishing Hair Oils & Serums",
+          "form_ref": [
+            "form_24",
+            "form_23"
+          ],
+          "id": [
+            303001,
+            303002
+          ],
+          "brand_en": [
+            "OGX Argan Oil",
+            "Vatika Coconut Oil"
+          ],
+          "brand_ar": [
+            "أو جي إكس أرغان",
+            "فاتيكا جوز هند"
+          ],
+          "image_url": "https://example.com/ogx.jpg",
+          "strength_ref": [
+            "str_45",
+            "str_39"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زيت روزماري",
+          "name_en": "Rosemary Oil",
+          "form_ref": [
+            "form_24"
+          ],
+          "id": [
+            303120
+          ],
+          "brand_en": [
+            "Rosemary Oil"
+          ],
+          "brand_ar": [
+            "زيت روزماري"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زيت جوز الهند العضوي",
+          "name_en": "Organic Coconut Oil",
+          "form_ref": [
+            "form_24"
+          ],
+          "id": [
+            303121
+          ],
+          "brand_en": [
+            "Organic Coconut Oil"
+          ],
+          "brand_ar": [
+            "زيت جوز الهند العضوي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زيت الأرغان",
+          "name_en": "Argan Oil",
+          "form_ref": [
+            "form_24"
+          ],
+          "id": [
+            303122
+          ],
+          "brand_en": [
+            "Argan Oil"
+          ],
+          "brand_ar": [
+            "زيت الأرغان"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 304,
+      "title": "ماسكات وحمامات كريم",
+      "name_en": "Masks & Cream Baths",
+      "active_ingredients": [
+        {
+          "name_ar": "ماسكات وحمامات كريم",
+          "name_en": "Masks & Cream Baths",
+          "form_ref": [
+            "form_20"
+          ],
+          "id": [
+            304001
+          ],
+          "brand_en": [
+            "Garnier"
+          ],
+          "brand_ar": [
+            "غارنييه"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 305,
+      "title": "قشرة الشعر",
+      "name_en": "Dandruff",
+      "active_ingredients": [
+        {
+          "name_ar": "قشرة الشعر",
+          "name_en": "Dandruff",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            305001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 306,
+      "title": "صبغات الشعر",
+      "name_en": "Hair Dyes",
+      "active_ingredients": [
+        {
+          "name_ar": "صبغات الشعر",
+          "name_en": "Hair Dyes",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            306001
+          ],
+          "brand_en": [
+            "L'Oreal Elvive"
+          ],
+          "brand_ar": [
+            "لوريال إلفيف"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

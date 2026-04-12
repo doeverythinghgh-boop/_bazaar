@@ -1,0 +1,811 @@
+{
+  "id": 6,
+  "title": "الفيتامينات والمكملات",
+  "name_en": "Vitamins & Supplements",
+  "sub": [
+    {
+      "id": 601,
+      "title": "فيتامينات عامة",
+      "name_en": "General Vitamins",
+      "active_ingredients": [
+        {
+          "name_ar": "فيتامينات متعددة",
+          "name_en": "Multivitamins",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            601001,
+            601002
+          ],
+          "brand_en": [
+            "Centrum Lutein",
+            "Pharmaton"
+          ],
+          "brand_ar": [
+            "سنتروم",
+            "فارمتون"
+          ],
+          "image_url": "https://example.com/centrum.jpg",
+          "strength_ref": [
+            "str_80",
+            "str_81",
+            "str_82"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سنتروم للرجال والنساء",
+          "name_en": "Centrum Men & Women",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            601010,
+            601011
+          ],
+          "brand_en": [
+            "Centrum Men",
+            "Centrum Women"
+          ],
+          "brand_ar": [
+            "سنتروم للرجال",
+            "سنتروم للنساء"
+          ],
+          "image_url": "https://example.com/centrum-men.jpg",
+          "strength_ref": [
+            "str_83",
+            "str_84"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فيتامين د 1000 وحدة",
+          "name_en": "Vitamin D3 1000 IU",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            601060
+          ],
+          "brand_en": [
+            "Vitamin D3 1000 IU"
+          ],
+          "brand_ar": [
+            "فيتامين د 1000 وحدة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فيتامين ب12",
+          "name_en": "Vitamin B12",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            601061
+          ],
+          "brand_en": [
+            "Vitamin B12"
+          ],
+          "brand_ar": [
+            "فيتامين ب12"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "إنزيم Q10",
+          "name_en": "Coenzyme Q10",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            601050
+          ],
+          "brand_en": [
+            "Generic Coenzyme Q10"
+          ],
+          "brand_ar": [
+            "منتج إنزيم Q10"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيليمارين",
+          "name_en": "Silymarin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            601051
+          ],
+          "brand_en": [
+            "Generic Silymarin"
+          ],
+          "brand_ar": [
+            "منتج سيليمارين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أوميغا 3 للأطفال",
+          "name_en": "Kids Omega-3",
+          "form_ref": [
+            "form_2"
+          ],
+          "id": [
+            601100
+          ],
+          "brand_en": [
+            "Kids Omega-3"
+          ],
+          "brand_ar": [
+            "أوميغا 3 للأطفال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فيتامين ك",
+          "name_en": "Vitamin K",
+          "form_ref": [
+            "form_8"
+          ],
+          "id": [
+            601101
+          ],
+          "brand_en": [
+            "Vitamin K"
+          ],
+          "brand_ar": [
+            "فيتامين ك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حمض الفوليك 5 مجم",
+          "name_en": "Folic Acid 5mg",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            601102
+          ],
+          "brand_en": [
+            "Folic Acid 5mg"
+          ],
+          "brand_ar": [
+            "حمض الفوليك 5 مجم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حديد سائل للأطفال",
+          "name_en": "Liquid Iron for Kids",
+          "form_ref": [
+            "form_2"
+          ],
+          "id": [
+            601103
+          ],
+          "brand_en": [
+            "Liquid Iron for Kids"
+          ],
+          "brand_ar": [
+            "حديد سائل للأطفال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فيتامين أ",
+          "name_en": "Vitamin A",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            601105
+          ],
+          "brand_en": [
+            "Vitamin A"
+          ],
+          "brand_ar": [
+            "فيتامين أ"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فيتامين هـ",
+          "name_en": "Vitamin E",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            601106
+          ],
+          "brand_en": [
+            "Vitamin E"
+          ],
+          "brand_ar": [
+            "فيتامين هـ"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فيتامين ب المركب (B Complex)",
+          "name_en": "Vitamin B Complex",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            601107
+          ],
+          "brand_en": [
+            "Vitamin B Complex"
+          ],
+          "brand_ar": [
+            "فيتامين ب المركب (B Complex)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "نياسين (ب3)",
+          "name_en": "Niacin (B3)",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            601108
+          ],
+          "brand_en": [
+            "Niacin (B3)"
+          ],
+          "brand_ar": [
+            "نياسين (ب3)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بيريدوكسين (ب6)",
+          "name_en": "Pyridoxine (B6)",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            601109
+          ],
+          "brand_en": [
+            "Pyridoxine (B6)"
+          ],
+          "brand_ar": [
+            "بيريدوكسين (ب6)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غذاء ملكات النحل مجفف",
+          "name_en": "Freeze-Dried Royal Jelly",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            601158
+          ],
+          "brand_en": [
+            "Freeze-Dried Royal Jelly"
+          ],
+          "brand_ar": [
+            "غذاء ملكات النحل مجفف"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كبسولات مستخلص بذور العنب",
+          "name_en": "Grape Seed Extract",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            601160
+          ],
+          "brand_en": [
+            "Grape Seed Extract"
+          ],
+          "brand_ar": [
+            "كبسولات مستخلص بذور العنب"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مستخلص إشنسا",
+          "name_en": "Echinacea Extract",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            601161
+          ],
+          "brand_en": [
+            "Echinacea Extract"
+          ],
+          "brand_ar": [
+            "مستخلص إشنسا"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كرياتين",
+          "name_en": "Creatine Monohydrate",
+          "form_ref": [
+            "form_50"
+          ],
+          "id": [
+            601164
+          ],
+          "brand_en": [
+            "Creatine Monohydrate"
+          ],
+          "brand_ar": [
+            "كرياتين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بيتا ألانين",
+          "name_en": "Beta-Alanine",
+          "form_ref": [
+            "form_50"
+          ],
+          "id": [
+            601165
+          ],
+          "brand_en": [
+            "Beta-Alanine"
+          ],
+          "brand_ar": [
+            "بيتا ألانين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيترولين مالات",
+          "name_en": "Citrulline Malate",
+          "form_ref": [
+            "form_50"
+          ],
+          "id": [
+            601166
+          ],
+          "brand_en": [
+            "Citrulline Malate"
+          ],
+          "brand_ar": [
+            "سيترولين مالات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زيت MCT",
+          "name_en": "MCT Oil",
+          "form_ref": [
+            "form_24"
+          ],
+          "id": [
+            601167
+          ],
+          "brand_en": [
+            "MCT Oil"
+          ],
+          "brand_ar": [
+            "زيت MCT"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زبادي يوناني بروتين",
+          "name_en": "Greek Yogurt Protein",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            601168
+          ],
+          "brand_en": [
+            "Greek Yogurt Protein"
+          ],
+          "brand_ar": [
+            "زبادي يوناني بروتين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ميثيل فولات",
+          "name_en": "Methylfolate",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            601209
+          ],
+          "brand_en": [
+            "Methylfolate"
+          ],
+          "brand_ar": [
+            "ميثيل فولات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 602,
+      "title": "المناعة",
+      "name_en": "Immunity",
+      "active_ingredients": [
+        {
+          "name_ar": "فيتامين سي وزنك لرفع المناعة",
+          "name_en": "Vitamin C & Zinc for Immunity",
+          "form_ref": [
+            "form_4",
+            "form_5"
+          ],
+          "id": [
+            602001,
+            602002
+          ],
+          "brand_en": [
+            "Redoxon",
+            "Sansovit"
+          ],
+          "brand_ar": [
+            "ريدوكسون",
+            "سانسوفيت"
+          ],
+          "image_url": "https://example.com/redoxon.jpg",
+          "strength_ref": [
+            "str_85",
+            "str_39"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 603,
+      "title": "العظام والمفاصل",
+      "name_en": "Bones & Joints",
+      "active_ingredients": [
+        {
+          "name_ar": "مكملات الكالسيوم ودعم المفاصل",
+          "name_en": "Calcium & Joint Support Supplements",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            603001,
+            603002
+          ],
+          "brand_en": [
+            "Osteocare Original",
+            "Caltrate 600+D3"
+          ],
+          "brand_ar": [
+            "أوستيوكير أصلي",
+            "كالترات 600"
+          ],
+          "image_url": "https://example.com/osteocare.jpg",
+          "strength_ref": [
+            "str_83",
+            "str_84"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جلوكوزامين",
+          "name_en": "Glucosamine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            603050
+          ],
+          "brand_en": [
+            "Generic Glucosamine"
+          ],
+          "brand_ar": [
+            "منتج جلوكوزامين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كوندرويتين",
+          "name_en": "Chondroitin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            603051
+          ],
+          "brand_en": [
+            "Generic Chondroitin"
+          ],
+          "brand_ar": [
+            "منتج كوندرويتين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "إم إس إم",
+          "name_en": "MSM",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            603052
+          ],
+          "brand_en": [
+            "Generic MSM"
+          ],
+          "brand_ar": [
+            "منتج إم إس إم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 604,
+      "title": "الحديد",
+      "name_en": "Iron",
+      "active_ingredients": [
+        {
+          "name_ar": "مكملات الحديد",
+          "name_en": "Iron Supplements",
+          "form_ref": [
+            "form_1",
+            "form_40",
+            "form_2"
+          ],
+          "id": [
+            604001,
+            604002
+          ],
+          "brand_en": [
+            "Feroglobin",
+            "Fera-Sanol"
+          ],
+          "brand_ar": [
+            "فيروجلوبين",
+            "فيرا سانول"
+          ],
+          "image_url": "https://example.com/feroglobin.jpg",
+          "strength_ref": [
+            "str_82",
+            "str_86"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ماغنيسيوم",
+          "name_en": "Magnesium",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            604060
+          ],
+          "brand_en": [
+            "Magnesium"
+          ],
+          "brand_ar": [
+            "ماغنيسيوم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زنك",
+          "name_en": "Zinc",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            604061
+          ],
+          "brand_en": [
+            "Zinc"
+          ],
+          "brand_ar": [
+            "زنك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كالسيوم سائل",
+          "name_en": "Liquid Calcium",
+          "form_ref": [
+            "form_2"
+          ],
+          "id": [
+            604104
+          ],
+          "brand_en": [
+            "Liquid Calcium"
+          ],
+          "brand_ar": [
+            "كالسيوم سائل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 605,
+      "title": "أوميجا 3",
+      "name_en": "Omega 3",
+      "active_ingredients": [
+        {
+          "name_ar": "أوميغا 3",
+          "name_en": "Omega-3",
+          "form_ref": [
+            "form_41"
+          ],
+          "id": [
+            605001,
+            605002
+          ],
+          "brand_en": [
+            "Limitless Omega-3",
+            "Seven Seas"
+          ],
+          "brand_ar": [
+            "ليمتلس",
+            "سيفن سيز"
+          ],
+          "image_url": "https://example.com/limitless.jpg",
+          "strength_ref": [
+            "str_82"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 606,
+      "title": "مكملات الأطفال",
+      "name_en": "Children's Supplements",
+      "active_ingredients": [
+        {
+          "name_ar": "مكملات الأطفال",
+          "name_en": "Children's Supplements",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            606001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

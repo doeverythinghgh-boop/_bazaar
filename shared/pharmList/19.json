@@ -1,0 +1,588 @@
+{
+  "id": 19,
+  "title": "🎁 هدايا وعطور",
+  "name_en": "Gifts & Perfumes",
+  "sub": [
+    {
+      "id": 1901,
+      "title": "عطور رجالية",
+      "name_en": "Men's Perfumes",
+      "active_ingredients": [
+        {
+          "name_ar": "عطور رجالية",
+          "name_en": "Men's Perfumes",
+          "form_ref": [
+            "form_64"
+          ],
+          "id": [
+            1901001
+          ],
+          "brand_en": [
+            "Sauvage Dior"
+          ],
+          "brand_ar": [
+            "سوفاج ديور"
+          ],
+          "image_url": "https://example.com/sauvage.jpg",
+          "strength_ref": [
+            "str_45"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "عطر بخاخ 100 مل",
+          "name_en": "Perfume Spray 100ml",
+          "form_ref": [
+            "form_64"
+          ],
+          "id": [
+            1901189
+          ],
+          "brand_en": [
+            "Perfume Spray 100ml"
+          ],
+          "brand_ar": [
+            "عطر بخاخ 100 مل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أو دو تواليت",
+          "name_en": "Eau de Toilette",
+          "form_ref": [
+            "form_64"
+          ],
+          "id": [
+            1901190
+          ],
+          "brand_en": [
+            "Eau de Toilette"
+          ],
+          "brand_ar": [
+            "أو دو تواليت"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زيت عطر",
+          "name_en": "Perfume Oil",
+          "form_ref": [
+            "form_24"
+          ],
+          "id": [
+            1901191
+          ],
+          "brand_en": [
+            "Perfume Oil"
+          ],
+          "brand_ar": [
+            "زيت عطر"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ جو",
+          "name_en": "Room Spray",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            1901192
+          ],
+          "brand_en": [
+            "Room Spray"
+          ],
+          "brand_ar": [
+            "بخاخ جو"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم عطور مصغر",
+          "name_en": "Mini Perfume Set",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901193
+          ],
+          "brand_en": [
+            "Mini Perfume Set"
+          ],
+          "brand_ar": [
+            "طقم عطور مصغر"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شمعة عطرية كبيرة",
+          "name_en": "Large Scented Candle",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901194
+          ],
+          "brand_en": [
+            "Large Scented Candle"
+          ],
+          "brand_ar": [
+            "شمعة عطرية كبيرة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ناشر روائح (Diffuser)",
+          "name_en": "Reed Diffuser",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901195
+          ],
+          "brand_en": [
+            "Reed Diffuser"
+          ],
+          "brand_ar": [
+            "ناشر روائح (Diffuser)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طرد هدايا صحي",
+          "name_en": "Wellness Gift Box",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901196
+          ],
+          "brand_en": [
+            "Wellness Gift Box"
+          ],
+          "brand_ar": [
+            "طرد هدايا صحي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ عطري للغرفة (لافندر)",
+          "name_en": "Lavender Room Spray",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            1901343
+          ],
+          "brand_en": [
+            "Lavender Room Spray"
+          ],
+          "brand_ar": [
+            "بخاخ عطري للغرفة (لافندر)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ناشر زيوت عطرية بالموجات فوق الصوتية",
+          "name_en": "Ultrasonic Essential Oil Diffuser",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            1901344
+          ],
+          "brand_en": [
+            "Ultrasonic Essential Oil Diffuser"
+          ],
+          "brand_ar": [
+            "ناشر زيوت عطرية بالموجات فوق الصوتية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مجموعة زيوت أساسية للتأمل",
+          "name_en": "Meditation Essential Oil Kit",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901345
+          ],
+          "brand_en": [
+            "Meditation Essential Oil Kit"
+          ],
+          "brand_ar": [
+            "مجموعة زيوت أساسية للتأمل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم العناية بالقدم الكامل (باديكير)",
+          "name_en": "Complete Foot Care Kit",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901390
+          ],
+          "brand_en": [
+            "Complete Foot Care Kit"
+          ],
+          "brand_ar": [
+            "طقم العناية بالقدم الكامل (باديكير)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم العناية باليدين (مانيكير)",
+          "name_en": "Manicure Care Set",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901391
+          ],
+          "brand_en": [
+            "Manicure Care Set"
+          ],
+          "brand_ar": [
+            "طقم العناية باليدين (مانيكير)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم الاسترخاء (حمام عطري)",
+          "name_en": "Relaxation Bath Set",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901392
+          ],
+          "brand_en": [
+            "Relaxation Bath Set"
+          ],
+          "brand_ar": [
+            "طقم الاسترخاء (حمام عطري)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم العناية باللحية (رجالي)",
+          "name_en": "Beard Care Set",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901393
+          ],
+          "brand_en": [
+            "Beard Care Set"
+          ],
+          "brand_ar": [
+            "طقم العناية باللحية (رجالي)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم العناية بالشعر المتقدم",
+          "name_en": "Advanced Hair Care Set",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901394
+          ],
+          "brand_en": [
+            "Advanced Hair Care Set"
+          ],
+          "brand_ar": [
+            "طقم العناية بالشعر المتقدم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم مكافحة الشيخوخة (بشرة)",
+          "name_en": "Anti-Aging Skincare Set",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901395
+          ],
+          "brand_en": [
+            "Anti-Aging Skincare Set"
+          ],
+          "brand_ar": [
+            "طقم مكافحة الشيخوخة (بشرة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "صندوق هدايا فيتامينات مخصص",
+          "name_en": "Custom Vitamin Gift Box",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901396
+          ],
+          "brand_en": [
+            "Custom Vitamin Gift Box"
+          ],
+          "brand_ar": [
+            "صندوق هدايا فيتامينات مخصص"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم العناية بالأم الجديدة",
+          "name_en": "New Mom Care Set",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901397
+          ],
+          "brand_en": [
+            "New Mom Care Set"
+          ],
+          "brand_ar": [
+            "طقم العناية بالأم الجديدة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "طقم الإقلاع عن التدخين",
+          "name_en": "Quit Smoking Gift Set",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901398
+          ],
+          "brand_en": [
+            "Quit Smoking Gift Set"
+          ],
+          "brand_ar": [
+            "طقم الإقلاع عن التدخين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "علبة هدايا صحية (مشروبات وعسل)",
+          "name_en": "Healthy Gift Hamper",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1901399
+          ],
+          "brand_en": [
+            "Healthy Gift Hamper"
+          ],
+          "brand_ar": [
+            "علبة هدايا صحية (مشروبات وعسل)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1902,
+      "title": "عطور نسائية",
+      "name_en": "Women's Perfumes",
+      "active_ingredients": [
+        {
+          "name_ar": "عطور نسائية",
+          "name_en": "Women's Perfumes",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1902001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1903,
+      "title": "مجموعات هدايا تجميلية",
+      "name_en": "Cosmetic Gift Sets",
+      "active_ingredients": [
+        {
+          "name_ar": "مجموعات هدايا تجميلية",
+          "name_en": "Cosmetic Gift Sets",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1903001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1904,
+      "title": "شموع معطرة",
+      "name_en": "Scented Candles",
+      "active_ingredients": [
+        {
+          "name_ar": "شموع معطرة",
+          "name_en": "Scented Candles",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1904001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1905,
+      "title": "بوكسات هدايا جاهزة",
+      "name_en": "Ready-Made Gift Boxes",
+      "active_ingredients": [
+        {
+          "name_ar": "بوكسات هدايا جاهزة",
+          "name_en": "Ready-Made Gift Boxes",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1905001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

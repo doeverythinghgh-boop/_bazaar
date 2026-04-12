@@ -1,0 +1,119 @@
+{
+  "id": 21,
+  "title": "🎒 العودة للمدارس (موسمي)",
+  "name_en": "Back to School (Seasonal)",
+  "sub": [
+    {
+      "id": 2201,
+      "title": "معقمات ومطهرات للحقائب",
+      "name_en": "Sanitizers for Bags",
+      "active_ingredients": [
+        {
+          "name_ar": "معقمات ومطهرات للحقائب",
+          "name_en": "Sanitizers for Bags",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            2201001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 2202,
+      "title": "فيتامينات للتركيز والذاكرة",
+      "name_en": "Vitamins for Focus & Memory",
+      "active_ingredients": [
+        {
+          "name_ar": "فيتامينات للتركيز والذاكرة",
+          "name_en": "Vitamins for Focus & Memory",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            2202001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 2203,
+      "title": "مستلزمات الإسعافات المدرسية",
+      "name_en": "School First Aid Supplies",
+      "active_ingredients": [
+        {
+          "name_ar": "مستلزمات الإسعافات المدرسية",
+          "name_en": "School First Aid Supplies",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            2203001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 2204,
+      "title": "كريمات واقية من الشمس للأطفال",
+      "name_en": "Kids Sunscreen Creams",
+      "active_ingredients": [
+        {
+          "name_ar": "كريمات واقية من الشمس للأطفال",
+          "name_en": "Kids Sunscreen Creams",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            2204001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

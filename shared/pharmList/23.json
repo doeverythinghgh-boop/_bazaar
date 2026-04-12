@@ -1,0 +1,119 @@
+{
+  "id": 23,
+  "title": "❄️ الشتاء ونزلات البرد (موسمي)",
+  "name_en": "Winter & Colds (Seasonal)",
+  "sub": [
+    {
+      "id": 2301,
+      "title": "مرطبات شفاه وأيدي",
+      "name_en": "Lip & Hand Moisturizers",
+      "active_ingredients": [
+        {
+          "name_ar": "مرطبات شفاه وأيدي",
+          "name_en": "Lip & Hand Moisturizers",
+          "form_ref": [
+            "form_53"
+          ],
+          "id": [
+            2301001
+          ],
+          "brand_en": [
+            "Labello"
+          ],
+          "brand_ar": [
+            "لابيلو"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 2302,
+      "title": "فيتامين سي والمناعة",
+      "name_en": "Vitamin C & Immunity",
+      "active_ingredients": [
+        {
+          "name_ar": "فيتامين سي والمناعة",
+          "name_en": "Vitamin C & Immunity",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            2302001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 2303,
+      "title": "أجهزة ترطيب الجو",
+      "name_en": "Air Humidifiers",
+      "active_ingredients": [
+        {
+          "name_ar": "أجهزة ترطيب الجو",
+          "name_en": "Air Humidifiers",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            2303001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 2304,
+      "title": "مراهم وقائية من البرد",
+      "name_en": "Preventive Cold Ointments",
+      "active_ingredients": [
+        {
+          "name_ar": "مراهم وقائية من البرد",
+          "name_en": "Preventive Cold Ointments",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            2304001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

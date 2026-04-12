@@ -1,0 +1,414 @@
+{
+  "id": 8,
+  "title": "الصحة المتكاملة والوقاية",
+  "name_en": "Integrated Health & Prevention",
+  "sub": [
+    {
+      "id": 801,
+      "title": "كمامات ومعقمات",
+      "name_en": "Masks & Sanitizers",
+      "active_ingredients": [
+        {
+          "name_ar": "كمامات وماسكات طبية",
+          "name_en": "Medical Masks",
+          "form_ref": [
+            "form_47",
+            "form_48"
+          ],
+          "id": [
+            801001
+          ],
+          "brand_en": [
+            "Surgical Mask 3-Ply"
+          ],
+          "brand_ar": [
+            "كمامة 3 طبقات"
+          ],
+          "image_url": "https://example.com/mask.jpg",
+          "strength_ref": [
+            "str_90"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كمامة N95",
+          "name_en": "N95 Mask",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            801060
+          ],
+          "brand_en": [
+            "N95 Mask"
+          ],
+          "brand_ar": [
+            "كمامة N95"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 802,
+      "title": "مطهرات",
+      "name_en": "Antiseptics",
+      "active_ingredients": [
+        {
+          "name_ar": "مطهرات ومعقمات سائلة",
+          "name_en": "Liquid Antiseptics & Disinfectants",
+          "form_ref": [
+            "form_49"
+          ],
+          "id": [
+            802001,
+            802003
+          ],
+          "brand_en": [
+            "Dettol Antiseptic",
+            "Betadine Antiseptic"
+          ],
+          "brand_ar": [
+            "ديتول مطهر",
+            "بيتادين مطهر"
+          ],
+          "image_url": "https://example.com/dettol-125.jpg",
+          "strength_ref": [
+            "str_91",
+            "str_92",
+            "str_93",
+            "str_94",
+            "str_95"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كحول طبي 70%",
+          "name_en": "Medical Alcohol 70%",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            802060
+          ],
+          "brand_en": [
+            "Medical Alcohol 70%"
+          ],
+          "brand_ar": [
+            "كحول طبي 70%"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 803,
+      "title": "منتجات الدايت والسناكس الصحي",
+      "name_en": "Diet Products & Healthy Snacks",
+      "active_ingredients": [
+        {
+          "name_ar": "منتجات الدايت والسناكس الصحي",
+          "name_en": "Diet Products & Healthy Snacks",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            803001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 804,
+      "title": "مكملات غذائية رياضية (بروتين)",
+      "name_en": "Sports Supplements (Protein)",
+      "active_ingredients": [
+        {
+          "name_ar": "واي بروتين",
+          "name_en": "Whey Protein",
+          "form_ref": [
+            "form_50"
+          ],
+          "id": [
+            804001
+          ],
+          "brand_en": [
+            "Optimum Nutrition Gold Standard"
+          ],
+          "brand_ar": [
+            "أوبتيموم نيوترشن"
+          ],
+          "image_url": "https://example.com/on-whey.jpg",
+          "strength_ref": [
+            "str_96"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 805,
+      "title": "الرعاية المنزلية للجروح",
+      "name_en": "Home Wound Care",
+      "active_ingredients": [
+        {
+          "name_ar": "الرعاية المنزلية للجروح",
+          "name_en": "Home Wound Care",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            805001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 806,
+      "title": "مستلزمات ما بعد العمليات",
+      "name_en": "Post-Operative Supplies",
+      "active_ingredients": [
+        {
+          "name_ar": "مستلزمات ما بعد العمليات",
+          "name_en": "Post-Operative Supplies",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            806001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 807,
+      "title": "منتجات الإسعافات الأولية المنزلية",
+      "name_en": "Home First Aid Products",
+      "active_ingredients": [
+        {
+          "name_ar": "منتجات الإسعافات الأولية المنزلية",
+          "name_en": "Home First Aid Products",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            807001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 808,
+      "title": "أجهزة قياس الحرارة والرطوبة",
+      "name_en": "Temperature & Humidity Monitors",
+      "active_ingredients": [
+        {
+          "name_ar": "أجهزة قياس الحرارة والرطوبة",
+          "name_en": "Temperature & Humidity Monitors",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            808001
+          ],
+          "brand_en": [
+            "Beurer"
+          ],
+          "brand_ar": [
+            "بيورير"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شيكر بروتين",
+          "name_en": "Protein Shaker",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            808169
+          ],
+          "brand_en": [
+            "Protein Shaker"
+          ],
+          "brand_ar": [
+            "شيكر بروتين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سجادة يوغا",
+          "name_en": "Yoga Mat",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            808172
+          ],
+          "brand_en": [
+            "Yoga Mat"
+          ],
+          "brand_ar": [
+            "سجادة يوغا"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كرة تمارين",
+          "name_en": "Exercise Ball",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            808173
+          ],
+          "brand_en": [
+            "Exercise Ball"
+          ],
+          "brand_ar": [
+            "كرة تمارين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "وشاح تبريد للرقبة",
+          "name_en": "Cooling Neck Wrap",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            808373
+          ],
+          "brand_en": [
+            "Cooling Neck Wrap"
+          ],
+          "brand_ar": [
+            "وشاح تبريد للرقبة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مروحة يدوية صغيرة (USB)",
+          "name_en": "Portable Mini Fan (USB)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            808374
+          ],
+          "brand_en": [
+            "Portable Mini Fan (USB)"
+          ],
+          "brand_ar": [
+            "مروحة يدوية صغيرة (USB)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 809,
+      "title": "منتجات مكافحة الحشرات (طبيعية)",
+      "name_en": "Insect Repellents (Natural)",
+      "active_ingredients": [
+        {
+          "name_ar": "منتجات مكافحة الحشرات (طبيعية)",
+          "name_en": "Insect Repellents (Natural)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            809001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

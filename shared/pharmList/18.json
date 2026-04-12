@@ -1,0 +1,588 @@
+{
+  "id": 18,
+  "title": "خدمات صيدلانية",
+  "name_en": "Pharmacy Services",
+  "sub": [
+    {
+      "id": 1801,
+      "title": "قياس ضغط الدم",
+      "name_en": "Blood Pressure Measurement",
+      "active_ingredients": [
+        {
+          "name_ar": "قياس ضغط الدم",
+          "name_en": "Blood Pressure Measurement",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "اختبار فيتامين د المنزلي",
+          "name_en": "Home Vitamin D Test",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801060
+          ],
+          "brand_en": [
+            "Home Vitamin D Test"
+          ],
+          "brand_ar": [
+            "اختبار فيتامين د المنزلي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "اختبار حساسية الطعام",
+          "name_en": "Food Sensitivity Test",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801061
+          ],
+          "brand_en": [
+            "Food Sensitivity Test"
+          ],
+          "brand_ar": [
+            "اختبار حساسية الطعام"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قسيمة شراء هدية",
+          "name_en": "Gift Voucher",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801197
+          ],
+          "brand_en": [
+            "Gift Voucher"
+          ],
+          "brand_ar": [
+            "قسيمة شراء هدية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بطاقة معايدة صحية",
+          "name_en": "Health Greeting Card",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801198
+          ],
+          "brand_en": [
+            "Health Greeting Card"
+          ],
+          "brand_ar": [
+            "بطاقة معايدة صحية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جدول متابعة الأدوية",
+          "name_en": "Medication Tracker Chart",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801320
+          ],
+          "brand_en": [
+            "Medication Tracker Chart"
+          ],
+          "brand_ar": [
+            "جدول متابعة الأدوية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كتيب تفاعلات الأدوية مع الطعام",
+          "name_en": "Food-Drug Interaction Booklet",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801328
+          ],
+          "brand_en": [
+            "Food-Drug Interaction Booklet"
+          ],
+          "brand_ar": [
+            "كتيب تفاعلات الأدوية مع الطعام"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "عداد تسبيح إلكتروني",
+          "name_en": "Digital Tasbeeh Counter",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            1801342
+          ],
+          "brand_en": [
+            "Digital Tasbeeh Counter"
+          ],
+          "brand_ar": [
+            "عداد تسبيح إلكتروني"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "تطبيق تأمل (رمز تفعيل)",
+          "name_en": "Meditation App Activation Card",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801348
+          ],
+          "brand_en": [
+            "Meditation App Activation Card"
+          ],
+          "brand_ar": [
+            "تطبيق تأمل (رمز تفعيل)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جرس طوارئ للمسنين (يرتدي)",
+          "name_en": "Senior Emergency Pendant",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            1801366
+          ],
+          "brand_en": [
+            "Senior Emergency Pendant"
+          ],
+          "brand_ar": [
+            "جرس طوارئ للمسنين (يرتدي)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز كشف السقوط (ارتداء)",
+          "name_en": "Fall Detection Device",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            1801367
+          ],
+          "brand_en": [
+            "Fall Detection Device"
+          ],
+          "brand_ar": [
+            "جهاز كشف السقوط (ارتداء)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حصيرة كشف الحركة بجانب السرير",
+          "name_en": "Bedside Motion Sensor Mat",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801368
+          ],
+          "brand_en": [
+            "Bedside Motion Sensor Mat"
+          ],
+          "brand_ar": [
+            "حصيرة كشف الحركة بجانب السرير"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كتاب الأمراض المزمنة (دليل المريض)",
+          "name_en": "Chronic Diseases Guide",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801380
+          ],
+          "brand_en": [
+            "Chronic Diseases Guide"
+          ],
+          "brand_ar": [
+            "كتاب الأمراض المزمنة (دليل المريض)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أطلس جسم الإنسان (تشريح)",
+          "name_en": "Human Anatomy Atlas",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801381
+          ],
+          "brand_en": [
+            "Human Anatomy Atlas"
+          ],
+          "brand_ar": [
+            "أطلس جسم الإنسان (تشريح)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بطاقات الإسعافات الأولية المصورة",
+          "name_en": "First Aid Flash Cards",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801382
+          ],
+          "brand_en": [
+            "First Aid Flash Cards"
+          ],
+          "brand_ar": [
+            "بطاقات الإسعافات الأولية المصورة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ملصق علامات الإنذار المبكر للسكتة",
+          "name_en": "Stroke Warning Signs Poster",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801383
+          ],
+          "brand_en": [
+            "Stroke Warning Signs Poster"
+          ],
+          "brand_ar": [
+            "ملصق علامات الإنذار المبكر للسكتة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "دليل العناية بالمسنين المنزلي",
+          "name_en": "Home Elderly Care Guide",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801384
+          ],
+          "brand_en": [
+            "Home Elderly Care Guide"
+          ],
+          "brand_ar": [
+            "دليل العناية بالمسنين المنزلي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كتيب التغذية العلاجية",
+          "name_en": "Therapeutic Nutrition Booklet",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801385
+          ],
+          "brand_en": [
+            "Therapeutic Nutrition Booklet"
+          ],
+          "brand_ar": [
+            "كتيب التغذية العلاجية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مجلة الصحة الفصلية (اشتراك)",
+          "name_en": "Quarterly Health Magazine",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801386
+          ],
+          "brand_en": [
+            "Quarterly Health Magazine"
+          ],
+          "brand_ar": [
+            "مجلة الصحة الفصلية (اشتراك)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "نشرة الأدوية المكافئة (البدائل)",
+          "name_en": "Generic Drugs Guide",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801387
+          ],
+          "brand_en": [
+            "Generic Drugs Guide"
+          ],
+          "brand_ar": [
+            "نشرة الأدوية المكافئة (البدائل)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "دليل الأعشاب الطبية وتفاعلاتها",
+          "name_en": "Medicinal Herbs & Interactions",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801388
+          ],
+          "brand_en": [
+            "Medicinal Herbs & Interactions"
+          ],
+          "brand_ar": [
+            "دليل الأعشاب الطبية وتفاعلاتها"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "لعبة تعليمية للتوعية الصحية للأطفال",
+          "name_en": "Kids' Health Education Game",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1801389
+          ],
+          "brand_en": [
+            "Kids' Health Education Game"
+          ],
+          "brand_ar": [
+            "لعبة تعليمية للتوعية الصحية للأطفال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1802,
+      "title": "قياس السكر",
+      "name_en": "Blood Glucose Measurement",
+      "active_ingredients": [
+        {
+          "name_ar": "قياس السكر",
+          "name_en": "Blood Glucose Measurement",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1802001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1803,
+      "title": "استشارات دوائية",
+      "name_en": "Medication Consultations",
+      "active_ingredients": [
+        {
+          "name_ar": "استشارات دوائية",
+          "name_en": "Medication Consultations",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1803001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1804,
+      "title": "تطعيمات (إن وجدت)",
+      "name_en": "Vaccinations (if available)",
+      "active_ingredients": [
+        {
+          "name_ar": "تطعيمات (إن وجدت)",
+          "name_en": "Vaccinations (if available)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1804001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1805,
+      "title": "تحليل سريع (كوليسترول - فيتامين د)",
+      "name_en": "Quick Tests (Cholesterol - Vit D)",
+      "active_ingredients": [
+        {
+          "name_ar": "تحليل سريع (كوليسترول - فيتامين د)",
+          "name_en": "Quick Tests (Cholesterol - Vit D)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1805001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

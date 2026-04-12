@@ -1,0 +1,2601 @@
+{
+  "id": 1,
+  "title": "الأدوية والعلاج",
+  "name_en": "Medicines & Treatments",
+  "sub": [
+    {
+      "id": 101,
+      "title": "مسكنات الألم وخافض الحرارة",
+      "name_en": "Pain Relievers & Antipyretics",
+      "active_ingredients": [
+        {
+          "name_ar": "باراسيتامول",
+          "name_en": "Paracetamol",
+          "form_ref": [
+            "form_1",
+            "form_2",
+            "form_3",
+            "form_4"
+          ],
+          "id": [
+            101001,
+            101003,
+            101004,
+            101005,
+            101006,
+            101007
+          ],
+          "brand_en": [
+            "Panadol",
+            "Adol",
+            "Cetamol",
+            "Abimol",
+            "Parol",
+            "Novaldol"
+          ],
+          "brand_ar": [
+            "بانادول",
+            "أدول",
+            "سيتامول",
+            "أبيمول",
+            "بارول",
+            "نوفالدول"
+          ],
+          "image_url": "images/products/101001.webp",
+          "strength_ref": [
+            "str_1",
+            "str_2",
+            "str_3"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "إيبوبروفين",
+          "name_en": "Ibuprofen",
+          "form_ref": [
+            "form_1",
+            "form_2",
+            "form_5"
+          ],
+          "id": [
+            101002,
+            101010,
+            101011
+          ],
+          "brand_en": [
+            "Brufen",
+            "Advil",
+            "Motrin"
+          ],
+          "brand_ar": [
+            "بروفين",
+            "أديفيل",
+            "موترين"
+          ],
+          "image_url": "images/products/101002.webp",
+          "strength_ref": [
+            "str_4",
+            "str_5",
+            "str_6",
+            "str_7",
+            "str_8"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ديكلوفيناك",
+          "name_en": "Diclofenac",
+          "form_ref": [
+            "form_1",
+            "form_6",
+            "form_7"
+          ],
+          "id": [
+            101012,
+            101014
+          ],
+          "brand_en": [
+            "Voltaren",
+            "Diclofen"
+          ],
+          "brand_ar": [
+            "فولتارين",
+            "ديكلوفين"
+          ],
+          "image_url": "images/products/101012.webp",
+          "strength_ref": [
+            "str_9",
+            "str_10"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "نابروكسين",
+          "name_en": "Naproxen",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101015,
+            101017
+          ],
+          "brand_en": [
+            "Naprosyn",
+            "Aleve"
+          ],
+          "brand_ar": [
+            "نابروسين",
+            "أليف"
+          ],
+          "image_url": "images/products/101015.webp",
+          "strength_ref": [
+            "str_11",
+            "str_3",
+            "str_12"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "الأسبرين",
+          "name_en": "Aspirin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101018
+          ],
+          "brand_en": [
+            "Aspirin"
+          ],
+          "brand_ar": [
+            "أسبرين"
+          ],
+          "image_url": "images/products/101018.webp",
+          "strength_ref": [
+            "str_13",
+            "str_14"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "نيميسوليد",
+          "name_en": "Nimesulide",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101020
+          ],
+          "brand_en": [
+            "Nimulid"
+          ],
+          "brand_ar": [
+            "نيموليد"
+          ],
+          "image_url": "images/products/101020.webp",
+          "strength_ref": [
+            "str_10"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كيتورولاك",
+          "name_en": "Ketorolac",
+          "form_ref": [
+            "form_1",
+            "form_7"
+          ],
+          "id": [
+            101021
+          ],
+          "brand_en": [
+            "Toradol"
+          ],
+          "brand_ar": [
+            "تورادول"
+          ],
+          "image_url": "images/products/101021.webp",
+          "strength_ref": [
+            "str_15",
+            "str_16"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كوديين",
+          "name_en": "Codeine",
+          "form_ref": [
+            "form_1",
+            "form_2"
+          ],
+          "id": [
+            101023
+          ],
+          "brand_en": [
+            "Codal"
+          ],
+          "brand_ar": [
+            "كودال"
+          ],
+          "image_url": "images/products/101023.webp",
+          "strength_ref": [
+            "str_16"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "باراسيتامول + إيبوبروفين",
+          "name_en": "Paracetamol + Ibuprofen",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101024
+          ],
+          "brand_en": [
+            "Combiflam"
+          ],
+          "brand_ar": [
+            "كومبيفلام"
+          ],
+          "image_url": "images/products/101024.webp",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "باراسيتامول + كافيين",
+          "name_en": "Paracetamol + Caffeine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101025
+          ],
+          "brand_en": [
+            "Panadol Extra"
+          ],
+          "brand_ar": [
+            "بانادول إكسترا"
+          ],
+          "image_url": "images/products/101025.webp",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "باراسيتامول + كوديين",
+          "name_en": "Paracetamol + Codeine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101026
+          ],
+          "brand_en": [
+            "Solpadeine"
+          ],
+          "brand_ar": [
+            "سولبادين"
+          ],
+          "image_url": "images/products/101026.webp",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ترامادول",
+          "name_en": "Tramadol",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101050
+          ],
+          "brand_en": [
+            "Generic Tramadol"
+          ],
+          "brand_ar": [
+            "منتج ترامادول"
+          ],
+          "image_url": "images/products/101050.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "مورفين",
+          "name_en": "Morphine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101051
+          ],
+          "brand_en": [
+            "Generic Morphine"
+          ],
+          "brand_ar": [
+            "منتج مورفين"
+          ],
+          "image_url": "images/products/101051.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "بريجابالين",
+          "name_en": "Pregabalin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101052
+          ],
+          "brand_en": [
+            "Generic Pregabalin"
+          ],
+          "brand_ar": [
+            "منتج بريجابالين"
+          ],
+          "image_url": "images/products/101052.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "جابابنتين",
+          "name_en": "Gabapentin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101053
+          ],
+          "brand_en": [
+            "Generic Gabapentin"
+          ],
+          "brand_ar": [
+            "منتج جابابنتين"
+          ],
+          "image_url": "images/products/101053.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أقراص كاربيدوبا/ليفودوبا",
+          "name_en": "Carbidopa/Levodopa",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101310
+          ],
+          "brand_en": [
+            "Carbidopa/Levodopa"
+          ],
+          "brand_ar": [
+            "أقراص كاربيدوبا/ليفودوبا"
+          ],
+          "image_url": "images/products/101310.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أقراص ريفاستيجمين",
+          "name_en": "Rivastigmine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101311
+          ],
+          "brand_en": [
+            "Rivastigmine"
+          ],
+          "brand_ar": [
+            "أقراص ريفاستيجمين"
+          ],
+          "image_url": "images/products/101311.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أقراص ميمانتين",
+          "name_en": "Memantine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101312
+          ],
+          "brand_en": [
+            "Memantine"
+          ],
+          "brand_ar": [
+            "أقراص ميمانتين"
+          ],
+          "image_url": "images/products/101312.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أقراص توبيراميت",
+          "name_en": "Topiramate",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101313
+          ],
+          "brand_en": [
+            "Topiramate"
+          ],
+          "brand_ar": [
+            "أقراص توبيراميت"
+          ],
+          "image_url": "images/products/101313.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أقراص لاموتريجين",
+          "name_en": "Lamotrigine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            101314
+          ],
+          "brand_en": [
+            "Lamotrigine"
+          ],
+          "brand_ar": [
+            "أقراص لاموتريجين"
+          ],
+          "image_url": "images/products/101314.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "title": "أدوية البرد والسعال",
+      "name_en": "Cold & Cough Medicines",
+      "active_ingredients": [
+        {
+          "name_ar": "باراسيتامول + سودوإيفيدرين",
+          "name_en": "Paracetamol + Pseudoephedrine",
+          "form_ref": [
+            "form_1",
+            "form_2"
+          ],
+          "id": [
+            102001,
+            102002
+          ],
+          "brand_en": [
+            "Congestal",
+            "1,2,3"
+          ],
+          "brand_ar": [
+            "كونجستال",
+            "ون تو ثري"
+          ],
+          "image_url": "images/products/102001.webp",
+          "strength_ref": [
+            "str_17"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ديكستروميثورفان",
+          "name_en": "Dextromethorphan",
+          "form_ref": [
+            "form_2"
+          ],
+          "id": [
+            102003
+          ],
+          "brand_en": [
+            "Tusskan"
+          ],
+          "brand_ar": [
+            "توسكان"
+          ],
+          "image_url": "images/products/102003.webp",
+          "strength_ref": [
+            "str_18"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جوايفينيسين",
+          "name_en": "Guaifenesin",
+          "form_ref": [
+            "form_2"
+          ],
+          "id": [
+            102004,
+            102005
+          ],
+          "brand_en": [
+            "Mucosolvan",
+            "Oplex"
+          ],
+          "brand_ar": [
+            "موكوسولفان",
+            "أوبلكس"
+          ],
+          "image_url": "images/products/102004.webp",
+          "strength_ref": [
+            "str_16",
+            "str_18"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سودوإيفيدرين",
+          "name_en": "Pseudoephedrine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            102050
+          ],
+          "brand_en": [
+            "Generic Pseudoephedrine"
+          ],
+          "brand_ar": [
+            "منتج سودوإيفيدرين"
+          ],
+          "image_url": "images/products/102050.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فينيليفرين",
+          "name_en": "Phenylephrine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            102051
+          ],
+          "brand_en": [
+            "Generic Phenylephrine"
+          ],
+          "brand_ar": [
+            "منتج فينيليفرين"
+          ],
+          "image_url": "images/products/102051.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أوكسيميتازولين",
+          "name_en": "Oxymetazoline",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            102052
+          ],
+          "brand_en": [
+            "Generic Oxymetazoline"
+          ],
+          "brand_ar": [
+            "منتج أوكسيميتازولين"
+          ],
+          "image_url": "images/products/102052.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ ملح البحر للأنف",
+          "name_en": "Sea Salt Nasal Spray",
+          "form_ref": [
+            "form_11"
+          ],
+          "id": [
+            102060
+          ],
+          "brand_en": [
+            "Sea Salt Nasal Spray"
+          ],
+          "brand_ar": [
+            "بخاخ ملح البحر للأنف"
+          ],
+          "image_url": "images/products/102060.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ ملح البحر للأطفال",
+          "name_en": "Baby Saline Spray",
+          "form_ref": [
+            "form_11"
+          ],
+          "id": [
+            102139
+          ],
+          "brand_en": [
+            "Baby Saline Spray"
+          ],
+          "brand_ar": [
+            "بخاخ ملح البحر للأطفال"
+          ],
+          "image_url": "images/products/102139.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "محلول ملحي للاستنشاق",
+          "name_en": "Saline Solution for Inhalation",
+          "form_ref": [
+            "form_21"
+          ],
+          "id": [
+            102214
+          ],
+          "brand_en": [
+            "Saline Solution for Inhalation"
+          ],
+          "brand_ar": [
+            "محلول ملحي للاستنشاق"
+          ],
+          "image_url": "images/products/102214.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بودنتيد أقراص",
+          "name_en": "Budesonide Tablets",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            102215
+          ],
+          "brand_en": [
+            "Budesonide Tablets"
+          ],
+          "brand_ar": [
+            "بودنتيد أقراص"
+          ],
+          "image_url": "images/products/102215.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "تيوبرومين",
+          "name_en": "Tiotropium",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            102216
+          ],
+          "brand_en": [
+            "Tiotropium"
+          ],
+          "brand_ar": [
+            "تيوبرومين"
+          ],
+          "image_url": "images/products/102216.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "سالبوتامول شراب",
+          "name_en": "Salbutamol Syrup",
+          "form_ref": [
+            "form_2"
+          ],
+          "id": [
+            102217
+          ],
+          "brand_en": [
+            "Salbutamol Syrup"
+          ],
+          "brand_ar": [
+            "سالبوتامول شراب"
+          ],
+          "image_url": "images/products/102217.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ليفوسالبيوتامول",
+          "name_en": "Levosalbutamol",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            102218
+          ],
+          "brand_en": [
+            "Levosalbutamol"
+          ],
+          "brand_ar": [
+            "ليفوسالبيوتامول"
+          ],
+          "image_url": "images/products/102218.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "بخاخ ملح البحر للأطفال (0-6 شهور)",
+          "name_en": "Infant Saline Spray",
+          "form_ref": [
+            "form_11"
+          ],
+          "id": [
+            102295
+          ],
+          "brand_en": [
+            "Infant Saline Spray"
+          ],
+          "brand_ar": [
+            "بخاخ ملح البحر للأطفال (0-6 شهور)"
+          ],
+          "image_url": "images/products/102295.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "title": "أدوية الجهاز الهضمي",
+      "name_en": "Gastrointestinal Medicines",
+      "active_ingredients": [
+        {
+          "name_ar": "أوميبرازول",
+          "name_en": "Omeprazole",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            103001,
+            103002
+          ],
+          "brand_en": [
+            "Losec",
+            "Omepak"
+          ],
+          "brand_ar": [
+            "لوسك",
+            "أوميباك"
+          ],
+          "image_url": "images/products/103001.webp",
+          "strength_ref": [
+            "str_19"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بانتوبرازول",
+          "name_en": "Pantoprazole",
+          "form_ref": [
+            "form_1",
+            "form_7"
+          ],
+          "id": [
+            103003
+          ],
+          "brand_en": [
+            "Controloc"
+          ],
+          "brand_ar": [
+            "كونترولوك"
+          ],
+          "image_url": "images/products/103003.webp",
+          "strength_ref": [
+            "str_20"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ميبيفيرين",
+          "name_en": "Mebeverine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            103004,
+            103005
+          ],
+          "brand_en": [
+            "Duspatalin",
+            "Colona"
+          ],
+          "brand_ar": [
+            "دسباتالين",
+            "كولونا"
+          ],
+          "image_url": "images/products/103004.webp",
+          "strength_ref": [
+            "str_7",
+            "str_21"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مضادات الحموضة (جافيسكون)",
+          "name_en": "Antacids (Gaviscon)",
+          "form_ref": [
+            "form_2",
+            "form_1"
+          ],
+          "id": [
+            103010
+          ],
+          "brand_en": [
+            "Gaviscon Advance"
+          ],
+          "brand_ar": [
+            "جافيسكون أدفانس"
+          ],
+          "image_url": "images/products/103010.webp",
+          "strength_ref": [
+            "str_22",
+            "str_23"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيميتيدين",
+          "name_en": "Cimetidine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            103050
+          ],
+          "brand_en": [
+            "Generic Cimetidine"
+          ],
+          "brand_ar": [
+            "منتج سيميتيدين"
+          ],
+          "image_url": "images/products/103050.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "رانيتيدين",
+          "name_en": "Ranitidine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            103051
+          ],
+          "brand_en": [
+            "Generic Ranitidine"
+          ],
+          "brand_ar": [
+            "منتج رانيتيدين"
+          ],
+          "image_url": "images/products/103051.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "لوبيراميد",
+          "name_en": "Loperamide",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            103052
+          ],
+          "brand_en": [
+            "Generic Loperamide"
+          ],
+          "brand_ar": [
+            "منتج لوبيراميد"
+          ],
+          "image_url": "images/products/103052.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بزموث سبساليسيلات",
+          "name_en": "Bismuth Subsalicylate",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            103053
+          ],
+          "brand_en": [
+            "Generic Bismuth Subsalicylate"
+          ],
+          "brand_ar": [
+            "منتج بزموث سبساليسيلات"
+          ],
+          "image_url": "images/products/103053.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بروبيوتيك (متعدد السلالات)",
+          "name_en": "Multi-strain Probiotic",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            103054
+          ],
+          "brand_en": [
+            "Generic Multi-strain Probiotic"
+          ],
+          "brand_ar": [
+            "منتج بروبيوتيك (متعدد السلالات)"
+          ],
+          "image_url": "images/products/103054.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بريبايوتك",
+          "name_en": "Prebiotic",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            103055
+          ],
+          "brand_en": [
+            "Generic Prebiotic"
+          ],
+          "brand_ar": [
+            "منتج بريبايوتك"
+          ],
+          "image_url": "images/products/103055.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "title": "أدوية الحساسية",
+      "name_en": "Allergy Medicines",
+      "active_ingredients": [
+        {
+          "name_ar": "سيتيريزين",
+          "name_en": "Cetirizine",
+          "form_ref": [
+            "form_1",
+            "form_2",
+            "form_8"
+          ],
+          "id": [
+            104001,
+            104002
+          ],
+          "brand_en": [
+            "Zyrtec",
+            "Cetrak"
+          ],
+          "brand_ar": [
+            "زيرتيك",
+            "سيتراك"
+          ],
+          "image_url": "images/products/104001.webp",
+          "strength_ref": [
+            "str_15"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "لوراتادين",
+          "name_en": "Loratadine",
+          "form_ref": [
+            "form_1",
+            "form_2"
+          ],
+          "id": [
+            104003
+          ],
+          "brand_en": [
+            "Claritine"
+          ],
+          "brand_ar": [
+            "كلاريتين"
+          ],
+          "image_url": "images/products/104003.webp",
+          "strength_ref": [
+            "str_15"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فيكسوفينادين",
+          "name_en": "Fexofenadine",
+          "form_ref": [
+            "form_1",
+            "form_2"
+          ],
+          "id": [
+            104004
+          ],
+          "brand_en": [
+            "Telfast"
+          ],
+          "brand_ar": [
+            "تلفاست"
+          ],
+          "image_url": "images/products/104004.webp",
+          "strength_ref": [
+            "str_24",
+            "str_25"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كلورفينيرامين",
+          "name_en": "Chlorpheniramine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            104050
+          ],
+          "brand_en": [
+            "Generic Chlorpheniramine"
+          ],
+          "brand_ar": [
+            "منتج كلورفينيرامين"
+          ],
+          "image_url": "images/products/104050.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ديفينهيدرامين",
+          "name_en": "Diphenhydramine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            104051
+          ],
+          "brand_en": [
+            "Generic Diphenhydramine"
+          ],
+          "brand_ar": [
+            "منتج ديفينهيدرامين"
+          ],
+          "image_url": "images/products/104051.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "title": "المضادات الحيوية (بوصفة)",
+      "name_en": "Antibiotics (Prescription)",
+      "active_ingredients": [
+        {
+          "name_ar": "أموكسيسيلين + كلافولانات",
+          "name_en": "Amoxicillin + Clavulanate",
+          "form_ref": [
+            "form_1",
+            "form_2",
+            "form_7"
+          ],
+          "id": [
+            105001,
+            105002,
+            105003
+          ],
+          "brand_en": [
+            "Augmentin",
+            "Hibiotic",
+            "Megamox"
+          ],
+          "brand_ar": [
+            "أوجمنتين",
+            "هايبيوتيك",
+            "ميجاموكس"
+          ],
+          "image_url": "images/products/105001.webp",
+          "strength_ref": [
+            "str_26",
+            "str_27",
+            "str_28",
+            "str_29"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أزيثروميسين",
+          "name_en": "Azithromycin",
+          "form_ref": [
+            "form_1",
+            "form_2",
+            "form_9"
+          ],
+          "id": [
+            105004,
+            105005
+          ],
+          "brand_en": [
+            "Zithromax",
+            "Xithrone"
+          ],
+          "brand_ar": [
+            "زيثروماكس",
+            "زيثورون"
+          ],
+          "image_url": "images/products/105004.webp",
+          "strength_ref": [
+            "str_3"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيبروفلوكساسين",
+          "name_en": "Ciprofloxacin",
+          "form_ref": [
+            "form_1",
+            "form_7"
+          ],
+          "id": [
+            105006,
+            105007
+          ],
+          "brand_en": [
+            "Ciprobay",
+            "Ciprofar"
+          ],
+          "brand_ar": [
+            "سيبروباي",
+            "سيبروفار"
+          ],
+          "image_url": "images/products/105006.webp",
+          "strength_ref": [
+            "str_3"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أرتيميسينين",
+          "name_en": "Artemisinin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            105050
+          ],
+          "brand_en": [
+            "Generic Artemisinin"
+          ],
+          "brand_ar": [
+            "منتج أرتيميسينين"
+          ],
+          "image_url": "images/products/105050.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أقراص ميثوتريكسيت",
+          "name_en": "Methotrexate",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            105315
+          ],
+          "brand_en": [
+            "Methotrexate"
+          ],
+          "brand_ar": [
+            "أقراص ميثوتريكسيت"
+          ],
+          "image_url": "images/products/105315.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "title": "قطرات العين والأنف والأذن",
+      "name_en": "Eye, Nose & Ear Drops",
+      "active_ingredients": [
+        {
+          "name_ar": "زايلوميتازولين",
+          "name_en": "Xylometazoline",
+          "form_ref": [
+            "form_10",
+            "form_11"
+          ],
+          "id": [
+            106001
+          ],
+          "brand_en": [
+            "Otrivin"
+          ],
+          "brand_ar": [
+            "أوتريفين"
+          ],
+          "image_url": "images/products/106001.webp",
+          "strength_ref": [
+            "str_30"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "توبراميسين",
+          "name_en": "Tobramycin",
+          "form_ref": [
+            "form_12",
+            "form_13"
+          ],
+          "id": [
+            106002
+          ],
+          "brand_en": [
+            "Tobrex"
+          ],
+          "brand_ar": [
+            "توبريكس"
+          ],
+          "image_url": "images/products/106002.webp",
+          "strength_ref": [
+            "str_31"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كرومولين صوديوم",
+          "name_en": "Sodium Cromoglycate",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            106050
+          ],
+          "brand_en": [
+            "Generic Sodium Cromoglycate"
+          ],
+          "brand_ar": [
+            "منتج كرومولين صوديوم"
+          ],
+          "image_url": "images/products/106050.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قطرات دموع صناعية بدون مواد حافظة",
+          "name_en": "Preservative-Free Artificial Tears",
+          "form_ref": [
+            "form_12"
+          ],
+          "id": [
+            106250
+          ],
+          "brand_en": [
+            "Preservative-Free Artificial Tears"
+          ],
+          "brand_ar": [
+            "قطرات دموع صناعية بدون مواد حافظة"
+          ],
+          "image_url": "images/products/106250.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قطرات سيبروفلوكساسين للعين",
+          "name_en": "Ciprofloxacin Eye Drops",
+          "form_ref": [
+            "form_12"
+          ],
+          "id": [
+            106251
+          ],
+          "brand_en": [
+            "Ciprofloxacin Eye Drops"
+          ],
+          "brand_ar": [
+            "قطرات سيبروفلوكساسين للعين"
+          ],
+          "image_url": "images/products/106251.webp",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "قطرات موكسيفلوكساسين",
+          "name_en": "Moxifloxacin Eye Drops",
+          "form_ref": [
+            "form_12"
+          ],
+          "id": [
+            106252
+          ],
+          "brand_en": [
+            "Moxifloxacin Eye Drops"
+          ],
+          "brand_ar": [
+            "قطرات موكسيفلوكساسين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "مرهم عين تتراسايكلين",
+          "name_en": "Tetracycline Eye Ointment",
+          "form_ref": [
+            "form_13"
+          ],
+          "id": [
+            106253
+          ],
+          "brand_en": [
+            "Tetracycline Eye Ointment"
+          ],
+          "brand_ar": [
+            "مرهم عين تتراسايكلين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "قطرات أزيثرومايسين للعين",
+          "name_en": "Azithromycin Eye Drops",
+          "form_ref": [
+            "form_12"
+          ],
+          "id": [
+            106254
+          ],
+          "brand_en": [
+            "Azithromycin Eye Drops"
+          ],
+          "brand_ar": [
+            "قطرات أزيثرومايسين للعين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "قطرات فلوروميثولون",
+          "name_en": "Fluorometholone Eye Drops",
+          "form_ref": [
+            "form_12"
+          ],
+          "id": [
+            106255
+          ],
+          "brand_en": [
+            "Fluorometholone Eye Drops"
+          ],
+          "brand_ar": [
+            "قطرات فلوروميثولون"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "قطرات لوتين وزياكسانثين",
+          "name_en": "Lutein & Zeaxanthin Drops",
+          "form_ref": [
+            "form_12"
+          ],
+          "id": [
+            106256
+          ],
+          "brand_en": [
+            "Lutein & Zeaxanthin Drops"
+          ],
+          "brand_ar": [
+            "قطرات لوتين وزياكسانثين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قطرات أذن لتنظيف الشمع",
+          "name_en": "Ear Wax Removal Drops",
+          "form_ref": [
+            "form_8"
+          ],
+          "id": [
+            106270
+          ],
+          "brand_en": [
+            "Ear Wax Removal Drops"
+          ],
+          "brand_ar": [
+            "قطرات أذن لتنظيف الشمع"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ أذن ملحي",
+          "name_en": "Saline Ear Spray",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            106271
+          ],
+          "brand_en": [
+            "Saline Ear Spray"
+          ],
+          "brand_ar": [
+            "بخاخ أذن ملحي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قطرات أذن مسكنة للألم",
+          "name_en": "Analgesic Ear Drops",
+          "form_ref": [
+            "form_8"
+          ],
+          "id": [
+            106274
+          ],
+          "brand_en": [
+            "Analgesic Ear Drops"
+          ],
+          "brand_ar": [
+            "قطرات أذن مسكنة للألم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قطرات مضادة للفطريات للأذن",
+          "name_en": "Antifungal Ear Drops",
+          "form_ref": [
+            "form_8"
+          ],
+          "id": [
+            106278
+          ],
+          "brand_en": [
+            "Antifungal Ear Drops"
+          ],
+          "brand_ar": [
+            "قطرات مضادة للفطريات للأذن"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "عدسات لاصقة طبية (للكيراتوكونوس)",
+          "name_en": "Scleral Contact Lenses",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            106600
+          ],
+          "brand_en": [
+            "Scleral Contact Lenses"
+          ],
+          "brand_ar": [
+            "عدسات لاصقة طبية (للكيراتوكونوس)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "عدسات لاصقة ملونة طبية (لإخفاء العيوب)",
+          "name_en": "Medical Opaque Contact Lenses",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            106601
+          ],
+          "brand_en": [
+            "Medical Opaque Contact Lenses"
+          ],
+          "brand_ar": [
+            "عدسات لاصقة ملونة طبية (لإخفاء العيوب)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "محلول عدسات متخصص (خالٍ من المواد الحافظة)",
+          "name_en": "Preservative-Free Lens Solution",
+          "form_ref": [
+            "form_21"
+          ],
+          "id": [
+            106602
+          ],
+          "brand_en": [
+            "Preservative-Free Lens Solution"
+          ],
+          "brand_ar": [
+            "محلول عدسات متخصص (خالٍ من المواد الحافظة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "title": "كريمات ومراهم علاجية",
+      "name_en": "Therapeutic Creams & Ointments",
+      "active_ingredients": [
+        {
+          "name_ar": "حمض الفيوسيديك",
+          "name_en": "Fusidic Acid",
+          "form_ref": [
+            "form_14",
+            "form_15"
+          ],
+          "id": [
+            107001
+          ],
+          "brand_en": [
+            "Fucidin"
+          ],
+          "brand_ar": [
+            "فيوسيدين"
+          ],
+          "image_url": "https://example.com/fucidin.jpg",
+          "strength_ref": [
+            "str_32"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بيتاميثازون",
+          "name_en": "Betamethasone",
+          "form_ref": [
+            "form_14",
+            "form_15",
+            "form_16"
+          ],
+          "id": [
+            107002
+          ],
+          "brand_en": [
+            "Betnovate"
+          ],
+          "brand_ar": [
+            "بتنوفيت"
+          ],
+          "image_url": "https://example.com/betnovate.jpg",
+          "strength_ref": [
+            "str_30"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريمات علاج الالتهابات والحروق",
+          "name_en": "Inflammation & Burn Creams",
+          "form_ref": [
+            "form_14",
+            "form_15"
+          ],
+          "id": [
+            107010,
+            107011
+          ],
+          "brand_en": [
+            "Kenacomb",
+            "Mebo Ointment"
+          ],
+          "brand_ar": [
+            "كيناكومب",
+            "ميبو مرهم"
+          ],
+          "image_url": "https://example.com/kenacomb.jpg",
+          "strength_ref": [
+            "str_33",
+            "str_34",
+            "str_35"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كلوتريمازول",
+          "name_en": "Clotrimazole",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            107050
+          ],
+          "brand_en": [
+            "Generic Clotrimazole"
+          ],
+          "brand_ar": [
+            "منتج كلوتريمازول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ميكونازول",
+          "name_en": "Miconazole",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            107051
+          ],
+          "brand_en": [
+            "Generic Miconazole"
+          ],
+          "brand_ar": [
+            "منتج ميكونازول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "تيربينافين",
+          "name_en": "Terbinafine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            107052
+          ],
+          "brand_en": [
+            "Generic Terbinafine"
+          ],
+          "brand_ar": [
+            "منتج تيربينافين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "هيدروكورتيزون",
+          "name_en": "Hydrocortisone",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            107053
+          ],
+          "brand_en": [
+            "Generic Hydrocortisone"
+          ],
+          "brand_ar": [
+            "منتج هيدروكورتيزون"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كالامين",
+          "name_en": "Calamine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            107054
+          ],
+          "brand_en": [
+            "Generic Calamine"
+          ],
+          "brand_ar": [
+            "منتج كالامين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حمض الساليسيليك",
+          "name_en": "Salicylic Acid",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107111
+          ],
+          "brand_en": [
+            "Salicylic Acid"
+          ],
+          "brand_ar": [
+            "حمض الساليسيليك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حمض الأزيليك",
+          "name_en": "Azelaic Acid",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107112
+          ],
+          "brand_en": [
+            "Azelaic Acid"
+          ],
+          "brand_ar": [
+            "حمض الأزيليك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حمض الجليكوليك",
+          "name_en": "Glycolic Acid",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            107113
+          ],
+          "brand_en": [
+            "Glycolic Acid"
+          ],
+          "brand_ar": [
+            "حمض الجليكوليك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حمض اللاكتيك",
+          "name_en": "Lactic Acid",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            107114
+          ],
+          "brand_en": [
+            "Lactic Acid"
+          ],
+          "brand_ar": [
+            "حمض اللاكتيك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم هيدروكينون",
+          "name_en": "Hydroquinone Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107116
+          ],
+          "brand_en": [
+            "Hydroquinone Cream"
+          ],
+          "brand_ar": [
+            "كريم هيدروكينون"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "كريم كوجيك أسيد",
+          "name_en": "Kojic Acid Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107117
+          ],
+          "brand_en": [
+            "Kojic Acid Cream"
+          ],
+          "brand_ar": [
+            "كريم كوجيك أسيد"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم الهيبارين الموضعي",
+          "name_en": "Topical Heparin Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107221
+          ],
+          "brand_en": [
+            "Topical Heparin Cream"
+          ],
+          "brand_ar": [
+            "كريم الهيبارين الموضعي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم ترطيب لدوالي الساقين",
+          "name_en": "Varicose Vein Moisturizer",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107228
+          ],
+          "brand_en": [
+            "Varicose Vein Moisturizer"
+          ],
+          "brand_ar": [
+            "كريم ترطيب لدوالي الساقين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيروم تريتينوين",
+          "name_en": "Tretinoin Serum",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            107240
+          ],
+          "brand_en": [
+            "Tretinoin Serum"
+          ],
+          "brand_ar": [
+            "سيروم تريتينوين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "كريم ديفرين (أدابالين)",
+          "name_en": "Differin Cream (Adapalene)",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107241
+          ],
+          "brand_en": [
+            "Differin Cream (Adapalene)"
+          ],
+          "brand_ar": [
+            "كريم ديفرين (أدابالين)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيروم ريزورسينول",
+          "name_en": "Resorcinol Serum",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            107242
+          ],
+          "brand_en": [
+            "Resorcinol Serum"
+          ],
+          "brand_ar": [
+            "سيروم ريزورسينول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم ترانيكساميك أسيد",
+          "name_en": "Tranexamic Acid Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107243
+          ],
+          "brand_en": [
+            "Tranexamic Acid Cream"
+          ],
+          "brand_ar": [
+            "كريم ترانيكساميك أسيد"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيروم إيديلينون",
+          "name_en": "Idebenone Serum",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            107244
+          ],
+          "brand_en": [
+            "Idebenone Serum"
+          ],
+          "brand_ar": [
+            "سيروم إيديلينون"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم إيبيديرم للندبات",
+          "name_en": "Epiderm Scar Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107245
+          ],
+          "brand_en": [
+            "Epiderm Scar Cream"
+          ],
+          "brand_ar": [
+            "كريم إيبيديرم للندبات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جل سيليكون للندبات",
+          "name_en": "Silicone Scar Gel",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            107246
+          ],
+          "brand_en": [
+            "Silicone Scar Gel"
+          ],
+          "brand_ar": [
+            "جل سيليكون للندبات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم مضاد للحساسية (تاكروليمس)",
+          "name_en": "Tacrolimus Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107247
+          ],
+          "brand_en": [
+            "Tacrolimus Cream"
+          ],
+          "brand_ar": [
+            "كريم مضاد للحساسية (تاكروليمس)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "كريم بايميكروليمس",
+          "name_en": "Pimecrolimus Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107248
+          ],
+          "brand_en": [
+            "Pimecrolimus Cream"
+          ],
+          "brand_ar": [
+            "كريم بايميكروليمس"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "كريم ترطيب فائق لمرضى الكيماوي",
+          "name_en": "Chemo Patient Ultra-Moisturizer",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107400
+          ],
+          "brand_en": [
+            "Chemo Patient Ultra-Moisturizer"
+          ],
+          "brand_ar": [
+            "كريم ترطيب فائق لمرضى الكيماوي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غسول لطيف لمرضى العلاج الإشعاعي",
+          "name_en": "Radiation Therapy Gentle Wash",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            107401
+          ],
+          "brand_en": [
+            "Radiation Therapy Gentle Wash"
+          ],
+          "brand_ar": [
+            "غسول لطيف لمرضى العلاج الإشعاعي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جل تبريد للحروق الإشعاعية",
+          "name_en": "Cooling Gel for Radiation Burns",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            107402
+          ],
+          "brand_en": [
+            "Cooling Gel for Radiation Burns"
+          ],
+          "brand_ar": [
+            "جل تبريد للحروق الإشعاعية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم للتقصف الجلدي (Hand-Foot Syndrome)",
+          "name_en": "Hand-Foot Syndrome Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            107403
+          ],
+          "brand_en": [
+            "Hand-Foot Syndrome Cream"
+          ],
+          "brand_ar": [
+            "كريم للتقصف الجلدي (Hand-Foot Syndrome)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "title": "أدوية الضغط والقلب",
+      "name_en": "Blood Pressure & Heart Medicines",
+      "active_ingredients": [
+        {
+          "name_ar": "بيسوبرولول",
+          "name_en": "Bisoprolol",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108001,
+            108002
+          ],
+          "brand_en": [
+            "Concor",
+            "Bisocard"
+          ],
+          "brand_ar": [
+            "كونكور",
+            "بيسوكارد"
+          ],
+          "image_url": "https://example.com/concor-5.jpg",
+          "strength_ref": [
+            "str_36"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أملوديبين",
+          "name_en": "Amlodipine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108003,
+            108004
+          ],
+          "brand_en": [
+            "Norvasc",
+            "Alkpress"
+          ],
+          "brand_ar": [
+            "نورفاسك",
+            "ألكبرس"
+          ],
+          "image_url": "https://example.com/norvasc-5.jpg",
+          "strength_ref": [
+            "str_36"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فالسارتان",
+          "name_en": "Valsartan",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108005,
+            108006
+          ],
+          "brand_en": [
+            "Diovan",
+            "Tareg"
+          ],
+          "brand_ar": [
+            "ديوفان",
+            "تارج"
+          ],
+          "image_url": "https://example.com/diovan-80.jpg",
+          "strength_ref": [
+            "str_37"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أتورفاستاتين",
+          "name_en": "Atorvastatin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108050
+          ],
+          "brand_en": [
+            "Generic Atorvastatin"
+          ],
+          "brand_ar": [
+            "منتج أتورفاستاتين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "روزوفاستاتين",
+          "name_en": "Rosuvastatin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108051
+          ],
+          "brand_en": [
+            "Generic Rosuvastatin"
+          ],
+          "brand_ar": [
+            "منتج روزوفاستاتين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "دايو سميد (ديوسمين + هيسبيريدين)",
+          "name_en": "Diosmin + Hesperidin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108222
+          ],
+          "brand_en": [
+            "Diosmin + Hesperidin"
+          ],
+          "brand_ar": [
+            "دايو سميد (ديوسمين + هيسبيريدين)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جينكو بيلوبا",
+          "name_en": "Ginkgo Biloba",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            108223
+          ],
+          "brand_en": [
+            "Ginkgo Biloba"
+          ],
+          "brand_ar": [
+            "جينكو بيلوبا"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بنتوكسيفيلين",
+          "name_en": "Pentoxifylline",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108224
+          ],
+          "brand_en": [
+            "Pentoxifylline"
+          ],
+          "brand_ar": [
+            "بنتوكسيفيلين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أقراص كلوبيدوجريل",
+          "name_en": "Clopidogrel",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108317
+          ],
+          "brand_en": [
+            "Clopidogrel"
+          ],
+          "brand_ar": [
+            "أقراص كلوبيدوجريل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أقراص وارفارين",
+          "name_en": "Warfarin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108318
+          ],
+          "brand_en": [
+            "Warfarin"
+          ],
+          "brand_ar": [
+            "أقراص وارفارين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        },
+        {
+          "name_ar": "أقراص أبيريكسابان",
+          "name_en": "Apixaban",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            108319
+          ],
+          "brand_en": [
+            "Apixaban"
+          ],
+          "brand_ar": [
+            "أقراص أبيريكسابان"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "title": "أدوية السكري والغدد",
+      "name_en": "Diabetes & Glandular Medicines",
+      "active_ingredients": [
+        {
+          "name_ar": "ميتفورمين",
+          "name_en": "Metformin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            109001,
+            109002
+          ],
+          "brand_en": [
+            "Glucophage",
+            "Cidophage"
+          ],
+          "brand_ar": [
+            "جلوكوفاج",
+            "سيدوفاج"
+          ],
+          "image_url": "https://example.com/glucophage-1000.jpg",
+          "strength_ref": [
+            "str_28"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جليميبيريد",
+          "name_en": "Glimepiride",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            109003
+          ],
+          "brand_en": [
+            "Amaryl"
+          ],
+          "brand_ar": [
+            "أماريل"
+          ],
+          "image_url": "https://example.com/amaryl-2.jpg",
+          "strength_ref": [
+            "str_38"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيتاجليبتين",
+          "name_en": "Sitagliptin",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            109004
+          ],
+          "brand_en": [
+            "Januvia"
+          ],
+          "brand_ar": [
+            "جانوفيا"
+          ],
+          "image_url": "https://example.com/januvia-100.jpg",
+          "strength_ref": [
+            "str_10"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ليفوثيروكسين",
+          "name_en": "Levothyroxine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            109050
+          ],
+          "brand_en": [
+            "Generic Levothyroxine"
+          ],
+          "brand_ar": [
+            "منتج ليفوثيروكسين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": true
+        }
+      ]
+    }
+  ]
+}

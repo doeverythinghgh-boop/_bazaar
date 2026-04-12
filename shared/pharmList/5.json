@@ -1,0 +1,644 @@
+{
+  "id": 5,
+  "title": "الأم والطفل",
+  "name_en": "Mother & Baby",
+  "sub": [
+    {
+      "id": 501,
+      "title": "حفاضات",
+      "name_en": "Diapers",
+      "active_ingredients": [
+        {
+          "name_ar": "حفاضات أطفال",
+          "name_en": "Baby Diapers",
+          "form_ref": [
+            "form_31",
+            "form_32"
+          ],
+          "id": [
+            501001,
+            501002
+          ],
+          "brand_en": [
+            "Pampers Premium Care",
+            "Molfix"
+          ],
+          "brand_ar": [
+            "بامبرز",
+            "مولفكس"
+          ],
+          "image_url": "https://example.com/pampers.jpg",
+          "strength_ref": [
+            "str_60",
+            "str_61",
+            "str_62",
+            "str_63",
+            "str_64",
+            "str_65",
+            "str_66"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "عضاضة تبريد",
+          "name_en": "Teething Ring",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            501136
+          ],
+          "brand_en": [
+            "Teething Ring"
+          ],
+          "brand_ar": [
+            "عضاضة تبريد"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شفاط أنف يدوي",
+          "name_en": "Manual Nasal Aspirator",
+          "form_ref": [
+            "form_39"
+          ],
+          "id": [
+            501138
+          ],
+          "brand_en": [
+            "Manual Nasal Aspirator"
+          ],
+          "brand_ar": [
+            "شفاط أنف يدوي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مناديل مبللة عضوية",
+          "name_en": "Organic Baby Wipes",
+          "form_ref": [
+            "form_30"
+          ],
+          "id": [
+            501142
+          ],
+          "brand_en": [
+            "Organic Baby Wipes"
+          ],
+          "brand_ar": [
+            "مناديل مبللة عضوية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "حقيبة إسعافات للطفل",
+          "name_en": "Baby First Aid Kit",
+          "form_ref": [
+            "form_46"
+          ],
+          "id": [
+            501144
+          ],
+          "brand_en": [
+            "Baby First Aid Kit"
+          ],
+          "brand_ar": [
+            "حقيبة إسعافات للطفل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مقص أظافر أطفال مع مصباح LED",
+          "name_en": "LED Baby Nail Scissors",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            501298
+          ],
+          "brand_en": [
+            "LED Baby Nail Scissors"
+          ],
+          "brand_ar": [
+            "مقص أظافر أطفال مع مصباح LED"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 502,
+      "title": "حليب أطفال",
+      "name_en": "Baby Formula",
+      "active_ingredients": [
+        {
+          "name_ar": "حليب أطفال",
+          "name_en": "Baby Formula",
+          "form_ref": [
+            "form_33"
+          ],
+          "id": [
+            502001,
+            502002,
+            502003
+          ],
+          "brand_en": [
+            "Hero Baby",
+            "Aptamil Advance",
+            "Similac Gold"
+          ],
+          "brand_ar": [
+            "هيرو بيبي",
+            "أبتاميل",
+            "سيميلاك"
+          ],
+          "image_url": "https://example.com/hero.jpg",
+          "strength_ref": [
+            "str_67",
+            "str_68",
+            "str_69",
+            "str_70",
+            "str_71",
+            "str_72"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 503,
+      "title": "أغذية أطفال",
+      "name_en": "Baby Food",
+      "active_ingredients": [
+        {
+          "name_ar": "حبوب الإفطار للأطفال",
+          "name_en": "Baby Cereals",
+          "form_ref": [
+            "form_34"
+          ],
+          "id": [
+            503001,
+            503002
+          ],
+          "brand_en": [
+            "Cerelac Rice",
+            "Cerelac Wheat"
+          ],
+          "brand_ar": [
+            "سيريلاك أرز",
+            "سيريلاك قمح"
+          ],
+          "image_url": "https://example.com/cerelac-rice.jpg",
+          "strength_ref": [
+            "str_73"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 504,
+      "title": "مستلزمات الرضاعة",
+      "name_en": "Nursing Supplies",
+      "active_ingredients": [
+        {
+          "name_ar": "مستلزمات الرضاعة الطبيعية والصناعية",
+          "name_en": "Nursing & Feeding Supplies",
+          "form_ref": [
+            "form_35",
+            "form_36"
+          ],
+          "id": [
+            504001,
+            504003
+          ],
+          "brand_en": [
+            "Philips Avent Natural",
+            "Medela Breast Pump"
+          ],
+          "brand_ar": [
+            "فيليبس أفينت ناتشورال",
+            "شفاط حليب ميديلا"
+          ],
+          "image_url": "https://example.com/avent-125.jpg",
+          "strength_ref": [
+            "str_74",
+            "str_75",
+            "str_76"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم مغذ للحلمات (للأم المرضع)",
+          "name_en": "Nipple Cream (Breastfeeding)",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            504143
+          ],
+          "brand_en": [
+            "Nipple Cream (Breastfeeding)"
+          ],
+          "brand_ar": [
+            "كريم مغذ للحلمات (للأم المرضع)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم حلمة طبيعي (لانولين)",
+          "name_en": "Natural Lanolin Nipple Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            504285
+          ],
+          "brand_en": [
+            "Natural Lanolin Nipple Cream"
+          ],
+          "brand_ar": [
+            "كريم حلمة طبيعي (لانولين)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "وسادة رضاعة",
+          "name_en": "Nursing Pillow",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            504286
+          ],
+          "brand_en": [
+            "Nursing Pillow"
+          ],
+          "brand_ar": [
+            "وسادة رضاعة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كاسات تجميع الحليب الزائد",
+          "name_en": "Milk Collection Shells",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            504287
+          ],
+          "brand_en": [
+            "Milk Collection Shells"
+          ],
+          "brand_ar": [
+            "كاسات تجميع الحليب الزائد"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أقراص لاكتوجوج (لزيادة الحليب)",
+          "name_en": "Lactogogue Tablets",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            504288
+          ],
+          "brand_en": [
+            "Lactogogue Tablets"
+          ],
+          "brand_ar": [
+            "أقراص لاكتوجوج (لزيادة الحليب)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شاي زيادة الحليب",
+          "name_en": "Lactation Tea",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            504289
+          ],
+          "brand_en": [
+            "Lactation Tea"
+          ],
+          "brand_ar": [
+            "شاي زيادة الحليب"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 505,
+      "title": "عناية ببشرة الطفل",
+      "name_en": "Baby Skin Care",
+      "active_ingredients": [
+        {
+          "name_ar": "العناية اليومية ببشرة وشعر الأطفال",
+          "name_en": "Daily Baby Skin & Hair Care",
+          "form_ref": [
+            "form_22",
+            "form_37",
+            "form_16"
+          ],
+          "id": [
+            505001,
+            505002,
+            505003
+          ],
+          "brand_en": [
+            "Johnson's Baby Oil",
+            "Mustela Gentle Cleansing Gel",
+            "Sebamed Baby Wash"
+          ],
+          "brand_ar": [
+            "جونسون زيت أطفال",
+            "موستيلا جل منظف",
+            "سيباميد غسول أطفال"
+          ],
+          "image_url": "https://example.com/johnson-oil.jpg",
+          "strength_ref": [
+            "str_39",
+            "str_55"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مرهم تهدئة التسنين",
+          "name_en": "Teething Gel",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            505135
+          ],
+          "brand_en": [
+            "Teething Gel"
+          ],
+          "brand_ar": [
+            "مرهم تهدئة التسنين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "واقي شمس أطفال SPF 50",
+          "name_en": "Kids Sunscreen SPF 50",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            505140
+          ],
+          "brand_en": [
+            "Kids Sunscreen SPF 50"
+          ],
+          "brand_ar": [
+            "واقي شمس أطفال SPF 50"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بودرة أطفال خالية من التلك",
+          "name_en": "Talc-Free Baby Powder",
+          "form_ref": [
+            "form_50"
+          ],
+          "id": [
+            505141
+          ],
+          "brand_en": [
+            "Talc-Free Baby Powder"
+          ],
+          "brand_ar": [
+            "بودرة أطفال خالية من التلك"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مرهم للتهاب الحفاض المتقدم (زنك عالي)",
+          "name_en": "High Zinc Diaper Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            505296
+          ],
+          "brand_en": [
+            "High Zinc Diaper Cream"
+          ],
+          "brand_ar": [
+            "مرهم للتهاب الحفاض المتقدم (زنك عالي)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بودرة مضادة للفطريات للأطفال",
+          "name_en": "Antifungal Baby Powder",
+          "form_ref": [
+            "form_50"
+          ],
+          "id": [
+            505297
+          ],
+          "brand_en": [
+            "Antifungal Baby Powder"
+          ],
+          "brand_ar": [
+            "بودرة مضادة للفطريات للأطفال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 506,
+      "title": "طفح الحفاض",
+      "name_en": "Diaper Rash",
+      "active_ingredients": [
+        {
+          "name_ar": "كريمات حماية وعلاج التهابات الحفاض",
+          "name_en": "Diaper Rash Protection & Treatment",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            506001,
+            506003
+          ],
+          "brand_en": [
+            "Sudocrem",
+            "Sanosan Ointment"
+          ],
+          "brand_ar": [
+            "سودوكريم",
+            "سانوسان مرهم"
+          ],
+          "image_url": "https://example.com/sudocrem-60.jpg",
+          "strength_ref": [
+            "str_77",
+            "str_73",
+            "str_22"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 507,
+      "title": "مستلزمات السلامة للأطفال",
+      "name_en": "Baby Safety Supplies",
+      "active_ingredients": [
+        {
+          "name_ar": "مستلزمات السلامة للأطفال",
+          "name_en": "Baby Safety Supplies",
+          "form_ref": [
+            "form_38"
+          ],
+          "id": [
+            507001
+          ],
+          "brand_en": [
+            "Pigeon"
+          ],
+          "brand_ar": [
+            "بيجون"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 508,
+      "title": "ميزان حرارة أطفال رقمي",
+      "name_en": "Digital Baby Thermometer",
+      "active_ingredients": [
+        {
+          "name_ar": "ميزان حرارة أطفال رقمي",
+          "name_en": "Digital Baby Thermometer",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            508001
+          ],
+          "brand_en": [
+            "Beurer"
+          ],
+          "brand_ar": [
+            "بيورير"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 509,
+      "title": "شفاطات أنف أطفال",
+      "name_en": "Baby Nasal Aspirators",
+      "active_ingredients": [
+        {
+          "name_ar": "شفاطات الأنف ومحاليل تنظيف أنف الأطفال",
+          "name_en": "Baby Nasal Aspirators & Nasal Care",
+          "form_ref": [
+            "form_39",
+            "form_8"
+          ],
+          "id": [
+            509001,
+            509002
+          ],
+          "brand_en": [
+            "Otrivin Baby Saline",
+            "NoseFrida Aspirator"
+          ],
+          "brand_ar": [
+            "أوتريفين بيبي سالين",
+            "نوزفريدا شفاط أنف"
+          ],
+          "image_url": "https://example.com/otrivin-baby.jpg",
+          "strength_ref": [
+            "str_78",
+            "str_79"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

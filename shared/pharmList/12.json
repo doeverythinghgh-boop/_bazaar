@@ -1,0 +1,700 @@
+{
+  "id": 12,
+  "title": "الاسترخاء والنوم والعناية بالعقل",
+  "name_en": "Relaxation, Sleep & Mind Care",
+  "sub": [
+    {
+      "id": 1201,
+      "title": "مكملات طبيعية للنوم (ميلاتونين)",
+      "name_en": "Natural Sleep Supplements (Melatonin)",
+      "active_ingredients": [
+        {
+          "name_ar": "مكملات طبيعية للنوم (ميلاتونين)",
+          "name_en": "Natural Sleep Supplements (Melatonin)",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1201001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ميلاتونين 3 مجم",
+          "name_en": "Melatonin 3mg",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            1201050
+          ],
+          "brand_en": [
+            "Generic Melatonin 3mg"
+          ],
+          "brand_ar": [
+            "منتج ميلاتونين 3 مجم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ ميلاتونين ليلي",
+          "name_en": "Melatonin Night Spray",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            1201335
+          ],
+          "brand_en": [
+            "Melatonin Night Spray"
+          ],
+          "brand_ar": [
+            "بخاخ ميلاتونين ليلي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1202,
+      "title": "زيوت عطرية مهدئة",
+      "name_en": "Soothing Essential Oils",
+      "active_ingredients": [
+        {
+          "name_ar": "زيوت عطرية مهدئة",
+          "name_en": "Soothing Essential Oils",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1202001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1203,
+      "title": "أجهزة الضوضاء البيضاء",
+      "name_en": "White Noise Machines",
+      "active_ingredients": [
+        {
+          "name_ar": "أجهزة الضوضاء البيضاء",
+          "name_en": "White Noise Machines",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1203001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1204,
+      "title": "أقنعة العين",
+      "name_en": "Eye Masks",
+      "active_ingredients": [
+        {
+          "name_ar": "أقنعة العين",
+          "name_en": "Eye Masks",
+          "form_ref": [
+            "form_21"
+          ],
+          "id": [
+            1204001
+          ],
+          "brand_en": [
+            "L'Oreal"
+          ],
+          "brand_ar": [
+            "لوريال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "وسادة رقبة تقويمية",
+          "name_en": "Orthopedic Neck Pillow",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1204060
+          ],
+          "brand_en": [
+            "Orthopedic Neck Pillow"
+          ],
+          "brand_ar": [
+            "وسادة رقبة تقويمية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "وسادة حمل (نوم جانبي)",
+          "name_en": "Pregnancy Pillow",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1204282
+          ],
+          "brand_en": [
+            "Pregnancy Pillow"
+          ],
+          "brand_ar": [
+            "وسادة حمل (نوم جانبي)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قناع نوم ثلاثي الأبعاد",
+          "name_en": "3D Sleep Mask",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1204330
+          ],
+          "brand_en": [
+            "3D Sleep Mask"
+          ],
+          "brand_ar": [
+            "قناع نوم ثلاثي الأبعاد"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "وسادة تبريد (جيل)",
+          "name_en": "Cooling Gel Pillow",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            1204331
+          ],
+          "brand_en": [
+            "Cooling Gel Pillow"
+          ],
+          "brand_ar": [
+            "وسادة تبريد (جيل)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غطاء وسادة حرير طبيعي",
+          "name_en": "Silk Pillowcase",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1204332
+          ],
+          "brand_en": [
+            "Silk Pillowcase"
+          ],
+          "brand_ar": [
+            "غطاء وسادة حرير طبيعي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غطاء ثقيل (وزن 7 كجم)",
+          "name_en": "Weighted Blanket 7kg",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1204336
+          ],
+          "brand_en": [
+            "Weighted Blanket 7kg"
+          ],
+          "brand_ar": [
+            "غطاء ثقيل (وزن 7 كجم)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "لصقات منع الشخير",
+          "name_en": "Anti-Snoring Patches",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1204339
+          ],
+          "brand_en": [
+            "Anti-Snoring Patches"
+          ],
+          "brand_ar": [
+            "لصقات منع الشخير"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1205,
+      "title": "منتجات تخفيف التوتر",
+      "name_en": "Stress Relief Products",
+      "active_ingredients": [
+        {
+          "name_ar": "منتجات تخفيف التوتر",
+          "name_en": "Stress Relief Products",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1205001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "إل-ثيانين",
+          "name_en": "L-Theanine",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            1205050
+          ],
+          "brand_en": [
+            "Generic L-Theanine"
+          ],
+          "brand_ar": [
+            "منتج إل-ثيانين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "5-HTP",
+          "name_en": "5-Hydroxytryptophan",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            1205051
+          ],
+          "brand_en": [
+            "Generic 5-Hydroxytryptophan"
+          ],
+          "brand_ar": [
+            "منتج 5-HTP"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جذر الأشواغاندا",
+          "name_en": "Ashwagandha Root",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1205162
+          ],
+          "brand_en": [
+            "Ashwagandha Root"
+          ],
+          "brand_ar": [
+            "جذر الأشواغاندا"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "زيت اللافندر العطري",
+          "name_en": "Lavender Essential Oil",
+          "form_ref": [
+            "form_24"
+          ],
+          "id": [
+            1205163
+          ],
+          "brand_en": [
+            "Lavender Essential Oil"
+          ],
+          "brand_ar": [
+            "زيت اللافندر العطري"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كافيين + L-تيانين",
+          "name_en": "Caffeine + L-Theanine",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1205200
+          ],
+          "brand_en": [
+            "Caffeine + L-Theanine"
+          ],
+          "brand_ar": [
+            "كافيين + L-تيانين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فوسفاتيديل سيرين",
+          "name_en": "Phosphatidylserine",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1205201
+          ],
+          "brand_en": [
+            "Phosphatidylserine"
+          ],
+          "brand_ar": [
+            "فوسفاتيديل سيرين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أسيتيل L-كارنيتين",
+          "name_en": "Acetyl-L-Carnitine (ALCAR)",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1205202
+          ],
+          "brand_en": [
+            "Acetyl-L-Carnitine (ALCAR)"
+          ],
+          "brand_ar": [
+            "أسيتيل L-كارنيتين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "باكوبا مونيري",
+          "name_en": "Bacopa Monnieri",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1205203
+          ],
+          "brand_en": [
+            "Bacopa Monnieri"
+          ],
+          "brand_ar": [
+            "باكوبا مونيري"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "رهوديولا روزيا",
+          "name_en": "Rhodiola Rosea",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1205204
+          ],
+          "brand_en": [
+            "Rhodiola Rosea"
+          ],
+          "brand_ar": [
+            "رهوديولا روزيا"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سيتراكولين",
+          "name_en": "Citicoline",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1205205
+          ],
+          "brand_en": [
+            "Citicoline"
+          ],
+          "brand_ar": [
+            "سيتراكولين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "ألفا GPC",
+          "name_en": "Alpha-GPC",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1205206
+          ],
+          "brand_en": [
+            "Alpha-GPC"
+          ],
+          "brand_ar": [
+            "ألفا GPC"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "هوبيرزين A",
+          "name_en": "Huperzine A",
+          "form_ref": [
+            "form_1"
+          ],
+          "id": [
+            1205207
+          ],
+          "brand_en": [
+            "Huperzine A"
+          ],
+          "brand_ar": [
+            "هوبيرزين A"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "إل-تيروسين",
+          "name_en": "L-Tyrosine",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1205208
+          ],
+          "brand_en": [
+            "L-Tyrosine"
+          ],
+          "brand_ar": [
+            "إل-تيروسين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "سجادة تأمل (سميكة)",
+          "name_en": "Meditation Mat (Thick)",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1205340
+          ],
+          "brand_en": [
+            "Meditation Mat (Thick)"
+          ],
+          "brand_ar": [
+            "سجادة تأمل (سميكة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "وسادة تأمل (زافو)",
+          "name_en": "Zafu Meditation Cushion",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1205341
+          ],
+          "brand_en": [
+            "Zafu Meditation Cushion"
+          ],
+          "brand_ar": [
+            "وسادة تأمل (زافو)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كرة ضغط مضادة للتوتر (معجون)",
+          "name_en": "Anti-Stress Squeeze Ball",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            1205349
+          ],
+          "brand_en": [
+            "Anti-Stress Squeeze Ball"
+          ],
+          "brand_ar": [
+            "كرة ضغط مضادة للتوتر (معجون)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1206,
+      "title": "بخاخات وسائد مهدئة",
+      "name_en": "Soothing Pillow Sprays",
+      "active_ingredients": [
+        {
+          "name_ar": "بخاخات وسائد مهدئة",
+          "name_en": "Soothing Pillow Sprays",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            1206001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

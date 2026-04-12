@@ -1,0 +1,295 @@
+{
+  "id": 16,
+  "title": "الإقلاع عن التدخين",
+  "name_en": "Smoking Cessation",
+  "sub": [
+    {
+      "id": 1601,
+      "title": "لاصقات النيكوتين",
+      "name_en": "Nicotine Patches",
+      "active_ingredients": [
+        {
+          "name_ar": "لاصقات النيكوتين",
+          "name_en": "Nicotine Patches",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1601001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مطهر يدين جل 500 مل",
+          "name_en": "Hand Sanitizer Gel 500ml",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            1601183
+          ],
+          "brand_en": [
+            "Hand Sanitizer Gel 500ml"
+          ],
+          "brand_ar": [
+            "مطهر يدين جل 500 مل"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مطهر أسطح",
+          "name_en": "Surface Disinfectant",
+          "form_ref": [
+            "form_21"
+          ],
+          "id": [
+            1601184
+          ],
+          "brand_en": [
+            "Surface Disinfectant"
+          ],
+          "brand_ar": [
+            "مطهر أسطح"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مناديل مطهر",
+          "name_en": "Disinfectant Wipes",
+          "form_ref": [
+            "form_30"
+          ],
+          "id": [
+            1601185
+          ],
+          "brand_en": [
+            "Disinfectant Wipes"
+          ],
+          "brand_ar": [
+            "مناديل مطهر"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "معقم أجهزة طبية",
+          "name_en": "Medical Device Sterilizer",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1601186
+          ],
+          "brand_en": [
+            "Medical Device Sterilizer"
+          ],
+          "brand_ar": [
+            "معقم أجهزة طبية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مادة معقمة للأرضيات",
+          "name_en": "Floor Disinfectant Solution",
+          "form_ref": [
+            "form_21"
+          ],
+          "id": [
+            1601187
+          ],
+          "brand_en": [
+            "Floor Disinfectant Solution"
+          ],
+          "brand_ar": [
+            "مادة معقمة للأرضيات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كحول إيزوبروبيل 99%",
+          "name_en": "Isopropyl Alcohol 99%",
+          "form_ref": [
+            "form_21"
+          ],
+          "id": [
+            1601188
+          ],
+          "brand_en": [
+            "Isopropyl Alcohol 99%"
+          ],
+          "brand_ar": [
+            "كحول إيزوبروبيل 99%"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1602,
+      "title": "علكة النيكوتين",
+      "name_en": "Nicotine Gum",
+      "active_ingredients": [
+        {
+          "name_ar": "علكة النيكوتين للمساعدة في الإقلاع عن التدخين",
+          "name_en": "Nicotine Gum for Smoking Cessation",
+          "form_ref": [
+            "form_63"
+          ],
+          "id": [
+            1602001
+          ],
+          "brand_en": [
+            "Nicorette Gum"
+          ],
+          "brand_ar": [
+            "نيكوريت علكة"
+          ],
+          "image_url": "https://example.com/nicorette-2.jpg",
+          "strength_ref": [
+            "str_107",
+            "str_108"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مجموعة إقلاع عن التدخين كاملة",
+          "name_en": "Complete Smoking Cessation Kit",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1602060
+          ],
+          "brand_en": [
+            "Complete Smoking Cessation Kit"
+          ],
+          "brand_ar": [
+            "مجموعة إقلاع عن التدخين كاملة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1603,
+      "title": "بخاخات الفم",
+      "name_en": "Mouth Sprays",
+      "active_ingredients": [
+        {
+          "name_ar": "بخاخات الفم",
+          "name_en": "Mouth Sprays",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            1603001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1604,
+      "title": "أجهزة التدخين الإلكتروني (حسب التشريع)",
+      "name_en": "E-Smoking Devices (per regulation)",
+      "active_ingredients": [
+        {
+          "name_ar": "أجهزة التدخين الإلكتروني (حسب التشريع)",
+          "name_en": "E-Smoking Devices (per regulation)",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            1604001
+          ],
+          "brand_en": [
+            "Beurer"
+          ],
+          "brand_ar": [
+            "بيورير"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1605,
+      "title": "كتب وكتيبات توعوية",
+      "name_en": "Awareness Books & Booklets",
+      "active_ingredients": [
+        {
+          "name_ar": "كتب وكتيبات توعوية",
+          "name_en": "Awareness Books & Booklets",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1605001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

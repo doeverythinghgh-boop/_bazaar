@@ -1,0 +1,799 @@
+{
+  "id": 4,
+  "title": "العناية الشخصية",
+  "name_en": "Personal Care",
+  "sub": [
+    {
+      "id": 401,
+      "title": "العناية بالفم والأسنان",
+      "name_en": "Oral & Dental Care",
+      "active_ingredients": [
+        {
+          "name_ar": "معاجين الأسنان",
+          "name_en": "Toothpastes",
+          "form_ref": [
+            "form_26",
+            "form_27"
+          ],
+          "id": [
+            401001,
+            401002
+          ],
+          "brand_en": [
+            "Sensodyne Rapid Action",
+            "Listerine Cool Mint"
+          ],
+          "brand_ar": [
+            "سنسوداين",
+            "ليسترين"
+          ],
+          "image_url": "https://example.com/sensodyne.jpg",
+          "strength_ref": [
+            "str_54",
+            "str_55"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "معجون تبييض أسنان",
+          "name_en": "Whitening Toothpaste",
+          "form_ref": [
+            "form_26"
+          ],
+          "id": [
+            401128
+          ],
+          "brand_en": [
+            "Whitening Toothpaste"
+          ],
+          "brand_ar": [
+            "معجون تبييض أسنان"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شرائط تبييض الأسنان",
+          "name_en": "Whitening Strips",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            401129
+          ],
+          "brand_en": [
+            "Whitening Strips"
+          ],
+          "brand_ar": [
+            "شرائط تبييض الأسنان"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فرشاة أسنان كهربائية",
+          "name_en": "Electric Toothbrush",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            401130
+          ],
+          "brand_en": [
+            "Electric Toothbrush"
+          ],
+          "brand_ar": [
+            "فرشاة أسنان كهربائية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غسول فم خالي من الكحول",
+          "name_en": "Alcohol-Free Mouthwash",
+          "form_ref": [
+            "form_27"
+          ],
+          "id": [
+            401131
+          ],
+          "brand_en": [
+            "Alcohol-Free Mouthwash"
+          ],
+          "brand_ar": [
+            "غسول فم خالي من الكحول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ معطر للفم",
+          "name_en": "Breath Spray",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            401132
+          ],
+          "brand_en": [
+            "Breath Spray"
+          ],
+          "brand_ar": [
+            "بخاخ معطر للفم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جل لتسكين آلام الأسنان",
+          "name_en": "Toothache Relief Gel",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            401133
+          ],
+          "brand_en": [
+            "Toothache Relief Gel"
+          ],
+          "brand_ar": [
+            "جل لتسكين آلام الأسنان"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "خيط أسنان مائي",
+          "name_en": "Water Flosser",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            401134
+          ],
+          "brand_en": [
+            "Water Flosser"
+          ],
+          "brand_ar": [
+            "خيط أسنان مائي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جل فلويد للأسنان الحساسة",
+          "name_en": "Fluoride Gel for Sensitive Teeth",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            401260
+          ],
+          "brand_en": [
+            "Fluoride Gel for Sensitive Teeth"
+          ],
+          "brand_ar": [
+            "جل فلويد للأسنان الحساسة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "معجون أسنان بالكربون المنشط",
+          "name_en": "Activated Charcoal Toothpaste",
+          "form_ref": [
+            "form_26"
+          ],
+          "id": [
+            401261
+          ],
+          "brand_en": [
+            "Activated Charcoal Toothpaste"
+          ],
+          "brand_ar": [
+            "معجون أسنان بالكربون المنشط"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "معجون أسنان بالبروبوليس",
+          "name_en": "Propolis Toothpaste",
+          "form_ref": [
+            "form_26"
+          ],
+          "id": [
+            401262
+          ],
+          "brand_en": [
+            "Propolis Toothpaste"
+          ],
+          "brand_ar": [
+            "معجون أسنان بالبروبوليس"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غسول فم بالكلورهيكسيدين",
+          "name_en": "Chlorhexidine Mouthwash",
+          "form_ref": [
+            "form_27"
+          ],
+          "id": [
+            401263
+          ],
+          "brand_en": [
+            "Chlorhexidine Mouthwash"
+          ],
+          "brand_ar": [
+            "غسول فم بالكلورهيكسيدين"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غسول فم بالفلورايد",
+          "name_en": "Fluoride Mouthwash",
+          "form_ref": [
+            "form_27"
+          ],
+          "id": [
+            401264
+          ],
+          "brand_en": [
+            "Fluoride Mouthwash"
+          ],
+          "brand_ar": [
+            "غسول فم بالفلورايد"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فرشاة أسنان بين الأسنان",
+          "name_en": "Interdental Brush",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            401265
+          ],
+          "brand_en": [
+            "Interdental Brush"
+          ],
+          "brand_ar": [
+            "فرشاة أسنان بين الأسنان"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فرشاة أسنان كهربائية صوتية",
+          "name_en": "Sonic Electric Toothbrush",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            401266
+          ],
+          "brand_en": [
+            "Sonic Electric Toothbrush"
+          ],
+          "brand_ar": [
+            "فرشاة أسنان كهربائية صوتية"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جهاز تبييض أسنان بالليزر المنزلي",
+          "name_en": "Home LED Whitening Kit",
+          "form_ref": [
+            "form_35"
+          ],
+          "id": [
+            401267
+          ],
+          "brand_en": [
+            "Home LED Whitening Kit"
+          ],
+          "brand_ar": [
+            "جهاز تبييض أسنان بالليزر المنزلي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قلم تبييض أسنان محمول",
+          "name_en": "Whitening Pen",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            401268
+          ],
+          "brand_en": [
+            "Whitening Pen"
+          ],
+          "brand_ar": [
+            "قلم تبييض أسنان محمول"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ رائحة الفم بنكهة النعناع",
+          "name_en": "Mint Breath Spray",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            401269
+          ],
+          "brand_en": [
+            "Mint Breath Spray"
+          ],
+          "brand_ar": [
+            "بخاخ رائحة الفم بنكهة النعناع"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فرشاة أسنان إصبعية للرضع",
+          "name_en": "Finger Toothbrush for Infants",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            401299
+          ],
+          "brand_en": [
+            "Finger Toothbrush for Infants"
+          ],
+          "brand_ar": [
+            "فرشاة أسنان إصبعية للرضع"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غسول فم خاص بمرضى الكيماوي",
+          "name_en": "Chemo Patient Mouthwash",
+          "form_ref": [
+            "form_27"
+          ],
+          "id": [
+            401406
+          ],
+          "brand_en": [
+            "Chemo Patient Mouthwash"
+          ],
+          "brand_ar": [
+            "غسول فم خاص بمرضى الكيماوي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 402,
+      "title": "مزيلات العرق",
+      "name_en": "Deodorants",
+      "active_ingredients": [
+        {
+          "name_ar": "مضادات التعرق",
+          "name_en": "Antiperspirants",
+          "form_ref": [
+            "form_28",
+            "form_29"
+          ],
+          "id": [
+            402001,
+            402002
+          ],
+          "brand_en": [
+            "Starville Whitening Roll-on",
+            "Rexona Clinical"
+          ],
+          "brand_ar": [
+            "ستارفيل وتفتيح",
+            "ريكسونا"
+          ],
+          "image_url": "https://example.com/starville.jpg",
+          "strength_ref": [
+            "str_53",
+            "str_42"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غسول منطقة حساسة (PH متوازن)",
+          "name_en": "Intimate Wash (pH Balanced)",
+          "form_ref": [
+            "form_21"
+          ],
+          "id": [
+            402350
+          ],
+          "brand_en": [
+            "Intimate Wash (pH Balanced)"
+          ],
+          "brand_ar": [
+            "غسول منطقة حساسة (PH متوازن)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "غسول منطقة حساسة للرجال",
+          "name_en": "Men's Intimate Wash",
+          "form_ref": [
+            "form_21"
+          ],
+          "id": [
+            402351
+          ],
+          "brand_en": [
+            "Men's Intimate Wash"
+          ],
+          "brand_ar": [
+            "غسول منطقة حساسة للرجال"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مناديل مبللة للمنطقة الحساسة",
+          "name_en": "Intimate Wipes",
+          "form_ref": [
+            "form_30"
+          ],
+          "id": [
+            402352
+          ],
+          "brand_en": [
+            "Intimate Wipes"
+          ],
+          "brand_ar": [
+            "مناديل مبللة للمنطقة الحساسة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مزيل عرق طبي (كلوريد الألومنيوم 20%)",
+          "name_en": "Clinical Deodorant 20%",
+          "form_ref": [
+            "form_28"
+          ],
+          "id": [
+            402353
+          ],
+          "brand_en": [
+            "Clinical Deodorant 20%"
+          ],
+          "brand_ar": [
+            "مزيل عرق طبي (كلوريد الألومنيوم 20%)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مزيل عرق بلوري (شبة)",
+          "name_en": "Crystal Deodorant",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            402354
+          ],
+          "brand_en": [
+            "Crystal Deodorant"
+          ],
+          "brand_ar": [
+            "مزيل عرق بلوري (شبة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "رذاذ الجسم المعطر (72 ساعة)",
+          "name_en": "Long-lasting Body Spray",
+          "form_ref": [
+            "form_29"
+          ],
+          "id": [
+            402355
+          ],
+          "brand_en": [
+            "Long-lasting Body Spray"
+          ],
+          "brand_ar": [
+            "رذاذ الجسم المعطر (72 ساعة)"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بودرة جسم مضادة للفطريات",
+          "name_en": "Antifungal Body Powder",
+          "form_ref": [
+            "form_50"
+          ],
+          "id": [
+            402356
+          ],
+          "brand_en": [
+            "Antifungal Body Powder"
+          ],
+          "brand_ar": [
+            "بودرة جسم مضادة للفطريات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جوانتي تقشير الجسم",
+          "name_en": "Exfoliating Body Glove",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            402359
+          ],
+          "brand_en": [
+            "Exfoliating Body Glove"
+          ],
+          "brand_ar": [
+            "جوانتي تقشير الجسم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ تبريد للوجه",
+          "name_en": "Face Cooling Mist",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            402375
+          ],
+          "brand_en": [
+            "Face Cooling Mist"
+          ],
+          "brand_ar": [
+            "بخاخ تبريد للوجه"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 403,
+      "title": "شاور جل وصابون",
+      "name_en": "Shower Gel & Soap",
+      "active_ingredients": [
+        {
+          "name_ar": "شاور جل وصابون",
+          "name_en": "Shower Gel & Soap",
+          "form_ref": [
+            "form_6"
+          ],
+          "id": [
+            403001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 404,
+      "title": "العناية النسائية",
+      "name_en": "Feminine Care",
+      "active_ingredients": [
+        {
+          "name_ar": "فوط صحية ومنتجات عناية نسائية",
+          "name_en": "Sanitary Pads & Feminine Care",
+          "form_ref": [
+            "form_30"
+          ],
+          "id": [
+            404001,
+            404002
+          ],
+          "brand_en": [
+            "Always Cotton Soft",
+            "Kotex Maxi"
+          ],
+          "brand_ar": [
+            "أولويز قطن ناعم",
+            "كوتيكس ماكسي"
+          ],
+          "image_url": "https://example.com/always.jpg",
+          "strength_ref": [
+            "str_56",
+            "str_57"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 405,
+      "title": "العناية الرجالية",
+      "name_en": "Men's Care",
+      "active_ingredients": [
+        {
+          "name_ar": "العناية الرجالية",
+          "name_en": "Men's Care",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            405001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "أدوات وماكينات الحلاقة",
+          "name_en": "Shaving Razors & Blades",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            405002
+          ],
+          "brand_en": [
+            "Gillette Mach 3"
+          ],
+          "brand_ar": [
+            "جيليت ماك 3"
+          ],
+          "image_url": "https://example.com/mach3.jpg",
+          "strength_ref": [
+            "str_58",
+            "str_59"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 406,
+      "title": "إزالة الشعر",
+      "name_en": "Hair Removal",
+      "active_ingredients": [
+        {
+          "name_ar": "إزالة الشعر",
+          "name_en": "Hair Removal",
+          "form_ref": [
+            "form_19"
+          ],
+          "id": [
+            406001
+          ],
+          "brand_en": [
+            "L'Oreal Elvive"
+          ],
+          "brand_ar": [
+            "لوريال إلفيف"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

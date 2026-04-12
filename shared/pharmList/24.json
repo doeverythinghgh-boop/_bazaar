@@ -1,0 +1,91 @@
+{
+  "id": 24,
+  "title": "⭐ عروض وصفقات خاصة",
+  "name_en": "Special Offers & Deals",
+  "sub": [
+    {
+      "id": 2401,
+      "title": "خصم 50% على منتجات مختارة",
+      "name_en": "50% Off Select Products",
+      "active_ingredients": [
+        {
+          "name_ar": "خصم 50% على منتجات مختارة",
+          "name_en": "50% Off Select Products",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            2401001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 2402,
+      "title": "اشتري 2 واحصل على الثالث مجاناً",
+      "name_en": "Buy 2 Get 1 Free",
+      "active_ingredients": [
+        {
+          "name_ar": "اشتري 2 واحصل على الثالث مجاناً",
+          "name_en": "Buy 2 Get 1 Free",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            2402001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 2403,
+      "title": "عرض الشهر",
+      "name_en": "Offer of the Month",
+      "active_ingredients": [
+        {
+          "name_ar": "عرض الشهر",
+          "name_en": "Offer of the Month",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            2403001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

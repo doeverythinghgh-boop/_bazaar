@@ -1,0 +1,339 @@
+{
+  "id": 15,
+  "title": "البيطري والعناية بالحيوانات الأليفة",
+  "name_en": "Veterinary & Pet Care",
+  "sub": [
+    {
+      "id": 1501,
+      "title": "فيتامينات ومكملات للحيوانات",
+      "name_en": "Pet Vitamins & Supplements",
+      "active_ingredients": [
+        {
+          "name_ar": "فيتامينات ومكملات للحيوانات",
+          "name_en": "Pet Vitamins & Supplements",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1501001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "شامبو طبي للكلاب",
+          "name_en": "Medicated Dog Shampoo",
+          "form_ref": [
+            "form_22"
+          ],
+          "id": [
+            1501174
+          ],
+          "brand_en": [
+            "Medicated Dog Shampoo"
+          ],
+          "brand_ar": [
+            "شامبو طبي للكلاب"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "معجون أسنان للكلاب",
+          "name_en": "Dog Toothpaste",
+          "form_ref": [
+            "form_26"
+          ],
+          "id": [
+            1501175
+          ],
+          "brand_en": [
+            "Dog Toothpaste"
+          ],
+          "brand_ar": [
+            "معجون أسنان للكلاب"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "مكمل جلوكوزامين للكلاب",
+          "name_en": "Glucosamine for Dogs",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1501177
+          ],
+          "brand_en": [
+            "Glucosamine for Dogs"
+          ],
+          "brand_ar": [
+            "مكمل جلوكوزامين للكلاب"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قطارة إسعاف للحيوانات",
+          "name_en": "Pet Dropper",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1501179
+          ],
+          "brand_en": [
+            "Pet Dropper"
+          ],
+          "brand_ar": [
+            "قطارة إسعاف للحيوانات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كمامة للكلاب",
+          "name_en": "Dog Muzzle",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1501180
+          ],
+          "brand_en": [
+            "Dog Muzzle"
+          ],
+          "brand_ar": [
+            "كمامة للكلاب"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "قفازات حلاقة للحيوانات",
+          "name_en": "Grooming Gloves",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1501181
+          ],
+          "brand_en": [
+            "Grooming Gloves"
+          ],
+          "brand_ar": [
+            "قفازات حلاقة للحيوانات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "وعاء أكل مرتفع",
+          "name_en": "Elevated Feeder",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1501182
+          ],
+          "brand_en": [
+            "Elevated Feeder"
+          ],
+          "brand_ar": [
+            "وعاء أكل مرتفع"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1502,
+      "title": "شامبو ومنظفات للحيوانات",
+      "name_en": "Pet Shampoos & Cleansers",
+      "active_ingredients": [
+        {
+          "name_ar": "منظفات وشامبوهات للحيوانات الأليفة",
+          "name_en": "Pet Shampoos & Cleansers",
+          "form_ref": [
+            "form_22"
+          ],
+          "id": [
+            1502001
+          ],
+          "brand_en": [
+            "Beaphar Dog Shampoo"
+          ],
+          "brand_ar": [
+            "بيفار شامبو للكلاب"
+          ],
+          "image_url": "https://example.com/beaphar.jpg",
+          "strength_ref": [
+            "str_105"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "فرشاة أسنان للقطط",
+          "name_en": "Cat Toothbrush",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1502176
+          ],
+          "brand_en": [
+            "Cat Toothbrush"
+          ],
+          "brand_ar": [
+            "فرشاة أسنان للقطط"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بروبيوتيك للقطط",
+          "name_en": "Probiotic for Cats",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1502178
+          ],
+          "brand_en": [
+            "Probiotic for Cats"
+          ],
+          "brand_ar": [
+            "بروبيوتيك للقطط"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1503,
+      "title": "مضادات براغيث وقراد",
+      "name_en": "Flea & Tick Treatments",
+      "active_ingredients": [
+        {
+          "name_ar": "علاجات البراغيث والقراد للحيوانات",
+          "name_en": "Flea & Tick Treatments for Pets",
+          "form_ref": [
+            "form_62"
+          ],
+          "id": [
+            1503001,
+            1503002
+          ],
+          "brand_en": [
+            "Frontline Plus",
+            "Revolution"
+          ],
+          "brand_ar": [
+            "فرونت لاين بلس",
+            "ريفولوشن"
+          ],
+          "image_url": "https://example.com/frontline.jpg",
+          "strength_ref": [
+            "str_106"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1504,
+      "title": "مستلزمات تنظيف الأسنان",
+      "name_en": "Dental Care Supplies",
+      "active_ingredients": [
+        {
+          "name_ar": "مستلزمات تنظيف الأسنان",
+          "name_en": "Dental Care Supplies",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1504001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1505,
+      "title": "ألعاب ومستلزمات يومية",
+      "name_en": "Toys & Daily Supplies",
+      "active_ingredients": [
+        {
+          "name_ar": "ألعاب ومستلزمات يومية",
+          "name_en": "Toys & Daily Supplies",
+          "form_ref": [
+            "form_5"
+          ],
+          "id": [
+            1505001
+          ],
+          "brand_en": [
+            "Now Foods"
+          ],
+          "brand_ar": [
+            "ناو فودز"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}

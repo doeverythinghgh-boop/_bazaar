@@ -1,0 +1,319 @@
+{
+  "id": 11,
+  "title": "العناية بالقدم واليدين",
+  "name_en": "Foot & Hand Care",
+  "sub": [
+    {
+      "id": 1101,
+      "title": "كريمات تشقق القدمين",
+      "name_en": "Cracked Heel Creams",
+      "active_ingredients": [
+        {
+          "name_ar": "كريمات اليوريا لعلاج تشقق القدمين",
+          "name_en": "Urea Creams for Cracked Heels",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            1101001,
+            1101002
+          ],
+          "brand_en": [
+            "Flexitol Heel Balm",
+            "Carbamide Cream"
+          ],
+          "brand_ar": [
+            "فليكسيتول كعب القدمين",
+            "كارباميد كريم"
+          ],
+          "image_url": "https://example.com/flexitol.jpg",
+          "strength_ref": [
+            "str_102",
+            "str_34"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بودرة قدم مضادة للفطريات",
+          "name_en": "Antifungal Foot Powder",
+          "form_ref": [
+            "form_50"
+          ],
+          "id": [
+            1101060
+          ],
+          "brand_en": [
+            "Antifungal Foot Powder"
+          ],
+          "brand_ar": [
+            "بودرة قدم مضادة للفطريات"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "جوارب ضاغطة طويلة",
+          "name_en": "Long Compression Stockings",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1101061
+          ],
+          "brand_en": [
+            "Long Compression Stockings"
+          ],
+          "brand_ar": [
+            "جوارب ضاغطة طويلة"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "كريم مزيل لرائحة القدم",
+          "name_en": "Foot Odor Control Cream",
+          "form_ref": [
+            "form_14"
+          ],
+          "id": [
+            1101357
+          ],
+          "brand_en": [
+            "Foot Odor Control Cream"
+          ],
+          "brand_ar": [
+            "كريم مزيل لرائحة القدم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        },
+        {
+          "name_ar": "بخاخ منع تعرق القدم",
+          "name_en": "Foot Anti-Sweat Spray",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            1101358
+          ],
+          "brand_en": [
+            "Foot Anti-Sweat Spray"
+          ],
+          "brand_ar": [
+            "بخاخ منع تعرق القدم"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_default"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1102,
+      "title": "لاصقات مسامير القدم",
+      "name_en": "Corn Plasters",
+      "active_ingredients": [
+        {
+          "name_ar": "لاصقات مسامير القدم",
+          "name_en": "Corn Plasters",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1102001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1103,
+      "title": "علاج فطريات الأظافر والقدم",
+      "name_en": "Nail & Foot Fungus Treatment",
+      "active_ingredients": [
+        {
+          "name_ar": "علاج فطريات الأظافر والقدم",
+          "name_en": "Nail & Foot Fungus Treatment",
+          "form_ref": [
+            "form_54"
+          ],
+          "id": [
+            1103001
+          ],
+          "brand_en": [
+            "Essie"
+          ],
+          "brand_ar": [
+            "إيسي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1104,
+      "title": "بخاخات تطهير القدمين",
+      "name_en": "Foot Sanitizing Sprays",
+      "active_ingredients": [
+        {
+          "name_ar": "بخاخات تطهير القدمين",
+          "name_en": "Foot Sanitizing Sprays",
+          "form_ref": [
+            "form_23"
+          ],
+          "id": [
+            1104001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1105,
+      "title": "أدوات العناية بالأظافر",
+      "name_en": "Nail Care Tools",
+      "active_ingredients": [
+        {
+          "name_ar": "أدوات العناية بالأظافر",
+          "name_en": "Nail Care Tools",
+          "form_ref": [
+            "form_54"
+          ],
+          "id": [
+            1105001
+          ],
+          "brand_en": [
+            "Essie"
+          ],
+          "brand_ar": [
+            "إيسي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1106,
+      "title": "طلاءات أظافر علاجية",
+      "name_en": "Therapeutic Nail Polishes",
+      "active_ingredients": [
+        {
+          "name_ar": "طلاءات أظافر علاجية",
+          "name_en": "Therapeutic Nail Polishes",
+          "form_ref": [
+            "form_54"
+          ],
+          "id": [
+            1106001
+          ],
+          "brand_en": [
+            "Essie"
+          ],
+          "brand_ar": [
+            "إيسي"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1107,
+      "title": "جوارب ضاغطة للقدمين",
+      "name_en": "Compression Socks",
+      "active_ingredients": [
+        {
+          "name_ar": "جوارب ضاغطة للقدمين",
+          "name_en": "Compression Socks",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1107001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    },
+    {
+      "id": 1108,
+      "title": "منتجات علاج تشقق اليدين الشديد",
+      "name_en": "Severe Hand Crack Treatments",
+      "active_ingredients": [
+        {
+          "name_ar": "منتجات علاج تشقق اليدين الشديد",
+          "name_en": "Severe Hand Crack Treatments",
+          "form_ref": [
+            "form_25"
+          ],
+          "id": [
+            1108001
+          ],
+          "brand_en": [
+            "Global Health"
+          ],
+          "brand_ar": [
+            "جلوبال هيلث"
+          ],
+          "image_url": "https://example.com/placeholder.jpg",
+          "strength_ref": [
+            "str_52"
+          ],
+          "is_prescription_required": false
+        }
+      ]
+    }
+  ]
+}
