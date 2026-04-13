@@ -1,7 +1,7 @@
 {
-  "version": "1.24.96",
+  "version": "1.24.97",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-12T17:05:12.173Z",
+  "lastUpdated": "2026-04-13T21:51:23.180Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -2400,7 +2400,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-products-layout.css",
-      "hash": "35934d6caffa03b2465dafb4500adf787dc238499b928030c538e85b52ac26ad",
+      "hash": "4a9199698f2f904d2f9702a91948cd3cdb70d8ff2d3b64f9678090b1819be3be",
       "size": 9368
     },
     {
@@ -2525,8 +2525,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-render-products.js",
-      "hash": "d9547121a894f235f58af84b5c8682da28c71bf400624e311467793799870623",
-      "size": 10257
+      "hash": "bfedef527207a61f007e3846fe7077e0dcd0cfc05820cc3d914b65a6d4e3515f",
+      "size": 15753
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-render-utils.js",
@@ -2570,12 +2570,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-state.js",
-      "hash": "c03e8af56238ffbf95fca4cd05e65d09bc12bdfdd9a9e8a178239ef532f7cb71",
+      "hash": "a9682b46cbbc45e15d036579802f9a703a7ba880143dadd7a96389a755e592e2",
       "size": 364
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/merchant-portfolio.html",
-      "hash": "3eeaca23fa1b1d26e45e8a06b2ff918b00ca1f3c0a9a2a3fa5d6cb60accbe804",
+      "hash": "c6a2a2c2ae173c8da8df1f89bf68865e2e10e80c9bf1f8e6d1ed6fd690bd24ef",
       "size": 16961
     },
     {
@@ -3755,7 +3755,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "6024c4e41797b6b3afe466e45f3cc20a29775daa7476e2c0fcf1de202426f12b",
+      "hash": "d3a9e085b7625cc2d6090256f6394eea0ee09901dea48670fc540af6ead1fbad",
       "size": 21
     }
   ]
