@@ -1,7 +1,7 @@
 {
-  "version": "1.24.100",
+  "version": "1.24.101",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-14T05:52:13.585Z",
+  "lastUpdated": "2026-04-14T06:07:06.696Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -1364,6 +1364,11 @@
       "size": 10708
     },
     {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/pharmacy.json",
+      "hash": "ec281514290d158ea0b6ef4d839e7480022db5020191327d7f4cc548d1c45692",
+      "size": 4963
+    },
+    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/product_mgmt.json",
       "hash": "661640b4a204b25c7e1f834b6b4655d070c896bc47cabba39ae569e6ea8af129",
       "size": 25962
@@ -2600,13 +2605,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/pharmacy-add-product.html",
-      "hash": "1b3ff2c5edb7f5781f0eec0183e3ce71c3b0456a009a5be3d91b4c25d0829eda",
-      "size": 4157
+      "hash": "d8ff8eacf49c56b4027c6c8c0e7f33dbeec59c4015d6dcef3d1f30b19b399396",
+      "size": 4718
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/pharmacy-control-panel.html",
-      "hash": "c516e81f2771434f6aa3f989d50f9848ca4e526053d2aecde2ea3e17e58c1586",
-      "size": 5177
+      "hash": "3b10b93cb0df264eff0efef85e8af52859ba9f653c4035cf5b0f0c6dcf365587",
+      "size": 5834
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/offline/offline.html",
@@ -3785,7 +3790,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "c08b5cd8234b18fbc4acdea88217dbd410515a91cd1cc216cb86fde575da19f8",
+      "hash": "6320532be62b32afe91d185dc518c6e2627911457a240f0760fd822d5b6ef912",
       "size": 22
     }
   ]
