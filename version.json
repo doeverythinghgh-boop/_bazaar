@@ -1,7 +1,7 @@
 {
-  "version": "1.24.106",
+  "version": "1.24.107",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-15T07:54:12.833Z",
+  "lastUpdated": "2026-04-15T08:17:58.160Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -72,11 +72,6 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/favicon.png",
       "hash": "7aed3d0e23d2d596e782e337a77d818ea21bb33bb8873dd400a0472a9b4cbf9a",
       "size": 4935
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/firebase-messaging-sw.js",
-      "hash": "b7a66c43a57517a1f06bd8127b5605fbd458ebb3471a0abee5d4548e9472dd44",
-      "size": 2516
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/icons/icon-192x192.png",
@@ -3880,7 +3875,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "514682bbfb8c219fe1ac09c86f7c4034612c7b97c8757b65d40328347f58ff33",
+      "hash": "66e8ddd38468a83bc295455e8ae1e7d82aaf8e5f8e864ab3d09a1ad96571fc41",
       "size": 22
     }
   ]
