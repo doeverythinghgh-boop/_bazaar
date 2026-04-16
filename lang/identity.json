@@ -420,8 +420,116 @@
         "en": "External Links"
     },
     "profile_title": {
-        "ar": "تعديل بياناتك الشخصية",
-        "en": "Edit Personal Profile"
+        "ar": "بيانات الملف الشخصي",
+        "en": "Profile Dashboard"
+    },
+    "profile_modal_eyebrow": {
+        "ar": "لوحة الملف الشخصي",
+        "en": "Management Console"
+    },
+    "profile_smart_hint": {
+        "ar": "أكمل البيانات الناقصة من هنا 👇",
+        "en": "Complete missing data from here 👇"
+    },
+    "profile_completion_text": {
+        "ar": "الاكتمال",
+        "en": "Completion"
+    },
+    "profile_dirty_changes_text": {
+        "ar": "التعديلات",
+        "en": "Changes"
+    },
+    "profile_nav_identity": {
+        "ar": "الهوية",
+        "en": "Identity"
+    },
+    "profile_nav_location": {
+        "ar": "المواقع",
+        "en": "Locations"
+    },
+    "profile_nav_business": {
+        "ar": "النشاط",
+        "en": "Business"
+    },
+    "profile_nav_security": {
+        "ar": "الأمان",
+        "en": "Security"
+    },
+    "profile_section_identity_title": {
+        "ar": "الهوية ووسائل التواصل",
+        "en": "Identity & Communication"
+    },
+    "profile_section_identity_desc": {
+        "ar": "عدّل الاسم والصفة وأرقام التواصل الأساسية من مكان واحد.",
+        "en": "Update your name, title, and primary contact numbers easily."
+    },
+    "profile_section_media_title": {
+        "ar": "الصور والانطباع الأول",
+        "en": "Media & First Impression"
+    },
+    "profile_section_media_desc": {
+        "ar": "الصورة الشخصية والغلاف هما أول ما يراه المستخدم، فخليهما يعبران عنك بوضوح.",
+        "en": "Avatar and covers are the first thing users see. Make them shine."
+    },
+    "profile_btn_manage_covers": {
+        "ar": "إدارة الغلاف",
+        "en": "Manage Covers"
+    },
+    "profile_btn_update_avatar": {
+        "ar": "تحديث الصورة",
+        "en": "Update Picture"
+    },
+    "profile_section_location_desc": {
+        "ar": "احفظ موقعًا أساسيًا واضحًا ثم أضف أي فروع أو عناوين إضافية تحتاجها.",
+        "en": "Save a clear primary location and add any additional branches or addresses."
+    },
+    "profile_section_business_title": {
+        "ar": "النشاط والتخصصات",
+        "en": "Business & Specialties"
+    },
+    "profile_section_business_desc": {
+        "ar": "رتّب ما يخص نشاطك في مساحة واحدة: اسم النشاط، التوصيل، التقييمات، والوصف.",
+        "en": "Manage your business name, delivery, ratings, and description in one place."
+    },
+    "profile_section_social_title": {
+        "ar": "الروابط الخارجية",
+        "en": "Social & External Links"
+    },
+    "profile_section_social_desc": {
+        "ar": "رتّب روابطك الاجتماعية والرسمية بشكل مرن، ويمكنك إضافة أكثر من رابط لكل منصة.",
+        "en": "Organize your social and official links flexibly."
+    },
+    "profile_section_security_title": {
+        "ar": "الأمان والحساب",
+        "en": "Security & Account"
+    },
+    "profile_section_security_desc": {
+        "ar": "حدّث كلمة المرور عند الحاجة، وسيبقى حذف الحساب في مساحة منفصلة وواضحة.",
+        "en": "Update password when needed. Account deletion remains in a clear, separate area."
+    },
+    "profile_section_delete_title": {
+        "ar": "حذف الحساب",
+        "en": "Delete Account"
+    },
+    "profile_section_delete_desc": {
+        "ar": "هذا الإجراء نهائي ويحتاج تأكيدًا إضافيًا قبل التنفيذ.",
+        "en": "This action is final and requires additional confirmation."
+    },
+    "profile_save_ready_title": {
+        "ar": "جاهز للحفظ",
+        "en": "Ready to Save"
+    },
+    "profile_save_synced_title": {
+        "ar": "كل التعديلات محفوظة",
+        "en": "All changes synced"
+    },
+    "phone_label_primary": {
+        "ar": "أساسي",
+        "en": "Primary"
+    },
+    "phone_label_whatsapp": {
+        "ar": "واتساب",
+        "en": "WhatsApp"
     },
     "profile_username_label": {
         "ar": "الاسم",
@@ -874,5 +982,98 @@
     "gen_optional": {
         "ar": "اختياري",
         "en": "Optional"
+    },
+
+    "loc_section_title": {
+        "ar": "المواقع والعناوين",
+        "en": "Locations & Addresses"
+    },
+    "loc_pick_location_label": {
+        "ar": "اختر موقعًا",
+        "en": "Pick a location"
+    },
+    "loc_pick_location_hint": {
+        "ar": "اختر نقطة قريبة من العنوان الفعلي.",
+        "en": "Pick a point close to the real address."
+    },
+    "loc_write_address_label": {
+        "ar": "اكتب العنوان",
+        "en": "Write the address"
+    },
+
+    "loc_note_business_required": {
+        "ar": "مطلوب إضافة موقع واحد على الأقل (موقع + عنوان). يمكنك إضافة حتى 20 موقع.",
+        "en": "At least one location is required (coords + address). You can add up to 20."
+    },
+    "loc_note_buyer_optional": {
+        "ar": "اختياري. يمكنك إضافة حتى 20 موقع (موقع + عنوان).",
+        "en": "Optional. You can add up to 20 locations (coords + address)."
+    },
+    "loc_note_profile_buyer_preserve_primary": {
+        "ar": "اختياري. سنحتفظ بالموقع الأساسي حتى لو أصبحت مشتري فقط.",
+        "en": "Optional. The primary location will be kept even if you become buyer-only."
+    },
+
+    "loc_btn_add": {
+        "ar": "إضافة الموقع",
+        "en": "Add location"
+    },
+    "loc_btn_update": {
+        "ar": "تحديث الموقع",
+        "en": "Update location"
+    },
+    "loc_btn_cancel": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "loc_btn_edit": {
+        "ar": "تعديل",
+        "en": "Edit"
+    },
+    "loc_btn_delete": {
+        "ar": "حذف",
+        "en": "Delete"
+    },
+
+    "loc_empty_business": {
+        "ar": "لم يتم إضافة أي موقع بعد.",
+        "en": "No locations added yet."
+    },
+    "loc_empty_buyer": {
+        "ar": "يمكنك تخطي هذه الخطوة بدون إضافة موقع.",
+        "en": "You can skip this step without adding a location."
+    },
+    "loc_empty_profile_none": {
+        "ar": "لا توجد مواقع محفوظة.",
+        "en": "No saved locations."
+    },
+
+    "loc_err_enter_before_add": {
+        "ar": "أدخل موقعًا وعنوانًا قبل الإضافة.",
+        "en": "Enter coords and address before adding."
+    },
+    "loc_err_incomplete_pair": {
+        "ar": "لا يمكن حفظ موقع بدون عنوان أو العكس.",
+        "en": "You can't save coords without address or vice versa."
+    },
+    "loc_err_max_reached": {
+        "ar": "لا يمكن إضافة أكثر من 20 موقع.",
+        "en": "You can't add more than 20 locations."
+    },
+    "loc_err_buyer_half_filled": {
+        "ar": "لو هتكتب عنوان لازم تحدد موقع (والعكس).",
+        "en": "If you enter an address you must pick coords (and vice versa)."
+    },
+    "loc_err_business_required_one": {
+        "ar": "يرجى إضافة موقع واحد على الأقل (موقع + عنوان).",
+        "en": "Please add at least one location (coords + address)."
+    },
+    "loc_err_primary_incomplete": {
+        "ar": "يرجى التأكد أن الموقع الأساسي يحتوي على موقع وعنوان.",
+        "en": "Make sure the primary location has coords and address."
+    },
+    "loc_err_draft_incomplete": {
+        "ar": "لا يمكن ترك إدخال غير مكتمل (موقع بدون عنوان أو العكس).",
+        "en": "You can't leave an incomplete entry (coords without address or vice versa)."
     }
 }

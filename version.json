@@ -1,12 +1,12 @@
 {
-  "version": "1.24.107",
+  "version": "1.24.110",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-15T08:17:58.160Z",
+  "lastUpdated": "2026-04-16T06:09:49.226Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
-      "hash": "f4e91ed0fecc13676b8a9c8e6565833b343342aa97061396612ccfbc93ac29d5",
-      "size": 312
+      "hash": "6600aa2f2806f7248df544efc2fc41a7cbbe310bffc25d47376dea5483c62e29",
+      "size": 295
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -1005,17 +1005,17 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/index.html",
-      "hash": "c85542650433a05c51722aedfc0b75c1676066526eccc33fa69ffd2858f95adf",
+      "hash": "57420f72af55e44112efe2c68453517ca1927693a5b58a4468c74d370dd54837",
       "size": 1176
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/android-runtime-config.json",
-      "hash": "5d12374ba70e4dedb0ab200b42631045798bb2fe8e8a786b644c3f9ec544d04f",
-      "size": 428
+      "hash": "9ec018463a0a2400d0276cf8721248596b5839429d42662d062b59df099ade96",
+      "size": 416
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/app-behavior.js",
-      "hash": "fbb3aa419dfaaaf15870a89e6be4ee031b74b61c8a5e304cdacebddd91e0b82c",
+      "hash": "34bea51d8ee3ce154b1a144eb1d5b5fcb65d5263ddb477fe3858c636a07f73a6",
       "size": 132
     },
     {
@@ -1025,12 +1025,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/app-header.js",
-      "hash": "cb68808a03879f0c8be0aa0c0e5ce6efbe6014d2a240e549019edb2e0f3299ed",
+      "hash": "707a1732682a77967505f2cc0242b5fbb2a89311415913952168d3fcac84b7e6",
       "size": 3525
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/app-i18n.js",
-      "hash": "0f4d59685249c02519518c5a34727aff727a279ba0600009d243efa6e62e7931",
+      "hash": "ae94600ac4081ff53a62fee4fbf06c585fdbc421d85a773fbb82b54dd1bd5ec9",
       "size": 3918
     },
     {
@@ -1055,13 +1055,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/auth/session-manager-core.js",
-      "hash": "706ef3aba0a7661c1a7dcf7eda34f5daf77ccf153c03ceb505653f6062c71207",
-      "size": 5230
+      "hash": "106844c619fd4708b064c87cc71653edebf2af24fc1893d298b6eacf16cfd75f",
+      "size": 4777
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/auth/session-manager-main.js",
-      "hash": "74e472d1bb31477a9ff272dfc7c83fc83f0ca71001c3ae25cb21c1e5d3e8f34e",
-      "size": 5556
+      "hash": "e40dd27c6f5a714975bedc42590c2f6f1a979cc2999cf10dd59c50b863548262",
+      "size": 5869
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/auth/uiHelpers.js",
@@ -1090,8 +1090,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/category-tree-modal-render.js",
-      "hash": "d42841bb6ef18ca238e98ef43bda4de5e91f1fb6ff33124c8d8fc2f716194719",
-      "size": 4622
+      "hash": "1c1a003093b3cc3788265c4090504c1e78d2c2e0da66178854ca688b68e7241f",
+      "size": 4618
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/category-tree-modal-ui.js",
@@ -1100,8 +1100,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/cloudFileManager.js",
-      "hash": "53cfb7bfd1e08a27791edd61a6076cdfbdcccdffb273800f211bf91f69334567",
-      "size": 3654
+      "hash": "1c0f2cd19af0e048a5049ef251e52911286ed46620451ea8eb54630cc88b006d",
+      "size": 4758
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/config-roles.js",
@@ -1120,17 +1120,17 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/connectProduct.js",
-      "hash": "5ac219f4cf79921c94e7e15b8171ae38798211c0ec12b22c04e569cfdf087d08",
+      "hash": "b6b6761a2a8752993d6f0a62986ceee977a45df8556b3dfccae4164032cf04df",
       "size": 3715
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/connectUsers.js",
-      "hash": "f2e1a139670b52009bbcc13048fb04bfc081b70c51d6e0145f5f6896aa3d7131",
+      "hash": "0320bc363ec603879dad47f6c5059a1459b3ccb6a71b6b717e9f3998a6b0c6ce",
       "size": 894
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core-loader-bootstrap.js",
-      "hash": "18eade1e31a5c7810c35ae5ffd40acb9aea0a21ccdef1fed931d605eec7c6f22",
+      "hash": "714b340254c520821f99dda222bac2c31bd648b775033df2d1b8694a15905719",
       "size": 2296
     },
     {
@@ -1140,8 +1140,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core-loader-resources.js",
-      "hash": "bba22cb5a04a0d310481609e96611cbd60ed2ee84794af33ec81ac58fb2a2421",
-      "size": 8229
+      "hash": "5b7182aeb80a654c3368fab78bba533a5281a208c560b8857fcbcff21ae4b84a",
+      "size": 8376
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/db/usersDB.js",
@@ -1180,7 +1180,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/global-product-routing.js",
-      "hash": "0b06fe7356815a99ca53483e561086a8bf18db69d8986846cb600ba890ae4646",
+      "hash": "db922ed02791e61d7d962b7b1a7382294e743ce925f6f9c59aa2f2792d08193e",
       "size": 4516
     },
     {
@@ -1205,7 +1205,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/PRODUCT_SERVICE/productMapper.js",
-      "hash": "acd0955c7fc8d23f38d5224baac3d7cb0816eaa526be59776e6178889ee182c0",
+      "hash": "ad5257ea2e11dfc43dccd37a73a9bdc9d656cffc27ba931b472055e2ce82a64b",
       "size": 3833
     },
     {
@@ -1215,7 +1215,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/PRODUCT_SERVICE/service-category-config-core.js",
-      "hash": "fe0192f9e5a2897f34063b89200667348e8685b9c06e3adba75d85acf29d3fbf",
+      "hash": "4a19a6a65efc8799bb22849db1599368a753b8c104f4c09bfe0241fba8ff1cdb",
       "size": 8308
     },
     {
@@ -1230,8 +1230,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/PRODUCT_SERVICE/serviceCategories.config.json",
-      "hash": "d38a2539819253161503ec9fec5e237e026dcbd5a2cf97391bcbde152e8442ce",
-      "size": 5361
+      "hash": "6c4d405b47dd8f3fca77c98e08241b2de38086467c1f5ab005f5385c61146910",
+      "size": 5562
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/runtime-config.js",
@@ -1240,7 +1240,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/security-shield.js",
-      "hash": "2fdb3ee44eab19e12d9c6eac3bf81a66fb99afce33932e6ba5eafacec1214161",
+      "hash": "9e345c6272297344490598ff60374197bedcba11f812b9baf9873a0c61f812c7",
       "size": 7170
     },
     {
@@ -1254,13 +1254,18 @@
       "size": 91
     },
     {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/multi-links-client.js",
+      "hash": "9ae6c07c5547273e7f0bfcf85a97af4a21e7f7727fa032b8b627118008108b54",
+      "size": 1220
+    },
+    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/product-ratings-core.js",
       "hash": "f826ba8427bd7c85fb81f14dc6655b75693340a2bb06b93c703d3327e4ed18ad",
       "size": 1612
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/product-ratings-dialog.js",
-      "hash": "36f05d177caea8992520829de2ab4347fe280b68cdbdae7a40b6ad886366a257",
+      "hash": "bb1bfb92412d2f7900c09eec549763e58da1cc88b8d8f81901d6cebf66e52f62",
       "size": 2745
     },
     {
@@ -1280,22 +1285,22 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/settings-fetch.js",
-      "hash": "03bd27ece5a46ec0997665f547b8aa3c15e195430fd3c990c0006d1e31a7bcf7",
+      "hash": "cbf733069e605cadbcd3686202b4b4c8ce3a422cfc10433157fe26c757ff8306",
       "size": 3415
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/settings-language.js",
-      "hash": "1f089837fdf73fee299ff4f39ba587cb4f045ebbe5b4828d6675ca85281b477c",
+      "hash": "2442e21e6861c5758805cc0c0590385e37afa4fda53be09c1a2c8c9adec8ae76",
       "size": 2723
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/settings-notifications.js",
-      "hash": "0d80ea819e65e746855f7d979ca20294a4a7433b62846bb59f20182845334cd7",
+      "hash": "e54e6ce5db1c1be26ea8d7d3460f2d537388f3483dbe4c4f9d33f4daa0a0a83f",
       "size": 6149
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/settings-theme.js",
-      "hash": "bb67a487448d5a80a664df61362865b97b31e2fd021cccd77a3b9f681f5551c5",
+      "hash": "0db7a79a38d6cdc63d5c8ec696495eb547b82e4487cb1dc8c28bef770e73f45e",
       "size": 1833
     },
     {
@@ -1304,8 +1309,28 @@
       "size": 10097
     },
     {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/user-form-service.js",
+      "hash": "fa4f490560da7766c6ab9cc25e5317b64724cb30e0f51f0fd5fe8540b05718ef",
+      "size": 4988
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/user-locations-client.js",
+      "hash": "e4e220009c99a20701e0abad570a3ce94d553e07c18c9c8028b9855087070a0a",
+      "size": 2239
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/user-phone-ui.js",
+      "hash": "ac493b1092295cf4c73e81a2365480c9e62f2562158e617326076975b3a85679",
+      "size": 3649
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/user-service.js",
+      "hash": "5d570dd14de75d539b26e7e1096115ad641cc8770f09f17c2fcc735144de5fda",
+      "size": 11709
+    },
+    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/splash.js",
-      "hash": "ca7bf8d7b860cdeb6f91b1bf06bd2accc2d6c747608e78c524ccbd10d40febf3",
+      "hash": "f907880e3f47ac1fbd85921a4a5d4b47f13cc979e0d69a9134d01ec5e22fa775",
       "size": 4223
     },
     {
@@ -1320,7 +1345,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/tools-system.js",
-      "hash": "839c4e57221b66461d3f90bdbcf67abee51162b72d97ec8847f3d9448db4f7cc",
+      "hash": "2371c7167a35a0fd6799a38e8b6b69f349295e794979a0e2e0b5d2abad508821",
       "size": 6114
     },
     {
@@ -1345,33 +1370,33 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/core.json",
-      "hash": "6d8fde83ae37185e12d2cfc60d61c736fd35d09ebae47e517a2f6dde200743e6",
-      "size": 59938
+      "hash": "24548353452d9d2d91a6bb714259d59f53bbbef8aadfce68ba54bac4161b2e53",
+      "size": 60078
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/identity.json",
-      "hash": "40a94d31ac463cdb8698d10c464ad6e79519d1c86436bf43be8d2c00a8eccb58",
-      "size": 31189
+      "hash": "477ada72ccbe3408fe6f8808ae3637469211ea3b7a66a443e659456c93dbc479",
+      "size": 38093
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/marketplace.json",
-      "hash": "e29f81171cbc3dc0ba57ea11d0b3f66a23374df12f66192e503c3a0aedfadbc4",
-      "size": 10750
+      "hash": "9b2b70b23cbc1d868a61d8d507c0f1e0d3c1345eb3519f45f0a420f0caf1c149",
+      "size": 10708
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/pharmacy.json",
-      "hash": "e5fb1e88ca449f107d397c088fc908321178ee91469ab42b3996319318935c90",
-      "size": 6982
+      "hash": "8a01f62f2af3dc7c0a7a25a29b8b6662c38882155d9db8e618bb18e6c1c59eca",
+      "size": 6923
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/product_mgmt.json",
-      "hash": "4b1ee444a65eba242ec52c64ab41f1956526961799826c489c33d7bcff9f34ca",
-      "size": 25971
+      "hash": "661640b4a204b25c7e1f834b6b4655d070c896bc47cabba39ae569e6ea8af129",
+      "size": 25962
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/transactional.json",
-      "hash": "d15fa3dd9792485fec1d73fef3c0fe0c4d86a09b229eb06998ffc0da605c1fe6",
-      "size": 46039
+      "hash": "c522e3cd6e681a5c98fc4c9f95582bb7134f44b358844901a207dcdb51dc9c02",
+      "size": 46030
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/location/js/location/config.js",
@@ -1410,12 +1435,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/location/LOCATION.html",
-      "hash": "6f07a218d55a2011e413121dc044eb6aeedce6a0aed493c0d03f3ed1a02b4cc3",
+      "hash": "e439bf0cedfeb4cf992c2dbf17e771b6a6845d528a6efafa0f93f2bb049baec5",
       "size": 4956
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/location/location_app.js",
-      "hash": "c6fb4b4d4453c732cf9f434b4f17595001353fcd1309fc83e9fc7c0f0d405862",
+      "hash": "05989c503529e7a038be06b95f26be972b0f393c89f869d682591cc9e69a043e",
       "size": 2029
     },
     {
@@ -1475,22 +1500,22 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-web-setup.js",
-      "hash": "9f2396d49c0db3ab0b50dbb2ec082c1a4e14893d37fab2385c8cb42a82593f60",
-      "size": 3727
+      "hash": "e45d0fe314a805708a18272f4030ebee98e1e97a3bc66f91c2f22abc043aee96",
+      "size": 3945
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/notification-db-core.js",
-      "hash": "5c38ea1ff7be60489f0e92d6e88db826dcef692904165627bc669b471a1b24b9",
+      "hash": "327024f7004f24eed0c3df7602e27f16d86ab16d9d1ab413cf88b50eea184270",
       "size": 1861
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/notification-db-logs.js",
-      "hash": "a3d93e3752e7d1d7b26a315775a4454bcc9e3b0c868ae57861ed1c08dacc3ee4",
+      "hash": "cb38c4754e8ea6ced7b6787fb02196b112f5344c828c3e96745f625c30850d28",
       "size": 3433
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/notification-db-status.js",
-      "hash": "b431f441b645e949eb6fa1a89605c7d38fc8921757d1cea59a6a08bc1c7b3dab",
+      "hash": "86bd2161bf1181da0590a3e410d60528492a4dcfd3b9442ecf1abb7c1ec31b98",
       "size": 2369
     },
     {
@@ -1515,7 +1540,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/actions-permissions-core.js",
-      "hash": "cbca6612579d1f7266005e4b1bf6e7597cf502489807c547cae6b8907dca05b0",
+      "hash": "ffb23688d5134fb58cf760e967c4ba0bf674fe3b2bb13f29a5d6a093193ac2d8",
       "size": 2581
     },
     {
@@ -1525,7 +1550,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/global-counter.js",
-      "hash": "78cf21c9900a06d0f6e162f10909f198a15cfa5989dee9830ad9ed56fc245ff0",
+      "hash": "2b535db7afe26ba63a82cfe9b88ae950b0add3de903f4607d0852f9906999e18",
       "size": 4022
     },
     {
@@ -1540,7 +1565,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-base.css",
-      "hash": "2d8c09c2d8701ee77c21a6beda46643fb98c8c4ec92069021233866743623c8d",
+      "hash": "852a8948d8462dcdedcc3337c8508472f420437bc5f1910e6906870f3d9f83c9",
       "size": 3382
     },
     {
@@ -1550,7 +1575,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-items.css",
-      "hash": "153d4cbb83d215f9bb5a6ca03cce1350c6b58a225a5b1a913a39b1176b6aecd8",
+      "hash": "138447424766d8ac0d70946c6372736d746b3370853be69c491ae9c4079571a5",
       "size": 2864
     },
     {
@@ -1570,7 +1595,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-states.css",
-      "hash": "44af7d6eb3394912218c04e74d98027dadf526d92249470742d1a05f0f3440c5",
+      "hash": "f35266b8cf490df496d6786f3d01eb8f9a5899225c79eb072ac206a186854f6b",
       "size": 1780
     },
     {
@@ -1590,12 +1615,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications.html",
-      "hash": "769b82b3dc600070384ed67c5c9ef50d735bdb2c18da7e2fcb7a00ac75aa1bd6",
-      "size": 3274
+      "hash": "6835748abe74eb5a11e15e4c7768a916edfb4ebc1ef007aaa0668e32e2805f08",
+      "size": 3246
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications.js",
-      "hash": "d35dcdcc5e7f65715ddeebb5440ad1f85e199eade3d9d561d3c04941c2d4d291",
+      "hash": "67374248ed9bd61e270c9e84ea3718f1cf1fe8f7bddc1f2c382f3554ad02884a",
       "size": 4210
     },
     {
@@ -1635,13 +1660,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/ui-helpers.js",
-      "hash": "568c024050d7042d8901c6650147c1ca102fd596575e6a969004bbc9f7c48da9",
+      "hash": "de9843eab235a2bfee3f27d454774ac411f8fc4be34143263e83bb7df18c2c92",
       "size": 3751
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/order-data.html",
-      "hash": "738e20899312482b6e395ec22e0d69d63020f2e7394535e0472446c607672f21",
-      "size": 8582
+      "hash": "87b4b6c208d62ccf7afd5070369623d50b0eb99bbdd06ad3120f099276d159b5",
+      "size": 8561
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin-partials/admin-tokens.js",
@@ -1665,12 +1690,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin-partials/items-list.js",
-      "hash": "5e5a3e5911e70a2c4a7daf1c54a9f500b84ee32cf2e3a976b91fb60eda35c957",
+      "hash": "749474974c2cce4fd519049c4211c45c205d1591ba0a9de6f213162f4d70d482",
       "size": 11262
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin-partials/permissions.js",
-      "hash": "24d03ed17dde6a2c5a2791b387f43024652efd8e0412ac0aa37cd2ab49829be5",
+      "hash": "a86ece3abae561f366cd9a33e36ab5d57fb2b8735eb39c8d473043f694403f8b",
       "size": 4280
     },
     {
@@ -1680,17 +1705,17 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin-partials/workflow-guide-comparison.js",
-      "hash": "b0565b847ea361d63bf578753d43eb7a82b4f0112976fdac8b23c7778426a6a4",
+      "hash": "477af9131b6fb0b541241f7d8f845c1337b0e143d942aff213ab32a322993b81",
       "size": 3008
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin-partials/workflow-guide-main.js",
-      "hash": "15b809833c5e043eba76b23e7dbbb1b49cb662c120df43826582243408860de2",
+      "hash": "db7e944bca1b87f577540b04995dc64d0759ba8e3304d7559842425736f6202b",
       "size": 243
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin-partials/workflow-guide-table.js",
-      "hash": "5d6a2c17d01261a3e5c51c6be80be71eb0061bfd1cbdf67db06915a25620cefe",
+      "hash": "ae5ffb9ca08964ff4784f14b59672c22f24a1a92bb1e90fe20530caee074b73f",
       "size": 11154
     },
     {
@@ -1725,7 +1750,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/navigation.css",
-      "hash": "9572248bee4cacc0e48cc3bb640bb6b9c9e2da3628e1135ee8f1dc9e42b2ec74",
+      "hash": "f9d63c4dc8fef00fb6dc2e4415e8856fb84d83b04b4a86d805ad3cdaaa4efe70",
       "size": 704
     },
     {
@@ -1745,17 +1770,17 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/admin-text.js",
-      "hash": "4a7ba2d008824655ccbc13d269c6cf4a263ae8400bf68ea7af957d19c6a67527",
+      "hash": "6a292facacd34f1f5db8d9bfad2eeb5f5d5595619bd3adb50623ad06a99434d7",
       "size": 1119
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminHub.html",
-      "hash": "419996cb7b7a49581d0c651374a8f2bd31960e2cf915c6a23d7322692bfac5ba",
+      "hash": "806eda405a178367a8db94a1500bae54ece4ae01e9ae3238e4c5a59e0ba11a29",
       "size": 8316
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-actions.css",
-      "hash": "320fe5ba77e4a628794ce345b1692556f3cb9233253bf68b3071b757cb582dc4",
+      "hash": "a8ba5cc6e12f329a907701bca0138b445ca27fd0f827ff06578e344827a4cccd",
       "size": 1034
     },
     {
@@ -1770,7 +1795,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-base.css",
-      "hash": "150380d80f0ac1cded9adbe3a2ae984010ce10d0ed2f1e4efdee2bc43a498cae",
+      "hash": "17949b4e1b2a712bf9166dc9b83062cdffa3330eff34ab2bfba856744fd7e8a8",
       "size": 704
     },
     {
@@ -1780,12 +1805,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-cards.css",
-      "hash": "4209301cba8a201d924894593ad889c1b9ebcc265b95a0838672cad7ce4513fd",
+      "hash": "c3dc727e9ea7b1b4b144f31d76dc8b495378f5848e8c0b95acdecfcba2bfe989",
       "size": 2154
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-dark.css",
-      "hash": "0501003b5a289b6a310b7d3e862f55801cd8fc728fb04b470f3914cc9d1b8559",
+      "hash": "ffcf77567aed04216f7a6b1ce679e44ac59fb42756d3bc2119ca3468284d3b4f",
       "size": 2756
     },
     {
@@ -1795,12 +1820,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-relations.js",
-      "hash": "276cffc2d2727487ab6acbdac04a1c241508b48ca3e5a27781fb7efaf5470408",
+      "hash": "75f7d77f32008fe57bddbe71edca1b46e6630c60a4b022dcdedfb4d7eb18c153",
       "size": 9401
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-responsive.css",
-      "hash": "30921d2a26942e6a2c4fd9fdb624764f6aa8fa9ef17f83665eda0149e74a4c62",
+      "hash": "2af98bf856819c19ab1737463b3bfc6915585e59ae0e8ccf084d882dbbce8bfd",
       "size": 819
     },
     {
@@ -1820,17 +1845,17 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-search-state.js",
-      "hash": "3485a674442f9b4e61d8ba8fa836f74e989143dda2747991e2741cc741a04bb4",
+      "hash": "ab63df7fe7399246d4960a88ff85f11110866c04e5b4c9368c0a157921e7a924",
       "size": 547
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-search.css",
-      "hash": "d50270f535056e6ea1b9ae5f5cb50300a104d55110715d650f34b7408d1e1f80",
+      "hash": "a1d6b8a2e35167d3097d0c0773398372829835c75c14a6d932959326ef84131b",
       "size": 4419
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel-ui.css",
-      "hash": "e6f1ca9eeca286644545f7be21a25db27a4a4924aafe5084f898c45c4baf70c9",
+      "hash": "d79d82910d5c1419de472a9c648e75f9cebd44b0d42071cbf7054153d3af8939",
       "size": 3262
     },
     {
@@ -1840,18 +1865,18 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/adminPanel.html",
-      "hash": "4c4c260f28adac0c3aa527c1662de7f0e5fdcdfcd65e383f0427a5e63d263253",
+      "hash": "4d402fc98cb0091c224b7bb839e05f06bdff3dceb3d7b1ed635fac1b43c9e4a2",
       "size": 4155
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/css/imageAnalyzer.css",
-      "hash": "d3d00a9d9aec432b8831b58d2f1d19dde492c87407115879bef6d8cc3a61adb4",
+      "hash": "57dd9ddb8c1fa79c0fe50cdc96ff37db48bd00ea6e971c51d47ecd476303974c",
       "size": 7044
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/imageAnalyzer.html",
-      "hash": "07adc4e48a8e63badcffe112b5df10a29a3eb126a2ef5befb7f561c0e9b979e4",
-      "size": 10572
+      "hash": "cb705f4777a2a4accf4bd54bc43253ee6fbcb7d187a6b175be4ca3b74405ecb5",
+      "size": 10558
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/js/analyzer-api.js",
@@ -1895,12 +1920,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/mainAdvertises-init.js",
-      "hash": "fccbdcb0590068cfbebb3abefde1f244f20ea8c2904143c253ecac0d645a8534",
+      "hash": "7f2fbdc0aee769418e3cb15d2b53378cbe9c9497dfb6bca1cc918690146d578b",
       "size": 2987
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/mainAdvertises-ui.js",
-      "hash": "88096f646dfcb91a109b05d86f87a49ab1a013b599625d59cceffafbd1581362",
+      "hash": "8784dd665247a6e30614033aa5c599a6e6c8d16689d61f70183a2e5eb6313a3d",
       "size": 5325
     },
     {
@@ -1910,7 +1935,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/mainAdvertises.html",
-      "hash": "9e24ab0913ba0b181c8f2311732a3e255f7e75c660e0c3e5cacbb4648a76cd4f",
+      "hash": "f4952731a9e14dcc2964f7e7dd954b24cb9869a416e3a4d25c1c8501e9d85669",
       "size": 4652
     },
     {
@@ -1925,22 +1950,22 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/pendingProducts-init.js",
-      "hash": "634bd136dacb4c41d56c7d055185872bdf1c415c0502f9f645751f7b7530f442",
+      "hash": "3dbd0de8e463595bdf44a5e3fcc7990d2b45fd257ecc93957560c0234ee8e6f7",
       "size": 4992
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/pendingProducts-ui.js",
-      "hash": "a26804018ed1298c3732bdb7c53e6bf660cbdb6ba0985513ea0c2c44116d282f",
+      "hash": "97aac52e434dd27edcd962b233b633dc5a67017ce64b228593b7b9f3cee94b6d",
       "size": 4348
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/pendingProducts.css",
-      "hash": "1861cb62b2d21ab3c95c6ac3067e48014103685030de980ddd774db7f9c3a696",
+      "hash": "a053e8185ac240f028628676d30a35db9bc91c21cb878dff987712291f1fb234",
       "size": 4900
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/ADMIN/pendingProducts.html",
-      "hash": "daa46f98b2ebf3bd5dc358c251f08db0a958eeb302ebd79f384cea10d4180f03",
+      "hash": "5de82f1c74893c744ee3f9e50a4421bd94ef5f5af99138475b1b1edb5be6b0cc",
       "size": 3479
     },
     {
@@ -2010,7 +2035,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/cardPackage/cardPackage.html",
-      "hash": "f92c1865dde02d9a082462588a96c856b2d41b822e1e54c3b5d1357b35f49c7d",
+      "hash": "6e3f38933cc3c8cd74402bfb9720230f0c68de222dab44e641c0121c1a5b5361",
       "size": 8839
     },
     {
@@ -2060,7 +2085,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/cardPackage/js/cartPackage-ui-delivery-modal-main.js",
-      "hash": "530a0159364fcc2c14cf6b995fa0a0a2b06bab093855d0b5d479d2a1d61036a6",
+      "hash": "2ce5bf278ddb7e27b4a078b3d3a8a5baa8c0f4369badcc61494f20d35660de0c",
       "size": 881
     },
     {
@@ -2085,7 +2110,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/cardPackage/js/deliveryCostCalculator.js",
-      "hash": "aee9ad17dd42e61ce51bdd73aae1369e1d829a6db398c24b1a38530ff05e918f",
+      "hash": "f7950e4efc51bfccef9fb7181e9b9502127f7d175abf15fe127937c606be5780",
       "size": 1345
     },
     {
@@ -2095,27 +2120,27 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/cardPackage/js/deliveryService-core.js",
-      "hash": "8d603467057f8abdb521ef3e62e9638621322cea594ff263e0d6cd9ffd7f2bf3",
+      "hash": "d836afd7e012b55a0d4e6615f58ecc9b714a1dcee8acc0b9671d2a2a0d40141b",
       "size": 302
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/cardPackage/js/deliveryService-main.js",
-      "hash": "772b28d4242248fc0138666e6f01f219c978af019e56c2643e440680270b490b",
+      "hash": "af13c8c5cb266da77f49872790c6517123d2bfd5699d8cc8f9dcd4e34da4f143",
       "size": 3327
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/cardPackage/js/deliveryService-route.js",
-      "hash": "ac66d42fdbaf866014a21b39911ab93793d2dd1c1beae9493c2dbe884e140316",
+      "hash": "8fe3752651e2938419a9718be46661567c7460c7260a2fcd07c4336075b521f6",
       "size": 3062
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/cardPackage/js/smartDeliveryRoute-distance.js",
-      "hash": "50372e88217047d94c296087fd7b39b04924df641a13731ddbee83230a785126",
+      "hash": "45a0781a59b82ce11dc1f8d4dc66a1c00ac455d47c48639a48d2008a39cc3354",
       "size": 488
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/cardPackage/js/smartDeliveryRoute-optimizer.js",
-      "hash": "8fbcbd791afcf9e612e20803b67b693801624860be79379d2e397363b902894d",
+      "hash": "d349f5a3867be03ee238402f64228e8788ee3d2d8318b0f575f3ebf4fed5a7c2",
       "size": 439
     },
     {
@@ -2150,12 +2175,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/categories/categories-loader.js",
-      "hash": "1279487e6eaf5f80453137a6fc60d950a47fc88df0062b82ef48690aaeed4075",
+      "hash": "7f25be57d2c8a9edb3a0e1b79d6d6d9a8f4995e5ba8bcd2619c5fdb35e6c75a4",
       "size": 4705
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/categories/categories-nav.js",
-      "hash": "c311b3ca6a5b135f5eb79f2cac59bd4421d74b8e9d97fb1c785857987b695932",
+      "hash": "7cfb1d7e438a27417ec7d2bee02251fb83bc0e2e018f96239193885a5cdfa686",
       "size": 894
     },
     {
@@ -2165,7 +2190,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/categories/categories-products.js",
-      "hash": "bb4beaa1953fcf9cd97c145b657a6ec5ecfd8e796f3ed5efd790f87be63f20ba",
+      "hash": "c5cf404e118af681e674dae6bbec26cd884b835aa95d43a2eedbf47c2f2bb8df",
       "size": 8344
     },
     {
@@ -2185,7 +2210,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/categories/categories.html",
-      "hash": "f0d8f6262b519b10d9ae5732d6f311f0867b3e3619b570e5593a0c183297712c",
+      "hash": "1ddcaa35ab9a785abe3ed516df2a267f11c862b60f18cbdb7abc3bd64b7dc0ad",
       "size": 930
     },
     {
@@ -2195,7 +2220,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/contact.html",
-      "hash": "6488890a5825cef78b608974ca9b6996bfa3408453f6d46e516cbbb852a395b3",
+      "hash": "26374b0cd3bf5cfd47b66ab87b6d095714df19509c92bef9179e368063a8230b",
       "size": 2002
     },
     {
@@ -2205,7 +2230,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/css/contact-faq.css",
-      "hash": "abd4b7af3a3b3e8732ceb45c31c978a5d9ebc79dd4517a79470526662ac10e2f",
+      "hash": "1e1d6f72042d7c3309df52fd640554eb08194c3125e57ce8d62847bff2161f2f",
       "size": 2103
     },
     {
@@ -2215,12 +2240,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/css/contact-responsive.css",
-      "hash": "b13a2e119d3c66007c87f0e727162e3cf0c53161f71e2f7409921d1935f9a5cf",
+      "hash": "f97cd79223bd5a9fb1ee2bbf7adef02f5350d45804ac29347007c0336066a8d2",
       "size": 557
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/css/contact-services.css",
-      "hash": "f94bfb2b44db55d273a97b055f1ea9acee0fb3ad6dd17063981b8b8f144bbf32",
+      "hash": "82a1f75688e35bf754137ff35339ce15569e94eed01bb4a32c4f1c4ed0e1c0a2",
       "size": 926
     },
     {
@@ -2230,7 +2255,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/css/contact-tabs.css",
-      "hash": "67b090a1aff94a3a284ecba283392003d1e2cf68904cef4132d80c5a83e40f57",
+      "hash": "52e14ccc2cd7c1c9d6d61c85426d14e9d587364b1b67f2995f2fbc5c3f137da9",
       "size": 2671
     },
     {
@@ -2240,7 +2265,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/js/contact-faq.js",
-      "hash": "d4a6cf4ee7c2290fba5ad8e91b446b9615d21f191fac96ff2303b31efc986c06",
+      "hash": "f70addbaba3ba118ea388d845c6a453d1def265950e55c2310c2612fc3bd8c8d",
       "size": 1502
     },
     {
@@ -2260,7 +2285,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/delete-account/delete-account.html",
-      "hash": "d86e02f6730148de33f7c2c16f23cb844a3593d996a11e05413fc6ed6586b89d",
+      "hash": "eb3cdef9681d97e08dc92dbef56fa2f45f35582bf4a8437fb2b7ce22d5374454",
       "size": 1120
     },
     {
@@ -2275,12 +2300,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/featured/js/featured-init.js",
-      "hash": "52fbcb5b71af2537ca35d011179d0782fbd10d0ea928743e4fec4c4e98ab1da6",
+      "hash": "70cd35c36d8fbd9729e1f0a1802828af89d6cc1ba2e269985847faa819d5f90c",
       "size": 1970
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/featured/js/featured-render.js",
-      "hash": "360bd703177374df2f19ed5fada7b28cc1eefd5f5fa1285c3b4e9a51eeef6a1d",
+      "hash": "c1fb4263b06e5239edc44aa0ff95f2ffcb3b53c460f3e5c9496b5add90e81193",
       "size": 1955
     },
     {
@@ -2295,12 +2320,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/home/home.html",
-      "hash": "aa446bf6b06fb33fba541edafac0fcf2494181f9d80e4b3b4b4fa8b4a107c51a",
-      "size": 6001
+      "hash": "696029185175e5523271714e5cef632c678e1a1b1c5f1a76c0689992004f7d0b",
+      "size": 5895
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/login/login-init.js",
-      "hash": "f1f67dc071e43ee124c7f72a842555299dcb9e79509a3145dc0aa3adec848ceb",
+      "hash": "f6f87e64399db08216fb4be29516df959ef57e29a16762068a7820a59c8f98d9",
       "size": 1137
     },
     {
@@ -2320,67 +2345,67 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/login/login.html",
-      "hash": "0cc22d3745714fff7c5c73d48a5270c755e53c9bb17b7900823743720a7279c5",
-      "size": 4328
+      "hash": "e2c38ef1e234ffc71007585901b866d0d0c404a70790e8e6a9ffb56e3eb4fc59",
+      "size": 4304
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category-api.js",
-      "hash": "f5d3b888488673eb270ccee9436098052c3b04c3eb051cbc5873d65bee33ab66",
+      "hash": "2806bcfa423747b7f1987e69ad449a934f7669313164281e688a19a6eda6e71e",
       "size": 3248
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category-events.js",
-      "hash": "f814621f543feeb38f67ba4be1c1f48e26ac13189ae68435586d3a95f7ba9637",
+      "hash": "5e0557bf672449cc6644c12ab1db3e21776ec7cb14c928dccd69e8f4bdcfbff5",
       "size": 3059
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category-init.js",
-      "hash": "2d3638eb8de9e3f98a82c6157fb3e64fb1a4d2059f5daa70aea911ee64343824",
+      "hash": "7f2800257c8191e449484243382ec19898ce71749e24ab2813c40e7cffe15558",
       "size": 2949
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category-ui.js",
-      "hash": "ed76e0211b59b6fb6704e602166dd37b8b7960ca58f056a102d4da49617cc337",
+      "hash": "1abd7bb0f283f8079ede2d13c1ed9ece6db14f58878fe06218dcbc04cb1ff693",
       "size": 8472
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category.css",
-      "hash": "f4fb35efe3a77d6e6b66af93df2af2451b3039261bbc0f1f52ccc68b4035bfa0",
+      "hash": "343fedd41feddc7b3fcf87a10e6fd6ab1a3feed865bbe8f27a74b091293fcab8",
       "size": 7327
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/main-category/main-category.html",
-      "hash": "401376a8d91a24d3de6d5db134cedc676864d2c99091ec9c0db57507a5b02b10",
+      "hash": "488dffdcd070962c53f112e360b3aa4d40bbcd6b2bf30b966c7120a4fe6ddc87",
       "size": 3512
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/pharmacy-add-product.css",
-      "hash": "2a2ed6555f9895458cd4eef3a9da9f51383bd6c774b15026e479ec892a897a72",
-      "size": 3713
+      "hash": "fd3409dfcf5d1f6c4d808e8193d3835ba19675139ec4925d2536f44e180168f4",
+      "size": 3870
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/pharmacy-control-panel.css",
-      "hash": "9633358518a955fd18460aee2c990a514492ff068d99fcb64d8aead163f04970",
+      "hash": "60bbaecb68a40adb6f025a1bd4254033e01ba999380102d6159b2035472e40ef",
       "size": 4325
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-actions-buttons.css",
-      "hash": "1d47be83a318da53e53041f59d725bbc6572bdd71cadcb340765f5f7b6304f44",
+      "hash": "8fa85bd073bac7f5f3f9dbaf8ba6c410df01ccfdd4d860cbfd423732173c7daf",
       "size": 883
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-base.css",
-      "hash": "cdc12bf7e4fc482f2294a83fe0795db70f404da6acb138e58e013e9b7f772834",
+      "hash": "6ba364d953d16eedaa02ff91a16393cab51272465913ffc28f02f93494eb40f0",
       "size": 2995
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-contact-actions.css",
-      "hash": "db967f5bb48374fb3eaa8a24041cb7f4416a0074b8c8d77509fef2b6008b6a57",
+      "hash": "c1782c8001bc0273766210f4029f59bb75780c6706fa8844998c33517c88e5ef",
       "size": 2349
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-featured.css",
-      "hash": "c9bda000399b6a73c2ad117ef8c55469af0037598d6ec30d7c76205f0798146b",
+      "hash": "846982385a8b4b53c1b8b4c4afee757445f6835ce5d4496896bc0f5bac65599c",
       "size": 3597
     },
     {
@@ -2390,22 +2415,22 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-info.css",
-      "hash": "9adb7990e0f43b29b1d51caf7547585ad08bce915a0ee0038ac11ed9f65b171d",
+      "hash": "ad35d93ad03f7dd2c6c3989413bfb01ac00b67227f8318f5e1d59bf133ef6ffb",
       "size": 2912
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-inline-search.css",
-      "hash": "18bea037f0c27c04803ac9d7552d917489a39ee2377ee6f5d2b6b599790841ae",
+      "hash": "c2f107070da53ec8ccf27ae13699837dd18e5c79fd4353ab511bad078e6bbfd8",
       "size": 5081
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-modals.css",
-      "hash": "14f231f156ff921cf3d6857240778bb4aa09575e4adc649f9e0da4497d5b9803",
+      "hash": "52809198eacd78d1fc6a1b74179ca6cd0a107cbca9bcffd4ab154b2cad84c6e6",
       "size": 2611
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-pharmacy.css",
-      "hash": "a804ca83481fbd599ed6b5d8fed011de541b38b9048547629f6562512d9850fd",
+      "hash": "b6e4939202ceb812433b1c1b29a75f643d3c5e7eb5b238cafc0484001d037e3d",
       "size": 3493
     },
     {
@@ -2415,107 +2440,107 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-products-management.css",
-      "hash": "2e1e767f29505d10c02bc58991f3896d09b23c4dc9108f22a5ae3d1ff1695d88",
+      "hash": "454b24428d75bfaa892e2645f38da7596bc5280e8e5ae4460d011bf6b0befcea",
       "size": 1350
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-products-toolbar-buttons.css",
-      "hash": "61ae3bda3e50bdfc12498a15e739ddc44742b1f7fdd669aabcf7205578a9bf1c",
+      "hash": "e5de9bdb157f85c12d27a157396e56819f25a44be295d89aa17b87a80d358bf5",
       "size": 1173
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-quick-select.css",
-      "hash": "f079b575ad43d1ca67941690bed85a45573fd109465f1df55cd19470eea73209",
+      "hash": "12f81fa022dd36f93c87fd84ff7cbda3120586ee6e956602ede8ed67b41e47ea",
       "size": 2617
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-share-actions.css",
-      "hash": "94312c329a5da20088e57930b48698c6815977271599ce87488867149efa520e",
+      "hash": "147a9cc490e92fd8bf87dec33596bae29f239222e5f801a2b544d3b82bebf8ab",
       "size": 1522
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/actions/portfolio-action-setup-helpers.js",
-      "hash": "108a66449c41fcc4c25c127e6a26ca90331ce5350418d11f8123a2193a81f2a5",
+      "hash": "84eadcf71e6d8fdcff964283ec1c1bc420223268228750db9c7a6b9fa7b25e17",
       "size": 1123
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/controllers/portfolio-products-controller.js",
-      "hash": "331e6e775e2d187697f9e31f8f533729ba220041cc09d1e677547f7bd787064c",
+      "hash": "09e6e15e29d4231ed1e4c7562e2d262cb227f96d237e4d410b9a5bc33c6336dc",
       "size": 3409
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/controllers/portfolio-ratings-controller.js",
-      "hash": "c3151568d6a115b08708041bf63d4a70862591bd7b7c7cfd0b3fabf6754e7a50",
+      "hash": "c46c1135cb5526d03c7b458abdacd90765e5724478ae28c808a23d4522a51a91",
       "size": 1490
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/controllers/portfolio-search-controller.js",
-      "hash": "ebb9381507ba84cb491ef65c41e98127625533d163204d361631a0b3bd03e821",
+      "hash": "31223ba5ec602ec0e43591d6fd7f58659784403a43394bff78c59ee70b6520e6",
       "size": 783
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/init/portfolio-init-helpers.js",
-      "hash": "8e582c513db77415fcad066d50502e86ceae39941b2a168739ccc8833c590407",
+      "hash": "edc8d09066aa4ee397dd4b7adfa8f74438816f911a40ce4360ecf64c896a35da",
       "size": 3397
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/init/portfolio-specialty-view.js",
-      "hash": "d02b93b57a3a46578f3dfc47297552770569af581396a393fe157cc89362445e",
+      "hash": "fe783b06849feb0a44e8be688f9873efd5ce4fd00b5b3353806295cb6285ce89",
       "size": 2541
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-add-product.js",
-      "hash": "79c8aad223f99fe133753708229ad17c237f92a1106df2ef2fb858dc390e8831",
+      "hash": "4e3792e5e5889c42f99e8284d84623fa85e4d00c9f108901671b0954e4614dbd",
       "size": 4229
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-backend-api.js",
-      "hash": "69b328fb7cd92e5c6e4915797798883e1b130da75428e743b7a034e47fd44c44",
+      "hash": "c4628c78147b18855c21e6536945c65aacf7c0a8a226d9ba91f896b020d8ca98",
       "size": 2058
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-catalog-manager.js",
-      "hash": "a5ee9130b58d97b7476df0765679766070a852b1896718ddea5e4ab81fee5ab5",
+      "hash": "6262f10c5f7cf9ed7b9cdb70a8b09cfd4ae666ff673ba56011072fe810e396ae",
       "size": 3883
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-custom-categories.js",
-      "hash": "b8b4a1b629f4f836e531ce38c4978eb76b0e7c72eb6a1ae613cbc55739836489",
+      "hash": "b7fe1193358168bf1271f4cd895a5824242cb70881d991af88ea45bdf8dc87ad",
       "size": 2519
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-tabs.js",
-      "hash": "f3aed63902cabcd7f47de2dfe7dd639717867def5157b6ff6e0d69897e7f6568",
+      "hash": "42bb27a2000cd52558c1c10d31d242426a2708c6887db1b8bd2cc283fb0c6759",
       "size": 437
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel.js",
-      "hash": "25096864a899d2c4188e05935410465267549e0c5bdfc84b45d00e5c8d63b8cd",
+      "hash": "4bb070b02c1ab136efd880504e8efb622789d4756a58ffc7159b9d27a0914ecf",
       "size": 317
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions-contact.js",
-      "hash": "934d1fa73170f38368c81dabf6ef7db89fa056b436d7aaf8b54286dbe01c7f0c",
-      "size": 3411
+      "hash": "2f949f77a6e811e139a579ba88d80de9b162ffeb895c22c61115ffdf9319cab5",
+      "size": 5614
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions-mgmt.js",
-      "hash": "bdd19b506f2a884a39c04df152f6030fb27ff186e0a26dc1185917ce14911bef",
+      "hash": "b5915ea541e0368b9c48df2ae65de644226e2c82a03c0fe6ed44a896b74de132",
       "size": 6145
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions-products.js",
-      "hash": "e01737c79cf66f8bbf47eb41f9ccf287d9f926d13f9c0a7f1064ec946feb1b48",
+      "hash": "8570c3570ade761670ea53d0d6ef1dacb8de8a9c84b8005ea524729ff6813d55",
       "size": 7397
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions-rate.js",
-      "hash": "09f13adc2838c3356e583e9a750861b4f4e54954bc5a010299239eebd5f72fb5",
-      "size": 5569
+      "hash": "922d7e40172d90fd8f6c2ccac3196eca8ea4cb10d1ec675eefccc457b3aa7bd2",
+      "size": 5565
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions-setup-core.js",
-      "hash": "0ab7da10d6ffb891236a17a3ffd767cb22c05839533045b339a77b8b2c727b0d",
+      "hash": "2665f2f5484de0505b8a266f07a422b756dc8ea6b6f48d3389e317a9765f8af0",
       "size": 180
     },
     {
@@ -2530,12 +2555,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-featured-actions.js",
-      "hash": "1726b8c44e42c12c258e5a6f71cd7432a72e154ca72887409112926e3702f4d2",
+      "hash": "25d8c6bfb7f31375eb3cbd577146c70164ab961cf1565c55ede69d8613c5cf8b",
       "size": 2642
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-featured-render.js",
-      "hash": "225505976b4330210f5a253830a2939df7724089598031957e17505683b61832",
+      "hash": "e97bf5a70ae82a754ec0e6b69d68f11115d584597cd2b3ecd9c4cb86c6b7acd8",
       "size": 4146
     },
     {
@@ -2545,47 +2570,47 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-featured-state.js",
-      "hash": "4ad2431dd1529f58c4edf7dfdbdb4c586a15f15996ea0b6823a72aa93d6aec38",
+      "hash": "b781cc1233797a2c63eab7add7473f8424e215f1a138411c405dd5e922955dc0",
       "size": 890
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-fetch-featured.js",
-      "hash": "c1ebbbb7b4cca5a485bec87864cf6d6b14b73d534f88e5205b07a83003d2cb31",
+      "hash": "b7aed03a9e7105f127561f2a3600e4560d4797e4ca3d0729a56eae588f614428",
       "size": 1469
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-fetch-products.js",
-      "hash": "228308dd75411b379b092192c80be6242270bb3a4f7d266fbe7ef76e33fbd20c",
+      "hash": "ec9a66dd50ce306d6788feffc73c6af5a3039eac637f106cf40998d1456750e2",
       "size": 5189
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-fetch-ratings.js",
-      "hash": "d8513d699b618f68f28ee2ace8dc629a45f6a4b385704120420d9579180414e7",
+      "hash": "50654f2f605345a2ad9f0e3f391d84e5e23823718c43cc96389f3c949ea25fe6",
       "size": 1347
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-fetch-user.js",
-      "hash": "7f8d0b87da527a0b1e9bbe063d6aedf411c5b2283c63f0c972152861d3ff5750",
+      "hash": "6ad7bc724a4dbe885dfb6762e18823c9ee904aef785f73db0133f2687c27ee9e",
       "size": 1830
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-init.js",
-      "hash": "457e4ab49ebf7202eca635324d2e22db84a981836ab0c9d5d5844f393d91f1c9",
+      "hash": "d0aed14c32e3bf86a8f4d331ba1895e7e27f481d036af203d0480c5db50fb2f5",
       "size": 1642
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-page-controller.js",
-      "hash": "95682e003cde7b6dc2af719418e2f5d4a7d03c4bf3ccc970faaf1a5a09559344",
+      "hash": "2914700e56010e2f669e1eb7fcc3523ce4ac48f08baa2c733e678463545dafe1",
       "size": 6888
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-pharmacy-renderer.js",
-      "hash": "2f25009151ed75500b65ca0dfec827dc5971972544590b76693be8b080be0efc",
+      "hash": "d4662c49dc5be843b8193511deceb7b068d176fa9a568619cca1456c10164f94",
       "size": 7382
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-profile-core.js",
-      "hash": "1d4897bad2577ea351f21bd0732a5febe519e932cdc6eb69043866dc9ae76aec",
+      "hash": "edf2ab5a6b4047f7cc80c9435b3a0306ae1da01eea9373500230b98981eafa5f",
       "size": 1153
     },
     {
@@ -2595,17 +2620,17 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-profile-renderer.js",
-      "hash": "1eeaa7d31cc1ad985a8e9a004c91255df4331fa0dfe613b4802452449d31f1e1",
+      "hash": "595b849c8cef8370f5e573fe21b72db38eb87dd079c0ea3de5ff8a8fc78b955f",
       "size": 866
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-profile-sections.js",
-      "hash": "703266d9ce8a2f84d40acf9cf4eb67a00eed78a2003d8697256a25858fa7e540",
-      "size": 11283
+      "hash": "f93070ad30eb753c3875c43fee989e40c2dd1e0e5297d0ab77af37b708617d05",
+      "size": 12946
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-render-products.js",
-      "hash": "15af82813d353bc108b8d9f980345b36eb402c98c89c9bc0b57f4c6d72c257ab",
+      "hash": "cbc861ba6b2e75186d804bd9b468569c62bce09381ec9a45cf432442e7ea9538",
       "size": 2629
     },
     {
@@ -2615,33 +2640,33 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-reviews-editor.js",
-      "hash": "25334ca230b8865775192c7a2648247201057161bb2c5e771075ec5e2d2cbd95",
+      "hash": "04505efb1f2d74ffc18947664cd4f2bbda903e9830ed2111afbd2426e867c0d6",
       "size": 2888
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-reviews-modal.js",
-      "hash": "dab2dc14443ebb5608141b6d391f29863ab89129f14a57b5e5281322b5bdf85b",
+      "hash": "923f85d59198f153d293363f35137087cd9f5161b0f0adfd7243401646a7462c",
       "size": 5559
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-search-actions.js",
-      "hash": "5938a9dffdda6100dc457908552332d26309cdd140105f219bd512caa7098630",
+      "hash": "5122c583af38bb501d50e4454c4b6674b41e6e1255ab65cd2d4c3cc5c6b8eed7",
       "size": 9325
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-search-data.js",
-      "hash": "87cbc24647899c9a50f917d418ce895528ffe11e35cab8583eda2ebc002f63e8",
+      "hash": "c3f60646072edaa98e96eda6a5dc4cd7805b84f9b73230899799730564ac11f9",
       "size": 5320
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-search-state.js",
-      "hash": "6194955330698ab97b587e76a1ea2ceba43f5b0c7aced1c27703eb634b9af5a6",
+      "hash": "0ff1a7b45eb09de8b7219db2b0b86917614794cfaf7f4089c7b51f9bc0f0c89c",
       "size": 3239
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-search-ui.js",
-      "hash": "5f6480dc51b5ea94135f834f798fd15a826a12c10317cabd02f88ee45d6dd968",
-      "size": 8762
+      "hash": "060a24af6a051404fe142e4aae7c95bdf31926501f79c83f214df67be33a99b4",
+      "size": 8758
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-slider.js",
@@ -2650,43 +2675,43 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-state.js",
-      "hash": "3046073f5df40a653cfb373a51b2fcfe99f230f70073cebf82072f4843a3d8b2",
+      "hash": "a2cf122cb0b4f4bd627695ccea6f49747a21c74e9131f93efbad39bf70d66d51",
       "size": 3418
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/renderers/portfolio-product-card-renderer.js",
-      "hash": "2c617aecf4f9a0b202de23fda0fe7540ec631774a4d286c2221aace7b280a19d",
+      "hash": "e9a69506caa470f47fdf7012901b83300eb1bd607646dadbb532862d79219e31",
       "size": 4643
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/renderers/portfolio-product-grid-renderer.js",
-      "hash": "38d643e9c6369e22214843ba67b25295229d8e655cab0e893727891d59bb467a",
+      "hash": "62f1b0620a7f78d8955fab1bd77d03379867bdaa03d456abd210615b57bf28eb",
       "size": 1626
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/renderers/portfolio-product-virtualizer.js",
-      "hash": "56a24c268229cd3699b5e973bb1b7c1d69552b917432378dc68161df356277e3",
+      "hash": "67847a6a74364326524dac0bf77923ed63d742731f97bc8930c39b23e4608881",
       "size": 2697
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/services/portfolio-api.js",
-      "hash": "a787d586b36155295998712cff16c6933668781e146ab621cab4f088542d7938",
+      "hash": "de1bf5b25b2884c446cf5576bda77aa2616cb004a1a6fdde0a2e9c67a1f09185",
       "size": 4794
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/services/portfolio-safe-fetch.js",
-      "hash": "5e81384fedf313cf60592c6ae6a3b4c7f4e9b7509dfd1bd8f0d56f679e29e03b",
+      "hash": "2bc7aecedb0f7ff89b56f090f0e42339026a270cd3398437563d664e9cac4c2e",
       "size": 1034
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/merchant-portfolio.html",
-      "hash": "258ab6f3e653c28465dc0853efa3933b5f41fba7defd22525fa6c0846d1d3628",
+      "hash": "f73587d8f7aa347c92d8ba112e99ce6d2791579624a97a2c5681a841e00e4766",
       "size": 18442
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/pharmacy-add-product.html",
-      "hash": "01b6c555b7ad2459b3e9a948fcc509466987c8c9ceb37f85a398038c3002b619",
-      "size": 5337
+      "hash": "99368a063be10079350b03562d004edbb50822cbcfbc12bf495cd329f0cb6363",
+      "size": 5412
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/pharmacy-control-panel.html",
@@ -2695,13 +2720,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/offline/offline.html",
-      "hash": "24de8a0149f952b9711fed81a3856eed6b6f4c055a9ce01ca6ffb81964dccc14",
+      "hash": "0022534a77f4b2d90f1cf93586b00845a723cc34d24059aa209084eb5afc3bc6",
       "size": 6203
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/orderPhoto.html",
-      "hash": "fa51366f9a9a027566f565ff708fdd0961e9b1aca3c30c406dcaaf910a9dd9cb",
-      "size": 6494
+      "hash": "08bece0b71fb27a3c991c2b57b7b46cde4770c39be503792827642f28cfe2efa",
+      "size": 6487
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/privacy/privacy.html",
@@ -2710,7 +2735,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/product2Me/product2Me-text.js",
-      "hash": "57f9893d7c90cab1c90744e3bedbc622bed5dba6e4a74ab969813d5280575bad",
+      "hash": "73544611a188959e5c5c037d29f127a96167743fbd46eeb96454686fc6c74b14",
       "size": 205
     },
     {
@@ -2720,8 +2745,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/product2Me/product2Me.html",
-      "hash": "acbbadfa35e7686f4168b69720213426a54da7090847dde64f15c37e312fb2bd",
-      "size": 7022
+      "hash": "845da92bae16cd2d38a6712ad4d6c4ffc29952a702881914a164cc0ac11ba8e7",
+      "size": 7021
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/product2Me/product2Me.js",
@@ -2735,12 +2760,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd/js/add1_image.js",
-      "hash": "d5e6b549a979cf40c06b6794423bb48853fa13e853d4e09a65fb541a6416044b",
+      "hash": "a022a960dd46fefe83d6acb9aabb264c20908dc9d22ca26322a357502393b042",
       "size": 6222
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd/js/add1_submit.js",
-      "hash": "a12557c2db3606e315db435db9f1a0d503c57eadaf6d6720f3da4af122a1d4b5",
+      "hash": "f2ae2a0790688beea96ed1bdbf2e96fdf54079ffca7e4fd7723cb4a950c1374e",
       "size": 6428
     },
     {
@@ -2765,12 +2790,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd/productAdd.css",
-      "hash": "ab869094b2171bbe387fbfebdf09bb27a2d67ca899f45c2049ea52262568d580",
+      "hash": "1f89125ca4e9974f0b7ba574c799983408c5c350ca36bf4ff8512c0d26ee77e0",
       "size": 6756
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd/productAdd.html",
-      "hash": "287303b8f63731c65c9a82fdbf0b9500a5fd76523e5e4021ce4a96a03c32127e",
+      "hash": "9439ff970661d705a4f707edf8287e271ff0cbc5f9e620fb6472d20dabfdd3dd",
       "size": 9368
     },
     {
@@ -2780,12 +2805,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd2/js/add2_image.js",
-      "hash": "1bb99115ec1c799adcad42918b627dc0d9bc4be177f7694e018376a851060afd",
+      "hash": "ec2eabe468a32621213b98a323a730ae217420a7154ab5a9cdf0b49058fa0122",
       "size": 5239
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd2/js/add2_submit.js",
-      "hash": "321e1cfe39a880552779e08dd791a2b0b76574c6f03186cc014f04e559fd4fab",
+      "hash": "8b36f8229887948eafc1edab44d465826bdba5f81893f4c57e29f9729c760adf",
       "size": 5313
     },
     {
@@ -2800,12 +2825,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd2/productAdd2.css",
-      "hash": "d3687686f02fe85c46c85582c4cfdbea0b645302d1075335d727583d39c8ebd1",
+      "hash": "a4ed0140bc43a8155ec9e278dc8a53e6bedac2efce3e91f18eaceba9a7ad30ff",
       "size": 6460
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd2/productAdd2.html",
-      "hash": "48e15025e2b88a9087e7a74ce44f3f30cfe0313dd5d99411c28ce80e8b2198a5",
+      "hash": "be8c23d5c35b5aca5b1294de54c56caf211fc8ca8636b35b9ec2fc21c283255b",
       "size": 6654
     },
     {
@@ -2840,7 +2865,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit/js/edit_config.js",
-      "hash": "52807a4893fe0df6b6a10197826122bff16bd92c52f3cf22ad66352266c9ab92",
+      "hash": "d440af964d45f96887b8794449a0571a01965214cc6d740166c5470dfe8a6e95",
       "size": 526
     },
     {
@@ -2850,17 +2875,17 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit/js/edit_init.js",
-      "hash": "d69826f2329673bd4a0c4bf6d3a5137386da9ba6291316d215b21950389fd3ff",
+      "hash": "2db2af229030415c3538d371e783a8382ba52dc1d056f8a2eebd628ace7383fb",
       "size": 2317
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit/js/edit_submit.js",
-      "hash": "d5546668ce25b59d8eadd92e0848bab929bd29ba99457d6e34141cd40b8b8c89",
+      "hash": "311c6878c9eb052722663f3607e04175aade6b169d9d7ca34bdd6cc9ef3d7177",
       "size": 8151
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit/js/edit_ui_camera.js",
-      "hash": "349603e1f7d20eda5556e52e5f82683bb60bc0c086dd50a075184e35e9432df6",
+      "hash": "5dd2b1b35f1ff0da3c52999a7c56e2830e1255aad951964a44a4c1ae3848a1ac",
       "size": 1651
     },
     {
@@ -2885,27 +2910,27 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit/productEdit.html",
-      "hash": "ff8fbd0ce43f4ad87cac0e5c368b10d3f741afb2993e2d8249a143547c2b91b7",
+      "hash": "9edd964edb56443e597f19c5cfe45002e54a0c677e5a8a290571125cd0947e1b",
       "size": 9059
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit2/js/edit2_config.js",
-      "hash": "71b5ce099c34dace0f1c329ad4b618cc2978fd40cd4b618940e2eae2d384ec0c",
+      "hash": "6035932f7cf15747568c8935ebc917a7d6312f59b40f5a447bfcb1d74a9a15cc",
       "size": 538
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit2/js/edit2_image.js",
-      "hash": "4c33bc00e5c94bfee8eaa656fae25b09009a546de8a22f2be146aac67115acad",
+      "hash": "00e4044d530de0721237434469306817aa486f40acaa8804738a5b35d67d9487",
       "size": 6194
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit2/js/edit2_init.js",
-      "hash": "62d047bd4563f1f21976bbb394456d87c8eb97480bae88bb3b95356f171cccff",
+      "hash": "837ac0397edffc2728bad8554a46617f38ccf1a6f6c6e6a434ead8d03cc01d29",
       "size": 1792
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit2/js/edit2_submit.js",
-      "hash": "e43e5870f88fb4a0a7eefd98720418d41df81d1ae159f94ca23ab11d37c4b37d",
+      "hash": "f7afe320379d09633bf0a9f19ba4cd7f316d5ae5c432e41b1d7db952616dbbda",
       "size": 6961
     },
     {
@@ -2925,32 +2950,32 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productEdit2/productEdit2.html",
-      "hash": "d8b23e187de8b9808a60aa417eb897de7fde48eefe544ad6ab242b3377ec8b48",
+      "hash": "2e2d9b72033c45a10f6ea50e59a116d5c699be522254040b71bb9bc2dc47e4c4",
       "size": 6825
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productTypeChooser/productTypeChooser.html",
-      "hash": "9022b35d4072ae451e96dd8da7c579c8e8b59a5c63c9929ed58ffc032669ecc1",
+      "hash": "2954d848435941c1832761707fe9aa20752099cd2a46c26c5f918db62e77af5a",
       "size": 3990
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView/css/view-actions-price.css",
-      "hash": "e3b22066b53ad3fe4f03097ecaea8b810cb1d085183125f56140c3bee36ff58b",
+      "hash": "11df8161afcfd820073c4efa33bd70684495ac68cdf722caee25ddca511a88e1",
       "size": 3007
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView/css/view-actions-purchase.css",
-      "hash": "505e539e86f483e358668ee2355ce7b75aea28cc0a99207802cc740144e7b27f",
+      "hash": "5a0173911cce82553499ea63816e094ab768d9535de8419128e9ff1199957872",
       "size": 3958
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView/css/view-actions-ratings.css",
-      "hash": "552e936693503141f84b331c23dbe503b9ff3dabaf924f0e224542024091d476",
+      "hash": "c7aeec1951c709c5251a801c758c1d5481f80425766e5c1c6960ba4434c06d26",
       "size": 590
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView/css/view-actions-reviews.css",
-      "hash": "893e6feb6324b37b1290f13c27e1cef669b63c6bb1e54d708ab0dfa5dc73c09d",
+      "hash": "47adf41586667e8c181044875a2764a130179b4a9af27a94140b88b4f4ff83fe",
       "size": 1557
     },
     {
@@ -2960,7 +2985,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView/css/view-info.css",
-      "hash": "128b29f8ac24927866c0e208e62e8a5479606146d2ca38302e1b4c1c599112eb",
+      "hash": "9bc79667b89c04e1281097a92b520f456ef778590fd8b6eefc18eadbf52802fd",
       "size": 5240
     },
     {
@@ -3005,12 +3030,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView/js/view_utils.js",
-      "hash": "c0e098811e3f2631b14ce0edf042da666089321d49e3ad05ecbebe0817607dce",
+      "hash": "3b96bc906c652bf72ed16885b9fc64c2eba056b8f5d09ab6490d3d6231ec81aa",
       "size": 119
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView/productView.html",
-      "hash": "ee1644c5b7ec9e182bf1128a8240b1e8201e901f8bc903b95259ac81facd35c8",
+      "hash": "7ec077cae53f19b519ef8e6acbc7283c04ac16c146f15973aefea2679a22d757",
       "size": 10961
     },
     {
@@ -3030,12 +3055,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView2/js/view2_submit.js",
-      "hash": "d3d72899c914cb56b3149fa33e6310f1b2ca7f4779895ecc74ed5389a4162bc1",
+      "hash": "befd55f611c5dafaf7348efea05fe7cd2f68bd2dd5dcc54c14948d45a28ea874",
       "size": 3632
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView2/js/view2_ui.js",
-      "hash": "544a87b9bbcd74002f530bba6e8182a195cf664895ce965af7c0e5cc83d18fcb",
+      "hash": "089c0371404dbb84122e3aedcd30e696e7175994838ea543a5b9a0bec864e8c7",
       "size": 4210
     },
     {
@@ -3050,7 +3075,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productView2/productView2.html",
-      "hash": "6b812987d0a24f7c2b5be74a638f93a1e40a7a72dc1e82f30c00b5e7e064c1dc",
+      "hash": "6cddd367ab48fc3df7a0b0205b2f0a5cd03bc1188c6968a9a5dc29a48d50c536",
       "size": 5623
     },
     {
@@ -3060,38 +3085,38 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/css/profile-modal-base.css",
-      "hash": "59284df90fc41478f164ec9a17c2a4a2288368d474c79f3589e3571bf0f83bcf",
-      "size": 7363
+      "hash": "05dfd98958ea5704f3915b0ebc76cc7cccde5fde42a88d80bb1c4fa7384f7515",
+      "size": 13411
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/css/profile-modal-business.css",
-      "hash": "b0a65d7040a78967e3b3acc36895b559810775d926582c486a9bbe7cdb380864",
-      "size": 5265
+      "hash": "857a91f9ff95d2b6abcee463676a856cb3a28e076e89bace70fd87cb8f09f38c",
+      "size": 2929
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/css/profile-modal-header.css",
-      "hash": "1d8b27f1ab7ea389f4d11c3bd6ca9de311543a9fc28cfcfdacad54880dab80e0",
-      "size": 3047
+      "hash": "66ae4fb51b47c5984671c027708a406dbb1fcd0b0401f338257f6c089a2cf0fb",
+      "size": 2553
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/css/profile-modal-tabs.css",
-      "hash": "75fb2303fb6ae8439133f60d990131a0f44ea52405395258c1c70b386cd4a6ef",
-      "size": 798
+      "hash": "bfa1d55419a6a0cdca98abbc27a7c00f6db79de679b14010264586b12bbd49d5",
+      "size": 393
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-auth-handlers.js",
-      "hash": "c6b91e53a9db67e92a86d947c74d0d3276bc469202f57c8a82051321b6e36e00",
-      "size": 3593
+      "hash": "237de569a93f5f6779c5d92867b25be4c8dee83cc53ffffa2900645d95b3b2c7",
+      "size": 3737
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-config.js",
-      "hash": "e2710d8ad60ab47a35f9132ca30f6cd520dd7bad8570b3afb098f00f928186db",
+      "hash": "d1380ebd08c4351e1019bd71c4cab2ae70f4d006690d5429bc51edad69995eec",
       "size": 73
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-elements.js",
-      "hash": "65ff6a11d979350739264ba0697bbe733494c904cf328ea95e1d47d8dce9c94f",
-      "size": 3673
+      "hash": "76aac0a2f35437c93977b6b6f71aeb661cbd34ba767e05c29edb0492a1db794b",
+      "size": 4151
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-handlers.js",
@@ -3100,28 +3125,33 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-helpers.js",
-      "hash": "ff159d91b1111cb6a826448c19c2d8e74584f1605c6c1b02282f8e41c7729ba4",
-      "size": 4323
+      "hash": "cd821a1bf7049bba8d65366f862ad54b4899c87dcfc9aaefcbf36d027be031ab",
+      "size": 3253
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-image-handlers.js",
-      "hash": "b504a174e90583d8eb1bae67a5b7cf60079ed92d8aac96549020bddeee479b02",
-      "size": 6985
+      "hash": "c6535057d7281a7d3283e1d098bd3e3478f30d53729dc28031b7106bc0410980",
+      "size": 7556
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-init.js",
-      "hash": "eaf03a4125598ddca2a21398a32204b589c7f5c85e0177bc597a41692ad1c441",
-      "size": 6120
+      "hash": "b893ac00b43d6f7f6db563c31aa3d0bfc936d1aaba59b054b7406ea10dc835d0",
+      "size": 6499
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-listeners.js",
-      "hash": "36aba5c9a61c9ef5a084ce5ed82ed7b868e6480bd7bc55eee087f775bb4bac4f",
-      "size": 5657
+      "hash": "ce43ccfc775e3cbd35a856b447f3cf5541f34526264f762adab68783aefe0c81",
+      "size": 8255
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-locations-manager.js",
+      "hash": "ac8928390373147ccf5a5fe8f531df81fe3dab2105483f6bb57a496e9110766b",
+      "size": 10593
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-save-handlers.js",
-      "hash": "946d425755dd956ed2441d59119cbbd1a60497288de0e4908e3040cd929b2e9e",
-      "size": 8159
+      "hash": "cf1e7e713b201b6fed9b97655855d57f0e24cb09b4d8a4cb6aebfa5879a2ec6b",
+      "size": 9562
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-slider.js",
@@ -3129,23 +3159,33 @@
       "size": 3250
     },
     {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-social-links-manager.js",
+      "hash": "51df71c118a297c146664f7e8588a85126abcfed1c121fb2b00c353eff2e522f",
+      "size": 1930
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-ui-state.js",
+      "hash": "e91d3a70e31a08161ac3367d564d35dbc01ad65a846fdd8462ed8dd9119e1395",
+      "size": 10411
+    },
+    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-validation.js",
-      "hash": "49e1dbb7d913ef40218f650168ddcc6f302c40fe3f0d7fab17fa5211c4cbbbf8",
-      "size": 1742
+      "hash": "9092d0860b76ea874e50e4ca52439ae31dc34c699f1575429998bf2b8c597100",
+      "size": 1756
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/profile-modal.html",
-      "hash": "2e49e207dd1f286c47292c155db657084181716e044c73f1f9a8cb11b66c1876",
-      "size": 19342
+      "hash": "46073bf865e8cc2239321bd6b39f7320bd5bd05ba883a16dd80789e706d600d8",
+      "size": 27953
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/profile-modal.js",
-      "hash": "06d1efb8c461ea1a1cd848c49c2dbada5800019170bca171c145f9252740cc70",
+      "hash": "807d4bc0d41b120a7edda34b5077763d0ad4d8fa842d4709bba3bf5abfcd52b5",
       "size": 1482
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/css/wizard-base.css",
-      "hash": "3c052f26d23a1247daff419e3a9fb391ec8246372528aa74d8556d84f8cb28cf",
+      "hash": "9984e3ed1f77d0a115fcc25a98a050e75d9005624ffc393548899ce6404eeb8a",
       "size": 3245
     },
     {
@@ -3155,28 +3195,28 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/css/wizard-nav.css",
-      "hash": "db423289414331797460353b703f38e53e6a07d1c67dc73305f3198e39980dc4",
+      "hash": "180f1a705e82797fdaf483d73356bede38c5fbb46f40e72d7e8911debb20cfbb",
       "size": 2876
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/css/wizard-sequence.css",
-      "hash": "5a6f3acb2bf694f01c3a335031a9bb5392c75605ad46b2994ec92dd42933ddaf",
+      "hash": "ab71a1c3e93e2a26e13372fc201adf610bd955bc957214e63d0ae15f0b012a64",
       "size": 4305
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-business-helpers.js",
-      "hash": "f06eaef2018cf8986cb55ca4f6c52e25b150963f8310599f7fe60d0364e743c4",
-      "size": 2499
+      "hash": "820205a225d7fb290759d40faef36b6d41a961ecc013df0794915e664185f98c",
+      "size": 2817
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-config.js",
-      "hash": "15c1640b333445506a2317369b5a10beb982d0b5ad83af18f330b22b51f04c6c",
-      "size": 4439
+      "hash": "0808445284583cbe7ca59804f33e3c774a2edfc9e6a15e68edbec02fc8761fc7",
+      "size": 4225
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-elements.js",
-      "hash": "b0b09e92cdf5fccb8b0a8f23e62de8882bf7a8f15e20858e8f5ad4a88d48ce21",
-      "size": 4267
+      "hash": "b16d8e0d4981e0ab7a1892501dbd9976b58277a9e7faa4fa45c951b4a5200ab7",
+      "size": 4594
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-init.js",
@@ -3185,13 +3225,18 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-listeners.js",
-      "hash": "1ba79fdb53aa8a4dcdf3c02854e3fdcc844decd22f45d90138516a19ce6e52c0",
-      "size": 7565
+      "hash": "dad069c05dd6ba9a3406e742adc39db73bc86a25872822445cce9e8960be2f5e",
+      "size": 8059
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-loader.js",
       "hash": "286bd9a8cc9940ab129b3216eb1ddff56293c3ac346f727f6eccf4ee53fe9532",
       "size": 2567
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-locations-manager.js",
+      "hash": "b65ddd035f339a124a0770df4e7bc3cc930a01b448bd8e0e36ad0977133263fb",
+      "size": 10033
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-map-helpers.js",
@@ -3205,8 +3250,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-phone-helpers.js",
-      "hash": "ba383b020da50516d99b530b95924a798403dba1dc15cec772423f9bf46bf6cf",
-      "size": 5589
+      "hash": "c2de4771e308437c93a118e6a84fd33ae4b75fe2be538d0a0e1079287af1217d",
+      "size": 4390
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-role-handlers.js",
@@ -3215,42 +3260,47 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-role-helpers.js",
-      "hash": "01c5995b4b097de6460afa045c07ec7b6d77076244bd5c607d4d58a9816330b6",
-      "size": 1005
+      "hash": "02ce40d78ac63ccb68f201bd824bfd09c4614a99bce7c6e210b40a78e4524fe0",
+      "size": 1080
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-social-links-manager.js",
+      "hash": "57080199e968974dbe36c686d1e967f68962e4ab7b54cffe1a018ea9c3da52ed",
+      "size": 1554
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-step-validation.js",
-      "hash": "46f14d49028059384e11f7baad25cc5fe6d01cc9e496ffdfc9ade0218380ed5c",
-      "size": 5812
+      "hash": "c310f40faed2c5393c1a0f2b5ef707fd1bba35d5aec1374466dbbc856c1c8e5f",
+      "size": 6007
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-submit-handler.js",
-      "hash": "e12dbfddfe93134c2b21248878316c1183dda763fc366c87aadbb598994c2ec1",
+      "hash": "0a2f783aa850ae4a70dfbbf9789a057eb3c751ffc5b343a18256cb3a8c8e69b4",
       "size": 6732
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-submit-helpers.js",
-      "hash": "da5ae72757f29a704a843f66c79db941aa00142e8aa928f89ef1b2a057d599ba",
-      "size": 1032
+      "hash": "1af521817356cfd01b98823e53c63e15d9329ea70105f4c0c56c38bbc6447b6d",
+      "size": 1439
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-validation-shared.js",
-      "hash": "13d39f4512b73bc25cc4541774c7caecad4c890d63c727463551e93c974e93d8",
-      "size": 1398
+      "hash": "cc05c1501c47373a77e944899c4cd61484668ba89277cffe08ace9126c3d2e50",
+      "size": 1561
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-validation.js",
-      "hash": "0e867317f76defd36676d37af28e398d04e9a503fa91c0307ba25ca606e3f923",
-      "size": 5734
+      "hash": "05a649c2bf01ace90a2a122d503c3427d7644f2772ad47cefdcf6c694646ffb8",
+      "size": 7831
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-whatsapp-auth.js",
-      "hash": "6d022cf5e6578bf568b8f35608324cc72a3e4e9028ef6fbe797eac3b1d931d0a",
+      "hash": "cdb96e138b91cc931592a5787484771a4907c48e850daa1fb931fe6fe8884281",
       "size": 11226
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-wizard-core.js",
-      "hash": "0770c404cfe9470f3b390269e4e6862439d6f02e0c5507a88c748fdd7cd66bf4",
+      "hash": "9067766320eac2b634e93647eeb5af320100442970a450565c95f22cc4c45da5",
       "size": 3500
     },
     {
@@ -3260,8 +3310,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-wizard-sequence.js",
-      "hash": "f395aeb150c1757e07415b7e24c0d81aa0203806d5bcdea41fc8dd65ef7c531b",
-      "size": 3316
+      "hash": "8940315849e39c4c17a12022e8037ca72e51e405d18c085bd41153becf9f1d01",
+      "size": 3733
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-wizard-ui.js",
@@ -3285,18 +3335,18 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/register-covers.css",
-      "hash": "05f09910984edc131a58ab68f7629817e82156c923d47754c8ea2f2947724f7c",
+      "hash": "8a58140983d7cc95490eb9ed246ff99bb2d27ce925b3e76b66bfa8054cab6a8c",
       "size": 2721
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/register-dark.css",
-      "hash": "af9d06e19e0c3ababdfcd68614337aed52838ebefa110805175cc91ea47384c8",
+      "hash": "8885d2a52d7aafeddc46d278665fb6896a6d063c2e771304f5d92dc44b85caf0",
       "size": 2630
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/register-forms.css",
-      "hash": "844ee46f36df22644786f4f2253d3d85e9aa7e8cb231c060ac01536f10c59f6c",
-      "size": 8711
+      "hash": "ac909f1792da35064a595cd430d6befef70940ee5a4c1a208a12b05c18cb28d5",
+      "size": 9662
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/register-popups.css",
@@ -3305,7 +3355,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/register-roles.css",
-      "hash": "757510dbff42f40088aa9b6918bc359a926234167a2adbf8ca888638b76c312d",
+      "hash": "e3516aa44bfdf5a21d4b7af7905033bb00427311dc1f4245d25bca78dd35d080",
       "size": 5417
     },
     {
@@ -3315,8 +3365,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/register.html",
-      "hash": "126c733853c197866d3f105ea89ac4b46e96e4c300b77df938af1947c8607689",
-      "size": 8752
+      "hash": "49e60a008499613f7b57a2834845077aed9c5df711edcc777f4aeb2702796e86",
+      "size": 9489
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/register.js",
@@ -3345,12 +3395,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step13-social.html",
-      "hash": "60a9970c6db78a376f23469998edecaa5da6e1d9294eefa2632ce31e5f0eb820",
-      "size": 2043
+      "hash": "b8caff3f54c40f42bf3bb5ad3789d8764fea46ca1bbab29343d90fb392422115",
+      "size": 4950
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step14-rating.html",
-      "hash": "951c0f70be4b818bb9b26d9436ce0e417b69d9fff234f415f4ba1dfa8d905853",
+      "hash": "f0fb72936fc5dd6812f37c66f3821c4c64f7cadb2020a296ff7cc3e6f1897da7",
       "size": 2242
     },
     {
@@ -3360,7 +3410,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step2-phone-whatsapp.html",
-      "hash": "2c0e85c7ddce6b3859abeb405680513f0d8c381777b8aa620c07887c022ba6f6",
+      "hash": "1806a29173d632650ea8f94a35227b4da12076997fd5cd05d40a5b12a0a0be0a",
       "size": 732
     },
     {
@@ -3379,6 +3429,11 @@
       "size": 2077
     },
     {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step5-location-media.html",
+      "hash": "e74eb1746bf49af34efd1e68d96cc792bdec41739dfdbb6949729e4fc5d5d0b6",
+      "size": 7657
+    },
+    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step5-map.html",
       "hash": "10785d110e2d4fe817b2184a78676d562d4d4993f8923216e31fef91ab90889d",
       "size": 766
@@ -3390,12 +3445,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step6-business-setup.html",
-      "hash": "46ff0f0d1ebb9b893f14b6662069421a15d016e7cd3709ba0e4ca3dfdffadf3a",
+      "hash": "090fab2955e8743b3efa480daa462932aafdf2bc5a56d3de5f68e305e04abe5f",
       "size": 5239
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step6-media.html",
-      "hash": "36b56546dea35e7532f2d2188ead58d8aca67d2e37b01a9d2d2e54546c9ede0a",
+      "hash": "445745a34f675e3d178207e71e2aa3504ec1de1b0a8ee78b2c94054891503252",
       "size": 4950
     },
     {
@@ -3405,12 +3460,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step8-business.html",
-      "hash": "e270b7f49f5afc422e0847c4274a2557f8b1135373eb432a0a9c8677daf72f1c",
+      "hash": "1d2ef5d749a29a0ad8b24d1afa7466ceb23f2c0b706d83a4e729b80f5693f40a",
       "size": 1873
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step9-delivery.html",
-      "hash": "c839a0d9e52f7b57695c5685a8c298a2efc8f27fb2e6629c06afdb9832f7e426",
+      "hash": "3a91bc6f8da8f60fb1487c85e19e0ef37db17ab0dfc38e2cc02d05afcd71c507",
       "size": 743
     },
     {
@@ -3425,7 +3480,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/sales-movement/sales-movement-data.js",
-      "hash": "3132dbd7f31ccd38aeddfeb795d1a0051c71ca0501c510c54d86b8db06fb7fe5",
+      "hash": "247a2299458354388164226816ac44a042eb128fd22e9c5283fbac1a367d4c84",
       "size": 3377
     },
     {
@@ -3445,7 +3500,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/sales-movement/sales-movement-page.js",
-      "hash": "10aec9d331c1332f42965cbbd97b347eed8e78a72d43746762e78661138fc229",
+      "hash": "1ce577977ab55837525764eb7d1f14eb46ceb4b22cdae8e0cd06d7bc84375a9b",
       "size": 779
     },
     {
@@ -3465,8 +3520,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/sales-movement/sales-movement.html",
-      "hash": "f122ed1ff2b1351e2687046b91d8e8979bffc5e4010e2384f5500e49728f8a51",
-      "size": 3807
+      "hash": "98de83a2c33b10de6a35fe32a254a17ab15635972849bf5f418b68622175961f",
+      "size": 3775
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/css/search-animations.css",
@@ -3505,7 +3560,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/css/search-results-item.css",
-      "hash": "f0ef52155b6a2bd7bed1d7d01e2ffba6ca3ce9a6d390eb96680de1cb960e9092",
+      "hash": "0e8ca59ae925ea0edbb5b789985d8d13ed743d0f8c4c137f665490fd7ae98934",
       "size": 2217
     },
     {
@@ -3530,13 +3585,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-config.js",
-      "hash": "95db5f30aac3e20ea265afbf15c929b7312fc914a15c1d390d8dc28cfbfd4e43",
+      "hash": "b141229bb6fe08ab6bac4d9ba972a73902388e62cb5c7b6e1e09f43ba7ea045f",
       "size": 232
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-filters.js",
-      "hash": "60b89623b759d9fd2598fa14dab02ab76d688d49740329d27fdcabcd8821bc7c",
-      "size": 7084
+      "hash": "431c0a7e1a5068ca84d1f6cf6b0d27fedf275b45cc02f37021c83a3c1f4797ee",
+      "size": 7080
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-flow.js",
@@ -3560,22 +3615,22 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-render-cards.js",
-      "hash": "5067342acdf27852c53bc944e9f44d7173d064f01838131fa8328dae70289105",
+      "hash": "e7a59f19583b15a3f21f394b241d2257dd3e7a48d8495ae97e51694840a856fc",
       "size": 8474
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-render-main.js",
-      "hash": "6c301d6e784715efe1ca2a93beda848456c9f29f0609cbe1ac46be5cfd2d12f8",
+      "hash": "714cb190c1f446e83d698bd7ee7e4f2ef618b5bac1bc4b13232329644de10a35",
       "size": 5555
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-render-mgmt.js",
-      "hash": "b082cf3f8be2b9079447ecfb52399f6d1cbf69968802b8d4fde8743f613a5d81",
+      "hash": "5cd92834dfa2a4d4ae55d4597fc8e734ef6327099ef92095bebe295798e4da57",
       "size": 2494
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/js/search-state.js",
-      "hash": "550f419f98207e66f7f3cd4a30616b96958d9a6282851c4081600660a6b8328d",
+      "hash": "5bd901845a77da46ba8dd2c9f5d038c55b01ebf9ac0ca51327c7c588a2ec2c63",
       "size": 4154
     },
     {
@@ -3585,17 +3640,17 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/search/search.html",
-      "hash": "f74f454b52153f68ae0cd44da91557780e2a4ac88a4049b81a93c67afe7fedd3",
+      "hash": "d015d90c9f6a0850adfc1a5f77b3ffba80a62390d16e5c43dee4859f772cb7d6",
       "size": 5705
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/subcategory-products/subcategory-products.css",
-      "hash": "2f98701465b22204dcb81d57a6212c3577ff468d28966a87484bf2167f5b5717",
+      "hash": "8691e463837d0db728ba6de17100c24129aa4a13b36ecd0f74e127c575630497",
       "size": 6092
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/subcategory-products/subcategory-products.html",
-      "hash": "0c8d7d0c4a8baad646286023deeb1dc8b7bcd254d499f69d079da2c7d31b4aa7",
+      "hash": "990d69faf3b5266dd4590467a8a17d601744690106e8b5775bf544d74ca9ffdd",
       "size": 2644
     },
     {
@@ -3610,8 +3665,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/shared/pharmList/1.json",
-      "hash": "06a7502bcc0c192b444d9eb867e80ded80c09a0a7a2bdcbf6f1954c2728c3989",
-      "size": 69409
+      "hash": "dd761f72448da53733f4892054fedff91c27686aa568507936a9b68a07658f52",
+      "size": 66809
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/shared/pharmList/10.json",
@@ -3665,8 +3720,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/shared/pharmList/2.json",
-      "hash": "daba75543b294821659910b6a37a13782e4bf11623f31970be2f629a91d19a8e",
-      "size": 14627
+      "hash": "02e04c30ca9b37ed7a6c7a31ab38adbbbc2e54ee7a05512a7fbe964dc355cbc5",
+      "size": 14094
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/shared/pharmList/20.json",
@@ -3859,11 +3914,6 @@
       "size": 2010
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/sw.js",
-      "hash": "c112c15fbb12d7e1befd9dddd0b25c1c260818805051ba2040a8c0dcfcce4ecb",
-      "size": 8303
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_headers",
       "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "size": 0
@@ -3875,7 +3925,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "66e8ddd38468a83bc295455e8ae1e7d82aaf8e5f8e864ab3d09a1ad96571fc41",
+      "hash": "2a9f76ef6225ba158f45b1af95ef0e939126d1530a5868c5e5c579a04bd0d123",
       "size": 22
     }
   ]
