@@ -1,7 +1,7 @@
 {
-  "version": "1.24.119",
+  "version": "1.24.120",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-17T21:28:14.771Z",
+  "lastUpdated": "2026-04-17T21:38:33.439Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -1370,18 +1370,18 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/core.json",
-      "hash": "7eddc7a7449fb13cb70ea099139b41fa255f24f900f73f38b91a1c56200182eb",
-      "size": 60239
+      "hash": "3930b7d98c3dd0b2fa75f873598a95c33ff85f75bfa26c501eed2715f94415ed",
+      "size": 36584
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/identity.json",
-      "hash": "d3df1430612f8c26c3f9942d286414425a1f869a3a0c6f2123ec04c62846b006",
-      "size": 46646
+      "hash": "5d846e00ca16c49748dd0a2e821bf65f2b04880aebe6687378aeeabbb37a37ac",
+      "size": 37222
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/marketplace.json",
-      "hash": "9b2b70b23cbc1d868a61d8d507c0f1e0d3c1345eb3519f45f0a420f0caf1c149",
-      "size": 10708
+      "hash": "c687c09a8372d8af5114189fb8942becaa0ea873a681239df2f49dceec2a2e7e",
+      "size": 9012
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/pharmacy.json",
@@ -1390,13 +1390,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/product_mgmt.json",
-      "hash": "661640b4a204b25c7e1f834b6b4655d070c896bc47cabba39ae569e6ea8af129",
-      "size": 25962
+      "hash": "2d46bed2343c745a8831d9f946894a3769c8bc4af7e19922a002351a6072e798",
+      "size": 23361
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/transactional.json",
-      "hash": "c522e3cd6e681a5c98fc4c9f95582bb7134f44b358844901a207dcdb51dc9c02",
-      "size": 46030
+      "hash": "eac56f0e6424972ad18dbff4b5737cf429d04fcbc017fb003043008a75981f76",
+      "size": 23762
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/location/js/location/config.js",
@@ -3980,7 +3980,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "ab4df4af1dc5b65d6c70aa9160cbf29f609ed5bc13421a16c244d750b9fbe21e",
+      "hash": "52669f3c7d8022ef7c9eb198c59583b902d2a44c062c33dcfeb6fb5b6771ab48",
       "size": 22
     }
   ]
