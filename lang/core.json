@@ -3,6 +3,14 @@
         "ar": "تسجيل الدخول",
         "en": "Login"
     },
+    "gen_swal_confirm_btn": {
+        "ar": "موافق",
+        "en": "OK"
+    },
+    "gen_swal_cancel_btn": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
     "home_text": {
         "ar": "رئيسي",
         "en": "Home"
@@ -65,6 +73,10 @@
         "ar": "غير معروف",
         "en": "Unknown"
     },
+    "unknown_status_desc": {
+        "ar": "حالة الطلب غير معروفة.",
+        "en": "Order status is unknown."
+    },
     "time_now": {
         "ar": "الآن",
         "en": "Just now"
@@ -81,9 +93,21 @@
         "ar": "قبل {n} يوم",
         "en": "{n} days ago"
     },
+    "sender_you": {
+        "ar": "أنت",
+        "en": "You"
+    },
     "sender_user": {
         "ar": "مستخدم",
         "en": "User"
+    },
+    "delete_message": {
+        "ar": "حذف الرسالة",
+        "en": "Delete Message"
+    },
+    "change_status": {
+        "ar": "تغيير الحالة",
+        "en": "Change Status"
     },
     "unexpected_error": {
         "ar": "حدث خطأ غير متوقع.",
@@ -113,6 +137,10 @@
         "ar": "رجوع",
         "en": "Back"
     },
+    "gen_btn_hide": {
+        "ar": "إخفاء",
+        "en": "Hide"
+    },
     "gen_btn_discard": {
         "ar": "تجاهل",
         "en": "Discard"
@@ -128,6 +156,10 @@
     "gen_btn_take_photo": {
         "ar": "التقاط من الكاميرا",
         "en": "Take Photo"
+    },
+    "gen_btn_upload": {
+        "ar": "رفع",
+        "en": "Upload"
     },
     "gen_lbl_processing": {
         "ar": "جاري المعالجة...",
@@ -185,6 +217,10 @@
         "ar": "فشل رفع الملف",
         "en": "Failed to upload file"
     },
+    "gen_err_required": {
+        "ar": "هذا الحقل مطلوب",
+        "en": "This field is required"
+    },
     "gen_tooltip_remove_image": {
         "ar": "حذف الصورة",
         "en": "Remove Image"
@@ -216,6 +252,10 @@
     "no_products": {
         "ar": "لا توجد منتجات حالياً",
         "en": "No products yet"
+    },
+    "pv_in_stock": {
+        "ar": "متوفر",
+        "en": "In Stock"
     },
     "pv_sold_by": {
         "ar": "بواسطة",
@@ -261,6 +301,14 @@
         "ar": "قم بالتفعيل لاستلام تنبيهات الرسائل والتحديثات الخاصة بطلباتك.",
         "en": "Enable to receive message alerts and updates for your orders."
     },
+    "alert_lang_change_title": {
+        "ar": "تغيير اللغة",
+        "en": "Language Change"
+    },
+    "alert_lang_change_text": {
+        "ar": "سيتم إعادة تحميل الصفحة لتطبيق تغيير اللغة.",
+        "en": "The page will be reloaded to apply the language change."
+    },
     "alert_confirm_btn": {
         "ar": "موافق",
         "en": "OK"
@@ -280,6 +328,10 @@
     "failed_operation_title": {
         "ar": "فشل العملية",
         "en": "Operation Failed"
+    },
+    "success_operation_title": {
+        "ar": "تمت العملية بنجاح",
+        "en": "Operation Successful"
     },
     "gen_swal_success_title": {
         "ar": "نجاح",
@@ -537,6 +589,62 @@
         "ar": "فشل الاتصال:",
         "en": "Connection failed:"
     },
+    "install_pwa_title": {
+        "ar": "اختر الطريقة المناسبة لك",
+        "en": "Choose the Suitable Method"
+    },
+    "install_ios_title": {
+        "ar": "التثبيت على الآيفون كتطبيق ويب",
+        "en": "Install on iPhone as a Web App"
+    },
+    "install_ios_desc": {
+        "ar": "لتحميل التطبيق، يرجى اتباع الآتي:",
+        "en": "To install the app, please follow these steps:"
+    },
+    "install_ios_step_1": {
+        "ar": "1. اضغط على هذا الزر في المتصفح.",
+        "en": "1. Tap this button in the browser."
+    },
+    "install_ios_step_2": {
+        "ar": "2. قم بالتمرير لأسفل لتبحث عن خيار <b>إضافة إلى الصفحة الرئيسية</b>.",
+        "en": "2. Scroll down to find <b>Add to Home Screen</b>."
+    },
+    "install_ios_step_3": {
+        "ar": "3. اختر <b>إضافة إلى الصفحة الرئيسية (Add to Home Screen)</b> من القائمة.",
+        "en": "3. Select <b>Add to Home Screen</b> from the list."
+    },
+    "install_ios_step_4": {
+        "ar": "4. اضغط على كلمة <b>إضافة (Add)</b> في أعلى يمين الشاشة.",
+        "en": "4. Tap <b>Add</b> at the top right of the screen."
+    },
+    "pwa_install_small_text": {
+        "ar": "تنصيب كـ",
+        "en": "INSTALL AS"
+    },
+    "pwa_install_main_text": {
+        "ar": "تطبيق ويب PWA",
+        "en": "Web App PWA"
+    },
+    "play_store_get_it_on": {
+        "ar": "متوفر على",
+        "en": "GET IT ON"
+    },
+    "play_store_name": {
+        "ar": "جوجل بلاي",
+        "en": "Google Play"
+    },
+    "install_done_btn": {
+        "ar": "تم",
+        "en": "Done"
+    },
+    "dash_welcome": {
+        "ar": "أهلاً بك، {name}",
+        "en": "Welcome, {name}"
+    },
+    "dash_edit_profile": {
+        "ar": "تعديل البيانات",
+        "en": "Edit Profile"
+    },
     "dash_add_product": {
         "ar": "إضافة منتج",
         "en": "Add Product"
@@ -557,6 +665,10 @@
         "ar": "الإعدادات",
         "en": "Settings"
     },
+    "dash_choose_destination": {
+        "ar": "اختر وجهتك",
+        "en": "Choose Destination"
+    },
     "dash_btn_users": {
         "ar": "مستخدمين",
         "en": "Users"
@@ -564,6 +676,10 @@
     "dash_btn_advert": {
         "ar": "الاعلان",
         "en": "Ads"
+    },
+    "dash_btn_notifications": {
+        "ar": "اشعارات",
+        "en": "Notifications"
     },
     "dash_btn_pending_products": {
         "ar": "المنتجات المعلقة",
@@ -601,6 +717,26 @@
         "ar": "متابعة الطلبات",
         "en": "Track Orders"
     },
+    "dash_opt_buyer": {
+        "ar": "مشتري",
+        "en": "Buyer"
+    },
+    "dash_opt_seller": {
+        "ar": "بائع",
+        "en": "Seller"
+    },
+    "dash_opt_delivery": {
+        "ar": "توصيل",
+        "en": "Delivery"
+    },
+    "dash_opt_admin": {
+        "ar": "مسؤول",
+        "en": "Admin"
+    },
+    "dash_opt_super_admin": {
+        "ar": "سوبر أدمن",
+        "en": "Super Admin"
+    },
     "settings": {
         "ar": "الإعدادات",
         "en": "Settings"
@@ -617,9 +753,101 @@
         "ar": "للتواصل",
         "en": "Contact"
     },
+    "contact_tab_form_desc": {
+        "ar": "راسلنا",
+        "en": "Message Us"
+    },
+    "contact_tab_services_desc": {
+        "ar": "خدماتنا",
+        "en": "Our Services"
+    },
+    "contact_tab_privacy_desc": {
+        "ar": "الخصوصية",
+        "en": "Privacy"
+    },
+    "contact_tab_delete_desc": {
+        "ar": "حذف الحساب",
+        "en": "Delete Account"
+    },
     "contact_page_title": {
         "ar": "Suez Bazaar - تواصل معنا",
         "en": "Suez Bazaar - Contact Us"
+    },
+    "contact_faq_title": {
+        "ar": "الأسئلة الشائعة",
+        "en": "Frequently Asked Questions"
+    },
+    "contact_faq_q1": {
+        "ar": "لماذا نثق في خدماتنا؟",
+        "en": "Why do we trust our services?"
+    },
+    "contact_faq_a1": {
+        "ar": "نثق في خدماتنا لأنها تعمل على بنية تحتية سحابية عالمية توفر استقرارًا عاليًا وسرعة في الاستجابة ووقت تشغيل مرتفع. هذا التطبيق يعتمد على خدمات وتقنيات متقدمة من Google لدعم الأداء، وحماية البيانات، واستمرارية الخدمة بأعلى قدر ممكن من الأمان والاعتمادية.",
+        "en": "We trust our services because they run on a global cloud infrastructure that provides strong stability, fast response times, and high uptime. This app relies on advanced Google cloud services and technologies to support performance, data protection, and reliable service continuity."
+    },
+    "contact_faq_q2": {
+        "ar": "كيف يعمل Suez Bazaar في التسجيل أو شراء أو بيع منتج؟",
+        "en": "How does Suez Bazaar work for registration, buying, or selling a product?"
+    },
+    "contact_faq_a2": {
+        "ar": "التسجيل في سويس بازار مجاني تمامًا وسيظل مجانيًا دون رسوم أو اشتراكات. يمكنك شراء أي منتج بسهولة وإتمام الطلب ومتابعة حالته حتى الاستلام.",
+        "en": "Registration on Suez Bazaar is completely free and stays free. You can buy products easily, complete the order, and track it until delivery."
+    },
+    "contact_faq_q3": {
+        "ar": "كيف يمكنني عمل إعلان أو حملة تسويقية مجانية أو مخصصة؟",
+        "en": "How can I create a free or customized advertisement or marketing campaign?"
+    },
+    "contact_faq_a3": {
+        "ar": "بمجرد إنشاء صفحتك الخاصة على سويس بازار، فإنها تصبح واجهة إعلانية مميزة لك، حيث يمكنك إضافة منتجاتك، وإبراز المميز منها، وعرض معلوماتك للتواصل، كما يمكنك مشاركة صفحتك مع أي شخص في أي مكان. ويمكنك أيضًا إنشاء حملة دائمة داخل سويس بازار عبر إضافة منتج خدمي ليظهر للمستخدمين كإعلان مستمر، أو التواصل معنا لطلب حملات عامة أو مخصصة تناسب نشاطك.",
+        "en": "Once you create your own page on Suez Bazaar, it becomes a distinctive promotional storefront for you, where you can add your products, highlight featured ones, show your contact information, and share your page with anyone anywhere. You can also create an ongoing campaign inside Suez Bazaar by adding a service product that appears to users as a continuous ad, or contact us for general or customized campaigns that suit your business."
+    },
+    "contact_faq_q5": {
+        "ar": "ما حدود مسؤولية Suez Bazaar تجاه البائعين والمشترين وجودة المعروض؟",
+        "en": "What are Suez Bazaar's responsibility limits regarding sellers, buyers, and the quality of listed products or services?"
+    },
+    "contact_faq_a5": {
+        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، وهي لا تضمن جدية البائع أو المشتري ولا جودة المنتج أو الخدمة. لذلك يجب على المستخدم التأكد بنفسه من الطرف الآخر، وعدم دفع أي مبلغ إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
+        "en": "Suez Bazaar operates as a platform for listing products and services and enabling communication between users. It does not guarantee the seriousness of sellers or buyers, nor the quality of any product or service. Users should verify the other party themselves and should not make any payment until they receive the product or obtain the service and confirm it. Suez Bazaar also commits to removing any product or service provider proven through reports or review to be offering fake products or services or engaging in any form of fraud or deception."
+    },
+    "contact_info_title": {
+        "ar": "معلومات الاتصال",
+        "en": "Contact Information"
+    },
+    "contact_details_title_email": {
+        "ar": "البريد الإلكتروني",
+        "en": "Email"
+    },
+    "contact_details_title_hours": {
+        "ar": "ساعات العمل",
+        "en": "Working Hours"
+    },
+    "contact_hours_text": {
+        "ar": "يوميًا: 9:00 صباحًا - 10:00 مساءً",
+        "en": "Daily: 9:00 AM - 10:00 PM"
+    },
+    "contact_qr_title": {
+        "ar": "امسح الرمز للوصول السريع",
+        "en": "Scan the code for quick access"
+    },
+    "contact_label_name": {
+        "ar": "الاسم الكامل *",
+        "en": "Full Name *"
+    },
+    "contact_label_email": {
+        "ar": "البريد الإلكتروني *",
+        "en": "Email *"
+    },
+    "contact_label_phone": {
+        "ar": "رقم الهاتف",
+        "en": "Phone Number"
+    },
+    "contact_label_service": {
+        "ar": "نوع الخدمة المطلوبة",
+        "en": "Requested Service Type"
+    },
+    "contact_option_default": {
+        "ar": "اختر خدمة",
+        "en": "Choose a service"
     },
     "contact_option_consulting": {
         "ar": "استشارات تسويقية",
@@ -637,6 +865,50 @@
         "ar": "خدمة أخرى",
         "en": "Other Service"
     },
+    "contact_label_message": {
+        "ar": "الرسالة *",
+        "en": "Message *"
+    },
+    "contact_submit_button": {
+        "ar": "إرسال الرسالة",
+        "en": "Send Message"
+    },
+    "contact_service_title_1": {
+        "ar": "التسويق الرقمي",
+        "en": "Digital Marketing"
+    },
+    "contact_service_p_1": {
+        "ar": "حلول تسويق رقمي متكاملة لزيادة وصول علامتك التجارية",
+        "en": "Integrated digital marketing solutions to expand your brand reach"
+    },
+    "contact_service_title_2": {
+        "ar": "تحليل السوق",
+        "en": "Market Analysis"
+    },
+    "contact_service_p_2": {
+        "ar": "دراسات وتحليلات متعمقة لفهم السوق المستهدف",
+        "en": "In-depth studies and analysis to understand your target market"
+    },
+    "contact_service_title_3": {
+        "ar": "الإعلانات",
+        "en": "Advertising"
+    },
+    "contact_service_p_3": {
+        "ar": "إدارة حملات إعلانية فعالة عبر Suez Bazaar",
+        "en": "Managing effective advertising campaigns through Suez Bazaar"
+    },
+    "contact_footer_title_1": {
+        "ar": "تابعنا",
+        "en": "Follow Us"
+    },
+    "contact_footer_p_1": {
+        "ar": "نقدم حلول تسويقية مبتكرة ومخصصة لمساعدة أعمالك على النمو والازدهار في السوق التنافسي.",
+        "en": "We provide innovative and tailored marketing solutions to help your business grow and thrive in a competitive market."
+    },
+    "contact_copyright_p": {
+        "ar": "© 2025. جميع الحقوق محفوظة.",
+        "en": "? 2025. All rights reserved."
+    },
     "contact_form_required_alert": {
         "ar": "يرجى ملء الحقول المطلوبة (الاسم، البريد الإلكتروني، الرسالة)",
         "en": "Please fill in the required fields (name, email, message)"
@@ -644,6 +916,146 @@
     "contact_mail_subject": {
         "ar": "رسالة من {name} - نموذج الاتصال",
         "en": "Message from {name} - Contact Form"
+    },
+    "privacy_page_title": {
+        "ar": "سياسة الخصوصية - Suez Bazaar",
+        "en": "Privacy Policy - Suez Bazaar"
+    },
+    "privacy_intro": {
+        "ar": "في <strong>Suez Bazaar</strong> نحترم خصوصية المستخدمين ونسعى لحماية بياناتهم الشخصية وفقًا لأفضل الممارسات.",
+        "en": "At <strong>Suez Bazaar</strong>, we respect user privacy and strive to protect personal data according to best practices."
+    },
+    "privacy_h2_1": {
+        "ar": "المعلومات التي نقوم بجمعها",
+        "en": "Information We Collect"
+    },
+    "privacy_p_1": {
+        "ar": "قد نقوم بجمع بعض المعلومات الأساسية مثل الاسم ورقم الهاتف عند التسجيل في التطبيق، وذلك لتحسين تجربة المستخدم وتسهيل عمليات الشراء والبيع.",
+        "en": "We may collect core information such as name and phone number during registration to enhance user experience and facilitate buying and selling."
+    },
+    "privacy_h2_2": {
+        "ar": "كيفية استخدام المعلومات",
+        "en": "How We Use Information"
+    },
+    "privacy_p_2": {
+        "ar": "نستخدم البيانات فقط لأغراض تشغيل التطبيق وتقديم الخدمات، مثل التواصل بين البائعين والمشترين، وتحسين الأداء، ودعم المستخدمين.",
+        "en": "Data is used only for app operation and services, such as facilitating communication between buyers and sellers and improving performance."
+    },
+    "privacy_h2_2b": {
+        "ar": "مشاركة بيانات التواصل عند الشراء",
+        "en": "Contact Data Sharing Upon Purchase"
+    },
+    "privacy_p_2b": {
+        "ar": "قد يظهر للبائع بعض بيانات التواصل مثل رقم الهاتف عند شراء منتج أو خدمة منه، وذلك لتنسيق التواصل وتسليم الطلب. وبإتمام الشراء، يقر المستخدم بعلمه بذلك، ولا تتحمل Suez Bazaar مسؤولية أي استخدام لهذه البيانات خارج نطاق تنفيذ الطلب.",
+        "en": "Sellers may see contact info such as phone number upon a purchase to coordinate delivery. By purchasing, users acknowledge this; Suez Bazaar is not liable for data use outside order fulfillment."
+    },
+    "privacy_h2_2c": {
+        "ar": "طبيعة المنصة وحدود المسؤولية",
+        "en": "Platform Nature & Liability Limits"
+    },
+    "privacy_p_2c": {
+        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، ولا تضمن جدية البائعين أو المشترين ولا جودة المنتج أو الخدمة. ويلتزم المستخدم بعدم الدفع إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها بنفسه. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
+        "en": "Suez Bazaar is a listing platform and does not guarantee the reliability of users or quality of products. Users should not pay until they verify the product/service themselves. We commit to removing any listings proven to be fraudulent or misleading."
+    },
+    "privacy_h2_3": {
+        "ar": "مشاركة البيانات",
+        "en": "Data Sharing"
+    },
+    "privacy_p_3": {
+        "ar": "لا نقوم بمشاركة بيانات المستخدم مع أي طرف ثالث إلا في حال وجود التزام قانوني أو لتحسين الخدمة عبر مزودين موثوقين.",
+        "en": "We do not share user data with third parties unless required by law or to improve service via trusted providers."
+    },
+    "privacy_h2_4": {
+        "ar": "أمان البيانات",
+        "en": "Data Security"
+    },
+    "privacy_p_4": {
+        "ar": "نستخدم تقنيات آمنة لحماية بيانات المستخدم من الوصول غير المصرح به أو التعديل أو الحذف.",
+        "en": "We use secure technologies to protect user data from unauthorized access, modification, or deletion."
+    },
+    "privacy_h2_5": {
+        "ar": "حقوق المستخدم",
+        "en": "User Rights"
+    },
+    "privacy_p_5": {
+        "ar": "يحق للمستخدم طلب حذف بياناته أو تعديلها في أي وقت من خلال التواصل معنا عبر البريد الإلكتروني أدناه.",
+        "en": "Users have the right to request deletion or modification of their data at any time by contacting us via email."
+    },
+    "privacy_h2_6": {
+        "ar": "التحديثات",
+        "en": "Updates"
+    },
+    "privacy_p_6": {
+        "ar": "قد نقوم بتحديث سياسة الخصوصية من وقت لآخر، وسيتم نشر أي تغييرات في هذه الصفحة.",
+        "en": "We may update the privacy policy periodically; any changes will be posted on this page."
+    },
+    "privacy_h2_7": {
+        "ar": "التواصل معنا",
+        "en": "Contact Us"
+    },
+    "privacy_p_7": {
+        "ar": "لأي استفسار أو ملاحظات، يمكنكم التواصل عبر البريد الإلكتروني: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>",
+        "en": "For any inquiries, contact us via email: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>"
+    },
+    "delete_account_title": {
+        "ar": "حذف الحساب على Suez Bazaar",
+        "en": "Delete Account on Suez Bazaar"
+    },
+    "delete_account_heading": {
+        "ar": "حذف الحساب على Suez Bazaar",
+        "en": "Delete Account on Suez Bazaar"
+    },
+    "delete_account_intro": {
+        "ar": "يمكنك حذف حسابك وجميع البيانات المرتبطة به بسهولة. للقيام بذلك، اتبع الخطوات التالية:",
+        "en": "You can delete your account and all associated data easily. To do so, follow these steps:"
+    },
+    "delete_account_step_1": {
+        "ar": "افتح التطبيق وانتقل إلى صفحة <span class=\"highlight\">التسجيل / حسابي</span>.",
+        "en": "Open the app and go to the <span class=\"highlight\">Login / My Account</span> page."
+    },
+    "delete_account_step_2": {
+        "ar": "اختر <span class=\"highlight\">تعديل بيانات</span> أو <span class=\"highlight\">إعدادات الحساب</span>.",
+        "en": "Choose <span class=\"highlight\">Edit Profile</span> or <span class=\"highlight\">Account Settings</span>."
+    },
+    "delete_account_step_3": {
+        "ar": "ابحث عن خيار <span class=\"highlight\">حذف الحساب</span> واضغط عليه.",
+        "en": "Find the <span class=\"highlight\">Delete Account</span> option and tap it."
+    },
+    "delete_account_step_4": {
+        "ar": "سيتم حذف البيانات التالية نهائيًا:",
+        "en": "The following data will be permanently deleted:"
+    },
+    "delete_account_data_1": {
+        "ar": "اسم المستخدم",
+        "en": "Username"
+    },
+    "delete_account_data_2": {
+        "ar": "رقم الهاتف",
+        "en": "Phone number"
+    },
+    "delete_account_data_3": {
+        "ar": "البريد الإلكتروني",
+        "en": "Email address"
+    },
+    "delete_account_data_4": {
+        "ar": "العنوان",
+        "en": "Address"
+    },
+    "delete_account_data_5": {
+        "ar": "سجل الطلبات والمشتريات",
+        "en": "Orders and purchases history"
+    },
+    "delete_account_data_6": {
+        "ar": "كافة البيانات الأخرى",
+        "en": "All other related data"
+    },
+    "delete_account_warning": {
+        "ar": "<span class=\"highlight\">تنويه:</span> بعد حذف الحساب، لن تتمكن من استرجاع هذه البيانات.",
+        "en": "<span class=\"highlight\">Note:</span> After deleting your account, you will not be able to recover this data."
+    },
+    "delete_account_contact": {
+        "ar": "إذا كنت ترغب في حذف حسابك الآن أو واجهت أي مشكلة، يمكنك التواصل مع فريق الدعم عبر البريد الإلكتروني: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>",
+        "en": "If you want to delete your account now or face any issue, you can contact the support team by email: <a href=\"mailto:suezbazaar@gmail.com\">suezbazaar@gmail.com</a>"
     },
     "maint_title": {
         "ar": "التطبيق قيد التحديث",
@@ -696,6 +1108,14 @@
     "provides_delivery": {
         "ar": "يوفر خدمة توصيل",
         "en": "Provides Delivery Service"
+    },
+    "contact_faq_q4": {
+        "ar": "هل تقدمون خدمات تسويقية للشركات الصغيرة؟",
+        "en": "Do you provide marketing services for small businesses?"
+    },
+    "contact_faq_a4": {
+        "ar": "نعم، نقدم حلولًا تسويقية تناسب الشركات الناشئة والصغيرة والمتوسطة وحتى المؤسسات الكبيرة، مع خيارات مرنة حسب الميزانية والهدف.",
+        "en": "Yes. We provide marketing solutions for startups, small and medium businesses, and larger companies, with flexible options based on budget and goals."
     },
     "auth_validation_phone_required": {
         "ar": "رقم الهاتف مطلوب.",
@@ -865,6 +1285,10 @@
         "ar": "فشل التحميل",
         "en": "Failed to load"
     },
+    "main_category_select_error": {
+        "ar": "تعذر تحديد الفئة الرئيسية.",
+        "en": "Unable to determine the main category."
+    },
     "main_category_load_error": {
         "ar": "تعذر تحميل بيانات الفئة.",
         "en": "Unable to load category data."
@@ -877,6 +1301,10 @@
         "ar": "لا توجد فئات فرعية متاحة.",
         "en": "No subcategories available."
     },
+    "main_category_product_load_error": {
+        "ar": "تعذر تحميل المنتج",
+        "en": "Unable to load product"
+    },
     "login_legacy_wrong_password": {
         "ar": "كلمة المرور غير صحيحة.",
         "en": "Wrong password."
@@ -884,6 +1312,10 @@
     "gen_no_bio": {
         "ar": "لا يوجد وصف متاح حالياً",
         "en": "No bio available yet"
+    },
+    "main_category_gallery_title": {
+        "ar": "المنتجات / الخدمات",
+        "en": "Products / Services"
     },
     "profile_label_primary": {
         "ar": "أساسي",

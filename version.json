@@ -1,7 +1,7 @@
 {
-  "version": "1.24.120",
+  "version": "1.24.121",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-17T21:38:33.439Z",
+  "lastUpdated": "2026-04-17T22:09:22.759Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -1370,18 +1370,18 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/core.json",
-      "hash": "3930b7d98c3dd0b2fa75f873598a95c33ff85f75bfa26c501eed2715f94415ed",
-      "size": 36584
+      "hash": "cf9ae6c694858433ea8b3a76b14136bd259742fd6600b6408c47ec73addf0a88",
+      "size": 60245
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/identity.json",
-      "hash": "5d846e00ca16c49748dd0a2e821bf65f2b04880aebe6687378aeeabbb37a37ac",
-      "size": 37222
+      "hash": "c11654213fa7a0b0c4676ea9047942bacffee53c092664129a4471009337114f",
+      "size": 47959
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/marketplace.json",
-      "hash": "c687c09a8372d8af5114189fb8942becaa0ea873a681239df2f49dceec2a2e7e",
-      "size": 9012
+      "hash": "e29f81171cbc3dc0ba57ea11d0b3f66a23374df12f66192e503c3a0aedfadbc4",
+      "size": 10750
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/pharmacy.json",
@@ -1390,13 +1390,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/product_mgmt.json",
-      "hash": "2d46bed2343c745a8831d9f946894a3769c8bc4af7e19922a002351a6072e798",
-      "size": 23361
+      "hash": "4b1ee444a65eba242ec52c64ab41f1956526961799826c489c33d7bcff9f34ca",
+      "size": 25971
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/transactional.json",
-      "hash": "eac56f0e6424972ad18dbff4b5737cf429d04fcbc017fb003043008a75981f76",
-      "size": 23762
+      "hash": "d15fa3dd9792485fec1d73fef3c0fe0c4d86a09b229eb06998ffc0da605c1fe6",
+      "size": 46039
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/location/js/location/config.js",
@@ -2220,13 +2220,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/contact.html",
-      "hash": "26374b0cd3bf5cfd47b66ab87b6d095714df19509c92bef9179e368063a8230b",
-      "size": 2002
+      "hash": "560f967ba01eb65bdd3f71dd1a6becfdfefbadfc5badf43614f2b0fd89a1c785",
+      "size": 15767
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/css/contact-base.css",
-      "hash": "727de1ea1ba6f74536f257d73466589471b496798dc653221d91dd52512b9721",
-      "size": 1138
+      "hash": "fddec59c9f65e22741fe7a1325139a91774b2ab5dfa1391b083cff9811ab88a5",
+      "size": 1139
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/css/contact-faq.css",
@@ -2275,12 +2275,12 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/js/contact-init.js",
-      "hash": "0e2d6ea30ce2c7e9c0e0967c9efb6bb09ccc53170995c70bce6f19a0446719a3",
+      "hash": "813f9e845aedffe5484c6f0b85b3eb20d16be9e0b696123febf6e2a6f044b709",
       "size": 871
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/js/contact-tabs.js",
-      "hash": "c9cec846918c91b0d2340dea9a8e5196f722d314a02a32bda369c74908670053",
+      "hash": "08bc271be6a20fe05dd84218d89f34260309c6c0156b14cf4a35adb039f46cb1",
       "size": 1950
     },
     {
@@ -3980,7 +3980,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "52669f3c7d8022ef7c9eb198c59583b902d2a44c062c33dcfeb6fb5b6771ab48",
+      "hash": "a558bbe1f2ee7d836d8f731ee6c94099510b95a0e668344400dec278baaf076d",
       "size": 22
     }
   ]

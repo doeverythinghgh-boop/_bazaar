@@ -195,6 +195,10 @@
         "ar": "يجب أن تتكون من 4 أحرف على الأقل لحماية حسابك.",
         "en": "Must be at least 4 characters to protect your account."
     },
+    "register_location_title": {
+        "ar": "الموقع على الخريطة",
+        "en": "Location on Map"
+    },
     "register_label_location": {
         "ar": "تحديد الموقع",
         "en": "Select Location"
@@ -227,6 +231,10 @@
         "ar": "جاري التحقق من الرقم...",
         "en": "Checking phone number..."
     },
+    "register_error_password_too_short": {
+        "ar": "كلمة المرور قصيرة جداً (أقل شيء 4)",
+        "en": "Password too short (min 4)"
+    },
     "register_error_location_required": {
         "ar": "يرجى تحديد الموقع على الخريطة أولاً",
         "en": "Please select location on map first"
@@ -234,6 +242,14 @@
     "register_error_address_required": {
         "ar": "تفاصيل العنوان مطلوبة لسهولة الوصول إليك",
         "en": "Address details are required"
+    },
+    "register_header_account_type": {
+        "ar": "نوع الحساب",
+        "en": "Account Type"
+    },
+    "register_label_account_type": {
+        "ar": "هل ترغب في عرض منتجاتك أو تقديم خدماتك؟",
+        "en": "Do you want to display products or offer services?"
     },
     "register_label_account_roles": {
         "ar": "اختر نوع الحساب",
@@ -243,6 +259,14 @@
         "ar": "مشتري",
         "en": "Buyer"
     },
+    "role_seller": {
+        "ar": "مقدم خدمة / نشاط تجاري",
+        "en": "Service Provider / Business"
+    },
+    "role_delivery": {
+        "ar": "خدمة توصيل",
+        "en": "Delivery Service"
+    },
     "role_service_provider": {
         "ar": "مقدم خدمة",
         "en": "Service Provider"
@@ -251,9 +275,17 @@
         "ar": "تصفح أسواق السويس، قارن الأسعار، واطلب المنتجات والخدمات بسهولة",
         "en": "Browse Suez markets, compare prices, and order products and services easily."
     },
+    "role_desc_delivery": {
+        "ar": "ستظهر لك لوحة متابعة لطلبات التوصيل المتاحة في السويس لزيادة دخلك، بجانب قدرتك على التسوق.",
+        "en": "Access a dashboard for delivery requests in Suez to increase your income."
+    },
     "role_desc_service": {
         "ar": "يمكنك الترويج لخدماتك والوصول لعملاء جدد بالسويس.",
         "en": "Promote your services to new clients."
+    },
+    "role_desc_delivery_service": {
+        "ar": "مقدم خدمات لوجستية ومهنية؛ يمكنك تقديم مهاراتك الفنية بجانب العمل كمندوب توصيل محترف.",
+        "en": "Logistics and professional services provider; offer technical skills and delivery."
     },
     "role_desc_fallback": {
         "ar": "أنت الآن شريك في مجتمع سويس بازار؛ حسابك سيوفر لك كافة الأدوات اللازمة بناءً على تخصصاتك.",
@@ -263,6 +295,14 @@
         "ar": "إنشاء الحساب",
         "en": "Create Account"
     },
+    "register_login_question": {
+        "ar": "لديك حساب بالفعل؟",
+        "en": "Already have an account?"
+    },
+    "register_login_action": {
+        "ar": "سجل الدخول",
+        "en": "Login"
+    },
     "register_error_unexpected": {
         "ar": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.",
         "en": "An unexpected error occurred. Please try again."
@@ -271,25 +311,61 @@
         "ar": "حدث خطأ في التطبيق. يرجى المحاولة مرة أخرى.",
         "en": "An application error occurred. Please try again."
     },
+    "register_seller_settings_title": {
+        "ar": "إعدادات مقدم الخدمة",
+        "en": "Service Provider Settings"
+    },
     "register_delivery_question": {
-        "ar": "هل تتوفر خدمة التوصيل؟",
-        "en": "Is delivery service available?"
+        "ar": "هل لديك خدمة توصيل خاصة بك؟",
+        "en": "Do you have your own delivery service?"
     },
     "register_delivery_no": {
-        "ar": "لا، لا يتوفر توصيل حالياً",
-        "en": "No, delivery not available currently"
+        "ar": "لا (لا أقوم بالتوصيل بنفسي)",
+        "en": "No (I do not deliver orders myself)"
     },
     "register_delivery_yes": {
-        "ar": "نعم، أقدم خدمة التوصيل",
-        "en": "Yes, I offer delivery"
+        "ar": "نعم (أقوم بالتوصيل بنفسي)",
+        "en": "Yes (I deliver myself)"
+    },
+    "register_min_order_question": {
+        "ar": "هل تضع حداً أدنى لطلبات الشراء؟",
+        "en": "Do you set a minimum order limit?"
+    },
+    "register_min_order_no": {
+        "ar": "لا يوجد حد أدنى",
+        "en": "No minimum limit"
+    },
+    "register_min_order_yes": {
+        "ar": "نعم، يوجد حد أدنى للطلب",
+        "en": "Yes, there is a minimum limit"
     },
     "register_min_order_value_label": {
-        "ar": "أقل قيمة للطلب (إن وجد)",
-        "en": "Minimum Order Value (if any)"
+        "ar": "هل يوجد حد ادنى للطلب (ج.م)؟",
+        "en": "Is there a minimum order limit (EGP)?"
     },
     "register_min_order_placeholder": {
-        "ar": "مثلاً: 50 ج.م",
-        "en": "Example: 50 EGP"
+        "ar": "مثلاً: 100",
+        "en": "e.g., 100"
+    },
+    "register_save_settings_btn": {
+        "ar": "حفظ الإعدادات",
+        "en": "Save Settings"
+    },
+    "register_invalid_min_order": {
+        "ar": "يرجى إدخال قيمة صحيحة للحد الأدنى",
+        "en": "Please enter a valid minimum value"
+    },
+    "register_seller_options_set": {
+        "ar": "(تم ضبط الإعدادات ✅)",
+        "en": "(Settings Set ✅)"
+    },
+    "register_seller_options_none": {
+        "ar": "(لا توجد إعدادات إضافية)",
+        "en": "(No additional settings)"
+    },
+    "register_seller_options_btn": {
+        "ar": "خيارات مقدم الخدمة",
+        "en": "Service Provider Options"
     },
     "wa_verify_title": {
         "ar": "تأكيد رقم الهاتف",
@@ -359,6 +435,7 @@
         "ar": "جميع الخطوات الأساسية مكتملة، يمكنك إنشاء الحساب الآن.",
         "en": "All core steps are complete, you can create your account now."
     },
+
     "loc_section_title": {
         "ar": "المواقع والعناوين",
         "en": "Locations & Addresses"
@@ -367,10 +444,15 @@
         "ar": "اختر موقعًا",
         "en": "Pick a location"
     },
+    "loc_pick_location_hint": {
+        "ar": "اختر نقطة قريبة من العنوان الفعلي.",
+        "en": "Pick a point close to the real address."
+    },
     "loc_write_address_label": {
         "ar": "اكتب العنوان",
         "en": "Write the address"
     },
+
     "loc_note_business_limit": {
         "ar": "حساب مقدم خدمة + مشتري يدعم حتى 20 موقعًا. يجب إضافة موقع واحد على الأقل كاملًا، ثم يمكنك إضافة مواقع أخرى.",
         "en": "Business + Buyer account supports up to 20 locations. Please add at least one complete location first."
@@ -383,6 +465,7 @@
         "ar": "اختياري. يمكنك إضافة حتى 20 موقع (موقع + عنوان).",
         "en": "Optional. You can add up to 20 locations (coords + address)."
     },
+
     "loc_btn_add": {
         "ar": "إضافة الموقع",
         "en": "Add location"
@@ -403,6 +486,7 @@
         "ar": "حذف",
         "en": "Delete"
     },
+
     "loc_empty_business": {
         "ar": "لم يتم إضافة أي موقع بعد.",
         "en": "No locations added yet."
@@ -419,6 +503,7 @@
         "ar": "(بدون إحداثيات)",
         "en": "(No Coordinates)"
     },
+
     "loc_err_enter_before_add": {
         "ar": "أدخل موقعًا وعنوانًا قبل الإضافة.",
         "en": "Enter coords and address before adding."
@@ -447,10 +532,16 @@
         "ar": "لا يمكن ترك إدخال غير مكتمل (موقع بدون عنوان أو العكس).",
         "en": "You can't leave an incomplete entry (coords without address or vice versa)."
     },
+
     "register_map_restored": {
         "ar": "تم تحديد الموقع بنجاح",
         "en": "Location selected successfully"
     },
+    "register_map_success": {
+        "ar": "تم ربط الموقع بنجاح!",
+        "en": "Location linked successfully!"
+    },
+
     "reg_media_section_title": {
         "ar": "الصور الشخصية وصور الغلاف",
         "en": "Profile and cover photos"
@@ -479,9 +570,17 @@
         "ar": "يرجى إدخال اسم نشاط من 3 أحرف على الأقل.",
         "en": "Please enter a business name of at least 3 characters."
     },
+    "reg_err_business_name_required": {
+        "ar": "{field} مطلوبة",
+        "en": "{field} is required"
+    },
     "reg_err_tagline_short": {
         "ar": "يرجى كتابة نبذة مختصرة من 10 أحرف على الأقل.",
         "en": "Please write a short bio of at least 10 characters."
+    },
+    "reg_err_tagline_insufficient": {
+        "ar": "{field} غير كافية",
+        "en": "{field} is insufficient"
     },
     "reg_btn_retry": {
         "ar": "إعادة المحاولة",
@@ -515,6 +614,14 @@
         "ar": "ابدأ الآن",
         "en": "Get Started Now"
     },
+    "register_confirm_identity_title": {
+        "ar": "تأكيد الأمان",
+        "en": "Security Confirmation"
+    },
+    "register_confirm_identity_text": {
+        "ar": "أعد إدخال كلمة المرور للمتابعة",
+        "en": "Re-enter password to continue"
+    },
     "register_password_placeholder": {
         "ar": "كلمة المرور",
         "en": "Password"
@@ -523,9 +630,29 @@
         "ar": "تأكيد كلمة المرور",
         "en": "Confirm Password"
     },
+    "register_confirm_account_btn": {
+        "ar": "تأكيد الحساب",
+        "en": "Confirm Account"
+    },
+    "register_error_no_password": {
+        "ar": "يرجى إدخال كلمة المرور",
+        "en": "Please enter the password"
+    },
     "register_error_password_mismatch": {
         "ar": "كلمات المرور غير متطابقة!",
         "en": "Passwords do not match!"
+    },
+    "register_avatar_label": {
+        "ar": "الصورة الشخصية",
+        "en": "Profile Picture"
+    },
+    "register_avatar_hint": {
+        "ar": "انقر لاختيار صورة",
+        "en": "Click to choose a picture"
+    },
+    "register_business_account_toggle": {
+        "ar": "هل هذا حساب لنشاط تجاري؟",
+        "en": "Is this a business account?"
     },
     "register_business_name_label": {
         "ar": "اسم النشاط التجاري",
@@ -554,6 +681,26 @@
     "register_placeholder_bio": {
         "ar": "صف نشاطك، ما الذي تقدمه وما يميزك...",
         "en": "Describe your business, what you offer and what makes it special..."
+    },
+    "register_delivery_question": {
+        "ar": "هل تتوفر خدمة التوصيل؟",
+        "en": "Is delivery service available?"
+    },
+    "register_delivery_no": {
+        "ar": "لا، لا يتوفر توصيل حالياً",
+        "en": "No, delivery not available currently"
+    },
+    "register_delivery_yes": {
+        "ar": "نعم، أقدم خدمة التوصيل",
+        "en": "Yes, I offer delivery"
+    },
+    "register_min_order_value_label": {
+        "ar": "أقل قيمة للطلب (إن وجد)",
+        "en": "Minimum Order Value (if any)"
+    },
+    "register_min_order_placeholder": {
+        "ar": "مثلاً: 50 ج.م",
+        "en": "Example: 50 EGP"
     },
     "reg_business_optional_title": {
         "ar": "تفاصيل إضافية للنشاط",
@@ -759,6 +906,10 @@
         "ar": "رقم الهاتف",
         "en": "Phone Number"
     },
+    "profile_phone_placeholder": {
+        "ar": "رقم الهاتف",
+        "en": "Phone Number"
+    },
     "profile_add_phone_btn": {
         "ar": "إضافة رقم",
         "en": "Add Phone"
@@ -795,6 +946,10 @@
         "ar": "تأكيد كلمة المرور الجديدة",
         "en": "Confirm New Password"
     },
+    "profile_seller_options_btn": {
+        "ar": "خيارات مقدم الخدمة (التوصيل والحد الأدنى)",
+        "en": "Service Provider Options (Delivery & Minimum Order)"
+    },
     "profile_save_button": {
         "ar": "حفظ التغييرات",
         "en": "Save Changes"
@@ -819,6 +974,10 @@
         "ar": "كلمة المرور غير صحيحة.",
         "en": "Incorrect password."
     },
+    "profile_seller_settings_title": {
+        "ar": "إعدادات مقدم الخدمة",
+        "en": "Service Provider Settings"
+    },
     "profile_delivery_question": {
         "ar": "هل لديك خدمة توصيل خاصة بك؟",
         "en": "Do you have your own delivery service?"
@@ -831,6 +990,18 @@
         "ar": "نعم (أقوم بالتوصيل بنفسي)",
         "en": "Yes (I deliver myself)"
     },
+    "profile_min_order_question": {
+        "ar": "هل تضع حداً أدنى لطلبات الشراء؟",
+        "en": "Do you set a minimum order limit?"
+    },
+    "profile_min_order_no": {
+        "ar": "لا يوجد حد أدنى",
+        "en": "No minimum limit"
+    },
+    "profile_min_order_yes": {
+        "ar": "نعم، يوجد حد أدنى للطلب",
+        "en": "Yes, there is a minimum order limit"
+    },
     "profile_min_order_value_label": {
         "ar": "هل يوجد حد ادنى للطلب (ج.م)؟",
         "en": "Is there a minimum order limit (EGP)?"
@@ -838,6 +1009,18 @@
     "profile_min_order_placeholder": {
         "ar": "مثلاً: 100",
         "en": "e.g., 100"
+    },
+    "profile_save_settings_btn": {
+        "ar": "حفظ الإعدادات",
+        "en": "Save Settings"
+    },
+    "profile_invalid_min_order": {
+        "ar": "يرجى إدخال قيمة صحيحة للحد الأدنى",
+        "en": "Please enter a valid minimum value"
+    },
+    "profile_seller_options_set": {
+        "ar": "(تم الضبط ✅)",
+        "en": "(Configured ✅)"
     },
     "profile_map_mandatory_error": {
         "ar": "يرجى تحديد موقعك على الخريطة أولاً لضمان سرعة التوصيل.",
@@ -923,6 +1106,10 @@
         "ar": "الصورة الشخصية",
         "en": "Profile Picture"
     },
+    "profile_avatar_change": {
+        "ar": "تغيير الصورة",
+        "en": "Change Picture"
+    },
     "profile_tab_personal": {
         "ar": "البيانات الشخصية",
         "en": "Personal Info"
@@ -930,6 +1117,10 @@
     "profile_tab_business": {
         "ar": "بيانات النشاط",
         "en": "Business Info"
+    },
+    "business_account_toggle": {
+        "ar": "حساب نشاط تجاري (بائع)",
+        "en": "Business Account (Seller)"
     },
     "business_name_label": {
         "ar": "اسم النشاط التجاري",
@@ -947,6 +1138,18 @@
         "ar": "نبذة عن ما تقدمه...",
         "en": "A brief about what you offer..."
     },
+    "business_category_label": {
+        "ar": "السوق الرئيسي",
+        "en": "Main Market"
+    },
+    "business_sub_category_label": {
+        "ar": "الأسواق الفرعية (تخصصاتك)",
+        "en": "Sub Markets (Your Specialties)"
+    },
+    "business_hours_label": {
+        "ar": "مواعيد العمل",
+        "en": "Working Hours"
+    },
     "business_whatsapp_label": {
         "ar": "رقم الواتساب",
         "en": "WhatsApp Number"
@@ -954,6 +1157,10 @@
     "business_whatsapp_placeholder": {
         "ar": "مثلاً: 01012345678",
         "en": "e.g., 01012345678"
+    },
+    "business_social_label": {
+        "ar": "روابط التواصل",
+        "en": "Social Links"
     },
     "profile_covers_mgmt_label": {
         "ar": "صور الغلاف (3 صور كحد أقصى)",
@@ -967,9 +1174,65 @@
         "ar": "أدخل اسمك (3 أحرف على الأقل)",
         "en": "Enter your name (at least 3 characters)"
     },
+    "reg_hint_step2": {
+        "ar": "يمكنك تخطي هذه الخطوة أو رفع صورة شخصية",
+        "en": "You can skip this step or upload a profile picture"
+    },
+    "reg_hint_step3": {
+        "ar": "أدخل رقم هاتف صحيح وغير مسجل مسبقاً",
+        "en": "Enter a valid and unregistered phone number"
+    },
     "reg_hint_step4": {
         "ar": "أدخل كلمة مرور (4+) مع التأكيد المتطابق",
         "en": "Enter a password (4+ characters) and confirm it"
+    },
+    "reg_hint_step5": {
+        "ar": "يرجى تحديد موقعك بدقة على الخريطة",
+        "en": "Please pinpoint your exact location on the map"
+    },
+    "reg_hint_step6": {
+        "ar": "أدخل تفاصيل العنوان (5 أحرف على الأقل)",
+        "en": "Enter address details (at least 5 characters)"
+    },
+    "reg_hint_step7": {
+        "ar": "يمكنك تخطي هذه الخطوة أو رفع صور",
+        "en": "You can skip this step or upload cover images"
+    },
+    "reg_hint_step8": {
+        "ar": "الاسم (3+) ونبذة عما تقدمه (10+)",
+        "en": "Name (3+) and bit about what you offer (10+)"
+    },
+    "reg_hint_step9": {
+        "ar": "حدد موقفك من خدمة التوصيل",
+        "en": "Define your delivery service status"
+    },
+    "reg_step_name_6": {
+        "ar": "العنوان",
+        "en": "Address"
+    },
+    "reg_step_name_7": {
+        "ar": "الغلاف",
+        "en": "Covers"
+    },
+    "reg_step_name_8": {
+        "ar": "النشاط",
+        "en": "Business"
+    },
+    "reg_step_name_9": {
+        "ar": "التوصيل",
+        "en": "Delivery"
+    },
+    "reg_step_name_10": {
+        "ar": "الحد الأدنى",
+        "en": "Min Order"
+    },
+    "reg_step_name_11": {
+        "ar": "التصنيفات",
+        "en": "Categories"
+    },
+    "reg_step_name_12": {
+        "ar": "واتساب",
+        "en": "WhatsApp"
     },
     "reg_step_name_13": {
         "ar": "الروابط",
@@ -992,8 +1255,8 @@
         "en": "No saved locations."
     },
     "rating_enable_label": {
-        "ar": "تفعيل استقبال التقييمات",
-        "en": "Enable Ratings"
+        "ar": "تفعيل تلقي التقييمات العامة",
+        "en": "Enable public ratings"
     },
     "rating_mode_stars_comments": {
         "ar": "نجوم + تعليقات",
@@ -1001,7 +1264,7 @@
     },
     "rating_mode_stars_only": {
         "ar": "نجوم فقط",
-        "en": "Stars Only"
+        "en": "Stars only"
     },
     "product_rating_enable_label": {
         "ar": "تفعيل تقييم المنتجات والخدمات",
@@ -1018,6 +1281,18 @@
     "rating_settings_title": {
         "ar": "إعدادات التقييم",
         "en": "Rating Settings"
+    },
+    "rating_enable_label": {
+        "ar": "تفعيل استقبال التقييمات",
+        "en": "Enable Ratings"
+    },
+    "rating_mode_stars_comments": {
+        "ar": "نجوم + تعليقات",
+        "en": "Stars + Comments"
+    },
+    "rating_mode_stars_only": {
+        "ar": "نجوم فقط",
+        "en": "Stars Only"
     },
     "profile_product_rating_settings_title": {
         "ar": "إعدادات تقييم المنتجات والخدمات",

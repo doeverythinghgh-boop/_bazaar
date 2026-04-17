@@ -1,4 +1,8 @@
 {
+    "cart_loading": {
+        "ar": "جاري تحميل سلة المشتريات...",
+        "en": "Loading shopping cart..."
+    },
     "cart_summary_title": {
         "ar": "ملخص الطلب",
         "en": "Order Summary"
@@ -34,6 +38,10 @@
     "cart_checkout_btn": {
         "ar": "إتمام عملية الشراء",
         "en": "Checkout"
+    },
+    "cart_clear_btn": {
+        "ar": "تفريغ السلة",
+        "en": "Clear Cart"
     },
     "cart_empty_title": {
         "ar": "سلة المشتريات فارغة",
@@ -87,6 +95,22 @@
         "ar": "تم حذف المنتج من السلة بنجاح.",
         "en": "Product removed from cart successfully."
     },
+    "cart_clear_confirm_title": {
+        "ar": "تفريغ السلة",
+        "en": "Clear Cart"
+    },
+    "cart_clear_confirm_text": {
+        "ar": "هل أنت متأكد من تفريغ كافة محتويات السلة؟",
+        "en": "Are you sure you want to clear all items from the cart?"
+    },
+    "cart_clear_success_title": {
+        "ar": "تم التفريغ!",
+        "en": "Cleared!"
+    },
+    "cart_clear_success_text": {
+        "ar": "تم تفريغ سلة المشتريات بنجاح.",
+        "en": "Shopping cart cleared successfully."
+    },
     "cart_empty_checkout_title": {
         "ar": "السلة فارغة",
         "en": "Empty Cart"
@@ -98,6 +122,22 @@
     "cart_confirm_order_title": {
         "ar": "تأكيد الطلب",
         "en": "Confirm Order"
+    },
+    "cart_confirm_order_text": {
+        "ar": "سيتم إرسال طلبك إلى الموردين.",
+        "en": "Your order will be sent to the suppliers."
+    },
+    "cart_send_order_success_title": {
+        "ar": "تم الإرسال!",
+        "en": "Sent!"
+    },
+    "cart_send_order_success_text": {
+        "ar": "تم إرسال طلبك بنجاح.",
+        "en": "Your order has been sent successfully."
+    },
+    "cart_error_update_qty": {
+        "ar": "فشل في تحديث الكمية.",
+        "en": "Failed to update quantity."
     },
     "cart_error_own_product_title": {
         "ar": "عذراً",
@@ -295,6 +335,26 @@
         "ar": "ج.م",
         "en": "EGP"
     },
+    "sales_buyer": {
+        "ar": "مشتري",
+        "en": "Buyer"
+    },
+    "sales_seller": {
+        "ar": "مقدم خدمة",
+        "en": "Service Provider"
+    },
+    "sales_delivery": {
+        "ar": "توصيل",
+        "en": "Delivery"
+    },
+    "sales_admin": {
+        "ar": "مسؤول",
+        "en": "Admin"
+    },
+    "sales_refresh": {
+        "ar": "تحديث",
+        "en": "Refresh"
+    },
     "sales_no_orders": {
         "ar": "لا توجد طلبات حالياً",
         "en": "No orders currently"
@@ -314,6 +374,10 @@
     "sales_sellers_count": {
         "ar": "عدد مقدمي الخدمة:",
         "en": "Service providers count:"
+    },
+    "sales_loading": {
+        "ar": "جاري تحميل الطلبات...",
+        "en": "Loading orders..."
     },
     "sales_error": {
         "ar": "حدث خطأ في عرض الطلبات",
@@ -335,9 +399,513 @@
         "ar": "تعذر فتح تفاصيل الطلب، يرجى المحاولة لاحقاً",
         "en": "Could not open order details, please try again later"
     },
+    "sales_modal_title": {
+        "ar": "تفاصيل الطلب",
+        "en": "Order Details"
+    },
+    "stepper_title": {
+        "ar": "شريط التقدم",
+        "en": "Progress Bar"
+    },
+    "step_review": {
+        "ar": "مراجعة",
+        "en": "Review"
+    },
+    "step_confirmed": {
+        "ar": "مؤكد",
+        "en": "Confirmed"
+    },
+    "step_shipped": {
+        "ar": "شُحن",
+        "en": "Shipped"
+    },
+    "step_delivered": {
+        "ar": "تم التسليم",
+        "en": "Delivered"
+    },
+    "step_cancelled": {
+        "ar": "ملغي",
+        "en": "Cancelled"
+    },
+    "step_rejected": {
+        "ar": "مرفوض",
+        "en": "Rejected"
+    },
+    "step_returned": {
+        "ar": "مرتجع",
+        "en": "Returned"
+    },
+    "stepper_view_photos": {
+        "ar": "عرض صور الطلب الخاص",
+        "en": "View special order photos"
+    },
+    "stepper_order_value": {
+        "ar": "قيمة الطلب:",
+        "en": "Order Value:"
+    },
+    "stepper_save_value": {
+        "ar": "حفظ القيمة",
+        "en": "Save Value"
+    },
+    "stepper_unauthorized_alert": {
+        "ar": "ليس لديك الصلاحية لهذه المرحلة",
+        "en": "You don't have permission for this stage"
+    },
+    "stepper_activate_step": {
+        "ar": "تفعيل المرحلة",
+        "en": "Activate Stage"
+    },
+    "stepper_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "stepper_invalid_number": {
+        "ar": "يرجى إدخال رقم صحيح",
+        "en": "Please enter a valid number"
+    },
+    "stepper_confirm_title": {
+        "ar": "هل أنت متأكد؟",
+        "en": "Are you sure?"
+    },
+    "stepper_confirm_save_text": {
+        "ar": "هل تريد اعتماد قيمة {amount} كقيمة نهائية للطلب؟",
+        "en": "Do you want to set {amount} as the final order value?"
+    },
+    "stepper_save_success_title": {
+        "ar": "تم الحفظ",
+        "en": "Saved"
+    },
+    "stepper_save_success_text": {
+        "ar": "تم تحديث قيمة الطلب بنجاح",
+        "en": "Order value updated successfully"
+    },
+    "stepper_save_fail_title": {
+        "ar": "فشل الحفظ",
+        "en": "Save Failed"
+    },
+    "stepper_activation_confirm_title": {
+        "ar": "تأكيد تفعيل المرحلة",
+        "en": "Confirm Stage Activation"
+    },
+    "stepper_activation_confirm_text": {
+        "ar": "بمجرد تفعيل هذه المرحلة، لا يمكنك التراجع. هل أنت متأكد؟",
+        "en": "Once this stage is activated, you cannot go back. Are you sure?"
+    },
+    "stepper_activation_confirm_btn": {
+        "ar": "نعم، قم بالتفعيل",
+        "en": "Yes, Activate"
+    },
+    "stepper_rejected_products_title": {
+        "ar": "المنتجات المرفوضة",
+        "en": "Rejected Products"
+    },
+    "stepper_no_delivered_products": {
+        "ar": "لا توجد منتجات تم توصيلها/شحنها",
+        "en": "No delivered/shipped products"
+    },
+    "stepper_no_delivered_desc": {
+        "ar": "لا توجد منتجات في مرحلة التوصيل.",
+        "en": "No products in delivery stage."
+    },
+    "stepper_delivery_confirm_title": {
+        "ar": "تأكيد استلام المنتجات (قراءة فقط)",
+        "en": "Confirm Product Receipt (Read-Only)"
+    },
+    "stepper_returned_products_title": {
+        "ar": "المنتجات المرتجعة (قراءة فقط)",
+        "en": "Returned Products (Read-Only)"
+    },
+    "status_pending": {
+        "ar": "معلق",
+        "en": "Pending"
+    },
+    "status_confirmed": {
+        "ar": "مؤكد",
+        "en": "Confirmed"
+    },
+    "status_shipped": {
+        "ar": "مشحون",
+        "en": "Shipped"
+    },
+    "status_delivered": {
+        "ar": "تم التسليم",
+        "en": "Delivered"
+    },
+    "status_returned": {
+        "ar": "مرتجع",
+        "en": "Returned"
+    },
+    "status_cancelled": {
+        "ar": "ملغي",
+        "en": "Cancelled"
+    },
+    "status_rejected": {
+        "ar": "مرفوض",
+        "en": "Rejected"
+    },
+    "time_am": {
+        "ar": "ص",
+        "en": "AM"
+    },
+    "time_pm": {
+        "ar": "م",
+        "en": "PM"
+    },
     "alert_close_btn": {
         "ar": "إغلاق",
         "en": "Close"
+    },
+    "shipping_shipped_products": {
+        "ar": "المنتجات المشحونة ({count}):",
+        "en": "?? Shipped Products ({count}):"
+    },
+    "shipping_not_shipped_products": {
+        "ar": "المنتجات غير المشحونة ({count}):",
+        "en": "?? Not Shipped Products ({count}):"
+    },
+    "shipping_warning_title": {
+        "ar": "تنبيه مهم:",
+        "en": "?? Important Warning:"
+    },
+    "shipping_warning_text": {
+        "ar": "بعد الضغط على \"تأكيد الحفظ\"، لن تتمكن من التعديل مرة أخرى. هذا الإجراء نهائي ولا يمكن التراجع عنه.",
+        "en": "After clicking \"Confirm Save\", you will not be able to edit again. This action is final and irreversible."
+    },
+    "shipping_confirm_save_title": {
+        "ar": "تأكيد الحفظ النهائي",
+        "en": "Confirm Final Save"
+    },
+    "shipping_confirm_save_btn": {
+        "ar": "تأكيد الحفظ",
+        "en": "Confirm Save"
+    },
+    "shipping_saving_title": {
+        "ar": "جاري الحفظ...",
+        "en": "Saving..."
+    },
+    "shipping_saving_text": {
+        "ar": "يتم حفظ الشحن والقفل...",
+        "en": "Saving shipping and locking..."
+    },
+    "shipping_save_success_title": {
+        "ar": "تم الحفظ بنجاح",
+        "en": "Saved Successfully"
+    },
+    "shipping_save_success_text": {
+        "ar": "تم حفظ الشحن بشكل نهائي.",
+        "en": "Shipping saved permanently."
+    },
+    "shipping_notify_buyer": {
+        "ar": "شحن الطلب",
+        "en": "Order Shipped"
+    },
+    "shipping_save_fail_text": {
+        "ar": "حدث خطأ أثناء الاتصال بالسيرفر.",
+        "en": "Error connecting to the server."
+    },
+    "shipping_no_products_title": {
+        "ar": "لا توجد منتجات للشحن",
+        "en": "No products to ship"
+    },
+    "shipping_no_products_desc": {
+        "ar": "يجب تأكيد المنتجات أولاً.",
+        "en": "Products must be confirmed first."
+    },
+    "shipping_modal_title": {
+        "ar": "شحن المنتجات",
+        "en": "Ship Products"
+    },
+    "shipping_modal_readonly_title": {
+        "ar": "شحن المنتجات (قراءة فقط)",
+        "en": "Ship Products (Read-Only)"
+    },
+    "shipping_update_btn": {
+        "ar": "تحديث حالة الشحن",
+        "en": "Update Shipping Status"
+    },
+    "shipping_locked_info": {
+        "ar": "🔒 تم قفل الشحن بشكل دائم - لا يمكن التعديل",
+        "en": "🔒 Shipping locked permanently - cannot edit"
+    },
+    "conf_accepted_products": {
+        "ar": "✅ المنتجات المقبولة ({count}):",
+        "en": "✅ Accepted Products ({count}):"
+    },
+    "conf_rejected_products": {
+        "ar": "❌ المنتجات المرفوضة ({count}):",
+        "en": "❌ Rejected Products ({count}):"
+    },
+    "conf_saving_text": {
+        "ar": "يتم حفظ التأكيد والقفل...",
+        "en": "Saving confirmation and locking..."
+    },
+    "conf_save_success_text": {
+        "ar": "تم حفظ التأكيد بشكل نهائي.",
+        "en": "Confirmation saved permanently."
+    },
+    "conf_notify_confirmed": {
+        "ar": "تأكيد الطلب",
+        "en": "Order Confirmed"
+    },
+    "conf_notify_rejected": {
+        "ar": "منتجات مرفوضة",
+        "en": "Rejected Products"
+    },
+    "conf_modal_title": {
+        "ar": "تأكيد المنتجات",
+        "en": "Confirm Products"
+    },
+    "conf_modal_readonly_title": {
+        "ar": "تأكيد المنتجات (قراءة فقط)",
+        "en": "Confirm Products (Read-Only)"
+    },
+    "conf_save_btn": {
+        "ar": "حفظ التغييرات",
+        "en": "Save Changes"
+    },
+    "conf_locked_info": {
+        "ar": "🔒 تم قفل التأكيد بشكل دائم - لا يمكن التعديل",
+        "en": "🔒 Confirmation locked permanently - cannot edit"
+    },
+    "buyer_cancelled_products": {
+        "ar": "المنتجات الملغاة",
+        "en": "Cancelled Products"
+    },
+    "buyer_returned_products": {
+        "ar": "المنتجات المرتجعة",
+        "en": "Returned Products"
+    },
+    "buyer_confirmed_products": {
+        "ar": "المنتجات المؤكدة",
+        "en": "Confirmed Products"
+    },
+    "buyer_shipping_products": {
+        "ar": "منتجات قيد الشحن",
+        "en": "Products in Shipping"
+    },
+    "courier_products_to_deliver": {
+        "ar": "المنتجات المطلوب توصيلها",
+        "en": "Products to Deliver"
+    },
+    "courier_no_confirmed_products": {
+        "ar": "لا توجد منتجات مؤكدة حالياً.",
+        "en": "No confirmed products currently."
+    },
+    "review_saving_text": {
+        "ar": "برجاء الانتظار بينما يتم حفظ التغييرات.",
+        "en": "Please wait while changes are being saved."
+    },
+    "review_update_success_title": {
+        "ar": "تم التحديث",
+        "en": "Updated"
+    },
+    "review_update_success_text": {
+        "ar": "تم تحديث اختيار المنتجات بنجاح.",
+        "en": "Product selection updated successfully."
+    },
+    "review_notify_cancelled": {
+        "ar": "منتجات ملغاة",
+        "en": "Cancelled Products"
+    },
+    "review_save_fail_text": {
+        "ar": "حدث خطأ أثناء حفظ البيانات. برجاء المحاولة مرة أخرى.",
+        "en": "An error occurred while saving data. Please try again."
+    },
+    "review_modal_view_title": {
+        "ar": "عرض المنتجات",
+        "en": "View Products"
+    },
+    "review_modal_select_title": {
+        "ar": "اختر المنتجات:",
+        "en": "Select Products:"
+    },
+    "review_readonly_info": {
+        "ar": "للمشاهدة فقط - التعديلات مقيدة.",
+        "en": "View only - modifications restricted."
+    },
+    "review_save_btn": {
+        "ar": "حفظ الاختيارات",
+        "en": "Save Selections"
+    },
+    "deliv_received_products": {
+        "ar": "✅ المنتجات المستلمة ({count}):",
+        "en": "✅ Received Products ({count}):"
+    },
+    "deliv_not_received_products": {
+        "ar": "⏳ المنتجات غير المستلمة ({count}):",
+        "en": "â³ Products not received ({count}):"
+    },
+    "deliv_saving_text": {
+        "ar": "يتم حفظ التسليم والقفل...",
+        "en": "Saving delivery and locking..."
+    },
+    "deliv_save_success_text": {
+        "ar": "تم حفظ التسليم بشكل نهائي.",
+        "en": "Delivery saved permanently."
+    },
+    "deliv_notify_received": {
+        "ar": "تأكيد الاستلام",
+        "en": "Confirm Receipt"
+    },
+    "deliv_no_products_title": {
+        "ar": "لا توجد منتجات لتأكيد استلامها",
+        "en": "No products to confirm receipt"
+    },
+    "deliv_no_products_desc": {
+        "ar": "بانتظار شحن المنتجات.",
+        "en": "Waiting for products to be shipped."
+    },
+    "deliv_modal_title": {
+        "ar": "تأكيد استلام المنتجات",
+        "en": "Confirm Product Receipt"
+    },
+    "deliv_modal_readonly_title": {
+        "ar": "تأكيد استلام المنتجات (قراءة فقط)",
+        "en": "Confirm Product Receipt (Read-Only)"
+    },
+    "deliv_save_btn": {
+        "ar": "تأكيد الاستلام",
+        "en": "Confirm Receipt"
+    },
+    "deliv_locked_info": {
+        "ar": "🔒 تم قفل التسليم بشكل دائم - لا يمكن التعديل",
+        "en": "🔒 Delivery locked permanently - cannot edit"
+    },
+    "ui_no_review_products": {
+        "ar": "لا توجد منتجات للمراجعة حالياً.",
+        "en": "No products for review currently."
+    },
+    "ui_no_cancelled_products": {
+        "ar": "لا توجد منتجات تم إلغاؤها حالياً",
+        "en": "No cancelled products currently"
+    },
+    "ui_label_name": {
+        "ar": "الاسم:",
+        "en": "Name:"
+    },
+    "ui_label_phone": {
+        "ar": "الهاتف:",
+        "en": "Phone:"
+    },
+    "ui_label_address": {
+        "ar": "العنوان:",
+        "en": "Address:"
+    },
+    "ui_view_on_map": {
+        "ar": "عرض على الخريطة",
+        "en": "View on Map"
+    },
+    "ui_no_returned_products": {
+        "ar": "لا توجد منتجات تم إرجاعها حالياً",
+        "en": "No returned products currently"
+    },
+    "ui_returned_products_title": {
+        "ar": "المنتجات المرجعة:",
+        "en": "Returned Products:"
+    },
+    "ui_no_confirmed_products": {
+        "ar": "لا توجد منتجات مؤكدة بعد.",
+        "en": "No confirmed products yet."
+    },
+    "ui_label_delivery_agent": {
+        "ar": "المندوب:",
+        "en": "Delivery Agent:"
+    },
+    "ui_confirmed_by_seller_title": {
+        "ar": "المنتجات التي أكدها مقدم الخدمة:",
+        "en": "Products confirmed by service provider:"
+    },
+    "ui_no_products": {
+        "ar": "لا توجد منتجات.",
+        "en": "No products."
+    },
+    "ui_label_seller": {
+        "ar": "مقدم الخدمة:",
+        "en": "Service Provider:"
+    },
+    "ui_col_product": {
+        "ar": "المنتج",
+        "en": "Product"
+    },
+    "ui_col_unit_price": {
+        "ar": "سعر القطعة",
+        "en": "Unit Price"
+    },
+    "ui_col_app_price": {
+        "ar": "سعر التطبيق",
+        "en": "App Price"
+    },
+    "ui_col_quantity": {
+        "ar": "الكمية",
+        "en": "Quantity"
+    },
+    "ui_col_total": {
+        "ar": "إجمالي",
+        "en": "Total"
+    },
+    "ui_total_seller_account": {
+        "ar": "إجمالي حساب مقدم الخدمة (سعر البيع):",
+        "en": "Total Service Provider Account (Sales Price):"
+    },
+    "ui_currency_egp": {
+        "ar": "جنيه",
+        "en": "EGP"
+    },
+    "ui_total_app_price": {
+        "ar": "إجمالي سعر التطبيق:",
+        "en": "Total App Price:"
+    },
+    "ui_total_sales_price": {
+        "ar": "إجمالي (سعر البيع):",
+        "en": "Total (Sales Price):"
+    },
+    "ui_total_app_price_summary": {
+        "ar": "إجمالي (سعر التطبيق):",
+        "en": "Total (App Price):"
+    },
+    "ui_no_products_to_show": {
+        "ar": "لا توجد منتجات لعرضها.",
+        "en": "No products to show."
+    },
+    "ui_col_product_confirm": {
+        "ar": "المنتج (حدد للتأكيد)",
+        "en": "Product (Select to Confirm)"
+    },
+    "ui_col_notes": {
+        "ar": "ملاحظات",
+        "en": "Notes"
+    },
+    "ui_col_delivery_agent": {
+        "ar": "مندوب التوصيل",
+        "en": "Delivery Agent"
+    },
+    "ui_col_phone_number": {
+        "ar": "رقم الهاتف",
+        "en": "Phone Number"
+    },
+    "ui_no_rejected_products": {
+        "ar": "لا توجد منتجات مرفوضة.",
+        "en": "No rejected products."
+    },
+    "ui_rejected_products_title": {
+        "ar": "المنتجات المرفوضة:",
+        "en": "Rejected Products:"
+    },
+    "ui_shipping_instruction": {
+        "ar": "حدد المنتجات لتغيير حالتها إلى \"مشحون\":",
+        "en": "Select products to change status to \"shipped\":"
+    },
+    "ui_col_courier": {
+        "ar": "موصل",
+        "en": "Courier"
+    },
+    "ui_col_phone": {
+        "ar": "هاتف",
+        "en": "Phone"
+    },
+    "notifications_page_title": {
+        "ar": "الإشعارات",
+        "en": "Notifications"
     },
     "notifications_loading": {
         "ar": "جاري تحميل الإشعارات...",
@@ -370,6 +938,10 @@
     "notifications_delete_confirm_text": {
         "ar": "سيتم حذف هذه الرسالة نهائياً من جهازك.",
         "en": "This message will be permanently deleted from your device."
+    },
+    "notifications_delete_success": {
+        "ar": "تم حذف الرسالة بنجاح",
+        "en": "Message deleted successfully"
     },
     "notifications_delete_fail": {
         "ar": "فشل حذف الرسالة",
@@ -431,6 +1003,90 @@
         "ar": "حدث خطأ في تهيئة صفحة الإشعارات",
         "en": "Error initializing notifications page"
     },
+    "notif_settings_title": {
+        "ar": "إعدادات نظام الإشعارات",
+        "en": "Notification System Settings"
+    },
+    "notif_settings_desc": {
+        "ar": "تحكم في من يستقبل الإشعارات لكل حدث في النظام.",
+        "en": "Control who receives notifications for each system event."
+    },
+    "notif_event_col": {
+        "ar": "الحدث",
+        "en": "Event"
+    },
+    "notif_buyer_col": {
+        "ar": "المشتري",
+        "en": "Buyer"
+    },
+    "notif_admin_col": {
+        "ar": "الإدارة",
+        "en": "Admin"
+    },
+    "notif_sellers_col": {
+        "ar": "مقدمو الخدمة",
+        "en": "Service Providers"
+    },
+    "notif_delivery_col": {
+        "ar": "التوصيل",
+        "en": "Delivery"
+    },
+    "notif_reset_btn": {
+        "ar": "استعادة الافتراضيات",
+        "en": "Restore Defaults"
+    },
+    "notif_uploading": {
+        "ar": "جاري رفع الإعدادات للسحابة... ☁️",
+        "en": "Uploading settings to cloud... ☁️"
+    },
+    "notif_save_success": {
+        "ar": "تم حفظ الإعدادات وتحديث السحابة بنجاح ✅",
+        "en": "Settings saved and cloud updated successfully ✅"
+    },
+    "notif_save_fail": {
+        "ar": "فشل حفظ الإعدادات في السحابة ❌",
+        "en": "Failed to save settings to cloud ❌"
+    },
+    "notif_reset_confirm": {
+        "ar": "هل أنت متأكد من استعادة الافتراضيات؟",
+        "en": "Are you sure you want to restore defaults?"
+    },
+    "notif_load_fail": {
+        "ar": "فشل تحميل الإعدادات ⚠️",
+        "en": "Failed to load settings ⚠️"
+    },
+    "notif_label_purchase": {
+        "ar": "شراء",
+        "en": "Purchase"
+    },
+    "notif_label_review": {
+        "ar": "مراجعة",
+        "en": "Review"
+    },
+    "notif_label_cancelled": {
+        "ar": "ملغي",
+        "en": "Cancelled"
+    },
+    "notif_label_confirmed": {
+        "ar": "تأكيد",
+        "en": "Confirmed"
+    },
+    "notif_label_rejected": {
+        "ar": "مرفوض",
+        "en": "Rejected"
+    },
+    "notif_label_shipped": {
+        "ar": "شحن",
+        "en": "Shipped"
+    },
+    "notif_label_delivered": {
+        "ar": "تسليم",
+        "en": "Delivered"
+    },
+    "notif_label_returned": {
+        "ar": "مرتجع",
+        "en": "Returned"
+    },
     "notif_status_enabled": {
         "ar": "مفعل",
         "en": "Enabled"
@@ -447,6 +1103,10 @@
         "ar": "إعادة المحاولة",
         "en": "Retry"
     },
+    "notifications_sender_user": {
+        "ar": "مستخدم",
+        "en": "User"
+    },
     "notifications_sender_you": {
         "ar": "أنت",
         "en": "You"
@@ -462,6 +1122,10 @@
     "notifications_enable_on_login": {
         "ar": "هل ترغب في استقبال إشعارات بالعروض وتحديثات الطلبات؟",
         "en": "Would you like to receive notifications regarding offers and order updates?"
+    },
+    "location_title": {
+        "ar": "تحديد الموقع",
+        "en": "Select Location"
     },
     "location_alert_title": {
         "ar": "تنبيه",

@@ -31,9 +31,25 @@
         "ar": "الأكثر رواجاً",
         "en": "Featured Products"
     },
+    "home_ads_title": {
+        "ar": "العروض المميزة",
+        "en": "Special Offers"
+    },
     "home_categories_title": {
         "ar": "أسواق السويس",
         "en": "Suez Markets"
+    },
+    "cat_select_main_placeholder": {
+        "ar": "اختر السوق الرئيسي...",
+        "en": "Select Main Category..."
+    },
+    "cat_select_sub_placeholder": {
+        "ar": "اختر السوق الفرعي...",
+        "en": "Select Sub-category..."
+    },
+    "cat_validation_required": {
+        "ar": "يرجى اختيار الفئة الرئيسية والفرعية",
+        "en": "Please select both main and sub-category"
     },
     "cat_empty_list_error": {
         "ar": "حدث خطأ أثناء تحميل الفئات.",
@@ -58,6 +74,30 @@
     "cat_no_products_message": {
         "ar": "لا توجد منتجات في هذه الفئة حالياً.",
         "en": "No products found in this category currently."
+    },
+    "cat_fetch_products_error": {
+        "ar": "حدث خطأ أثناء تحميل المنتجات. الرجاء المحاولة لاحقاً.",
+        "en": "An error occurred while loading products. Please try again later."
+    },
+    "cat_modal_title": {
+        "ar": "اختر فئة المنتج",
+        "en": "?? Select Product Category"
+    },
+    "cat_main_label": {
+        "ar": "السوق الرئيسي",
+        "en": "Main Category"
+    },
+    "cat_sub_label": {
+        "ar": "السوق الفرعي",
+        "en": "Sub Category"
+    },
+    "cat_cancel_btn": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "cat_confirm_btn": {
+        "ar": "متابعة",
+        "en": "Continue"
     },
     "search_modal_main_category_label": {
         "ar": "الفئة الرئيسية",
@@ -110,6 +150,10 @@
     "search_modal_error_generic": {
         "ar": "حدث خطأ أثناء البحث. يرجى المحاولة مرة أخرى.",
         "en": "An error occurred while searching. Please try again."
+    },
+    "search_modal_init_log": {
+        "ar": "بدء تهيئة نافذة البحث",
+        "en": "Initializing search modal"
     },
     "currency_egp": {
         "ar": "جنيه",
