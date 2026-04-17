@@ -12,10 +12,22 @@
         }
         initAdminHubTranslations();
 
-        function applyAdminRestrictions() {
+        function getCurrentAdminHubUser() {
+            if (window.UserService && typeof window.UserService.get === 'function') {
+                return window.UserService.get();
+            }
+
             try {
                 const userStr = localStorage.getItem("loggedInUser");
-                const user = userStr ? JSON.parse(userStr) : null;
+                return userStr ? JSON.parse(userStr) : null;
+            } catch (error) {
+                return null;
+            }
+        }
+
+        function applyAdminRestrictions() {
+            try {
+                const user = getCurrentAdminHubUser();
                 const capabilities = typeof window.resolveUserCapabilities === 'function'
                     ? window.resolveUserCapabilities(user)
                     : null;

@@ -723,6 +723,10 @@
         "ar": "فشل التحديث.",
         "en": "Update failed."
     },
+    "profile_update_conflict_text": {
+        "ar": "تم تعديل الحساب من مكان آخر. جلبنا أحدث نسخة، راجعها ثم احفظ مرة أخرى.",
+        "en": "This account was updated elsewhere. We fetched the latest version, please review it and save again."
+    },
     "profile_delete_confirm_title": {
         "ar": "هل أنت متأكد تمامًا؟",
         "en": "Are you absolutely sure?"
@@ -1111,5 +1115,53 @@
     "loc_err_draft_incomplete": {
         "ar": "لا يمكن ترك إدخال غير مكتمل (موقع بدون عنوان أو العكس).",
         "en": "You can't leave an incomplete entry (coords without address or vice versa)."
+    },
+    "reg_progress_unlocked_label": {
+        "ar": "تم فتح",
+        "en": "Unlocked"
+    },
+    "reg_progress_ready_label": {
+        "ar": "جاهز للتسجيل",
+        "en": "Ready to submit"
+    },
+    "reg_progress_step_meta_hint": {
+        "ar": "أكملت {done} من {total} خطوات، والخطوة الجارية: {step}.",
+        "en": "You completed {done} of {total} steps. Current step: {step}."
+    },
+    "reg_hint_ready_to_submit": {
+        "ar": "جميع الخطوات الأساسية مكتملة، يمكنك إنشاء الحساب الآن.",
+        "en": "All required steps are complete. You can create the account now."
+    },
+    "reg_progress_continue_down": {
+        "ar": "أكمل البيانات من الأعلى إلى الأسفل.",
+        "en": "Continue filling the form from top to bottom."
+    },
+    "reg_media_section_title": {
+        "ar": "الصور الشخصية وصور الغلاف",
+        "en": "Profile and cover photos"
+    },
+    "reg_avatar_section_title": {
+        "ar": "صورتك الشخصية",
+        "en": "Profile photo"
+    },
+    "reg_cover_section_title": {
+        "ar": "صور الغلاف",
+        "en": "Cover photos"
+    },
+    "reg_business_categories_required_note": {
+        "ar": "اختر الأقسام والتخصصات التي تصف نشاطك بدقة ليسهل العثور عليك.",
+        "en": "Choose the categories and specialties that best describe your business."
+    },
+    "reg_business_optional_title": {
+        "ar": "تفاصيل إضافية للنشاط",
+        "en": "Optional business details"
+    },
+    "reg_business_story_title": {
+        "ar": "وصف وتجهيز النشاط",
+        "en": "Business details and setup"
+    },
+    "reg_business_story_note": {
+        "ar": "أضف وصفًا تفصيليًا، وحدد خيارات التوصيل والحد الأدنى حسب طبيعة نشاطك.",
+        "en": "Add a detailed description and optionally configure delivery and minimum order."
     }
 }
