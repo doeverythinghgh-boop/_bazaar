@@ -47,6 +47,66 @@
         "ar": "كلمة المرور او رقم الهاتف غير صحيحه",
         "en": "Incorrect phone number or password."
     },
+    "login_page_title": {
+        "ar": "سويس بازار - تسجيل الدخول",
+        "en": "Suez Bazaar - Login"
+    },
+    "login_text": {
+        "ar": "تسجيل الدخول",
+        "en": "Login"
+    },
+    "login_legacy_wrong_password": {
+        "ar": "كلمة المرور غير صحيحة.",
+        "en": "Wrong password."
+    },
+    "dash_settings_title": {
+        "ar": "إعدادات التطبيق",
+        "en": "App Settings"
+    },
+    "dash_theme_day": {
+        "ar": "الوضع النهاري",
+        "en": "Light Mode"
+    },
+    "dash_theme_night": {
+        "ar": "الوضع الليلي",
+        "en": "Dark Mode"
+    },
+    "lang_english": {
+        "ar": "English (الإنجليزية)",
+        "en": "English"
+    },
+    "lang_arabic": {
+        "ar": "العربية (Arabic)",
+        "en": "Arabic"
+    },
+    "dash_support": {
+        "ar": "الدعم الفني",
+        "en": "Technical Support"
+    },
+    "notifications_enable_title": {
+        "ar": "تفعيل الإشعارات",
+        "en": "Enable Notifications"
+    },
+    "notifications_enable_on_login": {
+        "ar": "هل ترغب في استقبال إشعارات بالعروض وتحديثات الطلبات؟",
+        "en": "Would you like to receive notifications for offers and order updates?"
+    },
+    "alert_confirm_yes": {
+        "ar": "نعم، موافق",
+        "en": "Yes, OK"
+    },
+    "alert_cancel_btn": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "alert_title_info": {
+        "ar": "تنبيه",
+        "en": "Notice"
+    },
+    "unexpected_error": {
+        "ar": "حدث خطأ غير متوقع، يرجى المحاولة لاحقاً.",
+        "en": "An unexpected error occurred. Please try again later."
+    },
     "auth_wait_moment": {
         "ar": "يرجى الانتظار لحظة.",
         "en": "Please wait a moment."
@@ -115,9 +175,17 @@
         "ar": "الاسم",
         "en": "Name"
     },
+    "register_placeholder_username": {
+        "ar": "أدخل الاسم بالكامل",
+        "en": "Enter full name"
+    },
     "register_label_phone": {
         "ar": "رقم الهاتف",
         "en": "Phone Number"
+    },
+    "register_placeholder_phone": {
+        "ar": "أدخل رقم الهاتف الأساسي",
+        "en": "Enter primary phone number"
     },
     "register_label_password": {
         "ar": "كلمة المرور",
@@ -299,13 +367,252 @@
         "ar": "خيارات مقدم الخدمة",
         "en": "Service Provider Options"
     },
+    "wa_verify_title": {
+        "ar": "تأكيد رقم الهاتف",
+        "en": "Confirm Phone Number"
+    },
+    "wa_verify_desc": {
+        "ar": "سيتم إرسال كود التحقق للمتابعة<br/>عبر تطبيق الواتساب الخاص بك.",
+        "en": "A verification code will be sent to your WhatsApp<br/>for security confirmation."
+    },
+    "wa_verify_btn_go": {
+        "ar": "حسناً، انتقل للواتساب",
+        "en": "OK, Go to WhatsApp"
+    },
+    "wa_verify_btn_cancel": {
+        "ar": "إلغاء وإعادة المحاولة",
+        "en": "Cancel and Retry"
+    },
+    "wa_code_modal_title": {
+        "ar": "أدخل كود التحقق",
+        "en": "Enter Verification Code"
+    },
+    "wa_code_modal_desc": {
+        "ar": "أدخل الكود المكون من 4 أرقام الذي ظهر لك في تطبيق الواتساب الخاص بك",
+        "en": "Enter the 4-digit code shown in your WhatsApp app"
+    },
+    "wa_code_error_incorrect": {
+        "ar": "الكود غير صحيح، يرجى المحاولة من جديد",
+        "en": "Incorrect code, please try again"
+    },
+    "wa_code_btn_confirm": {
+        "ar": "تأكيد الرمز",
+        "en": "Confirm Code"
+    },
+    "wa_code_btn_edit": {
+        "ar": "إلغاء وتعديل الرقم",
+        "en": "Cancel and Edit Number"
+    },
+    "wa_msg_template": {
+        "ar": "تم طلب تفعيل حسابك، الكود السري الخاص بك هو: {code}",
+        "en": "Your account activation request, your secret code is: {code}"
+    },
+    "wa_verifying_loader": {
+        "ar": "جاري التحقق...",
+        "en": "Verifying..."
+    },
+    "reg_progress_ready_label": {
+        "ar": "جاهز للتسجيل",
+        "en": "Ready to Register"
+    },
+    "reg_progress_unlocked_label": {
+        "ar": "تم فتحها",
+        "en": "Unlocked"
+    },
+    "reg_wizard_step_label": {
+        "ar": "الخطوة",
+        "en": "Step"
+    },
+    "reg_progress_continue_down": {
+        "ar": "أكمل من الأعلى إلى الأسفل",
+        "en": "Please complete steps from top to bottom"
+    },
+    "reg_progress_step_meta_hint": {
+        "ar": "أكملت {done} من {total} خطوات، والخطوة الجارية: {step}.",
+        "en": "Completed {done} of {total} steps. Current: {step}."
+    },
+    "reg_hint_ready_to_submit": {
+        "ar": "جميع الخطوات الأساسية مكتملة، يمكنك إنشاء الحساب الآن.",
+        "en": "All core steps are complete, you can create your account now."
+    },
+
+    "loc_section_title": {
+        "ar": "المواقع والعناوين",
+        "en": "Locations & Addresses"
+    },
+    "loc_pick_location_label": {
+        "ar": "اختر موقعًا",
+        "en": "Pick a location"
+    },
+    "loc_pick_location_hint": {
+        "ar": "اختر نقطة قريبة من العنوان الفعلي.",
+        "en": "Pick a point close to the real address."
+    },
+    "loc_write_address_label": {
+        "ar": "اكتب العنوان",
+        "en": "Write the address"
+    },
+
+    "loc_note_business_limit": {
+        "ar": "حساب مقدم خدمة + مشتري يدعم حتى 20 موقعًا. يجب إضافة موقع واحد على الأقل كاملًا، ثم يمكنك إضافة مواقع أخرى.",
+        "en": "Business + Buyer account supports up to 20 locations. Please add at least one complete location first."
+    },
+    "loc_note_business_required": {
+        "ar": "مطلوب إضافة موقع واحد على الأقل (موقع + عنوان). يمكنك إضافة حتى 20 موقع.",
+        "en": "At least one location is required (coords + address). You can add up to 20."
+    },
+    "loc_note_buyer_optional": {
+        "ar": "اختياري. يمكنك إضافة حتى 20 موقع (موقع + عنوان).",
+        "en": "Optional. You can add up to 20 locations (coords + address)."
+    },
+
+    "loc_btn_add": {
+        "ar": "إضافة الموقع",
+        "en": "Add location"
+    },
+    "loc_btn_update": {
+        "ar": "تحديث الموقع",
+        "en": "Update location"
+    },
+    "loc_btn_cancel": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "loc_btn_edit": {
+        "ar": "تعديل",
+        "en": "Edit"
+    },
+    "loc_btn_delete": {
+        "ar": "حذف",
+        "en": "Delete"
+    },
+
+    "loc_empty_business": {
+        "ar": "لم يتم إضافة أي موقع بعد.",
+        "en": "No locations added yet."
+    },
+    "loc_empty_buyer": {
+        "ar": "يمكنك تخطي هذه الخطوة بدون إضافة موقع.",
+        "en": "You can skip this step without adding a location."
+    },
+    "loc_empty_address": {
+        "ar": "(بدون عنوان)",
+        "en": "(No Address)"
+    },
+    "loc_empty_coords": {
+        "ar": "(بدون إحداثيات)",
+        "en": "(No Coordinates)"
+    },
+
+    "loc_err_enter_before_add": {
+        "ar": "أدخل موقعًا وعنوانًا قبل الإضافة.",
+        "en": "Enter coords and address before adding."
+    },
+    "loc_err_incomplete_pair": {
+        "ar": "لا يمكن حفظ موقع بدون عنوان أو العكس.",
+        "en": "You can't save coords without address or vice versa."
+    },
+    "loc_err_max_reached": {
+        "ar": "لا يمكن إضافة أكثر من 20 موقع.",
+        "en": "You can't add more than 20 locations."
+    },
+    "loc_err_buyer_half_filled": {
+        "ar": "لو هتكتب عنوان لازم تحدد موقع (والعكس).",
+        "en": "If you enter an address you must pick coords (and vice versa)."
+    },
+    "loc_err_business_required_one": {
+        "ar": "يرجى إضافة موقع واحد على الأقل (موقع + عنوان).",
+        "en": "Please add at least one location (coords + address)."
+    },
+    "loc_err_primary_incomplete": {
+        "ar": "يرجى التأكد أن الموقع الأساسي يحتوي على موقع وعنوان.",
+        "en": "Make sure the primary location has coords and address."
+    },
+    "loc_err_draft_incomplete": {
+        "ar": "لا يمكن ترك إدخال غير مكتمل (موقع بدون عنوان أو العكس).",
+        "en": "You can't leave an incomplete entry (coords without address or vice versa)."
+    },
+
+    "register_map_restored": {
+        "ar": "تم تحديد الموقع بنجاح",
+        "en": "Location selected successfully"
+    },
     "register_map_success": {
         "ar": "تم ربط الموقع بنجاح!",
         "en": "Location linked successfully!"
     },
-    "register_map_mandatory_error": {
-        "ar": "يرجى تحديد موقعك على الخريطة أولاً لضمان سرعة التوصيل.",
-        "en": "Please select your location on the map first to ensure fast delivery."
+
+    "reg_media_section_title": {
+        "ar": "الصور الشخصية وصور الغلاف",
+        "en": "Profile and cover photos"
+    },
+    "reg_avatar_section_title": {
+        "ar": "صورتك الشخصية",
+        "en": "Profile photo"
+    },
+    "reg_cover_section_title": {
+        "ar": "صور الغلاف",
+        "en": "Cover photos"
+    },
+    "reg_err_steps_load": {
+        "ar": "خطأ في تحميل خطوات التسجيل. يرجى تحديث الصفحة.",
+        "en": "Error loading registration steps. Please refresh the page."
+    },
+    "gen_swal_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "cat_empty_list_error": {
+        "ar": "حدث خطأ عند تحميل الفئات",
+        "en": "Error loading categories"
+    },
+    "reg_err_business_name_short": {
+        "ar": "يرجى إدخال اسم نشاط من 3 أحرف على الأقل.",
+        "en": "Please enter a business name of at least 3 characters."
+    },
+    "reg_err_business_name_required": {
+        "ar": "{field} مطلوبة",
+        "en": "{field} is required"
+    },
+    "reg_err_tagline_short": {
+        "ar": "يرجى كتابة نبذة مختصرة من 10 أحرف على الأقل.",
+        "en": "Please write a short bio of at least 10 characters."
+    },
+    "reg_err_tagline_insufficient": {
+        "ar": "{field} غير كافية",
+        "en": "{field} is insufficient"
+    },
+    "reg_btn_retry": {
+        "ar": "إعادة المحاولة",
+        "en": "Retry"
+    },
+    "register_creating_account": {
+        "ar": "جاري إنشاء حسابك وتجهيز واجهتك...",
+        "en": "Creating your account and setting up your dashboard..."
+    },
+    "register_success_title": {
+        "ar": "أهلاً بك في سويس بازار!",
+        "en": "Welcome to Suez Bazaar!"
+    },
+    "register_success_subtitle": {
+        "ar": "تم إنشاء حسابك وتأمين بياناتك بنجاح. يمكنك الآن البدء في استكشاف كافة المميزات.",
+        "en": "Your account has been created and secured successfully. You can now start exploring all features."
+    },
+    "register_success_feature_1": {
+        "ar": "تصفح آلاف المنتجات والخدمات المحلية",
+        "en": "Browse thousands of local products and services"
+    },
+    "register_success_feature_2": {
+        "ar": "أضف مفضلاتك وقارن الأسعار بسهولة",
+        "en": "Add favorites and compare prices easily"
+    },
+    "register_success_feature_3": {
+        "ar": "تواصل مع مقدمي الخدمة مباشرة",
+        "en": "Connect with service providers directly"
+    },
+    "register_go_home_btn": {
+        "ar": "ابدأ الآن",
+        "en": "Get Started Now"
     },
     "register_confirm_identity_title": {
         "ar": "تأكيد الأمان",
@@ -319,6 +626,10 @@
         "ar": "كلمة المرور",
         "en": "Password"
     },
+    "register_confirm_password_placeholder": {
+        "ar": "تأكيد كلمة المرور",
+        "en": "Confirm Password"
+    },
     "register_confirm_account_btn": {
         "ar": "تأكيد الحساب",
         "en": "Confirm Account"
@@ -330,38 +641,6 @@
     "register_error_password_mismatch": {
         "ar": "كلمات المرور غير متطابقة!",
         "en": "Passwords do not match!"
-    },
-    "register_creating_account": {
-        "ar": "إنشاء حساب...",
-        "en": "Creating account..."
-    },
-    "register_success_title": {
-        "ar": "تم إنشاء الحساب بنجاح!",
-        "en": "Account created successfully!"
-    },
-    "register_success_subtitle": {
-        "ar": "أنت الآن جاهز لتجربة شراء فريدة!",
-        "en": "You are now ready for a unique shopping experience!"
-    },
-    "register_success_feature_1": {
-        "ar": "🛍️ تصفح آلاف المنتجات بسهولة.",
-        "en": "🛍️ Browse thousands of products easily."
-    },
-    "register_success_feature_2": {
-        "ar": "💰 استمتع بخصومات وعروض حصرية.",
-        "en": "💰 Enjoy exclusive discounts and offers."
-    },
-    "register_success_feature_3": {
-        "ar": "✨ اكتشف ما هو جديد في سوق السويس.",
-        "en": "✨ Discover what's new in Suez Market."
-    },
-    "register_go_home_btn": {
-        "ar": "الانتقال إلى الصفحة الرئيسية",
-        "en": "Go to Home Page"
-    },
-    "register_map_restored": {
-        "ar": "تم تحديد الموقع بنجاح",
-        "en": "Location selected successfully"
     },
     "register_avatar_label": {
         "ar": "الصورة الشخصية",
@@ -386,6 +665,58 @@
     "register_business_bio_label": {
         "ar": "وصف النشاط",
         "en": "Business Bio"
+    },
+    "register_placeholder_bus_name": {
+        "ar": "أدخل اسم المحل أو النشاط التجاري",
+        "en": "Enter shop or business name"
+    },
+    "register_label_tagline": {
+        "ar": "نبذة مختصرة",
+        "en": "Short Tagline"
+    },
+    "register_placeholder_tagline": {
+        "ar": "مثال: أفضل الأسعار وأسرع خدمة",
+        "en": "E.g. Best prices and fastest service"
+    },
+    "register_placeholder_bio": {
+        "ar": "صف نشاطك، ما الذي تقدمه وما يميزك...",
+        "en": "Describe your business, what you offer and what makes it special..."
+    },
+    "register_delivery_question": {
+        "ar": "هل تتوفر خدمة التوصيل؟",
+        "en": "Is delivery service available?"
+    },
+    "register_delivery_no": {
+        "ar": "لا، لا يتوفر توصيل حالياً",
+        "en": "No, delivery not available currently"
+    },
+    "register_delivery_yes": {
+        "ar": "نعم، أقدم خدمة التوصيل",
+        "en": "Yes, I offer delivery"
+    },
+    "register_min_order_value_label": {
+        "ar": "أقل قيمة للطلب (إن وجد)",
+        "en": "Minimum Order Value (if any)"
+    },
+    "register_min_order_placeholder": {
+        "ar": "مثلاً: 50 ج.م",
+        "en": "Example: 50 EGP"
+    },
+    "reg_business_optional_title": {
+        "ar": "تفاصيل إضافية للنشاط",
+        "en": "Additional Business Details"
+    },
+    "reg_business_story_title": {
+        "ar": "قصة وتجهيزات النشاط",
+        "en": "Business Story & Setup"
+    },
+    "reg_business_story_note": {
+        "ar": "أضف وصفًا وتفاصيل التوصيل والحد الأدنى للطلبات.",
+        "en": "Add a description, delivery details, and order minimums."
+    },
+    "reg_business_categories_required_note": {
+        "ar": "اختر تخصصات النشاط بدقة ليسهل العثور عليك.",
+        "en": "Choose business specializations accurately to be easily found."
     },
     "business_facebook_label": {
         "ar": "رابط فيسبوك",
@@ -875,110 +1206,6 @@
         "ar": "حدد موقفك من خدمة التوصيل",
         "en": "Define your delivery service status"
     },
-    "reg_hint_step10": {
-        "ar": "حدد الحد الأدنى لقيمة الطلب",
-        "en": "Specify the minimum order value"
-    },
-    "reg_hint_step11": {
-        "ar": "اختر قسماً رئيساً وتخصصاً فرعياً واحداً على الأقل",
-        "en": "Select a main category and at least one specialty"
-    },
-    "reg_hint_step12": {
-        "ar": "أدخل رقم الواتساب (اختياري)",
-        "en": "Enter your WhatsApp number (optional)"
-    },
-    "reg_hint_step13": {
-        "ar": "أدخل روابط التواصل (اختياري)",
-        "en": "Enter social media links (optional)"
-    },
-    "rating_settings_title": {
-        "ar": "إعدادات التقييم",
-        "en": "Rating Settings"
-    },
-    "rating_enable_label": {
-        "ar": "تفعيل استقبال التقييمات",
-        "en": "Enable receiving ratings"
-    },
-    "rating_mode_stars_comments": {
-        "ar": "نجوم + تعليقات",
-        "en": "Stars + Comments"
-    },
-    "rating_mode_stars_only": {
-        "ar": "نجوم فقط",
-        "en": "Stars Only"
-    },
-    "product_rating_settings_title": {
-        "ar": "إعدادات تقييم المنتجات والخدمات",
-        "en": "Product & Service Rating Settings"
-    },
-    "product_rating_enable_label": {
-        "ar": "تفعيل استقبال تقييمات المنتجات والخدمات",
-        "en": "Enable receiving product & service ratings"
-    },
-    "product_rating_mode_stars_comments": {
-        "ar": "نجوم + تعليقات",
-        "en": "Stars + Comments"
-    },
-    "product_rating_mode_stars_only": {
-        "ar": "نجوم فقط",
-        "en": "Stars Only"
-    },
-    "reg_hint_success_step": {
-        "ar": "ممتاز، يمكنك الاستمرار الآن",
-        "en": "Excellent, you can continue now"
-    },
-    "reg_hint_success_last": {
-        "ar": "رائع! اضغط على إنشاء الحساب للبدء",
-        "en": "Great! Click Create Account to start"
-    },
-    "reg_hint_missing_prefix": {
-        "ar": "متبقي لك:",
-        "en": "Remaining items:"
-    },
-    "register_placeholder_username": {
-        "ar": "أدخل اسمك",
-        "en": "Enter your name"
-    },
-    "register_placeholder_bus_name": {
-        "ar": "اسم المحل أو النشاط",
-        "en": "Shop or business name"
-    },
-    "register_label_tagline": {
-        "ar": "نبذة عما تقدمه",
-        "en": "Brief about what you offer"
-    },
-    "register_placeholder_tagline": {
-        "ar": "مثال: أفضل أسعار إلكترونيات في السويس",
-        "en": "e.g., Best electronics prices in Suez"
-    },
-    "register_confirm_password_placeholder": {
-        "ar": "تأكيد كلمة المرور",
-        "en": "Confirm Password"
-    },
-    "register_placeholder_bio": {
-        "ar": "صف نشاطك بشكل مفصّل: ما الذي تقدمه، ما يميزك، وأي معلومات تريد أن يعرفها عملاؤك...",
-        "en": "Describe your business in detail: what you offer, what makes you unique, and any info you want clients to know..."
-    },
-    "reg_step_name_1": {
-        "ar": "الاسم",
-        "en": "Name"
-    },
-    "reg_step_name_2": {
-        "ar": "الصورة",
-        "en": "Avatar"
-    },
-    "reg_step_name_3": {
-        "ar": "الهاتف",
-        "en": "Phone"
-    },
-    "reg_step_name_4": {
-        "ar": "كلمة المرور",
-        "en": "Password"
-    },
-    "reg_step_name_5": {
-        "ar": "الموقع",
-        "en": "Location"
-    },
     "reg_step_name_6": {
         "ar": "العنوان",
         "en": "Address"
@@ -1023,145 +1250,64 @@
         "ar": "اختياري",
         "en": "Optional"
     },
-
-    "loc_section_title": {
-        "ar": "المواقع والعناوين",
-        "en": "Locations & Addresses"
-    },
-    "loc_pick_location_label": {
-        "ar": "اختر موقعًا",
-        "en": "Pick a location"
-    },
-    "loc_pick_location_hint": {
-        "ar": "اختر نقطة قريبة من العنوان الفعلي.",
-        "en": "Pick a point close to the real address."
-    },
-    "loc_write_address_label": {
-        "ar": "اكتب العنوان",
-        "en": "Write the address"
-    },
-
-    "loc_note_business_required": {
-        "ar": "مطلوب إضافة موقع واحد على الأقل (موقع + عنوان). يمكنك إضافة حتى 20 موقع.",
-        "en": "At least one location is required (coords + address). You can add up to 20."
-    },
-    "loc_note_buyer_optional": {
-        "ar": "اختياري. يمكنك إضافة حتى 20 موقع (موقع + عنوان).",
-        "en": "Optional. You can add up to 20 locations (coords + address)."
-    },
-    "loc_note_profile_buyer_preserve_primary": {
-        "ar": "اختياري. سنحتفظ بالموقع الأساسي حتى لو أصبحت مشتري فقط.",
-        "en": "Optional. The primary location will be kept even if you become buyer-only."
-    },
-
-    "loc_btn_add": {
-        "ar": "إضافة الموقع",
-        "en": "Add location"
-    },
-    "loc_btn_update": {
-        "ar": "تحديث الموقع",
-        "en": "Update location"
-    },
-    "loc_btn_cancel": {
-        "ar": "إلغاء",
-        "en": "Cancel"
-    },
-    "loc_btn_edit": {
-        "ar": "تعديل",
-        "en": "Edit"
-    },
-    "loc_btn_delete": {
-        "ar": "حذف",
-        "en": "Delete"
-    },
-
-    "loc_empty_business": {
-        "ar": "لم يتم إضافة أي موقع بعد.",
-        "en": "No locations added yet."
-    },
-    "loc_empty_buyer": {
-        "ar": "يمكنك تخطي هذه الخطوة بدون إضافة موقع.",
-        "en": "You can skip this step without adding a location."
-    },
     "loc_empty_profile_none": {
         "ar": "لا توجد مواقع محفوظة.",
         "en": "No saved locations."
     },
-
-    "loc_err_enter_before_add": {
-        "ar": "أدخل موقعًا وعنوانًا قبل الإضافة.",
-        "en": "Enter coords and address before adding."
+    "rating_enable_label": {
+        "ar": "تفعيل تلقي التقييمات العامة",
+        "en": "Enable public ratings"
     },
-    "loc_err_incomplete_pair": {
-        "ar": "لا يمكن حفظ موقع بدون عنوان أو العكس.",
-        "en": "You can't save coords without address or vice versa."
+    "rating_mode_stars_comments": {
+        "ar": "نجوم + تعليقات",
+        "en": "Stars + Comments"
     },
-    "loc_err_max_reached": {
-        "ar": "لا يمكن إضافة أكثر من 20 موقع.",
-        "en": "You can't add more than 20 locations."
+    "rating_mode_stars_only": {
+        "ar": "نجوم فقط",
+        "en": "Stars only"
     },
-    "loc_err_buyer_half_filled": {
-        "ar": "لو هتكتب عنوان لازم تحدد موقع (والعكس).",
-        "en": "If you enter an address you must pick coords (and vice versa)."
+    "product_rating_enable_label": {
+        "ar": "تفعيل تقييم المنتجات والخدمات",
+        "en": "Enable product & service ratings"
     },
-    "loc_err_business_required_one": {
-        "ar": "يرجى إضافة موقع واحد على الأقل (موقع + عنوان).",
-        "en": "Please add at least one location (coords + address)."
+    "product_rating_mode_stars_comments": {
+        "ar": "نجوم + تعليقات",
+        "en": "Stars + Comments"
     },
-    "loc_err_primary_incomplete": {
-        "ar": "يرجى التأكد أن الموقع الأساسي يحتوي على موقع وعنوان.",
-        "en": "Make sure the primary location has coords and address."
+    "product_rating_mode_stars_only": {
+        "ar": "نجوم فقط",
+        "en": "Stars only"
     },
-    "loc_err_draft_incomplete": {
-        "ar": "لا يمكن ترك إدخال غير مكتمل (موقع بدون عنوان أو العكس).",
-        "en": "You can't leave an incomplete entry (coords without address or vice versa)."
+    "rating_settings_title": {
+        "ar": "إعدادات التقييم",
+        "en": "Rating Settings"
     },
-    "reg_progress_unlocked_label": {
-        "ar": "تم فتح",
-        "en": "Unlocked"
+    "rating_enable_label": {
+        "ar": "تفعيل استقبال التقييمات",
+        "en": "Enable Ratings"
     },
-    "reg_progress_ready_label": {
-        "ar": "جاهز للتسجيل",
-        "en": "Ready to submit"
+    "rating_mode_stars_comments": {
+        "ar": "نجوم + تعليقات",
+        "en": "Stars + Comments"
     },
-    "reg_progress_step_meta_hint": {
-        "ar": "أكملت {done} من {total} خطوات، والخطوة الجارية: {step}.",
-        "en": "You completed {done} of {total} steps. Current step: {step}."
+    "rating_mode_stars_only": {
+        "ar": "نجوم فقط",
+        "en": "Stars Only"
     },
-    "reg_hint_ready_to_submit": {
-        "ar": "جميع الخطوات الأساسية مكتملة، يمكنك إنشاء الحساب الآن.",
-        "en": "All required steps are complete. You can create the account now."
+    "profile_product_rating_settings_title": {
+        "ar": "إعدادات تقييم المنتجات والخدمات",
+        "en": "Products & Services Rating Settings"
     },
-    "reg_progress_continue_down": {
-        "ar": "أكمل البيانات من الأعلى إلى الأسفل.",
-        "en": "Continue filling the form from top to bottom."
+    "profile_product_rating_enable_label": {
+        "ar": "تفعيل استقبال تقييمات المنتجات والخدمات",
+        "en": "Enable Ratings for Products & Services"
     },
-    "reg_media_section_title": {
-        "ar": "الصور الشخصية وصور الغلاف",
-        "en": "Profile and cover photos"
+    "profile_product_rating_mode_stars_comments": {
+        "ar": "نجوم + تعليقات",
+        "en": "Stars + Comments"
     },
-    "reg_avatar_section_title": {
-        "ar": "صورتك الشخصية",
-        "en": "Profile photo"
-    },
-    "reg_cover_section_title": {
-        "ar": "صور الغلاف",
-        "en": "Cover photos"
-    },
-    "reg_business_categories_required_note": {
-        "ar": "اختر الأقسام والتخصصات التي تصف نشاطك بدقة ليسهل العثور عليك.",
-        "en": "Choose the categories and specialties that best describe your business."
-    },
-    "reg_business_optional_title": {
-        "ar": "تفاصيل إضافية للنشاط",
-        "en": "Optional business details"
-    },
-    "reg_business_story_title": {
-        "ar": "وصف وتجهيز النشاط",
-        "en": "Business details and setup"
-    },
-    "reg_business_story_note": {
-        "ar": "أضف وصفًا تفصيليًا، وحدد خيارات التوصيل والحد الأدنى حسب طبيعة نشاطك.",
-        "en": "Add a detailed description and optionally configure delivery and minimum order."
+    "profile_product_rating_mode_stars_only": {
+        "ar": "نجوم فقط",
+        "en": "Stars Only"
     }
 }
