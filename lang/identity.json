@@ -1,4 +1,36 @@
 {
+    "reg_msg_starting": {
+        "ar": "بداية رائعة!",
+        "en": "Great start!"
+    },
+    "reg_msg_recovered": {
+        "ar": "تم استرجاع بياناتك السابقة بنجاح 👌",
+        "en": "Draft recovered successfully 👌"
+    },
+    "reg_identity_name_help": {
+        "ar": "الاسم الذي سيظهر للآخرين عند تواصلهم معك.",
+        "en": "The name visible to others when contacting you."
+    },
+    "reg_identity_phone_hint": {
+        "ar": "رقم الهاتف الأساسي الذي ستستخدمه لتسجيل الدخول لاحقاً.",
+        "en": "Primary phone for future logins."
+    },
+    "reg_msg_final_lap": {
+        "ar": "أنت في المرحلة الأخيرة!",
+        "en": "You're in the final lap!"
+    },
+    "reg_msg_halfway": {
+        "ar": "وصلت لمنتصف الطريق!",
+        "en": "You're halfway there!"
+    },
+    "reg_msg_keep_going": {
+        "ar": "استمر، أنت تبلي بلاءً حسناً!",
+        "en": "Keep going, you're doing great!"
+    },
+    "reg_btn_add_another_phone": {
+        "ar": "إضافة رقم هاتف آخر",
+        "en": "Add another phone"
+    },
     "gen_next": {
         "ar": "التالي",
         "en": "Next"
@@ -894,6 +926,10 @@
     "reg_hint_success_last": {
         "ar": "رائع! اضغط على إنشاء الحساب للبدء",
         "en": "Great! Click Create Account to start"
+    },
+    "reg_hint_missing_prefix": {
+        "ar": "متبقي لك:",
+        "en": "Remaining items:"
     },
     "register_placeholder_username": {
         "ar": "أدخل اسمك",
