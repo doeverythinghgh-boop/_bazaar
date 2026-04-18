@@ -1,7 +1,7 @@
 {
-  "version": "1.24.127",
+  "version": "1.24.128",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-18T17:41:21.979Z",
+  "lastUpdated": "2026-04-18T18:50:09.241Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -3880,8 +3880,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/pharmacy.json",
-      "hash": "3120497c717d3948a6656b7bd9ae37037732a88c41801c749e29d94d0747132d",
-      "size": 7015
+      "hash": "6b6821f4f614366f23d6d4f1d739e671aa5cd127319a693efb608935e16f4618",
+      "size": 8389
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/product_mgmt.json",
@@ -4875,8 +4875,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/pharmacy-add-product.css",
-      "hash": "8821fcc4808e19bf39a4207a3344452ff227a024932c443618028f0ea281e70d",
-      "size": 3935
+      "hash": "7e40243a04c8826c33b0d20da8be23674c4f80db3a01ce53dc3e207f418648ed",
+      "size": 5095
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/pharmacy-components.css",
@@ -4995,13 +4995,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-add-product.js",
-      "hash": "32c813b047ef0c7345d6dbb12f5d07ebd2d566d97cf18b41734d5b1de23d1bd0",
-      "size": 5236
+      "hash": "08682fe20b57a1589df42af0c6510cc04eea6512ba86398ae4433fc986a24cb3",
+      "size": 7929
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-backend-api.js",
-      "hash": "456dae8841ccd868e8e6e8d690a3d109ca5200108077c520029341f8074cf651",
-      "size": 2710
+      "hash": "bb90d7cff5fae288842a0dd416b1840bd4725b2929ab1d3ffe77461cb0641bc4",
+      "size": 3493
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-custom-cat-sync.js",
@@ -5060,8 +5060,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-storefront-ui.js",
-      "hash": "d648984f5e7010752823f4d66d44f8816e1145de8854f301772e7cad839059cb",
-      "size": 10192
+      "hash": "bbce618e0d59b9a7928e4335d77aa01dce559e04138921a2d80df6eb5ae191bc",
+      "size": 10754
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-actions-contact.js",
@@ -5250,8 +5250,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/pharmacy-add-product.html",
-      "hash": "cb1e17404375d273b10e3993fa7feb76eeae8f52cd9f6fa771a57d407f718a26",
-      "size": 6920
+      "hash": "f7794d03d2e59b26a4f30ac77cc1c7cd25d2ca981df57ad6e5da7f7af9cacfa9",
+      "size": 10404
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/pharmacy-control-panel.html",
@@ -6520,7 +6520,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "ee87c4d2296709d54e761c982183e1408d1cbe260bbad600f227e914ad5f2c47",
+      "hash": "34777ee44586acd82c27c3e86b42bf56b52c874ca9b8c915489295fd5f745058",
       "size": 22
     }
   ]
