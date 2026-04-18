@@ -33,8 +33,8 @@
     "pharmacy_ctrl_back_btn": { "ar": "العودة للمتجر", "en": "Back to Store" },
     "pharmacy_ctrl_topbar_title": { "ar": "إعدادات وتخصيص المتجر", "en": "Store Settings" },
     "pharmacy_ctrl_user_status": { "ar": "متصل كمسؤول", "en": "Connected as Admin" },
-    "pharmacy_ctrl_catalog_heading": { "ar": "التحكم في الكتالوج الموحد", "en": "Catalog Control" },
-    "pharmacy_ctrl_catalog_desc": { "ar": "قم بإيقاف الأقسام الرئيسية أو الفرعية التي لا ترغب في عرضها ضمن متجرك (سيتم إضافتها إلى pharmacy_merchant_preferences).", "en": "Hide unused categories..." },
+    "pharmacy_ctrl_catalog_heading": { "ar": "التحكم في التصنيفات", "en": "Categories Control" },
+    "pharmacy_ctrl_catalog_desc": { "ar": "قم بإيقاف الأقسام الرئيسية أو الفرعية التي لا ترغب في عرضها ضمن متجرك (سيتم إضافتها إلى <code>pharmacy_merchant_preferences</code>).", "en": "Hide unused main or sub categories from your store (will be added to <code>pharmacy_merchant_preferences</code>)." },
     "pharmacy_ctrl_catalog_loader": { "ar": "جاري تحميل الكتالوج...", "en": "Loading catalog..." },
     "pharmacy_ctrl_save_prefs_btn": { "ar": "حفظ تفضيلات الظهور", "en": "Save Preferences" },
     "pharmacy_ctrl_custom_cat_heading": { "ar": "إنشاء أقسامك الخاصة", "en": "Create Custom Categories" },
@@ -53,7 +53,7 @@
     "pharmacy_ctrl_create_cat_btn": { "ar": "إنشاء القسم وحفظه", "en": "Create Category" },
     "pharmacy_ctrl_prev_cats_heading": { "ar": "أقسامك المخصصة السابقة", "en": "Previous Categories" },
     "pharmacy_ctrl_prev_cats_empty": { "ar": "لا توجد أقسام مخصصة حتى الآن.", "en": "No custom categories yet." },
-    "pharmacy_ctrl_products_heading": { "ar": "منتجات الصيدلية اليدوية", "en": "Manual Pharmacy Products" },
+    "pharmacy_ctrl_products_heading": { "ar": "منتجات الصيدلية الخاصة", "en": "Private Pharmacy Products" },
     "pharmacy_ctrl_products_desc": { "ar": "المنتجات المخزنة مع ميتا داتا خاصة بالصيدلية في نظام pharmacy_products_metadata.", "en": "Products stored with metadata..." },
     "pharmacy_ctrl_products_empty_hint": { "ar": "لإضافة منتج يدوي جديد للربط مع الأقسام المخصصة، استخدم زر 'إضافة منتج الصيدلية' الموجود في واجهة المتجر الرئيسية.", "en": "To add manual product..." }
 }
