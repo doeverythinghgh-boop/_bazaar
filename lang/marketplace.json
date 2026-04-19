@@ -302,5 +302,41 @@
     "subcat_main_specialty_match": {
         "ar": "تطابق تخصص رئيسي",
         "en": "Main Specialty Match"
+    },
+    "port_send_request": {
+        "ar": "ارسل طلب",
+        "en": "Send Request"
+    },
+    "port_login_required_request": {
+        "ar": "يجب تسجيل الدخول لتتمكن من إرسال طلب صيدلية مباشر.",
+        "en": "You must be logged in to send a direct pharmacy request."
+    },
+    "port_req_loading": {
+        "ar": "جاري التحميل...",
+        "en": "Loading..."
+    },
+    "port_req_verified_pharmacy": {
+        "ar": "صيدلية معتمدة",
+        "en": "Verified Pharmacy"
+    },
+    "port_req_textarea_placeholder": {
+        "ar": "أضف ملاحظاتك أو اكتب اسم الدواء المطلوب هنا... (يمكنك استخدام الميكروفون للتحدث)",
+        "en": "Add your notes or write the medicine name here... (you can use the microphone to speak)"
+    },
+    "port_req_attach_subtitle": {
+        "ar": "أرفق صور (روشتة، علبة دواء، إلخ)",
+        "en": "Attach images (Prescription, medicine box, etc.)"
+    },
+    "port_req_upload_hint": {
+        "ar": "اسحب الصور هنا أو اضغط للاختيار",
+        "en": "Drag images here or click to select"
+    },
+    "port_req_max_images": {
+        "ar": "أقصى عدد: 4 صور",
+        "en": "Max capacity: 4 images"
+    },
+    "port_req_submit_btn": {
+        "ar": "إرسال الطلب الآن",
+        "en": "Send Request Now"
     }
 }
