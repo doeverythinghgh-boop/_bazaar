@@ -1,1 +1,179 @@
-window.portfolioFetchProducts=async function(userKey,offset=0,limit=5){const PortfolioAPI=window.PortfolioAPI||{},store=window.PortfolioStore||null,grid=document.getElementById("portfolio-products-grid"),empty=document.getElementById("portfolio-empty"),loadMoreBtn=document.getElementById("btn-load-more-products");if(loadMoreBtn&&(loadMoreBtn.disabled=!0,loadMoreBtn.innerHTML=(window.langu("search_loading_status")||"جاري التحميل...")+' <i class="fas fa-spinner fa-spin"></i>'),grid&&0===offset){const prodSec=document.getElementById("portfolio-products-section");prodSec&&(prodSec.style.display="block"),grid.style.display="grid",grid.innerHTML="";for(let i=0;i<limit;i+=1)grid.insertAdjacentHTML("beforeend",'\n                <div class="product-skeleton-card skeleton-container">\n                    <div class="skeleton-img skeleton-item"></div>\n                    <div class="skeleton-text skeleton-item"></div>\n                    <div class="skeleton-price skeleton-item"></div>\n                </div>\n            ')}if(empty&&(empty.style.display="none"),"guest_user"===userKey)return grid&&0===offset&&(grid.innerHTML=""),empty&&(empty.style.display="block"),loadMoreBtn&&(loadMoreBtn.style.display="none"),store?.patch?store.patch({hasMoreProducts:!1},{source:"fetch-products"}):window.portfolioState&&(window.portfolioState.hasMoreProducts=!1),void 0;try{const existingCacheUser=PortfolioAPI.loadCache?PortfolioAPI.loadCache(userKey):null,state=store?.getState?store.getState():window.portfolioState,activeUser=state?.activeUser||existingCacheUser?.user||null,specialtyViewModel=PortfolioAPI.resolveSpecialtyViewModel?PortfolioAPI.resolveSpecialtyViewModel(activeUser):activeUser?.portfolio_view_model||null,productsSection=document.getElementById("portfolio-products-section"),actionsContainer=document.getElementById("portfolio-products-actions"),searchCommercialBtn=document.getElementById("btn-portfolio-search-commercial"),isPharmacy=specialtyViewModel?.profile?.entries?.some(entry=>"204"===String(entry.subId))||activeUser&&"string"==typeof activeUser.business_category&&activeUser.business_category.includes('"204"');if(specialtyViewModel&&(!specialtyViewModel.hasCatalogAccess||!1===specialtyViewModel.showProductsSection))return grid&&0===offset&&(grid.innerHTML=""),productsSection&&(productsSection.style.display="none"),actionsContainer&&(actionsContainer.style.display="none"),searchCommercialBtn&&(searchCommercialBtn.style.display="none"),loadMoreBtn&&(loadMoreBtn.style.display="none"),empty&&(empty.style.display="none"),store?.patch?store.patch({hasMoreProducts:!1},{source:"fetch-products"}):window.portfolioState&&(window.portfolioState.hasMoreProducts=!1),void 0;const products=PortfolioAPI.fetchProducts?await PortfolioAPI.fetchProducts({userKey:userKey,limit:limit,offset:offset}):[];if(Array.isArray(products)&&(products.length>0||isPharmacy)){productsSection&&(productsSection.style.display="block"),grid&&(grid.style.display="grid",0===offset&&(grid.innerHTML=""));const existingCache=(PortfolioAPI.loadCache?PortfolioAPI.loadCache(userKey):null)||{products:[]},updatedProducts=0===offset?products:window.portfolioPageController?.mergeProductSets?window.portfolioPageController.mergeProductSets(existingCache.products,products):[...existingCache.products,...products];return window.portfolioPageController?.setAllProducts&&window.portfolioPageController.setAllProducts(updatedProducts,{userKey:userKey,productOffset:offset+products.length,hasMoreProducts:products.length===limit,renderMode:offset>0?"append":"replace",renderedProducts:products}),PortfolioAPI.saveCache&&PortfolioAPI.saveCache(userKey,{...existingCache,products:updatedProducts,offset:offset+products.length,isExpanded:!0}),store?.patch?store.patch({isFirstLoad:!1,productOffset:offset+products.length,hasMoreProducts:products.length===limit},{source:"fetch-products"}):window.portfolioState&&(window.portfolioState.isFirstLoad=!1,window.portfolioState.productOffset=offset+products.length,window.portfolioState.hasMoreProducts=products.length===limit),window.portfolioPageController?.syncDerivedUi&&window.portfolioPageController.syncDerivedUi(),actionsContainer&&(actionsContainer.style.display="flex"),searchCommercialBtn&&(searchCommercialBtn.style.display=!1===specialtyViewModel?.allowSearchWithinCatalog?"none":"flex"),loadMoreBtn&&(loadMoreBtn.style.display=products.length===limit?"flex":"none"),void 0}if(0===offset){if(productsSection&&(productsSection.style.display="none"),empty&&(empty.style.display="block"),window.portfolioPageController?.setAllProducts&&window.portfolioPageController.setAllProducts([],{userKey:userKey,productOffset:0,hasMoreProducts:!1,renderMode:"replace",renderedProducts:[]}),PortfolioAPI.saveCache){const cacheInfo=(PortfolioAPI.loadCache?PortfolioAPI.loadCache(userKey):null)||{};cacheInfo.products=[],cacheInfo.offset=0,PortfolioAPI.saveCache(userKey,cacheInfo)}}else loadMoreBtn&&(loadMoreBtn.style.display="none");store?.patch?store.patch({hasMoreProducts:!1},{source:"fetch-products"}):window.portfolioState&&(window.portfolioState.hasMoreProducts=!1)}catch(error){console.error("[Portfolio] Product fetch failed:",error)}finally{loadMoreBtn&&(loadMoreBtn.disabled=!1,loadMoreBtn.innerHTML=window.langu("search_modal_load_more")||"عرض المزيد")}};
+/**
+ * RULE: All comments and documentation must be in English only.
+ * WARNING: Hover effects are strictly prohibited on this page to ensure touch-device compatibility.
+ */
+/**
+ * @file pages/merchant-portfolio/js/portfolio-fetch-products.js
+ * @description Handles merchant product fetching and pagination.
+ */
+
+window.portfolioFetchProducts = async function (userKey, offset = 0, limit = 5) {
+    const PortfolioAPI = window.PortfolioAPI || {};
+    const store = window.PortfolioStore || null;
+    const grid = document.getElementById('portfolio-products-grid');
+    const empty = document.getElementById('portfolio-empty');
+    const loadMoreBtn = document.getElementById('btn-load-more-products');
+
+    if (loadMoreBtn) {
+        loadMoreBtn.disabled = true;
+        loadMoreBtn.innerHTML = (window.langu('search_loading_status') || 'جاري التحميل...') + ' <i class="fas fa-spinner fa-spin"></i>';
+    }
+
+    if (grid && offset === 0) {
+        const prodSec = document.getElementById('portfolio-products-section');
+        if (prodSec) prodSec.style.display = 'block';
+        grid.style.display = 'grid';
+        grid.innerHTML = '';
+        for (let i = 0; i < limit; i += 1) {
+            grid.insertAdjacentHTML('beforeend', `
+                <div class="product-skeleton-card skeleton-container">
+                    <div class="skeleton-img skeleton-item"></div>
+                    <div class="skeleton-text skeleton-item"></div>
+                    <div class="skeleton-price skeleton-item"></div>
+                </div>
+            `);
+        }
+    }
+    if (empty) empty.style.display = 'none';
+
+    if (userKey === 'guest_user') {
+        if (grid && offset === 0) grid.innerHTML = '';
+        if (empty) empty.style.display = 'block';
+        if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+        if (store?.patch) {
+            store.patch({ hasMoreProducts: false }, { source: 'fetch-products' });
+        } else if (window.portfolioState) {
+            window.portfolioState.hasMoreProducts = false;
+        }
+        return;
+    }
+
+    try {
+        const existingCacheUser = PortfolioAPI.loadCache ? PortfolioAPI.loadCache(userKey) : null;
+        const state = store?.getState ? store.getState() : window.portfolioState;
+        const activeUser = state?.activeUser || existingCacheUser?.user || null;
+        const specialtyViewModel = PortfolioAPI.resolveSpecialtyViewModel
+            ? PortfolioAPI.resolveSpecialtyViewModel(activeUser)
+            : (activeUser?.portfolio_view_model || null);
+        const productsSection = document.getElementById('portfolio-products-section');
+        const actionsContainer = document.getElementById('portfolio-products-actions');
+        const searchCommercialBtn = document.getElementById('btn-portfolio-search-commercial');
+        const isPharmacy = specialtyViewModel?.profile?.entries?.some((entry) => String(entry.subId) === '204') ||
+            (activeUser && typeof activeUser.business_category === 'string' && activeUser.business_category.includes('"204"'));
+
+        if (specialtyViewModel && (!specialtyViewModel.hasCatalogAccess || specialtyViewModel.showProductsSection === false)) {
+            if (grid && offset === 0) grid.innerHTML = '';
+            if (productsSection) productsSection.style.display = 'none';
+            if (actionsContainer) actionsContainer.style.display = 'none';
+            if (searchCommercialBtn) searchCommercialBtn.style.display = 'none';
+            if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+            if (empty) empty.style.display = 'none';
+            if (store?.patch) {
+                store.patch({ hasMoreProducts: false }, { source: 'fetch-products' });
+            } else if (window.portfolioState) {
+                window.portfolioState.hasMoreProducts = false;
+            }
+            return;
+        }
+
+        const products = PortfolioAPI.fetchProducts
+            ? await PortfolioAPI.fetchProducts({ userKey: userKey, limit: limit, offset: offset })
+            : [];
+
+        if (Array.isArray(products) && (products.length > 0 || isPharmacy)) {
+            if (productsSection) productsSection.style.display = 'block';
+
+            if (grid) {
+                grid.style.display = 'grid';
+                if (offset === 0) grid.innerHTML = '';
+            }
+
+            const existingCache = (PortfolioAPI.loadCache ? PortfolioAPI.loadCache(userKey) : null) || { products: [] };
+            const updatedProducts = offset === 0
+                ? products
+                : (window.portfolioPageController?.mergeProductSets
+                    ? window.portfolioPageController.mergeProductSets(existingCache.products, products)
+                    : [...existingCache.products, ...products]);
+
+            if (window.portfolioPageController?.setAllProducts) {
+                window.portfolioPageController.setAllProducts(updatedProducts, {
+                    userKey: userKey,
+                    productOffset: offset + products.length,
+                    hasMoreProducts: products.length === limit,
+                    renderMode: offset > 0 ? 'append' : 'replace',
+                    renderedProducts: products
+                });
+            }
+
+            if (PortfolioAPI.saveCache) {
+                PortfolioAPI.saveCache(userKey, {
+                    ...existingCache,
+                    products: updatedProducts,
+                    offset: offset + products.length,
+                    isExpanded: true
+                });
+            }
+
+            if (store?.patch) {
+                store.patch({
+                    isFirstLoad: false,
+                    productOffset: offset + products.length,
+                    hasMoreProducts: products.length === limit
+                }, {
+                    source: 'fetch-products'
+                });
+            } else if (window.portfolioState) {
+                window.portfolioState.isFirstLoad = false;
+                window.portfolioState.productOffset = offset + products.length;
+                window.portfolioState.hasMoreProducts = products.length === limit;
+            }
+
+            if (window.portfolioPageController?.syncDerivedUi) {
+                window.portfolioPageController.syncDerivedUi();
+            }
+
+            if (actionsContainer) actionsContainer.style.display = 'flex';
+            if (searchCommercialBtn) {
+                searchCommercialBtn.style.display = specialtyViewModel?.allowSearchWithinCatalog === false ? 'none' : 'flex';
+            }
+            if (loadMoreBtn) {
+                loadMoreBtn.style.display = products.length === limit ? 'flex' : 'none';
+            }
+            return;
+        }
+
+        if (offset === 0) {
+            if (productsSection) productsSection.style.display = 'none';
+            if (empty) empty.style.display = 'block';
+            if (window.portfolioPageController?.setAllProducts) {
+                window.portfolioPageController.setAllProducts([], {
+                    userKey: userKey,
+                    productOffset: 0,
+                    hasMoreProducts: false,
+                    renderMode: 'replace',
+                    renderedProducts: []
+                });
+            }
+            if (PortfolioAPI.saveCache) {
+                const cacheInfo = (PortfolioAPI.loadCache ? PortfolioAPI.loadCache(userKey) : null) || {};
+                cacheInfo.products = [];
+                cacheInfo.offset = 0;
+                PortfolioAPI.saveCache(userKey, cacheInfo);
+            }
+        } else if (loadMoreBtn) {
+            loadMoreBtn.style.display = 'none';
+        }
+        if (store?.patch) {
+            store.patch({ hasMoreProducts: false }, { source: 'fetch-products' });
+        } else if (window.portfolioState) {
+            window.portfolioState.hasMoreProducts = false;
+        }
+    } catch (error) {
+        console.error('[Portfolio] Product fetch failed:', error);
+    } finally {
+        if (loadMoreBtn) {
+            loadMoreBtn.disabled = false;
+            loadMoreBtn.innerHTML = window.langu('search_modal_load_more') || 'عرض المزيد';
+        }
+    }
+};

@@ -1,1 +1,19 @@
-function pharmacySetupTabNavigation(){const tabs=document.querySelectorAll(".navbar-menu li[data-tab]"),sections=document.querySelectorAll(".dashboard-section");tabs.forEach(tab=>{tab.addEventListener("click",()=>{tabs.forEach(t=>t.classList.remove("active")),tab.classList.add("active"),sections.forEach(s=>s.classList.remove("active-section")),document.getElementById(tab.getAttribute("data-tab")).classList.add("active-section")})})}
+/**
+ * @file pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-tabs.js
+ * @description Tab navigation helpers for pharmacy control panel.
+ */
+
+function pharmacySetupTabNavigation() {
+    const tabs = document.querySelectorAll('.navbar-menu li[data-tab]');
+    const sections = document.querySelectorAll('.dashboard-section');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            sections.forEach(s => s.classList.remove('active-section'));
+            document.getElementById(tab.getAttribute('data-tab')).classList.add('active-section');
+        });
+    });
+}

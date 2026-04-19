@@ -1,1 +1,160 @@
-.catalog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}.catalog-card{background:#fff;border-radius:12px;border:1px solid var(--border);padding:20px;display:flex;flex-direction:column;gap:15px;box-shadow:0 4px 6px rgba(0,0,0,.02)}.catalog-card-header{display:flex;justify-content:space-between;align-items:center;font-weight:700;border-bottom:1px dashed #edf2f7;padding-bottom:15px}.sub-cat-item{display:flex;justify-content:space-between;align-items:center;background:#f8fafc;padding:10px 14px;border-radius:10px;font-size:.9rem}.toggle-switch{position:relative;width:44px;height:22px}.toggle-switch input{opacity:0;width:0;height:0}.slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#cbd5e0;transition:.4s;border-radius:34px}.slider:before{position:absolute;content:"";height:16px;width:16px;left:4px;bottom:3px;background-color:#fff;transition:.4s;border-radius:50%}input:checked+.slider{background-color:var(--success)}input:checked+.slider:before{transform:translateX(20px)}.sub-hidden-badge{background:rgba(239,68,68,.1);color:#ef4444;font-size:.65rem;padding:2px 8px;border-radius:20px;margin-right:8px;font-weight:700;display:inline-flex;align-items:center;gap:4px;border:1px solid rgba(239,68,68,.2)}.btn-product-counter{background:#f6ad55;color:#fff!important;font-size:.65rem;font-weight:800;min-width:18px;height:18px;display:flex;align-items:center;justify-content:center;border-radius:50%;padding:0 4px;box-shadow:0 2px 4px rgba(246,173,85,.3);animation:badgePop .3s ease-out}body .btn-primary{background:#0056b3!important;color:#fff!important;padding:14px 28px;border-radius:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 4px 12px rgba(0,86,179,.2);cursor:pointer;border:none}.pharmacy-panel-loader{display:flex;align-items:center;justify-content:center;gap:12px;padding:18px 20px;background:linear-gradient(180deg,#fff 0,#f8fbff 100%);border:1px solid #d7e5f5;border-radius:12px;color:var(--primary)}.pharmacy-panel-loader-spinner{width:22px;height:22px;border-radius:50%;border:3px solid rgba(0,86,179,.16);border-top-color:var(--primary);animation:pharmacy-panel-spin .8s linear infinite}div.swal2-popup.modern-mini-popup{border-radius:24px!important;padding:2rem!important;font-family:Cairo,sans-serif!important;box-shadow:0 20px 60px rgba(0,0,0,.15)!important}@keyframes pharmacy-panel-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes badgePop{0%{transform:scale(.8);opacity:0}100%{transform:scale(1);opacity:1}}
+/**
+ * @file pages/merchant-portfolio/css/pharmacy-components.css
+ * @description التنسيقات الخاصة بالمكونات (البطاقات، الأزرار، التبديل، التنبيهات)
+ */
+
+/* Catalog Cards */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.catalog-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.catalog-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px dashed #edf2f7;
+    padding-bottom: 15px;
+}
+
+.sub-cat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+/* Toggle Switches */
+.toggle-switch {
+    position: relative;
+    width: 44px;
+    height: 22px;
+}
+
+.toggle-switch input { opacity: 0; width: 0; height: 0; }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #cbd5e0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; width: 16px;
+    left: 4px; bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider { background-color: var(--success); }
+input:checked + .slider:before { transform: translateX(20px); }
+
+/* Badges & Indicators */
+.sub-hidden-badge {
+    background: rgba(239, 68, 68, 0.1); 
+    color: #ef4444;
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.btn-product-counter {
+    background: #f6ad55;
+    color: white !important;
+    font-size: 0.65rem;
+    font-weight: 800;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0 4px;
+    box-shadow: 0 2px 4px rgba(246, 173, 85, 0.3);
+    animation: badgePop 0.3s ease-out;
+}
+
+/* Buttons */
+body .btn-primary {
+    background: #0056b3 !important;
+    color: #ffffff !important;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.2);
+    cursor: pointer;
+    border: none;
+}
+
+/* Loaders */
+.pharmacy-panel-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    border: 1px solid #d7e5f5;
+    border-radius: 12px;
+    color: var(--primary);
+}
+
+.pharmacy-panel-loader-spinner {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 86, 179, 0.16);
+    border-top-color: var(--primary);
+    animation: pharmacy-panel-spin 0.8s linear infinite;
+}
+
+/* Popups & Modals (SweetAlert Custom) */
+div.swal2-popup.modern-mini-popup {
+    border-radius: 24px !important;
+    padding: 2rem !important;
+    font-family: 'Cairo', sans-serif !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Animations */
+@keyframes pharmacy-panel-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes badgePop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}

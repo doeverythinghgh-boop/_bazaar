@@ -1,1 +1,86 @@
-.portfolio-product-card{position:relative}.product-status-badge{position:absolute;top:8px;inset-inline-start:8px;background:rgba(255,193,7,.95);color:#000;padding:3px 10px;border-radius:6px;font-size:.7rem;font-weight:800;box-shadow:0 4px 10px rgba(255,193,7,.4);z-index:5;pointer-events:none}.product-management-actions{display:flex;gap:6px;padding:0 8px 8px;box-sizing:border-box}.portfolio-mgmt-btn{flex:1;height:32px;border-radius:8px;border:none;font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;transition:all .2s cubic-bezier(.4, 0, .2, 1)}.portfolio-mgmt-btn-edit{background:rgba(var(--primary-rgb),.1);color:var(--primary-color);border:1px solid rgba(var(--primary-rgb),.2)}.portfolio-mgmt-btn-edit:active{background:var(--primary-color);color:#fff}.portfolio-mgmt-btn-delete{background:rgba(239,68,68,.1);color:#ef4444;border:1px solid rgba(239,68,68,.2)}.portfolio-mgmt-btn-delete:active{background:#ef4444;color:#fff}[data-theme=dark] .portfolio-mgmt-btn-edit{background:rgba(var(--primary-rgb),.2);border-color:rgba(var(--primary-rgb),.3)}[data-theme=dark] .portfolio-mgmt-btn-delete{background:rgba(239,68,68,.2);border-color:rgba(239,68,68,.3)}@media (min-width:768px){.product-management-actions{padding:0 12px 12px;gap:8px}.portfolio-mgmt-btn{height:36px;font-size:.8rem}}
+﻿/* Developer note: Hover effects are prohibited in this project. This UI is designed for tablet devices, so use active, focus, or explicit tap states instead. */
+.portfolio-product-card {
+    position: relative;
+}
+
+.product-status-badge {
+    position: absolute;
+    top: 8px;
+    inset-inline-start: 8px;
+    background: rgba(255, 193, 7, 0.95);
+    color: #000;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.4);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.product-management-actions {
+    display: flex;
+    gap: 6px;
+    padding: 0 8px 8px;
+    box-sizing: border-box;
+}
+
+.portfolio-mgmt-btn {
+    flex: 1;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-mgmt-btn-edit {
+    background: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(var(--primary-rgb), 0.2);
+}
+
+.portfolio-mgmt-btn-edit:active {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.portfolio-mgmt-btn-delete {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.portfolio-mgmt-btn-delete:active {
+    background: #ef4444;
+    color: #fff;
+}
+
+[data-theme="dark"] .portfolio-mgmt-btn-edit {
+    background: rgba(var(--primary-rgb), 0.2);
+    border-color: rgba(var(--primary-rgb), 0.3);
+}
+
+[data-theme="dark"] .portfolio-mgmt-btn-delete {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+@media (min-width: 768px) {
+    .product-management-actions {
+        padding: 0 12px 12px;
+        gap: 8px;
+    }
+
+    .portfolio-mgmt-btn {
+        height: 36px;
+        font-size: 0.8rem;
+    }
+}
+

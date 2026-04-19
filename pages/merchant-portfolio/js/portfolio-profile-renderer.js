@@ -1,1 +1,27 @@
-function portfolioRenderProfile(user){const settings=window.portfolioResolveProfileSettings(user),specialtyData=window.portfolioResolveSpecialtyProfileData(user);console.log("%c[Portfolio] 5. بدء عرض بيانات الملف الشخصي على الواجهة (Rendering)...","color: purple;"),window.portfolioRenderProfileImages(user),window.portfolioRenderProfileHeaderActions(user),window.portfolioRenderProfileInfo(user),window.portfolioRenderProfileRatings(user,{settings:settings,specialtyViewModel:specialtyData.specialtyViewModel}),window.portfolioRenderProfileTags(user,specialtyData),window.portfolioRenderProfileContacts(user,{specialtyViewModel:specialtyData.specialtyViewModel}),console.log("%c[Portfolio] ✅ تم عرض الملف الشخصي بنجاح.","color: green; font-weight: bold;")}window.portfolioRenderProfile=portfolioRenderProfile;
+/**
+ * @file pages/merchant-portfolio/js/portfolio-profile-renderer.js
+ * @description Coordinates merchant profile rendering.
+ */
+
+function portfolioRenderProfile(user) {
+    const settings = window.portfolioResolveProfileSettings(user);
+    const specialtyData = window.portfolioResolveSpecialtyProfileData(user);
+
+    console.log('%c[Portfolio] 5. بدء عرض بيانات الملف الشخصي على الواجهة (Rendering)...', 'color: purple;');
+
+    window.portfolioRenderProfileImages(user);
+    window.portfolioRenderProfileHeaderActions(user);
+    window.portfolioRenderProfileInfo(user);
+    window.portfolioRenderProfileRatings(user, {
+        settings: settings,
+        specialtyViewModel: specialtyData.specialtyViewModel
+    });
+    window.portfolioRenderProfileTags(user, specialtyData);
+    window.portfolioRenderProfileContacts(user, {
+        specialtyViewModel: specialtyData.specialtyViewModel
+    });
+
+    console.log('%c[Portfolio] ✅ تم عرض الملف الشخصي بنجاح.', 'color: green; font-weight: bold;');
+}
+
+window.portfolioRenderProfile = portfolioRenderProfile;

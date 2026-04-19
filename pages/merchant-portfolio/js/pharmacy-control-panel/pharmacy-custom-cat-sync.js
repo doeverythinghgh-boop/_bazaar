@@ -1,1 +1,255 @@
-!function(){function createCustomCategoryController(userKey){const state={localCategories:[],staticCatalog:[]};function getCategoryById(categoryId){return state.localCategories.find(category=>String(category.id)===String(categoryId))||null}async function reload(){const context=await window.PharmacyAPI.getCatalogContext(userKey,{force:!0});state.staticCatalog=Array.isArray(context.catalogSource)?context.catalogSource:[],state.localCategories=Array.isArray(context.customCategories)?context.customCategories:[],window.pharmacyCustomCatUI?.renderTree&&window.pharmacyCustomCatUI.renderTree(state.localCategories,state.staticCatalog),window.pharmacyProductFormController?.refreshCategories&&window.pharmacyProductFormController.refreshCategories()}async function createCategory(){const levelSelect=document.getElementById("custom-cat-level"),parentSelect=document.getElementById("custom-cat-parent"),addCatBtn=document.getElementById("btn-add-custom-cat"),ar=document.getElementById("custom-cat-ar").value.trim(),en=document.getElementById("custom-cat-en").value.trim(),level=levelSelect.value,parentId=parentSelect.value;if(!ar)return Swal.fire({title:window.pharmacyL("warning"),text:window.pharmacyL("name_required"),customClass:{popup:"modern-mini-popup"}}),void 0;const newCategory={id:"CUST_"+Date.now(),user_key:userKey,title_ar:ar,title_en:en,level:level,parent_id:"SUB"===level?parentId:null};if("MAIN"===level)return newCategory.isPending=!0,state.localCategories.push(newCategory),window.pharmacyCustomCatUI.renderTree(state.localCategories,state.staticCatalog),levelSelect.value="SUB",levelSelect.dispatchEvent(new Event("change")),parentSelect.value=newCategory.id,window.pharmacyCustomCatUI.resetForm(),Swal.fire({title:window.pharmacyL("success"),text:"en"===window.app_language?"Main drafted. Now add a sub-category to save both.":"تم تجهيز القسم الرئيسي. أضف قسماً فرعياً الآن لحفظ القسمين معاً.",toast:!0,position:"top-end",showConfirmButton:!1,timer:3e3,customClass:{popup:"modern-mini-popup"}}),void 0;addCatBtn.disabled=!0,addCatBtn.innerHTML=`<i class="fas fa-spinner fa-spin"></i> ${window.pharmacyL("creating")}`;try{const parent=getCategoryById(parentId);parent?.isPending&&await window.PharmacyAPI.addCustomCategory(parent),await window.PharmacyAPI.addCustomCategory(newCategory),await reload(),window.pharmacyCustomCatUI.resetForm(),Swal.fire({title:window.pharmacyL("success"),text:window.pharmacyL("new_category_success"),customClass:{popup:"modern-mini-popup"}})}catch(error){console.error("[PharmacyCustomCategories] Create failed:",error),Swal.fire({title:window.pharmacyL("error"),text:window.pharmacyL("add_failed"),customClass:{popup:"modern-mini-popup"}})}finally{addCatBtn.disabled=!1,addCatBtn.innerHTML=`<i class="fas fa-plus"></i> ${window.pharmacyL("create_btn")}`}}async function deleteCategory(categoryId){const target=getCategoryById(categoryId);if(!target)return;if("SUB"===target.level){const isParentCustom=void 0;if(state.localCategories.some(category=>String(category.id)===String(target.parent_id)&&"MAIN"===category.level)){const siblingCount=void 0;if(state.localCategories.filter(category=>String(category.parent_id)===String(target.parent_id)).length<=1)return Swal.fire({title:"en"===window.app_language?"Action Blocked":"إجراء مرفوض",text:"en"===window.app_language?"Your custom main section must have at least one sub-section.":"يجب أن يحتوي قسمك الرئيسي المخصص على قسم فرعي واحد على الأقل.",customClass:{popup:"modern-mini-popup"}}),void 0}}const result=void 0;if((await Swal.fire({title:"en"===window.app_language?"Delete?":"حذف؟",text:"en"===window.app_language?"Confirm deletion of this section.":"تأكيد حذف هذا القسم.",showCancelButton:!0,confirmButtonColor:"#dc3545",confirmButtonText:"en"===window.app_language?"Delete":"حذف",cancelButtonText:window.pharmacyL("btn_close"),customClass:{popup:"modern-mini-popup"}})).isConfirmed)try{target.isPending||await window.PharmacyAPI.deleteCustomCategory(userKey,categoryId),await reload()}catch(error){console.error("[PharmacyCustomCategories] Delete failed:",error),Swal.fire({title:window.pharmacyL("error"),text:"Delete failed",customClass:{popup:"modern-mini-popup"}})}}async function editCategory(categoryId){const target=getCategoryById(categoryId);if(!target)return;const{value:formValues}=await Swal.fire({title:"en"===window.app_language?"Edit Category":"تعديل القسم",html:`<input id="swal-input-ar" class="swal2-input" placeholder="Arabic Name" value="${target.title_ar||""}"><input id="swal-input-en" class="swal2-input" placeholder="English Name" value="${target.title_en||""}">`,focusConfirm:!1,showCancelButton:!0,confirmButtonText:"en"===window.app_language?"Update":"تحديث",cancelButtonText:window.pharmacyL("btn_close"),customClass:{popup:"modern-mini-popup"},preConfirm:()=>({title_ar:document.getElementById("swal-input-ar").value.trim(),title_en:document.getElementById("swal-input-en").value.trim()})});if(formValues?.title_ar)try{const updatedData={...target,...formValues};target.isPending||await window.PharmacyAPI.updateCustomCategory(updatedData),await reload(),Swal.fire({title:window.pharmacyL("success"),toast:!0,position:"top-end",showConfirmButton:!1,timer:2e3,customClass:{popup:"modern-mini-popup"}})}catch(error){console.error("[PharmacyCustomCategories] Update failed:",error),Swal.fire({title:window.pharmacyL("error"),text:"Update failed",customClass:{popup:"modern-mini-popup"}})}}function bindEvents(){const addCatBtn=document.getElementById("btn-add-custom-cat");addCatBtn&&"true"!==addCatBtn.dataset.bound&&(addCatBtn.dataset.bound="true",addCatBtn.addEventListener("click",createCategory));const listContainer=document.getElementById("custom-categories-list");listContainer&&"true"!==listContainer.dataset.bound&&(listContainer.dataset.bound="true",listContainer.addEventListener("click",event=>{const deleteBtn=event.target.closest(".btn-delete-custom-cat");if(deleteBtn)return deleteCategory(deleteBtn.dataset.id),void 0;const editBtn=event.target.closest(".btn-edit-custom-cat");editBtn&&editCategory(editBtn.dataset.id)}))}return{bindEvents:bindEvents,reload:reload}}function pharmacySetupCustomCategoryCreation(userKey){const controller=createCustomCategoryController(userKey);controller.bindEvents(),controller.reload(),window.pharmacyCustomCategoryController=controller}window.pharmacyCustomCatSync={setupCreation:pharmacySetupCustomCategoryCreation},window.pharmacySetupCustomCategoryCreation=pharmacySetupCustomCategoryCreation}();
+/**
+ * @file pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-custom-cat-sync.js
+ * @description Custom category data workflow for the pharmacy control panel.
+ */
+
+(function () {
+    function createCustomCategoryController(userKey) {
+        const state = {
+            localCategories: [],
+            staticCatalog: []
+        };
+
+        function getCategoryById(categoryId) {
+            return state.localCategories.find(category => String(category.id) === String(categoryId)) || null;
+        }
+
+        async function reload() {
+            const context = await window.PharmacyAPI.getCatalogContext(userKey, { force: true });
+            state.staticCatalog = Array.isArray(context.catalogSource) ? context.catalogSource : [];
+            state.localCategories = Array.isArray(context.customCategories) ? context.customCategories : [];
+
+            if (window.pharmacyCustomCatUI?.renderTree) {
+                window.pharmacyCustomCatUI.renderTree(state.localCategories, state.staticCatalog);
+            }
+
+            if (window.pharmacyProductFormController?.refreshCategories) {
+                window.pharmacyProductFormController.refreshCategories();
+            }
+        }
+
+        async function createCategory() {
+            const levelSelect = document.getElementById('custom-cat-level');
+            const parentSelect = document.getElementById('custom-cat-parent');
+            const addCatBtn = document.getElementById('btn-add-custom-cat');
+
+            const ar = document.getElementById('custom-cat-ar').value.trim();
+            const en = document.getElementById('custom-cat-en').value.trim();
+            const level = levelSelect.value;
+            const parentId = parentSelect.value;
+
+            if (!ar) {
+                Swal.fire({
+                    title: window.pharmacyL('warning'),
+                    text: window.pharmacyL('name_required'),
+                    customClass: { popup: 'modern-mini-popup' }
+                });
+                return;
+            }
+
+            const newCategory = {
+                id: 'CUST_' + Date.now(),
+                user_key: userKey,
+                title_ar: ar,
+                title_en: en,
+                level,
+                parent_id: level === 'SUB' ? parentId : null
+            };
+
+            if (level === 'MAIN') {
+                newCategory.isPending = true;
+                state.localCategories.push(newCategory);
+                window.pharmacyCustomCatUI.renderTree(state.localCategories, state.staticCatalog);
+
+                levelSelect.value = 'SUB';
+                levelSelect.dispatchEvent(new Event('change'));
+                parentSelect.value = newCategory.id;
+                window.pharmacyCustomCatUI.resetForm();
+
+                Swal.fire({
+                    title: window.pharmacyL('success'),
+                    text: window.app_language === 'en'
+                        ? 'Main drafted. Now add a sub-category to save both.'
+                        : 'تم تجهيز القسم الرئيسي. أضف قسماً فرعياً الآن لحفظ القسمين معاً.',
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    customClass: { popup: 'modern-mini-popup' }
+                });
+                return;
+            }
+
+            addCatBtn.disabled = true;
+            addCatBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${window.pharmacyL('creating')}`;
+
+            try {
+                const parent = getCategoryById(parentId);
+                if (parent?.isPending) {
+                    await window.PharmacyAPI.addCustomCategory(parent);
+                }
+
+                await window.PharmacyAPI.addCustomCategory(newCategory);
+                await reload();
+                window.pharmacyCustomCatUI.resetForm();
+
+                Swal.fire({
+                    title: window.pharmacyL('success'),
+                    text: window.pharmacyL('new_category_success'),
+                    customClass: { popup: 'modern-mini-popup' }
+                });
+            } catch (error) {
+                console.error("[PharmacyCustomCategories] Create failed:", error);
+                Swal.fire({
+                    title: window.pharmacyL('error'),
+                    text: window.pharmacyL('add_failed'),
+                    customClass: { popup: 'modern-mini-popup' }
+                });
+            } finally {
+                addCatBtn.disabled = false;
+                addCatBtn.innerHTML = `<i class="fas fa-plus"></i> ${window.pharmacyL('create_btn')}`;
+            }
+        }
+
+        async function deleteCategory(categoryId) {
+            const target = getCategoryById(categoryId);
+            if (!target) return;
+
+            if (target.level === 'SUB') {
+                const isParentCustom = state.localCategories.some(category =>
+                    String(category.id) === String(target.parent_id) && category.level === 'MAIN'
+                );
+                if (isParentCustom) {
+                    const siblingCount = state.localCategories.filter(category => String(category.parent_id) === String(target.parent_id)).length;
+                    if (siblingCount <= 1) {
+                        Swal.fire({
+                            title: window.app_language === 'en' ? 'Action Blocked' : 'إجراء مرفوض',
+                            text: window.app_language === 'en'
+                                ? 'Your custom main section must have at least one sub-section.'
+                                : 'يجب أن يحتوي قسمك الرئيسي المخصص على قسم فرعي واحد على الأقل.',
+                            customClass: { popup: 'modern-mini-popup' }
+                        });
+                        return;
+                    }
+                }
+            }
+
+            const result = await Swal.fire({
+                title: window.app_language === 'en' ? 'Delete?' : 'حذف؟',
+                text: window.app_language === 'en' ? 'Confirm deletion of this section.' : 'تأكيد حذف هذا القسم.',
+                showCancelButton: true,
+                confirmButtonColor: '#dc3545',
+                confirmButtonText: window.app_language === 'en' ? 'Delete' : 'حذف',
+                cancelButtonText: window.pharmacyL('btn_close'),
+                customClass: { popup: 'modern-mini-popup' }
+            });
+
+            if (!result.isConfirmed) return;
+
+            try {
+                if (!target.isPending) {
+                    await window.PharmacyAPI.deleteCustomCategory(userKey, categoryId);
+                }
+
+                await reload();
+            } catch (error) {
+                console.error("[PharmacyCustomCategories] Delete failed:", error);
+                Swal.fire({
+                    title: window.pharmacyL('error'),
+                    text: 'Delete failed',
+                    customClass: { popup: 'modern-mini-popup' }
+                });
+            }
+        }
+
+        async function editCategory(categoryId) {
+            const target = getCategoryById(categoryId);
+            if (!target) return;
+
+            const { value: formValues } = await Swal.fire({
+                title: window.app_language === 'en' ? 'Edit Category' : 'تعديل القسم',
+                html:
+                    `<input id="swal-input-ar" class="swal2-input" placeholder="Arabic Name" value="${target.title_ar || ''}">` +
+                    `<input id="swal-input-en" class="swal2-input" placeholder="English Name" value="${target.title_en || ''}">`,
+                focusConfirm: false,
+                showCancelButton: true,
+                confirmButtonText: window.app_language === 'en' ? 'Update' : 'تحديث',
+                cancelButtonText: window.pharmacyL('btn_close'),
+                customClass: { popup: 'modern-mini-popup' },
+                preConfirm: () => ({
+                    title_ar: document.getElementById('swal-input-ar').value.trim(),
+                    title_en: document.getElementById('swal-input-en').value.trim()
+                })
+            });
+
+            if (!formValues?.title_ar) return;
+
+            try {
+                const updatedData = { ...target, ...formValues };
+                if (!target.isPending) {
+                    await window.PharmacyAPI.updateCustomCategory(updatedData);
+                }
+
+                await reload();
+                Swal.fire({
+                    title: window.pharmacyL('success'),
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 2000,
+                    customClass: { popup: 'modern-mini-popup' }
+                });
+            } catch (error) {
+                console.error("[PharmacyCustomCategories] Update failed:", error);
+                Swal.fire({
+                    title: window.pharmacyL('error'),
+                    text: 'Update failed',
+                    customClass: { popup: 'modern-mini-popup' }
+                });
+            }
+        }
+
+        function bindEvents() {
+            const addCatBtn = document.getElementById('btn-add-custom-cat');
+            if (addCatBtn && addCatBtn.dataset.bound !== 'true') {
+                addCatBtn.dataset.bound = 'true';
+                addCatBtn.addEventListener('click', createCategory);
+            }
+
+            const listContainer = document.getElementById('custom-categories-list');
+            if (!listContainer || listContainer.dataset.bound === 'true') return;
+
+            listContainer.dataset.bound = 'true';
+            listContainer.addEventListener('click', event => {
+                const deleteBtn = event.target.closest('.btn-delete-custom-cat');
+                if (deleteBtn) {
+                    deleteCategory(deleteBtn.dataset.id);
+                    return;
+                }
+
+                const editBtn = event.target.closest('.btn-edit-custom-cat');
+                if (editBtn) {
+                    editCategory(editBtn.dataset.id);
+                }
+            });
+        }
+
+        return {
+            bindEvents,
+            reload
+        };
+    }
+
+    function pharmacySetupCustomCategoryCreation(userKey) {
+        const controller = createCustomCategoryController(userKey);
+        controller.bindEvents();
+        controller.reload();
+        window.pharmacyCustomCategoryController = controller;
+    }
+
+    window.pharmacyCustomCatSync = {
+        setupCreation: pharmacySetupCustomCategoryCreation
+    };
+
+    window.pharmacySetupCustomCategoryCreation = pharmacySetupCustomCategoryCreation;
+})();
