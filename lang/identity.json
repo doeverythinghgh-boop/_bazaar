@@ -439,7 +439,6 @@
         "ar": "جميع الخطوات الأساسية مكتملة، يمكنك إنشاء الحساب الآن.",
         "en": "All core steps are complete, you can create your account now."
     },
-
     "loc_section_title": {
         "ar": "المواقع والعناوين",
         "en": "Locations & Addresses"
@@ -456,7 +455,6 @@
         "ar": "اكتب العنوان",
         "en": "Write the address"
     },
-
     "loc_note_business_limit": {
         "ar": "حساب مقدم خدمة + مشتري يدعم حتى 20 موقعًا. يجب إضافة موقع واحد على الأقل كاملًا، ثم يمكنك إضافة مواقع أخرى.",
         "en": "Business + Buyer account supports up to 20 locations. Please add at least one complete location first."
@@ -469,7 +467,6 @@
         "ar": "اختياري. يمكنك إضافة حتى 20 موقع (موقع + عنوان).",
         "en": "Optional. You can add up to 20 locations (coords + address)."
     },
-
     "loc_btn_add": {
         "ar": "إضافة الموقع",
         "en": "Add location"
@@ -490,7 +487,6 @@
         "ar": "حذف",
         "en": "Delete"
     },
-
     "loc_empty_business": {
         "ar": "لم يتم إضافة أي موقع بعد.",
         "en": "No locations added yet."
@@ -507,7 +503,6 @@
         "ar": "(بدون إحداثيات)",
         "en": "(No Coordinates)"
     },
-
     "loc_err_enter_before_add": {
         "ar": "أدخل موقعًا وعنوانًا قبل الإضافة.",
         "en": "Enter coords and address before adding."
@@ -536,7 +531,6 @@
         "ar": "لا يمكن ترك إدخال غير مكتمل (موقع بدون عنوان أو العكس).",
         "en": "You can't leave an incomplete entry (coords without address or vice versa)."
     },
-
     "register_map_restored": {
         "ar": "تم تحديد الموقع بنجاح",
         "en": "Location selected successfully"
@@ -545,7 +539,6 @@
         "ar": "تم ربط الموقع بنجاح!",
         "en": "Location linked successfully!"
     },
-
     "reg_media_section_title": {
         "ar": "الصور الشخصية وصور الغلاف",
         "en": "Profile and cover photos"
@@ -686,7 +679,6 @@
         "ar": "صف نشاطك، ما الذي تقدمه وما يميزك...",
         "en": "Describe your business, what you offer and what makes it special..."
     },
-
     "reg_business_optional_title": {
         "ar": "تفاصيل إضافية للنشاط",
         "en": "Additional Business Details"
@@ -1247,7 +1239,6 @@
         "ar": "إعدادات التقييم",
         "en": "Rating Settings"
     },
-
     "profile_product_rating_settings_title": {
         "ar": "إعدادات تقييم المنتجات والخدمات",
         "en": "Products & Services Rating Settings"
@@ -1351,5 +1342,25 @@
     "profile_saving_loader": {
         "ar": "جاري حفظ التعديلات...",
         "en": "Saving changes..."
+    },
+    "gen_please_wait": {
+        "en": "Please wait...",
+        "ar": "يرجى الانتظار..."
+    },
+    "profile_change_password_btn": {
+        "en": "Change Password",
+        "ar": "تغيير كلمة المرور"
+    },
+    "profile_password_change_note": {
+        "en": "For your accounts security, please verify your current password before saving new changes.",
+        "ar": "حفاظاً على أمان حسابك، يرجى تأكيد كلمة المرور الحالية قبل حفظ التعديلات الجديدة."
+    },
+    "profile_password_change_title": {
+        "en": "Update Password",
+        "ar": "تحديث كلمة المرور"
+    },
+    "profile_security_badge": {
+        "en": "Security Settings",
+        "ar": "إعدادات الأمان"
     }
 }
