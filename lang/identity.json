@@ -911,26 +911,6 @@
         "ar": "مثلاً: شارع السلام، الدور الثالث، بجوار مسجد القدس",
         "en": "e.g., El-Salam St, 3rd Floor, near Al-Quds Mosque"
     },
-    "profile_change_password_label": {
-        "ar": "تغيير كلمة المرور",
-        "en": "Change Password"
-    },
-    "profile_new_password_label": {
-        "ar": "كلمة المرور الجديدة",
-        "en": "New Password"
-    },
-    "profile_new_password_placeholder": {
-        "ar": "كلمة المرور الجديدة",
-        "en": "New Password"
-    },
-    "profile_confirm_password_label": {
-        "ar": "تأكيد كلمة المرور",
-        "en": "Confirm Password"
-    },
-    "profile_confirm_password_placeholder": {
-        "ar": "تأكيد كلمة المرور الجديدة",
-        "en": "Confirm New Password"
-    },
     "profile_seller_options_btn": {
         "ar": "خيارات مقدم الخدمة (التوصيل والحد الأدنى)",
         "en": "Service Provider Options (Delivery & Minimum Order)"
@@ -1283,5 +1263,93 @@
     "profile_product_rating_mode_stars_only": {
         "ar": "نجوم فقط",
         "en": "Stars Only"
+    },
+    "profile_security_step_title": {
+        "ar": "الأمان والحساب",
+        "en": "Security & Account"
+    },
+    "profile_security_step_hint": {
+        "ar": "إدارة كلمة المرور وحالة الحساب.",
+        "en": "Manage your password and account status."
+    },
+    "profile_current_password_label": {
+        "ar": "كلمة المرور الحالية",
+        "en": "Current Password"
+    },
+    "profile_current_password_placeholder": {
+        "ar": "كلمة المرور لتأكيد الهوية",
+        "en": "Password to confirm identity"
+    },
+    "profile_new_password_label": {
+        "ar": "كلمة المرور الجديدة",
+        "en": "New Password"
+    },
+    "profile_new_password_placeholder": {
+        "ar": "أدخل كلمة المرور الجديدة",
+        "en": "Enter new password"
+    },
+    "profile_confirm_password_label": {
+        "ar": "تأكيد كلمة المرور",
+        "en": "Confirm Password"
+    },
+    "profile_danger_title": {
+        "ar": "منطقة الخطر",
+        "en": "Danger Zone"
+    },
+    "profile_danger_desc": {
+        "ar": "بمجرد حذف الحساب لا يمكن التراجع عن هذه الخطوة.",
+        "en": "Once you delete your account, there is no going back."
+    },
+    "profile_btn_delete": {
+        "ar": "حذف الحساب نهائياً",
+        "en": "Delete Account Permanently"
+    },
+    "profile_btn_save": {
+        "ar": "حفظ التعديلات",
+        "en": "Save Changes"
+    },
+    "profile_msg_recovered": {
+        "ar": "تم استرجاع تعديلاتك غير المحفوظة بنجاح 👌",
+        "en": "Unsaved edits recovered successfully 👌"
+    },
+    "profile_role_change_warning_title": {
+        "ar": "تغيير نوع الحساب",
+        "en": "Account Type Change"
+    },
+    "profile_role_change_warning_text": {
+        "ar": "لقد اخترت تحويل حسابك إلى حساب تجاري. هذا سيتطلب منك إكمال بيانات إضافية في الخطوات التالية.",
+        "en": "You have chosen to switch to a business account. This will require you to complete additional steps."
+    },
+    "profile_error_current_password_required": {
+        "ar": "يرجى إدخال كلمة المرور الحالية أولاً",
+        "en": "Please enter your current password first"
+    },
+    "profile_save_success_title": {
+        "ar": "تم التحديث",
+        "en": "Profile Updated"
+    },
+    "profile_save_success_text": {
+        "ar": "تم حفظ كافة التعديلات في ملفك الشخصي بنجاح.",
+        "en": "All changes to your profile have been saved successfully."
+    },
+    "profile_confirm_delete_title": {
+        "ar": "تأكيد حذف الحساب",
+        "en": "Confirm Account Deletion"
+    },
+    "profile_confirm_delete_text": {
+        "ar": "هل أنت متأكد من رغبتك في حذف حسابك نهائياً؟ هذا الإجراء لا يمكن التراجع عنه وسيؤدي لفقدان كافة بياناتك.",
+        "en": "Are you sure you want to delete your account permanently? This action cannot be undone and all your data will be lost."
+    },
+    "profile_btn_delete_confirm": {
+        "ar": "نعم، احذف حسابي",
+        "en": "Yes, Delete My Account"
+    },
+    "profile_btn_delete_cancel": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "profile_saving_loader": {
+        "ar": "جاري حفظ التعديلات...",
+        "en": "Saving changes..."
     }
 }
