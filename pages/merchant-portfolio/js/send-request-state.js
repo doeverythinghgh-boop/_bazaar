@@ -1,0 +1,1 @@
+window.RequestState={merchant:null,attachedImages:[],isRecording:!1,maxImages:4};
