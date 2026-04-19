@@ -1,7 +1,7 @@
 {
-  "version": "1.25.18",
+  "version": "1.26.1",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-19T10:37:06.073Z",
+  "lastUpdated": "2026-04-19T15:07:42.425Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -3635,8 +3635,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core-loader-resources.js",
-      "hash": "5b7182aeb80a654c3368fab78bba533a5281a208c560b8857fcbcff21ae4b84a",
-      "size": 8376
+      "hash": "73656da73228cb812361b9ba76a784e6b974132f1d3f38e0009984d3b5413fab",
+      "size": 8531
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/db/usersDB.js",
@@ -3825,8 +3825,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/voice-stt-utility.js",
-      "hash": "ca9265126c0497823c2b3f49e8578ac12c7355af4141dcffe3d4bdc73006cc77",
-      "size": 3629
+      "hash": "1321f88ef66b5fb01beb1053458da16c78a19ea505cc59dcbc107245d88c1ef1",
+      "size": 6169
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/splash.js",
@@ -3875,8 +3875,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/identity.json",
-      "hash": "c11654213fa7a0b0c4676ea9047942bacffee53c092664129a4471009337114f",
-      "size": 47959
+      "hash": "a47f014843ac177426a9262f19ba3f4017f078fee98c1d2542677792a217afe6",
+      "size": 48077
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/lang/marketplace.json",
@@ -5015,7 +5015,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/send-request.css",
-      "hash": "2d15723084b8ef71577c9dac65dfc9437e4b7ba4e03116567fe3540be3c8706b",
+      "hash": "524f40076b75c5b44a5d9119f387404f383a4a1afb2817b7cfc50f12d545c52c",
       "size": 3844
     },
     {
@@ -5319,11 +5319,6 @@
       "size": 1669
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/send-request-voice.js",
-      "hash": "b78001b5cb6782fb7241858819fd5fbdaf96448bb20323eb2cbf40b045ac2038",
-      "size": 333
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/services/portfolio-api.js",
       "hash": "de1bf5b25b2884c446cf5576bda77aa2616cb004a1a6fdde0a2e9c67a1f09185",
       "size": 4794
@@ -5345,8 +5340,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/send-request.html",
-      "hash": "c7f13db1761c51d31d0eceb17de71d8ebd2046f5b89065d6f8135132036e937c",
-      "size": 5909
+      "hash": "e6d3f218479cbdf01f4af279776fdc3076a50479d6ef28e43b9cc8e2ee6dbe93",
+      "size": 5600
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/offline/offline.html",
@@ -5645,8 +5640,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-init.js",
-      "hash": "22b234982da083146bbc09cbec0f9ee1f0ddd16a9f0ac87dfa7242541ff8a053",
-      "size": 7192
+      "hash": "ef7a1f919103759f7647ca3f47e91d1168f3f5d3769d30012becd683c7e94a7b",
+      "size": 7092
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-listeners.js",
@@ -5685,8 +5680,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/profile-modal.html",
-      "hash": "f3e552dd0ae1a06c032fe7c102d0f1a3da9a79e74e71396c2043867e96ed37a8",
-      "size": 28259
+      "hash": "b45c90555264de70b059f25b1b0c73f8d72e73e454920717c08d802234061b66",
+      "size": 28066
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/profile-modal.js",
@@ -5855,8 +5850,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-whatsapp-auth.js",
-      "hash": "58fe033ebb7c23e404a9a143b345195b98d8da5cc9a5d507f1c9fff814731221",
-      "size": 10987
+      "hash": "032152e51dade0a468bff9ef5ca652bf859e66824a975f9439cced0246b356ca",
+      "size": 10996
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/js/register-wizard-core.js",
@@ -5935,7 +5930,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/register/steps/step-identity.html",
-      "hash": "221b6603d7333b7736ba661f60a1f294e1c9f9c73b4d27dc62b25af651714ff0",
+      "hash": "3ef26da887c6bc7ae33134ef5d4d3dcab9328d34c24e6ee2fdf6c6eaecde2b4b",
       "size": 1811
     },
     {
@@ -6485,8 +6480,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/style/voice-stt-shared.css",
-      "hash": "01dedc762408c970ad84ebf19a707de9d045ce3ca7a9a14877406241aa7c6ff9",
-      "size": 916
+      "hash": "2e0524e57002b7a1b9cd4ec704a3723762f89fe9ab808df4528fcfe6ad687789",
+      "size": 2035
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_headers",
@@ -6500,8 +6495,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "75dfdf40012051afbeaf7c4823480f4674ce59710a3c841a0a5813a54f3f09f8",
-      "size": 21
+      "hash": "367330ccfa689d915a4462fc681118f0cb61d17391af099d63d189f92c5cca77",
+      "size": 20
     }
   ]
 }

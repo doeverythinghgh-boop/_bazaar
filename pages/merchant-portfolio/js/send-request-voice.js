@@ -1,1 +1,0 @@
-const RequestVoice={setup(){window.VoiceSTTManager&&window.VoiceSTTManager.init("request-notes","btn-voice-rec",{lang:"ar-SA",continuous:!1,interimResults:!0})},stop(){window.VoiceSTTManager&&window.VoiceSTTManager.instances["request-notes"]&&window.VoiceSTTManager.stopRecording(window.VoiceSTTManager.instances["request-notes"])}};
