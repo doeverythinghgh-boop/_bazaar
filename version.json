@@ -1,7 +1,7 @@
 {
-  "version": "1.25.3",
+  "version": "1.25.5",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-19T04:47:20.031Z",
+  "lastUpdated": "2026-04-19T04:59:23.680Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -5275,8 +5275,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/send-request-voice.js",
-      "hash": "266021e7df4289571697c38c426c12c9de25e7cd2eb8bff8a65d101a5773df4d",
-      "size": 2142
+      "hash": "8cb8e306c2efddbd8a0fdd0ce469e5c7dea55c6a6db49364a4b27f1525e38c01",
+      "size": 2914
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/services/portfolio-api.js",
@@ -6565,7 +6565,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "ed7f6fdefcd16bc9d674f031d2aba710d4e06fe711ac35cbea2dbd378efae5f3",
+      "hash": "5fceb3bae83a05abaa82af86a27194f146bc8ef8b3d85d6ae493791c471181ee",
       "size": 20
     }
   ]
