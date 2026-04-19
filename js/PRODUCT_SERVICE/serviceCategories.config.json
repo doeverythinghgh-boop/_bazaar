@@ -105,9 +105,9 @@
       "label": "Standard Service",
       "serviceTypeValue": "2",
       "hidePrice": true,
-      "listingPage": "/pages/products/productView2/productView2.html",
-      "addPage": "/pages/products/productAdd2/productAdd2.html",
-      "editPage": "/pages/products/productEdit2/productEdit2.html",
+      "listingPage": "/pages/products/productView/productView.html",
+      "addPage": "/pages/products/productAdd/productAdd.html",
+      "editPage": "/pages/products/productEdit/productEdit.html",
       "flags": {
         "isService": true,
         "isProduct": false,
