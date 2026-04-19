@@ -338,5 +338,37 @@
     "port_req_submit_btn": {
         "ar": "إرسال الطلب الآن",
         "en": "Send Request Now"
+    },
+    "port_fetch_error_title": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "port_fetch_error_text": {
+        "ar": "لم يتم العثور على بيانات الصيدلية.",
+        "en": "Pharmacy data not found."
+    },
+    "port_req_submit_loading_title": {
+        "ar": "جاري إرسال طلبك...",
+        "en": "Sending your request..."
+    },
+    "port_req_submit_loading_text": {
+        "ar": "يرجى الانتظار بينما يتم رفع الصور وتجهيز الطلب.",
+        "en": "Please wait while images are uploaded and request is prepared."
+    },
+    "port_req_submit_success_title": {
+        "ar": "تم الإرسال بنجاح",
+        "en": "Sent successfully"
+    },
+    "port_req_submit_success_text": {
+        "ar": "سيصل طلبك للصيدلي وسيتواصل معك في أقرب وقت.",
+        "en": "Your request will reach the pharmacist and they will contact you soon."
+    },
+    "port_req_submit_back_btn": {
+        "ar": "العودة للمتجر",
+        "en": "Back to Store"
+    },
+    "port_req_validation_msg": {
+        "ar": "يرجى كتابة ملاحظات أو إرفاق صورة واحدة على الأقل لوصف طلبك.",
+        "en": "Please write notes or attach at least one image to describe your request."
     }
 }
