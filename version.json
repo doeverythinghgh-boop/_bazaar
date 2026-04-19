@@ -1,7 +1,7 @@
 {
-  "version": "1.26.2",
+  "version": "1.26.3",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-19T15:13:02.415Z",
+  "lastUpdated": "2026-04-19T15:50:42.066Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -5185,8 +5185,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-fetch-products.js",
-      "hash": "ec9a66dd50ce306d6788feffc73c6af5a3039eac637f106cf40998d1456750e2",
-      "size": 5189
+      "hash": "d26c94cb7c4dad893ad877a454e64242bde72ead79ce33259ede34714abcb84c",
+      "size": 5324
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-fetch-ratings.js",
@@ -5200,7 +5200,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/portfolio-init.js",
-      "hash": "d0aed14c32e3bf86a8f4d331ba1895e7e27f481d036af203d0480c5db50fb2f5",
+      "hash": "e21ea883c7232f683c6572b1b1714d7195c8adab26ea1f4d372b21c2d8b2f3a7",
       "size": 1642
     },
     {
@@ -5590,8 +5590,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/css/profile-modal-base.css",
-      "hash": "05dfd98958ea5704f3915b0ebc76cc7cccde5fde42a88d80bb1c4fa7384f7515",
-      "size": 13411
+      "hash": "aa1118e7d9986f881c8748f1ce7eea31672fc9bafe16ec02732f544732ddedd8",
+      "size": 13587
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/css/profile-modal-business.css",
@@ -5670,8 +5670,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-ui-state.js",
-      "hash": "9f4db9f905829bdb9b8d252436e8f2943568bcf2ae6487a0cfc5a303191933fb",
-      "size": 10664
+      "hash": "05225d1b769ed13fe87ce2f2fe03755e126d8c52687aa03bee1af8030d933579",
+      "size": 10704
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/js/profile-validation.js",
@@ -5680,8 +5680,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/profile-modal.html",
-      "hash": "b45c90555264de70b059f25b1b0c73f8d72e73e454920717c08d802234061b66",
-      "size": 28066
+      "hash": "72989f8591635bcb4bdc50254fc535c2ef10939e567d7ad2f52a52a1b56a00e9",
+      "size": 27893
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/profile-modal/profile-modal.js",
@@ -6495,7 +6495,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "1965a151d0917ac3201bff84c8fa774c01c3b53b40e70ac0b1ffce0b4ea84284",
+      "hash": "724946a4bc100e91383b7caeb5b872020c90f5b3af1b3886b960f11ea53882e1",
       "size": 20
     }
   ]
