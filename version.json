@@ -1,7 +1,7 @@
 {
-  "version": "1.25.10",
+  "version": "1.25.11",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-19T06:46:31.272Z",
+  "lastUpdated": "2026-04-19T06:55:59.130Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -4130,8 +4130,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/order-sync-manager.js",
-      "hash": "1d47a82df976f2f7e6a04b2d3733fda84b0782ac11297657812172ce21ad0097",
-      "size": 1059
+      "hash": "5bcc8d56b38bc1756144bbc86a67c7ad895cb0284bf1a0cbd6d3286e38c02b94",
+      "size": 1404
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/item-actions.js",
@@ -4140,8 +4140,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/main-loader.js",
-      "hash": "62350b281d8247199026cf474f4541efefcdfd23fa036d573a2b8dfde08703d3",
-      "size": 3970
+      "hash": "565b714f3133001a90f2ebcf557946c102afa66ec1344a469d9759ab9babd663",
+      "size": 4092
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/role-manager.js",
@@ -6455,7 +6455,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "1bc1d3ac914a65919bd4f42c5ba7ee594039f384b9317418f40d247321570b6c",
+      "hash": "040632bc1c637dd0afc84a24d52c25614d20feea6b0b6e6b1f0d6da6f546131d",
       "size": 21
     }
   ]
