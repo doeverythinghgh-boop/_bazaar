@@ -243,6 +243,10 @@
         "ar": "تفاصيل العنوان مطلوبة لسهولة الوصول إليك",
         "en": "Address details are required"
     },
+    "location_address_required": {
+        "ar": "يرجى إضافة موقع جغرافي وعنوان واحد على الأقل لنشاطك التجاري.",
+        "en": "At least one geolocation and address are required for your business."
+    },
     "register_header_account_type": {
         "ar": "نوع الحساب",
         "en": "Account Type"
@@ -1284,8 +1288,8 @@
         "en": "Confirm Password"
     },
     "profile_danger_title": {
-        "ar": "منطقة الخطر",
-        "en": "Danger Zone"
+        "ar": "حذف الحساب",
+        "en": "Delete Account"
     },
     "profile_danger_desc": {
         "ar": "بمجرد حذف الحساب لا يمكن التراجع عن هذه الخطوة.",
@@ -1314,6 +1318,18 @@
     "profile_error_current_password_required": {
         "ar": "يرجى إدخال كلمة المرور الحالية أولاً",
         "en": "Please enter your current password first"
+    },
+    "profile_password_popup_text": {
+        "ar": "أدخل كلمة المرور الحالية للمتابعة إلى تعديل كلمة المرور.",
+        "en": "Enter current password to proceed with updating your password."
+    },
+    "profile_confirm_account_btn": {
+        "ar": "تأكيد",
+        "en": "Confirm"
+    },
+    "gen_cancel": {
+        "ar": "إلغاء",
+        "en": "Cancel"
     },
     "profile_save_success_title": {
         "ar": "تم التحديث",
