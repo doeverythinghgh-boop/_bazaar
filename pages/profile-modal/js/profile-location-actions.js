@@ -1,0 +1,1 @@
+window.ProfileLocationActions=function(){"use strict";function bindOnce(){window.registerLocationsApi?.bindUiOnce&&window.registerLocationsApi.bindUiOnce()}return{bindOnce:bindOnce}}();

@@ -1,0 +1,1 @@
+!function initRegisterFeatureFlags(globalScope){"use strict";if(!globalScope)return;if(globalScope.RegisterFeatureFlags)return;const defaults={WIZARD_BOOTSTRAP_V2:!0,PROFILE_PIPELINE_V2:!0,DOM_CONTRACT_CHECKS:!0,DEFER_NON_CRITICAL_INIT:!0},source=globalScope.__REGISTER_FEATURE_FLAGS__||{};globalScope.RegisterFeatureFlags=Object.freeze({...defaults,...source})}(window);

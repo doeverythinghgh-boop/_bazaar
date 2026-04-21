@@ -1,0 +1,1 @@
+!function initPortfolioFeatureFlags(globalScope){"use strict";if(!globalScope)return;if(globalScope.PortfolioFeatureFlags)return;const defaults={PORTFOLIO_BOOTSTRAP_V2:!0,PORTFOLIO_DOM_CONTRACT_CHECKS:!0},source=globalScope.__PORTFOLIO_FEATURE_FLAGS__||{};globalScope.PortfolioFeatureFlags=Object.freeze({...defaults,...source})}(window);
