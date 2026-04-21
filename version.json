@@ -1,7 +1,7 @@
 {
-  "version": "1.26.11",
+  "version": "1.26.12",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-21T05:52:33.208Z",
+  "lastUpdated": "2026-04-21T05:54:48.048Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -6364,11 +6364,6 @@
       "size": 28398
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/split-css.js",
-      "hash": "60c56271a702d10ae40812e098a6eaacf215b42895f43f36089df615b2781ee8",
-      "size": 2172
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/style/cart-package-modal.css",
       "hash": "075489e973348a82579ea70a7d8478ba9539925c21c93c1e9a97476bc9cd06b9",
       "size": 2169
@@ -6500,7 +6495,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "f9796e7e54fd7fdfcf7188b6ff187394011c852be11a6cd5fab7cf96ba3ed886",
+      "hash": "894baa8bb5e1274f68eaaa9feb42ac39a7225efb1cef525d7293e9bfd63762f7",
       "size": 21
     }
   ]
