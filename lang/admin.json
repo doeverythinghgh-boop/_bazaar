@@ -107,11 +107,11 @@
         "ar": "إدارة العلاقات: {username}",
         "en": "Manage Relationships: {username}"
     },
-    "admin_relations_as_merchant_header": {
+    "admin_relations_as_seller_header": {
         "ar": "الموزعون المرتبطون به (كموزعين له)",
         "en": "Distributors linked to this user (as your distributors)"
     },
-    "admin_relations_empty_merchant": {
+    "admin_relations_empty_seller": {
         "ar": "لا يوجد موزعون مرتبطون.",
         "en": "No linked distributors."
     },
@@ -928,7 +928,7 @@
         "en": "?? Profile images (Avatars)"
     },
     "image_analyzer_rule_cover": {
-        "ar": "صور أغلفة مقدم الخدمة (Covers)",
+        "ar": "صور أغلفة المتاجر (Covers)",
         "en": "Store cover images (Covers)"
     },
     "image_analyzer_rule_order": {

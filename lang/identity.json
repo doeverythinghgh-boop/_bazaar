@@ -244,7 +244,7 @@
         "en": "Address details are required"
     },
     "location_address_required": {
-        "ar": "يرجى إضافة موقع جغرافي وعنوان واحد على الأقل لنشاطك مقدمي الخدمةي.",
+        "ar": "يرجى إضافة موقع جغرافي وعنوان واحد على الأقل لنشاطك التجاري.",
         "en": "At least one geolocation and address are required for your business."
     },
     "register_header_account_type": {
@@ -263,7 +263,7 @@
         "ar": "مشتري",
         "en": "Buyer"
     },
-    "role_merchant": {
+    "role_seller": {
         "ar": "مقدم خدمة / نشاط تجاري",
         "en": "Service Provider / Business"
     },
@@ -315,7 +315,7 @@
         "ar": "حدث خطأ في التطبيق. يرجى المحاولة مرة أخرى.",
         "en": "An application error occurred. Please try again."
     },
-    "register_merchant_settings_title": {
+    "register_seller_settings_title": {
         "ar": "إعدادات مقدم الخدمة",
         "en": "Service Provider Settings"
     },
@@ -359,15 +359,15 @@
         "ar": "يرجى إدخال قيمة صحيحة للحد الأدنى",
         "en": "Please enter a valid minimum value"
     },
-    "register_merchant_options_set": {
+    "register_seller_options_set": {
         "ar": "(تم ضبط الإعدادات ✅)",
         "en": "(Settings Set ✅)"
     },
-    "register_merchant_options_none": {
+    "register_seller_options_none": {
         "ar": "(لا توجد إعدادات إضافية)",
         "en": "(No additional settings)"
     },
-    "register_merchant_options_btn": {
+    "register_seller_options_btn": {
         "ar": "خيارات مقدم الخدمة",
         "en": "Service Provider Options"
     },
@@ -476,8 +476,8 @@
         "en": "Add location"
     },
     "loc_btn_add_new": {
-        "ar": "+ إضافة موقع جديد",
-        "en": "+ Add new location"
+        "ar": "إضافة موقع جديد",
+        "en": "Add New Location"
     },
     "loc_btn_update": {
         "ar": "تحديث الموقع",
@@ -660,7 +660,7 @@
         "en": "Is this a business account?"
     },
     "register_business_name_label": {
-        "ar": "اسم النشاط مقدمي الخدمةي",
+        "ar": "اسم النشاط التجاري",
         "en": "Business Name"
     },
     "register_business_setup_note": {
@@ -672,7 +672,7 @@
         "en": "Business Bio"
     },
     "register_placeholder_bus_name": {
-        "ar": "أدخل اسم المحل أو النشاط مقدمي الخدمةي",
+        "ar": "أدخل اسم المحل أو النشاط التجاري",
         "en": "Enter shop or business name"
     },
     "register_label_tagline": {
@@ -911,7 +911,7 @@
         "ar": "مثلاً: شارع السلام، الدور الثالث، بجوار مسجد القدس",
         "en": "e.g., El-Salam St, 3rd Floor, near Al-Quds Mosque"
     },
-    "profile_merchant_options_btn": {
+    "profile_seller_options_btn": {
         "ar": "خيارات مقدم الخدمة (التوصيل والحد الأدنى)",
         "en": "Service Provider Options (Delivery & Minimum Order)"
     },
@@ -939,7 +939,7 @@
         "ar": "كلمة المرور غير صحيحة.",
         "en": "Incorrect password."
     },
-    "profile_merchant_settings_title": {
+    "profile_seller_settings_title": {
         "ar": "إعدادات مقدم الخدمة",
         "en": "Service Provider Settings"
     },
@@ -983,7 +983,7 @@
         "ar": "يرجى إدخال قيمة صحيحة للحد الأدنى",
         "en": "Please enter a valid minimum value"
     },
-    "profile_merchant_options_set": {
+    "profile_seller_options_set": {
         "ar": "(تم الضبط ✅)",
         "en": "(Configured ✅)"
     },
@@ -1084,11 +1084,11 @@
         "en": "Business Info"
     },
     "business_account_toggle": {
-        "ar": "حساب نشاط تجاري (مقدم خدمة)",
-        "en": "Business Account (Service Provider)"
+        "ar": "حساب نشاط تجاري (بائع)",
+        "en": "Business Account (Seller)"
     },
     "business_name_label": {
-        "ar": "اسم النشاط مقدمي الخدمةي",
+        "ar": "اسم النشاط التجاري",
         "en": "Business Name"
     },
     "business_name_placeholder": {

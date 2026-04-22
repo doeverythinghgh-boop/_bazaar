@@ -175,7 +175,7 @@
         "ar": "منتجات / خدمات",
         "en": "Products / Services"
     },
-    "search_mode_merchants": {
+    "search_mode_sellers": {
         "ar": "مقدم خدمة / نشاط تجاري",
         "en": "Service Provider / Business"
     },
@@ -212,8 +212,8 @@
         "en": "Loading..."
     },
     "port_search_panel_title": {
-        "ar": "بحث داخل منتجات مقدم الخدمة",
-        "en": "Search Service Provider Products"
+        "ar": "بحث داخل منتجات البائع",
+        "en": "Search Seller Products"
     },
     "port_search_clear_all": {
         "ar": "مسح الكل",
@@ -249,7 +249,7 @@
     },
     "search_modal_merchant_specialties": {
         "ar": "تخصصات مقدم الخدمة",
-        "en": "Service Provider Specialties"
+        "en": "Merchant Specialties"
     },
     "search_admin_save_success": {
         "ar": "تم حفظ العناصر المميزة بنجاح",
@@ -264,8 +264,8 @@
         "en": "No pending search criteria"
     },
     "subcat_no_merchants": {
-        "ar": "لا يوجد مقدمي خدمة في هذا التصنيف حالياً",
-        "en": "No service providers in this category currently"
+        "ar": "لا يوجد تّجار في هذا التصنيف حالياً",
+        "en": "No merchants in this category currently"
     },
     "subcat_merchant_specialized": {
         "ar": "متجر متخصص",
@@ -276,8 +276,8 @@
         "en": "Failed to load data"
     },
     "subcat_merchant_default_name": {
-        "ar": "مقدم خدمة",
-        "en": "Service Provider"
+        "ar": "تاجر",
+        "en": "Merchant"
     },
     "subcat_no_description": {
         "ar": "لا يوجد وصف متاح",
