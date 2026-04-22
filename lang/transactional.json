@@ -160,8 +160,8 @@
         "en": "Warning: Order Limit"
     },
     "cart_limit_text": {
-        "ar": "عذراً، لا يمكن الشراء من البائع بأقل من {limit} {currency}. مجموع مشترياتك الحالية منه هو {total} {currency}.",
-        "en": "Sorry, you cannot buy from this seller for less than {limit} {currency}. Your current total is {total} {currency}."
+        "ar": "عذراً، لا يمكن الشراء من مقدم الخدمة بأقل من {limit} {currency}. مجموع مشترياتك الحالية منه هو {total} {currency}.",
+        "en": "Sorry, you cannot buy from this service provider for less than {limit} {currency}. Your current total is {total} {currency}."
     },
     "cart_total_confirm": {
         "ar": "المبلغ الإجمالي هو {amount} {currency}. هل تريد المتابعة؟",
@@ -224,16 +224,16 @@
         "en": "🏢 Office ← 🏠 Customer"
     },
     "cart_delivery_segment_first": {
-        "ar": "🏢 المكتب ← 📦 البائع الأول",
-        "en": "🏢 Office ← 📦 First Seller"
+        "ar": "🏢 المكتب ← 📦 مقدم الخدمة الأول",
+        "en": "🏢 Office ← 📦 First Service Provider"
     },
     "cart_delivery_segment_between": {
-        "ar": "📦 البائع {i} ← 📦 البائع {j}",
-        "en": "📦 Seller {i} ← 📦 Seller {j}"
+        "ar": "📦 مقدم الخدمة {i} ← 📦 مقدم الخدمة {j}",
+        "en": "📦 Service Provider {i} ← 📦 Service Provider {j}"
     },
     "cart_delivery_segment_last": {
-        "ar": "📦 البائع الأخير ← 🏠 العميل",
-        "en": "📦 Last Seller ← 🏠 Customer"
+        "ar": "📦 مقدم الخدمة الأخير ← 🏠 العميل",
+        "en": "📦 Last Service Provider ← 🏠 Customer"
     },
     "cart_delivery_vehicle_label": {
         "ar": "🚗 نوع المركبة:",

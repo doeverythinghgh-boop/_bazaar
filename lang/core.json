@@ -11,6 +11,10 @@
         "ar": "حسنًا",
         "en": "OK"
     },
+    "gen_call": {
+        "ar": "اتصال",
+        "en": "Call"
+    },
     "gen_swal_cancel_btn": {
         "ar": "إلغاء",
         "en": "Cancel"
@@ -366,8 +370,8 @@
         "en": "You can login as guest or complete registration."
     },
     "gen_swal_title_confirm": {
-        "ar": "تأكيد العملية للبائع",
-        "en": "Confirm Action for Merchant"
+        "ar": "تأكيد العملية لمقدم الخدمة",
+        "en": "Confirm Action for Service Provider"
     },
     "gen_swal_btn_yes_delete": {
         "ar": "نعم، احذفها!",
@@ -450,12 +454,12 @@
         "en": "Notice"
     },
     "port_rate_login_required_text": {
-        "ar": "يجب تسجيل الدخول لتقييم التاجر",
-        "en": "You must be logged in to rate this merchant"
+        "ar": "يجب تسجيل الدخول لتقييم مقدم الخدمة",
+        "en": "You must be logged in to rate this service provider"
     },
     "port_rate_dialog_title": {
-        "ar": "تقييم التاجر",
-        "en": "Rate Merchant"
+        "ar": "تقييم مقدم الخدمة",
+        "en": "Rate Service Provider"
     },
     "port_rate_success_title": {
         "ar": "شكراً لك!",
@@ -522,12 +526,12 @@
         "en": "Edit profile"
     },
     "port_featured_add_confirm": {
-        "ar": "هل تريد إضافة هذا المنتج لقائمة المنتجات المميزة للبائع؟",
-        "en": "Do you want to add this product to the merchant's featured list?"
+        "ar": "هل تريد إضافة هذا المنتج لقائمة المنتجات المميزة لمقدم الخدمة؟",
+        "en": "Do you want to add this product to the service provider's featured list?"
     },
     "port_featured_remove_confirm": {
-        "ar": "هل تريد إزالة هذا المنتج من قائمة المنتجات المميزة للبائع؟",
-        "en": "Do you want to remove this product from the merchant's featured list?"
+        "ar": "هل تريد إزالة هذا المنتج من قائمة المنتجات المميزة لمقدم الخدمة؟",
+        "en": "Do you want to remove this product from the service provider's featured list?"
     },
     "port_delete_success_title": {
         "ar": "تم الحذف!",
@@ -550,8 +554,8 @@
         "en": "Error"
     },
     "port_fetch_error_text": {
-        "ar": "لم يتم العثور على بيانات التاجر",
-        "en": "Merchant data not found"
+        "ar": "لم يتم العثور على بيانات مقدم الخدمة",
+        "en": "Service Provider data not found"
     },
     "net_no_connection": {
         "ar": "لا يوجد اتصال بالإنترنت",
@@ -726,8 +730,8 @@
         "en": "Buyer"
     },
     "dash_opt_seller": {
-        "ar": "بائع",
-        "en": "Seller"
+        "ar": "مقدم خدمة",
+        "en": "Service Provider"
     },
     "dash_opt_delivery": {
         "ar": "توصيل",
@@ -752,6 +756,18 @@
     "contact_details_title_whatsapp": {
         "ar": "تواصل عبر الواتساب",
         "en": "Contact via WhatsApp"
+    },
+    "contact_details_title": {
+        "ar": "تواصل مع مقدم الخدمة",
+        "en": "Contact Service Provider"
+    },
+    "phone_primary_label": {
+        "ar": "الرقم الرئيسي",
+        "en": "Primary Number"
+    },
+    "social_link_label": {
+        "ar": "فتح الرابط",
+        "en": "Open Link"
     },
     "contact_title": {
         "ar": "للتواصل",
@@ -806,12 +822,12 @@
         "en": "Once you create your own page on Suez Bazaar, it becomes a distinctive promotional storefront for you, where you can add your products, highlight featured ones, show your contact information, and share your page with anyone anywhere. You can also create an ongoing campaign inside Suez Bazaar by adding a service product that appears to users as a continuous ad, or contact us for general or customized campaigns that suit your business."
     },
     "contact_faq_q5": {
-        "ar": "ما حدود مسؤولية Suez Bazaar تجاه البائعين والمشترين وجودة المعروض؟",
-        "en": "What are Suez Bazaar's responsibility limits regarding sellers, buyers, and the quality of listed products or services?"
+        "ar": "ما حدود مسؤولية Suez Bazaar تجاه مقدمي الخدمة والمشترين وجودة المعروض؟",
+        "en": "What are Suez Bazaar's responsibility limits regarding service providers, buyers, and the quality of listed products or services?"
     },
     "contact_faq_a5": {
-        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، وهي لا تضمن جدية البائع أو المشتري ولا جودة المنتج أو الخدمة. لذلك يجب على المستخدم التأكد بنفسه من الطرف الآخر، وعدم دفع أي مبلغ إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
-        "en": "Suez Bazaar operates as a platform for listing products and services and enabling communication between users. It does not guarantee the seriousness of sellers or buyers, nor the quality of any product or service. Users should verify the other party themselves and should not make any payment until they receive the product or obtain the service and confirm it. Suez Bazaar also commits to removing any product or service provider proven through reports or review to be offering fake products or services or engaging in any form of fraud or deception."
+        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، وهي لا تضمن جدية مقدم الخدمة أو المشتري ولا جودة المنتج أو الخدمة. لذلك يجب على المستخدم التأكد بنفسه من الطرف الآخر، وعدم دفع أي مبلغ إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
+        "en": "Suez Bazaar operates as a platform for listing products and services and enabling communication between users. It does not guarantee the seriousness of service providers or buyers, nor the quality of any product or service. Users should verify the other party themselves and should not make any payment until they receive the product or obtain the service and confirm it. Suez Bazaar also commits to removing any product or service provider proven through reports or review to be offering fake products or services or engaging in any form of fraud or deception."
     },
     "contact_info_title": {
         "ar": "معلومات الاتصال",
@@ -882,7 +898,7 @@
         "en": "Digital Marketing"
     },
     "contact_service_p_1": {
-        "ar": "حلول تسويق رقمي متكاملة لزيادة وصول علامتك التجارية",
+        "ar": "حلول تسويق رقمي متكاملة لزيادة وصول علامتك مقدمي الخدمةية",
         "en": "Integrated digital marketing solutions to expand your brand reach"
     },
     "contact_service_title_2": {
@@ -942,23 +958,23 @@
         "en": "How We Use Information"
     },
     "privacy_p_2": {
-        "ar": "نستخدم البيانات فقط لأغراض تشغيل التطبيق وتقديم الخدمات، مثل التواصل بين البائعين والمشترين، وتحسين الأداء، ودعم المستخدمين.",
-        "en": "Data is used only for app operation and services, such as facilitating communication between buyers and sellers and improving performance."
+        "ar": "نستخدم البيانات فقط لأغراض تشغيل التطبيق وتقديم الخدمات، مثل التواصل بين مقدمي الخدمة والمشترين، وتحسين الأداء، ودعم المستخدمين.",
+        "en": "Data is used only for app operation and services, such as facilitating communication between buyers and service providers and improving performance."
     },
     "privacy_h2_2b": {
         "ar": "مشاركة بيانات التواصل عند الشراء",
         "en": "Contact Data Sharing Upon Purchase"
     },
     "privacy_p_2b": {
-        "ar": "قد يظهر للبائع بعض بيانات التواصل مثل رقم الهاتف عند شراء منتج أو خدمة منه، وذلك لتنسيق التواصل وتسليم الطلب. وبإتمام الشراء، يقر المستخدم بعلمه بذلك، ولا تتحمل Suez Bazaar مسؤولية أي استخدام لهذه البيانات خارج نطاق تنفيذ الطلب.",
-        "en": "Sellers may see contact info such as phone number upon a purchase to coordinate delivery. By purchasing, users acknowledge this; Suez Bazaar is not liable for data use outside order fulfillment."
+        "ar": "قد يظهر لمقدم الخدمة بعض بيانات التواصل مثل رقم الهاتف عند شراء منتج أو خدمة منه، وذلك لتنسيق التواصل وتسليم الطلب. وبإتمام الشراء، يقر المستخدم بعلمه بذلك، ولا تتحمل Suez Bazaar مسؤولية أي استخدام لهذه البيانات خارج نطاق تنفيذ الطلب.",
+        "en": "Service Providers may see contact info such as phone number upon a purchase to coordinate delivery. By purchasing, users acknowledge this; Suez Bazaar is not liable for data use outside order fulfillment."
     },
     "privacy_h2_2c": {
         "ar": "طبيعة المنصة وحدود المسؤولية",
         "en": "Platform Nature & Liability Limits"
     },
     "privacy_p_2c": {
-        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، ولا تضمن جدية البائعين أو المشترين ولا جودة المنتج أو الخدمة. ويلتزم المستخدم بعدم الدفع إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها بنفسه. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
+        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، ولا تضمن جدية مقدمي الخدمة أو المشترين ولا جودة المنتج أو الخدمة. ويلتزم المستخدم بعدم الدفع إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها بنفسه. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
         "en": "Suez Bazaar is a listing platform and does not guarantee the reliability of users or quality of products. Users should not pay until they verify the product/service themselves. We commit to removing any listings proven to be fraudulent or misleading."
     },
     "privacy_h2_3": {
@@ -1258,8 +1274,8 @@
         "en": "Items count"
     },
     "sales_sellers_count": {
-        "ar": "عدد البائعين",
-        "en": "Sellers count"
+        "ar": "عدد مقدمي الخدمة",
+        "en": "Service Providers count"
     },
     "sales_error": {
         "ar": "حدث خطأ أثناء تحميل الطلبات.",
