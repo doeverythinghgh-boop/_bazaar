@@ -1,0 +1,1 @@
+void(window.PharmacyProductManagerModule&&(window.PharmacyProductManagerModule.utils={getFirst:val=>Array.isArray(val)?val[0]:val,normalizeId:id=>{let val=id;return Array.isArray(val)&&(val=val[0]),String(val||"")}},console.log("%c[Pharmacy-Manager] 🛠️ Utils loaded.","color: #2563eb;")));

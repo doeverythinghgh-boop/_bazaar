@@ -1,0 +1,361 @@
+/**
+ * @file pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-product-manager.js
+ * @description Catalog product visibility workflow for pharmacy control panel.
+ *
+ * ⚠️ WARNING: DO NOT USE :hover OR tooltip/title attributes in this module.
+ * This interface is optimized for touch/hybrid devices where hover states are unreliable.
+ */
+
+window.pharmacyProductSubCategoryIndex = window.pharmacyProductSubCategoryIndex || {};
+
+async function pharmacyOpenProductManagement(subCatId, subCatTitle) {
+    console.log(`%c[Pharmacy] 1. فتح إدارة منتجات القسم: ${subCatTitle} (ID: ${subCatId})`, "color: #2563eb; font-weight: bold;");
+    const userKey = new URLSearchParams(window.location.search).get('user_key');
+
+    Swal.fire({
+        title: window.pharmacyL('loading_products'),
+        didOpen: () => { Swal.showLoading(); },
+        customClass: {
+            popup: 'swal-modern-mini-popup',
+            title: 'swal-modern-mini-title',
+            htmlContainer: 'swal-modern-mini-text'
+        },
+        allowOutsideClick: false
+    });
+
+    let customProducts = [];
+    let catalogProducts = [];
+
+    try {
+        // Parallel Fetch: Get both merchant's custom products and the default catalog products
+        const [customResult, catalogResult] = await Promise.all([
+            window.PharmacyAPI.getProductsBySubCategory(userKey, subCatId).catch(() => []),
+            window.PharmacyAPI.getSubCategoryStaticProducts(subCatId).catch(() => [])
+        ]);
+        
+        customProducts = customResult;
+        catalogProducts = catalogResult;
+        
+        console.log(`%c[Pharmacy] 2. تم جلب البيانات: ${customProducts.length} مخصص، ${catalogProducts.length} كتالوج.`, "color: #059669;");
+        console.log("   - Raw Custom Products from DB:", customProducts);
+    } catch (apiError) {
+        console.error("Pharmacy: Data fetch failed", apiError);
+    }
+
+    Swal.close();
+
+    // Merge Strategy: Show ALL catalog products, but replace them with custom versions if they exist
+    const customMap = new Map();
+    customProducts.forEach(p => {
+        let origId = p.original_catalog_id;
+        if (Array.isArray(origId)) origId = origId[0];
+        if (origId) customMap.set(String(origId), p);
+    });
+
+    const displayProducts = [];
+    
+    // Add catalog products (mapping to custom if available)
+    catalogProducts.forEach(catProd => {
+        const catId = Array.isArray(catProd.id) ? String(catProd.id[0]) : String(catProd.id);
+        if (customMap.has(catId)) {
+            const custom = customMap.get(catId);
+            displayProducts.push({
+                ...catProd,
+                ...custom,
+                isCustomized: true,
+                displayId: catId // Use catalog ID for preference toggle
+            });
+            customMap.delete(catId); // Mark as used
+        } else {
+            displayProducts.push({
+                ...catProd,
+                isCustomized: false,
+                displayId: catId
+            });
+        }
+    });
+
+    // Add remaining custom products (e.g. manual additions not from catalog)
+    customProducts.forEach(p => {
+        const pId = p.product_id || p.id;
+        // If it was already added via catalog mapping, it won't be in the map anymore
+        if (p.original_catalog_id && !customMap.has(String(p.original_catalog_id))) return;
+        
+        displayProducts.push({
+            ...p,
+            isCustomized: true,
+            displayId: pId
+        });
+    });
+
+    if (!displayProducts.length) {
+        Swal.fire({
+            title: subCatTitle,
+            text: window.pharmacyL('no_products_found'),
+            customClass: {
+                popup: 'swal-modern-mini-popup',
+                title: 'swal-modern-mini-title',
+                htmlContainer: 'swal-modern-mini-text'
+            }
+        });
+        return;
+    }
+
+    try {
+        let html = `
+            <div class="modern-mini-list-container" style="max-height: 400px; overflow-y: auto; padding: 0;">
+                <p style="font-size: 0.85rem; color: #71717a; margin-bottom: 15px; text-align: center; font-weight: 500; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 10px; margin-inline: 10px;">
+                    <i class="fas fa-info-circle" style="margin-inline-end: 5px; opacity: 0.7;"></i> ${window.pharmacyL('product_visibility')}
+                </p>
+        `;
+
+        displayProducts.forEach(product => {
+            const productId = product.displayId;
+            window.pharmacyProductSubCategoryIndex[String(productId)] = String(subCatId);
+
+            const isChecked = !window.globalPreferenceState.hidden_catalog_products.has(String(productId));
+            const productName = (window.app_language === 'en' ? (product.name_en || product.title) : (product.name_ar || product.title)) || product.title;
+
+            html += `
+                <div class="modern-mini-item" style="display:flex; justify-content:space-between; align-items:center; padding: 12px 10px; background: ${product.isCustomized ? 'rgba(37,99,235,0.05)' : 'rgba(0,0,0,0.02)'}; border-radius: 12px; margin-bottom: 8px; border: ${product.isCustomized ? '1px solid rgba(37,99,235,0.1)' : 'none'};">
+                    <div style="flex: 1; margin-inline-end: 10px;">
+                        <span style="font-weight: 600; font-size: 0.95rem; color: var(--dark-blue); display: block; line-height: 1.3;">
+                            ${productName}
+                            ${product.isCustomized ? '<span style="font-size: 0.7rem; background: var(--primary); color: white; padding: 1px 6px; border-radius: 4px; margin-inline-start: 6px; font-weight: normal; vertical-align: middle;">مخصص</span>' : ''}
+                        </span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap: 10px;">
+                        <button class="btn-customize-catalog" 
+                                title="${product.isCustomized ? 'تعديل التخصيص' : 'تخصيص المنتج'}"
+                                style="width: 32px; height: 32px; border-radius: 8px; border: none; background: ${product.isCustomized ? 'var(--primary)' : 'rgba(0,86,179,0.08)'}; color: ${product.isCustomized ? 'white' : 'var(--primary)'}; display: flex; align-items: center; justify-content: center; cursor: pointer;"
+                                onclick="pharmacyCustomizeCatalogProduct('${productId}', '${subCatId}')">
+                            <i class="fas ${product.isCustomized ? 'fa-edit' : 'fa-pen-to-square'}" style="font-size: 0.85rem;"></i>
+                        </button>
+                        <label class="toggle-switch" style="transform: scale(0.85);">
+                            <input type="checkbox" onchange="pharmacyToggleProductVisibility('${productId}', this.checked)" ${isChecked ? 'checked' : ''}>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            `;
+        });
+
+        html += `</div>`;
+
+        Swal.fire({
+            title: subCatTitle,
+            html,
+            showConfirmButton: true,
+            confirmButtonText: window.pharmacyL('btn_ok'),
+            customClass: {
+                popup: 'swal-modern-mini-popup',
+                title: 'swal-modern-mini-title',
+                htmlContainer: 'swal-modern-mini-text',
+                confirmButton: 'swal-modern-mini-confirm'
+            }
+        });
+    } catch (renderError) {
+        console.error("Pharmacy: Render error", renderError);
+        Swal.fire({
+            title: window.pharmacyL('error'),
+            text: window.pharmacyL('load_failed'),
+            customClass: {
+                popup: 'swal-modern-mini-popup',
+                title: 'swal-modern-mini-title',
+                htmlContainer: 'swal-modern-mini-text'
+            }
+        });
+    }
+}
+
+
+
+async function pharmacyCustomizeCatalogProduct(productId, subCatId) {
+    console.log(`%c[Pharmacy] 🛠️ بدء تخصيص منتج من الكتالوج (ID: ${productId})`, "color: #7c3aed; font-weight: bold;");
+    
+    const userKey = new URLSearchParams(window.location.search).get('user_key');
+    
+    // Fetch both lists to ensure we have the latest data for matching
+    const [customList, catalogList] = await Promise.all([
+        window.PharmacyAPI.getProductsBySubCategory(userKey, subCatId).catch(() => []),
+        window.PharmacyAPI.getSubCategoryStaticProducts(subCatId).catch(() => [])
+    ]);
+
+    console.log(`%c[Pharmacy] 🔍 Debug Matching: Searching for ID "${productId}"`, "color: #2563eb;");
+    console.log("   - Custom List:", customList);
+    
+    // Try to find in custom products first (already customized version)
+    let product = customList.find(p => {
+        let pOriginalId = p.original_catalog_id;
+        if (Array.isArray(pOriginalId)) pOriginalId = pOriginalId[0];
+        pOriginalId = String(pOriginalId || '');
+
+        let pProductId = p.product_id || p.id;
+        if (Array.isArray(pProductId)) pProductId = pProductId[0];
+        pProductId = String(pProductId || '');
+
+        const targetId = String(productId);
+        
+        console.log(`   - 🔎 Comparing: Custom[original=${pOriginalId}, id=${pProductId}] vs Target[${targetId}]`);
+        
+        const match = (pOriginalId === targetId) || (pProductId === targetId);
+        if (match) console.log("   - ✅ Match found in Custom List:", p);
+        return match;
+    });
+    
+    // If not found, find in catalog products (original version)
+    if (!product) {
+        product = catalogList.find(p => {
+            const catId = Array.isArray(p.id) ? p.id[0] : p.id;
+            const match = String(catId) === String(productId);
+            if (match) console.log("   - ✅ Match found in Catalog List:", p);
+            return match;
+        });
+    }
+    
+    if (!product) {
+        console.error("[Pharmacy] Could not find product data for customization.");
+        return;
+    }
+
+    // DEBUG: Log the RAW product to see actual property names
+    console.log("%c[Pharmacy] 🧪 بيانات المنتج الخام (Raw Data):", "color: #d97706;", product);
+
+    console.log("%c[Pharmacy] 📝 تحضير البيانات لنموذج الإضافة...", "color: #7c3aed;");
+    
+    const mainCat = window.globalCatalogData?.find(m => m.sub?.some(s => String(s.id) === String(subCatId)));
+    
+    // Robust Property Mapping with Array Support
+    const getFirst = (val) => Array.isArray(val) ? val[0] : val;
+
+    const nameAr = getFirst(product.title || product.name_ar || product.name || '');
+    const nameEn = getFirst(product.name_en || product.title_en || '');
+    const imagePath = getFirst(product.image || product.img || product.image_url || product.image_path || null);
+    const rawIngredients = product.active_ingredients || product.ingredients || product.ingredients_ar || [];
+    const description = getFirst(product.description || product.desc || '');
+    const price = getFirst(product.price || '');
+    const brandAr = getFirst(product.brand_ar || product.brand || '');
+    const brandEn = getFirst(product.brand_en || '');
+    
+    // Standardize ingredients
+    let ingredients = Array.isArray(rawIngredients) ? rawIngredients : [];
+    
+    // Smart Fallback: If no ingredients found, use the product name as the active ingredient (Catalog logic)
+    if (ingredients.length === 0 && (nameAr || nameEn)) {
+        ingredients = [{ name_ar: nameAr, name_en: nameEn }];
+    }
+
+    ingredients = ingredients.map(ing => {
+        const val = getFirst(ing);
+        return typeof val === 'string' ? { name_ar: val, name_en: val } : val;
+    });
+
+    const prefillData = {
+        name_ar: nameAr,
+        name_en: nameEn,
+        price: price,
+        description: description,
+        brand_ar: brandAr,
+        brand_en: brandEn,
+        custom_main_cat_id: mainCat?.id || null,
+        custom_sub_cat_id: subCatId,
+        image_names: imagePath, 
+        active_ingredients: ingredients,
+        is_prescription_required: (product.rx || product.is_prescription_required || product.prescription) ? 1 : 0,
+        original_catalog_id: productId,
+        form_ref: product.form_ref || null,
+        strength_ref: product.strength_ref || null
+    };
+
+    console.log("%c[Pharmacy] 📦 البيانات الجاهزة للنقل:", "color: #7c3aed;", prefillData);
+
+    window.pharmacyPendingCatalogHideId = productId;
+    window.pharmacyIsCustomizing = true; 
+    
+    try {
+        Swal.close();
+        
+        const addTabBtn = document.querySelector('.navbar-menu li[data-tab="add-product-tab"]');
+        if (addTabBtn) {
+            console.log("%c[Pharmacy] 🔄 جاري الانتقال لتبويب الإضافة...", "color: #7c3aed;");
+            addTabBtn.click();
+        }
+
+        if (typeof window.pharmacyPreFillAddProductForm === 'function') {
+            window.pharmacyPreFillAddProductForm(prefillData);
+            console.log("%c[Pharmacy] ✅ تم استدعاء دالة ملء النموذج بالبيانات الكلية.", "color: #059669; font-weight: bold;");
+        }
+    } finally {
+        window.pharmacyIsCustomizing = false;
+    }
+}
+
+function pharmacyResolveSubCategoryForProduct(productId) {
+    const resolved = window.pharmacyProductSubCategoryIndex?.[String(productId)];
+    if (resolved) return String(resolved);
+
+    const allCounters = document.querySelectorAll('.btn-product-counter');
+    for (const counter of allCounters) {
+        const subId = counter.id.replace('product-counter-', '');
+        if (String(productId).startsWith(subId)) {
+            return subId;
+        }
+    }
+
+    return null;
+}
+
+function pharmacyCountHiddenProductsForSubCategory(subId, hiddenProductSet) {
+    return Array.from(hiddenProductSet).filter(productId => {
+        const mappedSubId = window.pharmacyProductSubCategoryIndex?.[String(productId)];
+        return String(mappedSubId || '') === String(subId) || String(productId).startsWith(String(subId));
+    }).length;
+}
+
+function pharmacyToggleProductVisibility(productId, isVisible) {
+    console.log(`%c[Pharmacy] 👁️ تبديل حالة ظهور المنتج ${productId} إلى: ${isVisible}`, "color: #4b5563;");
+    const state = window.globalPreferenceState;
+    if (!state) return;
+
+    const normalizedId = String(productId);
+    if (!isVisible) state.hidden_catalog_products.add(normalizedId);
+    else state.hidden_catalog_products.delete(normalizedId);
+
+    const subId = pharmacyResolveSubCategoryForProduct(normalizedId);
+    if (subId) {
+        const hiddenCount = pharmacyCountHiddenProductsForSubCategory(subId, state.hidden_catalog_products);
+        const counterEl = document.getElementById(`product-counter-${subId}`);
+        const manageBtn = document.getElementById(`btn-manage-${subId}`);
+
+        if (hiddenCount > 0) {
+            if (counterEl) {
+                counterEl.textContent = '-' + hiddenCount;
+            } else if (manageBtn) {
+                const newCounter = document.createElement('span');
+                newCounter.className = 'btn-product-counter';
+                newCounter.id = `product-counter-${subId}`;
+                newCounter.textContent = '-' + hiddenCount;
+                manageBtn.appendChild(newCounter);
+            }
+        } else if (counterEl) {
+            counterEl.remove();
+        }
+    }
+
+    if (window.pharmacySetDirtyState) {
+        const userKey = new URLSearchParams(window.location.search).get('user_key');
+        const isDirty = window.pharmacyIsStateDirty(state);
+
+        localStorage.setItem(`pharmacy_pending_prefs_${userKey}`, JSON.stringify({
+            hidden_main_categories: Array.from(state.hidden_main_categories),
+            hidden_sub_categories: Array.from(state.hidden_sub_categories),
+            hidden_catalog_products: Array.from(state.hidden_catalog_products)
+        }));
+
+        window.pharmacySetDirtyState(isDirty, state, userKey);
+    }
+}
+
+window.pharmacyOpenProductManagement = pharmacyOpenProductManagement;
+window.pharmacyToggleProductVisibility = pharmacyToggleProductVisibility;
+window.pharmacyCustomizeCatalogProduct = pharmacyCustomizeCatalogProduct;
