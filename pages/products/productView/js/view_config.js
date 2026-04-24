@@ -1,1 +1,1 @@
-window.productView_state={};
+!function initializeProductViewPageState(global){global.productView_state=global.productView_state||{currentProductKey:null,currentQuantity:1,lastShareUrl:"",gallery:{activeIndex:0}}}(window);
