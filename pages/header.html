@@ -2,8 +2,9 @@
   const taglineElement = document.getElementById("tagline");
 
   // --- Animation Configuration ---
-  const fullText = window.langu("page_title");
-  const shortText = window.langu("logo_short");
+  const getLangStr = (key, fallback) => typeof window.langu === 'function' ? window.langu(key) : fallback;
+  const fullText = getLangStr("page_title", "Suez Bazaar");
+  const shortText = getLangStr("logo_short", "SB");
   const letterAppearDelay = 100; // Delay between each letter appearing
   let isAnimationRunning = false; // Variable to track animation state
 
@@ -79,7 +80,7 @@
       // Fetch translated taglines from the translation system
       const sentences = [];
       for (let i = 1; i <= 6; i++) {
-        const line = window.langu(`tagline_${i}`);
+        const line = getLangStr(`tagline_${i}`, `tagline_${i}`);
         if (line && line !== `tagline_${i}`) {
           sentences.push(line);
         }
@@ -87,7 +88,7 @@
 
       // Fallback if no taglines are found
       if (sentences.length === 0) {
-        sentences.push(window.langu('page_title'));
+        sentences.push(getLangStr('page_title', 'Suez Bazaar'));
       }
 
       // ✅ FIX: Re-show element before starting sentence display

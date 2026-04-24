@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "defaultProfileKey": "default",
+  "submit": {
+    "serviceType": "0"
+  },
+  "profiles": {
+    "default": {
+      "meta": {
+        "label": "Standard Category"
+      },
+      "summary": {
+        "key": "product_category_ui_default_summary",
+        "fallback": "Category selection controls labels, visibility, and validation across add, edit, and product view pages."
+      },
+      "submit": {
+        "serviceType": "0"
+      },
+      "pages": {
+        "add": {
+          "descriptionMode": "accordion",
+          "summaryTitle": {
+            "key": "product_category_ui_add_summary_title",
+            "fallback": "Selected category"
+          },
+          "summaryFallback": {
+            "key": "product_category_ui_add_summary_fallback",
+            "fallback": "Choose a main and sub category to apply the page behavior."
+          },
+          "submitButton": {
+            "key": "add1_submit_btn_initial",
+            "fallback": "Add product now"
+          },
+          "fields": {
+            "images": { "visible": true, "required": true, "order": 10 },
+            "productName": { "visible": true, "required": true, "order": 20 },
+            "description": { "visible": true, "required": true, "minLength": 10, "order": 30 },
+            "sellerMessage": { "visible": true, "required": true, "minLength": 10, "order": 40 },
+            "notes": { "visible": true, "required": false, "order": 50 },
+            "quantity": { "visible": true, "required": true, "min": 1, "order": 60 },
+            "price": { "visible": true, "required": true, "min": 0, "order": 70 },
+            "originalPrice": { "visible": true, "required": false, "order": 80 },
+            "realPrice": { "visible": true, "required": false, "order": 90 },
+            "heavyLoad": { "visible": true, "required": false, "order": 100 }
+          }
+        },
+        "edit": {
+          "descriptionMode": "accordion",
+          "summaryTitle": {
+            "key": "product_category_ui_edit_summary_title",
+            "fallback": "Editing category"
+          },
+          "summaryFallback": {
+            "key": "product_category_ui_edit_summary_fallback",
+            "fallback": "Choose a main and sub category to apply the page behavior."
+          },
+          "submitButton": {
+            "key": "edit_btn_save",
+            "fallback": "Save changes"
+          },
+          "fields": {
+            "images": { "visible": true, "required": true, "order": 10 },
+            "productName": { "visible": true, "required": true, "order": 20 },
+            "description": { "visible": true, "required": true, "minLength": 10, "order": 30 },
+            "sellerMessage": { "visible": true, "required": true, "minLength": 10, "order": 40 },
+            "notes": { "visible": true, "required": false, "order": 50 },
+            "quantity": { "visible": true, "required": true, "min": 1, "order": 60 },
+            "price": { "visible": true, "required": true, "min": 0, "order": 70 },
+            "originalPrice": { "visible": true, "required": false, "order": 80 },
+            "realPrice": { "visible": true, "required": false, "order": 90 },
+            "heavyLoad": { "visible": true, "required": false, "order": 100 }
+          }
+        },
+        "view": {
+          "descriptionMode": "accordion",
+          "actionButtonText": {
+            "key": "pv_add_to_cart",
+            "fallback": "Add to cart"
+          },
+          "summaryTitle": {
+            "key": "product_category_ui_view_summary_title",
+            "fallback": "Category behavior"
+          },
+          "summaryFallback": {
+            "key": "product_category_ui_view_summary_fallback",
+            "fallback": "This product uses the standard category-driven layout."
+          },
+          "fields": {
+            "price": { "visible": true },
+            "originalPrice": { "visible": true },
+            "quantity": { "visible": true },
+            "description": { "visible": true },
+            "sellerMessage": { "visible": true },
+            "share": { "visible": true },
+            "cartActions": { "visible": true },
+            "sellerCard": { "visible": true },
+            "realPrice": { "visible": true },
+            "heavyLoad": { "visible": true }
+          }
+        }
+      }
+    },
+    "quote_request": {
+      "meta": {
+        "label": "Quote Request"
+      },
+      "summary": {
+        "key": "product_category_ui_quote_request_summary",
+        "fallback": "This category uses a request-first flow. Quantity and direct cart purchase are hidden, while seller communication remains central."
+      },
+      "submit": {
+        "serviceType": "2"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "edit": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "view": {
+          "descriptionMode": "plain",
+          "actionButtonText": {
+            "fallback": "Contact seller"
+          },
+          "fields": {
+            "quantity": { "visible": false },
+            "cartActions": { "visible": false }
+          }
+        }
+      }
+    },
+    "delivery_request": {
+      "meta": {
+        "label": "Delivery Request"
+      },
+      "summary": {
+        "key": "product_category_ui_delivery_request_summary",
+        "fallback": "This category represents a delivery request flow. Direct cart purchase, stock quantity, and heavy-load flags are hidden."
+      },
+      "submit": {
+        "serviceType": "2"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "price": { "visible": false, "required": false },
+            "originalPrice": { "visible": false, "required": false },
+            "realPrice": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "edit": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "price": { "visible": false, "required": false },
+            "originalPrice": { "visible": false, "required": false },
+            "realPrice": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "view": {
+          "descriptionMode": "plain",
+          "fields": {
+            "price": { "visible": false },
+            "originalPrice": { "visible": false },
+            "quantity": { "visible": false },
+            "cartActions": { "visible": false },
+            "realPrice": { "visible": false },
+            "heavyLoad": { "visible": false }
+          }
+        }
+      }
+    },
+    "booking_profile": {
+      "meta": {
+        "label": "Booking Profile"
+      },
+      "summary": {
+        "key": "product_category_ui_booking_profile_summary",
+        "fallback": "This category relies on booking or coordination. Quantity and direct cart purchase are hidden to keep the flow focused on scheduling."
+      },
+      "submit": {
+        "serviceType": "2"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "edit": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "view": {
+          "descriptionMode": "plain",
+          "actionButtonText": {
+            "fallback": "Book now"
+          },
+          "fields": {
+            "quantity": { "visible": false },
+            "cartActions": { "visible": false }
+          }
+        }
+      }
+    },
+    "digital_profile": {
+      "meta": {
+        "label": "Digital Profile"
+      },
+      "summary": {
+        "key": "product_category_ui_digital_profile_summary",
+        "fallback": "This category is delivered digitally. Stock quantity and shipping-related controls are hidden."
+      },
+      "submit": {
+        "serviceType": "2"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "edit": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "view": {
+          "descriptionMode": "plain",
+          "actionButtonText": {
+            "fallback": "Request delivery"
+          },
+          "fields": {
+            "quantity": { "visible": false },
+            "cartActions": { "visible": false },
+            "heavyLoad": { "visible": false }
+          }
+        }
+      }
+    },
+    "membership_profile": {
+      "meta": {
+        "label": "Membership Profile"
+      },
+      "summary": {
+        "key": "product_category_ui_membership_profile_summary",
+        "fallback": "This category represents a membership or enrollment flow. Direct purchase controls are hidden and seller communication remains emphasized."
+      },
+      "submit": {
+        "serviceType": "2"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "edit": {
+          "fields": {
+            "quantity": { "visible": false, "required": false },
+            "heavyLoad": { "visible": false, "required": false }
+          }
+        },
+        "view": {
+          "descriptionMode": "plain",
+          "actionButtonText": {
+            "fallback": "Join now"
+          },
+          "fields": {
+            "quantity": { "visible": false },
+            "cartActions": { "visible": false },
+            "heavyLoad": { "visible": false }
+          }
+        }
+      }
+    }
+  },
+  "mainCategoryProfiles": {
+    "6": "quote_request",
+    "7": "quote_request",
+    "16": "quote_request",
+    "20": "quote_request",
+    "46": "delivery_request"
+  },
+  "subCategoryProfiles": {
+    "3:5": "digital_profile",
+    "6:4": "digital_profile",
+    "6:7": "booking_profile",
+    "6:9": "booking_profile",
+    "12:5": "booking_profile",
+    "13:7": "quote_request",
+    "17:5": "digital_profile",
+    "17:8": "quote_request",
+    "23:4": "membership_profile",
+    "44:4": "membership_profile",
+    "45:4": "membership_profile"
+  }
+}
