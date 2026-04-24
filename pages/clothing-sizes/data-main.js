@@ -1,0 +1,1 @@
+!function(window){"use strict";window.dataMap={men:window.menData,women:window.womenData,kids:window.kidsData,bedding:window.beddingData,shoes:window.shoesData}}(window);
