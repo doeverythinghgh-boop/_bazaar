@@ -1,7 +1,7 @@
 {
-  "version": "1.26.20",
+  "version": "1.26.21",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-24T02:53:12.399Z",
+  "lastUpdated": "2026-04-24T02:58:04.590Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -3530,8 +3530,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/app-i18n.js",
-      "hash": "3a6988dd82f6d9a512bf0adfe1d54c028d6c988f446fc85b0d1a5aa0d313394a",
-      "size": 3929
+      "hash": "0f7f7c3d774ea4b11d51e04c3e48ba4ddd3dcb08356aeae33f8b5deb3493d5fe",
+      "size": 3953
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/app-nav.js",
@@ -4769,6 +4769,11 @@
       "size": 48
     },
     {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/clothing-sizes-lang.json",
+      "hash": "37a79af5b388650181ca9c3c49368ae3b2c79a0e73ab41f924dfc1a34f55d0d7",
+      "size": 6642
+    },
+    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/clothing-sizes.html",
       "hash": "9259c55d978807fecb80d2e36fe45758c5887e047cf33d5c9dd0909e532e88a8",
       "size": 2960
@@ -4800,8 +4805,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/logic-main-app.js",
-      "hash": "01ba418c29611d0aa1450bd63180303a32abb37b31fa8183223648d1ec83bf60",
-      "size": 1432
+      "hash": "22cdfad741bb630547c19101c3ae102783dd31117ce6798ff55c350a6814aba0",
+      "size": 1868
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/logic-table-manager.js",
@@ -6685,7 +6690,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "c068ed2e08b91196ec6027679ad57c9cd517186ea9a98237f0baf3fce1b7c396",
+      "hash": "b522791a807a987f5f66878d33ea704fe3c093b4c26c370252514c4239abc232",
       "size": 21
     }
   ]
