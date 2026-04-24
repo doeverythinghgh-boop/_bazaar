@@ -1,7 +1,7 @@
 {
-  "version": "1.26.23",
+  "version": "1.26.24",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-04-24T03:01:24.969Z",
+  "lastUpdated": "2026-04-24T03:56:09.477Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -4775,13 +4775,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/clothing-sizes.html",
-      "hash": "cfde39247709d1bde43f3ef99c7439454709c98cdf602a260bc80e9ee9ad53c6",
-      "size": 3434
+      "hash": "f9bacc9e3cffe675b833aa566a0ae3a203106749ba45304f54cad3d911bedcf4",
+      "size": 2630
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/data-extras.js",
-      "hash": "d74bcebbf1a5687503c7bafaed53110ed36ad69420053df5e28e7eb6fcb0b92f",
-      "size": 1284
+      "hash": "73817f7f68f0f91c53530f67a3e5e7b92277e386895f57e6b1b0bba1c0cb26e0",
+      "size": 1484
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/data-kids.js",
@@ -4795,23 +4795,23 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/data-men.js",
-      "hash": "8a8c9aad4020f6defc138c20ce423e3964066b76fa3ef304984a7a8bd91faffd",
-      "size": 810
+      "hash": "74d58aa3ed0e68b8d4fb857075e9492c0547efc7d38c3c9464ef211fcbbf092e",
+      "size": 1000
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/data-women.js",
-      "hash": "1a41038223054dc85a88db7ac0b49c65158c946765f3282a90ef47347b5d6478",
-      "size": 816
+      "hash": "0e3d67bc35fc2b4cfb8f256d9695e7d9e67c6763e22aef65ba017eabceec6acf",
+      "size": 921
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/logic-main-app.js",
-      "hash": "22cdfad741bb630547c19101c3ae102783dd31117ce6798ff55c350a6814aba0",
-      "size": 1868
+      "hash": "0ea7f41ffabe510af9d4073bd459d5781aed00bca304559ae9d29f66bc852b74",
+      "size": 1882
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/logic-table-manager.js",
-      "hash": "d2c1cef1da4ba86638b94843835ecc68af04fc232c28646c4752ee8c753330cd",
-      "size": 3899
+      "hash": "bc92f609702d0060ed7c3a7c0129da16e5c231e453ba3019ea675191c57490b9",
+      "size": 4402
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/styles-layout.css",
@@ -4830,18 +4830,18 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/svg-drawers.js",
-      "hash": "638cf9d6ffae06cfe742949ef89335e1f56b9da6c4c204dbd1b0e033a84d2e1e",
-      "size": 16014
+      "hash": "7df1849dac0e177bce155a75df793ea524d5ee2f32645497a28eaf36d4ae0a29",
+      "size": 17140
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/svg-engine-main.js",
-      "hash": "2b8072c76bf80c451f7fda5e36aa91dcecbb3417452477d7cd4a6770adc4e4ed",
-      "size": 1650
+      "hash": "51b4e128af577a6e60af93452b1080d0dd1a10cd14a9d73246a946eca3f74559",
+      "size": 1929
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/clothing-sizes/svg-helpers.js",
-      "hash": "0d78e45433958301451b080351febbb91344f3fc6bb952b3eac0edd82da519ef",
-      "size": 2309
+      "hash": "16e4749321d07bc4b25c432e5e4ace3e0984aa767746d002a4ad20ffce6865cf",
+      "size": 2619
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/contact/contact.html",
@@ -6690,7 +6690,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "a6c193522d5f81958cd1a25f8b1637d6e11c6cd1bfa763b31839fc64d9b5ab77",
+      "hash": "1de31b4d94d1c71a6e879b00c9b0e8e03eb223620fb51ff9579df85ae0afbe1c",
       "size": 21
     }
   ]
