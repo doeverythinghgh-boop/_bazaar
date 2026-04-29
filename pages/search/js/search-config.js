@@ -1,1 +1,1 @@
-const ADMIN_KEY_SEARCH=window.SUPER_ADMIN_KEY||"",SEARCH_SESSION_KEY="search_page_state",SEARCH_LIMIT=10;let selectedSearchProducts=new Set,isAdminForSearch=!1,currentResults=[],searchOffset=0,searchElements={},merchantContext=null;
+const ADMIN_KEY_SEARCH=window.SUPER_ADMIN_KEY||"",SEARCH_SESSION_KEY="search_page_state",SEARCH_LIMIT=10;let selectedSearchProducts=new Set,isAdminForSearch=!1,currentResults=[],searchOffset=0,searchElements={},merchantContext=null;console.log("%c [Search Module] - search-config.js loaded","color: blue; font-weight: bold;");
