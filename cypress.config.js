@@ -1,1 +1,0 @@
-const{defineConfig:defineConfig}=require("cypress");module.exports=defineConfig({projectId:"3y6ifk",allowCypressEnv:!1,e2e:{setupNodeEvents(on,config){}}});
