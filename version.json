@@ -1,7 +1,7 @@
 {
-  "version": "1.26.42",
+  "version": "1.26.43",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-05-01T20:32:30.391Z",
+  "lastUpdated": "2026-05-01T20:36:58.834Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -5660,8 +5660,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/pharmacyView/js/pharmacyView.js",
-      "hash": "004412d941c90633e29c013f6392b272892d31746b65614def6e9acab28718eb",
-      "size": 10478
+      "hash": "cefe5ebbcd9b042f559622c75e38498d5eed2b5ac0613bdd54d878d0b83343eb",
+      "size": 10906
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd/js/add1_config.js",
@@ -6870,7 +6870,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "48125b6cd56475ac8ea93df95d7a89d89118100928d10fef325184bdd5de019f",
+      "hash": "8269f0def43bf2f826dbc39bafc3131318cd275849cb52a3d1cd162ad6b36eb6",
       "size": 21
     }
   ]
