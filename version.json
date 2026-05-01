@@ -1,7 +1,7 @@
 {
-  "version": "1.26.39",
+  "version": "1.26.40",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-05-01T20:12:55.673Z",
+  "lastUpdated": "2026-05-01T20:16:58.851Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -5655,13 +5655,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/pharmacyView/index.html",
-      "hash": "ac296921944f21831fcabba254cb3f7281136b1d5440fb86cbb898c4ad8c611c",
-      "size": 3129
+      "hash": "c0ed8a7c4c7a84be60b06eb74ef7e1916a001ba69cf1b03a61f9c8e35705e275",
+      "size": 3219
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/pharmacyView/js/pharmacyView.js",
-      "hash": "61d94d8f3f600a023af94788d5f1e920d7a8ffb18dbaf23ebae5764334815c3f",
-      "size": 8782
+      "hash": "67ae5bb9cd73056607459e0958c1be6acab5b9c3274f050109d6f63f47bf6f56",
+      "size": 9879
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/productAdd/js/add1_config.js",
@@ -6870,7 +6870,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "92545a6e482c9f3bf2ff1367435d780b54b9ac184642759299b94582ab8c6199",
+      "hash": "c408e6122b777ef069e05bc46aa016b508ea7e342d1aeafa9d4dbbdb625534d5",
       "size": 21
     }
   ]
