@@ -1,0 +1,243 @@
+/**
+ * @file pages/merchant-portfolio/js/portfolio-search-flow.js
+ * @description Main execution and pagination flow for merchant search.
+ */
+
+window.portfolioExecuteSellerSearch = async function (user) {
+    if (!user?.user_key) return;
+
+    const searchState = window.portfolioEnsureSellerSearchState();
+    const store = window.PortfolioStore || null;
+    const isPharmacy = window.portfolioIsPharmacyUser(user);
+    const criteria = {
+        query: String(searchState.query || '').trim(),
+        mainCategory: String(searchState.mainCategory || '').trim(),
+        subCategory: String(searchState.subCategory || '').trim(),
+        sort: searchState.sort || 'default'
+    };
+
+    if (!window.portfolioHasSellerSearchCriteria(criteria)) {
+        window.portfolioResetSellerSearch();
+        window.portfolioHidePharmacyUnifiedResults();
+        return;
+    }
+
+    try {
+        window.portfolioSetSellerSearchLoading(true);
+        const PAGE_SIZE = 5;
+        searchState.limit = PAGE_SIZE;
+
+        if (isPharmacy) {
+            console.log(`[Pharmacy Search] Checking persistence for query: "${criteria.query}"`);
+            
+            // 1. Try to get from persistence
+            let results = null;
+            const cacheKeyParams = `${criteria.query}_${criteria.mainCategory}_${criteria.subCategory}_${criteria.sort}`;
+            if (window.portfolioPersistence) {
+                results = window.portfolioPersistence.get(user.user_key, 'search', cacheKeyParams, 0);
+            }
+
+            if (!results) {
+                console.log(`[Pharmacy Search] No cache. Executing Unified Search...`);
+                results = await window.portfolioSearchPharmacyUnified(user.user_key, criteria);
+                if (window.portfolioPersistence && results && results.length > 0) {
+                    window.portfolioPersistence.save(user.user_key, 'search', cacheKeyParams, 0, results);
+                }
+            }
+
+            // Hide main category cards and subcategories row
+            const grid = document.getElementById('portfolio-products-grid');
+            if (grid) {
+                const categoryCards = grid.querySelectorAll('.pharmacy-category-card');
+                categoryCards.forEach(card => card.style.display = 'none');
+                grid.style.display = 'flex'; // Ensure grid is visible for results
+            }
+            const subRow = document.getElementById('pharmacy-subcats-row');
+            if (subRow) subRow.style.display = 'none';
+
+            // New Deep Search Path for Pharmacists
+            // We pass the full results to the renderer, but the renderer must handle the 5-item limit
+            if (typeof window.portfolioRenderPharmacySearchResults === 'function') {
+                window.portfolioRenderPharmacySearchResults(results);
+            }
+            
+            // SAVE STATE for later restoration
+            window.portfolioSaveSearchStateToLocal(user.user_key);
+
+            // Note: Universal scroll restoration is now handled in portfolio-init.js
+            window.portfolioSetSellerSearchLoading(false);
+            return;
+        }
+
+        // Generic Search Path
+        let filteredProducts = null;
+        const cacheKeyParams = `${criteria.query}_${criteria.mainCategory}_${criteria.subCategory}_${criteria.sort}`;
+        if (window.portfolioPersistence) {
+            filteredProducts = window.portfolioPersistence.get(user.user_key, 'generic_search', cacheKeyParams, 0);
+        }
+
+        if (!filteredProducts) {
+            const fetchedProducts = await window.portfolioFetchSellerSearchSource(user.user_key);
+            filteredProducts = window.portfolioFilterSellerProducts(fetchedProducts, criteria);
+            if (window.portfolioPersistence && filteredProducts && filteredProducts.length > 0) {
+                window.portfolioPersistence.save(user.user_key, 'generic_search', cacheKeyParams, 0, filteredProducts);
+            }
+        }
+
+        if (store?.patchSellerSearch) {
+            store.patchSellerSearch({
+                isActive: true,
+                appliedQuery: criteria.query,
+                appliedMainCategory: criteria.mainCategory,
+                appliedSubCategory: criteria.subCategory,
+                appliedSort: criteria.sort,
+                results: filteredProducts,
+                totalMatched: filteredProducts.length,
+                visibleCount: Math.min(PAGE_SIZE, filteredProducts.length)
+            }, { source: 'merchant-search-execute' });
+        } else {
+            searchState.isActive = true;
+            searchState.appliedQuery = criteria.query;
+            searchState.appliedMainCategory = criteria.mainCategory;
+            searchState.appliedSubCategory = criteria.subCategory;
+            searchState.appliedSort = criteria.sort;
+            searchState.results = filteredProducts;
+            searchState.totalMatched = filteredProducts.length;
+            searchState.visibleCount = Math.min(PAGE_SIZE, filteredProducts.length);
+        }
+
+        window.portfolioRenderActiveSellerSearchResults();
+        window.portfolioUpdateSellerSearchButtonState();
+        
+        // SAVE STATE for later restoration
+        window.portfolioSaveSearchStateToLocal(user.user_key);
+    } catch (error) {
+        console.error('[Portfolio] Merchant search failed:', error);
+        if (typeof Swal !== 'undefined') {
+            Swal.fire({
+                title: window.portfolioSellerSearchL('port_fetch_error_title', 'خطأ', 'Error'),
+                text: window.portfolioSellerSearchL(
+                    'port_search_execute_error',
+                    'تعذر تنفيذ البحث الآن. حاول مرة أخرى.',
+                    'Unable to perform search right now. Please try again.'
+                ),
+                icon: 'error',
+                buttonsStyling: false,
+                customClass: {
+                    popup: 'swal-modern-mini-popup',
+                    title: 'swal-modern-mini-title',
+                    confirmButton: 'swal-modern-mini-confirm'
+                }
+            });
+        }
+    } finally {
+        window.portfolioSetSellerSearchLoading(false);
+    }
+};
+
+window.portfolioLoadMoreSellerSearchResults = function () {
+    const searchState = window.portfolioEnsureSellerSearchState();
+    const store = window.PortfolioStore || null;
+    if (!searchState.isActive) return false;
+
+    const nextVisibleCount = Math.min(searchState.visibleCount + searchState.limit, searchState.totalMatched);
+    if (nextVisibleCount <= searchState.visibleCount) {
+        window.portfolioSyncSearchLoadMoreButton();
+        return true;
+    }
+
+    const nextBatch = searchState.results.slice(searchState.visibleCount, nextVisibleCount);
+    if (store?.patchSellerSearch) {
+        store.patchSellerSearch({ visibleCount: nextVisibleCount }, { source: 'merchant-search-load-more' });
+    } else {
+        searchState.visibleCount = nextVisibleCount;
+    }
+
+    if (typeof window.portfolioRenderProducts === 'function') {
+        window.portfolioRenderProducts(nextBatch, true);
+    }
+
+    window.portfolioUpdateSellerSearchMeta();
+    window.portfolioSyncSearchLoadMoreButton();
+
+    // Update the persistent state with new visibleCount
+    const user = window.PortfolioStore?.getState ? window.PortfolioStore.getState().activeUser : window.portfolioState?.activeUser;
+    if (user && user.user_key) {
+        window.portfolioSaveSearchStateToLocal(user.user_key);
+    }
+
+    return true;
+};
+
+window.portfolioRestoreSearchFromLocal = async function (userKey) {
+    if (!userKey) return;
+    const saved = window.portfolioLoadSearchStateFromLocal(userKey);
+    if (!saved || !saved.isActive) return;
+
+    console.log(`[Diagnostic] Restoring Search State from Local: "${saved.appliedQuery}"`);
+    const searchState = window.portfolioEnsureSellerSearchState();
+    const store = window.PortfolioStore || null;
+
+    // 1. Populate search state in memory
+    const nextState = {
+        query: saved.query,
+        appliedQuery: saved.appliedQuery,
+        mainCategory: saved.mainCategory,
+        subCategory: saved.subCategory,
+        sort: saved.sort,
+        isActive: true,
+        visibleCount: saved.visibleCount
+    };
+
+    if (store?.patchSellerSearch) {
+        store.patchSellerSearch(nextState, { source: 'restore-from-local' });
+    } else {
+        Object.assign(searchState, nextState);
+    }
+
+    // 2. Fetch results from cache (using the same logic as Execute)
+    const criteria = {
+        query: saved.appliedQuery,
+        mainCategory: saved.mainCategory,
+        subCategory: saved.subCategory,
+        sort: saved.sort
+    };
+
+    const cacheKeyParams = `${criteria.query}_${criteria.mainCategory}_${criteria.subCategory}_${criteria.sort}`;
+    const results = window.portfolioPersistence?.get(userKey, 'search', cacheKeyParams, 0);
+
+    if (results) {
+        console.log(`[Diagnostic] Search results found in cache. Rendering...`);
+        // If it was a pharmacy unified search
+        if (typeof window.portfolioRenderPharmacySearchResults === 'function') {
+            window.portfolioRenderPharmacySearchResults(results);
+        } else {
+            // Generic fallback
+            if (store?.patchSellerSearch) {
+                store.patchSellerSearch({ results: results, totalMatched: results.length }, { source: 'restore-from-local-results' });
+            } else {
+                searchState.results = results;
+                searchState.totalMatched = results.length;
+            }
+            window.portfolioRenderActiveSellerSearchResults();
+        }
+
+        // 3. Update Displays (Input text, buttons)
+        if (typeof window.portfolioUpdateSellerSearchTriggerDisplays === 'function') {
+            const user = store?.getState ? store.getState().activeUser : window.portfolioState?.activeUser;
+            window.portfolioUpdateSellerSearchTriggerDisplays(user);
+        }
+        window.portfolioUpdateSellerSearchButtonState();
+
+        // 4. Restore Scroll Position
+        if (saved.scrollY > 0) {
+            console.log(`[Diagnostic] Restoring search scroll position: ${saved.scrollY}px`);
+            setTimeout(() => {
+                window.scrollTo({ top: saved.scrollY, behavior: 'instant' });
+            }, 150);
+        }
+    } else {
+        console.log(`[Diagnostic] Search meta found but results expired. Search will not be restored.`);
+        window.portfolioClearSearchStateFromLocal(userKey);
+    }
+};

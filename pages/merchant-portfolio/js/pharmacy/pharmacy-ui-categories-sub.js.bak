@@ -1,0 +1,202 @@
+/**
+ * @file pages/merchant-portfolio/js/pharmacy/pharmacy-ui-categories-sub.js
+ * @description Specialized logic for rendering and handling pharmacy subcategory pills.
+ */
+
+(function () {
+    const { getLanguageValue, renderFeedback, fetchJsonCached, state } = window.pharmacyUIBase;
+    const { ensureFilteredProductsContainer } = window.pharmacyUILayout;
+    const { renderIngredientCards } = window.pharmacyUIIngredients;
+
+    async function showPharmacySubCategories(category, skipClear = false) {
+        const row = document.getElementById('pharmacy-subcats-row');
+        if (!row) return;
+
+        const productsContainer = ensureFilteredProductsContainer(row);
+        if (!skipClear) productsContainer.innerHTML = '';
+        row.innerHTML = '';
+        row.style.display = 'flex';
+
+        const hiddenSub = state.hiddenSub || new Set();
+
+        (category.sub || []).forEach((subCategory) => {
+            if (hiddenSub.has(String(subCategory.id))) return;
+
+            const pill = document.createElement('button');
+            pill.type = 'button';
+            pill.className = 'pharmacy-subcategory-pill';
+            pill.dataset.subCategoryId = subCategory.id;
+            pill.textContent = getLanguageValue(subCategory.title, subCategory.name_en);
+
+            pill.addEventListener('click', async function (e) {
+                const urlParams = new URLSearchParams(window.location.search);
+                const userKey = urlParams.get('user_key');
+
+                if (e && e.isTrusted) {
+                    console.log(`[Scroll Debug] Real user clicked sub-category. Clearing search state.`);
+                    
+                    // Clear persistent search on category switch
+                    if (typeof window.portfolioClearSearchStateFromLocal === 'function') {
+                        window.portfolioClearSearchStateFromLocal(userKey);
+                    }
+
+                    if (typeof window.portfolioEnsureSellerSearchState === 'function') {
+                        const ss = window.portfolioEnsureSellerSearchState();
+                        ss.query = '';
+                        ss.mainCategory = '';
+                        ss.subCategory = '';
+                    }
+                }
+
+                // Save previous sub-category scroll before switching
+                if (window.pharmacyActiveSubCategoryId && window.portfolioPersistence) {
+                    const prevState = window.portfolioPersistence.get(userKey, 'pharmacy_sub_state', `subcat_${window.pharmacyActiveSubCategoryId}`, 0) || {};
+                    prevState.scrollY = window.scrollY;
+                    window.portfolioPersistence.save(userKey, 'pharmacy_sub_state', `subcat_${window.pharmacyActiveSubCategoryId}`, 0, prevState);
+                }
+
+                window.pharmacyActiveSubCategoryId = subCategory.id;
+                Array.from(row.children).forEach((child) => child.classList.remove('is-active'));
+                pill.classList.add('is-active');
+
+                // State Management: Load full state from localStorage
+                let subState = null;
+                const cacheKeyParams = `subcat_${subCategory.id}`;
+                if (window.portfolioPersistence) {
+                    subState = window.portfolioPersistence.get(userKey, 'pharmacy_sub_state', cacheKeyParams, 0);
+                }
+
+                let ingredients = subState?.ingredients || null;
+                let restoredVisibleCount = subState?.visibleCount || 5;
+                let restoredScrollY = subState?.scrollY || 0;
+
+                // Priority: If we are specifically restoring from a 'Back' action (pharmacyRestoringState),
+                // use those values if they are more specific to this current session interaction.
+                if (window.pharmacyRestoringState && window.pharmacyRestoringState.activeSubCategoryId == subCategory.id) {
+                    if (window.pharmacyRestoringState.visibleCount) restoredVisibleCount = window.pharmacyRestoringState.visibleCount;
+                    if (window.pharmacyRestoringState.scroll) restoredScrollY = window.pharmacyRestoringState.scroll;
+                }
+
+                if (!ingredients) {
+                    renderFeedback(productsContainer, {
+                        isLoading: true,
+                        iconClass: 'fas fa-spinner',
+                        message: window.portfolioSellerSearchL('search_loading_status', 'جاري التحميل...', 'Loading...')
+                    });
+
+                    try {
+                        let refData = {};
+                        if (subCategory.isCustom) {
+                            ingredients = await window.PharmacyAPI.getProductsBySubCategory(userKey, subCategory.id);
+                        } else {
+                            const [categoryData, subRefData] = await Promise.all([
+                                fetchJsonCached(category.dataFile),
+                                category.refFile ? fetchJsonCached(category.refFile) : Promise.resolve(null)
+                            ]);
+                            refData = subRefData || {};
+                            const subData = Array.isArray(categoryData?.sub)
+                                ? categoryData.sub.find((item) => String(item.id) === String(subCategory.id))
+                                : null;
+                            const staticIngredients = (subData?.active_ingredients || subCategory.active_ingredients || []).slice();
+
+                            let customAddedProducts = [];
+                            try {
+                                customAddedProducts = await window.PharmacyAPI.getProductsBySubCategory(userKey, subCategory.id);
+                            } catch (error) {
+                                console.warn("Failed to fetch custom override products", error);
+                            }
+                            ingredients = [...customAddedProducts, ...staticIngredients];
+                        }
+
+                        if (window.portfolioPersistence && ingredients && ingredients.length > 0) {
+                            const newState = { ingredients, visibleCount: 5, scrollY: 0 };
+                            window.portfolioPersistence.save(userKey, 'pharmacy_sub_state', cacheKeyParams, 0, newState);
+                        }
+                    } catch (error) {
+                        console.error('[Portfolio Pharmacy] Failed to load sub-category:', error);
+                        renderFeedback(productsContainer, {
+                            iconClass: 'fas fa-exclamation-circle',
+                            message: window.portfolioSellerSearchL('port_fetch_error_text', 'حدث خطأ أثناء جلب المنتجات', 'Unable to load products')
+                        });
+                        return;
+                    }
+                }
+
+                if (!ingredients || ingredients.length === 0) {
+                    productsContainer.innerHTML = '';
+                    renderFeedback(productsContainer, {
+                        iconClass: 'fas fa-box-open',
+                        message: window.portfolioSellerSearchL('no_products', 'لا توجد منتجات مضافة لهذا القسم', 'No products available')
+                    });
+                    const loadMoreBtn = document.getElementById('btn-load-more-products');
+                    if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+                    return;
+                }
+
+                // Internal Pagination Logic
+                const PAGE_SIZE = 5;
+                let visibleCount = restoredVisibleCount;
+                
+                if (window.pharmacyUIBase?.state) window.pharmacyUIBase.state.visibleCount = visibleCount;
+
+                productsContainer.innerHTML = '';
+                renderIngredientCards(productsContainer, ingredients.slice(0, visibleCount), (window.pharmacyState?.referenceData) || {});
+
+                // If we are restoring, we need to jump to the scroll position
+                if (restoredScrollY > 0) {
+                    console.log(`[Diagnostic] Restoring scroll position for sub-category ${subCategory.id}: ${restoredScrollY}px`);
+                    setTimeout(() => {
+                        window.scrollTo({ top: restoredScrollY, behavior: 'instant' });
+                    }, 100);
+                }
+
+                // Update "Load More" button for this specific sub-category
+                const loadMoreBtn = document.getElementById('btn-load-more-products');
+                if (loadMoreBtn) {
+                    loadMoreBtn.style.display = ingredients.length > visibleCount ? 'flex' : 'none';
+                    
+                    // Replace previous listeners by cloning or just overriding
+                    const newLoadMore = loadMoreBtn.cloneNode(true);
+                    loadMoreBtn.parentNode.replaceChild(newLoadMore, loadMoreBtn);
+                    
+                    newLoadMore.addEventListener('click', () => {
+                        const nextBatch = ingredients.slice(visibleCount, visibleCount + PAGE_SIZE);
+                        renderIngredientCards(productsContainer, nextBatch, (window.pharmacyState?.referenceData) || {}, true);
+                        visibleCount += nextBatch.length;
+                        if (window.pharmacyUIBase?.state) window.pharmacyUIBase.state.visibleCount = visibleCount;
+                        newLoadMore.style.display = ingredients.length > visibleCount ? 'flex' : 'none';
+                        
+                        // Update the persistent state with new visibleCount
+                        if (window.portfolioPersistence) {
+                            const currentState = window.portfolioPersistence.get(userKey, 'pharmacy_sub_state', cacheKeyParams, 0) || {};
+                            currentState.visibleCount = visibleCount;
+                            window.portfolioPersistence.save(userKey, 'pharmacy_sub_state', cacheKeyParams, 0, currentState);
+                        }
+                    });
+                }
+
+                // Handle horizontal row scroll restoration (pills list) when returning from a product page
+                if (window.pharmacyRestoringState && window.pharmacyRestoringState.activeSubCategoryId == subCategory.id) {
+                    if (window.pharmacyRestoringState.rowScroll) {
+                        console.log(`[Scroll Debug] (Categories) Restoring horizontal row scroll: ${window.pharmacyRestoringState.rowScroll}px`);
+                        row.scrollLeft = window.pharmacyRestoringState.rowScroll;
+                    }
+                }
+            });
+
+            row.appendChild(pill);
+        });
+
+        if (window.pharmacyRestoringState && window.pharmacyRestoringState.activeSubCategoryId) {
+            const targetPill = row.querySelector(`.pharmacy-subcategory-pill[data-sub-category-id="${window.pharmacyRestoringState.activeSubCategoryId}"]`);
+            if (targetPill) {
+                setTimeout(() => targetPill.click(), 10);
+            } else {
+                window.pharmacyRestoringState = null;
+            }
+        }
+    }
+
+    window.pharmacyUICategories = window.pharmacyUICategories || {};
+    window.pharmacyUICategories.showPharmacySubCategories = showPharmacySubCategories;
+})();
