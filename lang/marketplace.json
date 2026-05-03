@@ -155,10 +155,6 @@
         "ar": "بدء تهيئة نافذة البحث",
         "en": "Initializing search modal"
     },
-    "currency_egp": {
-        "ar": "جنيه",
-        "en": "EGP"
-    },
     "search_modal_input_min_length_error": {
         "ar": "يرجى إدخال 3 أحرف على الأقل للبحث بالاسم.",
         "en": "Please enter at least 3 characters to search by name."
@@ -374,5 +370,561 @@
     "port_req_validation_msg": {
         "ar": "يرجى كتابة ملاحظات أو إرفاق صورة واحدة على الأقل لوصف طلبك.",
         "en": "Please write notes or attach at least one image to describe your request."
+    },
+    "pharmacy_ctrl_tab_catalog": {
+        "ar": "الكتالوج المركزي",
+        "en": "Catalog"
+    },
+    "pharmacy_ctrl_tab_custom": {
+        "ar": "الأقسام المخصصة",
+        "en": "Custom Sections"
+    },
+    "pharmacy_ctrl_tab_products": {
+        "ar": "المنتجات والأدوية",
+        "en": "Products"
+    },
+    "pharmacy_ctrl_tab_add_product": {
+        "ar": "إضافة منتج",
+        "en": "Add Product"
+    },
+    "pharmacy_ctrl_catalog_heading": {
+        "ar": "التحكم في الكتالوج الموحد",
+        "en": "Catalog Management"
+    },
+    "pharmacy_ctrl_catalog_loader": {
+        "ar": "جاري تحميل الكتالوج...",
+        "en": "Loading catalog..."
+    },
+    "pharmacy_ctrl_custom_cat_heading": {
+        "ar": "إنشاء أقسامك الخاصة",
+        "en": "Create Your Own Sections"
+    },
+    "pharmacy_ctrl_cat_type_label": {
+        "ar": "نوع القسم",
+        "en": "Category Type"
+    },
+    "pharmacy_ctrl_cat_type_main": {
+        "ar": "قسم رئيسي (Main Category)",
+        "en": "Main Category"
+    },
+    "pharmacy_ctrl_cat_type_sub": {
+        "ar": "قسم فرعي (Sub Category)",
+        "en": "Sub Category"
+    },
+    "pharmacy_ctrl_cat_parent_label": {
+        "ar": "القسم الأب (Parent)",
+        "en": "Parent Category"
+    },
+    "pharmacy_ctrl_cat_ar_label": {
+        "ar": "اسم القسم (بالعربية)",
+        "en": "Category Name (Arabic)"
+    },
+    "pharmacy_ctrl_cat_en_label": {
+        "ar": "اسم القسم (بالإنجليزية)",
+        "en": "Category Name (English)"
+    },
+    "pharmacy_ctrl_create_cat_btn": {
+        "ar": "إنشاء القسم وحفظه",
+        "en": "Create and Save Section"
+    },
+    "pharmacy_ctrl_prev_cats_heading": {
+        "ar": "أقسامك المخصصة السابقة",
+        "en": "Your Custom Sections"
+    },
+    "pharmacy_ctrl_prev_cats_empty": {
+        "ar": "لا توجد أقسام مخصصة حتى الآن.",
+        "en": "No custom categories yet."
+    },
+    "pharmacy_ctrl_products_heading": {
+        "ar": "منتجات الصيدلية اليدوية",
+        "en": "Manual Pharmacy Products"
+    },
+    "pharmacy_ctrl_products_empty_hint": {
+        "ar": "لم تقم بإضافة أي منتجات يدوية حتى الآن. استخدم تبويب \"إضافة منتج\" للبدء.",
+        "en": "You haven't added any manual products yet. Use the 'Add Product' tab to start."
+    },
+    "pharmacy_ctrl_no_sub_categories": {
+        "ar": "لا يوجد أقسام فرعية",
+        "en": "No sub-categories"
+    },
+    "pharmacy_ctrl_choose_parent": {
+        "ar": "-- اختر القسم الأب --",
+        "en": "-- Choose Parent Category --"
+    },
+    "pharmacy_ctrl_confirm_title": {
+        "ar": "تأكيد الحفظ",
+        "en": "Confirm Changes"
+    },
+    "pharmacy_ctrl_confirm_text": {
+        "ar": "هل تريد حفظ تفضيلات الظهور الجديدة في المتجر؟",
+        "en": "Save these visibility preferences to the store?"
+    },
+    "pharmacy_ctrl_save_success": {
+        "ar": "تم الحفظ بنجاح",
+        "en": "Saved Successfully"
+    },
+    "pharmacy_ctrl_save_error": {
+        "ar": "خطأ في الحفظ",
+        "en": "Save Error"
+    },
+    "pharmacy_ctrl_manage_products": {
+        "ar": "إدارة المنتجات",
+        "en": "Manage Products"
+    },
+    "pharmacy_ctrl_product_visibility": {
+        "ar": "ظهور منتج معين",
+        "en": "Product Visibility"
+    },
+    "portfolio_merchant_image_alt": {
+        "ar": "صورة مقدم الخدمة",
+        "en": "Merchant Image"
+    },
+    "portfolio_rate_btn": {
+        "ar": "تقييم",
+        "en": "Rate"
+    },
+    "merchant_not_found": {
+        "ar": "عذرًا، لم يتم العثور على هذا التاجر.",
+        "en": "Sorry, this merchant was not found."
+    },
+    "customized": {
+        "ar": "مخصص",
+        "en": "Customized"
+    },
+    "edit_customization": {
+        "ar": "تعديل التخصيص",
+        "en": "Edit Customization"
+    },
+    "customize_product": {
+        "ar": "تخصيص المنتج",
+        "en": "Customize Product"
+    },
+    "pharmacy_add_loading_categories": {
+        "ar": "جاري تحميل الفئات...",
+        "en": "Loading Categories..."
+    },
+    "pharmacy_add_cat_section_title": {
+        "ar": "تصنيف المنتج",
+        "en": "Product Category"
+    },
+    "pharmacy_add_main_cat_label": {
+        "ar": "الفئة الرئيسية",
+        "en": "Main Category"
+    },
+    "pharmacy_add_main_cat_placeholder": {
+        "ar": "-- اختر الفئة الرئيسية --",
+        "en": "-- Choose Main Category --"
+    },
+    "pharmacy_add_sub_cat_label": {
+        "ar": "الفئة الفرعية",
+        "en": "Sub Category"
+    },
+    "pharmacy_add_sub_cat_placeholder": {
+        "ar": "-- يرجى اختيار الفئة الرئيسية أولاً --",
+        "en": "-- Please choose Main Category first --"
+    },
+    "pharmacy_add_name_ar_label": {
+        "ar": "اسم المنتج (عربي)",
+        "en": "Product Name (Arabic)"
+    },
+    "pharmacy_add_name_ar_placeholder": {
+        "ar": "مثال: بنادول للصداع",
+        "en": "Example: Panadol for headache"
+    },
+    "pharmacy_add_name_en_label": {
+        "ar": "اسم المنتج (إنجليزي)",
+        "en": "Product Name (English)"
+    },
+    "pharmacy_add_name_en_placeholder": {
+        "ar": "Example: Panadol Advance",
+        "en": "Example: Panadol Advance"
+    },
+    "pharmacy_add_price_label": {
+        "ar": "سعر المستهلك (ج.م)",
+        "en": "Consumer Price (EGP)"
+    },
+    "pharmacy_add_price_placeholder": {
+        "ar": "0.00",
+        "en": "0.00"
+    },
+    "pharmacy_add_discount_label": {
+        "ar": "نسبة الخصم % (اختياري)",
+        "en": "Discount % (Optional)"
+    },
+    "pharmacy_add_discount_placeholder": {
+        "ar": "0",
+        "en": "0"
+    },
+    "pharmacy_add_stock_label": {
+        "ar": "كمية المخزون",
+        "en": "Stock Quantity"
+    },
+    "pharmacy_add_barcode_label": {
+        "ar": "الباركود",
+        "en": "Barcode"
+    },
+    "pharmacy_add_brand_ar_label": {
+        "ar": "العلامة التجارية (عربي)",
+        "en": "Brand (Arabic)"
+    },
+    "pharmacy_add_brand_en_label": {
+        "ar": "العلامة التجارية (إنجليزي)",
+        "en": "Brand (English)"
+    },
+    "pharmacy_add_manufacturer_label": {
+        "ar": "الشركة المصنعة",
+        "en": "Manufacturer"
+    },
+    "pharmacy_add_status_label": {
+        "ar": "حالة توفر المنتج",
+        "en": "Product Status"
+    },
+    "pharmacy_add_status_avail": {
+        "ar": "متوفر ظاهرياً للبيع",
+        "en": "Available for Sale"
+    },
+    "pharmacy_add_status_hidden": {
+        "ar": "مخفي غير متاح",
+        "en": "Hidden / Not Available"
+    },
+    "pharmacy_add_form_label": {
+        "ar": "شكل الدواء",
+        "en": "Dosage Form"
+    },
+    "pharmacy_add_strength_label": {
+        "ar": "التركيز",
+        "en": "Strength"
+    },
+    "pharmacy_add_ingredients_label": {
+        "ar": "المادة الفعالة",
+        "en": "Active Ingredients"
+    },
+    "pharmacy_add_desc_label": {
+        "ar": "وصف المنتج (الاستخدام والجرعة)",
+        "en": "Product Description (Use & Dosage)"
+    },
+    "pharmacy_add_desc_placeholder": {
+        "ar": "اكتب التفاصيل الطبية والوصف هنا...",
+        "en": "Write medical details and description here..."
+    },
+    "pharmacy_add_rx_label": {
+        "ar": "هذا المنتج يحتاج إلى وصفة طبية (روشتة)",
+        "en": "This product requires a prescription (RX)"
+    },
+    "pharmacy_add_submit_btn": {
+        "ar": "حفظ وإضافة المنتج",
+        "en": "Save and Add Product"
+    },
+    "status_available": {
+        "ar": "متوفر",
+        "en": "Available"
+    },
+    "status_hidden": {
+        "ar": "مخفي",
+        "en": "Hidden"
+    },
+    "price_label": {
+        "ar": "السعر",
+        "en": "Price"
+    },
+    "currency_egp": {
+        "ar": "ج.م",
+        "en": "EGP"
+    },
+    "stock_label": {
+        "ar": "المخزون",
+        "en": "Stock"
+    },
+    "edit_btn": {
+        "ar": "تعديل",
+        "en": "Edit"
+    },
+    "delete_btn": {
+        "ar": "حذف",
+        "en": "Delete"
+    },
+    "load_error_products": {
+        "ar": "حدث خطأ أثناء تحميل المنتجات.",
+        "en": "An error occurred while loading products."
+    },
+    "delete_confirm_title": {
+        "ar": "هل أنت متأكد؟",
+        "en": "Are you sure?"
+    },
+    "delete_confirm_text": {
+        "ar": "سيتم حذف المنتج وصورته نهائياً من النظام!",
+        "en": "This product and its image will be permanently deleted!"
+    },
+    "delete_confirm_btn": {
+        "ar": "نعم، احذف الكل!",
+        "en": "Yes, delete everything!"
+    },
+    "cancel_btn": {
+        "ar": "إلغاء",
+        "en": "Cancel"
+    },
+    "deleting_loader": {
+        "ar": "جاري الحذف...",
+        "en": "Deleting..."
+    },
+    "delete_success_title": {
+        "ar": "تم الحذف!",
+        "en": "Deleted!"
+    },
+    "delete_success_text": {
+        "ar": "تم حذف المنتج وصورته بنجاح.",
+        "en": "The product and its image have been deleted successfully."
+    },
+    "delete_error_title": {
+        "ar": "فشل الحذف",
+        "en": "Delete Failed"
+    },
+    "delete_error_text": {
+        "ar": "تعذر حذف المنتج.",
+        "en": "Could not delete the product."
+    },
+    "action_blocked": {
+        "ar": "إجراء مرفوض",
+        "en": "Action Blocked"
+    },
+    "custom_cat_min_sub_required": {
+        "ar": "يجب أن يحتوي قسمك الرئيسي المخصص على قسم فرعي واحد على الأقل.",
+        "en": "Your custom main section must have at least one sub-section."
+    },
+    "delete_confirm_text_cat": {
+        "ar": "تأكيد حذف هذا القسم.",
+        "en": "Confirm deletion of this section."
+    },
+    "edit_category_title": {
+        "ar": "تعديل القسم",
+        "en": "Edit Category"
+    },
+    "update_btn": {
+        "ar": "تحديث",
+        "en": "Update"
+    },
+    "update_product_btn": {
+        "ar": "تحديث بيانات المنتج",
+        "en": "Update Product Data"
+    },
+    "product_details_saved": {
+        "ar": "تم حفظ تفاصيل المنتج بجميع البيانات بنجاح.",
+        "en": "Product details and all data have been saved successfully."
+    },
+    "view_products_btn": {
+        "ar": "مشاهدة قائمة المنتجات",
+        "en": "View Product List"
+    },
+    "required_fields_title": {
+        "ar": "حقول مطلوبة",
+        "en": "Required Fields"
+    },
+    "required_fields_text": {
+        "ar": "يرجى ملء الحقول المحددة باللون الأحمر",
+        "en": "Please fill in the fields marked in red"
+    },
+    "saving_loader": {
+        "ar": "جاري رفع وحفظ المنتج...",
+        "en": "Uploading and saving product..."
+    },
+    "save_success_add": {
+        "ar": "تمت إضافة المنتج",
+        "en": "Product Added"
+    },
+    "save_success_edit": {
+        "ar": "تمت تحديث المنتج",
+        "en": "Product Updated"
+    },
+    "port_featured_title": {
+        "ar": "منتجات مختارة",
+        "en": "Featured Products"
+    },
+    "dash_add_product": {
+        "ar": "إضافة منتج",
+        "en": "Add Product"
+    },
+    "port_filter_featured": {
+        "ar": "المميزة فقط",
+        "en": "Featured Only"
+    },
+    "port_all_products": {
+        "ar": "قائمة المنتجات",
+        "en": "All Products"
+    },
+    "pharmacy_settings_btn": {
+        "ar": "إعدادات الصيدلية",
+        "en": "Pharmacy Settings"
+    },
+    "pharmacy_barcode_label_hint": {
+        "ar": "الباركود (نصي فارغ للاسكانر)",
+        "en": "Barcode (leave empty for scanner)"
+    },
+    "pharmacy_brand_ar_placeholder": {
+        "ar": "مثال: بانادول",
+        "en": "Example: Panadol"
+    },
+    "pharmacy_brand_en_placeholder": {
+        "ar": "Example: Panadol",
+        "en": "Example: Panadol"
+    },
+    "pharmacy_manufacturer_placeholder": {
+        "ar": "مثال: GSK",
+        "en": "Example: GSK"
+    },
+    "pharmacy_ingredients_placeholder": {
+        "ar": "مثال: باراسيتامول (مفصولة بفاصلة)",
+        "en": "Example: Paracetamol (comma separated)"
+    },
+    "pharmacy_stock_placeholder": {
+        "ar": "100",
+        "en": "100"
+    },
+    "port_req_page_title": {
+        "ar": "إرسال طلب مباشر للصيدلية",
+        "en": "Send Direct Pharmacy Request"
+    },
+    "pharmacy_ctrl_page_title": {
+        "ar": "لوحة تحكم الصيدلية",
+        "en": "Pharmacy Control Panel"
+    },
+    "pharmacy_ctrl_restored_pending": {
+        "ar": "الصيدلية: تم استعادة التعديلات المعلقة من الذاكرة المحلية",
+        "en": "Pharmacy: Restored pending changes from localStorage"
+    },
+    "pharmacy_ctrl_system_source": {
+        "ar": "(من النظام)",
+        "en": "(System)"
+    },
+    "pharmacy_ctrl_load_failed": {
+        "ar": "فشل تحميل الكتالوج",
+        "en": "Failed to load catalog"
+    },
+    "pharmacy_ctrl_btn_confirm": {
+        "ar": "تأكيد الحفظ",
+        "en": "Confirm Save"
+    },
+    "pharmacy_ctrl_btn_revert": {
+        "ar": "تراجع عن الكل",
+        "en": "Revert Changes"
+    },
+    "pharmacy_ctrl_save_success_title": {
+        "ar": "تم الحفظ بنجاح",
+        "en": "Saved Successfully"
+    },
+    "pharmacy_ctrl_save_success_text": {
+        "ar": "تم تحديث تفضيلات ظهور الكتالوج بنجاح.",
+        "en": "Visibility preferences updated successfully."
+    },
+    "pharmacy_ctrl_save_error_title": {
+        "ar": "خطأ في الحفظ",
+        "en": "Save Error"
+    },
+    "pharmacy_ctrl_save_error_text": {
+        "ar": "فشل التحديث، يرجى المحاولة لاحقاً.",
+        "en": "Update failed, please try again later."
+    },
+    "pharmacy_ctrl_btn_ok": {
+        "ar": "حسناً",
+        "en": "OK"
+    },
+    "pharmacy_ctrl_btn_close": {
+        "ar": "إغلاق",
+        "en": "Close"
+    },
+    "pharmacy_ctrl_nav_save": {
+        "ar": "حفظ",
+        "en": "Save"
+    },
+    "pharmacy_ctrl_warning": {
+        "ar": "تنبيه",
+        "en": "Attention"
+    },
+    "pharmacy_ctrl_name_required": {
+        "ar": "يرجى كتابة اسم القسم بالعربية على الأقل",
+        "en": "Please enter the category name in Arabic at least"
+    },
+    "pharmacy_ctrl_creating": {
+        "ar": "جاري الإنشاء...",
+        "en": "Creating..."
+    },
+    "pharmacy_ctrl_success": {
+        "ar": "نجاح",
+        "en": "Success"
+    },
+    "pharmacy_ctrl_new_category_success": {
+        "ar": "تم تسجيل القسم الجديد بنجاح.",
+        "en": "New category registered successfully."
+    },
+    "pharmacy_ctrl_error": {
+        "ar": "خطأ",
+        "en": "Error"
+    },
+    "pharmacy_ctrl_add_failed": {
+        "ar": "تعذر إضافة القسم في السيرفر",
+        "en": "Failed to add category on server"
+    },
+    "pharmacy_ctrl_create_btn": {
+        "ar": "إنشاء القسم وحفظه",
+        "en": "Create and Save"
+    },
+    "pharmacy_ctrl_none": {
+        "ar": "بدون",
+        "en": "None"
+    },
+    "pharmacy_ctrl_images_label": {
+        "ar": "الصور:",
+        "en": "Images:"
+    },
+    "pharmacy_ctrl_loading_products": {
+        "ar": "جاري تحميل المنتجات...",
+        "en": "Loading products..."
+    },
+    "pharmacy_ctrl_no_products_found": {
+        "ar": "لا يوجد منتجات في هذه الفئة",
+        "en": "No products in this category"
+    },
+    "pharmacy_ctrl_draft_badge": {
+        "ar": "مسودة",
+        "en": "Draft"
+    },
+    "pharmacy_ctrl_catalog_badge": {
+        "ar": "كتالوج",
+        "en": "Catalog"
+    },
+    "pharmacy_ctrl_no_custom_cats": {
+        "ar": "لا توجد أقسام مخصصة حتى الآن.",
+        "en": "No custom categories yet."
+    },
+    "pharmacy_ctrl_main_drafted_msg": {
+        "ar": "تم تجهيز القسم الرئيسي. أضف قسماً فرعياً الآن لحفظ القسمين معاً.",
+        "en": "Main drafted. Now add a sub-category to save both."
+    },
+    "pharmacy_ctrl_std_sections_group": {
+        "ar": "أقسام الكتالوج الأساسية",
+        "en": "Standard Sections"
+    },
+    "pharmacy_ctrl_my_custom_sections_group": {
+        "ar": "أقسامي المخصصة",
+        "en": "My Custom Sections"
+    },
+    "pharmacy_ctrl_no_sub_sections_yet": {
+        "ar": "لا يوجد أقسام فرعية بعد",
+        "en": "No sub-sections yet"
+    },
+    "pharmacy_ctrl_name_ar_placeholder": {
+        "ar": "الاسم بالعربية",
+        "en": "Arabic Name"
+    },
+    "pharmacy_ctrl_name_en_placeholder": {
+        "ar": "الاسم بالإنجليزية",
+        "en": "English Name"
+    },
+    "pharmacy_ctrl_cat_ar_placeholder": {
+        "ar": "مثال: أجهزة القياس",
+        "en": "Example: Medical Devices"
+    },
+    "pharmacy_ctrl_cat_en_placeholder": {
+        "ar": "Example: Medical Devices",
+        "en": "Example: Medical Devices"
     }
 }
