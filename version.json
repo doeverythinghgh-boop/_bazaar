@@ -1,7 +1,7 @@
 {
-  "version": "1.26.50",
+  "version": "1.26.51",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-05-03T07:13:00.003Z",
+  "lastUpdated": "2026-05-03T07:21:14.044Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -5445,13 +5445,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/add-product/add-product-controller.js",
-      "hash": "49ce3d9dc7531cdaa2ec8dd3667f0a7ee4f22895594aadc69c1f9f1c8836d0e8",
-      "size": 1131
+      "hash": "4655536f55dfce26100f13aca20caabfaaaf447f03d2ba397704d5f8935e448a",
+      "size": 1255
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/add-product/add-product-data-api.js",
-      "hash": "50bb78b5f70e459a0839e7605b07a3a3952bab1d2372eca562c268cab6a62ac3",
-      "size": 2313
+      "hash": "55dec718cc46da3bdbba5ebe503755e9f20cd67362ce5842eb35615f23c6d7ba",
+      "size": 2451
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/add-product/add-product-data-logic.js",
@@ -5460,13 +5460,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/add-product/add-product-events.js",
-      "hash": "daf2122c98d3f722119e9082fb92929b2bcf272d64dff92b23c7c998c4adc0ba",
-      "size": 2167
+      "hash": "d39a4c12e72f03a39004fd4260a6f6ca42afa22d0b7134b6ed2df0f8354792ce",
+      "size": 2308
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/add-product/add-product-form-handler.js",
-      "hash": "917f312df0a0fbf7aa95d66d8ff0431418b16d47e3f27b6a40daa676b87267dd",
-      "size": 14684
+      "hash": "15bf3aa71be77378ccf57340412ca05e4fb7eac921d3285f14b2dc46d16c595a",
+      "size": 14899
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/add-product/add-product-helpers.js",
@@ -5495,8 +5495,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-custom-cat-sync.js",
-      "hash": "489898a93b22e2794885829fd1d9c45efc7353e716e4643da986f87c9cf9eeed",
-      "size": 7805
+      "hash": "28dba6c2fee00326e90087e30f74fa5e759cc77c8b8e6595b58163894101fa54",
+      "size": 7861
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-custom-cat-ui.js",
@@ -5510,8 +5510,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-merchant-products-ui.js",
-      "hash": "0c75aa0c04524ec1427c42c2bb8d45976d32b07dcb4e3c92487f4a973b6fa58e",
-      "size": 7084
+      "hash": "3ea53d6dd8f1bc9c6e46b79d9e717c1fc7c90ecfb210d8407a70b4f95958d062",
+      "size": 7220
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/pharmacy-product-manager.js.bak",
@@ -5580,8 +5580,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/product-manager/manager-ui-templates.js",
-      "hash": "5a1d0224a8ee76196cde50b3f43c86ca046dbf4307b92a9aad0260f87536977f",
-      "size": 2730
+      "hash": "6593c91205545e2ade528aceec18c8524868faefff75b998d6303a24f897473c",
+      "size": 2754
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy-control-panel/product-manager/manager-utils.js",
@@ -7045,7 +7045,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "8713103f500ec110ace1ca7d1ea6358d363a80f43145e84e526344c4ccb49830",
+      "hash": "3982ce1fafa63bf9ed710496245261d9f71163ab57f9ffafeeb24a455dd0e375",
       "size": 21
     }
   ]
