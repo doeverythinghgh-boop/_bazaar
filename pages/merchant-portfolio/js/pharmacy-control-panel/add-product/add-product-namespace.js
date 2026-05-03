@@ -1,1 +1,1 @@
-window.PharmacyAddModule={state:{userKey:null,categories:[],currentEditingProductId:null,oldImageName:null,pendingPrefill:null},dom:{},utils:{},ui:{},data:{},events:{}},void console.log("%c[Pharmacy-Add-Module] 🟢 Namespace and State initialized.","color: #059669; font-weight: bold;");
+window.PharmacyAddModule={state:{userKey:null,categories:[],currentEditingProductId:null,oldImageName:null,pendingPrefill:null},dom:{},utils:{},ui:{},data:{},events:{}},void console.log("[Pharmacy-Add-Module] Namespace and State initialized.");

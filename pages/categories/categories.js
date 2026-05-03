@@ -1,1 +1,1 @@
-console.log("📂 [Categories] Module Loaded.");
+console.log(" [Categories] Module Loaded.");

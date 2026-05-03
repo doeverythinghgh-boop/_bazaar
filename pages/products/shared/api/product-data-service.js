@@ -3,6 +3,12 @@
  * @description API connection layer for products and product ratings.
  * Depends on the global `apiFetch` and related shared utilities.
  */
+/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ */
+
 
 function productApiDebug(event, payload, level = 'log') {
     if (window.ProductDebugConsole && typeof window.ProductDebugConsole[level] === 'function') {

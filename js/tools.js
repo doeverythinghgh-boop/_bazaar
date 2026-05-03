@@ -1,1 +1,1 @@
-!function(){"use strict";console.log("🛠️ [Tools] Loaded and ready.")}();
+!function(){"use strict";console.log("[Tools] Loaded and ready.")}();
