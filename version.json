@@ -1,7 +1,7 @@
 {
-  "version": "1.26.55",
+  "version": "1.26.56",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-05-03T08:11:51.190Z",
+  "lastUpdated": "2026-05-03T08:28:47.551Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -105,8 +105,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/assets/libs/firebase/firebase-app-8.10.1.js",
-      "hash": "9d63f6697e3e5db4e3594c331dd86cf58e40f03ae6472eb5db64a945f8225832",
-      "size": 21986
+      "hash": "30ad1bb91e1df2c38b31ae3b67d2a53aebfbe1b8b2a0af09bc8dc42708afbf13",
+      "size": 22064
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/assets/libs/firebase/firebase-messaging-8.10.1.js",
@@ -120,8 +120,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/assets/libs/sweetalert2/sweetalert2.all.min.js",
-      "hash": "582d697475ccb9aa65bc0eb601af85929af8488af7c5bec42d689a7c50eb7aa4",
-      "size": 72411
+      "hash": "39211798d12430669162b3b76c29c981c2980c34c4b4f8bbba09641229448b31",
+      "size": 78807
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/favicon.ico",
@@ -7045,7 +7045,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "a1999899da1b8626ecd8f978f6539a5bae04a127a46de9e583b4890bd141dd0f",
+      "hash": "ee7d4b9c55a18ebca93edbf304c5619a85c677b9105d562123056f794edfd9ef",
       "size": 21
     }
   ]
