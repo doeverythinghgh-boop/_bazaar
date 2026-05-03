@@ -1,0 +1,1 @@
+void(window.__DevMonitorInternal.getEnvironmentSnapshot=function(){return{href:window.location.href,userAgent:navigator.userAgent,viewport:`${window.innerWidth}x${window.innerHeight}`,language:navigator.language||"",online:navigator.onLine,readyState:document.readyState}});

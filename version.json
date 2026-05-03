@@ -1,7 +1,7 @@
 {
-  "version": "1.26.59",
+  "version": "1.26.60",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-05-03T09:07:23.485Z",
+  "lastUpdated": "2026-05-03T11:35:25.495Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -3570,8 +3570,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/app-behavior.js",
-      "hash": "e8720c442b644ec30f48a1e13b2f8bee01ec7747b71c330b9c8a5335daf01264",
-      "size": 579
+      "hash": "84998c791ff21b607cbea23e9063ba6b9d5a8ff55cfa89e411801add612289bd",
+      "size": 157
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/app-config.js",
@@ -3679,39 +3679,164 @@
       "size": 878
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/core/breadcrumbs.js",
-      "hash": "43a4169cc67861fb9f7fc5f87f1c2c8a2f74398cd0ccea25ecd50af0d00e9b0c",
-      "size": 637
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/breadcrumbs/api.js",
+      "hash": "fe7e2b50eb82eff82aea64e6170cc2ba184062b075435120fb3520729546d76a",
+      "size": 394
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/core/diagnostics.js",
-      "hash": "895b8b61b1cfa3dfdb9f8ba30b8ec23cc69242194f61870c936f7c5bac24f373",
-      "size": 2020
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/breadcrumbs/dom.js",
+      "hash": "73dbad351a2cdeef77c1cbf1d92294806b49ec8fba4802ab18fdfe2909b9caf8",
+      "size": 926
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/core/interceptors.js",
-      "hash": "ae5348ef4ef36d9698d3f71f41e1776176eb70ad3464715da46605be8b357fdb",
-      "size": 2329
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/breadcrumbs/history.js",
+      "hash": "691a7927ec248cb925adc2060a20afe7a9428a239d200f581e317b24b5760336",
+      "size": 997
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/core/state.js",
-      "hash": "1ff05fb4dbb0476de7c954acf82405ae1358e4596f573e82c7726e146ecc1a76",
-      "size": 1490
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/config/defaults.js",
+      "hash": "c4073e2fb560589259089f4b93e8818bfc3765b92f230a32cd34b3f13ca19aa6",
+      "size": 618
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/config/manager.js",
+      "hash": "9f0ea7046178ee972cea4ea73f549e6084b9a85d13d0e838c439df01ade06a68",
+      "size": 587
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/diagnostics/api.js",
+      "hash": "c8333c553c28c6172147c43d086132d015e80a27cf5f7a4d860e229fda029983",
+      "size": 340
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/diagnostics/memory.js",
+      "hash": "f20e9c0b7ed7ed96502ad864f35aa3468d6af3ccdc79a24f1d948cca0bf57344",
+      "size": 540
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/diagnostics/mutations.js",
+      "hash": "1f4a66b5c22baf6e385b4755d1f3aa0f4c1c6434eda1fde3234292e2429f29d1",
+      "size": 652
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/diagnostics/others.js",
+      "hash": "116f337c41b11397fdf2454fdbc92c925652700c0333dc79ad3c09a8a9695444",
+      "size": 1794
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/diagnostics/performance.js",
+      "hash": "de342d0040a646de2f9dba83b1814c71517dfa305fcd9de07bbe3ff1fc9ba01c",
+      "size": 1184
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/index.js",
-      "hash": "64605d8856946c05570bb0d315a24432e7723165c5caf9abdfadc880637c00d9",
-      "size": 713
+      "hash": "043aee20de46214a360e31439b6e556a5b9600a6a26634fc1f052507d4a571e4",
+      "size": 2027
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/ui/banner.js",
-      "hash": "478986722b19e5b6aacb1a0927306f63ed6662c38c8e15a0a4d809c03d0c2c8c",
-      "size": 4180
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/interceptors/api.js",
+      "hash": "1772855f096d9963ac0980c7dc1366f1f742cfdc84a5166338f2c5c2b6be45df",
+      "size": 363
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/interceptors/console.js",
+      "hash": "d6a4e82517ed0af1c9efdca1a8938c279ed51e31761f13480eba392821b8d185",
+      "size": 1906
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/interceptors/events.js",
+      "hash": "9cb650582c78b2261a4fc4926d7d853446fd35a3268dd7564ef435136362e8e7",
+      "size": 3210
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/interceptors/network.js",
+      "hash": "4dbc8ff1c5289eb448e70af6cbfccbcde677b5d2f6d1fe28aac3bd012f51e767",
+      "size": 2445
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/interceptors/runtime.js",
+      "hash": "4398040ebefd2bf9c97beca729d82b323ac220b31b7de5989953b203bf0fcd79",
+      "size": 578
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/loader.js",
+      "hash": "f910043aaf6bcc7f19302ec7cc5f46aa4992cb6083df16b9859f43ac8a351656",
+      "size": 1789
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/state/actions.js",
+      "hash": "c3d9e508aaf555afbbc648c5c957d5f7e2f4b2c3423699c34195cd0a8f713fa5",
+      "size": 2716
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/state/api.js",
+      "hash": "4e5d749ab4924766769580baeef8ac4a6e23b837aa8e4b1d0b42d171e44d38d2",
+      "size": 1200
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/state/core.js",
+      "hash": "00f9ed5798d9a2511a15edb75faf21956b1a3d94f693056d1388da147881db69",
+      "size": 463
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/state/filters.js",
+      "hash": "80e88ad2878aa0646515ca85cd41a9c70f598822e892948c335bb316810b809c",
+      "size": 1345
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/state/persistence.js",
+      "hash": "124df84f74be9c787ac09640ae7e9c0edffd6fd1027d6415b004760ecd204fc5",
+      "size": 1362
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/state/reports.js",
+      "hash": "e472e2b5a99de112c18dd4b68482b74f97229cb1e16226000721eea84be0f97f",
+      "size": 1337
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/ui/api.js",
+      "hash": "8a430aa4b1c82c8b0863be0835d0cf70facfa38310471a5c3ef97cffa3db2315",
+      "size": 829
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/ui/banner-core.js",
+      "hash": "4b7183ef470cfc3f747faa030dcec2e1e2ea38da4e37cfa9ccd73587e1c42aa0",
+      "size": 1835
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/ui/banner-events.js",
+      "hash": "bf1c631913e6c62908c1d5903eb05852517d27c0e5b06aa3218cb70faca61e2f",
+      "size": 2332
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/ui/banner-render.js",
+      "hash": "5e15e0c562e1f2700f79219717526814917aa07930afe89e821b227a9e75012b",
+      "size": 7027
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/ui/styles.js",
-      "hash": "44bc07ca4efc42147d2c48b0c2a97492e754cc3f9e7352f9fda380d1a68b965b",
-      "size": 3788
+      "hash": "04567a94d0f6809e0cf3334983030b853ae039c1d9abe937b24fc8d092abcde2",
+      "size": 9252
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/utils/dom.js",
+      "hash": "ab64196b1260258430f3324beee64af759fed3cb2574c3bc93ba5a07318c1d32",
+      "size": 860
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/utils/env.js",
+      "hash": "efe14f0253abe95a53fa182b1714d7fa040cf2dc2419836614ca3f7ff0dfe3ae",
+      "size": 274
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/utils/error-parser.js",
+      "hash": "afc1f8a0cb7cc3819f9d9af3d49bd746533b6bf173e85047a88c9b7f84d21047",
+      "size": 2044
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/utils/sanitizer.js",
+      "hash": "4dc5a65eb3037d6cc969a275a4dc22063f3f95c0916a76c453f17fbdcfc256d8",
+      "size": 1242
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core-loader-bootstrap.js",
@@ -3725,8 +3850,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core-loader-resources.js",
-      "hash": "0453f75a78f6e665078e372420866078782aa3a6b1ad752f0bfffbdeb395f42d",
-      "size": 8456
+      "hash": "4e5dea119dbc388efeefea971d1721f840e63ea1c0d3ee56cef46ba53ddaa844",
+      "size": 8528
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/db/usersDB.js",
@@ -7045,7 +7170,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "d37e95bf1149f6ebff50a651181d82100c88f1aa880dd2d171db3b70c27a5569",
+      "hash": "81e5bb42959d6e5fab69480479e16d044bda577d25761405fa4cb5d22b759be7",
       "size": 21
     }
   ]

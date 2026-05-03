@@ -1,0 +1,1 @@
+!function(){let unhooks=[];window.DevMonitorDiagnostics={setup(){if(unhooks.length)return;const internal=window.__DevMonitorInternal;unhooks.push(internal.setupPerf()),unhooks.push(internal.setupMemory()),unhooks.push(internal.setupMutations()),unhooks.push(internal.setupOthers())},teardown(){unhooks.forEach(fn=>fn&&fn()),unhooks=[]}}}();
