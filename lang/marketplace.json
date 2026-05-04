@@ -227,6 +227,10 @@
         "ar": "مسح الكل",
         "en": "Clear All"
     },
+    "port_search_clear": {
+        "ar": "مسح",
+        "en": "Clear"
+    },
     "port_search_ready": {
         "ar": "جاهز للبحث",
         "en": "Ready to search"
@@ -316,8 +320,8 @@
         "en": "Send Request"
     },
     "port_login_required_request": {
-        "ar": "يجب تسجيل الدخول لتتمكن من إرسال طلب صيدلية مباشر.",
-        "en": "You must be logged in to send a direct pharmacy request."
+        "ar": "يجب تسجيل الدخول لتتمكن من إرسال طلب مباشر.",
+        "en": "You must be logged in to send a direct request."
     },
     "port_req_loading": {
         "ar": "جاري التحميل...",
@@ -328,12 +332,12 @@
         "en": "Verified Pharmacy"
     },
     "port_req_textarea_placeholder": {
-        "ar": "أضف ملاحظاتك أو اكتب اسم الدواء المطلوب هنا... (يمكنك استخدام الميكروفون للتحدث)",
-        "en": "Add your notes or write the medicine name here... (you can use the microphone to speak)"
+        "ar": "أضف ملاحظاتك أو تفاصيل طلبك هنا... (يمكنك استخدام الميكروفون للتحدث)",
+        "en": "Add your notes or request details here... (you can use the microphone to speak)"
     },
     "port_req_attach_subtitle": {
-        "ar": "أرفق صور (روشتة، علبة دواء، إلخ)",
-        "en": "Attach images (Prescription, medicine box, etc.)"
+        "ar": "أرفق صوراً توضيحية لطلبك (إن وجدت)",
+        "en": "Attach illustrative images for your request (if any)"
     },
     "port_req_upload_hint": {
         "ar": "اسحب الصور هنا أو اضغط للاختيار",
@@ -352,8 +356,8 @@
         "en": "Error"
     },
     "port_fetch_error_text": {
-        "ar": "لم يتم العثور على بيانات الصيدلية.",
-        "en": "Pharmacy data not found."
+        "ar": "لم يتم العثور على بيانات التاجر.",
+        "en": "Merchant data not found."
     },
     "port_req_submit_loading_title": {
         "ar": "جاري إرسال طلبك...",
@@ -368,8 +372,8 @@
         "en": "Sent successfully"
     },
     "port_req_submit_success_text": {
-        "ar": "سيصل طلبك للصيدلي وسيتواصل معك في أقرب وقت.",
-        "en": "Your request will reach the pharmacist and they will contact you soon."
+        "ar": "سيصل طلبك للتاجر وسيتواصل معك في أقرب وقت.",
+        "en": "Your request will reach the merchant and they will contact you soon."
     },
     "port_req_submit_back_btn": {
         "ar": "العودة للمتجر",
@@ -788,8 +792,8 @@
         "en": "100"
     },
     "port_req_page_title": {
-        "ar": "إرسال طلب مباشر للصيدلية",
-        "en": "Send Direct Pharmacy Request"
+        "ar": "إرسال طلب مباشر",
+        "en": "Send Direct Request"
     },
     "pharmacy_ctrl_page_title": {
         "ar": "لوحة تحكم الصيدلية",
@@ -934,5 +938,13 @@
     "pharmacy_ctrl_cat_en_placeholder": {
         "ar": "Example: Medical Devices",
         "en": "Example: Medical Devices"
+    },
+    "pharmacy_view_meta_subcategory": {
+        "ar": "التصنيف الفرعي",
+        "en": "Sub-category"
+    },
+    "pharmacy_view_meta_category": {
+        "ar": "التصنيف الرئيسي",
+        "en": "Main Category"
     }
 }
