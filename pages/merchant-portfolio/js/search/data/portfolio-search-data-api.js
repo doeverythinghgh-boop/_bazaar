@@ -1,0 +1,1 @@
+window.portfolioFetchSellerSearchSource=async function(userKey){if(window.portfolioPageController?.fetchAllProductsForUser)return await window.portfolioPageController.fetchAllProductsForUser(userKey);const params=new URLSearchParams;return params.append("user_key",userKey),params.append("limit","100"),await apiFetch(`/api/products?${params.toString()}`)};
