@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "version": "1.27.13",
   "notes": "Fix Image Compression (Permission Locking)",
   "lastUpdated": "2026-05-05T03:53:16.976Z",
+=======
+  "version": "1.27.11",
+  "notes": "Fix Image Compression (Permission Locking)",
+  "lastUpdated": "2026-05-05T03:06:46.424Z",
+>>>>>>> c700f30d (Auto-build (Minified): 2026-05-05T03:06:59.413Z)
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
@@ -4430,8 +4436,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/products.js",
+<<<<<<< HEAD
       "hash": "7e91b77be82066e8e5b425c92ce3ac386026175ca1bba43152ab871d6f4a714e",
       "size": 9422
+=======
+      "hash": "2862ff397c85c5bec1a2027ef0971e8ca38b04588af108022bad03e11018706a",
+      "size": 9461
+>>>>>>> c700f30d (Auto-build (Minified): 2026-05-05T03:06:59.413Z)
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/roles.css",
@@ -5190,8 +5201,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-contact-actions.css",
+<<<<<<< HEAD
       "hash": "22f95b8c84a329c5a191758e2563a38b0bc1d78689a97ebdf81163121b0ef9ac",
       "size": 3667
+=======
+      "hash": "86230db83112c0fc1df03984eb012a66edc143f0924035914433d0014ea579f7",
+      "size": 2748
+>>>>>>> c700f30d (Auto-build (Minified): 2026-05-05T03:06:59.413Z)
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/css/portfolio-featured.css",
@@ -5820,7 +5836,11 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/renderers/portfolio-render-header.js",
+<<<<<<< HEAD
       "hash": "d6c019eab902deaa2cf4858708a7e0dc0a7d340a6586bdaee29254b458452bb9",
+=======
+      "hash": "81d8d2304b4cb6574656de130f719b3ce583e3bae952e528548af9467311fa79",
+>>>>>>> c700f30d (Auto-build (Minified): 2026-05-05T03:06:59.413Z)
       "size": 6100
     },
     {
@@ -7320,7 +7340,11 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
+<<<<<<< HEAD
       "hash": "aba71cc2728d96e3991b75362e3b8bafe0ca858e0e02e15d035605703f28b39a",
+=======
+      "hash": "e219c37cf748c5c828041584b04aed2bb932cf0876ccc09465de1b241596154b",
+>>>>>>> c700f30d (Auto-build (Minified): 2026-05-05T03:06:59.413Z)
       "size": 21
     }
   ]
