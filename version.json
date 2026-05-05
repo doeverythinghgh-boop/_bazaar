@@ -1,13 +1,8 @@
 {
-  "version": "1.28.1",
+  "version": "1.28.2",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-05-05T19:10:04.203Z",
+  "lastUpdated": "2026-05-05T19:18:25.421Z",
   "files": [
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/.gitignore",
-      "hash": "2d5f8f6e090ba336204b3ba53f3213c4a93ab9ace49d77df6c5c6896366c9eb1",
-      "size": 295
-    },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
       "hash": "00c9f76d86b6b7275dba6d3e2db3cbe60c3e0c1a04cd613b6924a029f4411fa2",
@@ -7274,48 +7269,8 @@
       "size": 1091
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_backups_search_modal/merchant-portfolio.html",
-      "hash": "2a066a45c67732ea2ed1ba25594c07562e69f87598e1057c18e73a89ed785c84",
-      "size": 21658
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_backups_search_modal/portfolio-search-controls.js",
-      "hash": "5e289508c07197d5de56d8eb0d06b353cbabc0989e8a7f579ed79289b4592d3b",
-      "size": 5580
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_backups_search_modal/portfolio-search-flow-core.js",
-      "hash": "ba048eb9376efab171bb40fc568599438e5b099e7e43b0c7b114f67c8a90026b",
-      "size": 6502
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_backups_search_modal/portfolio-search-render.js",
-      "hash": "e1852f6d88178032d8010a466bda2962a01532546b866ee8f1011fbc36165bdd",
-      "size": 6016
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_backups_search_modal/portfolio-search-setup.js",
-      "hash": "949ae8ef60dda80a39e2965e23cd16fe64cd7b384977483ce49e21bde297b05f",
-      "size": 5242
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_backups_search_modal/portfolio-search-ui-elements.js",
-      "hash": "107daa8afb55daf40772934c2e2030bea2aa87ff932c1af2b99c547b97bd3ccc",
-      "size": 1215
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_headers",
-      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "size": 0
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/_redirects",
-      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "size": 0
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "8042c718f3e9bfa4d002df6faf1135d5afbeec73d801b87c4561e922c6ea81c7",
+      "hash": "10e17c09f361d0c4eb955cc2ef70a59c525a9231abd336bd6a7983933479e731",
       "size": 20
     }
   ]
