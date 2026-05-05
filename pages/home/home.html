@@ -57,6 +57,47 @@
           const versionResponse = await fetch(vUrl);
           if (versionResponse.ok) {
             const versionData = await versionResponse.json();
+            const versionParts = versionData.version.split('.');
+            const versionMinor = parseInt(versionParts[1] ?? '0', 10);
+            const appVersion = parseInt(window.AppBehavior?.appVersion ?? '0', 10);
+            console.log("[Home] Version minor :", versionMinor);
+            console.log("[Home] AppBehavior.appVersion:", appVersion);
+
+            // Force update check: if appVersion > versionMinor, show blocking modal
+            if (appVersion > versionMinor) {
+              console.log("[Home] Force update triggered: appVersion(" + appVersion + ") > versionMinor(" + versionMinor + ")");
+              const lang = document.documentElement.lang === 'en' ? 'en' : 'ar';
+              const translations = window._translations || {};
+              const t = translations['force_update_app'] || {};
+              const title   = (t.title   && t.title[lang])   || (lang === 'ar' ? 'تحديث مطلوب'                                       : 'Update Required');
+              const text    = (t.text    && t.text[lang])    || (lang === 'ar' ? 'يجب تحميل النسخة الأحدث من التطبيق للاستمرار.' : 'You must download the latest version to continue.');
+              const confirm = (t.confirm_btn && t.confirm_btn[lang]) || (lang === 'ar' ? 'تحديث الآن' : 'Update Now');
+
+              await Swal.fire({
+                title: title,
+                text: text,
+                confirmButtonText: confirm,
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: true,
+                showCancelButton: false,
+                customClass: {
+                  popup: 'swal-modern-mini-popup',
+                  title: 'swal-modern-mini-title',
+                  htmlContainer: 'swal-modern-mini-text',
+                  confirmButton: 'swal-modern-mini-confirm'
+                }
+              });
+
+              // Execute wipeAndRestartApp when user confirms
+              if (window.AndroidConfig && typeof window.AndroidConfig.wipeAndRestartApp === 'function') {
+                window.AndroidConfig.wipeAndRestartApp();
+              } else {
+                console.warn("[Home] AndroidConfig.wipeAndRestartApp not available on this platform.");
+              }
+              return; // Stop further init after forcing update
+            }
+
             const footer = document.createElement('div');
             footer.id = 'app-footer';
             footer.style.cssText = 'text-align: center; padding: 10px; font-size: 0.7rem; color: #888; width: 100%; border-top: 1px solid #eee; margin-top: 20px; background-color: #fafafa; font-family: sans-serif;';
@@ -66,6 +107,7 @@
         } catch (vErr) {
           console.warn("[Home] Footer error:", vErr);
         }
+
 
         console.log(`[Home] Full content ready in ${(performance.now() - initStartTime).toFixed(0)}ms.`);
 
