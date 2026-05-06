@@ -73,29 +73,37 @@
               const text    = (t.text    && t.text[lang])    || (lang === 'ar' ? 'يجب تحميل النسخة الأحدث من التطبيق للاستمرار.' : 'You must download the latest version to continue.');
               const confirm = (t.confirm_btn && t.confirm_btn[lang]) || (lang === 'ar' ? 'تحديث الآن' : 'Update Now');
 
-              await Swal.fire({
+              const cancel  = (t.cancel_btn  && t.cancel_btn[lang])  || (lang === 'ar' ? 'لاحقاً' : 'Later');
+
+              const result = await Swal.fire({
                 title: title,
                 text: text,
                 confirmButtonText: confirm,
-                allowOutsideClick: false,
-                allowEscapeKey: false,
+                cancelButtonText: cancel,
+                allowOutsideClick: true,
+                allowEscapeKey: true,
                 allowEnterKey: true,
-                showCancelButton: false,
+                showCancelButton: true,
                 customClass: {
                   popup: 'swal-modern-mini-popup',
                   title: 'swal-modern-mini-title',
                   htmlContainer: 'swal-modern-mini-text',
-                  confirmButton: 'swal-modern-mini-confirm'
+                  confirmButton: 'swal-modern-mini-confirm',
+                  cancelButton: 'swal-modern-mini-cancel'
                 }
               });
 
-              // Execute wipeAndRestartApp when user confirms
-              if (window.AndroidConfig && typeof window.AndroidConfig.wipeAndRestartApp === 'function') {
-                window.AndroidConfig.wipeAndRestartApp();
+              if (result.isConfirmed) {
+                console.log("[Home][Update] User confirmed update. Initiating wipeAndRestartApp.");
+                if (window.AndroidConfig && typeof window.AndroidConfig.wipeAndRestartApp === 'function') {
+                  window.AndroidConfig.wipeAndRestartApp();
+                } else {
+                  console.warn("[Home] AndroidConfig.wipeAndRestartApp not available on this platform.");
+                }
+                return; // Stop further init only if update starts
               } else {
-                console.warn("[Home] AndroidConfig.wipeAndRestartApp not available on this platform.");
+                console.log("[Home][Update] Update modal dismissed or cancelled. Continuing app load.");
               }
-              return; // Stop further init after forcing update
             }
 
             const footer = document.createElement('div');
