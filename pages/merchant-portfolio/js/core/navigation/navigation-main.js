@@ -1,0 +1,1 @@
+void(void 0===window.portfolioNavigationRestorationComplete&&(window.portfolioNavigationRestorationComplete=!0));
