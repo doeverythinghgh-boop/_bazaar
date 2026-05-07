@@ -1,1 +1,1 @@
-window.AppBehavior={appVersion:"28",isUnderMaintenance:!0,disableAdminFeatures:!1,enableSecurityShield:!1,enablePWA:!1,enableAddProductAppPrice:!1,enableDevErrorMonitor:!0};
+window.AppBehavior={appVersion:"28",isUnderMaintenance:!1,disableAdminFeatures:!1,enableSecurityShield:!1,enablePWA:!1,enableAddProductAppPrice:!1,enableDevErrorMonitor:!0};

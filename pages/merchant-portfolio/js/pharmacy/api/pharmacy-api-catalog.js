@@ -71,7 +71,7 @@ window.PharmacyAPI.getCatalogContext = async function (userKey, options = {}) {
     }
 
     console.log(`[Diagnostic] Pharmacy catalog context: CACHE MISS for ${cacheKey}. Fetching parallel components...`);
-    
+
     const t1 = performance.now();
     const [catalogSource, customCategories, preferences] = await Promise.all([
         this.getCatalogSource().then(r => { console.log(`[Diagnostic] - CatalogSource loaded in ${(performance.now() - t1).toFixed(0)}ms`); return r; }),
