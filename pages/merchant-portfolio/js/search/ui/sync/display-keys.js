@@ -1,0 +1,1 @@
+window.portfolioResetSellerSearchDisplayKey=function(element,key,fallbackAr,fallbackEn){element&&(element.dataset.lkey=key,element.textContent=window.portfolioSellerSearchL(key,fallbackAr,fallbackEn))};
