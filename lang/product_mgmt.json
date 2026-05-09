@@ -530,5 +530,12 @@
     "port_delete_confirm_text": {
         "ar": "هل تريد حقاً حذف المنتج: {name}؟",
         "en": "Do you really want to delete product: {name}?"
-    }
+    },
+    "mcp_kicker": { "ar": "لوحة التحكم", "en": "Control Panel" },
+    "mcp_title": { "ar": "إدارة المنتجات", "en": "Product Management" },
+    "mcp_subtitle": { "ar": "اختر الفئة التي تريد إدارتها أو اعرض المنتجات المميزة مباشرة.", "en": "Select a category to manage or view featured products directly." },
+    "mcp_add_product": { "ar": "إضافة منتج", "en": "Add Product" },
+    "mcp_featured_filter": { "ar": "تصفية المميزة", "en": "Filter Featured" },
+    "mcp_select_category_hint": { "ar": "اختر فئة لعرض المنتجات", "en": "Select a category to view products" },
+    "mcp_load_more": { "ar": "عرض المزيد", "en": "Load More" }
 }

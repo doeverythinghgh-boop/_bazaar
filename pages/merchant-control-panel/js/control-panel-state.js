@@ -1,0 +1,1 @@
+!function(){"use strict";window.MerchantControlPanelState={merchant:null,currentUser:null,categoryTree:[],selectedMainId:"",selectedSubId:"",products:[],offset:0,limit:5,hasMore:!1,mode:"category",featuredOnly:!1,featuredIds:new Set,isLoading:!1}}();
