@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file pharmacy-api-catalog.js
  * @description Catalog and context management for pharmacy API.
  */
@@ -6,6 +6,8 @@
  * DEVELOPER NOTICE:
  * All terminal/console messages must be in pure English without emojis or translation keys.
  * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
  */
 
 window.PharmacyAPI = window.PharmacyAPI || {};
@@ -71,7 +73,7 @@ window.PharmacyAPI.getCatalogContext = async function (userKey, options = {}) {
     }
 
     console.log(`[Diagnostic] Pharmacy catalog context: CACHE MISS for ${cacheKey}. Fetching parallel components...`);
-    
+
     const t1 = performance.now();
     const [catalogSource, customCategories, preferences] = await Promise.all([
         this.getCatalogSource().then(r => { console.log(`[Diagnostic] - CatalogSource loaded in ${(performance.now() - t1).toFixed(0)}ms`); return r; }),

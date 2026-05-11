@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{window.CarApp&&"function"==typeof window.CarApp.init?window.CarApp.init():console.error("[App] Fatal Error: CarApp modules failed to load correctly.")});
