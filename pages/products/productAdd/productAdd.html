@@ -6,6 +6,13 @@
                 return;
             }
 
+            const urlMainId = params.get('MainCategory');
+            const urlSubId = params.get('SubCategory');
+            // Initialize ProductStateManager with URL params if available immediately.
+            if (typeof ProductStateManager !== 'undefined' && urlMainId && urlSubId) {
+                ProductStateManager.setSelectedCategories(urlMainId, urlSubId);
+            }
+
             window.ProductDebugConsole?.log('productAdd', 'dom-content-loaded');
             // 1. Theme Init
             if (typeof initAppTheme === 'function') initAppTheme();
