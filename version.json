@@ -1,7 +1,7 @@
 {
-  "version": "1.28.44",
+  "version": "1.28.45",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-05-13T17:17:43.975Z",
+  "lastUpdated": "2026-05-13T17:46:29.461Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -3019,16 +3019,6 @@
       "size": 5134
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Analysis Doctor.webp",
-      "hash": "24e2f67d8bab750cf4627f03ea565b0737f11097e95cdc53348368aab414a33e",
-      "size": 3196
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Andrology.webp",
-      "hash": "68276a6c0b84f701a193dbaff00e2bb33e741c34d2ed9635a8563b5a217128bd",
-      "size": 4016
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Animal Care & Training.webp",
       "hash": "35b8b19fb17104eaaac9d18f444c0a56f85abb0233e18d48852384434c8267d0",
       "size": 5064
@@ -3089,11 +3079,6 @@
       "size": 5586
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Branded Fashion & Clothing.webp",
-      "hash": "5b6a308c7fa2cc87539bdf3c99bb4e4833d3cbf3479704a2be248b5c2bede37e",
-      "size": 6036
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Buying & Selling Pets.webp",
       "hash": "500636f6a5106f80de5e9f77c675027424aafdba1f6d5b9d2bc6834604cc6b6e",
       "size": 8918
@@ -3112,11 +3097,6 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Canned Food.webp",
       "hash": "192de232ddb8ca3cb8b4cbbb34fe2cfda432034672e9a2a41f57ab66199403eb",
       "size": 4950
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Car Services.webp",
-      "hash": "6b57bb971f3f56ce33e86574a5136ff1772d57298457a86bcd560e6a86face58",
-      "size": 7282
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Cardiology.webp",
@@ -3179,11 +3159,6 @@
       "size": 2618
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Dermatology.webp",
-      "hash": "6d3ec0979219cb2d255b4a0a23f70570e19625d8ea0547b131ce23da0070e930",
-      "size": 2666
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Diagnostic Radiology.webp",
       "hash": "8db54d534c182b889d929e43fd72ec3dae29851802b9f5cebdf57248985808cf",
       "size": 5260
@@ -3195,8 +3170,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/doctors_appointment.webp",
-      "hash": "f03f4f27cf3994fc61606af05a8e6e776397fba70dc1def9297cf16f82a54c9e",
-      "size": 6578
+      "hash": "6d2ce9752f07b61f8948ce961cca9a2c0a4acf301124ec171afda2759c24a3de",
+      "size": 2376
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Drawing & Artworks.webp",
@@ -3249,24 +3224,9 @@
       "size": 8832
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Fabrics & Sewing Supplies.webp",
-      "hash": "669822f528a476d7659bdc9bb3e1d81d25755c4c1373fd9d3cde368eec272d09",
-      "size": 7302
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Family Medicine.webp",
       "hash": "9ccf1b39f2789dcb348c932488d1229f703aaf880985dfb92b048a3d78dd49fe",
       "size": 4928
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Fishing & Outdoor Sports.webp",
-      "hash": "0147d16a9cbadbb9250ee556bc600e1e353dfece5b79cf6d3ae21b8c160f263f",
-      "size": 5742
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Fitness Equipment.webp",
-      "hash": "192bc83a9cb992cb3cc87c41f06f77f463a20a4a2083b6918c242564d51ae2e5",
-      "size": 7278
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Formal Wear (Weddings, Parties).webp",
@@ -3282,11 +3242,6 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Gastroenterology and Hepatology.webp",
       "hash": "2eddf88def1633a8584f7dcafc4b8ef2aecfd9b406f20d03cbc96018f93fad46",
       "size": 4178
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Gastroenterology.webp",
-      "hash": "ea453b6f0327be9f303e48aee924bc06cd16e60b5a0663751d5433e4542b79f8",
-      "size": 4676
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Gastrointestinal Surgery.webp",
@@ -3324,11 +3279,6 @@
       "size": 3398
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Graphic Design & Photography.webp",
-      "hash": "23e22229d3ffec62c61d513460a89796d7ec3faaf62f2a5e3be4250a1dd1208b",
-      "size": 5538
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Gym.webp",
       "hash": "18812797043d4aa51e360c10c796fcdc06f23b82756beff1cc4659af48003a30",
       "size": 8054
@@ -3359,19 +3309,9 @@
       "size": 1894
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Home Cleaning Tools.webp",
-      "hash": "02e77adfffe36c1e4cc4d37ebf2ab9491fb162e37286a9d56f3d4a4c84856e08",
-      "size": 3246
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Home Electrical Appliances.webp",
       "hash": "d2d017b653be107a5cd1ae7821e650e2004dc8a481e0c182479951ad3f24b6ab",
       "size": 4748
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Home Medical Devices.webp",
-      "hash": "e57d500f145510adda25c37bef88e70c69001f442cc834a62550bc7ee5520771",
-      "size": 5104
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Home Nursing.webp",
@@ -3387,11 +3327,6 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Hygiene & Bath Supplies.webp",
       "hash": "258ee846bffb82f5950da614a5658de7b27d2137bb089b7c5e29696d589c3693",
       "size": 5050
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Immunology.webp",
-      "hash": "2cdd9780d01cb8f9b88b88b0096270470587096297e58604396ee66281fafe14",
-      "size": 5798
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Interior Design & Decoration.webp",
@@ -3412,11 +3347,6 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/IVF and Infertility.webp",
       "hash": "be93bc52fc87a0b9c2d6e4c93d24733e84d515d78d60eaf2c771e97fcc3954ae",
       "size": 3128
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Kitchen & Tableware.webp",
-      "hash": "cfc07fed7f1f2615c01d5b1b400c4e844155b03f70f2d2e459fa9dd7cb1995d5",
-      "size": 4642
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Kitchen Furniture.webp",
@@ -3494,19 +3424,9 @@
       "size": 4014
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Nephrology.webp",
-      "hash": "9bdecad1c73e078eb4bedc76e13f6b6f9f5b13ee2eb8831c3f5529b44405190a",
-      "size": 4462
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Networking & Telecom.webp",
       "hash": "09ec2a674457972e4eb9ca2499f860fe7d1174ed3d19da83950383294f90c3d8",
       "size": 6456
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Neuro and Neurointerventional.webp",
-      "hash": "5edd70c459b14ef6859034401ffec8356f8be46dec19371875e6168e3e64bd5d",
-      "size": 5600
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Neurology.webp",
@@ -3564,11 +3484,6 @@
       "size": 2934
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Packaging & Styling.webp",
-      "hash": "b5214d414c5de8668c32af164480210eab3f3cfe71007847aa9477b57e1fa7db",
-      "size": 4592
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Pain Management.webp",
       "hash": "6a52d841c6202e5bdfaf36fb268f9dd614b308ef98be47f45c27f15d173c8fdb",
       "size": 3456
@@ -3604,11 +3519,6 @@
       "size": 8918
     },
     {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Pharmacies & Medicine Delivery.webp",
-      "hash": "9c81b597036c5a92323d1813bf72885a23d0599026c6f0502d60f8e37398a880",
-      "size": 2690
-    },
-    {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Pharmacies.webp",
       "hash": "2a2e9f107945822dd80f3e1f961ca253b40f92aa330e348d16ebea65f24ae952",
       "size": 4114
@@ -3642,11 +3552,6 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Platforms.webp",
       "hash": "a97494bf649965007d2bbad4c4f9dca3197acb620bb9365630b669685014e58b",
       "size": 5692
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Pneumology.webp",
-      "hash": "c951628f0e689a1419d480e837bb514e732cc6a58636232f2b7d0e13199da10d",
-      "size": 3400
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Printing Presses.webp",
@@ -3727,11 +3632,6 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Underwear & Sleepwear.webp",
       "hash": "f4f347548d7236f7bcc47e15221e7c38847057816e4137ecc77e78540efa1308",
       "size": 2936
-    },
-    {
-      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Urology.webp",
-      "hash": "0fb7f518fc7fb73407b17fb18c158fd9dc91c436d225e63101f82ba33f501b00",
-      "size": 4456
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/subCategories/Vascular Surgery.webp",
@@ -8200,8 +8100,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/shared/list.json",
-      "hash": "eab44c88699cde704230ada26cddabc6bebcd53a71d962901213377603b58b01",
-      "size": 43256
+      "hash": "1b7668fbcb6c07761559cec4ef2028107d674cad7c030231142b9fd60d620bdc",
+      "size": 38784
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/shared/pharmList/1.json",
@@ -8460,7 +8360,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "57726aeb8f79758c628c94d3dda4c433446e92bef9da87c8900ed953126eabbf",
+      "hash": "fb90307ddb06a0bd0a33c2a1aca4ffee2c9c4e908e8632e56385337b4936b8c9",
       "size": 21
     }
   ]

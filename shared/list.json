@@ -892,15 +892,6 @@
           "image": "Home Nursing.webp"
         },
         {
-          "id": 206,
-          "title": {
-            "ar": "العلاج الطبيعي",
-            "en": "Physical Therapy"
-          },
-          "icon": "fas fa-dumbbell",
-          "image": "Physical Therapy.webp"
-        },
-        {
           "id": 208,
           "title": {
             "ar": "رعاية المسنين وذوي الهمم",
@@ -921,7 +912,7 @@
         {
           "id": 300,
           "title": {
-            "ar": "أمراض النساء والتوليد",
+            "ar": "النساء والتوليد",
             "en": "Obstetrics and Gynaecology"
           },
           "icon": "fas fa-stethoscope",
@@ -941,7 +932,7 @@
         {
           "id": 302,
           "title": {
-            "ar": "طب الأسنان",
+            "ar": "الأسنان",
             "en": "Dental"
           },
           "icon": "fas fa-stethoscope",
@@ -951,7 +942,7 @@
         {
           "id": 303,
           "title": {
-            "ar": "الطب النفسي",
+            "ar": "النفسي",
             "en": "Psychiatry"
           },
           "icon": "fas fa-stethoscope",
@@ -961,8 +952,8 @@
         {
           "id": 304,
           "title": {
-            "ar": "الطب الباطني",
-            "en": "Internal Medicine"
+            "ar": "الباطني",
+            "en": "Internal"
           },
           "icon": "fas fa-stethoscope",
           "image": "Internal Medicine.webp",
@@ -971,7 +962,7 @@
         {
           "id": 305,
           "title": {
-            "ar": "أمراض الصدر والجهاز التنفسي",
+            "ar": "الصدر والجهاز التنفسي",
             "en": "Chest"
           },
           "icon": "fas fa-stethoscope",
@@ -979,19 +970,9 @@
           "type": "consultation"
         },
         {
-          "id": 306,
-          "title": {
-            "ar": "الأمراض الجلدية",
-            "en": "Dermatology"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Dermatology.webp",
-          "type": "consultation"
-        },
-        {
           "id": 307,
           "title": {
-            "ar": "طب الأعصاب",
+            "ar": "الأعصاب",
             "en": "Neurology"
           },
           "icon": "fas fa-stethoscope",
@@ -1021,7 +1002,7 @@
         {
           "id": 310,
           "title": {
-            "ar": "طب الأطفال وحديثي الولادة",
+            "ar": "الأطفال وحديثي الولادة",
             "en": "Pediatrics and New Born"
           },
           "icon": "fas fa-stethoscope",
@@ -1031,21 +1012,11 @@
         {
           "id": 311,
           "title": {
-            "ar": "أمراض القلب",
+            "ar": "القلب",
             "en": "Cardiology"
           },
           "icon": "fas fa-stethoscope",
           "image": "Cardiology.webp",
-          "type": "consultation"
-        },
-        {
-          "id": 312,
-          "title": {
-            "ar": "المسالك البولية",
-            "en": "Urology"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Urology.webp",
           "type": "consultation"
         },
         {
@@ -1081,7 +1052,7 @@
         {
           "id": 316,
           "title": {
-            "ar": "طب وجراحة العيون",
+            "ar": "جراحة العيون",
             "en": "Ophthalmology"
           },
           "icon": "fas fa-stethoscope",
@@ -1101,7 +1072,7 @@
         {
           "id": 318,
           "title": {
-            "ar": "أمراض الجهاز الهضمي والكبد",
+            "ar": "الجهاز الهضمي والكبد",
             "en": "Gastroenterology and Hepatology"
           },
           "icon": "fas fa-stethoscope",
@@ -1121,7 +1092,7 @@
         {
           "id": 320,
           "title": {
-            "ar": "أمراض الروماتيزم",
+            "ar": "الروماتيزم",
             "en": "Rheumatology"
           },
           "icon": "fas fa-stethoscope",
@@ -1129,19 +1100,9 @@
           "type": "consultation"
         },
         {
-          "id": 321,
-          "title": {
-            "ar": "أمراض الكلى",
-            "en": "Nephrology"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Nephrology.webp",
-          "type": "consultation"
-        },
-        {
           "id": 322,
           "title": {
-            "ar": "أمراض الغدد الصماء",
+            "ar": "الغدد الصماء",
             "en": "Endocrinology"
           },
           "icon": "fas fa-stethoscope",
@@ -1149,20 +1110,10 @@
           "type": "consultation"
         },
         {
-          "id": 323,
-          "title": {
-            "ar": "أمراض الجهاز الهضمي",
-            "en": "Gastroenterology"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Gastroenterology.webp",
-          "type": "consultation"
-        },
-        {
           "id": 324,
           "title": {
-            "ar": "الطب الطبيعي وإصابات الملاعب",
-            "en": "Physical Medicine and Sport Injuries"
+            "ar": "الطبيعي وإصابات الملاعب",
+            "en": "Physical and Sport Injuries"
           },
           "icon": "fas fa-stethoscope",
           "image": "Physical Medicine and Sport Injuries.webp",
@@ -1171,7 +1122,7 @@
         {
           "id": 325,
           "title": {
-            "ar": "الأمراض الجلدية والذكورة",
+            "ar": "الجلدية والذكورة",
             "en": "Dermatology and Andrology"
           },
           "icon": "fas fa-stethoscope",
@@ -1191,7 +1142,7 @@
         {
           "id": 327,
           "title": {
-            "ar": "أمراض الدم",
+            "ar": "الدم",
             "en": "Hematology"
           },
           "icon": "fas fa-stethoscope",
@@ -1261,7 +1212,7 @@
         {
           "id": 334,
           "title": {
-            "ar": "أمراض الكلى والمسالك البولية",
+            "ar": "الكلى والمسالك البولية",
             "en": "Nephrology and Urology"
           },
           "icon": "fas fa-stethoscope",
@@ -1281,21 +1232,11 @@
         {
           "id": 336,
           "title": {
-            "ar": "طب الأسرة",
-            "en": "Family Medicine"
+            "ar": "الأسرة",
+            "en": "Family"
           },
           "icon": "fas fa-stethoscope",
           "image": "Family Medicine.webp",
-          "type": "consultation"
-        },
-        {
-          "id": 337,
-          "title": {
-            "ar": "أمراض الذكورة",
-            "en": "Andrology"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Andrology.webp",
           "type": "consultation"
         },
         {
@@ -1321,7 +1262,7 @@
         {
           "id": 340,
           "title": {
-            "ar": "طب المسنين",
+            "ar": "المسنين",
             "en": "Geriatrics"
           },
           "icon": "fas fa-stethoscope",
@@ -1331,21 +1272,11 @@
         {
           "id": 341,
           "title": {
-            "ar": "الطب العام",
+            "ar": "العام",
             "en": "General Practice"
           },
           "icon": "fas fa-stethoscope",
           "image": "General Practice.webp",
-          "type": "consultation"
-        },
-        {
-          "id": 342,
-          "title": {
-            "ar": "علم المناعة",
-            "en": "Immunology"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Immunology.webp",
           "type": "consultation"
         },
         {
@@ -1356,16 +1287,6 @@
           },
           "icon": "fas fa-stethoscope",
           "image": "Interventional Radiology.webp",
-          "type": "consultation"
-        },
-        {
-          "id": 344,
-          "title": {
-            "ar": "طبيب التحاليل",
-            "en": "Analysis Doctor"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Analysis Doctor.webp",
           "type": "consultation"
         },
         {
@@ -1406,26 +1327,6 @@
           },
           "icon": "fas fa-stethoscope",
           "image": "Genetics.webp",
-          "type": "consultation"
-        },
-        {
-          "id": 349,
-          "title": {
-            "ar": "الأعصاب والأشعة العصبية التداخلية",
-            "en": "Neuro and Neurointerventional"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Neuro and Neurointerventional.webp",
-          "type": "consultation"
-        },
-        {
-          "id": 350,
-          "title": {
-            "ar": "أمراض الرئة والجهاز التنفسي",
-            "en": "Pneumology"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Pneumology.webp",
           "type": "consultation"
         }
       ]
