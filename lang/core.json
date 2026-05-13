@@ -1590,5 +1590,21 @@
     "dev_reset_fcm_error": {
         "ar": "دالة resetFCM غير معرفة حالياً.",
         "en": "resetFCM function is currently undefined."
+    },
+    "doctors_examination": {
+        "ar": "كشف طبيب",
+        "en": "Doctor's Examination"
+    },
+    "search_no_results": {
+        "ar": "لا توجد نتائج مطابقة لبحثك",
+        "en": "No results matching your search"
+    },
+    "service_providers_count": {
+        "ar": "{count} مقدم خدمة",
+        "en": "{count} Service Providers"
+    },
+    "service_providers_count_zero": {
+        "ar": "0 مقدم خدمة",
+        "en": "0 Service Providers"
     }
 }
