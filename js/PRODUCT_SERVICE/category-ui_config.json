@@ -32,16 +32,60 @@
             "fallback": "Add product now"
           },
           "fields": {
-            "images": { "visible": true, "required": true, "order": 10 },
-            "productName": { "visible": true, "required": true, "order": 20 },
-            "description": { "visible": true, "required": true, "minLength": 10, "order": 30 },
-            "sellerMessage": { "visible": true, "required": true, "minLength": 10, "order": 40 },
-            "notes": { "visible": true, "required": false, "order": 50 },
-            "quantity": { "visible": true, "required": true, "min": 1, "order": 60 },
-            "price": { "visible": true, "required": true, "min": 0, "order": 70 },
-            "originalPrice": { "visible": true, "required": false, "order": 80 },
-            "realPrice": { "visible": true, "required": false, "order": 90 },
-            "heavyLoad": { "visible": true, "required": false, "order": 100 }
+            "images": {
+              "visible": true,
+              "required": true,
+              "order": 10
+            },
+            "productName": {
+              "visible": true,
+              "required": true,
+              "order": 20
+            },
+            "description": {
+              "visible": true,
+              "required": true,
+              "minLength": 10,
+              "order": 30
+            },
+            "sellerMessage": {
+              "visible": true,
+              "required": true,
+              "minLength": 10,
+              "order": 40
+            },
+            "notes": {
+              "visible": true,
+              "required": false,
+              "order": 50
+            },
+            "quantity": {
+              "visible": true,
+              "required": true,
+              "min": 1,
+              "order": 60
+            },
+            "price": {
+              "visible": true,
+              "required": true,
+              "min": 0,
+              "order": 70
+            },
+            "originalPrice": {
+              "visible": true,
+              "required": false,
+              "order": 80
+            },
+            "realPrice": {
+              "visible": true,
+              "required": false,
+              "order": 90
+            },
+            "heavyLoad": {
+              "visible": true,
+              "required": false,
+              "order": 100
+            }
           }
         },
         "edit": {
@@ -59,16 +103,60 @@
             "fallback": "Save changes"
           },
           "fields": {
-            "images": { "visible": true, "required": true, "order": 10 },
-            "productName": { "visible": true, "required": true, "order": 20 },
-            "description": { "visible": true, "required": true, "minLength": 10, "order": 30 },
-            "sellerMessage": { "visible": true, "required": true, "minLength": 10, "order": 40 },
-            "notes": { "visible": true, "required": false, "order": 50 },
-            "quantity": { "visible": true, "required": true, "min": 1, "order": 60 },
-            "price": { "visible": true, "required": true, "min": 0, "order": 70 },
-            "originalPrice": { "visible": true, "required": false, "order": 80 },
-            "realPrice": { "visible": true, "required": false, "order": 90 },
-            "heavyLoad": { "visible": true, "required": false, "order": 100 }
+            "images": {
+              "visible": true,
+              "required": true,
+              "order": 10
+            },
+            "productName": {
+              "visible": true,
+              "required": true,
+              "order": 20
+            },
+            "description": {
+              "visible": true,
+              "required": true,
+              "minLength": 10,
+              "order": 30
+            },
+            "sellerMessage": {
+              "visible": true,
+              "required": true,
+              "minLength": 10,
+              "order": 40
+            },
+            "notes": {
+              "visible": true,
+              "required": false,
+              "order": 50
+            },
+            "quantity": {
+              "visible": true,
+              "required": true,
+              "min": 1,
+              "order": 60
+            },
+            "price": {
+              "visible": true,
+              "required": true,
+              "min": 0,
+              "order": 70
+            },
+            "originalPrice": {
+              "visible": true,
+              "required": false,
+              "order": 80
+            },
+            "realPrice": {
+              "visible": true,
+              "required": false,
+              "order": 90
+            },
+            "heavyLoad": {
+              "visible": true,
+              "required": false,
+              "order": 100
+            }
           }
         },
         "view": {
@@ -86,16 +174,36 @@
             "fallback": "This product uses the standard category-driven layout."
           },
           "fields": {
-            "price": { "visible": true },
-            "originalPrice": { "visible": true },
-            "quantity": { "visible": true },
-            "description": { "visible": true },
-            "sellerMessage": { "visible": true },
-            "share": { "visible": true },
-            "cartActions": { "visible": true },
-            "sellerCard": { "visible": true },
-            "realPrice": { "visible": true },
-            "heavyLoad": { "visible": true }
+            "price": {
+              "visible": true
+            },
+            "originalPrice": {
+              "visible": true
+            },
+            "quantity": {
+              "visible": true
+            },
+            "description": {
+              "visible": true
+            },
+            "sellerMessage": {
+              "visible": true
+            },
+            "share": {
+              "visible": true
+            },
+            "cartActions": {
+              "visible": true
+            },
+            "sellerCard": {
+              "visible": true
+            },
+            "realPrice": {
+              "visible": true
+            },
+            "heavyLoad": {
+              "visible": true
+            }
           }
         }
       }
@@ -114,14 +222,26 @@
       "pages": {
         "add": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "edit": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "view": {
@@ -130,8 +250,12 @@
             "fallback": "Contact seller"
           },
           "fields": {
-            "quantity": { "visible": false },
-            "cartActions": { "visible": false }
+            "quantity": {
+              "visible": false
+            },
+            "cartActions": {
+              "visible": false
+            }
           }
         }
       }
@@ -150,31 +274,73 @@
       "pages": {
         "add": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "price": { "visible": false, "required": false },
-            "originalPrice": { "visible": false, "required": false },
-            "realPrice": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "price": {
+              "visible": false,
+              "required": false
+            },
+            "originalPrice": {
+              "visible": false,
+              "required": false
+            },
+            "realPrice": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "edit": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "price": { "visible": false, "required": false },
-            "originalPrice": { "visible": false, "required": false },
-            "realPrice": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "price": {
+              "visible": false,
+              "required": false
+            },
+            "originalPrice": {
+              "visible": false,
+              "required": false
+            },
+            "realPrice": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "view": {
           "descriptionMode": "plain",
           "fields": {
-            "price": { "visible": false },
-            "originalPrice": { "visible": false },
-            "quantity": { "visible": false },
-            "cartActions": { "visible": false },
-            "realPrice": { "visible": false },
-            "heavyLoad": { "visible": false }
+            "price": {
+              "visible": false
+            },
+            "originalPrice": {
+              "visible": false
+            },
+            "quantity": {
+              "visible": false
+            },
+            "cartActions": {
+              "visible": false
+            },
+            "realPrice": {
+              "visible": false
+            },
+            "heavyLoad": {
+              "visible": false
+            }
           }
         }
       }
@@ -193,14 +359,26 @@
       "pages": {
         "add": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "edit": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "view": {
@@ -209,8 +387,12 @@
             "fallback": "Book now"
           },
           "fields": {
-            "quantity": { "visible": false },
-            "cartActions": { "visible": false }
+            "quantity": {
+              "visible": false
+            },
+            "cartActions": {
+              "visible": false
+            }
           }
         }
       }
@@ -229,14 +411,26 @@
       "pages": {
         "add": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "edit": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "view": {
@@ -245,9 +439,15 @@
             "fallback": "Request delivery"
           },
           "fields": {
-            "quantity": { "visible": false },
-            "cartActions": { "visible": false },
-            "heavyLoad": { "visible": false }
+            "quantity": {
+              "visible": false
+            },
+            "cartActions": {
+              "visible": false
+            },
+            "heavyLoad": {
+              "visible": false
+            }
           }
         }
       }
@@ -266,14 +466,26 @@
       "pages": {
         "add": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "edit": {
           "fields": {
-            "quantity": { "visible": false, "required": false },
-            "heavyLoad": { "visible": false, "required": false }
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
           }
         },
         "view": {
@@ -282,9 +494,595 @@
             "fallback": "Join now"
           },
           "fields": {
-            "quantity": { "visible": false },
-            "cartActions": { "visible": false },
-            "heavyLoad": { "visible": false }
+            "quantity": {
+              "visible": false
+            },
+            "cartActions": {
+              "visible": false
+            },
+            "heavyLoad": {
+              "visible": false
+            }
+          }
+        }
+      }
+    },
+    "pet_sales_profile": {
+      "meta": {
+        "label": "Pet Sales & Adoption"
+      },
+      "summary": {
+        "fallback": "هذه الفئة مخصصة لبيع أو تبني الحيوانات الأليفة. تم تخصيص المسميات لتناسب تفاصيل الحيوان."
+      },
+      "submit": {
+        "serviceType": "0"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "images": {
+              "label": {
+                "fallback": "صور الحيوان"
+              }
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم أو فصيلة الحيوان"
+              },
+              "placeholder": {
+                "fallback": "مثال: قط شيرازي، كلب جيرمن..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "تفاصيل الحيوان وحالته"
+              },
+              "placeholder": {
+                "fallback": "اكتب العمر، الحالة الصحية، التطعيمات، وأي تفاصيل أخرى..."
+              }
+            },
+            "quantity": {
+              "label": {
+                "fallback": "العدد المتاح"
+              }
+            },
+            "heavyLoad": {
+              "label": {
+                "fallback": "يحتاج قفص/سيارة نقل مخصصة"
+              }
+            }
+          },
+          "pageTitle": {
+            "fallback": "إضافة حيوان جديد"
+          }
+        },
+        "edit": {
+          "fields": {
+            "images": {
+              "label": {
+                "fallback": "صور الحيوان"
+              }
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم أو فصيلة الحيوان"
+              },
+              "placeholder": {
+                "fallback": "مثال: قط شيرازي، كلب جيرمن..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "تفاصيل الحيوان وحالته"
+              },
+              "placeholder": {
+                "fallback": "اكتب العمر، الحالة الصحية، التطعيمات، وأي تفاصيل أخرى..."
+              }
+            },
+            "quantity": {
+              "label": {
+                "fallback": "العدد المتاح"
+              }
+            },
+            "heavyLoad": {
+              "label": {
+                "fallback": "يحتاج قفص/سيارة نقل مخصصة"
+              }
+            }
+          },
+          "pageTitle": {
+            "fallback": "تعديل بيانات الحيوان"
+          }
+        },
+        "view": {
+          "actionButtonText": {
+            "fallback": "تواصل للشراء أو التبني"
+          }
+        }
+      }
+    },
+    "pet_supplies_profile": {
+      "meta": {
+        "label": "Pet Supplies & Food"
+      },
+      "summary": {
+        "fallback": "هذه الفئة مخصصة لمستلزمات وطعام الحيوانات الأليفة."
+      },
+      "submit": {
+        "serviceType": "0"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "images": {
+              "label": {
+                "fallback": "صور المنتج"
+              }
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم المنتج"
+              },
+              "placeholder": {
+                "fallback": "مثال: طعام قطط دراي فود، طوق للكلاب..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "مواصفات المنتج"
+              },
+              "placeholder": {
+                "fallback": "اكتب تفاصيل المنتج، الحجم، المكونات..."
+              }
+            }
+          },
+          "pageTitle": {
+            "fallback": "إضافة منتج/مستلزمات"
+          }
+        },
+        "edit": {
+          "fields": {
+            "images": {
+              "label": {
+                "fallback": "صور المنتج"
+              }
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم المنتج"
+              },
+              "placeholder": {
+                "fallback": "مثال: طعام قطط دراي فود، طوق للكلاب..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "مواصفات المنتج"
+              },
+              "placeholder": {
+                "fallback": "اكتب تفاصيل المنتج، الحجم، المكونات..."
+              }
+            }
+          },
+          "pageTitle": {
+            "fallback": "تعديل بيانات المنتج"
+          }
+        },
+        "view": {
+          "actionButtonText": {
+            "fallback": "أضف إلى السلة"
+          }
+        }
+      }
+    },
+    "pet_services_profile": {
+      "meta": {
+        "label": "Pet Care & Training Services"
+      },
+      "summary": {
+        "fallback": "هذه الفئة مخصصة لخدمات العناية والتدريب للحيوانات. تم إخفاء الكمية وتخصيص المسميات."
+      },
+      "submit": {
+        "serviceType": "2"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "images": {
+              "label": {
+                "fallback": "صور تعبر عن الخدمة"
+              }
+            },
+            "productName": {
+              "label": {
+                "fallback": "نوع الخدمة المقدمة"
+              },
+              "placeholder": {
+                "fallback": "مثال: تدريب كلاب، استضافة قطط، تنظيف..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "تفاصيل الخدمة"
+              },
+              "placeholder": {
+                "fallback": "اشرح الخدمة المقدمة، المدة، وأي شروط..."
+              }
+            },
+            "price": {
+              "label": {
+                "fallback": "سعر الخدمة (تقريبي)"
+              }
+            },
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
+          },
+          "pageTitle": {
+            "fallback": "إضافة خدمة رعاية"
+          }
+        },
+        "edit": {
+          "fields": {
+            "images": {
+              "label": {
+                "fallback": "صور تعبر عن الخدمة"
+              }
+            },
+            "productName": {
+              "label": {
+                "fallback": "نوع الخدمة المقدمة"
+              },
+              "placeholder": {
+                "fallback": "مثال: تدريب كلاب، استضافة قطط، تنظيف..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "تفاصيل الخدمة"
+              },
+              "placeholder": {
+                "fallback": "اشرح الخدمة المقدمة، المدة، وأي شروط..."
+              }
+            },
+            "price": {
+              "label": {
+                "fallback": "سعر الخدمة (تقريبي)"
+              }
+            },
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
+          },
+          "pageTitle": {
+            "fallback": "تعديل بيانات الخدمة"
+          }
+        },
+        "view": {
+          "descriptionMode": "plain",
+          "actionButtonText": {
+            "fallback": "احجز الخدمة"
+          },
+          "fields": {
+            "quantity": {
+              "visible": false
+            },
+            "cartActions": {
+              "visible": false
+            },
+            "heavyLoad": {
+              "visible": false
+            }
+          }
+        }
+      }
+    },
+    "sports_gym_profile": {
+      "meta": {
+        "label": "Gym & Subscriptions"
+      },
+      "summary": {
+        "fallback": "هذه الفئة مخصصة لاشتراكات الجيم والنوادي."
+      },
+      "submit": {
+        "serviceType": "2"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "images": {
+              "visible": false
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم الباقة / الاشتراك"
+              },
+              "placeholder": {
+                "fallback": "مثال: اشتراك شهري، كورس تدريب..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "تفاصيل الاشتراك والمميزات"
+              },
+              "placeholder": {
+                "fallback": "اكتب مميزات الباقة، المواعيد المتاحة..."
+              }
+            },
+            "price": {
+              "label": {
+                "fallback": "قيمة الاشتراك"
+              }
+            },
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
+          },
+          "pageTitle": {
+            "fallback": "إضافة باقة / اشتراك"
+          }
+        },
+        "edit": {
+          "fields": {
+            "images": {
+              "visible": false
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم الباقة / الاشتراك"
+              },
+              "placeholder": {
+                "fallback": "مثال: اشتراك شهري، كورس تدريب..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "تفاصيل الاشتراك والمميزات"
+              },
+              "placeholder": {
+                "fallback": "اكتب مميزات الباقة، المواعيد المتاحة..."
+              }
+            },
+            "price": {
+              "label": {
+                "fallback": "قيمة الاشتراك"
+              }
+            },
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
+          },
+          "pageTitle": {
+            "fallback": "تعديل الباقة / الاشتراك"
+          }
+        },
+        "view": {
+          "descriptionMode": "plain",
+          "actionButtonText": {
+            "fallback": "اشترك الآن"
+          },
+          "fields": {
+            "quantity": {
+              "visible": false
+            },
+            "cartActions": {
+              "visible": false
+            },
+            "heavyLoad": {
+              "visible": false
+            }
+          }
+        }
+      }
+    },
+    "sports_equipment_profile": {
+      "meta": {
+        "label": "Sports Equipment"
+      },
+      "summary": {
+        "fallback": "هذه الفئة مخصصة لبيع الأدوات والمعدات الرياضية."
+      },
+      "submit": {
+        "serviceType": "0"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "images": {
+              "label": {
+                "fallback": "صور الأداة / المنتج"
+              }
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم الأداة الرياضية"
+              },
+              "placeholder": {
+                "fallback": "مثال: دمبلز 5 كيلو، مشاية كهربائية..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "المواصفات الفنية والاستخدام"
+              },
+              "placeholder": {
+                "fallback": "اكتب وزن الأداة، الماركة، طرق الاستخدام..."
+              }
+            },
+            "quantity": {
+              "label": {
+                "fallback": "الكمية المتاحة"
+              }
+            }
+          },
+          "pageTitle": {
+            "fallback": "إضافة أداة رياضية"
+          }
+        },
+        "edit": {
+          "fields": {
+            "images": {
+              "label": {
+                "fallback": "صور الأداة / المنتج"
+              }
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم الأداة الرياضية"
+              },
+              "placeholder": {
+                "fallback": "مثال: دمبلز 5 كيلو، مشاية كهربائية..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "المواصفات الفنية والاستخدام"
+              },
+              "placeholder": {
+                "fallback": "اكتب وزن الأداة، الماركة، طرق الاستخدام..."
+              }
+            },
+            "quantity": {
+              "label": {
+                "fallback": "الكمية المتاحة"
+              }
+            }
+          },
+          "pageTitle": {
+            "fallback": "تعديل بيانات الأداة"
+          }
+        },
+        "view": {
+          "actionButtonText": {
+            "fallback": "أضف إلى السلة"
+          }
+        }
+      }
+    },
+    "medical_appointment_profile": {
+      "meta": {
+        "label": "Medical Appointment"
+      },
+      "summary": {
+        "fallback": "هذه الفئة مخصصة لحجز مواعيد الكشف الطبي في العيادات والمستشفيات."
+      },
+      "submit": {
+        "serviceType": "2"
+      },
+      "pages": {
+        "add": {
+          "fields": {
+            "images": {
+              "visible": false
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم الطبيب / الخدمة الطبية"
+              },
+              "placeholder": {
+                "fallback": "مثال: كشف باطنة، كشف أسنان..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "تفاصيل الكشف"
+              },
+              "placeholder": {
+                "fallback": "اكتب المواعيد المتاحة، المؤهلات، أو تفاصيل الخدمة..."
+              }
+            },
+            "price": {
+              "label": {
+                "fallback": "سعر الكشف"
+              }
+            },
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
+          },
+          "pageTitle": {
+            "fallback": "إضافة كشف / خدمة طبية"
+          }
+        },
+        "edit": {
+          "fields": {
+            "images": {
+              "visible": false
+            },
+            "productName": {
+              "label": {
+                "fallback": "اسم الطبيب / الخدمة الطبية"
+              },
+              "placeholder": {
+                "fallback": "مثال: كشف باطنة، كشف أسنان..."
+              }
+            },
+            "description": {
+              "label": {
+                "fallback": "تفاصيل الكشف"
+              },
+              "placeholder": {
+                "fallback": "اكتب المواعيد المتاحة، المؤهلات، أو تفاصيل الخدمة..."
+              }
+            },
+            "price": {
+              "label": {
+                "fallback": "سعر الكشف"
+              }
+            },
+            "quantity": {
+              "visible": false,
+              "required": false
+            },
+            "heavyLoad": {
+              "visible": false,
+              "required": false
+            }
+          },
+          "pageTitle": {
+            "fallback": "تعديل الكشف / الخدمة الطبية"
+          }
+        },
+        "view": {
+          "descriptionMode": "plain",
+          "actionButtonText": {
+            "fallback": "احجز كشف"
+          },
+          "fields": {
+            "quantity": {
+              "visible": false
+            },
+            "cartActions": {
+              "visible": false
+            },
+            "heavyLoad": {
+              "visible": false
+            }
           }
         }
       }
@@ -302,12 +1100,58 @@
     "6:4": "digital_profile",
     "6:7": "booking_profile",
     "6:9": "booking_profile",
-    "12:5": "booking_profile",
+    "8:2": "sports_gym_profile",
+    "8:4": "sports_equipment_profile",
+    "12:1": "pet_supplies_profile",
+    "12:4": "pet_sales_profile",
+    "12:5": "pet_services_profile",
     "13:7": "quote_request",
     "17:5": "digital_profile",
     "17:8": "quote_request",
     "23:4": "membership_profile",
     "44:4": "membership_profile",
-    "45:4": "membership_profile"
+    "45:4": "membership_profile",
+    "20:300": "medical_appointment_profile",
+    "20:301": "medical_appointment_profile",
+    "20:302": "medical_appointment_profile",
+    "20:303": "medical_appointment_profile",
+    "20:304": "medical_appointment_profile",
+    "20:305": "medical_appointment_profile",
+    "20:307": "medical_appointment_profile",
+    "20:308": "medical_appointment_profile",
+    "20:309": "medical_appointment_profile",
+    "20:310": "medical_appointment_profile",
+    "20:311": "medical_appointment_profile",
+    "20:313": "medical_appointment_profile",
+    "20:314": "medical_appointment_profile",
+    "20:315": "medical_appointment_profile",
+    "20:316": "medical_appointment_profile",
+    "20:317": "medical_appointment_profile",
+    "20:318": "medical_appointment_profile",
+    "20:319": "medical_appointment_profile",
+    "20:320": "medical_appointment_profile",
+    "20:322": "medical_appointment_profile",
+    "20:324": "medical_appointment_profile",
+    "20:325": "medical_appointment_profile",
+    "20:326": "medical_appointment_profile",
+    "20:327": "medical_appointment_profile",
+    "20:328": "medical_appointment_profile",
+    "20:329": "medical_appointment_profile",
+    "20:330": "medical_appointment_profile",
+    "20:331": "medical_appointment_profile",
+    "20:332": "medical_appointment_profile",
+    "20:333": "medical_appointment_profile",
+    "20:334": "medical_appointment_profile",
+    "20:335": "medical_appointment_profile",
+    "20:336": "medical_appointment_profile",
+    "20:338": "medical_appointment_profile",
+    "20:339": "medical_appointment_profile",
+    "20:340": "medical_appointment_profile",
+    "20:341": "medical_appointment_profile",
+    "20:343": "medical_appointment_profile",
+    "20:345": "medical_appointment_profile",
+    "20:346": "medical_appointment_profile",
+    "20:347": "medical_appointment_profile",
+    "20:348": "medical_appointment_profile"
   }
 }
