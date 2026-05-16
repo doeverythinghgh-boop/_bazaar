@@ -1,1 +1,0 @@
-const fs=require("fs");["addRealEstate.html","editRealEstate.html","viewRealEstate.html"].forEach(f=>{const content=void 0,matches=[...fs.readFileSync("pages/real-estate/"+f,"utf8").matchAll(/data-lkey(?:-\w+)?="([^"]+)"/g)];console.log(f+":",[...new Set(matches.map(m=>m[1]))])});
