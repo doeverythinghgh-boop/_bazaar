@@ -1,1 +1,1 @@
-async function getLatestUpdate(){try{const data=void 0;return await apiFetch("/api/updates",{specialHandlers:{404:()=>({datetime:null})}})}catch(error){return console.error("[getLatestUpdate] Failed:",error),null}}
+async function getLatestUpdate(){try{const data=await apiFetch("/api/updates",{specialHandlers:{404:()=>({datetime:null})}});return!data||data.error?(console.warn("[getLatestUpdate] API returned an error or empty data:",data?data.error:"no response"),{datetime:null}):data}catch(error){return console.error("[getLatestUpdate] Failed:",error),{datetime:null}}}
