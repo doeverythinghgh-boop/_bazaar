@@ -1,7 +1,7 @@
 {
-  "version": "1.29.11",
+  "version": "1.29.12",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-05-17T11:19:16.243Z",
+  "lastUpdated": "2026-05-18T03:52:47.269Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -3675,8 +3675,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/app-behavior.js",
-      "hash": "efd63c215152f1d79d21b20ec22c4435e5ecd2c46d492254ae1728257a3f0754",
-      "size": 299
+      "hash": "f748bfa7475fc88e0bd0b96880282ed29ee469d4612beef5f76f8fc95df68bcf",
+      "size": 229
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/app-config.js",
@@ -3865,8 +3865,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/loader.js",
-      "hash": "cfb428b55ee853c01ea0f421ea13b6cc9c16181c3299bad2121f741e2c4f5357",
-      "size": 4733
+      "hash": "c4d35ac1eb7bed1ce807b101451d1ebb71a65c3f5dd3a1eb3b49b8ec9aede817",
+      "size": 4990
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core/dev-error-monitor/state/actions.js",
@@ -5870,8 +5870,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/login/login-submit.js",
-      "hash": "f7e491f6643938d9834e7aeb4df6f2d2b6563dc17f4ccfafb50e076eb2e8c0a9",
-      "size": 5195
+      "hash": "4a25571957ac7eee0f901657e5544cf68c81f927cfb18b3ff2c5fc0aef02a1ab",
+      "size": 5243
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/login/login-ui.js",
@@ -8470,7 +8470,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "d267c3749364c83d8cd8599bac70928d9960fd1f439ad66c14a9730ede0612c3",
+      "hash": "b223559f1c6d603c0e204adc04bd33e92a0b8dc9294205edf2be9d302771bdbb",
       "size": 21
     }
   ]

@@ -1,1 +1,1 @@
-const AppBehavior={appVersion:"29",isUnderMaintenance:!1,disableAdminFeatures:!1,enableSecurityShield:!1,enablePWA:!1,enableAddProductAppPrice:!1,enableDevErrorMonitor:!0,autoApproveNotifyAdmin:!0};window.AppBehavior=AppBehavior,console.log("[ESM Load] app-behavior.js: Hybrid bridge established.");
+const AppBehavior={appVersion:"29",isUnderMaintenance:!1,disableAdminFeatures:!1,enableSecurityShield:!1,enablePWA:!1,enableAddProductAppPrice:!1,enableDevErrorMonitor:!0,autoApproveNotifyAdmin:!0};window.AppBehavior=AppBehavior;
