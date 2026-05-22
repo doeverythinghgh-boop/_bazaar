@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "label": "Pet Care & Training Services"
+  },
+  "summary": {
+    "key": "product_category_ui_pet_services_summary",
+    "fallback": "هذه الفئة مخصصة لخدمات العناية والتدريب للحيوانات. تم إخفاء الكمية وتخصيص المسميات."
+  },
+  "submit": {
+    "serviceType": "2"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "images": {
+          "label": {
+            "key": "product_category_ui_pet_services_images_label",
+            "fallback": "صور تعبر عن الخدمة"
+          }
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_pet_services_name_label",
+            "fallback": "نوع الخدمة المقدمة"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_services_name_placeholder",
+            "fallback": "مثال: تدريب كلاب، استضافة قطط، تنظيف..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_pet_services_description_label",
+            "fallback": "تفاصيل الخدمة"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_services_description_placeholder",
+            "fallback": "اشرح الخدمة المقدمة، المدة، وأي شروط..."
+          }
+        },
+        "price": {
+          "label": {
+            "key": "product_category_ui_pet_services_price_label",
+            "fallback": "سعر الخدمة (تقريبي)"
+          }
+        },
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_pet_services_add_page_title",
+        "fallback": "إضافة خدمة رعاية"
+      }
+    },
+    "edit": {
+      "fields": {
+        "images": {
+          "label": {
+            "key": "product_category_ui_pet_services_images_label",
+            "fallback": "صور تعبر عن الخدمة"
+          }
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_pet_services_name_label",
+            "fallback": "نوع الخدمة المقدمة"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_services_name_placeholder",
+            "fallback": "مثال: تدريب كلاب، استضافة قطط، تنظيف..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_pet_services_description_label",
+            "fallback": "تفاصيل الخدمة"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_services_description_placeholder",
+            "fallback": "اشرح الخدمة المقدمة، المدة، وأي شروط..."
+          }
+        },
+        "price": {
+          "label": {
+            "key": "product_category_ui_pet_services_price_label",
+            "fallback": "سعر الخدمة (تقريبي)"
+          }
+        },
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_pet_services_edit_page_title",
+        "fallback": "تعديل بيانات الخدمة"
+      }
+    },
+    "view": {
+      "descriptionMode": "plain",
+      "actionButtonText": {
+        "key": "product_category_ui_pet_services_action_button_text",
+        "fallback": "احجز الخدمة"
+      },
+      "fields": {
+        "quantity": {
+          "visible": false
+        },
+        "cartActions": {
+          "visible": false
+        },
+        "heavyLoad": {
+          "visible": false
+        }
+      }
+    }
+  }
+}

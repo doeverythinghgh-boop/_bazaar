@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "label": "Gym & Subscriptions"
+  },
+  "summary": {
+    "key": "product_category_ui_sports_gym_summary",
+    "fallback": "هذه الفئة مخصصة لاشتراكات الجيم والنوادي."
+  },
+  "submit": {
+    "serviceType": "2"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "images": {
+          "visible": false
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_sports_gym_name_label",
+            "fallback": "اسم الباقة / الاشتراك"
+          },
+          "placeholder": {
+            "key": "product_category_ui_sports_gym_name_placeholder",
+            "fallback": "مثال: اشتراك شهري، كورس تدريب..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_sports_gym_description_label",
+            "fallback": "تفاصيل الاشتراك والمميزات"
+          },
+          "placeholder": {
+            "key": "product_category_ui_sports_gym_description_placeholder",
+            "fallback": "اكتب مميزات الباقة، المواعيد المتاحة..."
+          }
+        },
+        "price": {
+          "label": {
+            "key": "product_category_ui_sports_gym_price_label",
+            "fallback": "قيمة الاشتراك"
+          }
+        },
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_sports_gym_add_page_title",
+        "fallback": "إضافة باقة / اشتراك"
+      }
+    },
+    "edit": {
+      "fields": {
+        "images": {
+          "visible": false
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_sports_gym_name_label",
+            "fallback": "اسم الباقة / الاشتراك"
+          },
+          "placeholder": {
+            "key": "product_category_ui_sports_gym_name_placeholder",
+            "fallback": "مثال: اشتراك شهري، كورس تدريب..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_sports_gym_description_label",
+            "fallback": "تفاصيل الاشتراك والمميزات"
+          },
+          "placeholder": {
+            "key": "product_category_ui_sports_gym_description_placeholder",
+            "fallback": "اكتب مميزات الباقة، المواعيد المتاحة..."
+          }
+        },
+        "price": {
+          "label": {
+            "key": "product_category_ui_sports_gym_price_label",
+            "fallback": "قيمة الاشتراك"
+          }
+        },
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_sports_gym_edit_page_title",
+        "fallback": "تعديل الباقة / الاشتراك"
+      }
+    },
+    "view": {
+      "descriptionMode": "plain",
+      "actionButtonText": {
+        "key": "product_category_ui_sports_gym_action_button_text",
+        "fallback": "اشترك الآن"
+      },
+      "fields": {
+        "quantity": {
+          "visible": false
+        },
+        "cartActions": {
+          "visible": false
+        },
+        "heavyLoad": {
+          "visible": false
+        }
+      }
+    }
+  }
+}

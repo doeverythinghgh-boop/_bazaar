@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "label": "Quote Request"
+  },
+  "summary": {
+    "key": "product_category_ui_quote_request_summary",
+    "fallback": "This category uses a request-first flow. Quantity and direct cart purchase are hidden, while seller communication remains central."
+  },
+  "submit": {
+    "serviceType": "2"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "edit": {
+      "fields": {
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "view": {
+      "descriptionMode": "plain",
+      "actionButtonText": {
+        "key": "product_category_ui_quote_request_action_button_text",
+        "fallback": "Contact seller"
+      },
+      "fields": {
+        "quantity": {
+          "visible": false
+        },
+        "cartActions": {
+          "visible": false
+        }
+      }
+    }
+  }
+}

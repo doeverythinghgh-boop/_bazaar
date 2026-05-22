@@ -492,11 +492,11 @@
         "en": "Delete"
     },
     "port_featured_title": {
-        "ar": "منتجات مميزة",
+        "ar": "خدمات مميزة",
         "en": "Featured Products"
     },
     "port_feature_checkbox_tooltip": {
-        "ar": "إدارة المنتجات المميزة للبائع",
+        "ar": "إدارة الخدمات المميزة لمقدم الخدمة",
         "en": "Manage Merchant Featured Products"
     },
     "port_filter_featured": {
@@ -504,11 +504,11 @@
         "en": "Show Featured Only"
     },
     "port_all_products": {
-        "ar": "قائمة المنتجات",
+        "ar": "قائمة الخدمات",
         "en": "All Products"
     },
     "port_no_featured_found": {
-        "ar": "لا توجد منتجات مميزة لعرضها حالياً",
+        "ar": "لا توجد خدمات مميزة لعرضها حالياً",
         "en": "No featured products to display currently"
     },
     "port_delete_error": {
@@ -536,11 +536,11 @@
         "en": "Control Panel"
     },
     "mcp_title": {
-        "ar": "إدارة المنتجات",
+        "ar": "إدارة الخدمات",
         "en": "Product Management"
     },
     "mcp_subtitle": {
-        "ar": "اختر الفئة التي تريد إدارتها أو اعرض المنتجات المميزة مباشرة.",
+        "ar": "اختر الفئة التي تريد إدارتها أو اعرض الخدمات المميزة مباشرة.",
         "en": "Select a category to manage or view featured products directly."
     },
     "mcp_add_product": {
@@ -552,7 +552,7 @@
         "en": "Filter Featured"
     },
     "mcp_select_category_hint": {
-        "ar": "اختر فئة لعرض المنتجات",
+        "ar": "اختر فئة لعرض الخدمات",
         "en": "Select a category to view products"
     },
     "mcp_load_more": {
@@ -628,7 +628,7 @@
         "en": "Real Estate Details"
     },
     "real_estate_provider_notes": {
-        "ar": "ملاحظات البائع",
+        "ar": "ملاحظات مقدم الخدمة",
         "en": "Seller Notes"
     },
     "real_estate_no_notes": {
@@ -650,5 +650,249 @@
     "contact_title": {
         "ar": "التواصل",
         "en": "Contact"
+    },
+    "medical_appointment_subject_label": {
+        "ar": "الموضوع",
+        "en": "Subject"
+    },
+    "medical_appointment_details_label": {
+        "ar": "التفاصيل",
+        "en": "Details"
+    },
+    "medical_appointment_subject_placeholder": {
+        "ar": "أدخل الموضوع...",
+        "en": "Enter the subject..."
+    },
+    "medical_appointment_details_placeholder": {
+        "ar": "أدخل التفاصيل...",
+        "en": "Write the available timings, qualifications, or service details..."
+    },
+    "medical_appointment_price_label": {
+        "ar": "سعر الكشف",
+        "en": "Appointment Fee"
+    },
+    "medical_appointment_page_title_add": {
+        "ar": "إضافة كشف / خدمة طبية",
+        "en": "Add Appointment / Medical Service"
+    },
+    "medical_appointment_page_title_edit": {
+        "ar": "تعديل الكشف / الخدمة الطبية",
+        "en": "Edit Appointment / Medical Service"
+    },
+    "medical_appointment_action_btn": {
+        "ar": "احجز كشف",
+        "en": "Book Appointment"
+    },
+    "product_category_ui_booking_profile_action_button_text": {
+        "ar": "احجز الآن",
+        "en": "Book now"
+    },
+    "product_category_ui_digital_profile_action_button_text": {
+        "ar": "طلب تسليم",
+        "en": "Request delivery"
+    },
+    "product_category_ui_membership_profile_action_button_text": {
+        "ar": "انضم الآن",
+        "en": "Join now"
+    },
+    "product_category_ui_pet_sales_summary": {
+        "ar": "هذه الفئة مخصصة لبيع أو تبني الحيوانات الأليفة. تم تخصيص المسميات لتناسب تفاصيل الحيوان.",
+        "en": "This category is for pet sales or adoption. Field labels are customized for animal details."
+    },
+    "product_category_ui_pet_sales_images_label": {
+        "ar": "صور الحيوان",
+        "en": "Animal photos"
+    },
+    "product_category_ui_pet_sales_name_label": {
+        "ar": "اسم أو فصيلة الحيوان",
+        "en": "Animal name or breed"
+    },
+    "product_category_ui_pet_sales_name_placeholder": {
+        "ar": "مثال: قط شيرازي، كلب جيرمن...",
+        "en": "Example: Shiraz cat, German shepherd..."
+    },
+    "product_category_ui_pet_sales_description_label": {
+        "ar": "تفاصيل الحيوان وحالته",
+        "en": "Animal details and health condition"
+    },
+    "product_category_ui_pet_sales_description_placeholder": {
+        "ar": "اكتب العمر، الحالة الصحية، التطعيمات، وأي تفاصيل أخرى...",
+        "en": "Write age, health condition, vaccinations, and other details..."
+    },
+    "product_category_ui_pet_sales_quantity_label": {
+        "ar": "العدد المتاح",
+        "en": "Available count"
+    },
+    "product_category_ui_pet_sales_heavy_load_label": {
+        "ar": "يحتاج قفص/سيارة نقل مخصصة",
+        "en": "Requires cage / specialized transport vehicle"
+    },
+    "product_category_ui_pet_sales_add_page_title": {
+        "ar": "إضافة حيوان جديد",
+        "en": "Add new animal"
+    },
+    "product_category_ui_pet_sales_edit_page_title": {
+        "ar": "تعديل بيانات الحيوان",
+        "en": "Edit animal details"
+    },
+    "product_category_ui_pet_sales_action_button_text": {
+        "ar": "تواصل للشراء أو التبني",
+        "en": "Contact for purchase or adoption"
+    },
+    "product_category_ui_pet_services_summary": {
+        "ar": "هذه الفئة مخصصة لخدمات العناية والتدريب للحيوانات. تم إخفاء الكمية وتخصيص المسميات.",
+        "en": "This category is for pet care and training services. Quantity is hidden and labels are customized."
+    },
+    "product_category_ui_pet_services_images_label": {
+        "ar": "صور تعبر عن الخدمة",
+        "en": "Photos representing the service"
+    },
+    "product_category_ui_pet_services_name_label": {
+        "ar": "نوع الخدمة المقدمة",
+        "en": "Type of service provided"
+    },
+    "product_category_ui_pet_services_name_placeholder": {
+        "ar": "مثال: تدريب كلاب، استضافة قطط، تنظيف...",
+        "en": "Example: Dog training, Cat boarding, Grooming..."
+    },
+    "product_category_ui_pet_services_description_label": {
+        "ar": "تفاصيل الخدمة",
+        "en": "Service details"
+    },
+    "product_category_ui_pet_services_description_placeholder": {
+        "ar": "اشرح الخدمة المقدمة، المدة، وأي شروط...",
+        "en": "Explain the service provided, duration, and any requirements..."
+    },
+    "product_category_ui_pet_services_price_label": {
+        "ar": "سعر الخدمة (تقريبي)",
+        "en": "Service price (approximate)"
+    },
+    "product_category_ui_pet_services_add_page_title": {
+        "ar": "إضافة خدمة رعاية",
+        "en": "Add pet care service"
+    },
+    "product_category_ui_pet_services_edit_page_title": {
+        "ar": "تعديل بيانات الخدمة",
+        "en": "Edit service details"
+    },
+    "product_category_ui_pet_services_action_button_text": {
+        "ar": "احجز الخدمة",
+        "en": "Book service"
+    },
+    "product_category_ui_pet_supplies_summary": {
+        "ar": "هذه الفئة مخصصة لمستلزمات وطعام الحيوانات الأليفة.",
+        "en": "This category is for pet supplies and food."
+    },
+    "product_category_ui_pet_supplies_images_label": {
+        "ar": "صور المنتج",
+        "en": "Product photos"
+    },
+    "product_category_ui_pet_supplies_name_label": {
+        "ar": "اسم المنتج",
+        "en": "Product name"
+    },
+    "product_category_ui_pet_supplies_name_placeholder": {
+        "ar": "مثال: طعام قطط دراي فود، طوق للكلاب...",
+        "en": "Example: Dry cat food, Dog collar..."
+    },
+    "product_category_ui_pet_supplies_description_label": {
+        "ar": "مواصفات المنتج",
+        "en": "Product specifications"
+    },
+    "product_category_ui_pet_supplies_description_placeholder": {
+        "ar": "اكتب تفاصيل المنتج، الحجم، المكونات...",
+        "en": "Write product details, size, ingredients..."
+    },
+    "product_category_ui_pet_supplies_add_page_title": {
+        "ar": "إضافة منتج/مستلزمات",
+        "en": "Add pet supplies"
+    },
+    "product_category_ui_pet_supplies_edit_page_title": {
+        "ar": "تعديل بيانات المنتج",
+        "en": "Edit product details"
+    },
+    "product_category_ui_pet_supplies_action_button_text": {
+        "ar": "أضف إلى السلة",
+        "en": "Add to cart"
+    },
+    "product_category_ui_quote_request_action_button_text": {
+        "ar": "تواصل مع البائع",
+        "en": "Contact seller"
+    },
+    "product_category_ui_sports_equipment_summary": {
+        "ar": "هذه الفئة مخصصة لبيع الأدوات والمعدات الرياضية.",
+        "en": "This category is for sports equipment sales."
+    },
+    "product_category_ui_sports_equipment_images_label": {
+        "ar": "صور الأداة / المنتج",
+        "en": "Equipment / product photos"
+    },
+    "product_category_ui_sports_equipment_name_label": {
+        "ar": "اسم الأداة الرياضية",
+        "en": "Sports equipment name"
+    },
+    "product_category_ui_sports_equipment_name_placeholder": {
+        "ar": "مثال: دمبلز 5 كيلو، مشاية كهربائية...",
+        "en": "Example: 5kg dumbbells, treadmill..."
+    },
+    "product_category_ui_sports_equipment_description_label": {
+        "ar": "المواصفات الفنية والاستخدام",
+        "en": "Technical specifications and usage"
+    },
+    "product_category_ui_sports_equipment_description_placeholder": {
+        "ar": "اكتب وزن الأداة، الماركة، طرق الاستخدام...",
+        "en": "Write equipment weight, brand, usage methods..."
+    },
+    "product_category_ui_sports_equipment_quantity_label": {
+        "ar": "الكمية المتاحة",
+        "en": "Available quantity"
+    },
+    "product_category_ui_sports_equipment_add_page_title": {
+        "ar": "إضافة أداة رياضية",
+        "en": "Add sports equipment"
+    },
+    "product_category_ui_sports_equipment_edit_page_title": {
+        "ar": "تعديل بيانات الأداة",
+        "en": "Edit equipment details"
+    },
+    "product_category_ui_sports_equipment_action_button_text": {
+        "ar": "أضف إلى السلة",
+        "en": "Add to cart"
+    },
+    "product_category_ui_sports_gym_summary": {
+        "ar": "هذه الفئة مخصصة لاشتراكات الجيم والنوادي.",
+        "en": "This category is for gym and club subscriptions."
+    },
+    "product_category_ui_sports_gym_name_label": {
+        "ar": "اسم الباقة / الاشتراك",
+        "en": "Package / subscription name"
+    },
+    "product_category_ui_sports_gym_name_placeholder": {
+        "ar": "مثال: اشتراك شهري، كورس تدريب...",
+        "en": "Example: Monthly subscription, training course..."
+    },
+    "product_category_ui_sports_gym_description_label": {
+        "ar": "تفاصيل الاشتراك والمميزات",
+        "en": "Subscription details and benefits"
+    },
+    "product_category_ui_sports_gym_description_placeholder": {
+        "ar": "اكتب مميزات الباقة، المواعيد المتاحة...",
+        "en": "Write package benefits, available schedules..."
+    },
+    "product_category_ui_sports_gym_price_label": {
+        "ar": "قيمة الاشتراك",
+        "en": "Subscription cost"
+    },
+    "product_category_ui_sports_gym_add_page_title": {
+        "ar": "إضافة باقة / اشتراك",
+        "en": "Add package / subscription"
+    },
+    "product_category_ui_sports_gym_edit_page_title": {
+        "ar": "تعديل الباقة / الاشتراك",
+        "en": "Edit package / subscription"
+    },
+    "product_category_ui_sports_gym_action_button_text": {
+        "ar": "اشترك الآن",
+        "en": "Subscribe now"
     }
 }

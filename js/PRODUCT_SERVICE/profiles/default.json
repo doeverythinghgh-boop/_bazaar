@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "label": "Standard Category"
+  },
+  "summary": {
+    "key": "product_category_ui_default_summary",
+    "fallback": "Category selection controls labels, visibility, and validation across add, edit, and product view pages."
+  },
+  "submit": {
+    "serviceType": "0"
+  },
+  "pages": {
+    "add": {
+      "descriptionMode": "accordion",
+      "summaryTitle": {
+        "key": "product_category_ui_add_summary_title",
+        "fallback": "Selected category"
+      },
+      "summaryFallback": {
+        "key": "product_category_ui_add_summary_fallback",
+        "fallback": "Choose a main and sub category to apply the page behavior."
+      },
+      "submitButton": {
+        "key": "add1_submit_btn_initial",
+        "fallback": "Add product now"
+      },
+      "fields": {
+        "images": {
+          "visible": true,
+          "required": true,
+          "order": 10
+        },
+        "productName": {
+          "visible": true,
+          "required": true,
+          "order": 20
+        },
+        "description": {
+          "visible": true,
+          "required": true,
+          "minLength": 10,
+          "order": 30
+        },
+        "sellerMessage": {
+          "visible": true,
+          "required": true,
+          "minLength": 10,
+          "order": 40
+        },
+        "notes": {
+          "visible": true,
+          "required": false,
+          "order": 50
+        },
+        "quantity": {
+          "visible": true,
+          "required": true,
+          "min": 1,
+          "order": 60
+        },
+        "price": {
+          "visible": true,
+          "required": true,
+          "min": 0,
+          "order": 70
+        },
+        "originalPrice": {
+          "visible": true,
+          "required": false,
+          "order": 80
+        },
+        "realPrice": {
+          "visible": true,
+          "required": false,
+          "order": 90
+        },
+        "heavyLoad": {
+          "visible": true,
+          "required": false,
+          "order": 100
+        }
+      }
+    },
+    "edit": {
+      "descriptionMode": "accordion",
+      "summaryTitle": {
+        "key": "product_category_ui_edit_summary_title",
+        "fallback": "Editing category"
+      },
+      "summaryFallback": {
+        "key": "product_category_ui_edit_summary_fallback",
+        "fallback": "Choose a main and sub category to apply the page behavior."
+      },
+      "submitButton": {
+        "key": "edit_btn_save",
+        "fallback": "Save changes"
+      },
+      "fields": {
+        "images": {
+          "visible": true,
+          "required": true,
+          "order": 10
+        },
+        "productName": {
+          "visible": true,
+          "required": true,
+          "order": 20
+        },
+        "description": {
+          "visible": true,
+          "required": true,
+          "minLength": 10,
+          "order": 30
+        },
+        "sellerMessage": {
+          "visible": true,
+          "required": true,
+          "minLength": 10,
+          "order": 40
+        },
+        "notes": {
+          "visible": true,
+          "required": false,
+          "order": 50
+        },
+        "quantity": {
+          "visible": true,
+          "required": true,
+          "min": 1,
+          "order": 60
+        },
+        "price": {
+          "visible": true,
+          "required": true,
+          "min": 0,
+          "order": 70
+        },
+        "originalPrice": {
+          "visible": true,
+          "required": false,
+          "order": 80
+        },
+        "realPrice": {
+          "visible": true,
+          "required": false,
+          "order": 90
+        },
+        "heavyLoad": {
+          "visible": true,
+          "required": false,
+          "order": 100
+        }
+      }
+    },
+    "view": {
+      "descriptionMode": "accordion",
+      "actionButtonText": {
+        "key": "pv_add_to_cart",
+        "fallback": "Add to cart"
+      },
+      "summaryTitle": {
+        "key": "product_category_ui_view_summary_title",
+        "fallback": "Category behavior"
+      },
+      "summaryFallback": {
+        "key": "product_category_ui_view_summary_fallback",
+        "fallback": "This product uses the standard category-driven layout."
+      },
+      "fields": {
+        "price": {
+          "visible": true
+        },
+        "originalPrice": {
+          "visible": true
+        },
+        "quantity": {
+          "visible": true
+        },
+        "description": {
+          "visible": true
+        },
+        "sellerMessage": {
+          "visible": true
+        },
+        "share": {
+          "visible": true
+        },
+        "cartActions": {
+          "visible": true
+        },
+        "sellerCard": {
+          "visible": true
+        },
+        "realPrice": {
+          "visible": true
+        },
+        "heavyLoad": {
+          "visible": true
+        }
+      }
+    }
+  }
+}

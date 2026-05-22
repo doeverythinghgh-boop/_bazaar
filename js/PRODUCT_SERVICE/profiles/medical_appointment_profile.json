@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "label": "Medical Appointment"
+  },
+  "summary": {
+    "key": "medical_appointment_summary",
+    "fallback": "هذه الفئة مخصصة لحجز مواعيد الكشف الطبي في العيادات والمستشفيات."
+  },
+  "submit": {
+    "serviceType": "2"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "images": {
+          "visible": false
+        },
+        "productName": {
+          "label": {
+            "key": "medical_appointment_subject_label",
+            "fallback": "الموضوع"
+          },
+          "placeholder": {
+            "key": "medical_appointment_subject_placeholder",
+            "fallback": "أدخل الموضوع..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "medical_appointment_details_label",
+            "fallback": "التفاصيل"
+          },
+          "placeholder": {
+            "key": "medical_appointment_details_placeholder",
+            "fallback": "أدخل التفاصيل..."
+          }
+        },
+        "price": {
+          "label": {
+            "key": "medical_appointment_price_label",
+            "fallback": "سعر الكشف"
+          }
+        },
+        "originalPrice": {
+          "visible": false,
+          "required": false
+        },
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      },
+      "pageTitle": {
+        "key": "medical_appointment_page_title_add",
+        "fallback": "إضافة كشف / خدمة طبية"
+      }
+    },
+    "edit": {
+      "fields": {
+        "images": {
+          "visible": false
+        },
+        "productName": {
+          "label": {
+            "key": "medical_appointment_subject_label",
+            "fallback": "الموضوع"
+          },
+          "placeholder": {
+            "key": "medical_appointment_subject_placeholder",
+            "fallback": "أدخل الموضوع..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "medical_appointment_details_label",
+            "fallback": "التفاصيل"
+          },
+          "placeholder": {
+            "key": "medical_appointment_details_placeholder",
+            "fallback": "أدخل التفاصيل..."
+          }
+        },
+        "price": {
+          "label": {
+            "key": "medical_appointment_price_label",
+            "fallback": "سعر الكشف"
+          }
+        },
+        "originalPrice": {
+          "visible": false,
+          "required": false
+        },
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      },
+      "pageTitle": {
+        "key": "medical_appointment_page_title_edit",
+        "fallback": "تعديل الكشف / الخدمة الطبية"
+      }
+    },
+    "view": {
+      "descriptionMode": "plain",
+      "actionButtonText": {
+        "key": "medical_appointment_action_btn",
+        "fallback": "احجز كشف"
+      },
+      "fields": {
+        "originalPrice": {
+          "visible": false
+        },
+        "quantity": {
+          "visible": false
+        },
+        "cartActions": {
+          "visible": false
+        },
+        "heavyLoad": {
+          "visible": false
+        }
+      }
+    }
+  }
+}

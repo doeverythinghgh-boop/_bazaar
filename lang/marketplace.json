@@ -4,7 +4,7 @@
         "en": "Suez Bazaar... One opportunity for all opportunities"
     },
     "tagline_2": {
-        "ar": "اكتشف آلاف المنتجات من موردين موثوقين في السويس",
+        "ar": "اكتشف آلاف الخدمات من موردين موثوقين في السويس",
         "en": "Discover thousands of products from trusted suppliers in Suez"
     },
     "tagline_3": {
@@ -72,11 +72,11 @@
         "en": "Beauty Store"
     },
     "cat_no_products_message": {
-        "ar": "لا توجد منتجات في هذه الفئة حالياً.",
+        "ar": "لا توجد خدمات في هذه الفئة حالياً.",
         "en": "No products found in this category currently."
     },
     "cat_fetch_products_error": {
-        "ar": "حدث خطأ أثناء تحميل المنتجات. الرجاء المحاولة لاحقاً.",
+        "ar": "حدث خطأ أثناء تحميل الخدمات. الرجاء المحاولة لاحقاً.",
         "en": "An error occurred while loading products. Please try again later."
     },
     "cat_modal_title": {
@@ -144,7 +144,7 @@
         "en": "Search"
     },
     "search_modal_no_results": {
-        "ar": "لم يتم العثور على منتجات مطابقة لبحثك.",
+        "ar": "لم يتم العثور على خدمات مطابقة لبحثك.",
         "en": "No products found matching your search."
     },
     "search_modal_error_generic": {
@@ -168,7 +168,7 @@
         "en": "Search Mode"
     },
     "search_mode_products": {
-        "ar": "منتجات / خدمات",
+        "ar": "خدمات / خدمات",
         "en": "Products / Services"
     },
     "search_mode_sellers": {
@@ -220,7 +220,7 @@
         "en": "Search Results"
     },
     "port_search_panel_title": {
-        "ar": "بحث داخل منتجات البائع",
+        "ar": "بحث داخل خدمات مقدم الخدمة",
         "en": "Search Seller Products"
     },
     "port_search_clear_all": {
@@ -323,6 +323,10 @@
         "ar": "يجب تسجيل الدخول لتتمكن من إرسال طلب مباشر.",
         "en": "You must be logged in to send a direct request."
     },
+    "port_direct_request_title": {
+        "ar": "طلب مباشر",
+        "en": "Direct Request"
+    },
     "port_req_loading": {
         "ar": "جاري التحميل...",
         "en": "Loading..."
@@ -392,7 +396,7 @@
         "en": "Custom Sections"
     },
     "pharmacy_ctrl_tab_products": {
-        "ar": "المنتجات والأدوية",
+        "ar": "الخدمات والأدوية",
         "en": "Products"
     },
     "pharmacy_ctrl_tab_add_product": {
@@ -448,11 +452,11 @@
         "en": "No custom categories yet."
     },
     "pharmacy_ctrl_products_heading": {
-        "ar": "منتجات الصيدلية اليدوية",
+        "ar": "خدمات الصيدلية اليدوية",
         "en": "Manual Pharmacy Products"
     },
     "pharmacy_ctrl_products_empty_hint": {
-        "ar": "لم تقم بإضافة أي منتجات يدوية حتى الآن. استخدم تبويب \"إضافة منتج\" للبدء.",
+        "ar": "لم تقم بإضافة أي خدمات يدوية حتى الآن. استخدم تبويب \"إضافة منتج\" للبدء.",
         "en": "You haven't added any manual products yet. Use the 'Add Product' tab to start."
     },
     "pharmacy_ctrl_no_sub_categories": {
@@ -480,7 +484,7 @@
         "en": "Save Error"
     },
     "pharmacy_ctrl_manage_products": {
-        "ar": "إدارة المنتجات",
+        "ar": "إدارة الخدمات",
         "en": "Manage Products"
     },
     "pharmacy_ctrl_product_visibility": {
@@ -656,7 +660,7 @@
         "en": "Delete"
     },
     "load_error_products": {
-        "ar": "حدث خطأ أثناء تحميل المنتجات.",
+        "ar": "حدث خطأ أثناء تحميل الخدمات.",
         "en": "An error occurred while loading products."
     },
     "delete_confirm_title": {
@@ -724,7 +728,7 @@
         "en": "Product details and all data have been saved successfully."
     },
     "view_products_btn": {
-        "ar": "مشاهدة قائمة المنتجات",
+        "ar": "مشاهدة قائمة الخدمات",
         "en": "View Product List"
     },
     "required_fields_title": {
@@ -748,7 +752,7 @@
         "en": "Product Updated"
     },
     "port_featured_title": {
-        "ar": "منتجات مختارة",
+        "ar": "خدمات مختارة",
         "en": "Featured Products"
     },
     "port_specialties_title": {
@@ -764,7 +768,7 @@
         "en": "Featured Only"
     },
     "port_all_products": {
-        "ar": "قائمة المنتجات",
+        "ar": "قائمة الخدمات",
         "en": "All Products"
     },
     "pharmacy_settings_btn": {
@@ -892,11 +896,11 @@
         "en": "Images:"
     },
     "pharmacy_ctrl_loading_products": {
-        "ar": "جاري تحميل المنتجات...",
+        "ar": "جاري تحميل الخدمات...",
         "en": "Loading products..."
     },
     "pharmacy_ctrl_no_products_found": {
-        "ar": "لا يوجد منتجات في هذه الفئة",
+        "ar": "لا يوجد خدمات في هذه الفئة",
         "en": "No products in this category"
     },
     "pharmacy_ctrl_draft_badge": {

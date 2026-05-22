@@ -9,7 +9,7 @@
 window.pharmacyProductSubCategoryIndex = window.pharmacyProductSubCategoryIndex || {};
 
 async function pharmacyOpenProductManagement(subCatId, subCatTitle) {
-    console.log(`%c[Pharmacy] 1. فتح إدارة منتجات القسم: ${subCatTitle} (ID: ${subCatId})`, "color: #2563eb; font-weight: bold;");
+    console.log(`%c[Pharmacy] 1. فتح إدارة خدمات القسم: ${subCatTitle} (ID: ${subCatId})`, "color: #2563eb; font-weight: bold;");
     const userKey = new URLSearchParams(window.location.search).get('user_key');
 
     Swal.fire({

@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "label": "Pet Supplies & Food"
+  },
+  "summary": {
+    "key": "product_category_ui_pet_supplies_summary",
+    "fallback": "هذه الفئة مخصصة لمستلزمات وطعام الحيوانات الأليفة."
+  },
+  "submit": {
+    "serviceType": "0"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "images": {
+          "label": {
+            "key": "product_category_ui_pet_supplies_images_label",
+            "fallback": "صور المنتج"
+          }
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_pet_supplies_name_label",
+            "fallback": "اسم المنتج"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_supplies_name_placeholder",
+            "fallback": "مثال: طعام قطط دراي فود، طوق للكلاب..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_pet_supplies_description_label",
+            "fallback": "مواصفات المنتج"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_supplies_description_placeholder",
+            "fallback": "اكتب تفاصيل المنتج، الحجم، المكونات..."
+          }
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_pet_supplies_add_page_title",
+        "fallback": "إضافة منتج/مستلزمات"
+      }
+    },
+    "edit": {
+      "fields": {
+        "images": {
+          "label": {
+            "key": "product_category_ui_pet_supplies_images_label",
+            "fallback": "صور المنتج"
+          }
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_pet_supplies_name_label",
+            "fallback": "اسم المنتج"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_supplies_name_placeholder",
+            "fallback": "مثال: طعام قطط دراي فود، طوق للكلاب..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_pet_supplies_description_label",
+            "fallback": "مواصفات المنتج"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_supplies_description_placeholder",
+            "fallback": "اكتب تفاصيل المنتج، الحجم، المكونات..."
+          }
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_pet_supplies_edit_page_title",
+        "fallback": "تعديل بيانات المنتج"
+      }
+    },
+    "view": {
+      "actionButtonText": {
+        "key": "product_category_ui_pet_supplies_action_button_text",
+        "fallback": "أضف إلى السلة"
+      }
+    }
+  }
+}

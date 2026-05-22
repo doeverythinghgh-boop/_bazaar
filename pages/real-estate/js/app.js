@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",()=>{window.RealEstateApp&&"function"==typeof window.RealEstateApp.init?window.RealEstateApp.init():console.error("[App] Fatal Error: RealEstateApp modules failed to load correctly.")});

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "label": "Pharmacy Product",
+    "domain": "pharmacy"
+  },
+  "summary": {
+    "key": "pharmacy_product_profile_summary",
+    "fallback": "Pharmacy product flow keeps the unified product pages while storing pharmacy-specific metadata in pharmacy_products_metadata."
+  },
+  "submit": {
+    "serviceType": "0",
+    "pharmacyMetadata": true
+  },
+  "pages": {
+    "add": {
+      "pageTitle": {
+        "key": "pharmacy_add_product_title",
+        "fallback": "إضافة منتج صيدلية"
+      },
+      "fields": {
+        "sellerMessage": {
+          "visible": false,
+          "required": false
+        },
+        "notes": {
+          "visible": true,
+          "required": false
+        },
+        "quantity": {
+          "label": {
+            "key": "pharmacy_add_stock_label",
+            "fallback": "كمية المخزون"
+          }
+        },
+        "price": {
+          "label": {
+            "key": "pharmacy_add_price_label",
+            "fallback": "سعر المستهلك (ج.م)"
+          }
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "edit": {
+      "pageTitle": {
+        "key": "pharmacy_edit_product_title",
+        "fallback": "تعديل منتج صيدلية"
+      },
+      "fields": {
+        "sellerMessage": {
+          "visible": false,
+          "required": false
+        },
+        "notes": {
+          "visible": true,
+          "required": false
+        },
+        "quantity": {
+          "label": {
+            "key": "pharmacy_add_stock_label",
+            "fallback": "كمية المخزون"
+          }
+        },
+        "price": {
+          "label": {
+            "key": "pharmacy_add_price_label",
+            "fallback": "سعر المستهلك (ج.م)"
+          }
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "view": {
+      "fields": {
+        "heavyLoad": {
+          "visible": false
+        }
+      }
+    }
+  }
+}

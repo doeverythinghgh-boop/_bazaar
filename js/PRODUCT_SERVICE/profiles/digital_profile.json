@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "label": "Digital Profile"
+  },
+  "summary": {
+    "key": "product_category_ui_digital_profile_summary",
+    "fallback": "This category is delivered digitally. Stock quantity and shipping-related controls are hidden."
+  },
+  "submit": {
+    "serviceType": "2"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "edit": {
+      "fields": {
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "view": {
+      "descriptionMode": "plain",
+      "actionButtonText": {
+        "key": "product_category_ui_digital_profile_action_button_text",
+        "fallback": "Request delivery"
+      },
+      "fields": {
+        "quantity": {
+          "visible": false
+        },
+        "cartActions": {
+          "visible": false
+        },
+        "heavyLoad": {
+          "visible": false
+        }
+      }
+    }
+  }
+}
