@@ -1,7 +1,7 @@
 {
-  "version": "1.29.25",
+  "version": "1.29.26",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-05-23T20:05:47.048Z",
+  "lastUpdated": "2026-05-23T20:27:37.707Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -4025,13 +4025,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/PRODUCT_SERVICE/category-ui-base.json",
-      "hash": "ebfcd1ab198a35f06a12da2eece7baa1518c1c088dd9e9288ffacc2f8fb70ffe",
-      "size": 2811
+      "hash": "e6275a265bbfdeb0e1a000d1f25182f85462fc3f503cfb4aab9dae8bc1cca9f7",
+      "size": 2833
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/PRODUCT_SERVICE/category-ui-system.js",
-      "hash": "1beb88575c178f57ba81a733d74e64f0d410ea398b105ba91116470e00e56811",
-      "size": 19014
+      "hash": "fa3921f90cefe383a6e55b4ade64bcd0aee63f27c794db4f79c0462a134f8b59",
+      "size": 19504
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/PRODUCT_SERVICE/product-category-logger.js",
@@ -7300,8 +7300,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/shared/category/product-category-page-apply.js",
-      "hash": "68e2d904c51b65f21f1d1ced8d0fdc186fe0a0ae7686d996df3ddab862f4f948",
-      "size": 13485
+      "hash": "48a7e52ea0c3e3998d9aeadfc255e68532229cc714632bb382ebce2a908383f5",
+      "size": 13617
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/products/shared/category/product-category-page-form.js",
@@ -8305,7 +8305,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "132a30774113f48c4b851f83037d4148c6420beaf5bcccc42d88304c0887f640",
+      "hash": "723f37803eb18dee664be722dd8cb903ff72069d641989f4c1b3c589bb0d6380",
       "size": 21
     }
   ]
