@@ -45,6 +45,18 @@ function summarizeCollectionResponse(data) {
     return { kind: typeof data, count: 0 };
 }
 
+function productApiCacheProducts(products, source) {
+    if (!window.LocalDB || !products) return;
+    const list = Array.isArray(products) ? products : [products];
+    if (!list.length) return;
+    window.LocalDB.saveProducts(list, source).catch((error) => {
+        productApiDebug('local-products-cache-failed', {
+            source,
+            message: error?.message || String(error)
+        }, 'warn');
+    });
+}
+
 /**
  * @description Adds a new product to the database via API call.
  * @function addProduct
@@ -61,6 +73,7 @@ async function addProduct(productData) {
         ...summarizeProductPayload(productData),
         hasError: !!response?.error
     }, response?.error ? 'warn' : 'log');
+    if (!response?.error) productApiCacheProducts(response?.product || response?.data || productData, 'product-add');
     return response;
 }
 
@@ -80,6 +93,7 @@ async function updateProduct(productData) {
         ...summarizeProductPayload(productData),
         hasError: !!response?.error
     }, response?.error ? 'warn' : 'log');
+    if (!response?.error) productApiCacheProducts(response?.product || response?.data || productData, 'product-update');
     return response;
 }
 
@@ -153,6 +167,7 @@ async function getProductsByCategory(mainCatId, subCatId) {
             subCatId,
             resultCount: merged.length
         });
+        productApiCacheProducts(merged, 'category-fetch');
         return merged;
     } catch (error) {
         productApiDebug('get-products-by-category-error', {
@@ -210,6 +225,7 @@ async function getProductsByUser(userKey, filters = {}) {
             userKey,
             resultCount: merged.length
         });
+        productApiCacheProducts(merged, 'merchant-fetch');
         return merged;
     } catch (error) {
         productApiDebug('get-products-by-user-error', {
@@ -243,6 +259,7 @@ async function getProductByKey(productKey) {
             found: !!data,
             hasError: !!data?.error
         }, data?.error ? 'warn' : 'log');
+        if (data && !data.error) productApiCacheProducts(data, 'detail-fetch');
         return data;
     } catch (error) {
         productApiDebug('get-product-by-key-error', {
