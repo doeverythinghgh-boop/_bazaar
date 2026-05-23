@@ -209,7 +209,8 @@ async function getProductsByUser(userKey, filters = {}) {
                 target,
                 summary: summarizeCollectionResponse(data)
             });
-            return data?.error ? [] : (Array.isArray(data) ? data : []);
+            if (data?.error) return [];
+            return Array.isArray(data) ? data : (Array.isArray(data?.products) ? data.products : []);
         }));
 
         const merged = [];
