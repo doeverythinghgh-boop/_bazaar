@@ -336,8 +336,16 @@
         "en": "Loading..."
     },
     "port_req_verified_pharmacy": {
-        "ar": "صيدلية معتمدة",
-        "en": "Verified Pharmacy"
+        "ar": "مزود خدمة موثق",
+        "en": "Verified Service Provider"
+    },
+    "port_req_queued_products_title": {
+        "ar": "منتجات الطلب",
+        "en": "Request Items"
+    },
+    "port_req_missing_merchant": {
+        "ar": "لم يتم تحديد مقدم الخدمة المطلوب.",
+        "en": "The requested service provider was not specified."
     },
     "port_req_textarea_placeholder": {
         "ar": "أضف ملاحظاتك أو تفاصيل طلبك هنا... (يمكنك استخدام الميكروفون للتحدث)",
@@ -346,6 +354,10 @@
     "port_req_attach_subtitle": {
         "ar": "أرفق صوراً توضيحية لطلبك (إن وجدت)",
         "en": "Attach illustrative images for your request (if any)"
+    },
+    "port_req_details_title": {
+        "ar": "تفاصيل",
+        "en": "Details"
     },
     "port_req_upload_hint": {
         "ar": "اسحب الصور هنا أو اضغط للاختيار",
