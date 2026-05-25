@@ -244,10 +244,13 @@ async function getProductsByUser(userKey, filters = {}) {
  * @param {string} productKey
  * @returns {Promise<Object|null>}
  */
-async function getProductByKey(productKey) {
+async function getProductByKey(productKey, options = {}) {
     try {
-        productApiDebug('get-product-by-key-start', { productKey });
-        const data = await apiFetch(`/api/products?product_key=${productKey}&single=true`, {
+        const listingType = String(options.listingType || options.listing || options.source || '').trim();
+        productApiDebug('get-product-by-key-start', { productKey, listingType });
+        const params = new URLSearchParams({ product_key: productKey, single: 'true' });
+        if (listingType) params.set('listing', listingType);
+        const data = await apiFetch(`/api/products?${params.toString()}`, {
             specialHandlers: {
                 404: () => {
                     productApiDebug('get-product-by-key-not-found', { productKey }, 'warn');

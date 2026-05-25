@@ -1,0 +1,1 @@
+import{initProductPageShell,onReady}from"../../shared/modules/product-page-bootstrap.js";onReady(async()=>{await initProductPageShell("productView",{fetchCategories:!0,homeButtonId:"index-home-btn"}),"function"==typeof window.productView_initPage&&(window.ProductDebugConsole?.log("productView","page-init-start"),await window.productView_initPage())});
