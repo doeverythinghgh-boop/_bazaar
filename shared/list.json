@@ -167,7 +167,7 @@
         {
           "id": 6,
           "title": {
-            "ar": "منتجات الألبان والبيض",
+            "ar": "خدمات الألبان والبيض",
             "en": "Dairy & Eggs"
           },
           "icon": "fas fa-egg",
@@ -585,8 +585,8 @@
         {
           "id": 1,
           "title": {
-            "ar": "شقق ومنازل للبيع",
-            "en": "Apartments & Houses for Sale"
+            "ar": "شقق ومنازل للبيع أو للإيجار",
+            "en": "Apartments & Houses for Sale or Rent"
           },
           "icon": "fas fa-home",
           "image": "Apartments & Houses for Sale.webp"
@@ -599,15 +599,6 @@
           },
           "icon": "fas fa-house-chimney-window",
           "image": "Chalets & Villas.webp"
-        },
-        {
-          "id": 2,
-          "title": {
-            "ar": "شقق ومنازل للإيجار",
-            "en": "Apartments & Houses for Rent"
-          },
-          "icon": "fas fa-key",
-          "image": "Apartments & Houses for Rent.webp"
         },
         {
           "id": 3,
@@ -726,7 +717,7 @@
         {
           "id": 4,
           "title": {
-            "ar": "منتجات الشموع والعطور المنزلية",
+            "ar": "خدمات الشموع والعطور المنزلية",
             "en": "Candles & Home Fragrances"
           },
           "icon": "fas fa-burn",
@@ -744,7 +735,7 @@
         {
           "id": 6,
           "title": {
-            "ar": "المنتجات المصنوعة من الجلد والخشب",
+            "ar": "الخدمات المصنوعة من الجلد والخشب",
             "en": "Leather & Wood Products"
           },
           "icon": "fas fa-tree",
@@ -856,15 +847,6 @@
       "image": "Medical Services.webp",
       "subcategories": [
         {
-          "id": 201,
-          "title": {
-            "ar": "كشف طبيب",
-            "en": "Doctor's Appointment"
-          },
-          "icon": "fas fa-stethoscope",
-          "image": "Doctor's Appointment.webp"
-        },
-        {
           "id": 202,
           "title": {
             "ar": "خدمات الأشعة",
@@ -901,15 +883,6 @@
           "image": "Home Nursing.webp"
         },
         {
-          "id": 206,
-          "title": {
-            "ar": "العلاج الطبيعي",
-            "en": "Physical Therapy"
-          },
-          "icon": "fas fa-dumbbell",
-          "image": "Physical Therapy.webp"
-        },
-        {
           "id": 208,
           "title": {
             "ar": "رعاية المسنين وذوي الهمم",
@@ -926,6 +899,426 @@
           },
           "icon": "fas fa-heartbeat",
           "image": "Medical Devices.webp"
+        },
+        {
+          "id": 300,
+          "title": {
+            "ar": "النساء والتوليد",
+            "en": "Obstetrics and Gynaecology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Obstetrics and Gynaecology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 301,
+          "title": {
+            "ar": "جراحة العظام",
+            "en": "Orthopedic"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Orthopedic.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 302,
+          "title": {
+            "ar": "الأسنان",
+            "en": "Dental"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Dental.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 303,
+          "title": {
+            "ar": "النفسي",
+            "en": "Psychiatry"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Psychiatry.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 304,
+          "title": {
+            "ar": "الباطني",
+            "en": "Internal"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Internal Medicine.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 305,
+          "title": {
+            "ar": "الصدر والجهاز التنفسي",
+            "en": "Chest"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Chest.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 307,
+          "title": {
+            "ar": "الأعصاب",
+            "en": "Neurology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Neurology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 308,
+          "title": {
+            "ar": "الجراحة العامة",
+            "en": "General Surgery"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "General Surgery.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 309,
+          "title": {
+            "ar": "التغذية العلاجية",
+            "en": "Nutrition"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Nutrition.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 310,
+          "title": {
+            "ar": "الأطفال وحديثي الولادة",
+            "en": "Pediatrics and New Born"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Pediatrics and New Born.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 311,
+          "title": {
+            "ar": "القلب",
+            "en": "Cardiology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Cardiology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 313,
+          "title": {
+            "ar": "الأنف والأذن والحنجرة",
+            "en": "Ear, Nose and Throat"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Ear Nose and Throat.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 314,
+          "title": {
+            "ar": "جراحة الأوعية الدموية",
+            "en": "Vascular Surgery"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Vascular Surgery.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 315,
+          "title": {
+            "ar": "العلاج الطبيعي",
+            "en": "Physical Therapy"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Physical Therapy.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 316,
+          "title": {
+            "ar": "جراحة العيون",
+            "en": "Ophthalmology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Ophthalmology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 317,
+          "title": {
+            "ar": "جراحة المخ والأعصاب",
+            "en": "Neurosurgery"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Neurosurgery.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 318,
+          "title": {
+            "ar": "الجهاز الهضمي والكبد",
+            "en": "Gastroenterology and Hepatology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Gastroenterology and Hepatology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 319,
+          "title": {
+            "ar": "جراحة التجميل",
+            "en": "Plastic Surgery"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Plastic Surgery.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 320,
+          "title": {
+            "ar": "الروماتيزم",
+            "en": "Rheumatology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Rheumatology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 322,
+          "title": {
+            "ar": "الغدد الصماء",
+            "en": "Endocrinology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Endocrinology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 324,
+          "title": {
+            "ar": "الطبيعي وإصابات الملاعب",
+            "en": "Physical and Sport Injuries"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Physical Medicine and Sport Injuries.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 325,
+          "title": {
+            "ar": "الجلدية والذكورة",
+            "en": "Dermatology and Andrology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Dermatology and Andrology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 326,
+          "title": {
+            "ar": "جراحة الأطفال",
+            "en": "Pediatric Surgery"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Pediatric Surgery.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 327,
+          "title": {
+            "ar": "الدم",
+            "en": "Hematology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Hematology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 328,
+          "title": {
+            "ar": "جراحة الأورام",
+            "en": "Oncosurgeon"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Oncosurgeon.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 329,
+          "title": {
+            "ar": "علاج الألم",
+            "en": "Pain Management"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Pain Management.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 330,
+          "title": {
+            "ar": "التخاطب واضطرابات الصوت",
+            "en": "Phoniatrics"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Phoniatrics.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 331,
+          "title": {
+            "ar": "علاج الأورام",
+            "en": "Oncology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Oncology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 332,
+          "title": {
+            "ar": "الحساسية والمناعة",
+            "en": "Allergy and Immunology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Allergy and Immunology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 333,
+          "title": {
+            "ar": "جراحة القلب والصدر",
+            "en": "Cardiothoracic Surgery"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Cardiothoracic Surgery.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 334,
+          "title": {
+            "ar": "الكلى والمسالك البولية",
+            "en": "Nephrology and Urology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Nephrology and Urology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 335,
+          "title": {
+            "ar": "السمعيات",
+            "en": "Audiology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Audiology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 336,
+          "title": {
+            "ar": "الأسرة",
+            "en": "Family"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Family Medicine.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 338,
+          "title": {
+            "ar": "الأشعة التشخيصية",
+            "en": "Diagnostic Radiology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Diagnostic Radiology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 339,
+          "title": {
+            "ar": "جراحة الجهاز الهضمي",
+            "en": "Gastrointestinal Surgery"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Gastrointestinal Surgery.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 340,
+          "title": {
+            "ar": "المسنين",
+            "en": "Geriatrics"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Geriatrics.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 341,
+          "title": {
+            "ar": "العام",
+            "en": "General Practice"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "General Practice.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 343,
+          "title": {
+            "ar": "الأشعة التداخلية",
+            "en": "Interventional Radiology"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Interventional Radiology.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 345,
+          "title": {
+            "ar": "جراحات السمنة",
+            "en": "Bariatric Surgery"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Bariatric Surgery.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 346,
+          "title": {
+            "ar": "عظام الأطفال",
+            "en": "Child Orthopaedics"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Child Orthopaedics.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 347,
+          "title": {
+            "ar": "أطفال الأنابيب وعلاج العقم",
+            "en": "IVF and Infertility"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "IVF and Infertility.webp",
+          "type": "consultation"
+        },
+        {
+          "id": 348,
+          "title": {
+            "ar": "الوراثة الطبية",
+            "en": "Genetics"
+          },
+          "icon": "fas fa-stethoscope",
+          "image": "Genetics.webp",
+          "type": "consultation"
         }
       ]
     },

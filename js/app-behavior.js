@@ -1,1 +1,1 @@
-window.AppBehavior={appVersion:"28",isUnderMaintenance:!1,disableAdminFeatures:!1,enableSecurityShield:!1,enablePWA:!1,enableAddProductAppPrice:!1,enableDevErrorMonitor:!0,autoApproveNotifyAdmin:!0};
+const AppBehavior={appVersion:"30",isUnderMaintenance:!1,disableAdminFeatures:!1,enableSecurityShield:!1,enablePWA:!1,enableAppPrice:!1,enableOriginalPrice:!1,enableDevErrorMonitor:!0,autoApproveNotifyAdmin:!0};window.AppBehavior=AppBehavior;

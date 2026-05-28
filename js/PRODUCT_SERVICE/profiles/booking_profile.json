@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "label": "Booking Profile"
+  },
+  "summary": {
+    "key": "product_category_ui_booking_profile_summary",
+    "fallback": "This category relies on booking or coordination. Quantity and direct cart purchase are hidden to keep the flow focused on scheduling."
+  },
+  "submit": {
+    "serviceType": "2"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "edit": {
+      "fields": {
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "view": {
+      "descriptionMode": "plain",
+      "actionButtonText": {
+        "key": "product_category_ui_booking_profile_action_button_text",
+        "fallback": "Book now"
+      },
+      "fields": {
+        "quantity": {
+          "visible": false
+        },
+        "cartActions": {
+          "visible": false
+        }
+      }
+    }
+  }
+}

@@ -272,7 +272,7 @@
         "en": "Load More"
     },
     "no_products": {
-        "ar": "لا توجد منتجات حالياً",
+        "ar": "لا توجد خدمات حالياً",
         "en": "No products yet"
     },
     "pv_in_stock": {
@@ -384,7 +384,7 @@
         "en": "You can login as guest or complete registration."
     },
     "gen_swal_title_confirm": {
-        "ar": "تأكيد العملية للبائع",
+        "ar": "تأكيد العملية لمقدم الخدمة",
         "en": "Confirm Action for Merchant"
     },
     "gen_swal_btn_yes_delete": {
@@ -532,7 +532,7 @@
         "en": "Action required"
     },
     "port_profile_specialties_required_text": {
-        "ar": "يرجى تحديث تخصصات النشاط في ملفك الشخصي أولاً لتتمكن من إضافة منتجاتك بالقسم الصحيح.",
+        "ar": "يرجى تحديث تخصصات النشاط في ملفك الشخصي أولاً لتتمكن من إضافة خدماتك بالقسم الصحيح.",
         "en": "Please update your business specialties in your profile settings first to add products to the correct category."
     },
     "port_profile_specialties_required_confirm": {
@@ -540,11 +540,11 @@
         "en": "Edit profile"
     },
     "port_featured_add_confirm": {
-        "ar": "هل تريد إضافة هذا المنتج لقائمة المنتجات المميزة للبائع؟",
+        "ar": "هل تريد إضافة هذا المنتج لقائمة الخدمات المميزة لمقدم الخدمة؟",
         "en": "Do you want to add this product to the merchant's featured list?"
     },
     "port_featured_remove_confirm": {
-        "ar": "هل تريد إزالة هذا المنتج من قائمة المنتجات المميزة للبائع؟",
+        "ar": "هل تريد إزالة هذا المنتج من قائمة الخدمات المميزة لمقدم الخدمة؟",
         "en": "Do you want to remove this product from the merchant's featured list?"
     },
     "port_delete_success_title": {
@@ -672,7 +672,7 @@
         "en": "Add Product"
     },
     "dash_my_products": {
-        "ar": "منتجاتي",
+        "ar": "خدماتي",
         "en": "My Products"
     },
     "dash_admin_panel": {
@@ -704,7 +704,7 @@
         "en": "Notifications"
     },
     "dash_btn_pending_products": {
-        "ar": "المنتجات المعلقة",
+        "ar": "الخدمات المعلقة",
         "en": "Pending Products"
     },
     "dash_btn_image_analyzer": {
@@ -744,7 +744,7 @@
         "en": "Buyer"
     },
     "dash_opt_seller": {
-        "ar": "بائع",
+        "ar": "مقدم خدمة",
         "en": "Seller"
     },
     "dash_opt_delivery": {
@@ -762,6 +762,10 @@
     "settings": {
         "ar": "الإعدادات",
         "en": "Settings"
+    },
+    "seller": {
+        "ar": "البائع",
+        "en": "Seller"
     },
     "contact_details_title_phone": {
         "ar": "هاتف او واتس اب",
@@ -832,15 +836,15 @@
         "en": "How can I create a free or customized advertisement or marketing campaign?"
     },
     "contact_faq_a3": {
-        "ar": "بمجرد إنشاء صفحتك الخاصة على سويس بازار، فإنها تصبح واجهة إعلانية مميزة لك، حيث يمكنك إضافة منتجاتك، وإبراز المميز منها، وعرض معلوماتك للتواصل، كما يمكنك مشاركة صفحتك مع أي شخص في أي مكان. ويمكنك أيضًا إنشاء حملة دائمة داخل سويس بازار عبر إضافة منتج خدمي ليظهر للمستخدمين كإعلان مستمر، أو التواصل معنا لطلب حملات عامة أو مخصصة تناسب نشاطك.",
+        "ar": "بمجرد إنشاء صفحتك الخاصة على سويس بازار، فإنها تصبح واجهة إعلانية مميزة لك، حيث يمكنك إضافة خدماتك، وإبراز المميز منها، وعرض معلوماتك للتواصل، كما يمكنك مشاركة صفحتك مع أي شخص في أي مكان. ويمكنك أيضًا إنشاء حملة دائمة داخل سويس بازار عبر إضافة منتج خدمي ليظهر للمستخدمين كإعلان مستمر، أو التواصل معنا لطلب حملات عامة أو مخصصة تناسب نشاطك.",
         "en": "Once you create your own page on Suez Bazaar, it becomes a distinctive promotional storefront for you, where you can add your products, highlight featured ones, show your contact information, and share your page with anyone anywhere. You can also create an ongoing campaign inside Suez Bazaar by adding a service product that appears to users as a continuous ad, or contact us for general or customized campaigns that suit your business."
     },
     "contact_faq_q5": {
-        "ar": "ما حدود مسؤولية Suez Bazaar تجاه البائعين والمشترين وجودة المعروض؟",
+        "ar": "ما حدود مسؤولية Suez Bazaar تجاه مقدم الخدمة والمشترين وجودة المعروض؟",
         "en": "What are Suez Bazaar's responsibility limits regarding sellers, buyers, and the quality of listed products or services?"
     },
     "contact_faq_a5": {
-        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، وهي لا تضمن جدية البائع أو المشتري ولا جودة المنتج أو الخدمة. لذلك يجب على المستخدم التأكد بنفسه من الطرف الآخر، وعدم دفع أي مبلغ إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
+        "ar": "تعمل Suez Bazaar كمنصة لعرض الخدمات والخدمات والتواصل بين المستخدمين، وهي لا تضمن جدية مقدم الخدمة أو المشتري ولا جودة المنتج أو الخدمة. لذلك يجب على المستخدم التأكد بنفسه من الطرف الآخر، وعدم دفع أي مبلغ إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
         "en": "Suez Bazaar operates as a platform for listing products and services and enabling communication between users. It does not guarantee the seriousness of sellers or buyers, nor the quality of any product or service. Users should verify the other party themselves and should not make any payment until they receive the product or obtain the service and confirm it. Suez Bazaar also commits to removing any product or service provider proven through reports or review to be offering fake products or services or engaging in any form of fraud or deception."
     },
     "contact_info_title": {
@@ -972,7 +976,7 @@
         "en": "How We Use Information"
     },
     "privacy_p_2": {
-        "ar": "نستخدم البيانات فقط لأغراض تشغيل التطبيق وتقديم الخدمات، مثل التواصل بين البائعين والمشترين، وتحسين الأداء، ودعم المستخدمين.",
+        "ar": "نستخدم البيانات فقط لأغراض تشغيل التطبيق وتقديم الخدمات، مثل التواصل بين مقدم الخدمة والمشترين، وتحسين الأداء، ودعم المستخدمين.",
         "en": "Data is used only for app operation and services, such as facilitating communication between buyers and sellers and improving performance."
     },
     "privacy_h2_2b": {
@@ -980,7 +984,7 @@
         "en": "Contact Data Sharing Upon Purchase"
     },
     "privacy_p_2b": {
-        "ar": "قد يظهر للبائع بعض بيانات التواصل مثل رقم الهاتف عند شراء منتج أو خدمة منه، وذلك لتنسيق التواصل وتسليم الطلب. وبإتمام الشراء، يقر المستخدم بعلمه بذلك، ولا تتحمل Suez Bazaar مسؤولية أي استخدام لهذه البيانات خارج نطاق تنفيذ الطلب.",
+        "ar": "قد يظهر لمقدم الخدمة بعض بيانات التواصل مثل رقم الهاتف عند شراء منتج أو خدمة منه، وذلك لتنسيق التواصل وتسليم الطلب. وبإتمام الشراء، يقر المستخدم بعلمه بذلك، ولا تتحمل Suez Bazaar مسؤولية أي استخدام لهذه البيانات خارج نطاق تنفيذ الطلب.",
         "en": "Sellers may see contact info such as phone number upon a purchase to coordinate delivery. By purchasing, users acknowledge this; Suez Bazaar is not liable for data use outside order fulfillment."
     },
     "privacy_h2_2c": {
@@ -988,7 +992,7 @@
         "en": "Platform Nature & Liability Limits"
     },
     "privacy_p_2c": {
-        "ar": "تعمل Suez Bazaar كمنصة لعرض المنتجات والخدمات والتواصل بين المستخدمين، ولا تضمن جدية البائعين أو المشترين ولا جودة المنتج أو الخدمة. ويلتزم المستخدم بعدم الدفع إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها بنفسه. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
+        "ar": "تعمل Suez Bazaar كمنصة لعرض الخدمات والخدمات والتواصل بين المستخدمين، ولا تضمن جدية مقدم الخدمة أو المشترين ولا جودة المنتج أو الخدمة. ويلتزم المستخدم بعدم الدفع إلا بعد استلام المنتج أو الحصول على الخدمة والتأكد منها بنفسه. كما تلتزم Suez Bazaar بحذف أي صاحب منتج أو خدمة يثبت من خلال البلاغات أو المراجعة أنه يعرض منتجًا أو خدمة غير حقيقية أو يمارس أي نوع من أنواع الغش أو التضليل.",
         "en": "Suez Bazaar is a listing platform and does not guarantee the reliability of users or quality of products. Users should not pay until they verify the product/service themselves. We commit to removing any listings proven to be fraudulent or misleading."
     },
     "privacy_h2_3": {
@@ -1248,11 +1252,11 @@
         "en": "No orders found."
     },
     "profile_product_rating_settings_title": {
-        "ar": "إعدادات تقييم المنتجات والخدمات",
+        "ar": "إعدادات تقييم الخدمات والخدمات",
         "en": "Product and Service Rating Settings"
     },
     "profile_product_rating_enable_label": {
-        "ar": "تفعيل استقبال تقييمات المنتجات والخدمات",
+        "ar": "تفعيل استقبال تقييمات الخدمات والخدمات",
         "en": "Enable receiving product and service ratings"
     },
     "profile_product_rating_mode_stars_comments": {
@@ -1288,7 +1292,7 @@
         "en": "Items count"
     },
     "sales_sellers_count": {
-        "ar": "عدد البائعين",
+        "ar": "عدد مقدم الخدمة",
         "en": "Sellers count"
     },
     "sales_error": {
@@ -1348,7 +1352,7 @@
         "en": "No bio available yet"
     },
     "main_category_gallery_title": {
-        "ar": "المنتجات / الخدمات",
+        "ar": "الخدمات / الخدمات",
         "en": "Products / Services"
     },
     "profile_label_primary": {
@@ -1364,7 +1368,7 @@
         "en": "Suez Bazaar... One chance for all opportunities"
     },
     "splash_slogan_2": {
-        "ar": "اكتشف آلاف المنتجات من موردين موثوقين في السويس",
+        "ar": "اكتشف آلاف الخدمات من موردين موثوقين في السويس",
         "en": "Discover thousands of products from trusted suppliers in Suez"
     },
     "splash_slogan_3": {
@@ -1384,23 +1388,23 @@
         "en": "Direct from supplier to consumer, better quality and price"
     },
     "cfg_list_products": {
-        "ar": "قائمة المنتجات",
+        "ar": "قائمة الخدمات",
         "en": "Product List"
     },
     "cfg_featured_products": {
-        "ar": "منتجات مختارة",
+        "ar": "خدمات مختارة",
         "en": "Featured Products"
     },
     "cfg_search_products": {
-        "ar": "ابحث داخل المنتجات",
+        "ar": "ابحث داخل الخدمات",
         "en": "Search Products"
     },
     "cfg_no_products": {
-        "ar": "لا توجد منتجات حالياً",
+        "ar": "لا توجد خدمات حالياً",
         "en": "No products currently available"
     },
     "cfg_no_featured_products": {
-        "ar": "لا توجد منتجات مميزة لعرضها",
+        "ar": "لا توجد خدمات مميزة لعرضها",
         "en": "No featured products to display"
     },
     "cfg_list_services": {
@@ -1540,7 +1544,7 @@
         "en": "Food Activity"
     },
     "cfg_tech_products": {
-        "ar": "المنتجات التقنية",
+        "ar": "الخدمات التقنية",
         "en": "Tech Products"
     },
     "cfg_tech_featured": {
@@ -1548,7 +1552,7 @@
         "en": "Tech Picks"
     },
     "cfg_tech_search": {
-        "ar": "ابحث داخل المنتجات التقنية",
+        "ar": "ابحث داخل الخدمات التقنية",
         "en": "Search Tech"
     },
     "cfg_tech_badge": {
@@ -1590,5 +1594,21 @@
     "dev_reset_fcm_error": {
         "ar": "دالة resetFCM غير معرفة حالياً.",
         "en": "resetFCM function is currently undefined."
+    },
+    "doctors_examination": {
+        "ar": "كشف طبيب",
+        "en": "Doctor's Examination"
+    },
+    "search_no_results": {
+        "ar": "لا توجد نتائج مطابقة لبحثك",
+        "en": "No results matching your search"
+    },
+    "service_providers_count": {
+        "ar": "{count} مقدم خدمة",
+        "en": "{count} Service Providers"
+    },
+    "service_providers_count_zero": {
+        "ar": "0 مقدم خدمة",
+        "en": "0 Service Providers"
     }
 }

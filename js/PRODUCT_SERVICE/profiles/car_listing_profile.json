@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "label": "Car Listing",
+    "domain": "cars"
+  },
+  "summary": {
+    "key": "car_listing_profile_summary",
+    "fallback": "Car listings use the unified product pages while saving listing data in vehicle_listings."
+  },
+  "submit": {
+    "serviceType": "0",
+    "specialtyListing": "car"
+  },
+  "pages": {
+    "add": {
+      "pageTitle": {
+        "key": "car_add_product_title",
+        "fallback": "إضافة سيارة"
+      },
+      "submitButton": {
+        "key": "car_add_submit",
+        "fallback": "اضف السيارة الآن"
+      },
+      "fields": {
+        "productName": {
+          "label": {
+            "key": "car_title_label",
+            "fallback": "عنوان الإعلان"
+          },
+          "placeholder": {
+            "key": "car_title_placeholder",
+            "fallback": "مثال: سيارة بحالة ممتازة"
+          },
+          "required": false
+        },
+        "description": {
+          "label": {
+            "key": "car_notes_label",
+            "fallback": "ملاحظات السيارة"
+          },
+          "placeholder": {
+            "key": "car_notes_placeholder",
+            "fallback": "اكتب تفاصيل حالة السيارة وتجهيزاتها..."
+          },
+          "required": true
+        },
+        "sellerMessage": {
+          "visible": false,
+          "required": false
+        },
+        "notes": {
+          "visible": false,
+          "required": false
+        },
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "price": {
+          "label": {
+            "key": "car_price_label",
+            "fallback": "السعر"
+          },
+          "required": true
+        },
+        "originalPrice": {
+          "visible": false,
+          "required": false
+        },
+        "realPrice": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "edit": {
+      "pageTitle": {
+        "key": "car_edit_product_title",
+        "fallback": "تعديل السيارة"
+      },
+      "submitButton": {
+        "key": "car_edit_submit",
+        "fallback": "حفظ بيانات السيارة"
+      },
+      "fields": {
+        "productName": {
+          "label": {
+            "key": "car_title_label",
+            "fallback": "عنوان الإعلان"
+          },
+          "required": false
+        },
+        "description": {
+          "label": {
+            "key": "car_notes_label",
+            "fallback": "ملاحظات السيارة"
+          },
+          "required": true
+        },
+        "sellerMessage": {
+          "visible": false,
+          "required": false
+        },
+        "notes": {
+          "visible": false,
+          "required": false
+        },
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "price": {
+          "label": {
+            "key": "car_price_label",
+            "fallback": "السعر"
+          },
+          "required": true
+        },
+        "originalPrice": {
+          "visible": false,
+          "required": false
+        },
+        "realPrice": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "view": {
+      "fields": {
+        "quantity": {
+          "visible": false
+        },
+        "cartActions": {
+          "visible": false
+        },
+        "sellerMessage": {
+          "visible": false
+        },
+        "originalPrice": {
+          "visible": false
+        },
+        "realPrice": {
+          "visible": false
+        },
+        "heavyLoad": {
+          "visible": false
+        }
+      }
+    }
+  }
+}

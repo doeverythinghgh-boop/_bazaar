@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "label": "Sports Equipment"
+  },
+  "summary": {
+    "key": "product_category_ui_sports_equipment_summary",
+    "fallback": "هذه الفئة مخصصة لبيع الأدوات والمعدات الرياضية."
+  },
+  "submit": {
+    "serviceType": "0"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "images": {
+          "label": {
+            "key": "product_category_ui_sports_equipment_images_label",
+            "fallback": "صور الأداة / المنتج"
+          }
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_sports_equipment_name_label",
+            "fallback": "اسم الأداة الرياضية"
+          },
+          "placeholder": {
+            "key": "product_category_ui_sports_equipment_name_placeholder",
+            "fallback": "مثال: دمبلز 5 كيلو، مشاية كهربائية..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_sports_equipment_description_label",
+            "fallback": "المواصفات الفنية والاستخدام"
+          },
+          "placeholder": {
+            "key": "product_category_ui_sports_equipment_description_placeholder",
+            "fallback": "اكتب وزن الأداة، الماركة، طرق الاستخدام..."
+          }
+        },
+        "quantity": {
+          "label": {
+            "key": "product_category_ui_sports_equipment_quantity_label",
+            "fallback": "الكمية المتاحة"
+          }
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_sports_equipment_add_page_title",
+        "fallback": "إضافة أداة رياضية"
+      }
+    },
+    "edit": {
+      "fields": {
+        "images": {
+          "label": {
+            "key": "product_category_ui_sports_equipment_images_label",
+            "fallback": "صور الأداة / المنتج"
+          }
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_sports_equipment_name_label",
+            "fallback": "اسم الأداة الرياضية"
+          },
+          "placeholder": {
+            "key": "product_category_ui_sports_equipment_name_placeholder",
+            "fallback": "مثال: دمبلز 5 كيلو، مشاية كهربائية..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_sports_equipment_description_label",
+            "fallback": "المواصفات الفنية والاستخدام"
+          },
+          "placeholder": {
+            "key": "product_category_ui_sports_equipment_description_placeholder",
+            "fallback": "اكتب وزن الأداة، الماركة، طرق الاستخدام..."
+          }
+        },
+        "quantity": {
+          "label": {
+            "key": "product_category_ui_sports_equipment_quantity_label",
+            "fallback": "الكمية المتاحة"
+          }
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_sports_equipment_edit_page_title",
+        "fallback": "تعديل بيانات الأداة"
+      }
+    },
+    "view": {
+      "actionButtonText": {
+        "key": "product_category_ui_sports_equipment_action_button_text",
+        "fallback": "أضف إلى السلة"
+      }
+    }
+  }
+}

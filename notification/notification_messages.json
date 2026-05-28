@@ -21,7 +21,7 @@
         "step-review": {
             "buyer": {
                 "title": "تم استلام طلبك",
-                "body": "تم استلام طلبك${orderIdText}. يرجى مراجعة المنتجات."
+                "body": "تم استلام طلبك${orderIdText}. يرجى مراجعة الخدمات."
             }
         },
         "step-confirmed": {
@@ -70,14 +70,14 @@
         },
         "step-rejected": {
             "buyer": {
-                "title": "منتجات مرفوضة",
-                "body": "تم رفض بعض المنتجات من طلبك${orderIdText} لعدم توفرها."
+                "title": "خدمات مرفوضة",
+                "body": "تم رفض بعض الخدمات من طلبك${orderIdText} لعدم توفرها."
             }
         },
         "step-returned": {
             "seller": {
-                "title": "منتجات مرتجعة",
-                "body": "المشتري أرجع بعض منتجاتك من الطلب${orderIdText}."
+                "title": "خدمات مرتجعة",
+                "body": "المشتري أرجع بعض خدماتك من الطلب${orderIdText}."
             }
         },
         "general_update": {

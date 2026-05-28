@@ -9,7 +9,7 @@
 window.pharmacyProductSubCategoryIndex = window.pharmacyProductSubCategoryIndex || {};
 
 async function pharmacyOpenProductManagement(subCatId, subCatTitle) {
-    console.log(`%c[Pharmacy] 1. فتح إدارة منتجات القسم: ${subCatTitle} (ID: ${subCatId})`, "color: #2563eb; font-weight: bold;");
+    console.log(`%c[Pharmacy] 1. فتح إدارة خدمات القسم: ${subCatTitle} (ID: ${subCatId})`, "color: #2563eb; font-weight: bold;");
     const userKey = new URLSearchParams(window.location.search).get('user_key');
 
     Swal.fire({
@@ -346,7 +346,7 @@ function pharmacyToggleProductVisibility(productId, isVisible) {
         const userKey = new URLSearchParams(window.location.search).get('user_key');
         const isDirty = window.pharmacyIsStateDirty(state);
 
-        localStorage.setItem(`pharmacy_pending_prefs_${userKey}`, JSON.stringify({
+        LocalDBStorage.setItem(`pharmacy_pending_prefs_${userKey}`, JSON.stringify({
             hidden_main_categories: Array.from(state.hidden_main_categories),
             hidden_sub_categories: Array.from(state.hidden_sub_categories),
             hidden_catalog_products: Array.from(state.hidden_catalog_products)

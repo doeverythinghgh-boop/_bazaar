@@ -45,6 +45,18 @@ function summarizeCollectionResponse(data) {
     return { kind: typeof data, count: 0 };
 }
 
+function productApiCacheProducts(products, source) {
+    if (!window.LocalDB || !products) return;
+    const list = Array.isArray(products) ? products : [products];
+    if (!list.length) return;
+    window.LocalDB.saveProducts(list, source).catch((error) => {
+        productApiDebug('local-products-cache-failed', {
+            source,
+            message: error?.message || String(error)
+        }, 'warn');
+    });
+}
+
 /**
  * @description Adds a new product to the database via API call.
  * @function addProduct
@@ -61,6 +73,7 @@ async function addProduct(productData) {
         ...summarizeProductPayload(productData),
         hasError: !!response?.error
     }, response?.error ? 'warn' : 'log');
+    if (!response?.error) productApiCacheProducts(response?.product || response?.data || productData, 'product-add');
     return response;
 }
 
@@ -80,6 +93,7 @@ async function updateProduct(productData) {
         ...summarizeProductPayload(productData),
         hasError: !!response?.error
     }, response?.error ? 'warn' : 'log');
+    if (!response?.error) productApiCacheProducts(response?.product || response?.data || productData, 'product-update');
     return response;
 }
 
@@ -153,6 +167,7 @@ async function getProductsByCategory(mainCatId, subCatId) {
             subCatId,
             resultCount: merged.length
         });
+        productApiCacheProducts(merged, 'category-fetch');
         return merged;
     } catch (error) {
         productApiDebug('get-products-by-category-error', {
@@ -194,7 +209,8 @@ async function getProductsByUser(userKey, filters = {}) {
                 target,
                 summary: summarizeCollectionResponse(data)
             });
-            return data?.error ? [] : (Array.isArray(data) ? data : []);
+            if (data?.error) return [];
+            return Array.isArray(data) ? data : (Array.isArray(data?.products) ? data.products : []);
         }));
 
         const merged = [];
@@ -210,6 +226,7 @@ async function getProductsByUser(userKey, filters = {}) {
             userKey,
             resultCount: merged.length
         });
+        productApiCacheProducts(merged, 'merchant-fetch');
         return merged;
     } catch (error) {
         productApiDebug('get-products-by-user-error', {
@@ -227,10 +244,13 @@ async function getProductsByUser(userKey, filters = {}) {
  * @param {string} productKey
  * @returns {Promise<Object|null>}
  */
-async function getProductByKey(productKey) {
+async function getProductByKey(productKey, options = {}) {
     try {
-        productApiDebug('get-product-by-key-start', { productKey });
-        const data = await apiFetch(`/api/products?product_key=${productKey}&single=true`, {
+        const listingType = String(options.listingType || options.listing || options.source || '').trim();
+        productApiDebug('get-product-by-key-start', { productKey, listingType });
+        const params = new URLSearchParams({ product_key: productKey, single: 'true' });
+        if (listingType) params.set('listing', listingType);
+        const data = await apiFetch(`/api/products?${params.toString()}`, {
             specialHandlers: {
                 404: () => {
                     productApiDebug('get-product-by-key-not-found', { productKey }, 'warn');
@@ -243,6 +263,7 @@ async function getProductByKey(productKey) {
             found: !!data,
             hasError: !!data?.error
         }, data?.error ? 'warn' : 'log');
+        if (data && !data.error) productApiCacheProducts(data, 'detail-fetch');
         return data;
     } catch (error) {
         productApiDebug('get-product-by-key-error', {

@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "label": "Membership Profile"
+  },
+  "summary": {
+    "key": "product_category_ui_membership_profile_summary",
+    "fallback": "This category represents a membership or enrollment flow. Direct purchase controls are hidden and seller communication remains emphasized."
+  },
+  "submit": {
+    "serviceType": "2"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "edit": {
+      "fields": {
+        "quantity": {
+          "visible": false,
+          "required": false
+        },
+        "heavyLoad": {
+          "visible": false,
+          "required": false
+        }
+      }
+    },
+    "view": {
+      "descriptionMode": "plain",
+      "actionButtonText": {
+        "key": "product_category_ui_membership_profile_action_button_text",
+        "fallback": "Join now"
+      },
+      "fields": {
+        "quantity": {
+          "visible": false
+        },
+        "cartActions": {
+          "visible": false
+        },
+        "heavyLoad": {
+          "visible": false
+        }
+      }
+    }
+  }
+}

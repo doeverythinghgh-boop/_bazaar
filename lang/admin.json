@@ -500,7 +500,7 @@
         "en": "Main Advertisements Manager"
     },
     "admin_ads_subtitle": {
-        "ar": "ارفع وأدر صور البنرات والمنتجات المميزة",
+        "ar": "ارفع وأدر صور البنرات والخدمات المميزة",
         "en": "Upload and manage banner images and featured products"
     },
     "admin_ads_important_info": {
@@ -540,7 +540,7 @@
         "en": "Upload Advertisements"
     },
     "admin_ads_featured_products": {
-        "ar": "المنتجات المميزة",
+        "ar": "الخدمات المميزة",
         "en": "Featured Products"
     },
     "admin_ads_max_files": {
@@ -644,15 +644,15 @@
         "en": "Search keyword (optional)"
     },
     "admin_ads_no_featured_products": {
-        "ar": "لا توجد منتجات مميزة حاليًا.",
+        "ar": "لا توجد خدمات مميزة حاليًا.",
         "en": "There are no featured products currently."
     },
     "admin_pending_page_title": {
-        "ar": "إدارة المنتجات - Suez Bazaar",
+        "ar": "إدارة الخدمات - Suez Bazaar",
         "en": "Products Management - Suez Bazaar"
     },
     "admin_pending_title": {
-        "ar": "إدارة المنتجات",
+        "ar": "إدارة الخدمات",
         "en": "Products Management"
     },
     "admin_pending_refresh_all": {
@@ -660,11 +660,11 @@
         "en": "Refresh All"
     },
     "admin_pending_pending_products": {
-        "ar": "المنتجات المعلقة (بانتظار الموافقة)",
+        "ar": "الخدمات المعلقة (بانتظار الموافقة)",
         "en": "Pending products (awaiting approval)"
     },
     "admin_pending_published_products": {
-        "ar": "المنتجات المنشورة",
+        "ar": "الخدمات المنشورة",
         "en": "Published products"
     },
     "admin_pending_approve_publish": {
@@ -716,7 +716,7 @@
         "en": "The product was deleted successfully and a rejection notification was sent to the service provider."
     },
     "admin_pending_no_pending": {
-        "ar": "لا توجد منتجات معلقة حاليًا.",
+        "ar": "لا توجد خدمات معلقة حاليًا.",
         "en": "No pending products were found."
     },
     "admin_pending_load_error": {
@@ -724,7 +724,7 @@
         "en": "Error loading data"
     },
     "admin_pending_no_published": {
-        "ar": "لا توجد منتجات منشورة حاليًا.",
+        "ar": "لا توجد خدمات منشورة حاليًا.",
         "en": "No published products were found."
     },
     "admin_pending_provider_label": {
@@ -876,7 +876,7 @@
         "en": "Broken Links"
     },
     "image_analyzer_tab_products": {
-        "ar": "صور المنتجات",
+        "ar": "صور الخدمات",
         "en": "Product Images"
     },
     "image_analyzer_tab_users": {
@@ -920,7 +920,7 @@
         "en": "Technical Guide for Naming Suez Bazaar Files"
     },
     "image_analyzer_rule_product": {
-        "ar": "صور المنتجات الحديثة",
+        "ar": "صور الخدمات الحديثة",
         "en": "?? Modern product images"
     },
     "image_analyzer_rule_avatar": {
@@ -948,7 +948,7 @@
         "en": "Preferred format: WebP (Case Insensitive)"
     },
     "image_analyzer_rules_footer": {
-        "ar": "* يقوم المحلل بتصفية هذه الأنماط تلقائيًا لحماية صور المستخدمين والمنتجات حتى إذا تغيرت بنية قاعدة البيانات.",
+        "ar": "* يقوم المحلل بتصفية هذه الأنماط تلقائيًا لحماية صور المستخدمين والخدمات حتى إذا تغيرت بنية قاعدة البيانات.",
         "en": "* The analyzer automatically filters these patterns to protect user and product images even if the database structure changes."
     },
     "image_analyzer_tab_issues": {

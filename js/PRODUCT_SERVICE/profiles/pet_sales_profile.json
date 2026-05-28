@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "label": "Pet Sales & Adoption"
+  },
+  "summary": {
+    "key": "product_category_ui_pet_sales_summary",
+    "fallback": "هذه الفئة مخصصة لبيع أو تبني الحيوانات الأليفة. تم تخصيص المسميات لتناسب تفاصيل الحيوان."
+  },
+  "submit": {
+    "serviceType": "0"
+  },
+  "pages": {
+    "add": {
+      "fields": {
+        "images": {
+          "label": {
+            "key": "product_category_ui_pet_sales_images_label",
+            "fallback": "صور الحيوان"
+          }
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_pet_sales_name_label",
+            "fallback": "اسم أو فصيلة الحيوان"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_sales_name_placeholder",
+            "fallback": "مثال: قط شيرازي، كلب جيرمن..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_pet_sales_description_label",
+            "fallback": "تفاصيل الحيوان وحالته"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_sales_description_placeholder",
+            "fallback": "اكتب العمر، الحالة الصحية، التطعيمات، وأي تفاصيل أخرى..."
+          }
+        },
+        "quantity": {
+          "label": {
+            "key": "product_category_ui_pet_sales_quantity_label",
+            "fallback": "العدد المتاح"
+          }
+        },
+        "heavyLoad": {
+          "label": {
+            "key": "product_category_ui_pet_sales_heavy_load_label",
+            "fallback": "يحتاج قفص/سيارة نقل مخصصة"
+          }
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_pet_sales_add_page_title",
+        "fallback": "إضافة حيوان جديد"
+      }
+    },
+    "edit": {
+      "fields": {
+        "images": {
+          "label": {
+            "key": "product_category_ui_pet_sales_images_label",
+            "fallback": "صور الحيوان"
+          }
+        },
+        "productName": {
+          "label": {
+            "key": "product_category_ui_pet_sales_name_label",
+            "fallback": "اسم أو فصيلة الحيوان"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_sales_name_placeholder",
+            "fallback": "مثال: قط شيرازي، كلب جيرمن..."
+          }
+        },
+        "description": {
+          "label": {
+            "key": "product_category_ui_pet_sales_description_label",
+            "fallback": "تفاصيل الحيوان وحالته"
+          },
+          "placeholder": {
+            "key": "product_category_ui_pet_sales_description_placeholder",
+            "fallback": "اكتب العمر، الحالة الصحية، التطعيمات، وأي تفاصيل أخرى..."
+          }
+        },
+        "quantity": {
+          "label": {
+            "key": "product_category_ui_pet_sales_quantity_label",
+            "fallback": "العدد المتاح"
+          }
+        },
+        "heavyLoad": {
+          "label": {
+            "key": "product_category_ui_pet_sales_heavy_load_label",
+            "fallback": "يحتاج قفص/سيارة نقل مخصصة"
+          }
+        }
+      },
+      "pageTitle": {
+        "key": "product_category_ui_pet_sales_edit_page_title",
+        "fallback": "تعديل بيانات الحيوان"
+      }
+    },
+    "view": {
+      "actionButtonText": {
+        "key": "product_category_ui_pet_sales_action_button_text",
+        "fallback": "تواصل للشراء أو التبني"
+      }
+    }
+  }
+}

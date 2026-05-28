@@ -59,7 +59,7 @@
                 Array.from(row.children).forEach((child) => child.classList.remove('is-active'));
                 pill.classList.add('is-active');
 
-                // State Management: Load full state from localStorage
+                // State Management: Load full state from LocalDBStorage
                 let subState = null;
                 const cacheKeyParams = `subcat_${subCategory.id}`;
                 if (window.portfolioPersistence) {
@@ -116,7 +116,7 @@
                         console.error('[Portfolio Pharmacy] Failed to load sub-category:', error);
                         renderFeedback(productsContainer, {
                             iconClass: 'fas fa-exclamation-circle',
-                            message: window.portfolioSellerSearchL('port_fetch_error_text', 'حدث خطأ أثناء جلب المنتجات', 'Unable to load products')
+                            message: window.portfolioSellerSearchL('port_fetch_error_text', 'حدث خطأ أثناء جلب الخدمات', 'Unable to load products')
                         });
                         return;
                     }
@@ -126,7 +126,7 @@
                     productsContainer.innerHTML = '';
                     renderFeedback(productsContainer, {
                         iconClass: 'fas fa-box-open',
-                        message: window.portfolioSellerSearchL('no_products', 'لا توجد منتجات مضافة لهذا القسم', 'No products available')
+                        message: window.portfolioSellerSearchL('no_products', 'لا توجد خدمات مضافة لهذا القسم', 'No products available')
                     });
                     const loadMoreBtn = document.getElementById('btn-load-more-products');
                     if (loadMoreBtn) loadMoreBtn.style.display = 'none';

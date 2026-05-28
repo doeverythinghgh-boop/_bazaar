@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file pharmacy-api-catalog.js
  * @description Catalog and context management for pharmacy API.
  */
@@ -75,11 +75,26 @@ window.PharmacyAPI.getCatalogContext = async function (userKey, options = {}) {
     console.log(`[Diagnostic] Pharmacy catalog context: CACHE MISS for ${cacheKey}. Fetching parallel components...`);
 
     const t1 = performance.now();
-    const [catalogSource, customCategories, preferences] = await Promise.all([
+    const results = await Promise.allSettled([
         this.getCatalogSource().then(r => { console.log(`[Diagnostic] - CatalogSource loaded in ${(performance.now() - t1).toFixed(0)}ms`); return r; }),
         (userKey ? this.getCustomCategories(userKey) : Promise.resolve([])).then(r => { console.log(`[Diagnostic] - CustomCategories loaded in ${(performance.now() - t1).toFixed(0)}ms`); return r; }),
         (userKey ? this.getPreferences(userKey) : Promise.resolve({ hidden_main_categories: [], hidden_sub_categories: [], hidden_catalog_products: [] })).then(r => { console.log(`[Diagnostic] - Preferences loaded in ${(performance.now() - t1).toFixed(0)}ms`); return r; })
     ]);
+
+    const catalogSource = results[0].status === 'fulfilled' ? results[0].value : [];
+    if (results[0].status === 'rejected') {
+        console.error("[Diagnostic] Pharmacy catalog context: CatalogSource failed to load:", results[0].reason);
+    }
+
+    const customCategories = results[1].status === 'fulfilled' ? results[1].value : [];
+    if (results[1].status === 'rejected') {
+        console.error("[Diagnostic] Pharmacy catalog context: CustomCategories failed to load:", results[1].reason);
+    }
+
+    const preferences = results[2].status === 'fulfilled' ? results[2].value : { hidden_main_categories: [], hidden_sub_categories: [], hidden_catalog_products: [] };
+    if (results[2].status === 'rejected') {
+        console.error("[Diagnostic] Pharmacy catalog context: Preferences failed to load:", results[2].reason);
+    }
 
     const mergeStart = performance.now();
     const mergedCategories = this.getMergedCategories(catalogSource, customCategories);
