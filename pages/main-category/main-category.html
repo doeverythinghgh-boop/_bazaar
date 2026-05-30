@@ -19,9 +19,12 @@
         await fetchAppCategories();
       }
 
-      // 5. Initialize Header (Depends on translations)
+      // 5. Initialize Header (Depends on translations).
+      // Pass an empty string as the active button ID: main-category is a sub-page
+      // reachable from home, but it is NOT home itself, so 'index-home-btn' must NOT
+      // be highlighted here.
       if (typeof AppHeader !== 'undefined' && AppHeader.init) {
-        await AppHeader.init('header-injection-point', 'index-home-btn');
+        await AppHeader.init('header-injection-point', '');
       }
 
       if (typeof applyAppTranslations === 'function') {
