@@ -80,6 +80,15 @@
       "fields": {
         "heavyLoad": {
           "visible": false
+        },
+        "description": {
+          "visible": false
+        },
+        "sellerMessage": {
+          "visible": false
+        },
+        "adminSellerInfo": {
+          "visible": false
         }
       }
     }

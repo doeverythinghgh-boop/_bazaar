@@ -15,9 +15,11 @@
             // 4. Load Core Data
             if (typeof fetchAppCategories === 'function') await fetchAppCategories();
 
-            // 5. Initialize Header (Depends on translations)
+            // 5. Initialize Header (Depends on translations).
+            // Mark 'index-login-btn' as the active button because the send-request page
+            // is part of the merchant portfolio flow, not the public home section.
             if (typeof AppHeader !== 'undefined' && AppHeader.init) {
-                await AppHeader.init('header-injection-point');
+                await AppHeader.init('header-injection-point', 'index-login-btn');
             }
 
             // 6. Initialize Page Content (After translations)

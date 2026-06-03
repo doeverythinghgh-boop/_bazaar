@@ -167,6 +167,9 @@
         "fallback": "This product uses the standard category-driven layout."
       },
       "fields": {
+        "images": {
+          "visible": true
+        },
         "price": {
           "visible": true
         },

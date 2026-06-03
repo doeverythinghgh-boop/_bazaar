@@ -13,9 +13,12 @@
                     SessionManager.init();
                 }
 
-                // 4. App Header
+                // 4. App Header.
+                // Pass an empty string as the active button ID: subcategory-products is
+                // a drill-down page reached from the category browser, NOT the home page.
+                // Passing 'index-home-btn' here would incorrectly highlight the home button.
                 if (typeof AppHeader !== 'undefined' && AppHeader.init) {
-                    await AppHeader.init('header-injection-point', 'index-home-btn');
+                    await AppHeader.init('header-injection-point', '');
                 }
 
                 // 5. Apply Global translations
