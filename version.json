@@ -1,7 +1,7 @@
 {
-  "version": "1.30.38",
+  "version": "1.30.39",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-03T20:36:23.046Z",
+  "lastUpdated": "2026-06-03T20:45:19.766Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -4220,8 +4220,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/settings-notifications.js",
-      "hash": "0ae8e8878ce31fc5f0672a345a2b77628f5e90c70624e40c7547a2b508aa1b5f",
-      "size": 7006
+      "hash": "0d3e9cad5c49888ff3499d814b1f037ec9993df1382aacd024fe1e08f5bd0e7d",
+      "size": 7482
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/settings-theme.js",
@@ -4400,8 +4400,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-android-setup.js",
-      "hash": "7bfff7389cd4b869859da5c98dbb9fdab7bbe0d384fb3f9cdfae57b94e9af27b",
-      "size": 2311
+      "hash": "e84181b561aa154e6a680597d4e36077007d2f5351ef9aca91ca3afc92c4df31",
+      "size": 2399
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-api.js",
@@ -4485,8 +4485,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/actions-permissions-toggle.js",
-      "hash": "fd12325067193152d0b2d2cc3361ade0523f30ede2870e278ff1b97114039110",
-      "size": 8171
+      "hash": "a187c2beb728146002da57eb5e2851925d6de5be759c95da8c6644171ecf86af",
+      "size": 8330
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/global-counter.js",
@@ -8365,7 +8365,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "16e031bdd646e81d7ab581e46ef1dd40ee5006d77cb4d6f265b674d9e708d476",
+      "hash": "ff0073fdc2c653cfabb01081e20f118d6bebe9b589b0b11f241a5c7688b2db79",
       "size": 21
     }
   ]
