@@ -1,1 +1,140 @@
-export const AppHeader={init:async function(targetId,activeBtnId){try{const urlParams=void 0;if("true"===new URLSearchParams(window.location.search).get("no-header"))return console.log("[AppHeader] Skipping header injection due to no-header flag."),document.body.classList.add("no-header-layout"),void 0;var container=document.getElementById(targetId);if(!container)return console.warn("[AppHeader] Target container not found:",targetId),void 0;if(container.innerHTML=this.getTemplate(),console.log("[BADGE_DIAG] Header injected. notifications-badge present=",!!document.getElementById("notifications-badge")),"function"==typeof window.bindNavigationHandlers?window.bindNavigationHandlers():console.warn("[AppHeader] bindNavigationHandlers not found. Ensure app-nav.js is loaded."),activeBtnId){var activeBtn=document.getElementById(activeBtnId);activeBtn&&"function"==typeof window.setActiveButton&&window.setActiveButton(activeBtn)}const syncBadges=async()=>{window.GLOBAL_NOTIFICATIONS&&"function"==typeof window.GLOBAL_NOTIFICATIONS.updateCounter?await window.GLOBAL_NOTIFICATIONS.updateCounter(!0):"function"==typeof window.updateGlobalNotificationCount&&await window.updateGlobalNotificationCount(),"function"==typeof window.updateCartBadge&&window.updateCartBadge(),"function"==typeof window.setUserNameInIndexBar&&window.setUserNameInIndexBar()};await syncBadges(),setTimeout(syncBadges,500),setTimeout(syncBadges,1500)}catch(error){console.error("[AppHeader] Initialization failed:",error)}},getTemplate:function(){var l=window.langu||function(k){return k};return`\n      <header class="index-app-header" id="index-app-header">\n        \x3c!-- زر تسجيل الدخول --\x3e\n        <button class="index-header-login-btn" id="index-login-btn">\n          <i class="fas fa-user-circle index-user-icon" id="index-login-icon"></i>\n          <span id="index-login-text" data-lkey="login_text">${l("login_text")}</span>\n        </button>\n\n        \x3c!-- زر الرئيسية --\x3e\n        <button class="index-header-login-btn" id="index-home-btn">\n          <i class="fas fa-home index-user-icon" id="index-home-icon"></i>\n          <span id="index-home-text" data-lkey="home_text">${l("home_text")}</span>\n        </button>\n\n        \x3c!-- زر البحث --\x3e\n        <button class="index-header-login-btn" id="index-search-btn">\n          <i class="fas fa-search index-user-icon" id="index-search-icon"></i>\n          <span id="index-search-text" data-lkey="search_text">${l("search_text")}</span>\n        </button>\n\n        \x3c!-- زر الإشعارات --\x3e\n        <button class="index-header-login-btn" id="index-notifications-btn">\n          <i class="fas fa-bell index-user-icon" id="index-notifications-icon"></i>\n          <span class="notifications-counter-badge" id="notifications-badge">0</span>\n          <span id="index-notifications-text" data-lkey="notifications_text">${l("notifications_text")}</span>\n        </button>\n\n        \x3c!-- زر السلة --\x3e\n        <button class="index-header-login-btn" id="index-cart-btn">\n          <i class="fas fa-shopping-cart index-user-icon" id="index-cart-icon"></i>\n          <span class="cart-counter-badge" id="cart-item-count-badge" style="display: none;">0</span>\n          <span id="index-cart-text" data-lkey="cart_text">${l("cart_text")}</span>\n        </button>\n\n        \x3c!-- زر حركة المشتريات --\x3e\n        <button class="index-header-login-btn" id="index-sales-movement-btn">\n          <i class="fas fa-history index-user-icon" id="index-sales-icon"></i>\n          <span id="index-sales-text" data-lkey="sales_text">${l("sales_text")}</span>\n        </button>\n      </header>\n    `}};window.AppHeader=AppHeader,console.log("[ESM Load] app-header.js: Hybrid bridge established.");
+/**
+ * @file js/app-header.js
+ * @description Manages the application header injection and event binding across different pages.
+ * @var AppHeader
+ */
+/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
+ */
+
+export const AppHeader = {
+  /**
+   * @description Injects the header HTML into the specified target element and binds event listeners.
+   * @function init
+   * @param {string} targetId - The ID of the container element.
+   * @param {string} [activeBtnId] - The ID of the button to be marked as active.
+   * @async
+   */
+  init: async function (targetId, activeBtnId) {
+    try {
+      // [NO-HEADER SUPPORT] Check for no-header=true flag in URL
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('no-header') === 'true') {
+        console.log('[AppHeader] Skipping header injection due to no-header flag.');
+        document.body.classList.add('no-header-layout');
+        return;
+      }
+
+      var container = document.getElementById(targetId);
+      if (!container) {
+        console.warn('[AppHeader] Target container not found:', targetId);
+        return;
+      }
+
+      // Inject the template
+      container.innerHTML = this.getTemplate();
+      console.log('[BADGE_DIAG] Header injected. notifications-badge present=', !!document.getElementById('notifications-badge'));
+
+      // Bind navigation handlers (from app-nav.js)
+      if (typeof window.bindNavigationHandlers === 'function') {
+        window.bindNavigationHandlers();
+      } else {
+        console.warn('[AppHeader] bindNavigationHandlers not found. Ensure app-nav.js is loaded.');
+      }
+
+      // Set active button
+      if (activeBtnId) {
+        var activeBtn = document.getElementById(activeBtnId);
+        if (activeBtn && typeof window.setActiveButton === 'function') {
+          window.setActiveButton(activeBtn);
+        }
+      }
+
+      // Sync the notifications badge after header injection.
+      const syncBadges = async () => {
+        if (window.GLOBAL_NOTIFICATIONS && typeof window.GLOBAL_NOTIFICATIONS.updateCounter === 'function') {
+          await window.GLOBAL_NOTIFICATIONS.updateCounter(true);
+        } else if (typeof window.updateGlobalNotificationCount === 'function') {
+          await window.updateGlobalNotificationCount();
+        }
+
+        if (typeof window.updateCartBadge === 'function') {
+          window.updateCartBadge();
+        }
+
+        if (typeof window.setUserNameInIndexBar === 'function') {
+          window.setUserNameInIndexBar();
+        }
+      };
+
+      // Initial sync
+      await syncBadges();
+      // Safety retry for deferred scripts on complex pages
+      setTimeout(syncBadges, 500);
+      setTimeout(syncBadges, 1500);
+
+    } catch (error) {
+      console.error('[AppHeader] Initialization failed:', error);
+    }
+  },
+
+  /**
+   * @description Returns the standardized HTML template for the application header.
+   * @function getTemplate
+   * @returns {string} - The header HTML string.
+   */
+  getTemplate: function () {
+    var l = window.langu || function (k) { return k; };
+
+    return `
+      <header class="index-app-header" id="index-app-header">
+        <!-- زر تسجيل الدخول -->
+        <button class="index-header-login-btn" id="index-login-btn">
+          <i class="fas fa-user-circle index-user-icon" id="index-login-icon"></i>
+          <span id="index-login-text" data-lkey="login_text">${l('login_text')}</span>
+        </button>
+
+        <!-- زر الرئيسية -->
+        <button class="index-header-login-btn" id="index-home-btn">
+          <i class="fas fa-home index-user-icon" id="index-home-icon"></i>
+          <span id="index-home-text" data-lkey="home_text">${l('home_text')}</span>
+        </button>
+
+        <!-- زر البحث -->
+        <button class="index-header-login-btn" id="index-search-btn">
+          <i class="fas fa-search index-user-icon" id="index-search-icon"></i>
+          <span id="index-search-text" data-lkey="search_text">${l('search_text')}</span>
+        </button>
+
+        <!-- زر الإشعارات -->
+        <button class="index-header-login-btn" id="index-notifications-btn">
+          <i class="fas fa-bell index-user-icon" id="index-notifications-icon"></i>
+          <span class="notifications-counter-badge" id="notifications-badge">0</span>
+          <span id="index-notifications-text" data-lkey="notifications_text">${l('notifications_text')}</span>
+        </button>
+
+        <!-- زر السلة -->
+        <button class="index-header-login-btn" id="index-cart-btn">
+          <i class="fas fa-shopping-cart index-user-icon" id="index-cart-icon"></i>
+          <span class="cart-counter-badge" id="cart-item-count-badge" style="display: none;">0</span>
+          <span id="index-cart-text" data-lkey="cart_text">${l('cart_text')}</span>
+        </button>
+
+        <!-- زر حركة المشتريات -->
+        <button class="index-header-login-btn" id="index-sales-movement-btn">
+          <i class="fas fa-history index-user-icon" id="index-sales-icon"></i>
+          <span id="index-sales-text" data-lkey="sales_text">${l('sales_text')}</span>
+        </button>
+      </header>
+    `;
+  }
+};
+
+// Hybrid bridge
+window.AppHeader = AppHeader;
+
+console.log("[ESM Load] app-header.js: Hybrid bridge established.");

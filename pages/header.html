@@ -1,4 +1,211 @@
-<script src="/LocalDatabasesProject/local-db.js"></script><script src="/js/early-error-bootstrap.js"></script><style>.container{position:fixed;top:0;left:0;width:100%;background-color:#f9f9f9;height:100vh;z-index:-1;box-shadow:0 2px 4px rgba(0,0,0,.1);display:flex;justify-content:space-between;align-items:center;padding:.5rem 5vw;box-sizing:border-box}.bazaar-title{font-size:clamp(10px, 2.5vh, 28px);font-weight:700;text-transform:uppercase;letter-spacing:.1em;display:inline-flex;transition:opacity .5s ease-out;direction:ltr}.bazaar-title span{display:inline-block;opacity:0;background:linear-gradient(45deg,#007bff,#03478f);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;transform:scale(0);animation:zoomInLetter .4s forwards}.bazaar-title.hidden{opacity:0}.bazaar-title.final-text{font-size:clamp(18px, 3.5vh, 32px);opacity:1;transform:scale(1);display:inline-block;color:#03478f;-webkit-text-fill-color:initial;font-weight:600;text-align:center}@keyframes zoomInLetter{to{opacity:1;transform:scale(1)}}.tagline{font-family:Tajawal,sans-serif;font-size:clamp(12px, 1.8vh, 18px);color:#003d7a;margin-right:1.5rem;opacity:0;transition:opacity .8s ease-in-out;text-align:right}.tagline.visible{opacity:1}.header-title-group{display:flex;align-items:baseline}.header-controls{display:flex;align-items:center;gap:20px}.search-container{position:relative;display:flex;align-items:center}.search-icon-btn{background:0 0;border:none;cursor:pointer;padding:8px;font-size:clamp(20px, 3.5vh, 26px);color:#03478f}.user-icon{font-size:clamp(24px, 4vh, 32px);color:#03478f}.user-profile{display:flex;flex-direction:column;align-items:center;cursor:pointer;gap:2px}.user-text{font-family:Tajawal,sans-serif;font-size:clamp(10px, 1.5vh, 12px);color:#03478f;font-weight:700;white-space:nowrap}.user-profile-link{text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;color:#03478f}</style><a id="header-logo-link" href="index.html" class="header-title-group" style="text-decoration:none;color:inherit"><table id="header-logo-table"><tr id="header-logo-row"><td id="header-logo-cell-title"><h1 id="animated-text" class="bazaar-title"></h1></td><td id="header-logo-cell-tagline"><p id="tagline" class="tagline"></p></td></tr></table></a><script>const animatedTextElement = document.getElementById("animated-text");
+<script src="/LocalDatabasesProject/local-db.js"></script>
+<script src="/js/early-error-bootstrap.js"></script>
+<style>
+  /*
+  @file pages/header.html
+  @description Header component styles and logic. Handles the animated title and navigation bar.
+*/
+
+  /* === Header Container === */
+  .container {
+    position: fixed;
+    /* Fix header at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    /* White background for header */
+    height: 100vh;
+    /* Fixed height 10% of screen height */
+    z-index: -1;
+    /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Lighter shadow for a light theme */
+
+    /* Use Flexbox for alignment */
+    display: flex;
+    justify-content: space-between;
+    /* Pushes items to the edges */
+    align-items: center;
+    padding: 0.5rem 5vw;
+    /* Responsive horizontal padding */
+    box-sizing: border-box;
+    /* Ensures padding is included in the width */
+  }
+
+  /* === Animated Header Title ("Suez Bazaar" and "SB") === */
+  .bazaar-title {
+    font-size: clamp(10px, 2.5vh, 28px);
+    /* Responsive font size with min/max */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    /* This will be a flex container for the letters */
+    display: inline-flex;
+    transition: opacity 0.5s ease-out;
+    /* Ensure LTR text direction for the title itself, regardless of container direction */
+    direction: ltr;
+  }
+
+  /* Styling for each letter (span) inside the animated title */
+  .bazaar-title span {
+    display: inline-block;
+    opacity: 0;
+    /* ✅ FIX: Apply gradient to each letter individually */
+    background: linear-gradient(45deg, #007bff, #03478f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+    animation: zoomInLetter 0.4s forwards;
+  }
+
+  /* Class to hide title completely during transition */
+  .bazaar-title.hidden {
+    opacity: 0;
+  }
+
+  /* Class for the final state "SB" after animation ends */
+  .bazaar-title.final-text {
+    font-size: clamp(18px, 3.5vh, 32px);
+    /* Responsive font size with min/max */
+    opacity: 1;
+    transform: scale(1);
+    /* Override the flex display to center the block correctly */
+    display: inline-block;
+    /* ✅ FIX: Restore blue color correctly and remove gradient */
+    color: #03478f;
+    /* Reset properties that caused text hiding */
+    -webkit-text-fill-color: initial;
+    font-weight: 600;
+    /* Makes text slightly bolder and clearer */
+    text-align: center;
+    /* Ensures text is centered in container */
+
+  }
+
+  /* Zoom animation for each letter in title */
+  @keyframes zoomInLetter {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* === Animated Text Tagline next to title === */
+  .tagline {
+    font-family: "Tajawal", sans-serif;
+    /* A nice Arabic font */
+    font-size: clamp(12px, 1.8vh, 18px);
+    /* Responsive font size with min/max */
+    color: #003d7a;
+    /* ✅ EDIT: Use dark blue shade to enhance visual identity */
+    margin-right: 1.5rem;
+    /* Space between SB and the text, margin-right for RTL */
+    opacity: 0;
+    /* Hidden by default */
+    transition: opacity 0.8s ease-in-out;
+    /* Slower transition for a smoother effect */
+    text-align: right;
+    /* Align text to the right for RTL */
+
+  }
+
+  .tagline.visible {
+    opacity: 1;
+  }
+
+  /* === Content groups inside header === */
+  .header-title-group {
+    display: flex;
+    align-items: baseline;
+  }
+
+  /* Container for grouping header controls (search, user) */
+  .header-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Space between search section and user section */
+  }
+
+  /* Header search section styles */
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: clamp(20px, 3.5vh, 26px);
+    /* Responsive icon size */
+
+    color: #03478f;
+    /* ✅ EDIT: Change search icon color to bright blue */
+  }
+
+  /* === User profile section in header === */
+  .user-icon {
+    font-size: clamp(24px, 4vh, 32px);
+    /* Responsive icon size */
+    color: #03478f;
+    /* ✅ EDIT: Change user icon color to blue */
+  }
+
+  /* User profile container (icon + text) */
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    /* Change cursor to indicate clickable */
+    gap: 2px;
+    /* Small space between icon and text */
+  }
+
+  /* User name text under icon */
+  .user-text {
+    font-family: "Tajawal", sans-serif;
+    font-size: clamp(10px, 1.5vh, 12px);
+    /* Small and responsive font size */
+    color: #03478f;
+    /* ✅ EDIT: Change user name color to blue */
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevent text splitting into two lines */
+  }
+
+  /* Link surrounding user profile section to make it clickable */
+  .user-profile-link {
+    text-decoration: none;
+    /* Remove link underline */
+    color: inherit;
+    /* Inherit color from parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #03478f;
+  }
+</style>
+<a id="header-logo-link" href="index.html" class="header-title-group" style="text-decoration: none; color: inherit">
+  <table id="header-logo-table">
+    <tr id="header-logo-row">
+      <td id="header-logo-cell-title">
+        <h1 id="animated-text" class="bazaar-title"></h1>
+      </td>
+      <td id="header-logo-cell-tagline">
+        <p id="tagline" class="tagline"></p>
+      </td>
+    </tr>
+  </table>
+</a>
+<script>
+  const animatedTextElement = document.getElementById("animated-text");
   const taglineElement = document.getElementById("tagline");
 
   // --- Animation Configuration ---
@@ -147,4 +354,5 @@
       startAnimationCycle();
     });
   }
-  startAnimationCycle();</script>
+  startAnimationCycle();
+</script>

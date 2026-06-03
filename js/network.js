@@ -1,1 +1,456 @@
-var lastConnectionCheck=void 0!==lastConnectionCheck?lastConnectionCheck:0,isConnectedCache=void 0===isConnectedCache||isConnectedCache,offlineToast=void 0!==offlineToast?offlineToast:null,CONNECTION_CHECK_INTERVAL=3e4;async function checkInternetConnection(){return isConnectedCache}async function performActualConnectionCheck(){lastConnectionCheck=Date.now();const checkEndpoint=async(url,timeoutMs=2e3)=>{const controller=new AbortController,timeout=setTimeout(()=>controller.abort(),timeoutMs);try{const cacheBuster=`?cb=${Date.now()}`;return await fetch(url+cacheBuster,{method:"GET",mode:"no-cors",cache:"no-store",signal:controller.signal}),clearTimeout(timeout),!0}catch(e){return clearTimeout(timeout),!1}};try{if("undefined"!=typeof navigator&&!1===navigator.onLine)throw new Error("Navigator reports offline");const results=await Promise.all([checkEndpoint("https://www.gstatic.com/generate_204",2e3),checkEndpoint(window.location.origin+"/favicon.ico",2e3)]),isUp=void 0;if(!results.some(res=>!0===res))throw new Error("Probes failed");return isConnectedCache||console.log("[Network] Connection restored"),isConnectedCache=!0,offlineToast&&(Swal.close(),offlineToast=null),!0}catch(error){return isConnectedCache=!1,offlineToast||(offlineToast=Swal.fire({toast:!0,position:"bottom",html:`\n    <div style="display: grid; align-items:center;justify-items: center;margin:0;padding:0;">\n      <i class="fas fa-wifi-slash" style=""></i>\n      <span style="font-size:14px;">${langu("net_weak_or_disconnected")}</span>\n    </div>\n  `,showConfirmButton:!1,background:"#979797d9",color:"white",padding:0,width:300,timer:void 0,timerProgressBar:!1})),!1}}var isPeriodicCheckStarted=void 0!==isPeriodicCheckStarted&&isPeriodicCheckStarted;function startPeriodicConnectionCheck(){isPeriodicCheckStarted||(isPeriodicCheckStarted=!0,setInterval(performActualConnectionCheck,CONNECTION_CHECK_INTERVAL),window.addEventListener("online",()=>{isConnectedCache=!0,offlineToast&&Swal.close(),offlineToast=null,performActualConnectionCheck()}),window.addEventListener("offline",()=>{isConnectedCache=!1,performActualConnectionCheck()}))}function apiFetchClone(obj){if(null===obj||"object"!=typeof obj)return obj;try{return JSON.parse(JSON.stringify(obj))}catch(e){return obj}}async function apiFetchBackground(url,fetchOptions,cacheKey){try{const response=await fetch(url,fetchOptions);if(!response.ok)return;const data=await response.json(),isEnvelope=!!(data&&"object"==typeof data&&Object.prototype.hasOwnProperty.call(data,"success")&&Object.prototype.hasOwnProperty.call(data,"data")&&Object.prototype.hasOwnProperty.call(data,"error"));let resolvedData=data;if(isEnvelope){if(!1===data.success)return;resolvedData=data.data}window.apiFetchCache.set(cacheKey,{data:resolvedData,timestamp:Date.now()}),console.log(`[Network Cache] Background revalidation successful for: ${cacheKey}`)}catch(err){console.warn(`[Network Cache] Background revalidation failed for: ${cacheKey}`,err)}}async function apiFetch(endpoint,options={}){const{method:method="GET",body:body=null,specialHandlers:specialHandlers={},...restOptions}=options,normalizedMethod=method.toUpperCase(),endpointPath=(()=>{try{return new URL(endpoint,window.location.origin).pathname}catch(_){return String(endpoint||"")}})();if(window.ApiClientRouter&&"function"==typeof window.ApiClientRouter.handleApiFetch){"GET"!==normalizedMethod&&window.apiFetchCache.size>0&&(console.log(`[Network Cache] Client mutation detected (${normalizedMethod} ${endpoint}). Clearing cache...`),window.apiFetchCache.clear());const cacheKey=`${normalizedMethod}:client-api:${endpoint}`,isCacheable="GET"===normalizedMethod&&!options.bypassCache&&"no-store"!==options.cache;if(isCacheable){const cached=window.apiFetchCache.get(cacheKey),now=Date.now();if(cached&&now-cached.timestamp<1e4)return console.log(`[Network Cache] Fresh client API hit for ${cacheKey}.`),apiFetchClone(cached.data)}console.log(`[API Fetch] ${method} ${endpoint} intercepted via ApiClientRouter`,body?{payload:body}:"");const result=await window.ApiClientRouter.handleApiFetch(endpoint,{...restOptions,method:method,body:body,specialHandlers:specialHandlers});return!isCacheable||result&&result.error||window.apiFetchCache.set(cacheKey,{data:result,timestamp:Date.now()}),result}const isFirestoreIdentityEndpoint=void 0;if(("/api/users"===endpointPath||"/api/tokens"===endpointPath)&&window.FirestoreIdentityApi&&"function"==typeof window.FirestoreIdentityApi.handleApiFetch){"GET"!==normalizedMethod&&window.apiFetchCache.size>0&&(console.log(`[Network Cache] Firestore identity mutation detected (${normalizedMethod} ${endpoint}). Clearing cache...`),window.apiFetchCache.clear());const identityCacheKey=`${normalizedMethod}:firestore-identity:${endpoint}`,isIdentityCacheable="GET"===normalizedMethod&&!options.bypassCache&&"no-store"!==options.cache;if(isIdentityCacheable){const cached=window.apiFetchCache.get(identityCacheKey),now=Date.now();if(cached&&now-cached.timestamp<1e4)return console.log(`[Network Cache] Fresh Firestore identity hit for ${identityCacheKey}.`),apiFetchClone(cached.data)}console.log(`[API Fetch] ${method} ${endpoint} routed to Firestore identity`,body?{payload:body}:"");const result=await window.FirestoreIdentityApi.handleApiFetch(endpoint,{...restOptions,method:method,body:body,specialHandlers:specialHandlers});return!isIdentityCacheable||result&&result.error||window.apiFetchCache.set(identityCacheKey,{data:result,timestamp:Date.now()}),result}const url=`${baseURL}${endpoint}`,fetchOptions={method:method,headers:{"Content-Type":"application/json",...restOptions.headers},...restOptions};body&&(fetchOptions.body=JSON.stringify(body)),"GET"!==normalizedMethod&&window.apiFetchCache.size>0&&(console.log(`[Network Cache] Mutation detected (${normalizedMethod} ${endpoint}). Clearing cache to guarantee consistency...`),window.apiFetchCache.clear());const isCacheable="GET"===normalizedMethod&&!options.bypassCache&&"no-store"!==options.cache;if(isCacheable){const cacheKey=`${normalizedMethod}:${url}`,cached=window.apiFetchCache.get(cacheKey),now=Date.now();if(cached){const age=now-cached.timestamp;if(age<1e4)return console.log(`[Network Cache] Fresh Hit for ${cacheKey} (${(age/1e3).toFixed(1)}s old). Returning from cache instantly.`),apiFetchClone(cached.data);if(age<3e5)return console.log(`[Network Cache] Stale Hit for ${cacheKey} (${(age/1e3).toFixed(0)}s old). Returning stale instantly and launching background fetch...`),apiFetchBackground(url,fetchOptions,cacheKey),apiFetchClone(cached.data);console.log(`[Network Cache] Expired Cache for ${cacheKey} (${(age/1e3).toFixed(0)}s old). Proceeding with blocking fetch.`)}else console.log(`[Network Cache] Miss for ${cacheKey}. Proceeding with blocking fetch.`)}console.log(`[API Fetch] ${method} ${endpoint}`,body?{payload:body}:"");const timeoutMs=options.timeoutMs||3e4,controller=new AbortController,timeoutId=setTimeout(()=>{console.warn(`[Network] Request to ${endpoint} timed out after ${timeoutMs}ms. Aborting...`),controller.abort()},timeoutMs);fetchOptions.signal=controller.signal;try{const response=await fetch(url,fetchOptions);if(clearTimeout(timeoutId),specialHandlers[response.status])return specialHandlers[response.status]();const data=await response.json(),isEnvelope=!!(data&&"object"==typeof data&&Object.prototype.hasOwnProperty.call(data,"success")&&Object.prototype.hasOwnProperty.call(data,"data")&&Object.prototype.hasOwnProperty.call(data,"error"));let finalData=data;if(isEnvelope){if(!response.ok||!1===data.success)return{error:data?.error?.message||`${langu("api_http_error")} ${response.status}`,code:data?.error?.code||null,details:data?.error?.details||null};finalData=data.data}else if(!response.ok)return{error:data.error||`${langu("api_http_error")} ${response.status}`};if(isCacheable){const cacheKey=`${normalizedMethod}:${url}`;window.apiFetchCache.set(cacheKey,{data:finalData,timestamp:Date.now()}),console.log(`[Network Cache] Populate Cache for ${cacheKey}`)}return finalData}catch(error){return clearTimeout(timeoutId),"AbortError"===error.name?(console.error(`[Network] Request to ${endpoint} failed: Request timed out after ${timeoutMs}ms.`),{error:`${langu("api_connection_failed")} Request timed out.`}):(console.error(`[Network] Request to ${endpoint} failed:`,error),{error:`${langu("api_connection_failed")} ${error.message}`})}}startPeriodicConnectionCheck(),window.apiFetchCache=window.apiFetchCache||new Map;
+/**
+ * @file js/network.js
+ * @description Manages network connection state in the application and provides a central function for making API requests.
+ *   Includes mechanisms for periodic connection checking, displaying offline notifications, and caching connection state.
+ */
+/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
+ */
+
+
+/* ----------------------------------------
+    🟦 Connection State Cache
+---------------------------------------- */
+/**
+ * @description Timestamp of the last internet connection check.
+ * @type {number}
+ */
+var lastConnectionCheck = typeof lastConnectionCheck !== 'undefined' ? lastConnectionCheck : 0;
+/**
+ * @description Cached internet connection state.
+ * @type {boolean}
+ */
+var isConnectedCache = typeof isConnectedCache !== 'undefined' ? isConnectedCache : true; // Assume online by default to avoid flash of warning
+/**
+ * @description Reference to the "Swal" (SweetAlert) object for offline notification, to enable closing it.
+ * @type {object|null}
+ */
+var offlineToast = typeof offlineToast !== 'undefined' ? offlineToast : null;
+/**
+ * @description Interval (in milliseconds) between periodic internet connection checks.
+ * @type {number}
+ * @const
+ */
+var CONNECTION_CHECK_INTERVAL = 30000; // Increase to 30 seconds to reduce noise
+
+/* ----------------------------------------
+    🟦 Function used from anywhere
+---------------------------------------- */
+/**
+ * @description Returns the cached internet connection state.
+ * @function checkInternetConnection
+ * @returns {boolean} - `true` if there is an internet connection, otherwise `false`.
+ * @async
+ * @see isConnectedCache
+ */
+async function checkInternetConnection() {
+  return isConnectedCache;
+}
+
+/* ----------------------------------------
+    🟦 Fixed Snackbar on connection loss
+---------------------------------------- */
+/**
+ * @description Performs an actual internet connection check by attempting to fetch a resource from `gstatic.com`.
+ *   Updates the cached connection state (`isConnectedCache`) and shows or hides the offline notification (`offlineToast`) as needed.
+ * @function performActualConnectionCheck
+ * @returns {Promise<boolean>} - Promise returning `true` if connection is available, otherwise `false`.
+ * @async
+ * @throws {Error} - If `navigator.onLine` is false or the fetch request fails.
+ * @see isConnectedCache
+ * @see offlineToast
+ * @see lastConnectionCheck
+ */
+async function performActualConnectionCheck() {
+  lastConnectionCheck = Date.now();
+
+  const checkEndpoint = async (url, timeoutMs = 2000) => {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const cacheBuster = `?cb=${Date.now()}`;
+      await fetch(url + cacheBuster, {
+        method: "GET",
+        mode: "no-cors",
+        cache: 'no-store',
+        signal: controller.signal,
+      });
+      clearTimeout(timeout);
+      return true;
+    } catch (e) {
+      clearTimeout(timeout);
+      return false;
+    }
+  };
+
+  try {
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+        throw new Error("Navigator reports offline");
+    }
+
+    // Run probes in parallel with 2s timeout
+    const results = await Promise.all([
+      checkEndpoint("https://www.gstatic.com/generate_204", 2000),
+      checkEndpoint(window.location.origin + "/favicon.ico", 2000)
+    ]);
+
+    const isUp = results.some(res => res === true);
+
+    if (!isUp) throw new Error("Probes failed");
+
+    // 🔹 Connection restored
+    if (!isConnectedCache) {
+      console.log(`[Network] Connection restored`);
+    }
+
+    isConnectedCache = true;
+
+    // 🔹 Close Snackbar if visible
+    if (offlineToast) {
+      Swal.close();
+      offlineToast = null;
+    }
+
+    return true;
+
+  } catch (error) {
+    // Only show warning if we are actually sure it's down
+    isConnectedCache = false;
+
+    // 🔹 Show fixed Snackbar *only once*
+    if (!offlineToast) {
+      offlineToast = Swal.fire({
+        toast: true,
+        position: 'bottom',
+        html: `
+    <div style="display: grid; align-items:center;justify-items: center;margin:0;padding:0;">
+      <i class="fas fa-wifi-slash" style=""></i>
+      <span style="font-size:14px;">${langu('net_weak_or_disconnected')}</span>
+    </div>
+  `,
+        showConfirmButton: false,
+        background: '#979797d9',
+        color: 'white',
+        padding: 0,
+        width: 300,
+        timer: undefined,
+        timerProgressBar: false,
+      });
+    }
+
+    return false;
+  }
+}
+
+/* ----------------------------------------
+    🟦 Periodic Check
+---------------------------------------- */
+/**
+ * @description Starts periodic internet connection checking and sets up event handlers for browser connection state changes.
+ * @function startPeriodicConnectionCheck
+ * @returns {void}
+ * @see performActualConnectionCheck
+ * @see CONNECTION_CHECK_INTERVAL
+ * @see isConnectedCache
+ * @see offlineToast
+ */
+var isPeriodicCheckStarted = typeof isPeriodicCheckStarted !== 'undefined' ? isPeriodicCheckStarted : false;
+
+function startPeriodicConnectionCheck() {
+  if (isPeriodicCheckStarted) return;
+  isPeriodicCheckStarted = true;
+
+  // Correction: Removed the initial page-load check (was firing after 2.5s on every page).
+  // The periodic check (every 30s) and online/offline events are sufficient.
+  setInterval(performActualConnectionCheck, CONNECTION_CHECK_INTERVAL);
+
+  window.addEventListener("online", () => {
+    isConnectedCache = true;
+    if (offlineToast) Swal.close();
+    offlineToast = null;
+    performActualConnectionCheck();
+  });
+
+  window.addEventListener("offline", () => {
+    isConnectedCache = false;
+    performActualConnectionCheck();
+  });
+}
+
+/* ----------------------------------------
+    🟦 Start
+---------------------------------------- */
+startPeriodicConnectionCheck();
+
+
+/* ----------------------------------------
+    🟦 In-Memory API Cache & Stale-While-Revalidate
+---------------------------------------- */
+window.apiFetchCache = window.apiFetchCache || new Map();
+
+/**
+ * Helper to deep clone cached response payloads to prevent reference mutations.
+ */
+function apiFetchClone(obj) {
+  if (obj === null || typeof obj !== 'object') return obj;
+  try {
+    return JSON.parse(JSON.stringify(obj));
+  } catch (e) {
+    return obj;
+  }
+}
+
+/**
+ * Asynchronously revalidates stale cache records in the background.
+ */
+async function apiFetchBackground(url, fetchOptions, cacheKey) {
+  try {
+    const response = await fetch(url, fetchOptions);
+    if (!response.ok) return;
+
+    const data = await response.json();
+    const isEnvelope = !!(
+      data &&
+      typeof data === 'object' &&
+      Object.prototype.hasOwnProperty.call(data, 'success') &&
+      Object.prototype.hasOwnProperty.call(data, 'data') &&
+      Object.prototype.hasOwnProperty.call(data, 'error')
+    );
+
+    let resolvedData = data;
+    if (isEnvelope) {
+      if (data.success === false) return;
+      resolvedData = data.data;
+    }
+
+    window.apiFetchCache.set(cacheKey, {
+      data: resolvedData,
+      timestamp: Date.now()
+    });
+    console.log(`[Network Cache] Background revalidation successful for: ${cacheKey}`);
+  } catch (err) {
+    console.warn(`[Network Cache] Background revalidation failed for: ${cacheKey}`, err);
+  }
+}
+
+/**
+ * @description Central function for making API requests.
+ *   Wraps `fetch` logic, error handling, and JSON conversion.
+ * @function apiFetch
+ * @param {string} endpoint - API endpoint path (e.g., '/users').
+ * @param {object} [options={}] - `fetch` request options, including `method`, `body`, `headers`, and `specialHandlers`.
+ * @param {string} [options.method='GET'] - HTTP request method (GET, POST, PUT, DELETE).
+ * @param {object|null} [options.body=null] - Data to send with request, converted to JSON.
+ * @param {object} [options.headers={}] - HTTP request headers.
+ * @param {object} [options.specialHandlers={}] - Object containing functions to handle specific HTTP response statuses (like 401, 404).
+ * @returns {Promise<Object>} - Promise containing server response data as JSON object, or error object on failure.
+ * @async
+ * @throws {Error} - If the fetch request fails or the server responds with a non-OK status.
+ * @see baseURL
+ */
+async function apiFetch(endpoint, options = {}) {
+  const { method = 'GET', body = null, specialHandlers = {}, ...restOptions } = options;
+  const normalizedMethod = method.toUpperCase();
+  const endpointPath = (() => {
+    try {
+      return new URL(endpoint, window.location.origin).pathname;
+    } catch (_) {
+      return String(endpoint || "");
+    }
+  })();
+
+  if (window.ApiClientRouter && typeof window.ApiClientRouter.handleApiFetch === "function") {
+    if (normalizedMethod !== "GET" && window.apiFetchCache.size > 0) {
+      console.log(`[Network Cache] Client mutation detected (${normalizedMethod} ${endpoint}). Clearing cache...`);
+      window.apiFetchCache.clear();
+    }
+
+    const cacheKey = `${normalizedMethod}:client-api:${endpoint}`;
+    const isCacheable = normalizedMethod === "GET" && !options.bypassCache && options.cache !== "no-store";
+    if (isCacheable) {
+      const cached = window.apiFetchCache.get(cacheKey);
+      const now = Date.now();
+      if (cached && now - cached.timestamp < 10000) {
+        console.log(`[Network Cache] Fresh client API hit for ${cacheKey}.`);
+        return apiFetchClone(cached.data);
+      }
+    }
+
+    console.log(`[API Fetch] ${method} ${endpoint} intercepted via ApiClientRouter`, body ? { payload: body } : "");
+    const result = await window.ApiClientRouter.handleApiFetch(endpoint, {
+      ...restOptions,
+      method,
+      body,
+      specialHandlers,
+    });
+
+    if (isCacheable && !(result && result.error)) {
+      window.apiFetchCache.set(cacheKey, {
+        data: result,
+        timestamp: Date.now()
+      });
+    }
+    return result;
+  }
+
+  const isFirestoreIdentityEndpoint = endpointPath === "/api/users" || endpointPath === "/api/tokens";
+
+  if (isFirestoreIdentityEndpoint && window.FirestoreIdentityApi && typeof window.FirestoreIdentityApi.handleApiFetch === "function") {
+    if (normalizedMethod !== "GET" && window.apiFetchCache.size > 0) {
+      console.log(`[Network Cache] Firestore identity mutation detected (${normalizedMethod} ${endpoint}). Clearing cache...`);
+      window.apiFetchCache.clear();
+    }
+
+    const identityCacheKey = `${normalizedMethod}:firestore-identity:${endpoint}`;
+    const isIdentityCacheable = normalizedMethod === "GET" && !options.bypassCache && options.cache !== "no-store";
+    if (isIdentityCacheable) {
+      const cached = window.apiFetchCache.get(identityCacheKey);
+      const now = Date.now();
+      if (cached && now - cached.timestamp < 10000) {
+        console.log(`[Network Cache] Fresh Firestore identity hit for ${identityCacheKey}.`);
+        return apiFetchClone(cached.data);
+      }
+    }
+
+    console.log(`[API Fetch] ${method} ${endpoint} routed to Firestore identity`, body ? { payload: body } : "");
+    const result = await window.FirestoreIdentityApi.handleApiFetch(endpoint, {
+      ...restOptions,
+      method,
+      body,
+      specialHandlers,
+    });
+    if (isIdentityCacheable && !(result && result.error)) {
+      window.apiFetchCache.set(identityCacheKey, {
+        data: result,
+        timestamp: Date.now()
+      });
+    }
+    return result;
+  }
+
+  const url = `${baseURL}${endpoint}`;
+
+  const fetchOptions = {
+    method,
+    headers: {
+      'Content-Type': 'application/json',
+      ...restOptions.headers,
+    },
+    ...restOptions,
+  };
+
+  if (body) {
+    fetchOptions.body = JSON.stringify(body);
+  }
+
+  // Cache Invalidation on Mutation: Clear cache if a modifying request is sent
+  if (normalizedMethod !== 'GET') {
+    if (window.apiFetchCache.size > 0) {
+      console.log(`[Network Cache] Mutation detected (${normalizedMethod} ${endpoint}). Clearing cache to guarantee consistency...`);
+      window.apiFetchCache.clear();
+    }
+  }
+
+  // Check if we should cache this GET request
+  const isCacheable = normalizedMethod === 'GET' && !options.bypassCache && options.cache !== 'no-store';
+
+  if (isCacheable) {
+    const cacheKey = `${normalizedMethod}:${url}`;
+    const cached = window.apiFetchCache.get(cacheKey);
+    const now = Date.now();
+
+    if (cached) {
+      const age = now - cached.timestamp;
+      
+      // 1. Fresh Cache Hit (within 10 seconds) -> Return immediately
+      if (age < 10000) {
+        console.log(`[Network Cache] Fresh Hit for ${cacheKey} (${(age / 1000).toFixed(1)}s old). Returning from cache instantly.`);
+        return apiFetchClone(cached.data);
+      }
+
+      // 2. Stale Cache Hit (between 10 seconds and 5 minutes) -> Return stale value, fetch fresh in background
+      if (age < 300000) {
+        console.log(`[Network Cache] Stale Hit for ${cacheKey} (${(age / 1000).toFixed(0)}s old). Returning stale instantly and launching background fetch...`);
+        apiFetchBackground(url, fetchOptions, cacheKey);
+        return apiFetchClone(cached.data);
+      }
+
+      // 3. Expired Cache (over 5 minutes) -> Proceed to block and fetch
+      console.log(`[Network Cache] Expired Cache for ${cacheKey} (${(age / 1000).toFixed(0)}s old). Proceeding with blocking fetch.`);
+    } else {
+      console.log(`[Network Cache] Miss for ${cacheKey}. Proceeding with blocking fetch.`);
+    }
+  }
+
+  console.log(`[API Fetch] ${method} ${endpoint}`, body ? { payload: body } : '');
+
+  // Define AbortController and timeout only for actual network request
+  const timeoutMs = options.timeoutMs || 30000;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => {
+    console.warn(`[Network] Request to ${endpoint} timed out after ${timeoutMs}ms. Aborting...`);
+    controller.abort();
+  }, timeoutMs);
+
+  fetchOptions.signal = controller.signal;
+
+  try {
+    const response = await fetch(url, fetchOptions);
+    clearTimeout(timeoutId);
+
+    if (specialHandlers[response.status]) {
+      return specialHandlers[response.status]();
+    }
+
+    const data = await response.json();
+
+    const isEnvelope = !!(
+      data &&
+      typeof data === 'object' &&
+      Object.prototype.hasOwnProperty.call(data, 'success') &&
+      Object.prototype.hasOwnProperty.call(data, 'data') &&
+      Object.prototype.hasOwnProperty.call(data, 'error')
+    );
+
+    let finalData = data;
+
+    if (isEnvelope) {
+      if (!response.ok || data.success === false) {
+        return {
+          error: data?.error?.message || `${langu('api_http_error')} ${response.status}`,
+          code: data?.error?.code || null,
+          details: data?.error?.details || null,
+        };
+      }
+      finalData = data.data;
+    } else {
+      if (!response.ok) {
+        return { error: data.error || `${langu('api_http_error')} ${response.status}` };
+      }
+    }
+
+    // Populate Cache on successful fetch
+    if (isCacheable) {
+      const cacheKey = `${normalizedMethod}:${url}`;
+      window.apiFetchCache.set(cacheKey, {
+        data: finalData,
+        timestamp: Date.now()
+      });
+      console.log(`[Network Cache] Populate Cache for ${cacheKey}`);
+    }
+
+    return finalData;
+  } catch (error) {
+    clearTimeout(timeoutId);
+    if (error.name === 'AbortError') {
+      console.error(`[Network] Request to ${endpoint} failed: Request timed out after ${timeoutMs}ms.`);
+      return { error: `${langu('api_connection_failed')} Request timed out.` };
+    }
+    console.error(`[Network] Request to ${endpoint} failed:`, error);
+    return { error: `${langu('api_connection_failed')} ${error.message}` };
+  }
+}

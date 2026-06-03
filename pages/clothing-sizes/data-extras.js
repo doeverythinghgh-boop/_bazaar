@@ -1,1 +1,79 @@
-!function(window){"use strict";window.beddingData={category:"bedding",title:"cs_furnishings",subTypes:{sheets:{name:"cs_item_bed_sheets",columns:["cs_label_type","cs_label_width_cm","cs_label_length_cm"],rows:[["cs_item_bed_sheet_160","230 - 240","250 - 260"],["cs_item_bed_sheet_180","250 - 260","270 - 280"],["cs_item_bed_sheet_kids","150 - 160","210 - 220"]]},quilts:{name:"cs_item_quilts",columns:["cs_label_type","cs_label_width_cm","cs_label_length_cm"],rows:[["cs_item_quilt_large","230 - 240","250 - 260"],["cs_item_quilt_kids","140 - 150","200 - 210"]]}}},window.shoesData={category:"shoes",title:"cs_shoes",subTypes:{men:{name:"cs_men",columns:["cs_label_size","cs_label_foot_length_cm"],rows:[["40","25.0 - 25.5"],["41","25.5 - 26.5"],["42","26.5 - 27.5"],["43","27.5 - 28.0"],["44","28.0 - 29.0"],["45","29.0 - 30.0"]]},women:{name:"cs_women",columns:["cs_label_size","cs_label_foot_length_cm"],rows:[["36","22.0 - 23.0"],["37","23.0 - 24.0"],["38","24.0 - 24.5"],["39","24.5 - 25.5"],["40","25.5 - 26.0"],["41","26.0 - 27.0"]]},kids:{name:"cs_kids",columns:["cs_label_size","cs_label_approx_age","cs_label_foot_length_cm"],rows:[["20","cs_age_12_18_months","12.0 - 13.0"],["22","cs_age_18_24_months","13.0 - 14.0"],["24","cs_age_2_3_years","14.5 - 15.5"],["26","cs_age_3_4_years","15.5 - 16.5"],["28","cs_age_5_6_years","17.0 - 18.0"],["30","cs_age_7_8_years","18.0 - 19.0"],["32","cs_age_9_10_years","19.5 - 20.5"],["34","cs_age_11_12_years","21.0 - 22.0"]]}}}}(window);
+﻿/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
+ */
+(function(window){
+  "use strict";
+
+  window.beddingData = {
+    category: 'bedding',
+    title: 'cs_furnishings',
+    subTypes: {
+      sheets: {
+        name: 'cs_item_bed_sheets',
+        columns: ['cs_label_type', 'cs_label_width_cm', 'cs_label_length_cm'],
+        rows: [
+          ['cs_item_bed_sheet_160', '230 - 240', '250 - 260'],
+          ['cs_item_bed_sheet_180', '250 - 260', '270 - 280'],
+          ['cs_item_bed_sheet_kids', '150 - 160', '210 - 220']
+        ]
+      },
+      quilts: {
+        name: 'cs_item_quilts',
+        columns: ['cs_label_type', 'cs_label_width_cm', 'cs_label_length_cm'],
+        rows: [
+          ['cs_item_quilt_large', '230 - 240', '250 - 260'],
+          ['cs_item_quilt_kids', '140 - 150', '200 - 210']
+        ]
+      }
+    }
+  };
+
+  window.shoesData = {
+    category: 'shoes',
+    title: 'cs_shoes',
+    subTypes: {
+      men: {
+        name: 'cs_men',
+        columns: ['cs_label_size', 'cs_label_foot_length_cm'],
+        rows: [
+          ['40', '25.0 - 25.5'],
+          ['41', '25.5 - 26.5'],
+          ['42', '26.5 - 27.5'],
+          ['43', '27.5 - 28.0'],
+          ['44', '28.0 - 29.0'],
+          ['45', '29.0 - 30.0']
+        ]
+      },
+      women: {
+        name: 'cs_women',
+        columns: ['cs_label_size', 'cs_label_foot_length_cm'],
+        rows: [
+          ['36', '22.0 - 23.0'],
+          ['37', '23.0 - 24.0'],
+          ['38', '24.0 - 24.5'],
+          ['39', '24.5 - 25.5'],
+          ['40', '25.5 - 26.0'],
+          ['41', '26.0 - 27.0']
+        ]
+      },
+      kids: {
+        name: 'cs_kids',
+        columns: ['cs_label_size', 'cs_label_approx_age', 'cs_label_foot_length_cm'],
+        rows: [
+          ['20', 'cs_age_12_18_months', '12.0 - 13.0'],
+          ['22', 'cs_age_18_24_months', '13.0 - 14.0'],
+          ['24', 'cs_age_2_3_years', '14.5 - 15.5'],
+          ['26', 'cs_age_3_4_years', '15.5 - 16.5'],
+          ['28', 'cs_age_5_6_years', '17.0 - 18.0'],
+          ['30', 'cs_age_7_8_years', '18.0 - 19.0'],
+          ['32', 'cs_age_9_10_years', '19.5 - 20.5'],
+          ['34', 'cs_age_11_12_years', '21.0 - 22.0']
+        ]
+      }
+    }
+  };
+})(window);

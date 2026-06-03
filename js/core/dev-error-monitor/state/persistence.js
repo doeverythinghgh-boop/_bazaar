@@ -1,1 +1,47 @@
-!function(){const internal=window.__DevMonitorInternal;internal.persist=function(){if(internal.config.persist&&window.LocalDBSession)try{LocalDBSession.setItem(internal.STORAGE_KEY,JSON.stringify({errors:internal.state.errors,logs:internal.state.logs,breadcrumbs:internal.state.breadcrumbs,counter:internal.state.counter,totalEvents:internal.state.totalEvents,totalLogs:internal.state.totalLogs,lastUpdatedAt:internal.state.lastUpdatedAt,sourceFilter:internal.state.sourceFilter,filter:internal.state.filter,activeTab:internal.state.activeTab}))}catch{}},internal.restore=function(){if(internal.config.persist&&window.LocalDBSession)try{const raw=LocalDBSession.getItem(internal.STORAGE_KEY);if(!raw)return;const saved=JSON.parse(raw);internal.state.errors=Array.isArray(saved.errors)?saved.errors.slice(-internal.config.maxErrors).map(error=>({...error,severity:error.severity||internal.severityForType(error.type||"UNKNOWN"),sourceKey:error.sourceKey||internal.getSourceKey(error.source,error.url)})).filter(error=>!internal.shouldIgnore(error)):[],internal.state.logs=Array.isArray(saved.logs)?saved.logs.slice(-internal.config.maxLogs):[],internal.state.breadcrumbs=Array.isArray(saved.breadcrumbs)?saved.breadcrumbs.slice(-internal.config.maxBreadcrumbs):[],internal.state.counter=internal.state.errors.length,internal.state.totalEvents=internal.state.errors.reduce((sum,err)=>sum+(err.count||1),0),internal.state.totalLogs=Number(saved.totalLogs||internal.state.logs.length)||0,internal.state.lastUpdatedAt=saved.lastUpdatedAt||null,internal.state.sourceFilter=saved.sourceFilter||"ALL",internal.state.filter=saved.filter||"ALL",internal.state.activeTab=saved.activeTab||"summary",internal.state.isVisible=!0}catch{}},internal.restore()}();
+﻿/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
+ */
+/** @file js/core/dev-error-monitor/state/persistence.js */
+(function() {
+    const internal = window.__DevMonitorInternal;
+    internal.persist = function() {
+        if (!internal.config.persist || !window.LocalDBSession) return;
+        try {
+            LocalDBSession.setItem(internal.STORAGE_KEY, JSON.stringify({
+                errors: internal.state.errors, logs: internal.state.logs, breadcrumbs: internal.state.breadcrumbs,
+                counter: internal.state.counter, totalEvents: internal.state.totalEvents, totalLogs: internal.state.totalLogs,
+                lastUpdatedAt: internal.state.lastUpdatedAt, sourceFilter: internal.state.sourceFilter,
+                filter: internal.state.filter, activeTab: internal.state.activeTab
+            }));
+        } catch { }
+    };
+    internal.restore = function() {
+        if (!internal.config.persist || !window.LocalDBSession) return;
+        try {
+            const raw = LocalDBSession.getItem(internal.STORAGE_KEY);
+            if (!raw) return;
+            const saved = JSON.parse(raw);
+            internal.state.errors = Array.isArray(saved.errors) ? saved.errors.slice(-internal.config.maxErrors).map(error => ({
+                ...error,
+                severity: error.severity || internal.severityForType(error.type || 'UNKNOWN'),
+                sourceKey: error.sourceKey || internal.getSourceKey(error.source, error.url)
+            })).filter(error => !internal.shouldIgnore(error)) : [];
+            internal.state.logs = Array.isArray(saved.logs) ? saved.logs.slice(-internal.config.maxLogs) : [];
+            internal.state.breadcrumbs = Array.isArray(saved.breadcrumbs) ? saved.breadcrumbs.slice(-internal.config.maxBreadcrumbs) : [];
+            internal.state.counter = internal.state.errors.length;
+            internal.state.totalEvents = internal.state.errors.reduce((sum, err) => sum + (err.count || 1), 0);
+            internal.state.totalLogs = Number(saved.totalLogs || internal.state.logs.length) || 0;
+            internal.state.lastUpdatedAt = saved.lastUpdatedAt || null;
+            internal.state.sourceFilter = saved.sourceFilter || 'ALL';
+            internal.state.filter = saved.filter || 'ALL';
+            internal.state.activeTab = saved.activeTab || 'summary';
+            internal.state.isVisible = true;
+        } catch { }
+    };
+    internal.restore();
+})();
+

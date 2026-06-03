@@ -1,4 +1,34 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><script src="/LocalDatabasesProject/local-db.js"></script><script src="/js/early-error-bootstrap.js"></script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>تحديد الموقع - BidStory</title><link rel="stylesheet" href="/assets/libs/leaflet/leaflet.css"><link rel="stylesheet" href="/assets/fontawesome/css/all.css"><link rel="stylesheet" href="../style/variables.css"><link rel="stylesheet" href="../style/utilities.css"><link rel="stylesheet" href="../style/modals/swal-global.css"><link rel="stylesheet" href="../style/modals/cart.css"><link rel="stylesheet" href="../style/modals/users-admin.css"><link rel="stylesheet" href="../style/modals/profile-swal.css"><link rel="stylesheet" href="location_styles.css"><script id="embedded-detector">// Immediate detection and suppression of unwanted buttons to prevent any UI flicker
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  
+  <script src="/LocalDatabasesProject/local-db.js"></script>
+  <script src="/js/early-error-bootstrap.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تحديد الموقع - BidStory</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="/assets/libs/leaflet/leaflet.css" />
+
+    <!-- Font Awesome (Local) -->
+    <!-- Font Awesome (Local) -->
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css" />
+
+    <!-- Shared Project Styles -->
+    <link rel="stylesheet" href="../style/variables.css" />
+    <link rel="stylesheet" href="../style/utilities.css" />
+    <link rel="stylesheet" href="../style/modals/swal-global.css" />
+    <link rel="stylesheet" href="../style/modals/cart.css" />
+    <link rel="stylesheet" href="../style/modals/users-admin.css" />
+    <link rel="stylesheet" href="../style/modals/profile-swal.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="location_styles.css" />
+
+    <script id="embedded-detector">
+        // Immediate detection and suppression of unwanted buttons to prevent any UI flicker
         (function () {
             var search = window.location.search;
             var isEmbedded = search.indexOf('embedded=true') !== -1;
@@ -49,7 +79,68 @@
                     el.setAttribute('title', translated);
                 }
             });
-        };</script></head><body><button id="location_closeBtn" class="location_btn-close" onclick="location_app.closeLocationApp()"><i class="fas fa-times"></i></button><div id="location_loadingOverlay" class="location_loading-overlay"><div id="location_spinner" class="location_spinner"></div><p id="location_loadingText" class="location_loading-text" data-lkey="location_loading_map">جاري تحميل الخريطة...</p></div><div id="location_map"></div><div class="location_controls"><button id="location_saveBtn" class="location_btn location_btn-save" onclick="location_app.saveSelectedLocation()"><i class="fas fa-save"></i> <span class="location_btn-text" data-lkey="location_btn_save">حفظ</span></button> <button id="location_gpsBtn" class="location_btn location_btn-gps" onclick="location_app.getLocationByGPS()"><i id="location_gpsIcon" class="fas fa-map-marker-alt"></i> <span id="location_gpsText" class="location_btn-text" data-lkey="location_btn_my_location">موقعي</span></button> <button id="location_shareBtn" class="location_btn location_btn-share" onclick="location_app.shareCoordinates()"><i id="location_shareIcon" class="fas fa-share-alt"></i> <span id="location_shareText" class="location_btn-text" data-lkey="location_btn_share">مشاركة</span></button> <button id="location_resetBtn" class="location_btn location_btn-reset" onclick="location_app.resetLocation()"><i id="location_resetIcon" class="fas fa-trash-alt"></i> <span id="location_resetText" class="location_btn-text" data-lkey="location_btn_reset">إعادة ضبط</span></button></div><script src="/assets/libs/leaflet/leaflet.js"></script><script src="/assets/libs/sweetalert2/sweetalert2.all.min.js"></script><script src="js/location/config.js"></script><script src="js/location/ui.js"></script><script src="js/location/storage.js"></script><script src="js/location/map.js"></script><script src="js/location/gps.js"></script><script src="js/location/utils.js"></script><script src="js/location/core.js"></script><script src="location_app.js"></script><script>// Apply translations on load
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Close Button (Modern) -->
+    <button id="location_closeBtn" class="location_btn-close" onclick="location_app.closeLocationApp()">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Loading overlay -->
+    <div id="location_loadingOverlay" class="location_loading-overlay">
+        <div id="location_spinner" class="location_spinner"></div>
+        <p id="location_loadingText" class="location_loading-text" data-lkey="location_loading_map">جاري تحميل
+            الخريطة...</p>
+    </div>
+
+    <!-- Main map container -->
+    <div id="location_map"></div>
+
+    <!-- Controls panel -->
+    <div class="location_controls">
+        <button id="location_saveBtn" class="location_btn location_btn-save"
+            onclick="location_app.saveSelectedLocation()">
+            <i class="fas fa-save"></i>
+            <span class="location_btn-text" data-lkey="location_btn_save">حفظ</span>
+        </button>
+        <button id="location_gpsBtn" class="location_btn location_btn-gps" onclick="location_app.getLocationByGPS()">
+            <i id="location_gpsIcon" class="fas fa-map-marker-alt"></i>
+            <span id="location_gpsText" class="location_btn-text" data-lkey="location_btn_my_location">موقعي</span>
+        </button>
+        <button id="location_shareBtn" class="location_btn location_btn-share"
+            onclick="location_app.shareCoordinates()">
+            <i id="location_shareIcon" class="fas fa-share-alt"></i>
+            <span id="location_shareText" class="location_btn-text" data-lkey="location_btn_share">مشاركة</span>
+        </button>
+        <button id="location_resetBtn" class="location_btn location_btn-reset" onclick="location_app.resetLocation()">
+            <i id="location_resetIcon" class="fas fa-trash-alt"></i>
+            <span id="location_resetText" class="location_btn-text" data-lkey="location_btn_reset">إعادة ضبط</span>
+        </button>
+    </div>
+
+    <!-- External libraries -->
+    <script src="/assets/libs/leaflet/leaflet.js"></script>
+    <script src="/assets/libs/sweetalert2/sweetalert2.all.min.js"></script>
+
+    <!-- Main application modules with cache busting -->
+    <script src="js/location/config.js"></script>
+    <script src="js/location/ui.js"></script>
+    <script src="js/location/storage.js"></script>
+    <script src="js/location/map.js"></script>
+    <script src="js/location/gps.js"></script>
+    <script src="js/location/utils.js"></script>
+    <script src="js/location/core.js"></script>
+    <script src="location_app.js"></script>
+    <script>
+        // Apply translations on load
         window.addEventListener('load', () => {
             window.applyLocationTranslations();
-        });</script></body></html>
+        });
+    </script>
+</body>
+
+</html>
+

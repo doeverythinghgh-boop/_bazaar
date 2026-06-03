@@ -1,1 +1,87 @@
-!function(){const pharmacyState={contextByUser:new Map,jsonCache:new Map,hiddenSub:new Set,hiddenProducts:new Set};async function fetchJsonCached(path){const cleanPath=String(path||"").replace(/^\/+/,"");return cleanPath?(pharmacyState.jsonCache.has(cleanPath)||pharmacyState.jsonCache.set(cleanPath,fetch(`/${cleanPath}`).then(response=>response.ok?response.json():null)),pharmacyState.jsonCache.get(cleanPath)):null}async function loadPharmacyList(){return window.PharmacyAPI?.getCatalogSource?window.PharmacyAPI.getCatalogSource():[]}async function loadPharmacyContext(userKey,options={}){const cacheKey=String(userKey||"guest_user"),forceReload=!0===options.force;if(!forceReload&&pharmacyState.contextByUser.has(cacheKey)){const cached=pharmacyState.contextByUser.get(cacheKey);return pharmacyState.hiddenSub=new Set(cached.hiddenSubIds||[]),pharmacyState.hiddenProducts=new Set(cached.hiddenProductIds||[]),JSON.parse(JSON.stringify(cached))}const context=window.PharmacyAPI?.getCatalogContext?await window.PharmacyAPI.getCatalogContext(userKey,{force:forceReload}):{catalogSource:[],customCategories:[],preferences:{hidden_main_categories:[],hidden_sub_categories:[],hidden_catalog_products:[]},mergedCategories:[],hiddenMainIds:[],hiddenSubIds:[],hiddenProductIds:[]};return pharmacyState.contextByUser.set(cacheKey,JSON.parse(JSON.stringify(context))),pharmacyState.hiddenSub=new Set(context.hiddenSubIds||[]),pharmacyState.hiddenProducts=new Set(context.hiddenProductIds||[]),JSON.parse(JSON.stringify(context))}function invalidatePharmacyContext(userKey){const cacheKey=String(userKey||"guest_user");pharmacyState.contextByUser.delete(cacheKey),window.PharmacyAPI?.invalidateCatalogContext&&window.PharmacyAPI.invalidateCatalogContext(cacheKey)}window.pharmacyStorefrontData={state:pharmacyState,fetchJsonCached:fetchJsonCached,invalidatePharmacyContext:invalidatePharmacyContext,loadPharmacyContext:loadPharmacyContext,loadPharmacyList:loadPharmacyList}}();
+﻿/**
+ * @file pages/merchant-portfolio/js/pharmacy-storefront-data.js
+ * @description Shared pharmacy storefront data and cache layer.
+ */
+/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
+ */
+
+
+(function () {
+    const pharmacyState = {
+        contextByUser: new Map(),
+        jsonCache: new Map(),
+        hiddenSub: new Set(),
+        hiddenProducts: new Set()
+    };
+
+    async function fetchJsonCached(path) {
+        const cleanPath = String(path || '').replace(/^\/+/, '');
+        if (!cleanPath) return null;
+
+        if (!pharmacyState.jsonCache.has(cleanPath)) {
+            pharmacyState.jsonCache.set(cleanPath, fetch(`/${cleanPath}`).then(response => (
+                response.ok ? response.json() : null
+            )));
+        }
+
+        return pharmacyState.jsonCache.get(cleanPath);
+    }
+
+    async function loadPharmacyList() {
+        if (window.PharmacyAPI?.getCatalogSource) {
+            return window.PharmacyAPI.getCatalogSource();
+        }
+        return [];
+    }
+
+    async function loadPharmacyContext(userKey, options = {}) {
+        const cacheKey = String(userKey || 'guest_user');
+        const forceReload = options.force === true;
+
+        if (!forceReload && pharmacyState.contextByUser.has(cacheKey)) {
+            const cached = pharmacyState.contextByUser.get(cacheKey);
+            pharmacyState.hiddenSub = new Set(cached.hiddenSubIds || []);
+            pharmacyState.hiddenProducts = new Set(cached.hiddenProductIds || []);
+            return JSON.parse(JSON.stringify(cached));
+        }
+
+        const context = window.PharmacyAPI?.getCatalogContext
+            ? await window.PharmacyAPI.getCatalogContext(userKey, { force: forceReload })
+            : {
+                catalogSource: [],
+                customCategories: [],
+                preferences: { hidden_main_categories: [], hidden_sub_categories: [], hidden_catalog_products: [] },
+                mergedCategories: [],
+                hiddenMainIds: [],
+                hiddenSubIds: [],
+                hiddenProductIds: []
+            };
+
+        pharmacyState.contextByUser.set(cacheKey, JSON.parse(JSON.stringify(context)));
+        pharmacyState.hiddenSub = new Set(context.hiddenSubIds || []);
+        pharmacyState.hiddenProducts = new Set(context.hiddenProductIds || []);
+
+        return JSON.parse(JSON.stringify(context));
+    }
+
+    function invalidatePharmacyContext(userKey) {
+        const cacheKey = String(userKey || 'guest_user');
+        pharmacyState.contextByUser.delete(cacheKey);
+        if (window.PharmacyAPI?.invalidateCatalogContext) {
+            window.PharmacyAPI.invalidateCatalogContext(cacheKey);
+        }
+    }
+
+    window.pharmacyStorefrontData = {
+        state: pharmacyState,
+        fetchJsonCached,
+        invalidatePharmacyContext,
+        loadPharmacyContext,
+        loadPharmacyList
+    };
+})();

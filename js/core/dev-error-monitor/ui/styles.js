@@ -1,1 +1,491 @@
-window.DevMonitorStyles='\n    #dev-error-monitor-banner {\n        position: fixed;\n        inset: auto 14px 14px auto;\n        z-index: 2147483647;\n        font-family: "Segoe UI", Tahoma, Arial, sans-serif;\n        color: #f8fafc;\n        direction: rtl;\n        text-align: right;\n    }\n\n    .dev-monitor-launcher {\n        width: 52px;\n        height: 52px;\n        display: inline-flex;\n        align-items: center;\n        justify-content: center;\n        border: 1px solid rgba(255,255,255,0.28);\n        border-radius: 999px;\n        background: #0f766e;\n        color: #fff;\n        box-shadow: 0 14px 32px rgba(15, 23, 42, 0.34);\n        cursor: pointer;\n    }\n\n    #dev-error-monitor-banner.has-error .dev-monitor-launcher {\n        background: #b91c1c;\n    }\n\n    #dev-error-monitor-banner.paused .dev-monitor-launcher {\n        background: #92400e;\n    }\n\n    .dev-monitor-counter {\n        min-width: 30px;\n        height: 30px;\n        display: inline-flex;\n        align-items: center;\n        justify-content: center;\n        border-radius: 999px;\n        background: #fff;\n        color: #0f766e;\n        font-size: 12px;\n        font-weight: 800;\n        line-height: 1;\n    }\n\n    #dev-error-monitor-banner.has-error .dev-monitor-counter {\n        color: #b91c1c;\n    }\n\n    .dev-monitor-overlay {\n        position: fixed;\n        inset: 0;\n        display: none;\n        background: rgba(8, 13, 24, 0.74);\n        backdrop-filter: blur(8px);\n        -webkit-backdrop-filter: blur(8px);\n        overscroll-behavior: contain;\n        -webkit-overflow-scrolling: touch;\n    }\n\n    #dev-error-monitor-banner.expanded .dev-monitor-overlay {\n        display: block;\n    }\n\n    #dev-error-monitor-banner.expanded .dev-monitor-launcher {\n        display: none;\n    }\n\n    .dev-monitor-shell {\n        width: 100vw;\n        height: 100vh;\n        height: 100dvh;\n        display: grid;\n        grid-template-rows: auto auto auto 1fr;\n        background: #0b1120;\n        overflow: hidden;\n    }\n\n    .dev-monitor-header {\n        min-height: 64px;\n        display: flex;\n        align-items: center;\n        justify-content: space-between;\n        gap: 14px;\n        padding: max(14px, env(safe-area-inset-top)) 18px 12px;\n        background: #111827;\n        border-bottom: 1px solid #263244;\n    }\n\n    .dev-monitor-heading {\n        min-width: 0;\n    }\n\n    .dev-monitor-title {\n        color: #ffffff;\n        font-size: 18px;\n        font-weight: 800;\n        line-height: 1.25;\n    }\n\n    .dev-monitor-status {\n        margin-top: 4px;\n        color: #b6c2d3;\n        font-size: 12px;\n        font-weight: 600;\n        line-height: 1.4;\n        overflow-wrap: anywhere;\n    }\n\n    .dev-monitor-close,\n    .dev-monitor-btn,\n    .dev-monitor-tab,\n    .filter-btn,\n    .source-filter-btn,\n    .error-copy-btn,\n    .error-toggle-btn,\n    .error-open-source-btn {\n        min-height: 34px;\n        border: 1px solid #334155;\n        border-radius: 6px;\n        background: #1e293b;\n        color: #f8fafc;\n        padding: 7px 11px;\n        cursor: pointer;\n        font: inherit;\n        font-size: 12px;\n        font-weight: 700;\n        line-height: 1.2;\n    }\n\n    .dev-monitor-close {\n        background: #991b1b;\n        border-color: #b91c1c;\n        flex: 0 0 auto;\n    }\n\n    .dev-monitor-btn.danger {\n        background: #7f1d1d;\n        border-color: #991b1b;\n    }\n\n    .dev-monitor-close:hover,\n    .dev-monitor-btn:hover,\n    .dev-monitor-tab:hover,\n    .filter-btn:hover,\n    .source-filter-btn:hover,\n    .error-copy-btn:hover,\n    .error-toggle-btn:hover,\n    .error-open-source-btn:hover {\n        filter: brightness(1.12);\n    }\n\n    .dev-monitor-tabs {\n        display: flex;\n        gap: 8px;\n        padding: 10px 18px;\n        background: #0f172a;\n        border-bottom: 1px solid #263244;\n        overflow-x: auto;\n        scrollbar-width: thin;\n    }\n\n    .dev-monitor-tab {\n        min-width: max-content;\n        background: #172033;\n        color: #cbd5e1;\n    }\n\n    .dev-monitor-tab.active,\n    .filter-btn.active,\n    .source-filter-btn.active {\n        background: #2563eb;\n        border-color: #3b82f6;\n        color: #fff;\n    }\n\n    .dev-monitor-details {\n        min-height: 0;\n        display: grid;\n        grid-template-rows: auto auto auto auto 1fr;\n        overflow: hidden;\n        background: #0b1120;\n    }\n\n    .dev-monitor-toolbar,\n    .dev-monitor-filters,\n    .dev-monitor-source-groups {\n        display: flex;\n        gap: 8px;\n        flex-wrap: wrap;\n        padding: 10px 18px;\n        border-bottom: 1px solid #202b3d;\n        background: #101827;\n    }\n\n    .dev-monitor-toolbar:empty,\n    .dev-monitor-filters:empty,\n    .dev-monitor-source-groups:empty {\n        display: none;\n    }\n\n    .dev-monitor-summary {\n        display: flex;\n        align-items: center;\n        flex-wrap: nowrap;\n        gap: 12px;\n        padding: 7px 18px;\n        background: #0d1626;\n        border-bottom: 1px solid #202b3d;\n        overflow-x: auto;\n        scrollbar-width: none;\n        white-space: nowrap;\n        font-size: 12px;\n        color: #94a3b8;\n        min-height: 34px;\n    }\n\n    .dev-monitor-summary:empty {\n        display: none;\n    }\n\n    .dev-monitor-summary::-webkit-scrollbar {\n        display: none;\n    }\n\n    .dev-monitor-stat {\n        display: inline-flex;\n        align-items: center;\n        gap: 4px;\n        flex-shrink: 0;\n        white-space: nowrap;\n    }\n\n    .dev-monitor-stat span {\n        color: #64748b;\n        font-size: 11px;\n        font-weight: 600;\n    }\n\n    .dev-monitor-stat strong {\n        color: #e2e8f0;\n        font-size: 12px;\n        font-weight: 800;\n    }\n\n    .dev-monitor-stat-sep {\n        color: #334155;\n        font-size: 12px;\n        user-select: none;\n    }\n\n    .dev-monitor-report-preview {\n        grid-column: 1 / -1;\n        margin: 0;\n        max-height: 42vh;\n        overflow: auto;\n        direction: ltr;\n        text-align: left;\n        white-space: pre-wrap;\n        word-break: break-word;\n        padding: 12px;\n        border: 1px solid #263244;\n        border-radius: 8px;\n        background: #050816;\n        color: #dbeafe;\n        font-family: Consolas, "SFMono-Regular", monospace;\n        font-size: 11px;\n        line-height: 1.5;\n    }\n\n    .error-list {\n        min-height: 0;\n        overflow: auto;\n        padding: 14px 18px 24px;\n    }\n\n    .dev-monitor-empty {\n        padding: 16px;\n        color: #b6c2d3;\n        font-size: 13px;\n        font-weight: 700;\n    }\n\n    .error-entry {\n        margin-bottom: 12px;\n        border: 1px solid #263244;\n        border-right: 4px solid #ef4444;\n        border-radius: 8px;\n        padding: 12px;\n        background: #111827;\n    }\n\n    .error-entry.severity-warning {\n        border-right-color: #f59e0b;\n    }\n\n    .error-entry.severity-info,\n    .error-entry.log-entry {\n        border-right-color: #22c55e;\n    }\n\n    .error-entry-header {\n        display: flex;\n        justify-content: space-between;\n        align-items: flex-start;\n        gap: 10px;\n        margin-bottom: 8px;\n    }\n\n    .error-entry-title,\n    .error-entry-actions {\n        min-width: 0;\n        display: flex;\n        align-items: center;\n        gap: 7px;\n        flex-wrap: wrap;\n    }\n\n    .error-entry-type {\n        direction: ltr;\n        color: #fbbf24;\n        font-size: 11px;\n        font-weight: 900;\n        text-transform: uppercase;\n    }\n\n    .error-entry-time {\n        direction: ltr;\n        color: #94a3b8;\n        font-family: Consolas, "SFMono-Regular", monospace;\n        font-size: 11px;\n        font-weight: 600;\n    }\n\n    .error-entry-msg,\n    .error-entry-src {\n        direction: ltr;\n        text-align: left;\n        overflow-wrap: anywhere;\n        white-space: pre-wrap;\n        font-family: Consolas, "SFMono-Regular", monospace;\n    }\n\n    .error-entry-msg {\n        color: #f8fafc;\n        font-size: 12px;\n        line-height: 1.55;\n    }\n\n    .error-entry-src {\n        margin-top: 8px;\n        color: #93a4ba;\n        font-size: 11px;\n    }\n\n    .error-entry-detail {\n        display: none;\n        margin-top: 10px;\n        border-top: 1px solid #263244;\n        padding-top: 10px;\n    }\n\n    .error-entry.show-full .error-entry-detail {\n        display: block;\n    }\n\n    .error-meta-block {\n        margin: 0 0 8px;\n        color: #dbeafe;\n        font-size: 12px;\n        font-weight: 700;\n    }\n\n    .error-meta-block summary {\n        cursor: pointer;\n        margin-bottom: 6px;\n    }\n\n    .error-meta-block pre,\n    .error-stack {\n        margin: 0;\n        max-height: 220px;\n        overflow: auto;\n        direction: ltr;\n        text-align: left;\n        white-space: pre-wrap;\n        word-break: break-word;\n        padding: 10px;\n        border: 1px solid #202b3d;\n        border-radius: 6px;\n        background: #050816;\n        color: #cbd5e1;\n        font-family: Consolas, "SFMono-Regular", monospace;\n        font-size: 11px;\n        line-height: 1.5;\n    }\n\n    .error-stack {\n        color: #fecaca;\n    }\n\n    @keyframes dev-shake {\n        0%, 100% { transform: translateX(0); }\n        25% { transform: translateX(-5px); }\n        75% { transform: translateX(5px); }\n    }\n\n    @media (max-width: 720px) {\n        #dev-error-monitor-banner {\n            inset: auto 10px 10px auto;\n        }\n\n        .dev-monitor-overlay {\n            overflow-y: auto;\n        }\n\n        .dev-monitor-shell {\n            min-height: 100vh;\n            min-height: 100dvh;\n            height: auto;\n            display: block;\n            overflow: visible;\n        }\n\n        .dev-monitor-details {\n            display: block;\n            overflow: visible;\n        }\n\n        .error-list {\n            overflow: visible;\n        }\n\n        .dev-monitor-header {\n            align-items: flex-start;\n            padding-inline: 12px;\n        }\n\n        .dev-monitor-title {\n            font-size: 16px;\n        }\n\n        .dev-monitor-tabs,\n        .dev-monitor-toolbar,\n        .dev-monitor-filters,\n        .dev-monitor-source-groups,\n        .dev-monitor-summary,\n        .error-list {\n            padding-inline: 12px;\n        }\n\n        .dev-monitor-summary {\n            padding-inline: 12px;\n        }\n\n        .error-entry-header {\n            flex-direction: column;\n        }\n    }\n\n    @media (max-width: 420px) {\n        .dev-monitor-summary {\n            padding-inline: 10px;\n        }\n\n        .dev-monitor-close,\n        .dev-monitor-btn,\n        .dev-monitor-tab,\n        .filter-btn,\n        .source-filter-btn,\n        .error-copy-btn,\n        .error-toggle-btn,\n        .error-open-source-btn {\n            font-size: 11px;\n            padding-inline: 9px;\n        }\n    }\n';
+﻿/**
+ * @file js/core/dev-error-monitor/ui/styles.js
+ */
+/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
+ */
+
+window.DevMonitorStyles = `
+    #dev-error-monitor-banner {
+        position: fixed;
+        inset: auto 14px 14px auto;
+        z-index: 2147483647;
+        font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+        color: #f8fafc;
+        direction: rtl;
+        text-align: right;
+    }
+
+    .dev-monitor-launcher {
+        width: 52px;
+        height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255,255,255,0.28);
+        border-radius: 999px;
+        background: #0f766e;
+        color: #fff;
+        box-shadow: 0 14px 32px rgba(15, 23, 42, 0.34);
+        cursor: pointer;
+    }
+
+    #dev-error-monitor-banner.has-error .dev-monitor-launcher {
+        background: #b91c1c;
+    }
+
+    #dev-error-monitor-banner.paused .dev-monitor-launcher {
+        background: #92400e;
+    }
+
+    .dev-monitor-counter {
+        min-width: 30px;
+        height: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: #fff;
+        color: #0f766e;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1;
+    }
+
+    #dev-error-monitor-banner.has-error .dev-monitor-counter {
+        color: #b91c1c;
+    }
+
+    .dev-monitor-overlay {
+        position: fixed;
+        inset: 0;
+        display: none;
+        background: rgba(8, 13, 24, 0.74);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #dev-error-monitor-banner.expanded .dev-monitor-overlay {
+        display: block;
+    }
+
+    #dev-error-monitor-banner.expanded .dev-monitor-launcher {
+        display: none;
+    }
+
+    .dev-monitor-shell {
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+        display: grid;
+        grid-template-rows: auto auto auto 1fr;
+        background: #0b1120;
+        overflow: hidden;
+    }
+
+    .dev-monitor-header {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: max(14px, env(safe-area-inset-top)) 18px 12px;
+        background: #111827;
+        border-bottom: 1px solid #263244;
+    }
+
+    .dev-monitor-heading {
+        min-width: 0;
+    }
+
+    .dev-monitor-title {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.25;
+    }
+
+    .dev-monitor-status {
+        margin-top: 4px;
+        color: #b6c2d3;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .dev-monitor-close,
+    .dev-monitor-btn,
+    .dev-monitor-tab,
+    .filter-btn,
+    .source-filter-btn,
+    .error-copy-btn,
+    .error-toggle-btn,
+    .error-open-source-btn {
+        min-height: 34px;
+        border: 1px solid #334155;
+        border-radius: 6px;
+        background: #1e293b;
+        color: #f8fafc;
+        padding: 7px 11px;
+        cursor: pointer;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .dev-monitor-close {
+        background: #991b1b;
+        border-color: #b91c1c;
+        flex: 0 0 auto;
+    }
+
+    .dev-monitor-btn.danger {
+        background: #7f1d1d;
+        border-color: #991b1b;
+    }
+
+    .dev-monitor-close:hover,
+    .dev-monitor-btn:hover,
+    .dev-monitor-tab:hover,
+    .filter-btn:hover,
+    .source-filter-btn:hover,
+    .error-copy-btn:hover,
+    .error-toggle-btn:hover,
+    .error-open-source-btn:hover {
+        filter: brightness(1.12);
+    }
+
+    .dev-monitor-tabs {
+        display: flex;
+        gap: 8px;
+        padding: 10px 18px;
+        background: #0f172a;
+        border-bottom: 1px solid #263244;
+        overflow-x: auto;
+        scrollbar-width: thin;
+    }
+
+    .dev-monitor-tab {
+        min-width: max-content;
+        background: #172033;
+        color: #cbd5e1;
+    }
+
+    .dev-monitor-tab.active,
+    .filter-btn.active,
+    .source-filter-btn.active {
+        background: #2563eb;
+        border-color: #3b82f6;
+        color: #fff;
+    }
+
+    .dev-monitor-details {
+        min-height: 0;
+        display: grid;
+        grid-template-rows: auto auto auto auto 1fr;
+        overflow: hidden;
+        background: #0b1120;
+    }
+
+    .dev-monitor-toolbar,
+    .dev-monitor-filters,
+    .dev-monitor-source-groups {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 10px 18px;
+        border-bottom: 1px solid #202b3d;
+        background: #101827;
+    }
+
+    .dev-monitor-toolbar:empty,
+    .dev-monitor-filters:empty,
+    .dev-monitor-source-groups:empty {
+        display: none;
+    }
+
+    .dev-monitor-summary {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 12px;
+        padding: 7px 18px;
+        background: #0d1626;
+        border-bottom: 1px solid #202b3d;
+        overflow-x: auto;
+        scrollbar-width: none;
+        white-space: nowrap;
+        font-size: 12px;
+        color: #94a3b8;
+        min-height: 34px;
+    }
+
+    .dev-monitor-summary:empty {
+        display: none;
+    }
+
+    .dev-monitor-summary::-webkit-scrollbar {
+        display: none;
+    }
+
+    .dev-monitor-stat {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .dev-monitor-stat span {
+        color: #64748b;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .dev-monitor-stat strong {
+        color: #e2e8f0;
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    .dev-monitor-stat-sep {
+        color: #334155;
+        font-size: 12px;
+        user-select: none;
+    }
+
+    .dev-monitor-report-preview {
+        grid-column: 1 / -1;
+        margin: 0;
+        max-height: 42vh;
+        overflow: auto;
+        direction: ltr;
+        text-align: left;
+        white-space: pre-wrap;
+        word-break: break-word;
+        padding: 12px;
+        border: 1px solid #263244;
+        border-radius: 8px;
+        background: #050816;
+        color: #dbeafe;
+        font-family: Consolas, "SFMono-Regular", monospace;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .error-list {
+        min-height: 0;
+        overflow: auto;
+        padding: 14px 18px 24px;
+    }
+
+    .dev-monitor-empty {
+        padding: 16px;
+        color: #b6c2d3;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .error-entry {
+        margin-bottom: 12px;
+        border: 1px solid #263244;
+        border-right: 4px solid #ef4444;
+        border-radius: 8px;
+        padding: 12px;
+        background: #111827;
+    }
+
+    .error-entry.severity-warning {
+        border-right-color: #f59e0b;
+    }
+
+    .error-entry.severity-info,
+    .error-entry.log-entry {
+        border-right-color: #22c55e;
+    }
+
+    .error-entry-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 8px;
+    }
+
+    .error-entry-title,
+    .error-entry-actions {
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        flex-wrap: wrap;
+    }
+
+    .error-entry-type {
+        direction: ltr;
+        color: #fbbf24;
+        font-size: 11px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .error-entry-time {
+        direction: ltr;
+        color: #94a3b8;
+        font-family: Consolas, "SFMono-Regular", monospace;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .error-entry-msg,
+    .error-entry-src {
+        direction: ltr;
+        text-align: left;
+        overflow-wrap: anywhere;
+        white-space: pre-wrap;
+        font-family: Consolas, "SFMono-Regular", monospace;
+    }
+
+    .error-entry-msg {
+        color: #f8fafc;
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    .error-entry-src {
+        margin-top: 8px;
+        color: #93a4ba;
+        font-size: 11px;
+    }
+
+    .error-entry-detail {
+        display: none;
+        margin-top: 10px;
+        border-top: 1px solid #263244;
+        padding-top: 10px;
+    }
+
+    .error-entry.show-full .error-entry-detail {
+        display: block;
+    }
+
+    .error-meta-block {
+        margin: 0 0 8px;
+        color: #dbeafe;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .error-meta-block summary {
+        cursor: pointer;
+        margin-bottom: 6px;
+    }
+
+    .error-meta-block pre,
+    .error-stack {
+        margin: 0;
+        max-height: 220px;
+        overflow: auto;
+        direction: ltr;
+        text-align: left;
+        white-space: pre-wrap;
+        word-break: break-word;
+        padding: 10px;
+        border: 1px solid #202b3d;
+        border-radius: 6px;
+        background: #050816;
+        color: #cbd5e1;
+        font-family: Consolas, "SFMono-Regular", monospace;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .error-stack {
+        color: #fecaca;
+    }
+
+    @keyframes dev-shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        75% { transform: translateX(5px); }
+    }
+
+    @media (max-width: 720px) {
+        #dev-error-monitor-banner {
+            inset: auto 10px 10px auto;
+        }
+
+        .dev-monitor-overlay {
+            overflow-y: auto;
+        }
+
+        .dev-monitor-shell {
+            min-height: 100vh;
+            min-height: 100dvh;
+            height: auto;
+            display: block;
+            overflow: visible;
+        }
+
+        .dev-monitor-details {
+            display: block;
+            overflow: visible;
+        }
+
+        .error-list {
+            overflow: visible;
+        }
+
+        .dev-monitor-header {
+            align-items: flex-start;
+            padding-inline: 12px;
+        }
+
+        .dev-monitor-title {
+            font-size: 16px;
+        }
+
+        .dev-monitor-tabs,
+        .dev-monitor-toolbar,
+        .dev-monitor-filters,
+        .dev-monitor-source-groups,
+        .dev-monitor-summary,
+        .error-list {
+            padding-inline: 12px;
+        }
+
+        .dev-monitor-summary {
+            padding-inline: 12px;
+        }
+
+        .error-entry-header {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 420px) {
+        .dev-monitor-summary {
+            padding-inline: 10px;
+        }
+
+        .dev-monitor-close,
+        .dev-monitor-btn,
+        .dev-monitor-tab,
+        .filter-btn,
+        .source-filter-btn,
+        .error-copy-btn,
+        .error-toggle-btn,
+        .error-open-source-btn {
+            font-size: 11px;
+            padding-inline: 9px;
+        }
+    }
+`;

@@ -1,1 +1,303 @@
-function getCartStorageKey(){return window.userSession&&window.userSession.user_key?`cart_${window.userSession.user_key}`:null}function getCart(){const CART_STORAGE_KEY=getCartStorageKey();if(!CART_STORAGE_KEY)return[];try{const cartJson=LocalDBStorage.getItem(CART_STORAGE_KEY),cart=void 0;return(cartJson?JSON.parse(cartJson):[]).map(item=>({...item,note:item.note||""}))}catch(error){return console.error("Error LocalDBStorage:",error),[]}}function saveCart(cart){const CART_STORAGE_KEY=getCartStorageKey();if(CART_STORAGE_KEY)try{LocalDBStorage.setItem(CART_STORAGE_KEY,JSON.stringify(cart)),window.dispatchEvent(new CustomEvent("cartUpdated"))}catch(error){console.error("Error LocalDBStorage:",error)}}function addToCart(product,quantity,note=""){if(window.userSession&&window.userSession.user_key===product.seller_key)return window.Swal.fire({title:window.langu("cart_error_own_product_title"),text:window.langu("cart_error_own_product_text"),confirmButtonText:window.langu("alert_confirm_btn"),buttonsStyling:!1,customClass:{popup:"swal-modern-mini-popup",title:"swal-modern-mini-title",htmlContainer:"swal-modern-mini-text",confirmButton:"swal-modern-mini-confirm"}}),containerGoBack(),!1;const cart=getCart(),existingProductIndex=cart.findIndex(item=>item.product_key===product.product_key);if(existingProductIndex>-1)cart[existingProductIndex].quantity+=quantity,note&&(cart[existingProductIndex].note=note);else{const newCartItem={...product,quantity:quantity,note:note,addedDate:(new Date).toISOString()};!newCartItem.product_key&&product.product_key&&(newCartItem.product_key=product.product_key),cart.push(newCartItem)}return saveCart(cart),window.Swal.fire({title:window.langu("cart_added_success").replace("{name}",product.productName),text:window.langu("cart_added_desc"),confirmButtonText:window.langu("alert_confirm_btn"),buttonsStyling:!1,customClass:{popup:"swal-modern-mini-popup",title:"swal-modern-mini-title",htmlContainer:"swal-modern-mini-text",confirmButton:"swal-modern-mini-confirm"}}).then(result=>{result.isConfirmed&&containerGoBack()}),!0}function removeFromCart(productKey){let cart=getCart();cart=cart.filter(item=>item.product_key!==productKey),saveCart(cart)}function updateCartQuantity(productKey,newQuantity){const cart=getCart(),productIndex=cart.findIndex(item=>item.product_key===productKey);productIndex>-1&&(newQuantity>0?cart[productIndex].quantity=newQuantity:cart.splice(productIndex,1),saveCart(cart))}function updateCartItemNote(productKey,note){const cart=getCart(),productIndex=cart.findIndex(item=>item.product_key===productKey);productIndex>-1&&(cart[productIndex].note=note,saveCart(cart))}function clearCart(){saveCart([])}function getCartItemCount(){const cart=void 0;return getCart().reduce((total,item)=>total+item.quantity,0)}function getCartTotalPrice(){const cart=void 0;return getCart().reduce((total,item)=>total+item.price*item.quantity,0)}function getCartTotalSavings(){const cart=void 0;return getCart().reduce((total,item)=>item.original_price&&item.original_price>item.price?total+(item.original_price-item.price)*item.quantity:total,0)}function updateCartBadge(){const cartButton=document.getElementById("index-cart-btn");if(!cartButton)return;const badgeId="cart-item-count-badge";let badge=document.getElementById(badgeId);const count=getCartItemCount();badge||(badge=document.createElement("span"),badge.id=badgeId,badge.className="cart-counter-badge",cartButton.appendChild(badge)),count>0?(badge.textContent=count,badge.style.display="flex"):badge.style.display="none"}window.addEventListener("cartUpdated",updateCartBadge),document.addEventListener("DOMContentLoaded",updateCartBadge);
+﻿/**
+ * @file pages\cardPackage\js\cardPackage.js
+ * @description Shopping Cart management module.
+ *
+ * This module provides functions to handle the shopping cart stored in LocalDBStorage.
+ * Includes operations: Add, Remove, Update Quantity, Fetch Cart, and Calculate Totals.
+ */
+/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
+ */
+
+
+/**
+ * @description Generates a unique storage key for the cart based on the logged-in user.
+ * @function getCartStorageKey
+ * @returns {string|null} - Cart key (e.g., 'cart_abcd1234') if user is logged in, otherwise `null`.
+ * @see LocalDBStorage
+ */
+function getCartStorageKey() {
+  if (window.userSession && window.userSession.user_key) {
+
+    return `cart_${window.userSession.user_key}`; // Associates cart with user_key
+  }
+  return null; // No user, no cart
+}
+
+/**
+ * @description Retrieves the current cart from LocalDBStorage.
+ * @function getCart
+ * @returns {Array<Object>} - Array of product objects in the cart, or empty array if empty or error.
+ * @throws {Error} - If there's an error parsing JSON from LocalDBStorage.
+ * @see getCartStorageKey
+ */
+function getCart() {
+  const CART_STORAGE_KEY = getCartStorageKey();
+  if (!CART_STORAGE_KEY) return [];
+
+  try {
+    const cartJson = LocalDBStorage.getItem(CART_STORAGE_KEY);
+    const cart = cartJson ? JSON.parse(cartJson) : [];
+
+    // Add default note if not present
+    return cart.map((item) => ({
+      ...item,
+      note: item.note || "",
+    }));
+  } catch (error) {
+    console.error("Error LocalDBStorage:", error);
+    return [];
+  }
+}
+
+/**
+ * @description Saves the updated cart to LocalDBStorage and dispatches a custom event (`cartUpdated`).
+ * @function saveCart
+ * @param {Array<Object>} cart - Array of product objects representing the current cart.
+ * @returns {void}
+ * @throws {Error} - If there's an error saving to LocalDBStorage.
+ * @see getCartStorageKey
+ */
+function saveCart(cart) {
+  const CART_STORAGE_KEY = getCartStorageKey();
+  if (!CART_STORAGE_KEY) return;
+
+  try {
+    LocalDBStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+    // Dispatch custom event to notify other app parts of cart update
+    window.dispatchEvent(new CustomEvent("cartUpdated"));
+  } catch (error) {
+    console.error("Error LocalDBStorage:", error);
+  }
+}
+
+/**
+ * @description Adds a product to the cart, or updates its quantity if already exists.
+ * @function addToCart
+ * @param {Object} product - Product object to add.
+ * @param {number} quantity - Quantity to add.
+ * @param {string} note - Product note (optional).
+ * @returns {boolean} - true if added successfully, false if merchant matches user.
+ * @throws {Error} - If `window.Swal.fire` or `containerGoBack` encounters an error.
+ * @see getCart
+ * @see saveCart
+ * @see containerGoBack
+ */
+function addToCart(product, quantity, note = "") {
+  // Prevent user from buying their own products
+  if (
+    window.userSession &&
+    window.userSession.user_key === product.seller_key
+  ) {
+    window.Swal.fire({
+      title: window.langu('cart_error_own_product_title'),
+      text: window.langu('cart_error_own_product_text'),
+      confirmButtonText: window.langu('alert_confirm_btn'),
+      buttonsStyling: false,
+      customClass: {
+        popup: 'swal-modern-mini-popup',
+        title: 'swal-modern-mini-title',
+        htmlContainer: 'swal-modern-mini-text',
+        confirmButton: 'swal-modern-mini-confirm'
+      }
+    });
+    containerGoBack();
+    return false;
+  }
+
+  const cart = getCart();
+  const existingProductIndex = cart.findIndex(
+    (item) => item.product_key === product.product_key
+  );
+
+  if (existingProductIndex > -1) {
+    // Product exists, update quantity
+    cart[existingProductIndex].quantity += quantity;
+    if (note) cart[existingProductIndex].note = note;
+  } else {
+    // Product does not exist, add as new item
+    const newCartItem = {
+      ...product,
+      quantity,
+      note,
+      addedDate: new Date().toISOString(), // Add added date
+    };
+    if (!newCartItem.product_key && product.product_key) {
+      newCartItem.product_key = product.product_key;
+    }
+    cart.push(newCartItem);
+  }
+
+  saveCart(cart);
+
+  window.Swal.fire({
+    title: window.langu('cart_added_success').replace('{name}', product.productName),
+    text: window.langu('cart_added_desc'),
+    confirmButtonText: window.langu('alert_confirm_btn'),
+    buttonsStyling: false,
+    customClass: {
+      popup: 'swal-modern-mini-popup',
+      title: 'swal-modern-mini-title',
+      htmlContainer: 'swal-modern-mini-text',
+      confirmButton: 'swal-modern-mini-confirm'
+    }
+  }).then((result) => {
+    if (result.isConfirmed) {
+      containerGoBack();
+    }
+  });
+  return true;
+}
+
+/**
+ * @description Removes a specific product from the cart based on its unique key.
+ * @function removeFromCart
+ * @param {string} productKey - Unique key of the product to remove.
+ * @returns {void}
+ * @see getCart
+ * @see saveCart
+ */
+function removeFromCart(productKey) {
+  let cart = getCart();
+  cart = cart.filter((item) => item.product_key !== productKey);
+  saveCart(cart);
+}
+
+/**
+ * @description Updates the quantity of a specific product in the cart.
+ * @function updateCartQuantity
+ * @param {string} productKey - Unique product key.
+ * @param {number} newQuantity - New quantity.
+ * @returns {void}
+ * @see getCart
+ * @see saveCart
+ */
+function updateCartQuantity(productKey, newQuantity) {
+  const cart = getCart();
+  const productIndex = cart.findIndex(
+    (item) => item.product_key === productKey
+  );
+
+  if (productIndex > -1) {
+    if (newQuantity > 0) {
+      cart[productIndex].quantity = newQuantity;
+    } else {
+      cart.splice(productIndex, 1);
+    }
+    saveCart(cart);
+  }
+}
+
+/**
+ * @description Updates the note of a product in the cart.
+ * @function updateCartItemNote
+ * @param {string} productKey - Unique product key.
+ * @param {string} note - New note.
+ * @returns {void}
+ * @see getCart
+ * @see saveCart
+ */
+function updateCartItemNote(productKey, note) {
+  const cart = getCart();
+  const productIndex = cart.findIndex(
+    (item) => item.product_key === productKey
+  );
+
+  if (productIndex > -1) {
+    cart[productIndex].note = note;
+    saveCart(cart);
+  }
+}
+
+/**
+ * @description Clears the entire cart.
+ * @function clearCart
+ * @returns {void}
+ * @see saveCart
+ */
+function clearCart() {
+  saveCart([]);
+}
+
+/**
+ * @description Calculates the total number of units for all items in the cart.
+ * @function getCartItemCount
+ * @returns {number} - Total unit count.
+ * @see getCart
+ */
+function getCartItemCount() {
+  const cart = getCart();
+  return cart.reduce((total, item) => total + item.quantity, 0);
+}
+
+/**
+ * @description Calculates the total price of products in the cart.
+ * @function getCartTotalPrice
+ * @returns {number} - Total price.
+ * @see getCart
+ */
+function getCartTotalPrice() {
+  const cart = getCart();
+  return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+}
+
+/**
+ * @description يحسب إجمالي التوفير من الخصومات.
+ * @function getCartTotalSavings
+ * @returns {number} - إجمالي التوفير.
+ */
+function getCartTotalSavings() {
+  const cart = getCart();
+  return cart.reduce((total, item) => {
+    if (item.original_price && item.original_price > item.price) {
+      return total + (item.original_price - item.price) * item.quantity;
+    }
+    return total;
+  }, 0);
+}
+
+
+/**
+ * @description Updates the cart item count badge in the UI.
+ * @function updateCartBadge
+ * @returns {void}
+ */
+function updateCartBadge() {
+  // Target main cart button
+  const cartButton = document.getElementById("index-cart-btn");
+  if (!cartButton) {
+    // Silently return as this is expected on standalone pages like user-dashboard
+    return;
+  }
+
+  const badgeId = 'cart-item-count-badge';
+  let badge = document.getElementById(badgeId);
+  const count = getCartItemCount();
+
+  // If badge doesn't exist, create it and append to cart button
+  if (!badge) {
+    badge = document.createElement('span');
+    badge.id = badgeId;
+    badge.className = 'cart-counter-badge'; // Apply cart-specific counter styles
+    cartButton.appendChild(badge);
+  }
+
+  // Update badge content and visibility based on count
+  if (count > 0) {
+    badge.textContent = count;
+    badge.style.display = 'flex'; // Show badge
+  } else {
+    badge.style.display = 'none'; // Hide badge if cart is empty
+  }
+}
+
+// Listen for cart update event to update badge automatically
+window.addEventListener("cartUpdated", updateCartBadge);
+
+// Update badge on page load
+document.addEventListener("DOMContentLoaded", updateCartBadge);
+// updateCartBadge();

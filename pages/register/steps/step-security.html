@@ -1,1 +1,76 @@
-<script src="/LocalDatabasesProject/local-db.js"></script><script src="/js/early-error-bootstrap.js"></script><div id="reg-step-security" class="reg-step profile-security-step" data-step-id="security"><div id="profile-security-wrapper" class="reg-optional-wrapper profile-security-exclusive" data-required-mode="never"><button id="profile-security-toggle-btn" type="button" class="reg-optional-toggle"><span id="profile-security-toggle-label-wrapper" class="toggle-label"><i id="profile-security-toggle-icon" class="fas fa-user-shield"></i> <span id="profile-security-toggle-text" data-lkey="profile_security_step_title">الأمان والحساب</span> </span><span id="profile-security-exclusive-badge" class="reg-optional-badge" data-lkey="profile_security_badge">حصري</span> <i id="profile-security-toggle-chevron" class="fas fa-chevron-down"></i></button><div id="profile-security-optional-content" class="reg-optional-content"><div id="profile-security-card-container" class="profile-security-card"><div id="profile-security-copy-block" class="profile-security-copy"><strong id="profile-password-change-header" data-lkey="profile_password_change_title">تعديل كلمة المرور</strong><p id="profile-password-change-description" data-lkey="profile_password_change_note">لأمان حسابك، سنطلب كلمة المرور الحالية في نافذة منبثقة قبل السماح بتعيين كلمة مرور جديدة.</p></div><button id="profile-change-password-btn" type="button" class="reg-action-btn profile-security-action"><i id="profile-change-password-icon" class="fas fa-key"></i> <span id="profile-change-password-label" data-lkey="profile_change_password_btn">تعديل كلمة المرور</span></button><p id="profile-password-verified-note" class="register_form-hint" hidden>تم التحقق من كلمة المرور الحالية. يمكنك الآن إدخال كلمة مرور جديدة.</p></div><input id="profile_current_password" type="hidden" name="current_password"><div id="profile_current_password-error" class="reg-feedback"></div><div id="profile-password-fields" class="profile-password-fields" hidden><div id="reg-password-group" class="reg-form-group visible no-reveal" data-field-group="password" data-state="idle"><label id="reg-password-label" class="reg-label" for="register_password"><i id="reg-password-label-icon" class="fas fa-key"></i> <span id="reg-password-label-text" data-lkey="profile_new_password_label">كلمة المرور الجديدة</span></label><div id="register_password-input-wrapper" class="reg-input-wrapper" style="position:relative"><input id="register_password" class="reg-input" type="password" name="password" required autocomplete="new-password" placeholder="أدخل كلمة المرور الجديدة" data-lkey-placeholder="profile_new_password_placeholder"> <i id="register_toggle-password-icon" class="fas fa-eye register_toggle-password" style="position:absolute;left:18px;top:50%;transform:translateY(-50%);cursor:pointer;color:var(--reg-text-muted)"></i></div><div id="register_password-error" class="reg-feedback"></div></div><div id="reg-confirm-password-group" class="reg-form-group visible no-reveal" data-field-group="confirmPassword" data-state="idle"><label id="reg-confirm-password-label" class="reg-label" for="register_confirm_password"><i id="reg-confirm-password-label-icon" class="fas fa-shield-halved"></i> <span id="reg-confirm-password-label-text" data-lkey="profile_confirm_password_label">تأكيد كلمة المرور</span></label><div id="register_confirm_password-input-wrapper" class="reg-input-wrapper" style="position:relative"><input id="register_confirm_password" class="reg-input" type="password" name="confirm_password" required autocomplete="new-password" placeholder="تأكيد كلمة المرور" data-lkey-placeholder="register_confirm_password_placeholder"> <i id="register_toggle-confirm-password-icon" class="fas fa-eye register_toggle-password" style="position:absolute;left:18px;top:50%;transform:translateY(-50%);cursor:pointer;color:var(--reg-text-muted)"></i></div><div id="register_confirm_password-error" class="reg-feedback"></div><small id="reg-confirm-password-hint" class="register_form-hint" data-lkey="register_form_hint">4 أحرف على الأقل</small></div></div><div id="profile-danger-section" class="profile-danger-box" data-mode="profile-only"><div id="profile-danger-copy-block" class="profile-danger-copy"><strong id="profile-danger-label" data-lkey="profile_danger_title">حذف الحساب</strong><p id="profile-danger-hint" data-lkey="profile_danger_desc">بمجرد حذف الحساب لا يمكن التراجع عن هذه الخطوة.</p></div><button id="profile-delete-btn" type="button" class="profile-modern-btn profile-delete-btn-small" onclick="window.profileDeleteAccount()"><i id="profile-delete-btn-icon" class="fas fa-trash-alt"></i> <span id="profile-delete-btn-label" data-lkey="profile_btn_delete">حذف الحساب</span></button></div></div></div></div>
+<script src="/LocalDatabasesProject/local-db.js"></script>
+<script src="/js/early-error-bootstrap.js"></script>
+<div id="reg-step-security" class="reg-step profile-security-step" data-step-id="security">
+    <div id="profile-security-wrapper" class="reg-optional-wrapper profile-security-exclusive" data-required-mode="never">
+        <button id="profile-security-toggle-btn" type="button" class="reg-optional-toggle">
+            <span id="profile-security-toggle-label-wrapper" class="toggle-label">
+                <i id="profile-security-toggle-icon" class="fas fa-user-shield"></i>
+                <span id="profile-security-toggle-text" data-lkey="profile_security_step_title">الأمان والحساب</span>
+            </span>
+            <span id="profile-security-exclusive-badge" class="reg-optional-badge" data-lkey="profile_security_badge">حصري</span>
+            <i id="profile-security-toggle-chevron" class="fas fa-chevron-down"></i>
+        </button>
+
+        <div id="profile-security-optional-content" class="reg-optional-content">
+            <div id="profile-security-card-container" class="profile-security-card">
+                <div id="profile-security-copy-block" class="profile-security-copy">
+                    <strong id="profile-password-change-header" data-lkey="profile_password_change_title">تعديل كلمة المرور</strong>
+                    <p id="profile-password-change-description" data-lkey="profile_password_change_note">لأمان حسابك، سنطلب كلمة المرور الحالية في نافذة منبثقة قبل السماح بتعيين كلمة مرور جديدة.</p>
+                </div>
+                <button id="profile-change-password-btn" type="button" class="reg-action-btn profile-security-action">
+                    <i id="profile-change-password-icon" class="fas fa-key"></i>
+                    <span id="profile-change-password-label" data-lkey="profile_change_password_btn">تعديل كلمة المرور</span>
+                </button>
+                <p id="profile-password-verified-note" class="register_form-hint" hidden>تم التحقق من كلمة المرور الحالية. يمكنك الآن إدخال كلمة مرور جديدة.</p>
+            </div>
+
+            <input id="profile_current_password" type="hidden" name="current_password" />
+            <div id="profile_current_password-error" class="reg-feedback"></div>
+
+            <div id="profile-password-fields" class="profile-password-fields" hidden>
+                <!-- New Password -->
+                <div id="reg-password-group" class="reg-form-group visible no-reveal" data-field-group="password" data-state="idle">
+                    <label id="reg-password-label" class="reg-label" for="register_password">
+                        <i id="reg-password-label-icon" class="fas fa-key"></i>
+                        <span id="reg-password-label-text" data-lkey="profile_new_password_label">كلمة المرور الجديدة</span>
+                    </label>
+                    <div id="register_password-input-wrapper" class="reg-input-wrapper" style="position: relative;">
+                        <input id="register_password" class="reg-input" type="password" name="password" required autocomplete="new-password"
+                            placeholder="أدخل كلمة المرور الجديدة" data-lkey-placeholder="profile_new_password_placeholder" />
+                        <i id="register_toggle-password-icon" class="fas fa-eye register_toggle-password" style="position: absolute; left: 18px; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--reg-text-muted);"></i>
+                    </div>
+                    <div id="register_password-error" class="reg-feedback"></div>
+                </div>
+
+                <!-- Confirm New Password -->
+                <div id="reg-confirm-password-group" class="reg-form-group visible no-reveal" data-field-group="confirmPassword" data-state="idle">
+                    <label id="reg-confirm-password-label" class="reg-label" for="register_confirm_password">
+                        <i id="reg-confirm-password-label-icon" class="fas fa-shield-halved"></i>
+                        <span id="reg-confirm-password-label-text" data-lkey="profile_confirm_password_label">تأكيد كلمة المرور</span>
+                    </label>
+                    <div id="register_confirm_password-input-wrapper" class="reg-input-wrapper" style="position: relative;">
+                        <input id="register_confirm_password" class="reg-input" type="password" name="confirm_password" required
+                            autocomplete="new-password" placeholder="تأكيد كلمة المرور"
+                            data-lkey-placeholder="register_confirm_password_placeholder" />
+                        <i id="register_toggle-confirm-password-icon" class="fas fa-eye register_toggle-password" style="position: absolute; left: 18px; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--reg-text-muted);"></i>
+                    </div>
+                    <div id="register_confirm_password-error" class="reg-feedback"></div>
+                    <small id="reg-confirm-password-hint" class="register_form-hint" data-lkey="register_form_hint">4 أحرف على الأقل</small>
+                </div>
+            </div>
+
+            <!-- Danger Zone (Profile Mode Only) -->
+            <div id="profile-danger-section" class="profile-danger-box" data-mode="profile-only">
+                <div id="profile-danger-copy-block" class="profile-danger-copy">
+                    <strong id="profile-danger-label" data-lkey="profile_danger_title">حذف الحساب</strong>
+                    <p id="profile-danger-hint" data-lkey="profile_danger_desc">بمجرد حذف الحساب لا يمكن التراجع عن هذه الخطوة.</p>
+                </div>
+                <button id="profile-delete-btn" type="button" class="profile-modern-btn profile-delete-btn-small" onclick="window.profileDeleteAccount()">
+                    <i id="profile-delete-btn-icon" class="fas fa-trash-alt"></i>
+                    <span id="profile-delete-btn-label" data-lkey="profile_btn_delete">حذف الحساب</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+

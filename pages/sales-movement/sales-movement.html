@@ -1,4 +1,70 @@
-<!DOCTYPE html><html id="sales-html-root" lang="ar" dir="rtl"><head id="sales-head"><script src="/LocalDatabasesProject/local-db.js"></script><script src="/js/early-error-bootstrap.js"></script><meta id="sales-meta-charset" charset="UTF-8"><meta id="sales-meta-viewport" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover,interactive-widget=resizes-content"><title id="sales-page-title">Suez Bazaar - طلبات الشراء</title><script id="sales-script-behavior" src="/js/app-behavior.js"></script><script id="sales-script-loader" src="/js/core-loader-bootstrap.js"></script><link id="sales-link-base" rel="stylesheet" href="/pages/sales-movement/sales-movement-base.css"><link id="sales-link-filters" rel="stylesheet" href="/pages/sales-movement/sales-movement-filters.css"><link id="sales-link-orders" rel="stylesheet" href="/pages/sales-movement/sales-movement-orders.css"><link id="sales-link-modal" rel="stylesheet" href="/pages/sales-movement/sales-movement-modal.css"><link id="sales-link-responsive" rel="stylesheet" href="/pages/sales-movement/sales-movement-responsive.css"><link id="sales-link-dark" rel="stylesheet" href="/pages/sales-movement/sales-movement-dark.css"><script id="sales-script-role" src="/pages/sales-movement/sales-movement-role.js" defer="defer"></script><script id="sales-script-data" src="/pages/sales-movement/sales-movement-data.js" defer="defer"></script><script id="sales-script-templates" src="/pages/sales-movement/sales-templates.js" defer="defer"></script><script id="sales-script-ui" src="/pages/sales-movement/sales-movement-ui.js" defer="defer"></script><script id="sales-script-page" src="/pages/sales-movement/sales-movement-page.js" defer="defer"></script></head><body id="sales-app-body"><div id="header-injection-point"></div><div id="salesMovement_mainContainer" class="salesMovement_container" style="background-color:var(--bg-color-light)"><div id="loader-container" class="loader"></div><div id="salesMovement_ordersContainer" class="salesMovement_ordersContainer" style="display:none"></div></div><div id="salesMovement_orderModal" class="salesMovement_modal"><div id="salesMovement_modalContent" class="salesMovement_modalContent"><button class="salesMovement_closeBtn" id="salesMovement_closeModal"><span id="salesMovement_closeIconWrapper"><i id="salesMovement_closeIcon" class="fas fa-times"></i></span><div id="salesMovement_closeText" style="font-size:12px;margin-top:-5px" data-lkey="alert_close_btn">إغلاق</div></button><div id="salesMovement_modalBody" class="salesMovement_modalBody"></div></div></div><script id="sales-page-init-script">document.addEventListener('DOMContentLoaded', async function () {
+<!DOCTYPE html>
+<html id="sales-html-root" lang="ar" dir="rtl">
+
+<head id="sales-head">
+  
+  <script src="/LocalDatabasesProject/local-db.js"></script>
+  <script src="/js/early-error-bootstrap.js"></script>
+    <meta id="sales-meta-charset" charset="UTF-8">
+    <meta id="sales-meta-viewport" name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+    <title id="sales-page-title">Suez Bazaar - طلبات الشراء</title>
+
+    <!-- Core Loader -->
+    <script id="sales-script-behavior" src="/js/app-behavior.js"></script>
+    <script id="sales-script-loader" src="/js/core-loader-bootstrap.js"></script>
+
+    <!-- Page Styles -->
+    <link id="sales-link-base" rel="stylesheet" href="/pages/sales-movement/sales-movement-base.css">
+    <link id="sales-link-filters" rel="stylesheet" href="/pages/sales-movement/sales-movement-filters.css">
+    <link id="sales-link-orders" rel="stylesheet" href="/pages/sales-movement/sales-movement-orders.css">
+    <link id="sales-link-modal" rel="stylesheet" href="/pages/sales-movement/sales-movement-modal.css">
+    <link id="sales-link-responsive" rel="stylesheet" href="/pages/sales-movement/sales-movement-responsive.css">
+    <link id="sales-link-dark" rel="stylesheet" href="/pages/sales-movement/sales-movement-dark.css">
+
+    <!-- Page Scripts -->
+    <script id="sales-script-role" src="/pages/sales-movement/sales-movement-role.js" defer></script>
+    <script id="sales-script-data" src="/pages/sales-movement/sales-movement-data.js" defer></script>
+    <script id="sales-script-templates" src="/pages/sales-movement/sales-templates.js" defer></script>
+    <script id="sales-script-ui" src="/pages/sales-movement/sales-movement-ui.js" defer></script>
+    <script id="sales-script-page" src="/pages/sales-movement/sales-movement-page.js" defer></script>
+</head>
+
+<body id="sales-app-body">
+
+
+    <!-- Header Injection Point -->
+    <div id="header-injection-point"></div>
+
+    <div id="salesMovement_mainContainer" class="salesMovement_container"
+        style="background-color: var(--bg-color-light);">
+
+        <!-- Filters removed (Moved to Settings) -->
+
+        <!-- Orders display container -->
+        <div id="loader-container" class="loader"></div>
+        <div id="salesMovement_ordersContainer" class="salesMovement_ordersContainer" style="display: none;">
+        </div>
+    </div>
+
+    <!-- Modal for displaying order details -->
+    <div id="salesMovement_orderModal" class="salesMovement_modal">
+        <div id="salesMovement_modalContent" class="salesMovement_modalContent">
+            <button class="salesMovement_closeBtn" id="salesMovement_closeModal">
+                <span id="salesMovement_closeIconWrapper"><i id="salesMovement_closeIcon"
+                        class="fas fa-times"></i></span>
+                <div id="salesMovement_closeText" style="font-size: 12px; margin-top: -5px;"
+                    data-lkey="alert_close_btn">
+                    إغلاق</div>
+            </button>
+            <div id="salesMovement_modalBody" class="salesMovement_modalBody">
+                <!-- Order details will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script id="sales-page-init-script">
+        document.addEventListener('DOMContentLoaded', async function () {
             try {
                 // 1. Theme Init
                 if (typeof initAppTheme === 'function') window.initAppTheme();
@@ -30,4 +96,9 @@
             } catch (error) {
                 console.error('[SalesMovement] Page initialization failed:', error);
             }
-        });</script></body></html>
+        });
+    </script>
+</body>
+
+</html>
+

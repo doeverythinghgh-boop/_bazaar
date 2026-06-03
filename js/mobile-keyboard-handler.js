@@ -1,1 +1,412 @@
-!function(){"use strict";if((!window.AppBehavior||!1!==window.AppBehavior.enablePWA)&&isPWAEnvironment()){var config_scrollDelay=350,config_debounceDelay=200,config_iosExtraDelay=50,config_iosRetryDelay=100,config_scrollOffset=120,config_centerOffset=.4,state={isKeyboardOpen:!1,activeElement:null,originalBodyHeight:null,fixedElements:[],debounceTimer:null,isIOS:/iPhone|iPad|iPod/i.test(navigator.userAgent),isSafari:/^((?!chrome|android).)*safari/i.test(navigator.userAgent)},debouncedFocusHandler=debounce(handleInputFocus,200);"loading"===document.readyState?document.addEventListener("DOMContentLoaded",init):init()}function isPWAEnvironment(){return window.Android&&"object"==typeof window.Android?(console.log("[KeyboardHandler] Android WebView detected. Handler disabled."),!1):window.matchMedia("(display-mode: standalone)").matches||!0===window.navigator.standalone||document.referrer.includes("android-app://")?(console.log("[KeyboardHandler] PWA environment detected. Handler enabled."),!0):(console.log("[KeyboardHandler] Not in PWA mode. Handler disabled."),!1);var isStandalone}function debounce(func,delay){return function(){var context=this,args=arguments;clearTimeout(state.debounceTimer),state.debounceTimer=setTimeout(function(){func.apply(context,args)},delay)}}function getVisibleHeight(){return window.visualViewport?window.visualViewport.height:window.innerHeight}function calculateScrollPosition(element){var rect=element.getBoundingClientRect(),visibleHeight=getVisibleHeight(),elementTop,targetPosition=rect.top+window.pageYOffset-visibleHeight*config_centerOffset;return Math.max(0,targetPosition)}function identifyFixedElements(){var markedElements=document.querySelectorAll("[data-keyboard-fixed]"),commonSelectors=["header","footer",".header",".footer",'[class*="nav"]','[class*="bottom"]'],allElements=Array.from(markedElements);commonSelectors.forEach(function(selector){try{var elements;document.querySelectorAll(selector).forEach(function(el){var style;"fixed"===window.getComputedStyle(el).position&&allElements.push(el)})}catch(e){}}),state.fixedElements=allElements,console.log("[KeyboardHandler] Found "+state.fixedElements.length+" fixed elements")}function disableFixedElements(){state.fixedElements.forEach(function(el){el.setAttribute("data-original-position",el.style.position||""),el.style.position="absolute",el.classList.add("keyboard-active")})}function restoreFixedElements(){state.fixedElements.forEach(function(el){var originalPosition=el.getAttribute("data-original-position");el.style.position=originalPosition||"",el.classList.remove("keyboard-active"),el.removeAttribute("data-original-position")})}function handleIOSKeyboard(element){state.originalBodyHeight||(state.originalBodyHeight=document.body.style.height);var currentHeight=document.documentElement.scrollHeight;document.body.style.height=currentHeight+"px",setTimeout(function(){performScroll(element),setTimeout(function(){var rect=element.getBoundingClientRect(),visibleHeight=getVisibleHeight();(rect.bottom>visibleHeight||rect.top<0)&&(console.log("[KeyboardHandler] iOS retry scroll"),performScroll(element))},config_iosRetryDelay)},config_iosExtraDelay)}function restoreIOSSettings(){null!==state.originalBodyHeight&&(document.body.style.height=state.originalBodyHeight,state.originalBodyHeight=null)}function performScroll(element){try{element.scrollIntoView&&element.scrollIntoView({behavior:"smooth",block:"center",inline:"nearest"}),setTimeout(function(){var targetPosition=calculateScrollPosition(element);window.scrollTo({top:targetPosition,behavior:"smooth"})},50)}catch(error){console.warn("[KeyboardHandler] Scroll error:",error);try{element.scrollIntoView(!0)}catch(e){console.error("[KeyboardHandler] All scroll strategies failed")}}}function handleInputFocus(event){var element=event.target,tagName=element.tagName.toLowerCase();if("input"===tagName||"textarea"===tagName||"select"===tagName){console.log("[KeyboardHandler] Input focused:",tagName),state.activeElement=element,state.isKeyboardOpen=!0,disableFixedElements();var scrollDelay=config_scrollDelay;state.isIOS&&state.isSafari?handleIOSKeyboard(element):setTimeout(function(){performScroll(element)},scrollDelay)}}function handleInputBlur(){console.log("[KeyboardHandler] Input blurred"),state.isKeyboardOpen=!1,state.activeElement=null,restoreFixedElements(),state.isIOS&&restoreIOSSettings()}function handleViewportResize(){var currentHeight,windowHeight;window.visualViewport&&(window.visualViewport.height<.75*window.innerHeight?!state.isKeyboardOpen&&state.activeElement&&(console.log("[KeyboardHandler] Viewport resize detected - keyboard opened"),state.isKeyboardOpen=!0):state.isKeyboardOpen&&(console.log("[KeyboardHandler] Viewport resize detected - keyboard closed"),handleInputBlur()))}function init(){console.log("[KeyboardHandler] Initializing..."),identifyFixedElements(),document.addEventListener("focusin",function(e){var tagName=e.target.tagName.toLowerCase();"input"!==tagName&&"textarea"!==tagName&&"select"!==tagName||debouncedFocusHandler(e)},!0),document.addEventListener("focusout",function(e){var tagName=e.target.tagName.toLowerCase();"input"!==tagName&&"textarea"!==tagName&&"select"!==tagName||handleInputBlur()},!0),window.visualViewport?(window.visualViewport.addEventListener("resize",debounce(handleViewportResize,100)),console.log("[KeyboardHandler] Visual Viewport API enabled")):(window.addEventListener("resize",debounce(handleViewportResize,100)),console.log("[KeyboardHandler] Using window resize fallback")),console.log("[KeyboardHandler] Initialization complete")}}();
+﻿/**
+ * @file js/mobile-keyboard-handler.js
+ * @description Advanced keyboard scrolling handler for PWA environments.
+ * Automatically scrolls input fields into view when the virtual keyboard appears.
+ *
+ * IMPORTANT: This script ONLY runs in PWA mode (Standalone/Fullscreen).
+ * It will NOT execute in Android WebView environment to avoid conflicts.
+ */
+/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
+ */
+
+
+(function() {
+  'use strict';
+
+  if (window.AppBehavior && window.AppBehavior.enablePWA === false) {
+    return;
+  }
+
+  // ============================================
+  // 1. PWA Environment Detection
+  // ============================================
+
+  /**
+   * @description Checks if the app is running in PWA mode (not Android WebView).
+   * @returns {boolean} True if PWA, false if Android WebView or regular browser.
+   */
+  function isPWAEnvironment() {
+    // Check for Android WebView interface
+    if (window.Android && typeof window.Android === 'object') {
+      console.log('[KeyboardHandler] Android WebView detected. Handler disabled.');
+      return false;
+    }
+
+    // Check if running in standalone mode (PWA)
+    var isStandalone = window.matchMedia('(display-mode: standalone)').matches ||
+                       window.navigator.standalone === true ||
+                       document.referrer.includes('android-app://');
+
+    if (!isStandalone) {
+      console.log('[KeyboardHandler] Not in PWA mode. Handler disabled.');
+      return false;
+    }
+
+    console.log('[KeyboardHandler] PWA environment detected. Handler enabled.');
+    return true;
+  }
+
+  // Exit immediately if not in PWA environment
+  if (!isPWAEnvironment()) {
+    return;
+  }
+
+  // ============================================
+  // 2. Configuration & State
+  // ============================================
+
+  var config = {
+    scrollDelay: 350,           // Delay to allow keyboard to appear
+    debounceDelay: 200,         // Debounce delay for repeated events
+    iosExtraDelay: 50,          // Extra delay for iOS Safari
+    iosRetryDelay: 100,         // Retry delay for iOS if first scroll fails
+    scrollOffset: 120,          // Extra space below focused element
+    centerOffset: 0.4           // Position element at 40% from top
+  };
+
+  var state = {
+    isKeyboardOpen: false,
+    activeElement: null,
+    originalBodyHeight: null,
+    fixedElements: [],
+    debounceTimer: null,
+    isIOS: /iPhone|iPad|iPod/i.test(navigator.userAgent),
+    isSafari: /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+  };
+
+  // ============================================
+  // 3. Utility Functions
+  // ============================================
+
+  /**
+   * @description Debounce function to prevent excessive calls.
+   */
+  function debounce(func, delay) {
+    return function() {
+      var context = this;
+      var args = arguments;
+      clearTimeout(state.debounceTimer);
+      state.debounceTimer = setTimeout(function() {
+        func.apply(context, args);
+      }, delay);
+    };
+  }
+
+  /**
+   * @description Gets the actual visible viewport height.
+   */
+  function getVisibleHeight() {
+    if (window.visualViewport) {
+      return window.visualViewport.height;
+    }
+    return window.innerHeight;
+  }
+
+  /**
+   * @description Calculates the optimal scroll position for an element.
+   */
+  function calculateScrollPosition(element) {
+    var rect = element.getBoundingClientRect();
+    var visibleHeight = getVisibleHeight();
+    var elementTop = rect.top + window.pageYOffset;
+    var targetPosition = elementTop - (visibleHeight * config.centerOffset);
+
+    return Math.max(0, targetPosition);
+  }
+
+  // ============================================
+  // 4. Fixed Elements Management
+  // ============================================
+
+  /**
+   * @description Identifies and stores fixed position elements.
+   */
+  function identifyFixedElements() {
+    // Elements with data attribute
+    var markedElements = document.querySelectorAll('[data-keyboard-fixed]');
+
+    // Common fixed elements
+    var commonSelectors = [
+      'header',
+      'footer',
+      '.header',
+      '.footer',
+      '[class*="nav"]',
+      '[class*="bottom"]'
+    ];
+
+    var allElements = Array.from(markedElements);
+
+    commonSelectors.forEach(function(selector) {
+      try {
+        var elements = document.querySelectorAll(selector);
+        elements.forEach(function(el) {
+          var style = window.getComputedStyle(el);
+          if (style.position === 'fixed') {
+            allElements.push(el);
+          }
+        });
+      } catch (e) {
+        // Ignore invalid selectors
+      }
+    });
+
+    state.fixedElements = allElements;
+    console.log('[KeyboardHandler] Found ' + state.fixedElements.length + ' fixed elements');
+  }
+
+  /**
+   * @description Temporarily disables fixed positioning.
+   */
+  function disableFixedElements() {
+    state.fixedElements.forEach(function(el) {
+      el.setAttribute('data-original-position', el.style.position || '');
+      el.style.position = 'absolute';
+      el.classList.add('keyboard-active');
+    });
+  }
+
+  /**
+   * @description Restores original fixed positioning.
+   */
+  function restoreFixedElements() {
+    state.fixedElements.forEach(function(el) {
+      var originalPosition = el.getAttribute('data-original-position');
+      if (originalPosition) {
+        el.style.position = originalPosition;
+      } else {
+        el.style.position = '';
+      }
+      el.classList.remove('keyboard-active');
+      el.removeAttribute('data-original-position');
+    });
+  }
+
+  // ============================================
+  // 5. iOS-Specific Handling
+  // ============================================
+
+  /**
+   * @description Handles iOS-specific keyboard behavior.
+   */
+  function handleIOSKeyboard(element) {
+    // Save original body height
+    if (!state.originalBodyHeight) {
+      state.originalBodyHeight = document.body.style.height;
+    }
+
+    // Lock body height to prevent jumping
+    var currentHeight = document.documentElement.scrollHeight;
+    document.body.style.height = currentHeight + 'px';
+
+    // Perform scroll with iOS-specific timing
+    setTimeout(function() {
+      performScroll(element);
+
+      // Retry if needed (iOS sometimes ignores first scroll)
+      setTimeout(function() {
+        var rect = element.getBoundingClientRect();
+        var visibleHeight = getVisibleHeight();
+
+        // Check if element is still not visible
+        if (rect.bottom > visibleHeight || rect.top < 0) {
+          console.log('[KeyboardHandler] iOS retry scroll');
+          performScroll(element);
+        }
+      }, config.iosRetryDelay);
+    }, config.iosExtraDelay);
+  }
+
+  /**
+   * @description Restores iOS-specific settings.
+   */
+  function restoreIOSSettings() {
+    if (state.originalBodyHeight !== null) {
+      document.body.style.height = state.originalBodyHeight;
+      state.originalBodyHeight = null;
+    }
+  }
+
+  // ============================================
+  // 6. Core Scrolling Logic
+  // ============================================
+
+  /**
+   * @description Performs the actual scroll operation with multiple strategies.
+   */
+  function performScroll(element) {
+    try {
+      // Strategy 1: scrollIntoView with smooth behavior
+      if (element.scrollIntoView) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'nearest'
+        });
+      }
+
+      // Strategy 2: Manual scroll calculation (fallback)
+      setTimeout(function() {
+        var targetPosition = calculateScrollPosition(element);
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }, 50);
+
+    } catch (error) {
+      console.warn('[KeyboardHandler] Scroll error:', error);
+
+      // Strategy 3: Simple scrollIntoView (last resort)
+      try {
+        element.scrollIntoView(true);
+      } catch (e) {
+        console.error('[KeyboardHandler] All scroll strategies failed');
+      }
+    }
+  }
+
+  /**
+   * @description Main handler for input focus events.
+   */
+  function handleInputFocus(event) {
+    var element = event.target;
+
+    // Verify it's an input element
+    var tagName = element.tagName.toLowerCase();
+    if (tagName !== 'input' && tagName !== 'textarea' && tagName !== 'select') {
+      return;
+    }
+
+    console.log('[KeyboardHandler] Input focused:', tagName);
+
+    state.activeElement = element;
+    state.isKeyboardOpen = true;
+
+    // Disable fixed elements
+    disableFixedElements();
+
+    // Apply platform-specific handling
+    var scrollDelay = config.scrollDelay;
+
+    if (state.isIOS && state.isSafari) {
+      handleIOSKeyboard(element);
+    } else {
+      setTimeout(function() {
+        performScroll(element);
+      }, scrollDelay);
+    }
+  }
+
+  /**
+   * @description Debounced version of focus handler.
+   */
+  var debouncedFocusHandler = debounce(handleInputFocus, config.debounceDelay);
+
+  /**
+   * @description Handler for input blur events.
+   */
+  function handleInputBlur() {
+    console.log('[KeyboardHandler] Input blurred');
+
+    state.isKeyboardOpen = false;
+    state.activeElement = null;
+
+    // Restore fixed elements
+    restoreFixedElements();
+
+    // Restore iOS settings
+    if (state.isIOS) {
+      restoreIOSSettings();
+    }
+  }
+
+  // ============================================
+  // 7. Visual Viewport API Integration
+  // ============================================
+
+  /**
+   * @description Monitors viewport changes (keyboard open/close).
+   */
+  function handleViewportResize() {
+    if (!window.visualViewport) {
+      return;
+    }
+
+    var currentHeight = window.visualViewport.height;
+    var windowHeight = window.innerHeight;
+
+    // Keyboard likely opened
+    if (currentHeight < windowHeight * 0.75) {
+      if (!state.isKeyboardOpen && state.activeElement) {
+        console.log('[KeyboardHandler] Viewport resize detected - keyboard opened');
+        state.isKeyboardOpen = true;
+      }
+    }
+    // Keyboard likely closed
+    else {
+      if (state.isKeyboardOpen) {
+        console.log('[KeyboardHandler] Viewport resize detected - keyboard closed');
+        handleInputBlur();
+      }
+    }
+  }
+
+  // ============================================
+  // 8. Initialization
+  // ============================================
+
+  /**
+   * @description Initializes the keyboard handler.
+   */
+  function init() {
+    console.log('[KeyboardHandler] Initializing...');
+
+    // Identify fixed elements
+    identifyFixedElements();
+
+    // Add event listeners using delegation
+    document.addEventListener('focusin', function(e) {
+      var tagName = e.target.tagName.toLowerCase();
+      if (tagName === 'input' || tagName === 'textarea' || tagName === 'select') {
+        debouncedFocusHandler(e);
+      }
+    }, true);
+
+    document.addEventListener('focusout', function(e) {
+      var tagName = e.target.tagName.toLowerCase();
+      if (tagName === 'input' || tagName === 'textarea' || tagName === 'select') {
+        handleInputBlur();
+      }
+    }, true);
+
+    // Visual Viewport API support
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', debounce(handleViewportResize, 100));
+      console.log('[KeyboardHandler] Visual Viewport API enabled');
+    } else {
+      // Fallback: monitor window resize
+      window.addEventListener('resize', debounce(handleViewportResize, 100));
+      console.log('[KeyboardHandler] Using window resize fallback');
+    }
+
+    console.log('[KeyboardHandler] Initialization complete');
+  }
+
+  // ============================================
+  // 9. Auto-Start
+  // ============================================
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();
