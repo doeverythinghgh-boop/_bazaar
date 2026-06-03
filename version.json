@@ -1,7 +1,7 @@
 {
-  "version": "1.30.41",
+  "version": "1.30.42",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-03T21:27:28.224Z",
+  "lastUpdated": "2026-06-03T21:51:22.616Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -102,6 +102,16 @@
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/assets/libs/sweetalert2/sweetalert2.all.min.js",
       "hash": "70c95a5405c156fbe08a85c816932866964f5d749182105f3d7c8b982d09e1aa",
       "size": 79216
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/favicon.ico",
+      "hash": "7aed3d0e23d2d596e782e337a77d818ea21bb33bb8873dd400a0472a9b4cbf9a",
+      "size": 4935
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/favicon.png",
+      "hash": "7aed3d0e23d2d596e782e337a77d818ea21bb33bb8873dd400a0472a9b4cbf9a",
+      "size": 4935
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/images/icons/icon-192x192.png",
@@ -8365,7 +8375,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "da3168b8b5ecd6de3e020071c99a85212cca63c0295b5ef645384dad784d692f",
+      "hash": "56e2c834b3b2e694e355420da3256cad5ec2d1148fcbe661177a77b291ca3e1f",
       "size": 21
     }
   ]
