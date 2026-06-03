@@ -1,7 +1,7 @@
 {
-  "version": "1.30.39",
+  "version": "1.30.40",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-03T20:45:19.766Z",
+  "lastUpdated": "2026-06-03T21:01:33.841Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -3765,8 +3765,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/auth/session-manager-main.js",
-      "hash": "677e5b3a1f138ba16e50032fd7dc771dc17c1b29dd64a9f987196f8a40046368",
-      "size": 9690
+      "hash": "4fca03f780994cdd38a778dc468cd55b5286fda6a47ebf1bf2ab975fab782d28",
+      "size": 9724
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/auth/uiHelpers.js",
@@ -4400,8 +4400,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-android-setup.js",
-      "hash": "e84181b561aa154e6a680597d4e36077007d2f5351ef9aca91ca3afc92c4df31",
-      "size": 2399
+      "hash": "1c17b53ae2b2791d14e4a36e96661442299a35225f7061aea78efe6d085809dc",
+      "size": 2434
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-api.js",
@@ -8365,7 +8365,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "ff0073fdc2c653cfabb01081e20f118d6bebe9b589b0b11f241a5c7688b2db79",
+      "hash": "c7761c1bbbf3edc5b1aa3bd603b63eec8107db34652ee4b9fa0eecd5f73c83fe",
       "size": 21
     }
   ]
