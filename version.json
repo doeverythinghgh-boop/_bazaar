@@ -1,7 +1,7 @@
 {
-  "version": "1.31.9",
+  "version": "1.31.10",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-04T21:23:36.814Z",
+  "lastUpdated": "2026-06-04T21:39:53.669Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -4405,8 +4405,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-android-bridge.js",
-      "hash": "37d1994f4714810079488ed3dec58753f0cb21f0521449611d562b814dcbefc4",
-      "size": 7051
+      "hash": "951d5b73a2d9a06fcc26fad3b53b526ba1c89e8e000c3e18ec9edf6ccea2cdd1",
+      "size": 8143
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-android-runtime.js",
@@ -8380,8 +8380,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "7efaa6b344f5a29118a6cc069fe163216d19825464f0d8a78b6b06a17a91fa5d",
-      "size": 20
+      "hash": "05058ed949df681a5e3dc6e293f1a7b9cd9274842a12f98d26e50dc9ac315135",
+      "size": 21
     }
   ]
 }
