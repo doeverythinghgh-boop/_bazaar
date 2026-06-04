@@ -9,6 +9,14 @@
                 SessionManager.init();
             }
 
+            if (window.BridgeManager && typeof window.BridgeManager.signalReady === 'function') {
+                window.BridgeManager.signalReady('notifications_page_boot');
+            }
+
+            if (typeof setupFCM === 'function') {
+                await setupFCM();
+            }
+
             if (typeof AppHeader !== 'undefined') {
                 await AppHeader.init('header-injection-point', 'index-notifications-btn');
             }

@@ -137,6 +137,10 @@
         SessionManager.init();
       }
 
+      if (window.BridgeManager && typeof window.BridgeManager.signalReady === 'function') {
+        window.BridgeManager.signalReady('home_boot_complete');
+      }
+
       if (typeof fetchAppCategories === 'function') await fetchAppCategories();
 
       if (typeof AppHeader !== 'undefined' && AppHeader.init) {
@@ -146,12 +150,8 @@
       if (typeof applyAppTranslations === 'function') applyAppTranslations();
 
       if (typeof setupFCM === 'function') {
-        setupFCM();
+        await setupFCM();
       }
 
       await home_initContent();
-
-      if (window.BridgeManager && typeof window.BridgeManager.signalReady === 'function') {
-        window.BridgeManager.signalReady('home_boot_complete');
-      }
     });</script></body></html>
