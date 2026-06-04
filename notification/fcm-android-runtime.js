@@ -1,1 +1,218 @@
-let androidNotificationWatchdogStarted=!1,androidNotificationWatchdogTimer=null;export function isAndroidRuntime(){return!!window.Android||window.BridgeManager&&"function"==typeof window.BridgeManager.isAndroid&&window.BridgeManager.isAndroid()||"appassets.androidplatform.net"===window.location?.hostname}export function isIndexRoute(){const path=window.location.pathname||"";return"/"===path||/(^|\/)index\.html$/.test(path)}export function getNativeNotificationReadinessReport(){if(!isAndroidRuntime())return null;try{if(window.BridgeManager&&"function"==typeof window.BridgeManager.invokeForResult){const raw=window.BridgeManager.invokeForResult("getNotificationReadinessReport");return raw?JSON.parse(raw):null}}catch(error){console.error("[FCM Android Runtime] Failed to read native readiness report:",error)}return null}export function logNativeNotificationRootCause(stage,report){if(!isAndroidRuntime()||!report)return;const issues=Array.isArray(report.issues)?report.issues.join(","):"",alertIssues=Array.isArray(report.alertIssues)?report.alertIssues.join(","):"";console.log(`[NOTIFICATION_ROOT_CAUSE][AndroidRuntime:${stage}] ok=${!0===report.ok} receiveReady=${!0===report.receiveReady} alertReady=${!1!==report.alertReady} notificationsEnabled=${!0===report.notificationsEnabled} postNotificationsGranted=${!0===report.postNotificationsGranted} channelId=${report.channelId||""} channelReady=${!0===report.channelReady} channelImportance=${report.channelImportance??"n/a"} channelSound=${report.channelSound||"null"} channelShouldVibrate=${!0===report.channelShouldVibrate} issues=${issues||"none"} alertIssues=${alertIssues||"none"} reason=${report.diagnosticReason||"No native diagnostic reason."}`)}export function isNativeNotificationReceiveReady(){if(!isAndroidRuntime())return!0;const report=getNativeNotificationReadinessReport();return logNativeNotificationRootCause("receive-check",report),!!report&&(!0===report.receiveReady||!0===report.ok)}export async function ensureAndroidBridgeReady(reason="fcm_android_setup"){if(isAndroidRuntime()&&window.BridgeManager&&"function"==typeof window.BridgeManager.signalReady){if(isIndexRoute())return console.log("[FCM Android Runtime] Bridge ready signal deferred on index route."),void 0;window.BridgeManager.signalReady(reason),await new Promise(resolve=>setTimeout(resolve,200))}}export async function waitForNativeNotificationReady(timeoutMs=15e3,intervalMs=400){const startedAt=Date.now();let lastReport=null;for(;Date.now()-startedAt<timeoutMs;){if(lastReport=getNativeNotificationReadinessReport(),!0===lastReport?.ok||!0===lastReport?.receiveReady)return lastReport;await new Promise(resolve=>setTimeout(resolve,intervalMs))}return logNativeNotificationRootCause("wait-timeout",lastReport),lastReport}export async function requestNativeNotificationSetup(userKey){if(!isAndroidRuntime()||!window.BridgeManager||"function"!=typeof window.BridgeManager.invoke)return null;if("true"===LocalDBStorage.getItem("notifications_user_disabled"))return console.log("[FCM Android Runtime] Native notification setup skipped because user explicitly disabled notifications."),null;await ensureAndroidBridgeReady("native_notification_setup"),userKey&&"guest_user"!==userKey&&window.BridgeManager.invoke("onUserLoggedIn",userKey);const report=getNativeNotificationReadinessReport();return report&&!0===report.ok?report:(console.log("[FCM Android Runtime] Requesting native permission and channel setup..."),window.BridgeManager.invoke("onNotificationsEnabled"),waitForNativeNotificationReady())}export async function repairAndroidNotificationState(userKeyOverride){if(!isAndroidRuntime())return!1;const userKey=userKeyOverride||window.userSession?.user_key;if(!userKey||"guest_user"===userKey)return!1;if("true"===LocalDBStorage.getItem("notifications_user_disabled"))return!1;if(console.log("[FCM Android Runtime] Starting Android notification repair cycle..."),await requestNativeNotificationSetup(userKey),"function"==typeof window.flushPendingAndroidFcmTokenToServer){const flushed=void 0;if(await window.flushPendingAndroidFcmTokenToServer(userKey))return console.log("[FCM Android Runtime] Android token repair completed successfully."),window.refreshSettingsNotificationState?.(),!0}if("function"==typeof window.setupFCM){const setupOk=void 0;if(await window.setupFCM())return console.log("[FCM Android Runtime] Android notification repair completed via setupFCM."),window.refreshSettingsNotificationState?.(),!0}return console.warn("[FCM Android Runtime] Android notification repair did not complete successfully."),!1}async function runAndroidNotificationWatchdogTick(){if(!isAndroidRuntime())return;if("hidden"===document.visibilityState)return;const userKey=window.userSession?.user_key;if(!userKey||"guest_user"===userKey)return;if("true"===LocalDBStorage.getItem("notifications_user_disabled"))return;const localToken=void 0;if(!LocalDBStorage.getItem("android_fcm_key"))return console.log("[FCM Android Runtime] Watchdog: missing local Android token. Running repair..."),await repairAndroidNotificationState(userKey),void 0;if("function"==typeof window.getCurrentUserNotificationState){const state=await window.getCurrentUserNotificationState();state.matchedServerToken&&state.hasServerToken||(console.log("[FCM Android Runtime] Watchdog: token mismatch detected. Re-syncing to Firestore..."),await(window.flushPendingAndroidFcmTokenToServer?.(userKey))),state.isAndroid&&state.nativeReport&&!1===state.nativeReport.receiveReady&&(console.log("[FCM Android Runtime] Watchdog: native receive path not ready. Requesting setup..."),await requestNativeNotificationSetup(userKey))}}export function startAndroidNotificationWatchdog(){isAndroidRuntime()&&!androidNotificationWatchdogStarted&&(androidNotificationWatchdogStarted=!0,console.log("[FCM Android Runtime] Android notification watchdog started."),document.addEventListener("visibilitychange",()=>{"visible"===document.visibilityState&&runAndroidNotificationWatchdogTick().catch(error=>{console.error("[FCM Android Runtime] Watchdog visibility tick failed:",error)})}),androidNotificationWatchdogTimer=window.setInterval(()=>{runAndroidNotificationWatchdogTick().catch(error=>{console.error("[FCM Android Runtime] Watchdog interval tick failed:",error)})},18e4),window.setTimeout(()=>{runAndroidNotificationWatchdogTick().catch(error=>{console.error("[FCM Android Runtime] Watchdog initial tick failed:",error)})},5e3))}export async function ensureBridgeReadyForP2PSend(){return!isAndroidRuntime()||(await ensureAndroidBridgeReady("p2p_send"),!0)}window.isAndroidRuntime=isAndroidRuntime,window.ensureAndroidBridgeReady=ensureAndroidBridgeReady,window.getNativeNotificationReadinessReport=getNativeNotificationReadinessReport,window.waitForNativeNotificationReady=waitForNativeNotificationReady,window.requestNativeNotificationSetup=requestNativeNotificationSetup,window.repairAndroidNotificationState=repairAndroidNotificationState,window.startAndroidNotificationWatchdog=startAndroidNotificationWatchdog,window.ensureBridgeReadyForP2PSend=ensureBridgeReadyForP2PSend,console.log("[ESM Load] fcm-android-runtime.js: Hybrid bridge established.");
+/**
+ * @file notification/fcm-android-runtime.js
+ * @description Android-only FCM helpers: bridge readiness, native permission repair, token flush, watchdog.
+ */
+
+let androidNotificationWatchdogStarted = false;
+let androidNotificationWatchdogTimer = null;
+
+export function isAndroidRuntime() {
+    return !!window.Android ||
+        (window.BridgeManager && typeof window.BridgeManager.isAndroid === 'function' && window.BridgeManager.isAndroid()) ||
+        window.location?.hostname === 'appassets.androidplatform.net';
+}
+
+export function isIndexRoute() {
+    const path = window.location.pathname || '';
+    return path === '/' || /(^|\/)index\.html$/.test(path);
+}
+
+export function getNativeNotificationReadinessReport() {
+    if (!isAndroidRuntime()) return null;
+    try {
+        if (window.BridgeManager && typeof window.BridgeManager.invokeForResult === 'function') {
+            const raw = window.BridgeManager.invokeForResult('getNotificationReadinessReport');
+            return raw ? JSON.parse(raw) : null;
+        }
+    } catch (error) {
+        console.error('[FCM Android Runtime] Failed to read native readiness report:', error);
+    }
+    return null;
+}
+
+export function logNativeNotificationRootCause(stage, report) {
+    if (!isAndroidRuntime() || !report) return;
+    const issues = Array.isArray(report.issues) ? report.issues.join(',') : '';
+    const alertIssues = Array.isArray(report.alertIssues) ? report.alertIssues.join(',') : '';
+    console.log(
+        `[NOTIFICATION_ROOT_CAUSE][AndroidRuntime:${stage}] ok=${report.ok === true} receiveReady=${report.receiveReady === true} alertReady=${report.alertReady !== false} notificationsEnabled=${report.notificationsEnabled === true} postNotificationsGranted=${report.postNotificationsGranted === true} channelId=${report.channelId || ''} channelReady=${report.channelReady === true} channelImportance=${report.channelImportance ?? 'n/a'} channelSound=${report.channelSound || 'null'} channelShouldVibrate=${report.channelShouldVibrate === true} issues=${issues || 'none'} alertIssues=${alertIssues || 'none'} reason=${report.diagnosticReason || 'No native diagnostic reason.'}`
+    );
+}
+
+export function isNativeNotificationReceiveReady() {
+    if (!isAndroidRuntime()) return true;
+    const report = getNativeNotificationReadinessReport();
+    logNativeNotificationRootCause('receive-check', report);
+    return report ? (report.receiveReady === true || report.ok === true) : false;
+}
+
+export async function ensureAndroidBridgeReady(reason = 'fcm_android_setup') {
+    if (!isAndroidRuntime() || !window.BridgeManager || typeof window.BridgeManager.signalReady !== 'function') {
+        return;
+    }
+    if (isIndexRoute()) {
+        console.log('[FCM Android Runtime] Bridge ready signal deferred on index route.');
+        return;
+    }
+    window.BridgeManager.signalReady(reason);
+    await new Promise((resolve) => setTimeout(resolve, 200));
+}
+
+export async function waitForNativeNotificationReady(timeoutMs = 15000, intervalMs = 400) {
+    const startedAt = Date.now();
+    let lastReport = null;
+    while (Date.now() - startedAt < timeoutMs) {
+        lastReport = getNativeNotificationReadinessReport();
+        if (lastReport?.ok === true || lastReport?.receiveReady === true) {
+            return lastReport;
+        }
+        await new Promise((resolve) => setTimeout(resolve, intervalMs));
+    }
+    logNativeNotificationRootCause('wait-timeout', lastReport);
+    return lastReport;
+}
+
+export async function flushPendingAndroidFcmTokenToServer(userKey) {
+    if (!userKey || userKey === 'guest_user') return false;
+    if (LocalDBStorage.getItem('notifications_user_disabled') === 'true') return false;
+
+    const token = LocalDBStorage.getItem('android_fcm_key');
+    if (!token || typeof window.sendTokenToServer !== 'function') {
+        return false;
+    }
+
+    const saved = await window.sendTokenToServer(userKey, token, 'android');
+    if (saved && isNativeNotificationReceiveReady()) {
+        LocalDBStorage.removeItem('notifications_user_disabled');
+        LocalDBStorage.setItem('notifications_enabled', 'true');
+        return true;
+    }
+    if (saved) {
+        console.warn('[FCM Android Runtime] Token saved but native receive path is not ready.');
+        LocalDBStorage.setItem('notifications_enabled', 'false');
+    }
+    return !!saved;
+}
+
+export async function requestNativeNotificationSetup(userKey) {
+    if (!isAndroidRuntime() || !window.BridgeManager || typeof window.BridgeManager.invoke !== 'function') {
+        return null;
+    }
+    if (LocalDBStorage.getItem('notifications_user_disabled') === 'true') {
+        console.log('[FCM Android Runtime] Native notification setup skipped because user disabled notifications.');
+        return null;
+    }
+
+    await ensureAndroidBridgeReady('native_notification_setup');
+
+    if (userKey && userKey !== 'guest_user') {
+        window.BridgeManager.invoke('onUserLoggedIn', userKey);
+    }
+
+    let report = getNativeNotificationReadinessReport();
+    if (report?.ok === true) {
+        return report;
+    }
+
+    console.log('[FCM Android Runtime] Requesting native permission and channel setup...');
+    window.BridgeManager.invoke('onNotificationsEnabled');
+    return waitForNativeNotificationReady();
+}
+
+export async function repairAndroidNotificationState(userKeyOverride) {
+    if (!isAndroidRuntime()) return false;
+
+    const userKey = userKeyOverride || window.userSession?.user_key;
+    if (!userKey || userKey === 'guest_user') return false;
+    if (LocalDBStorage.getItem('notifications_user_disabled') === 'true') return false;
+
+    console.log('[FCM Android Runtime] Starting Android notification repair cycle...');
+    await requestNativeNotificationSetup(userKey);
+
+    if (await flushPendingAndroidFcmTokenToServer(userKey)) {
+        console.log('[FCM Android Runtime] Android token repair completed successfully.');
+        window.refreshSettingsNotificationState?.();
+        return true;
+    }
+
+    if (typeof window.setupFCM === 'function' && await window.setupFCM()) {
+        console.log('[FCM Android Runtime] Android notification repair completed via setupFCM.');
+        window.refreshSettingsNotificationState?.();
+        return true;
+    }
+
+    console.warn('[FCM Android Runtime] Android notification repair did not complete successfully.');
+    return false;
+}
+
+async function runAndroidNotificationWatchdogTick() {
+    if (!isAndroidRuntime() || document.visibilityState === 'hidden') return;
+
+    const userKey = window.userSession?.user_key;
+    if (!userKey || userKey === 'guest_user') return;
+    if (LocalDBStorage.getItem('notifications_user_disabled') === 'true') return;
+
+    if (!LocalDBStorage.getItem('android_fcm_key')) {
+        console.log('[FCM Android Runtime] Watchdog: missing local Android token. Running repair...');
+        await repairAndroidNotificationState(userKey);
+        return;
+    }
+
+    if (typeof window.getCurrentUserNotificationState !== 'function') return;
+
+    const state = await window.getCurrentUserNotificationState();
+    if (!state.matchedServerToken || !state.hasServerToken) {
+        console.log('[FCM Android Runtime] Watchdog: token mismatch detected. Re-syncing to server...');
+        await flushPendingAndroidFcmTokenToServer(userKey);
+    }
+
+    if (state.isAndroid && state.nativeReport && state.nativeReport.receiveReady === false) {
+        console.log('[FCM Android Runtime] Watchdog: native receive path not ready. Requesting setup...');
+        await requestNativeNotificationSetup(userKey);
+    }
+}
+
+export function startAndroidNotificationWatchdog() {
+    if (!isAndroidRuntime() || androidNotificationWatchdogStarted) return;
+
+    androidNotificationWatchdogStarted = true;
+    console.log('[FCM Android Runtime] Android notification watchdog started.');
+
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+            runAndroidNotificationWatchdogTick().catch((error) => {
+                console.error('[FCM Android Runtime] Watchdog visibility tick failed:', error);
+            });
+        }
+    });
+
+    androidNotificationWatchdogTimer = window.setInterval(() => {
+        runAndroidNotificationWatchdogTick().catch((error) => {
+            console.error('[FCM Android Runtime] Watchdog interval tick failed:', error);
+        });
+    }, 180000);
+
+    window.setTimeout(() => {
+        runAndroidNotificationWatchdogTick().catch((error) => {
+            console.error('[FCM Android Runtime] Watchdog initial tick failed:', error);
+        });
+    }, 5000);
+}
+
+export async function ensureBridgeReadyForP2PSend() {
+    if (!isAndroidRuntime()) return true;
+    await ensureAndroidBridgeReady('p2p_send');
+    return true;
+}
+
+window.isAndroidRuntime = isAndroidRuntime;
+window.ensureAndroidBridgeReady = ensureAndroidBridgeReady;
+window.getNativeNotificationReadinessReport = getNativeNotificationReadinessReport;
+window.waitForNativeNotificationReady = waitForNativeNotificationReady;
+window.flushPendingAndroidFcmTokenToServer = flushPendingAndroidFcmTokenToServer;
+window.requestNativeNotificationSetup = requestNativeNotificationSetup;
+window.repairAndroidNotificationState = repairAndroidNotificationState;
+window.startAndroidNotificationWatchdog = startAndroidNotificationWatchdog;
+window.ensureBridgeReadyForP2PSend = ensureBridgeReadyForP2PSend;
+
+console.log('[ESM Load] fcm-android-runtime.js: Hybrid bridge established.');

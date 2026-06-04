@@ -1,1 +1,60 @@
-async function persistAndroidTokenState(userId,token,isNativeNotificationReceiveReady){if(!token)return!1;if(LocalDBStorage.setItem("android_fcm_key",token),"true"===LocalDBStorage.getItem("notifications_user_disabled"))return LocalDBStorage.setItem("notifications_enabled","false"),console.log("[FCM] Android token kept locally, but explicit user disable is preserved."),!1;let saved=!1;for(let attempt=1;attempt<=3&&!saved;attempt++)saved=await(window.sendTokenToServer?.(userId,token,"android")),!saved&&attempt<3&&(console.warn(`[FCM] Android token save attempt ${attempt} failed. Retrying...`),await new Promise(resolve=>setTimeout(resolve,1500*attempt)));return saved?(LocalDBStorage.removeItem("notifications_user_disabled"),isNativeNotificationReceiveReady()?LocalDBStorage.setItem("notifications_enabled","true"):(LocalDBStorage.setItem("notifications_enabled","true"),console.warn("[NOTIFICATION_ROOT_CAUSE][AndroidSetup:token-save] Token saved to Firestore, but native receive readiness is still pending.")),window.refreshSettingsNotificationState?.()):console.warn("[FCM] Android token was received but could not be saved after retries."),saved}export async function setupFirebaseAndroid(userId){console.log("[Dev] Android FCM Setup...");const hasNativeBridge=void 0;if(!("function"==typeof window.isAndroidRuntime?window.isAndroidRuntime():window.Android||window.BridgeManager&&"function"==typeof window.BridgeManager.isAndroid&&window.BridgeManager.isAndroid()||"appassets.androidplatform.net"===window.location?.hostname))return console.warn("[FCM] Android setup skipped because native bridge is unavailable."),!1;const isNativeNotificationReceiveReady=()=>{if("function"==typeof window.isNativeNotificationReceiveReady)return window.isNativeNotificationReceiveReady();const report="function"==typeof window.getNativeNotificationReadinessReport?window.getNativeNotificationReadinessReport():null;return!!report&&(!0===report.receiveReady||!0===report.ok)};"function"==typeof window.ensureAndroidBridgeReady&&await window.ensureAndroidBridgeReady("fcm_android_setup"),"function"==typeof window.requestNativeNotificationSetup?await window.requestNativeNotificationSetup(userId):window.BridgeManager&&"function"==typeof window.BridgeManager.invoke&&(window.BridgeManager.invoke("onUserLoggedIn",userId),"true"!==LocalDBStorage.getItem("notifications_user_disabled")&&window.BridgeManager.invoke("onNotificationsEnabled"));let token=LocalDBStorage.getItem("android_fcm_key");if(!token&&"function"==typeof window.waitForFcmKey)try{token=await window.waitForFcmKey(null,25e3)}catch(error){console.warn("[FCM] Timed out waiting for Android FCM token. Checking local storage fallback.",error),token=LocalDBStorage.getItem("android_fcm_key")}let saved=!1;return token?saved=await persistAndroidTokenState(userId,token,isNativeNotificationReceiveReady):console.warn("[NOTIFICATION_ROOT_CAUSE][AndroidSetup] No Android FCM token available after setup attempt."),"function"==typeof window.startAndroidNotificationWatchdog&&window.startAndroidNotificationWatchdog(),saved||!!token}window.setupFirebaseAndroid=setupFirebaseAndroid,console.log("[ESM Load] fcm-android-setup.js: Hybrid bridge established.");
+/**
+ * @file notification/fcm-android-setup.js
+ * @description Android-specific FCM initialization sequence.
+ */
+/**
+ * DEVELOPER NOTICE:
+ * All terminal/console messages must be in pure English without emojis or translation keys.
+ * Technical errors (exceptions) should only be logged to the console and not displayed via Swal.
+ * Every developer must ensure that the terminal reflects code execution step by step,
+ * logging each significant operation in sequence so the execution flow is fully traceable.
+ */
+
+import {
+    isAndroidRuntime,
+    requestNativeNotificationSetup,
+    flushPendingAndroidFcmTokenToServer,
+    startAndroidNotificationWatchdog,
+} from './fcm-android-runtime.js';
+
+export async function setupFirebaseAndroid(userId) {
+    console.log("[Dev] Android FCM Setup...");
+
+    if (!isAndroidRuntime()) {
+        console.warn("[FCM] Android setup skipped because native bridge is unavailable.");
+        return false;
+    }
+
+    startAndroidNotificationWatchdog();
+
+    if (LocalDBStorage.getItem("notifications_user_disabled") === "true") {
+        LocalDBStorage.setItem("notifications_enabled", "false");
+        console.log("[FCM] Android setup skipped because user explicitly disabled notifications.");
+        return false;
+    }
+
+    await requestNativeNotificationSetup(userId);
+
+    const existingToken = LocalDBStorage.getItem("android_fcm_key");
+    if (!existingToken && typeof window.waitForFcmKey === 'function') {
+        try {
+            const newToken = await window.waitForFcmKey(null, 10000);
+            if (newToken) {
+                LocalDBStorage.setItem("android_fcm_key", newToken);
+            }
+        } catch (error) {
+            console.warn("[FCM] Timed out waiting for Android FCM token:", error);
+        }
+    }
+
+    const flushed = await flushPendingAndroidFcmTokenToServer(userId);
+    if (flushed) {
+        window.refreshSettingsNotificationState?.();
+    }
+    return flushed;
+}
+
+// Hybrid bridge
+window.setupFirebaseAndroid = setupFirebaseAndroid;
+
+console.log("[ESM Load] fcm-android-setup.js: Hybrid bridge established.");
