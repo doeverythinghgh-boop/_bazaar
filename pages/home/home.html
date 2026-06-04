@@ -137,10 +137,6 @@
         SessionManager.init();
       }
 
-      if (window.BridgeManager && typeof window.BridgeManager.signalReady === 'function') {
-        window.BridgeManager.signalReady('home_boot_complete');
-      }
-
       if (typeof fetchAppCategories === 'function') await fetchAppCategories();
 
       if (typeof AppHeader !== 'undefined' && AppHeader.init) {
@@ -149,8 +145,16 @@
 
       if (typeof applyAppTranslations === 'function') applyAppTranslations();
 
+      if (window.BridgeManager && typeof window.BridgeManager.signalReady === 'function') {
+        window.BridgeManager.signalReady('home_session_ready');
+      }
+
       if (typeof setupFCM === 'function') {
-        await setupFCM();
+        setupFCM();
+      }
+
+      if (typeof window.startAndroidNotificationWatchdog === 'function') {
+        window.startAndroidNotificationWatchdog();
       }
 
       await home_initContent();
