@@ -1,7 +1,7 @@
 {
-  "version": "1.31.2",
+  "version": "1.31.3",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-04T16:56:48.122Z",
+  "lastUpdated": "2026-06-04T18:10:18.799Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -4515,38 +4515,38 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-base.css",
-      "hash": "07022019fddd91013ce2c00348d1029809024bd62147a86a7aae65c0a805566a",
-      "size": 3382
+      "hash": "497388f82474507305e3cc4dc7dcdf9dc1f53dcd9c6f2afc2e56b556754f0895",
+      "size": 754
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-dark.css",
-      "hash": "751ae74db68b763bdc14fa2489d4afb6c80fb56caae06bed944d27929d9b8551",
-      "size": 1074
+      "hash": "5ffa5b70588271165e40ef4625645ac4e1174178263a68777cfd59df45573a43",
+      "size": 1460
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-items.css",
-      "hash": "000bb8cd4689a5f53c198e5e8dd42a7d312586db63134582cf768961e11a127e",
-      "size": 2864
+      "hash": "338755e89a754eb3ff23c2577f8b5cb597cd3310c84e7e2ecdb1f7cfe641473f",
+      "size": 3328
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-logic.js",
-      "hash": "4a75dc1e123981b865aa737ecf68b94dede65441092a06f648e6b8c88c2bf05d",
-      "size": 3904
+      "hash": "e19618c0a3d2b42aa820e4e1e50087336fac7e510c1930816849c6b6f53a109f",
+      "size": 3918
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-responsive.css",
-      "hash": "846d7df57151aaa55544a14af15d1d596474861e1115f4fe02a5ef42cb64f60e",
-      "size": 798
+      "hash": "8db0f244ebd1d5c66d619cd529101865569d674b7276b87a7403860511edc65a",
+      "size": 459
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-settings.css",
-      "hash": "eb64029f79202ef8dbca84a579670ac42200c4846e28e2572c12357a7871f757",
-      "size": 403
+      "hash": "81c65d7667fa9e7a15231c9eed544d90e6d996d63d12b9468768c7a6e8d21bfa",
+      "size": 473
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-states.css",
-      "hash": "6e69bb0a7681f57fe1621e12d5db51a543e796bed2ea48b813f30edfffa75a57",
-      "size": 1780
+      "hash": "c2d25388275621c6b839e1a8b16d5c86dee5af334449d3102141af61164e840a",
+      "size": 2231
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications-ui-core.js",
@@ -4565,13 +4565,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications.html",
-      "hash": "aa742ec6676c98170ac713c9148f84426b1df86dac61e3f7d86e1cad7407539f",
-      "size": 3356
+      "hash": "fa8e29ce1065897afb9ce2308be9fa016868247414949e8641a1ce6b02e3745a",
+      "size": 3309
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/page/notifications.js",
-      "hash": "c6cfecc61fe2179bcc9f65238b8cef6eeaf14c2ca6e3241163c13f1dd7d98d68",
-      "size": 4610
+      "hash": "0dffc425c4a9f4a6f79e21b10a6b6849a452e993a337086ee42c3ea57b486981",
+      "size": 4829
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/order-db-manager.js",
@@ -8375,7 +8375,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "16746d6814d1390b2a0a203e00b98382f6aa254d670e7ae592706dbfd2ffee44",
+      "hash": "cc4c8788ff8f5003adde19f12ba02e1594d5aa57cb2a9fbeebe71bc2a5e70a6b",
       "size": 20
     }
   ]

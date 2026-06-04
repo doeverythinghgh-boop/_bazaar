@@ -1,1 +1,12 @@
-.notifications-settings{background-color:var(--bg-color-white,#fff);margin:15px;padding:15px;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.1)}.settings-item{display:flex;justify-content:space-between;align-items:center;gap:15px}.settings-info h3{margin:0 0 5px 0;font-size:1rem;color:var(--text-color-dark,#050505)}.settings-info p{margin:0;font-size:.85rem;color:var(--text-color-medium,#65676b)}
+/**
+ * DEVELOPER NOTICE:
+ * Do not use :hover pseudo-classes in this project.
+ * This application is optimized for touch-based mobile devices where hover states are not applicable.
+ * Use active states or interaction feedback instead.
+ */
+
+/**
+ * @file notifications-settings.css
+ * @description Reserved file — settings strip element has been removed from the page UI.
+ *              Underlying notification toggle logic remains active via JS background operations.
+ */
