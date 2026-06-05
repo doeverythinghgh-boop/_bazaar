@@ -1398,5 +1398,17 @@
     "profile_security_badge": {
         "en": "Security Settings",
         "ar": "إعدادات الأمان"
+    },
+    "guest_welcome_title": {
+        "ar": "مرحباً بك في بازار السويس! 🌟",
+        "en": "Welcome to Suez Bazaar! 🌟"
+    },
+    "guest_restriction_message": {
+        "ar": "يسعدنا جداً تصفحك للبازار كضيف! للوصول إلى هذه الميزة (السلة، التنبيهات، وحركة المبيعات)، نرجو منك تسجيل الدخول بحسابك الحقيقي لتستمتع بكامل الخدمات.",
+        "en": "We are delighted to have you browse as a guest! To access this feature (cart, notifications, and sales movement), please log in with a registered account to enjoy all our services."
+    },
+    "guest_restriction_fallback": {
+        "ar": "للوصول إلى هذه الميزة، نرجو منك تسجيل الدخول بحسابك الحقيقي.",
+        "en": "To access this feature, please log in with a registered account."
     }
 }
