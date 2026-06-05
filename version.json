@@ -1,7 +1,7 @@
 {
-  "version": "1.31.12",
+  "version": "1.31.13",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-04T23:17:35.042Z",
+  "lastUpdated": "2026-06-05T05:19:24.982Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -4010,7 +4010,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core-loader-resources.js",
-      "hash": "f2aa970ee4dbc8c095091adfe8cd354186ca6609dd452f50d5f839da9fff1ace",
+      "hash": "30e9ae25d2cb9347119885dbd8a785c5acb5236c9f8dd25d349eaaaedeffc029",
       "size": 10138
     },
     {
@@ -4425,8 +4425,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-config.js",
-      "hash": "c48cca2ef9c8372a488da98eeb05cf6364c5880637e96729c4cf084eecdeb80a",
-      "size": 2398
+      "hash": "147d614a102f49b89bdd91ec76417308d69dfdab4490356900a843147505c358",
+      "size": 2508
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-event-handlers-items.js",
@@ -4450,8 +4450,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-p2p-bridge.js",
-      "hash": "00b3986c15a20df61e9097e8d31ded510be63c947319e4199af9fb01c97db356",
-      "size": 4375
+      "hash": "19fe91bdb4eae4dfb08e36e0cf2bab3e982d9860108f13b6278a59201b8a2c6d",
+      "size": 6486
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/fcm-web-setup.js",
@@ -4475,8 +4475,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/notification-p2p-web.js",
-      "hash": "706cdb96d9b4c6506a9774dcd1a6e63e367efcf17d7d81da108d472771778636",
-      "size": 4234
+      "hash": "c3ac83f24a341da929270582265f9388af85d4256e28dbbc09aea68402b2f91b",
+      "size": 4290
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/notification/notification_messages.json",
@@ -8380,7 +8380,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "4ba34ba9e360994574746bd26397ac44bc1ed9bf9b0dc902f76a7b70881e8cf1",
+      "hash": "5e4e0612b00f39e427744fb5692eef0ab77b92150e54cc6e6b127b70fd4ba4f7",
       "size": 21
     }
   ]
