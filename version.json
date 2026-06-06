@@ -1,7 +1,7 @@
 {
-  "version": "1.31.19",
+  "version": "1.31.20",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-05T19:11:38.499Z",
+  "lastUpdated": "2026-06-06T03:40:00.798Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -4205,8 +4205,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/firestore-identity-api.js",
-      "hash": "eea342bdfc45e61e5ec65a16b44b0eb2163f765b44f6ba537ffce4e3fdc44d63",
-      "size": 23375
+      "hash": "315ea3fe24f76b1a8a31c97fbc74e73405d52a5a28215554b76e0c827ccad571",
+      "size": 25485
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/multi-links-client.js",
@@ -8390,7 +8390,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "390e59e1ce5da9b36295623be3449f4f345ff2c716f681cb42aa3c2cf9008d77",
+      "hash": "1b4d8b02a358f5e27f6893e81f933db07f225cdc02dca82062d88bd8452f4e76",
       "size": 21
     }
   ]
