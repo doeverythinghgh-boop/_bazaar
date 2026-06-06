@@ -45,7 +45,45 @@ function summarizeCollectionResponse(data) {
     return { kind: typeof data, count: 0 };
 }
 
+function productApiRegistryCache(products, source) {
+    if (!window.ProductsRegistry || !products) return;
+    const list = Array.isArray(products) ? products : [products];
+    if (!list.length) return;
+    window.ProductsRegistry.storeMany(list);
+    productApiDebug('registry-products-cached', { source, count: list.length });
+}
+
+function productApiRegistryCacheCategory(mainCatId, subCatId, products) {
+    productApiRegistryCache(products, 'category-fetch');
+    if (window.ProductsRegistry && Array.isArray(products) && products.length) {
+        window.ProductsRegistry.setCategory(mainCatId, subCatId, products);
+    }
+}
+
+function productApiRegistryCacheUserList(userKey, filters, products) {
+    productApiRegistryCache(products, 'merchant-fetch');
+    if (window.ProductsRegistry && userKey && Array.isArray(products) && products.length) {
+        window.ProductsRegistry.setUserProducts(
+            userKey,
+            filters.MainCategory || '',
+            filters.SubCategory || '',
+            1,
+            products,
+            'product'
+        );
+        if (filters.searchName) {
+            window.ProductsRegistry.setSearch(window.ProductsRegistry.buildSearchKey('product', {
+                searchTerm: filters.searchName,
+                mainCategory: filters.MainCategory,
+                subCategory: filters.SubCategory,
+                userKey
+            }), products);
+        }
+    }
+}
+
 function productApiCacheProducts(products, source) {
+    productApiRegistryCache(products, source);
     if (!window.LocalDB || !products) return;
     const list = Array.isArray(products) ? products : [products];
     if (!list.length) return;
@@ -137,6 +175,32 @@ async function getProductsByCategory(mainCatId, subCatId) {
 
         productApiDebug('get-products-by-category-targets', targets);
 
+        const registryMerged = [];
+        const registrySeen = new Set();
+        let allTargetsCached = true;
+        if (window.ProductsRegistry) {
+            for (const target of targets) {
+                const cached = window.ProductsRegistry.getCategory(target.mainId || '', target.subId || '');
+                if (!cached) {
+                    allTargetsCached = false;
+                    break;
+                }
+                cached.forEach((product) => {
+                    const productKey = String(product?.product_key || product?.id || '');
+                    if (!productKey || registrySeen.has(productKey)) return;
+                    registrySeen.add(productKey);
+                    registryMerged.push(product);
+                });
+            }
+        } else {
+            allTargetsCached = false;
+        }
+        if (allTargetsCached && registryMerged.length) {
+            productApiDebug('get-products-by-category-registry-hit', { mainCatId, subCatId, resultCount: registryMerged.length });
+            productApiCacheProducts(registryMerged, 'category-fetch');
+            return registryMerged;
+        }
+
         const responses = await Promise.all(targets.map(async (target) => {
             const params = new URLSearchParams();
             if (target.mainId) params.append('MainCategory', target.mainId);
@@ -167,7 +231,11 @@ async function getProductsByCategory(mainCatId, subCatId) {
             subCatId,
             resultCount: merged.length
         });
-        productApiCacheProducts(merged, 'category-fetch');
+        if (targets.length === 1) {
+            productApiRegistryCacheCategory(targets[0].mainId, targets[0].subId, merged);
+        } else {
+            productApiCacheProducts(merged, 'category-fetch');
+        }
         return merged;
     } catch (error) {
         productApiDebug('get-products-by-category-error', {
@@ -195,6 +263,37 @@ async function getProductsByUser(userKey, filters = {}) {
             : [{ mainId: filters.MainCategory || '', subId: filters.SubCategory || '' }];
 
         productApiDebug('get-products-by-user-targets', targets);
+
+        if (window.ProductsRegistry) {
+            if (filters.searchName) {
+                const searchKey = window.ProductsRegistry.buildSearchKey('product', {
+                    searchTerm: filters.searchName,
+                    mainCategory: filters.MainCategory,
+                    subCategory: filters.SubCategory,
+                    userKey
+                });
+                const cachedSearch = window.ProductsRegistry.getSearch(searchKey);
+                if (cachedSearch?.length) {
+                    productApiDebug('get-products-by-user-search-registry-hit', { userKey, resultCount: cachedSearch.length });
+                    productApiCacheProducts(cachedSearch, 'merchant-fetch');
+                    return cachedSearch;
+                }
+            }
+            for (const target of targets) {
+                const cachedUserProducts = window.ProductsRegistry.getUserProducts(
+                    userKey,
+                    target.mainId || '',
+                    target.subId || '',
+                    1,
+                    'product'
+                );
+                if (cachedUserProducts?.length && targets.length === 1) {
+                    productApiDebug('get-products-by-user-registry-hit', { userKey, resultCount: cachedUserProducts.length });
+                    productApiCacheProducts(cachedUserProducts, 'merchant-fetch');
+                    return cachedUserProducts;
+                }
+            }
+        }
 
         const responses = await Promise.all(targets.map(async (target) => {
             const params = new URLSearchParams();
@@ -226,7 +325,7 @@ async function getProductsByUser(userKey, filters = {}) {
             userKey,
             resultCount: merged.length
         });
-        productApiCacheProducts(merged, 'merchant-fetch');
+        productApiRegistryCacheUserList(userKey, filters, merged);
         return merged;
     } catch (error) {
         productApiDebug('get-products-by-user-error', {
@@ -248,6 +347,23 @@ async function getProductByKey(productKey, options = {}) {
     try {
         const listingType = String(options.listingType || options.listing || options.source || '').trim();
         productApiDebug('get-product-by-key-start', { productKey, listingType });
+
+        if (window.ProductsRegistry) {
+            const cached = window.ProductsRegistry.get(productKey);
+            if (cached) {
+                const listingMatch = !listingType
+                    || (listingType === 'car' && (cached._source === 'car' || cached.is_car_listing))
+                    || (listingType === 'real_estate' && (cached._source === 'real_estate' || cached.is_real_estate_listing))
+                    || (listingType === 'pharmacy' && (cached._source === 'pharmacy' || cached.pharmacyCatalogItem))
+                    || (!cached._source || cached._source === 'product' || listingType === 'product');
+                if (listingMatch) {
+                    productApiDebug('get-product-by-key-registry-hit', { productKey });
+                    productApiCacheProducts(cached, 'detail-fetch');
+                    return cached;
+                }
+            }
+        }
+
         const params = new URLSearchParams({ product_key: productKey, single: 'true' });
         if (listingType) params.set('listing', listingType);
         const data = await apiFetch(`/api/products?${params.toString()}`, {

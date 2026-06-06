@@ -1,0 +1,1 @@
+!function(global){"use strict";global.ProductsClientInternal=global.ProductsClientInternal||{},global.ProductsClientInternal.config={PRODUCTS_COLLECTION:"marketplace_products",RATINGS_COLLECTION:"product_ratings_v2",EXTERNAL_RATINGS_COLLECTION:"product_ratings_v2"}}("undefined"!=typeof globalThis?globalThis:window);
