@@ -1,145 +1,200 @@
 {
     "purchase": {
         "admin": {
-            "title": "طلب شراء جديد",
-            "body": "طلب جديد رقم #${orderId}\nتاريخ الطلب: ${orderDate}"
+            "title": "🛍️ طلب شراء جديد وصل!",
+            "body": "مرحباً! وصل طلب شراء جديد برقم #${orderId} بتاريخ ${orderDate}. يرجى المراجعة والمتابعة. 🎉",
+            "icon": "ri-shopping-bag-3-line"
         },
         "seller": {
-            "title": "مبيعات جديدة!",
-            "body": "طلب جديد رقم #${orderId}\nتاريخ الطلب: ${orderDate}"
+            "title": "🛍️ طلب شراء جديد لمتجرك!",
+            "body": "تهانينا! وصل طلب جديد برقم #${orderId} بتاريخ ${orderDate} يتضمن منتجات من متجرك. ابدأ التجهيز! 🚀",
+            "icon": "ri-store-2-line"
         },
         "buyer": {
-            "title": "تم استلام طلبك",
-            "body": "نشكرك على تسوقك! تم استلام طلبك رقم #${orderId} وهو قيد المراجعة حالياً."
+            "title": "✅ استلمنا طلبك بنجاح!",
+            "body": "شكراً لتسوقك معنا! 💙 تم استلام طلبك رقم #${orderId} وهو الآن قيد المراجعة. سنُعلمك فور التأكيد!",
+            "icon": "ri-checkbox-circle-line"
         },
         "delivery": {
-            "title": "طلب جديد متاح",
-            "body": "هناك طلب شراء جديد رقم #${orderId}. يرجى الاستعداد للتوصيل بمجرد التأكيد."
+            "title": "📦 طلب توصيل جديد ينتظرك!",
+            "body": "تم إنشاء طلب شراء جديد برقم #${orderId}. كن مستعداً للتوصيل بمجرد تأكيد الطلب! 🚚",
+            "icon": "ri-truck-line"
         }
     },
     "steps": {
-        "step-review": {
-            "buyer": {
-                "title": "تم استلام طلبك",
-                "body": "تم استلام طلبك${orderIdText}. يرجى مراجعة الخدمات."
-            }
-        },
         "step-confirmed": {
             "buyer": {
-                "title": "تم تأكيد الطلب",
-                "body": "تم تأكيد طلبك${orderIdText} من قبل مقدم الخدمة. جاري التجهيز للشحن."
+                "title": "🎉 تم تأكيد طلبك!",
+                "body": "رائع! تم تأكيد طلبك رقم #${orderId} من قبل المتجر وجارٍ التجهيز الآن. استعدّ لاستقباله قريباً! 📦",
+                "icon": "ri-checkbox-circle-fill"
             },
-            "delivery": {
-                "title": "طلب جديد للتوصيل",
-                "body": "تم تأكيد طلب${orderIdText} وجاهز للشحن. يرجى الاستعداد للتوصيل."
+            "admin": {
+                "title": "📊 تحديث حالة الطلب",
+                "body": "تم الانتقال إلى مرحلة \"قيد التجهيز\" للطلب رقم #${orderId} بواسطة ${userName}. ✅",
+                "icon": "ri-bar-chart-line"
             },
             "seller": {
-                "title": "تم تأكيد الطلب",
-                "body": "تم تأكيد الطلب${orderIdText}، يرجى الاستعداد."
+                "title": "✅ طلبك تم تأكيده!",
+                "body": "تم تأكيد الطلب رقم #${orderId} الخاص بمتجرك. يرجى البدء بالتجهيز في أقرب وقت! 🏪",
+                "icon": "ri-store-line"
+            },
+            "delivery": {
+                "title": "🚚 طلب توصيل جاهز!",
+                "body": "تم تأكيد الطلب رقم #${orderId} وأصبح جاهزاً للشحن. كن مستعداً للانطلاق! 🏃",
+                "icon": "ri-motorbike-line"
             }
         },
         "step-shipped": {
             "buyer": {
-                "title": "تم شحن الطلب",
-                "body": "تم شحن طلبك${orderIdText}. في الطريق إليك!"
+                "title": "🚀 طلبك في الطريق إليك!",
+                "body": "بشرى سارة! تم شحن طلبك رقم #${orderId} وهو الآن في طريقه إليك. استعدّ لاستلامه! 😊",
+                "icon": "ri-map-pin-2-line"
+            },
+            "admin": {
+                "title": "📊 تحديث حالة الطلب",
+                "body": "تم الانتقال إلى مرحلة \"جاري الشحن\" للطلب رقم #${orderId} بواسطة ${userName}. 🚚",
+                "icon": "ri-bar-chart-line"
+            },
+            "seller": {
+                "title": "📦 تحديث طلبك",
+                "body": "تم تحديث حالة الطلب رقم #${orderId} إلى: \"جاري الشحن\". شكراً لتجهيزك السريع! ✨",
+                "icon": "ri-package-line"
             },
             "delivery": {
-                "title": "تم الشحن",
-                "body": "تم شحن الطلب${orderIdText}. يرجى التوصيل للعميل."
+                "title": "📬 وجّه الطرد للعميل!",
+                "body": "تم شحن الطلب رقم #${orderId}. يرجى التوجه لتسليمه للعميل في أقرب وقت. 🏁",
+                "icon": "ri-send-plane-line"
             }
         },
         "step-delivered": {
-            "buyer": {
-                "title": "تم التسليم",
-                "body": "تم تسليم طلبك${orderIdText} بنجاح. نتمنى أن تكون راضياً عن الخدمة."
-            },
-            "delivery": {
-                "title": "تم التسليم",
-                "body": "تم تسليم الطلب${orderIdText} بنجاح."
-            },
             "seller": {
-                "title": "تم تسليم الطلب",
-                "body": "تم تسليم الطلب${orderIdText} بنجاح للعميل."
+                "title": "🎊 تم تسليم الطلب بنجاح!",
+                "body": "تهانينا! 🥳 تم تسليم الطلب رقم #${orderId} بنجاح للعميل. شكراً لجودة منتجاتك!",
+                "icon": "ri-emotion-happy-line"
             }
         },
         "step-cancelled": {
             "seller": {
-                "title": "إلغاء أو رفض استلام",
-                "body": "تنبيه: قام المشتري بإلغاء الطلب (أو رفض الاستلام) رقم ${orderIdText}. يرجى مراجعة التفاصيل."
+                "title": "⚠️ تنبيه: تم إلغاء الطلب",
+                "body": "للأسف، قام المشتري بإلغاء الطلب رقم #${orderId}. يرجى مراجعة التفاصيل وإعادة المخزون إن لزم. 🙏",
+                "icon": "ri-close-circle-line"
             }
         },
         "step-rejected": {
             "buyer": {
-                "title": "خدمات مرفوضة",
-                "body": "تم رفض بعض الخدمات من طلبك${orderIdText} لعدم توفرها."
+                "title": "😔 بعض خدماتك غير متاحة",
+                "body": "نأسف لإبلاغك أن بعض الخدمات من طلبك رقم #${orderId} تعذّر توفيرها حالياً. يمكنك التواصل معنا لأي استفسار. 💬",
+                "icon": "ri-information-line"
+            },
+            "admin": {
+                "title": "📊 تحديث حالة الطلب",
+                "body": "تم الانتقال إلى مرحلة \"رفض استلام الطلب\" للطلب رقم #${orderId} بواسطة ${userName}. 🔄",
+                "icon": "ri-bar-chart-line"
+            },
+            "seller": {
+                "title": "🔄 تحديث حالة الطلب",
+                "body": "تم تحديث حالة الطلب رقم #${orderId} إلى: \"رفض الاستلام\". يرجى التواصل مع الدعم إن احتجت مساعدة. 📞",
+                "icon": "ri-refresh-line"
+            },
+            "delivery": {
+                "title": "🔄 تحديث حالة الطلب",
+                "body": "تم تحديث حالة الطلب رقم #${orderId} إلى: \"رفض الاستلام\". يرجى إعادة الطرد للمتجر. 📦",
+                "icon": "ri-arrow-go-back-line"
             }
         },
         "step-returned": {
             "seller": {
-                "title": "خدمات مرتجعة",
-                "body": "المشتري أرجع بعض خدماتك من الطلب${orderIdText}."
+                "title": "↩️ مرتجع من العميل",
+                "body": "قام العميل بإرجاع بعض منتجاتك من الطلب رقم #${orderId}. يرجى مراجعة المرتجعات واتخاذ الإجراء المناسب. 🔍",
+                "icon": "ri-arrow-go-back-line"
+            },
+            "admin": {
+                "title": "📊 تحديث حالة الطلب",
+                "body": "تم الانتقال إلى مرحلة \"${stepName}\" للطلب رقم #${orderId} بواسطة ${userName}. 🔄",
+                "icon": "ri-bar-chart-line"
+            },
+            "buyer": {
+                "title": "🔄 تحديث طلبك",
+                "body": "تم تحديث حالة طلبك رقم #${orderId} إلى: \"${stepName}\". للاستفسار تواصل معنا. 💬",
+                "icon": "ri-refresh-line"
+            },
+            "delivery": {
+                "title": "🔄 تحديث حالة الطلب",
+                "body": "تم تحديث حالة الطلب رقم #${orderId} إلى: \"${stepName}\". يرجى اتباع التعليمات. 📋",
+                "icon": "ri-refresh-line"
             }
         },
         "general_update": {
             "admin": {
-                "title": "تحديث حالة الطلب",
-                "body": "تم تفعيل مرحلة \"${stepName}\"${orderIdText}${userInfo}."
+                "title": "📊 تحديث حالة الطلب",
+                "body": "تم الانتقال إلى مرحلة \"${stepName}\" للطلب رقم #${orderId} بواسطة ${userName}. 🔄",
+                "icon": "ri-bar-chart-line"
             },
             "buyer": {
-                "title": "تحديث الطلب",
-                "body": "تم تحديث حالة طلبك${orderIdText} إلى: ${stepName}"
+                "title": "🔄 تحديث طلبك",
+                "body": "تم تحديث حالة طلبك رقم #${orderId} إلى: \"${stepName}\". للاستفسار تواصل معنا. 💬",
+                "icon": "ri-refresh-line"
             },
             "delivery": {
-                "title": "تحديث الطلب",
-                "body": "تم تحديث حالة الطلب${orderIdText} إلى: ${stepName}"
+                "title": "🔄 تحديث حالة الطلب",
+                "body": "تم تحديث حالة الطلب رقم #${orderId} إلى: \"${stepName}\". يرجى اتباع التعليمات. 📋",
+                "icon": "ri-refresh-line"
             },
             "seller": {
-                "title": "تحديث الطلب",
-                "body": "تم تحديث حالة الطلب${orderIdText} إلى: ${stepName}"
+                "title": "🔄 تحديث حالة الطلب",
+                "body": "تم تحديث حالة الطلب رقم #${orderId} إلى: \"${stepName}\". يرجى مراجعة التفاصيل. 📋",
+                "icon": "ri-refresh-line"
             }
         }
     },
     "admin_manual": {
-        "title": "إشعار من الإدارة"
+        "single": {
+            "title": "📣 رسالة من إدارة سويس بازار",
+            "body": "مرحباً ${userName}! 👋 ${adminMessage}",
+            "icon": "ri-megaphone-line"
+        },
+        "broadcast": {
+            "title": "📢 إعلان من سويس بازار",
+            "body": "مرحباً بمجتمع سويس بازار! 🌟 ${adminMessage}",
+            "icon": "ri-broadcast-line"
+        }
     },
     "new-item-added": {
         "admin": {
-            "title": "إضافة جديدة في المتجر",
-            "body": "تم إضافة ${itemType} جديد: ${itemName} (مفتاح المنتج: ${itemKey}) بواسطة ${userName} (مفتاح المستخدم: ${userKey})."
-        },
-        "seller": {
-            "title": "تمت إضافة منتجك",
-            "body": "تمت إضافة ${itemType}: ${itemName} بنجاح وهي قيد المراجعة الآن."
+            "title": "🆕 إضافة جديدة تنتظر مراجعتك!",
+            "body": "قام ${sellerName} بإضافة ${itemType} جديد باسم \"${productName}\". يرجى مراجعته والبت فيه. 🔍",
+            "icon": "ri-add-circle-line"
         }
     },
     "item-updated": {
         "admin": {
-            "title": "تعديل في المتجر",
-            "body": "تم تعديل ${itemType}: ${itemName} (مفتاح المنتج: ${itemKey}) بواسطة ${userName}. يرجى مراجعة التعديلات."
-        },
-        "seller": {
-            "title": "تم تحديث منتجك",
-            "body": "تم تحديث بيانات ${itemType}: ${itemName} بنجاح."
+            "title": "✏️ تعديل يحتاج مراجعة",
+            "body": "قام ${sellerName} بتعديل ${itemType} \"${productName}\". يرجى الاطلاع على التعديلات والموافقة عليها. 👀",
+            "icon": "ri-edit-line"
         }
     },
     "item-accepted": {
         "admin": {
-            "title": "تمت الموافقة على منتج",
-            "body": "تمت الموافقة على نشر ${itemType}: ${itemName}."
+            "title": "✅ تمت الموافقة على منتج",
+            "body": "تم قبول ونشر ${itemType} \"${productName}\" بنجاح في المنصة. 🎉",
+            "icon": "ri-checkbox-circle-line"
         },
         "seller": {
-            "title": "مبروك! تمت الموافقة",
-            "body": "تمت الموافقة على نشر ${itemType}: ${itemName} وهي الآن متاحة لجميع المستخدمين."
+            "title": "🎉 مبروك! منتجك تم قبوله",
+            "body": "تهانينا يا ${sellerName}! 🥳 تمت الموافقة على نشر ${itemType} \"${productName}\" وهو الآن متاح لجميع العملاء. استعدّ لاستقبال الطلبات!",
+            "icon": "ri-award-line"
         }
     },
     "item-rejected": {
         "admin": {
-            "title": "تم رفض منتج",
-            "body": "تم رفض نشر : ."
+            "title": "🚫 تم رفض منتج",
+            "body": "تم رفض نشر ${itemType} \"${productName}\". تم حذفه من قائمة الانتظار. 🗑️",
+            "icon": "ri-close-circle-line"
         },
         "seller": {
-            "title": "للأسف! تم رفض طلبك",
-            "body": "نعتذر لك، تم رفض نشر :  لمخالفته شروط المنصة."
+            "title": "😔 للأسف، تم رفض طلبك",
+            "body": "نأسف يا ${sellerName}، تعذّر قبول نشر ${itemType} \"${productName}\" لعدم مطابقته لشروط المنصة. يمكنك تعديله وإعادة التقديم. 💪",
+            "icon": "ri-error-warning-line"
         }
     }
 }
