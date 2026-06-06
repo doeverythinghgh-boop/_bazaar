@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @file pharmacy-api-preferences.js
  * @description Pharmacy preferences data access.
  */
@@ -27,10 +27,14 @@ window.PharmacyAPI.getPreferences = async function (userKey) {
 
 window.PharmacyAPI.savePreferences = async function (userKey, preferencesData) {
     try {
-        return await apiFetch(`/api/pharmacy/preferences`, {
+        const result = await apiFetch(`/api/pharmacy/preferences`, {
             method: 'POST',
             body: { user_key: userKey, data: preferencesData }
         });
+        // Invalidate catalog context cache so the next getCatalogContext call
+        // fetches fresh preferences from Firestore instead of serving stale data.
+        if (userKey) this.invalidateCatalogContext(userKey);
+        return result;
     } catch (error) {
         console.error("PharmacyAPI Error (savePreferences):", error);
         throw error;

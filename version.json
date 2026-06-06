@@ -1,7 +1,7 @@
 {
-  "version": "1.31.23",
+  "version": "1.31.24",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-06T09:00:41.330Z",
+  "lastUpdated": "2026-06-06T13:33:55.140Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -3705,8 +3705,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/api-client/db-clients.js",
-      "hash": "cba2f762aaedc86bc31342947471abca5b5e291e3a1e1f70244da1ccca81af48",
-      "size": 8747
+      "hash": "668076338d81cf644906b4c5542b113ff56fbf4a5f919337c040799f448e9892",
+      "size": 8772
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/api-client/db-operation-monitor.js",
@@ -4060,8 +4060,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/core-loader-resources.js",
-      "hash": "5afd9f28ff156a99379d74839bc13da7580b96ed5f65ccec39f17f63b46a68e7",
-      "size": 12005
+      "hash": "272c397427b023855e5a7c6db57c5c41536a3fec0d2e7c948b751fb21c642240",
+      "size": 12098
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/db/usersDB.js",
@@ -4275,13 +4275,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/firestore-identity/handle-tokens.js",
-      "hash": "e3421b10d730c5e25ef25ee08abd544aeaba29c873ea76b3e14165bdf8b9845d",
-      "size": 2053
+      "hash": "72d45eb57d0aa62dfcb7e3cf6e21f055cacd9e912bb69e16a93eabfd3546553e",
+      "size": 2766
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/firestore-identity/handle-users.js",
-      "hash": "a8c7317b999251045a8f153bc9cbcf52671c6494dc3d96c75fe2beaf90d16e3a",
-      "size": 7330
+      "hash": "5d65830cfa60a0d7984bbaf0d1d2f08d51ed8e9e6172c6a44d067b1fd5d196ea",
+      "size": 7395
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/firestore-identity/hydrate.js",
@@ -4300,13 +4300,18 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/firestore-identity/relations.js",
-      "hash": "153fddf1a7af921cdc2b5fd48e05f3bd54818326ef88d34d73fe2d44820348e1",
-      "size": 2329
+      "hash": "ac9f0fb2120e26e117de6e776e2dfc0d21913dfbf3a67a0104291a7d9fb446f4",
+      "size": 2637
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/firestore-identity/specialties.js",
       "hash": "5d821595937e3f84fc21daad415f045b2ea52d4031bb0a3d63fb343370aaf7db",
       "size": 1477
+    },
+    {
+      "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/firestore-identity/tokens-registry.js",
+      "hash": "666969e8ba0e9c75b56652c37b66f2bea927b2b1ca7007f483496a255221dd05",
+      "size": 1701
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/js/shared/firestore-identity/utils.js",
@@ -6635,8 +6640,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy/api/pharmacy-api-catalog.js",
-      "hash": "1e642a2c8ee674502164c7f1d9c856a48bb144925b40bc68a97aa482ee1efcdc",
-      "size": 7085
+      "hash": "b79d3d8f18b54ff8f6e31d5a663ced0475cd3b8844f2400fd27c9baed892b213",
+      "size": 10400
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy/api/pharmacy-api-custom-categories.js",
@@ -6655,8 +6660,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy/api/pharmacy-api-preferences.js",
-      "hash": "b4021ccdefc6d35e6657f50d5aa88da9f3cefcfe362398b8e4872e18f460559d",
-      "size": 1956
+      "hash": "605e426e5f43cb88eca467cc156958ff77f45216f4f70286e1546c799507cb19",
+      "size": 2211
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/pages/merchant-portfolio/js/pharmacy/pharmacy-control-panel.js",
@@ -8500,7 +8505,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "4e823977811a2bef9044a69ab19e5781e6ed21cbea28dbdd7d9d19ad6bab0caa",
+      "hash": "5614e9c2807df6e4f3eefd9dde388f22eaec1986f3948eaa727b8ac90c552bdc",
       "size": 21
     }
   ]
