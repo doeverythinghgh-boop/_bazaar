@@ -1,7 +1,7 @@
 {
-  "version": "1.31.21",
+  "version": "1.31.22",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-06T04:36:38.790Z",
+  "lastUpdated": "2026-06-06T05:23:34.632Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -4610,8 +4610,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/stepper.js",
-      "hash": "1cfb56dadb9a3284af2e6791213b81b08eff8ecd65ba1b76c4726509e447383a",
-      "size": 8329
+      "hash": "2e84e8ac5322d8a59e15613566bf4944572e199f85702fda399f332006aae9ab",
+      "size": 13273
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/ui-helpers.js",
@@ -4685,8 +4685,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin.js",
-      "hash": "89db39fa5785fa36734a5de18056649bcefb603f368d521e3c4efda1310f49f9",
-      "size": 1712
+      "hash": "1e493c5cf2e442abcf3a275b602172547b2bc3fe17ff8e9f893fadf112658408",
+      "size": 2916
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/buyer-partials/delivery-info.js",
@@ -4695,8 +4695,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/buyer-partials/workflow.js",
-      "hash": "2b6c246cecddb7104ac10958f7db67a990af0eb0cca6661c82074bad1736657e",
-      "size": 3594
+      "hash": "8582201507819e82f277b47e76b2daf9fc241d5624de08c2f51b422e81d00e2f",
+      "size": 5449
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/buyer.js",
@@ -4705,8 +4705,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/commercial-partials/actions.js",
-      "hash": "f4587d1374e0f4e415268a7632f30b56b85e60383455850407947d586f1ebb7c",
-      "size": 3539
+      "hash": "c529b17eef9609a98f629ad58ae388152fb559bcbb9646d9169e61e94b098685",
+      "size": 4527
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/commercial-partials/summary.js",
@@ -4735,8 +4735,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/delivery-partials/workflow.js",
-      "hash": "1bf11c5fb1b4848f333217f64cc7285610f0c97c8677d07bdde49699541b1f03",
-      "size": 2867
+      "hash": "87bb9d9a6a5ab4cd79de974023c3d9bac8826e6524a6f5a587bd7d7a5474ec5f",
+      "size": 3861
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/delivery.js",
@@ -8390,7 +8390,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "696f7b55e5eeaf5ccfea4a775d71c970d12c7cd5b07077bc3de75fd79057d0be",
+      "hash": "8f27a0ab2d78e238a164beccc00a854a8d77d798846fa3e8ce8c3b0b456659f2",
       "size": 21
     }
   ]
