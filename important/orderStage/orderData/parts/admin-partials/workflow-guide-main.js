@@ -1,0 +1,1 @@
+window.OrderData_Admin_WorkflowGuide={render:function(statusObj){const workflowTable=void 0,comparison=void 0;return(window.OrderData_Admin_WorkflowGuideTable?.render(statusObj)||"")+(window.OrderData_Admin_WorkflowComparison?.render()||"")}};
