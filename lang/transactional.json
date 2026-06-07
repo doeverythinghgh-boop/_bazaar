@@ -1542,5 +1542,21 @@
     "workflow_buyer_cancel_btn": {
         "ar": "إلغاء الطلب بالكامل",
         "en": "Cancel Order Completely"
+    },
+    "workflow_commercial_review": {
+        "ar": "تم مراجعة الطلب وتجهيز الخدمات",
+        "en": "Order reviewed and services prepared"
+    },
+    "workflow_commercial_shipping": {
+        "ar": "تم تسليم الخدمات لمندوب الشحن",
+        "en": "Services delivered to the courier agent"
+    },
+    "workflow_commercial_review_confirm_title": {
+        "ar": "اعتماد المراجعة",
+        "en": "Approve Review"
+    },
+    "workflow_commercial_review_confirm_text": {
+        "ar": "تنبيه: سيتم إرسال حالة الخدمات.<br>لن تتمكن من تعديل \"توفر الخدمات\" بعد هذه الخطوة.",
+        "en": "Warning: Services status will be sent.<br>You will not be able to edit 'services availability' after this step."
     }
 }
