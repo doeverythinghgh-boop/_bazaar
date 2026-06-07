@@ -1,7 +1,7 @@
 {
-  "version": "1.31.27",
+  "version": "1.31.28",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-07T09:15:07.950Z",
+  "lastUpdated": "2026-06-07T09:53:04.988Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -4720,13 +4720,13 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/stepper-actions.js",
-      "hash": "b2cc79cdcd39c170e0b0d91abaf170cb1d643ccc8884ec852390efe7365b52c1",
-      "size": 6815
+      "hash": "9597a2490138ed778adcb766b862c38fc9c66bcc2ed481aa28b400966e46bfa0",
+      "size": 6828
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/stepper-core.js",
-      "hash": "cec201812dc7795797a3e6d7d23ccb18966a0a79603accabd5a3acc667288a69",
-      "size": 12844
+      "hash": "5140a80d784eccdf3e949ae97d735f328b6f7a5bcdda7cabd4378fa20a6e5b58",
+      "size": 12968
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/stepper-dialogs.js",
@@ -8510,7 +8510,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "742267664291fca82b1c63a1a2eefe8f3a88daa1886735e69779511695d85bc6",
+      "hash": "71571c93bc46252676510874ba02f0b7c96dd45b95c50408ea6a40fc6c5510e4",
       "size": 21
     }
   ]
