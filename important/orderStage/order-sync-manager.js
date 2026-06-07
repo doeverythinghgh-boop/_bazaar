@@ -1,1 +1,0 @@
-const OrderSyncManager={orderSync:async role=>{try{return console.log(`[OrderSync] Sync for role: ${role} is now handled dynamically in real-time by Firestore.`),[]}catch(error){throw console.error("[OrderSync] Sync failed:",error),error}}};
