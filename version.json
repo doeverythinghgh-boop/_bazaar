@@ -1,7 +1,7 @@
 {
-  "version": "1.31.28",
+  "version": "1.31.29",
   "notes": "Fix Image Compression (Permission Locking)",
-  "lastUpdated": "2026-06-07T11:09:33.052Z",
+  "lastUpdated": "2026-06-07T13:58:39.647Z",
   "files": [
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/androidLang.json",
@@ -4705,8 +4705,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/main-loader.js",
-      "hash": "f90bf7ebc70be48939e94babc54bea05dc1766505c4faa7a3f352fc5a2d770c8",
-      "size": 6386
+      "hash": "0bd89ae4fcc91c3c1175ed01f69cfb2bd3b7531aed088f26808fb37dcc10bee3",
+      "size": 6574
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/role-manager.js",
@@ -4720,8 +4720,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/stepper-actions.js",
-      "hash": "8b89392d700cb309926bdd58faf9eaa5dd8ac166bdbb7f11510f73e61468138e",
-      "size": 7029
+      "hash": "e28dbe9cccdddbe980ec1443e3f0a1e856ae4bc8c1fc597bc726bdc1035662ef",
+      "size": 7041
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/js/stepper-core.js",
@@ -4740,8 +4740,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/order-data.html",
-      "hash": "227fac72991b0434a894379213a314e25a6dcf99f627377842dc8aa468838698",
-      "size": 21162
+      "hash": "af113be7d7f27fa5488b064b4ea52a5996b1107f8be30888f087a9ec9f0afb53",
+      "size": 13310
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin-partials/admin-tokens.js",
@@ -4795,8 +4795,8 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin-partials/workflow-guide-table.js",
-      "hash": "606fcc57d2d4fc7417dca7d0b09226009edce6505b1a8f3ac1837669ab6cff1e",
-      "size": 12666
+      "hash": "73070a7ff98e738ca0ab7e12440b1f7b42dd8f58f5ccf10d09e8808d493584f7",
+      "size": 8865
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/orderStage/orderData/parts/admin.css",
@@ -8510,7 +8510,7 @@
     },
     {
       "path": "https://raw.githubusercontent.com/doeverythinghgh-boop/_bazaar/main/v.json",
-      "hash": "71571c93bc46252676510874ba02f0b7c96dd45b95c50408ea6a40fc6c5510e4",
+      "hash": "13ef3093d3bdf9fc74b516136f313493260eaa5a58744d941ae5b33a62e12dcc",
       "size": 21
     }
   ]
