@@ -1346,5 +1346,201 @@
     "location_reload_btn": {
         "ar": "تحديث الصفحة",
         "en": "Refresh Page"
+    },
+    "stepper_label_review": {
+        "ar": "المراجعة",
+        "en": "Review"
+    },
+    "stepper_label_shipped": {
+        "ar": "الشحن",
+        "en": "Shipping"
+    },
+    "stepper_label_delivered": {
+        "ar": "التسليم",
+        "en": "Delivery"
+    },
+    "stepper_label_refused": {
+        "ar": "رفض الاستلام",
+        "en": "Refused Delivery"
+    },
+    "stepper_label_refused_desc": {
+        "ar": "تم رفض الاستلام من المشتري",
+        "en": "Delivery refused by buyer"
+    },
+    "stepper_label_cancelled_desc": {
+        "ar": "ملغي قبل التسليم",
+        "en": "Cancelled before delivery"
+    },
+    "stepper_btn_services": {
+        "ar": "الخدمات",
+        "en": "Services"
+    },
+    "stepper_btn_courier": {
+        "ar": "مندوب التوصيل",
+        "en": "Delivery Representative"
+    },
+    "stepper_time_default": {
+        "ar": "وقتك المناسب",
+        "en": "Your preferred time"
+    },
+    "stepper_delivery_pref_title": {
+        "ar": "تحديد وقت التسليم المفضل",
+        "en": "Select Preferred Delivery Time"
+    },
+    "stepper_delivery_date_label": {
+        "ar": "اختر التاريخ:",
+        "en": "Select Date:"
+    },
+    "stepper_delivery_time_label": {
+        "ar": "اختر الوقت:",
+        "en": "Select Time:"
+    },
+    "stepper_delivery_or": {
+        "ar": "أو",
+        "en": "Or"
+    },
+    "stepper_delivery_anytime": {
+        "ar": "في أي وقت",
+        "en": "Anytime"
+    },
+    "stepper_delivery_validation": {
+        "ar": "يرجى تحديد التاريخ والوقت معاً",
+        "en": "Please select both date and time"
+    },
+    "stepper_receipt_confirm_title": {
+        "ar": "تأكيد الاستلام؟",
+        "en": "Confirm Receipt?"
+    },
+    "stepper_receipt_confirm_text": {
+        "ar": "هل تأكد أنك استلمت طلبك بالكامل؟<br><b style=\"color:#27ae60;\">لن يمكن التراجع بعد التأكيد.</b>",
+        "en": "Are you sure you received your order in full?<br><b style=\"color:#27ae60;\">This action cannot be undone.</b>"
+    },
+    "stepper_receipt_confirm_btn": {
+        "ar": "نعم، استلمت الطلب",
+        "en": "Yes, received the order"
+    },
+    "stepper_refuse_confirm_title": {
+        "ar": "رفض استلام الطلب؟",
+        "en": "Refuse Order?"
+    },
+    "stepper_refuse_confirm_text": {
+        "ar": "هل تريد رفض استلام هذا الطلب؟<br>سيتم إشعار التاجر والإدارة وعامل التوصيل فوراً.<br><b style=\"color:#dc2626;\">هذا الإجراء لا يمكن التراجع عنه.</b>",
+        "en": "Do you want to refuse this order?<br>The seller, admin, and courier will be notified immediately.<br><b style=\"color:#dc2626;\">This action cannot be undone.</b>"
+    },
+    "stepper_refuse_confirm_btn": {
+        "ar": "نعم، أرفض الاستلام",
+        "en": "Yes, refuse delivery"
+    },
+    "stepper_cancel_confirm_title": {
+        "ar": "إلغاء الطلب؟",
+        "en": "Cancel Order?"
+    },
+    "stepper_cancel_confirm_text": {
+        "ar": "هل تريد إلغاء هذا الطلب بالكامل؟<br><b style=\"color:#e67e22;\">هذا الإجراء لا يمكن التراجع عنه.</b>",
+        "en": "Do you want to cancel this order completely?<br><b style=\"color:#e67e22;\">This action cannot be undone.</b>"
+    },
+    "stepper_cancel_confirm_btn": {
+        "ar": "نعم، إلغاء الطلب",
+        "en": "Yes, cancel order"
+    },
+    "stepper_btn_back": {
+        "ar": "تراجع",
+        "en": "Go Back"
+    },
+    "stepper_admin_change_title": {
+        "ar": "تأكيد تغيير المرحلة؟",
+        "en": "Confirm Stage Change?"
+    },
+    "stepper_admin_change_text": {
+        "ar": "أنت على وشك تغيير حالة الطلب إلى:<br><b style=\"color:#2196F3;\">{label}</b><br>سيتم المزامنة مع السيرفر فوراً.",
+        "en": "You are about to change the order status to:<br><b style=\"color:#2196F3;\">{label}</b><br>It will be synchronized with the server immediately."
+    },
+    "stepper_admin_change_btn": {
+        "ar": "تأكيد التغيير",
+        "en": "Confirm Change"
+    },
+    "stepper_no_services": {
+        "ar": "لا توجد خدمات مسجلة في هذا الطلب.",
+        "en": "No services registered in this order."
+    },
+    "stepper_no_courier": {
+        "ar": "جاري تخصيص مندوب لتوصيل طلبك عبر المنصة.",
+        "en": "A delivery agent is being assigned to deliver your order."
+    },
+    "stepper_couriers_title": {
+        "ar": "مناديب التوصيل",
+        "en": "Delivery Agents"
+    },
+    "stepper_update_error_title": {
+        "ar": "فشل التحديث",
+        "en": "Update Failed"
+    },
+    "stepper_update_error_text": {
+        "ar": "حدث خطأ أثناء تحديث حالة الطلب. يرجى التحقق من اتصالك بالإنترنت وإعادة المحاولة.",
+        "en": "An error occurred while updating the order status. Please check your internet connection and try again."
+    },
+    "stepper_update_retry_btn": {
+        "ar": "إعادة المحاولة",
+        "en": "Retry"
+    },
+    "workflow_special_service_hint": {
+        "ar": "هذا الطلب خدمة خاصة. يرجى مراجعة التفاصيل مع الإدارة.",
+        "en": "This order is a special service. Please review the details with the admin."
+    },
+    "workflow_delivery_pickup": {
+        "ar": "استلام الخدمات من مقدم الخدمة والتحرك",
+        "en": "Receive services from seller and start delivery"
+    },
+    "workflow_delivery_complete": {
+        "ar": "تسليم الطلب للعميل",
+        "en": "Deliver order to customer"
+    },
+    "workflow_delivery_success": {
+        "ar": "تم إنهاء هذه المهمة وتسليم الطلب بنجاح.",
+        "en": "This task has been completed and the order delivered successfully."
+    },
+    "workflow_delivery_wait_hint": {
+        "ar": "بانتظار تأكيد المشتري لإغلاق الطلب.",
+        "en": "Waiting for the buyer to confirm receipt and close the order."
+    },
+    "workflow_delivery_refused_title": {
+        "ar": "رفض المشتري استلام الطلب",
+        "en": "Buyer refused delivery"
+    },
+    "workflow_delivery_cancelled_title": {
+        "ar": "تم إلغاء الطلب",
+        "en": "Order cancelled"
+    },
+    "workflow_delivery_refused_body": {
+        "ar": "عند محاولة التسليم رفض المشتري استلام الطلب. يرجى استرجاع البضاعة ومراجعة الإدارة.",
+        "en": "Upon delivery attempt, the buyer refused receipt. Please return items and consult the admin."
+    },
+    "workflow_delivery_cancelled_body": {
+        "ar": "ألغى المشتري هذا الطلب قبل التسليم.",
+        "en": "The buyer cancelled this order before delivery."
+    },
+    "workflow_buyer_terminal_refused": {
+        "ar": "تم رفض استلام الطلب",
+        "en": "Delivery receipt refused"
+    },
+    "workflow_buyer_terminal_cancelled": {
+        "ar": "تم إلغاء الطلب",
+        "en": "Order cancelled"
+    },
+    "workflow_buyer_receipt_badge": {
+        "ar": "تم تأكيد الاستلام والإغلاق",
+        "en": "Receipt confirmed and order closed"
+    },
+    "workflow_buyer_receipt_btn": {
+        "ar": "تأكيد استلام الطلب",
+        "en": "Confirm Order Receipt"
+    },
+    "workflow_buyer_refuse_btn": {
+        "ar": "رفض استلام الطلب",
+        "en": "Refuse Order Receipt"
+    },
+    "workflow_buyer_cancel_btn": {
+        "ar": "إلغاء الطلب بالكامل",
+        "en": "Cancel Order Completely"
     }
 }
