@@ -1,0 +1,1 @@
+const{EventBus:EventBus,globalEventBus:globalEventBus}=require("./EventBus");module.exports={EventBus:EventBus,globalEventBus:globalEventBus};

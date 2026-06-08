@@ -1,0 +1,1 @@
+const ProductType={GENERAL:"general",CAR:"car",REAL_ESTATE:"real_estate",PHARMACY:"pharmacy"};"undefined"!=typeof module&&module.exports?module.exports=ProductType:window.ProductType=ProductType;

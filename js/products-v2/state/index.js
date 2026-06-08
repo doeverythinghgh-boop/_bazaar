@@ -1,0 +1,1 @@
+const StorageAdapter=require("./StorageAdapter"),LocalDBStorageAdapter=require("./LocalDBStorageAdapter"),ProductStore=require("./ProductStore");module.exports={StorageAdapter:StorageAdapter,LocalDBStorageAdapter:LocalDBStorageAdapter,ProductStore:ProductStore};

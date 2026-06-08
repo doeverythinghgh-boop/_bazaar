@@ -1,0 +1,1 @@
+const{ProductStateMachine:ProductStateMachine,InvalidTransitionError:InvalidTransitionError}=require("./ProductStateMachine");module.exports={ProductStateMachine:ProductStateMachine,InvalidTransitionError:InvalidTransitionError};
