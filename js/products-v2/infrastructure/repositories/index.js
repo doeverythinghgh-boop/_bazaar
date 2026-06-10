@@ -1,0 +1,1 @@
+const ProductRepository=require("./ProductRepository"),FirestoreProductRepository=require("./FirestoreProductRepository"),IntegrationRepository=require("./IntegrationRepository");module.exports={ProductRepository:ProductRepository,FirestoreProductRepository:FirestoreProductRepository,IntegrationRepository:IntegrationRepository};

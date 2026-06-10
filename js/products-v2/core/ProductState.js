@@ -1,0 +1,1 @@
+const ProductState={DRAFT:"draft",PENDING:"pending",PUBLISHED:"published",REJECTED:"rejected",ARCHIVED:"archived",DELETED:"deleted"};"undefined"!=typeof module&&module.exports?module.exports=ProductState:window.ProductState=ProductState;
